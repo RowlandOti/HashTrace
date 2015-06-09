@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <PreferenceCategory android:title="@string/pref_hashtag_profile" >
+        <EditTextPreference
+            android:defaultValue="@string/pref_hashtag_default"
+            android:inputType="text"
+            android:key="@string/pref_hashtag_key"
+            android:singleLine="true"
+            android:title="@string/pref_hashtag_label" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_proxy_profile" >
+        <EditTextPreference
+            android:key="host"
+            android:summary="@string/host_summary"
+            android:title="@string/host" >
+        </EditTextPreference>
+        <EditTextPreference
+            android:defaultValue="80"
+            android:key="port"
+            android:summary="@string/port_summary"
+            android:title="@string/port" >
+        </EditTextPreference>
+
+        <ListPreference
+            android:defaultValue="http"
+            android:entries="@array/proxy_type_entry"
+            android:entryValues="@array/proxy_type_value"
+            android:key="proxyType"
+            android:title="@string/proxy_type" >
+        </ListPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_proxy_auth" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="isAuth"
+            android:title="@string/auth"
+            android:summary="@string/auth_enable_summary">
+        </CheckBoxPreference>
+
+        <EditTextPreference
+            android:key="user"
+            android:summary="@string/user_summary"
+            android:title="@string/user" >
+        </EditTextPreference>
+        <EditTextPreference
+            android:key="password"
+            android:password="true"
+            android:summary="@string/password_summary"
+            android:title="@string/password" >
+        </EditTextPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_notifications_profile" >
+        <CheckBoxPreference
+            android:defaultValue="@string/pref_enable_notifications_default"
+            android:key="@string/pref_enable_notifications_key"
+            android:summaryOff="@string/pref_enable_notifications_false"
+            android:summaryOn="@string/pref_enable_notifications_true"
+            android:title="@string/pref_enable_notifications_label" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

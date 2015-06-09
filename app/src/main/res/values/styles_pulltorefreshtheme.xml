@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- PullToRefresh Customizations -->
+
+    <style name="Widget.Refresh.PtrWidget" parent="android:Widget">
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <item name="ptrHeaderBackground">#FF69B4</item>
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <item name="ptrHeaderTextColor">#FF69B4</item>
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <item name="ptrHeaderSubTextColor">#FF69B4</item>
+
+        <!-- The strings to be displayed at the various states -->
+        <item name="ptrPullText">Pull To Refresh</item>
+        <item name="ptrRefreshingText">Refreshing News</item>
+        <item name="ptrReleaseText">Loading...</item>
+    </style>
+
+</resources>

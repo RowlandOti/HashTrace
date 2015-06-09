@@ -1,0 +1,14 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="General Settings" />
+
+    <PreferenceScreen
+        android:key="account_settings"
+        android:summary="Sync frequency, notifications, etc."
+        android:title="Account Settings" >
+        <intent
+            android:targetClass="com.rowland.hashtrace.SettingsActivity"
+            android:targetPackage="com.rowland.hashtrace" />
+    </PreferenceScreen>
+
+</PreferenceScreen>
