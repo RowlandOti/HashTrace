@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -12,14 +12,14 @@
         android:layout_marginTop="@dimen/tweet_item_margin"
         android:orientation="vertical"
         android:paddingBottom="@dimen/tweet_item_padding_top_bottom"
-        android:paddingTop="@dimen/tweet_item_padding_top_bottom" >
+        android:paddingTop="@dimen/tweet_item_padding_top_bottom">
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingLeft="@dimen/tweet_item_padding_left_right"
-            android:paddingRight="@dimen/tweet_item_padding_left_right" >
+            android:paddingRight="@dimen/tweet_item_padding_left_right">
 
             <ImageView
                 android:id="@+id/profile_pic"
@@ -44,7 +44,7 @@
                 android:layout_width="167dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingLeft="@dimen/tweet_item_profile_info_padd" >
+                android:paddingLeft="@dimen/tweet_item_profile_info_padd">
 
                 <TextView
                     android:id="@+id/user_name"
@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/border_rectangle_rounded"
                 android:paddingLeft="@dimen/tweet_item_fav_padding_left_right"
-                android:paddingRight="@dimen/tweet_item_fav_padding_left_right" >
+                android:paddingRight="@dimen/tweet_item_fav_padding_left_right">
 
                 <TextView
                     android:id="@+id/tweet_fav"
@@ -94,7 +94,8 @@
             android:paddingLeft="@dimen/tweet_item_status_pad_left_right"
             android:paddingRight="@dimen/tweet_item_status_pad_left_right"
             android:paddingTop="@dimen/tweet_item_status_pad_top"
-            android:textColor="@color/tweet_text_color" />
+            android:textColor="@color/tweet_text_color"
+            android:textIsSelectable="false" />
     </LinearLayout>
 
 </LinearLayout>

@@ -43,7 +43,7 @@
         </activity>
          <activity
             android:label="@string/title_activity_details"
-            android:name="com.rowland.hashtrace.DetailActivity"
+            android:name=".DetailsActivity"
             android:parentActivityName="com.rowland.hashtrace.HashTraceActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

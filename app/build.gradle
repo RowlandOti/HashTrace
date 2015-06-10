@@ -26,8 +26,10 @@ dependencies {
     compile project(':libraries:pagerslidingtabstrip')
     compile project(':libraries:hellochartslibrary')
     compile project(':libraries:swipeMenuListView')
-    //compile 'com.android.support:appcompat-v7:22.1.1'
-    compile 'com.android.support:appcompat-v7:19.1.0'
     compile 'org.twitter4j:twitter4j-core:4.0.3'
-
-}
+    compile 'com.android.support:appcompat-v7:19.+'
+    compile 'com.android.support:support-v4:19.+'
+    
+    //compile 'com.android.support:appcompat-v7:22.1.1'
+    //compile 'com.android.support:support-v4:22.1.1'
+    }

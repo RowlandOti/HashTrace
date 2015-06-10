@@ -94,6 +94,4 @@
     <string name="password_summary">Proxy Password</string>
     <string name="auto_use_proxy_summary">Use proxy always to connect to network</string>
 
-
-
 </resources>

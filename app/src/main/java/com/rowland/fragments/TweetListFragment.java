@@ -114,12 +114,12 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 	 * implement. This mechanism allows activities to be notified of item
 	 * selections.
 	 */
-	public interface onItemSelectedCallback
+	public interface onTweetItemSelectedCallback
 	{
 		/**
 		 * TweetItemFragmentCallback for when an item has been selected.
 		 */
-		public void onItemSelected(String date);
+		public void onTweetItemSelected(String date);
 	}
 
 	@Override
@@ -249,7 +249,8 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 				mPullToRefreshListView.onRefreshComplete();
 			}
 		});
-		mPullToRefreshListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+		//This somehow refuses to work , I really have no idea why
+	/*	mPullToRefreshListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
 			@Override
 			public void onItemClick(AdapterView<?> adapterView, View view, int position, long rowId)
@@ -258,13 +259,13 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 				Cursor cursor = mTweetListAdapter.getCursor();
 				if (cursor != null && cursor.moveToPosition(position))
 				{
-					((onItemSelectedCallback) getActivity()).onItemSelected(cursor.getString(COL_TWEET_TEXT_DATE));
+					((onTweetItemSelectedCallback) getActivity()).onTweetItemSelected(cursor.getString(COL_TWEET_TEXT_DATE));
 					Log.d("ROWSELECT", "" + rowId );
 
 				}
 				mPosition = position;
 			}
-		});
+		});*/
 		mPullToRefreshListView.setOnItemLongClickListener(new OnItemLongClickListener() {
 
 			@Override
@@ -273,7 +274,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 				// Do the onItemLongClick action
 				mPullToRefreshListView.smoothOpenMenu(position);
 
-				return false;
+				return true;
 			}
 		});
 		mPullToRefreshListView.setOnMenuItemClickListener(new OnMenuItemClickListener() {
@@ -345,6 +346,19 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 			outState.putInt(SELECTED_KEY, mPosition);
 		}
 		super.onSaveInstanceState(outState);
+	}
+	@Override
+	public void onListItemClick(ListView lv, View view, int position, long rowId)
+	{
+		super.onListItemClick(lv, view, position, rowId);
+		// Do the onItemClick action
+		Cursor cursor = mTweetListAdapter.getCursor();
+		if (cursor != null && cursor.moveToPosition(position))
+		{
+			((onTweetItemSelectedCallback) getActivity()).onTweetItemSelected((cursor.getString(COL_TWEET_TEXT_DATE)));
+		}
+		mPosition = position;
+		Log.d("ROWSELECT", "" + rowId);
 	}
 
 	@Override

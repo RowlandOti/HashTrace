@@ -63,7 +63,7 @@
                     android:id="@+id/tweet_text_date"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/tweet_text_date"
+                    android:textColor="@color/apptheme_color_grey"
                     android:textSize="@dimen/tweet_item_timestamp" />
 
                 <LinearLayout

@@ -10,7 +10,7 @@
         android:paddingLeft="@dimen/header_footer_left_right_padding"
         android:paddingRight="@dimen/header_footer_left_right_padding"
         android:paddingTop="@dimen/header_footer_top_bottom_padding"
-        android:background="@color/tweet_bg_grey">
+        android:background="@color/apptheme_color_grey">
 
        <LinearLayout
             android:layout_width="wrap_content"

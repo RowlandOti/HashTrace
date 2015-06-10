@@ -88,12 +88,12 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 	public static final int COL_TWEETFAV_USERNAME_LOCATION = 10;
 	public static final int COL_HASHTAG_NAME = 11;
 
-	public interface onItemSelectedCallback
+	public interface onFavouriteItemSelectedCallback
 	{
 		/**
 		 * TweetItemFragmentCallback for when an item has been selected.
 		 */
-		public void onItemSelected(String date);
+		public void onFavouriteItemSelected(String date);
 	}
 
 	@Override
@@ -153,21 +153,6 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 		mListView = (SwipeMenuListView) rootView.findViewById(android.R.id.list);
 		mListView.setAdapter(mTweetFavListAdapter);
 		mListView.setMenuCreator(creator);
-		mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-			@Override
-			public void onItemClick(AdapterView<?> adapterView, View view, int position, long rowId)
-			{
-				// Do the onItemClick action
-				Cursor cursor = mTweetFavListAdapter.getCursor();
-				if (cursor != null && cursor.moveToPosition(position))
-				{
-					((onItemSelectedCallback) getActivity()).onItemSelected(cursor.getString(COL_TWEETFAV_TEXT_DATE));
-					Log.d("ROWSELECT", "" + rowId);
-				}
-				mPosition = position;
-			}
-		});
 		mListView.setOnItemLongClickListener(new OnItemLongClickListener() {
 
 			@Override
@@ -176,7 +161,7 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 				// Do the onItemLongClick action
 				mListView.smoothOpenMenu(position);
 
-				return false;
+				return true;
 			}
 		});
 		mListView.setOnMenuItemClickListener(new OnMenuItemClickListener() {
@@ -240,7 +225,19 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 		super.onSaveInstanceState(outState);
 	}
 
-
+	@Override
+	public void onListItemClick(ListView lv, View view, int position, long rowId)
+	{
+		super.onListItemClick(lv, view, position, rowId);
+		// Do the onItemClick action
+		Cursor cursor = mTweetFavListAdapter.getCursor();
+		if (cursor != null && cursor.moveToPosition(position))
+		{
+			((onFavouriteItemSelectedCallback) getActivity()).onFavouriteItemSelected(cursor.getString(COL_TWEETFAV_TEXT_DATE));
+		}
+		mPosition = position;
+		Log.d("ROWSELECT", "" + rowId);
+	}
 
 	@Override
 	public Loader<Cursor> onCreateLoader(int id, Bundle args) {
@@ -263,8 +260,7 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 	}
 
 	@Override
-	public void onLoadFinished(Loader<Cursor> loader, Cursor data)
-	{
+	public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
 		mTweetFavListAdapter.swapCursor(data);
 		if (mPosition != ListView.INVALID_POSITION)
 		{
