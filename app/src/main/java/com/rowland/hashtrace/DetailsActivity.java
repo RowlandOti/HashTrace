@@ -36,24 +36,25 @@ public class DetailsActivity extends ActionBarActivity {
 				return;
 			}
 		}
-		showTweetDetail();
+		showTweetDetailFragment();
 	}
 
-	private void showTweetDetail()
+	private void showTweetDetailFragment()
 	{
 		FragmentManager fm = getSupportFragmentManager();
 
 		FragmentTransaction ft = fm.beginTransaction();
 
-		ft.add(R.id.fragment_container, DetailsFragment.newInstance("", ""));
-		ft.commit();
+		DetailsFragment fragment =  DetailsFragment.newInstance("", "");
 
+		ft.add(R.id.fragment_container, fragment);
+		ft.commit();
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)
 	{
-		getMenuInflater().inflate(R.menu.details_activity, menu);
+		getMenuInflater().inflate(R.menu.menu_detailsactivity, menu);
 
 		return true;
 	}

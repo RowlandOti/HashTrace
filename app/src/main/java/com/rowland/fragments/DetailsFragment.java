@@ -10,16 +10,26 @@ import com.rowland.hashtrace.R;
 
 public class DetailsFragment extends Fragment {
 
+    private static DetailsFragment fragmentInstance = null;
+    private final String LOG_TAG = DetailsFragment.class.getSimpleName();
+
+    // TODO: Rename and change types of parameters
     public static DetailsFragment newInstance(String param1, String param2)
     {
-        DetailsFragment fragment = new DetailsFragment();
+        if(fragmentInstance != null)
+        {
+            return fragmentInstance;
+        }
+        else
+        {
+            Bundle args = new Bundle();
+            args.putString("", param1);
+            args.putString("", param2);
 
-        Bundle args = new Bundle();
-        args.putString("", param1);
-        args.putString("", param2);
-        fragment.setArguments(args);
-
-        return fragment;
+            fragmentInstance = new DetailsFragment();
+            fragmentInstance.setArguments(args);
+            return fragmentInstance;
+        }
     }
 
     public DetailsFragment()

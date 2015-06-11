@@ -16,7 +16,7 @@
     <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
     <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -24,7 +24,7 @@
         android:label="@string/app_name"
         android:theme="@style/CustomTheme" >
         <activity
-            android:name="com.rowland.hashtrace.HashTraceActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,19 +32,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
+            android:name=".SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:name="com.rowland.hashtrace.SettingsActivity"
-            android:parentActivityName="com.rowland.hashtrace.HashTraceActivity" >
+            android:parentActivityName=".HashTraceActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.rowland.hashtrace.HashTraceActivity" />
         </activity>
-         <activity
-            android:label="@string/title_activity_details"
+        <activity
             android:name=".DetailsActivity"
-            android:parentActivityName="com.rowland.hashtrace.HashTraceActivity" >
+            android:label="@string/title_activity_details"
+            android:parentActivityName=".HashTraceActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.rowland.hashtrace.HashTraceActivity" />
@@ -78,6 +77,7 @@
                 android:name="android.content.SyncAdapter"
                 android:resource="@xml/syncadapter" />
         </service>
+
     </application>
 
 </manifest>

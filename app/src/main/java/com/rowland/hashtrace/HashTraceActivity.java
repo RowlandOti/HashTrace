@@ -10,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.astuetz.PagerSlidingTabStrip;
-import com.rowland.adapters.SwipePagerAdapter;
+import com.rowland.adapters.SmartFragmentPagerAdapter;
 import com.rowland.fragments.FavouriteListFragment;
 import com.rowland.fragments.TweetListFragment;
 import com.rowland.sync.TweetHashTracerSyncAdapter;
@@ -33,7 +33,7 @@ public class HashTraceActivity extends ActionBarActivity implements TweetListFra
 
 		// Initialize the ViewPager and set an adapter
 		pager = (ViewPager) findViewById(R.id.pager);
-		pager.setAdapter(new SwipePagerAdapter(getSupportFragmentManager()));
+		pager.setAdapter(new SmartFragmentPagerAdapter(getSupportFragmentManager()));
 		pager.setOnPageChangeListener(onPageChangeListener);
 
 		addPageSlidingTabs();
@@ -80,8 +80,7 @@ public class HashTraceActivity extends ActionBarActivity implements TweetListFra
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)
 	{
-
-		getMenuInflater().inflate(R.menu.hash_trace, menu);
+		getMenuInflater().inflate(R.menu.menu_hashtraceactivity, menu);
 		return true;
 	}
 

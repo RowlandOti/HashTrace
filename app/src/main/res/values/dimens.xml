@@ -15,6 +15,7 @@
     <dimen name="tweet_item_status_pad_left_right">10dp</dimen>
     <dimen name="tweet_item_status_pad_top">1dp</dimen>
     <dimen name="tweet_item_profile_pic">50dp</dimen>
+    <dimen name="tweet_item_profile_padding">3dp</dimen>
     <dimen name="tweet_item_profile_info_padd">10dp</dimen>
     <dimen name="tweet_item_profile_name">15sp</dimen>
     <dimen name="tweet_item_timestamp">13sp</dimen>

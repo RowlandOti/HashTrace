@@ -31,12 +31,22 @@
                 android:paddingBottom="5dp"
                 android:paddingTop="5dp">
 
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/tweet_item_picture_marginTopBottom"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/remove_placeholder_user" />
+                    android:background="@drawable/border_rectangle_unsolid_orange">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:paddingLeft="@dimen/tweet_item_profile_padding"
+                        android:paddingRight="@dimen/tweet_item_profile_padding"
+                        android:paddingTop="@dimen/tweet_item_profile_padding"
+                        android:paddingBottom="@dimen/tweet_item_profile_padding"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/remove_placeholder_user"/>
+                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/informations_container"
@@ -86,14 +96,14 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/tweet_item_selected_marginTopBottom"
                 android:layout_marginLeft="@dimen/tweet_item_selected_marginLeftRight"
                 android:layout_marginRight="@dimen/tweet_item_selected_marginLeftRight"
                 android:layout_marginTop="@dimen/tweet_item_selected_marginTopBottom"
-                android:layout_marginBottom="@dimen/tweet_item_selected_marginTopBottom"
-                android:paddingBottom="3dp"
-                android:paddingLeft="3dp"
+                android:background="@drawable/border_rectangle_unsolid_rounded"
                 android:orientation="vertical"
-                android:background="@drawable/border_rectangle_unsolid_rounded">
+                android:paddingBottom="3dp"
+                android:paddingLeft="3dp">
 
                 <TextView
                     android:id="@+id/tweet_text"
@@ -120,15 +130,15 @@
                             android:id="@+id/icon_favourite"
                             android:layout_width="@dimen/tweet_item_favourite_icon"
                             android:layout_height="@dimen/tweet_item_favourite_icon"
-                            android:src="@drawable/ic_action_favorites"
-                            android:scaleType="fitCenter" />
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_action_favorites" />
 
                         <TextView
                             android:id="@+id/tweet_text_favourite_count"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/apptheme_color"
                             android:text="50"
+                            android:textColor="@color/apptheme_color"
                             android:textSize="@dimen/tweet_item_favourite_count" />
                     </LinearLayout>
 
@@ -142,8 +152,8 @@
                             android:id="@+id/icon_retweet"
                             android:layout_width="@dimen/tweet_item_retweet_icon"
                             android:layout_height="@dimen/tweet_item_retweet_icon"
-                            android:src="@drawable/ic_action_retweet"
-                            android:scaleType="fitCenter" />
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_action_retweet" />
 
                         <TextView
                             android:id="@+id/tweet_text_retweet_count"
@@ -153,28 +163,29 @@
                             android:textColor="@color/apptheme_color"
                             android:textSize="@dimen/tweet_item_retweet_count" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        >
+                        android:orientation="horizontal">
+
                         <TextView
                             android:id="@+id/tweet_fav"
-                            android:paddingRight="@dimen/tweet_info_padding_left_right"
-                            android:paddingLeft="@dimen/tweet_info_padding_left_right"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/border_rectangle_rounded"
+                            android:paddingLeft="@dimen/tweet_info_padding_left_right"
+                            android:paddingRight="@dimen/tweet_info_padding_left_right"
                             android:text="Favoured"
                             android:textColor="@color/apptheme_color"
-                            android:textSize="@dimen/tweet_item_retweet_count"
-                            />
+                            android:textSize="@dimen/tweet_item_retweet_count" />
+
                         <TextView
                             android:id="@+id/tweet_hashtag"
-                            android:paddingRight="@dimen/tweet_info_padding_left_right"
-                            android:paddingLeft="@dimen/tweet_info_padding_left_right"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/tweet_info_padding_left_right"
+                            android:paddingRight="@dimen/tweet_info_padding_left_right"
                             android:text="#Football"
                             android:textColor="@color/apptheme_color"
                             android:textSize="@dimen/tweet_item_retweet_count" />

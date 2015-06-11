@@ -122,6 +122,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		public void onTweetItemSelected(String date);
 	}
 
+
 	@Override
 	public void onCreate(Bundle savedInstanceState)
 	{

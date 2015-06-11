@@ -24,12 +24,17 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:background="@drawable/border_rectangle_unsolid_orange">
 
                 <ImageView
                     android:id="@+id/profile_pic"
                     android:layout_width="@dimen/tweet_item_profile_pic"
                     android:layout_height="@dimen/tweet_item_profile_pic"
+                    android:paddingLeft="@dimen/tweet_item_profile_padding"
+                    android:paddingRight="@dimen/tweet_item_profile_padding"
+                    android:paddingTop="@dimen/tweet_item_profile_padding"
+                    android:paddingBottom="@dimen/tweet_item_profile_padding"
                     android:scaleType="fitCenter"
                     android:visibility="gone" />
             </LinearLayout>
