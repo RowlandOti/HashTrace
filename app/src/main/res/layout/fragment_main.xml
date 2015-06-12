@@ -14,7 +14,7 @@
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/tabsAdd">
+        android:layout_below="@+id/slidingTabStrips">
     </android.support.v4.view.ViewPager>
 
 </RelativeLayout>

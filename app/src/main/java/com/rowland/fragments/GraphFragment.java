@@ -38,7 +38,7 @@ import lecho.lib.hellocharts.view.ColumnChartView;
  */
 public class GraphFragment extends Fragment implements LoaderCallbacks<Cursor> {
 
-	private static final int TWEETGRAPH_LOADER = 3;
+	private static final int TWEETGRAPH_LOADER = 2;
 
 
 	// Specify the columns we need for projection.

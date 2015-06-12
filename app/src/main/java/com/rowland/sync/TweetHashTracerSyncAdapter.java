@@ -129,6 +129,7 @@ public class TweetHashTracerSyncAdapter extends AbstractThreadedSyncAdapter {
 			String user_name = tweet.getUserName();
 			String user_image_url = tweet.getUserImageUrl();
 			String user_location = tweet.getUserLocation();
+			String user_description = tweet.getUserDescription();
 
 			ContentValues tweetValues = new ContentValues();
 
@@ -142,6 +143,7 @@ public class TweetHashTracerSyncAdapter extends AbstractThreadedSyncAdapter {
 			tweetValues.put(TweetEntry.COLUMN_TWEET_USERNAME, user_name);
 			tweetValues.put(TweetEntry.COLUMN_TWEET_USERNAME_IMAGE_URL, user_image_url);
 			tweetValues.put(TweetEntry.COLUMN_TWEET_USERNAME_LOCATION, user_location);
+			tweetValues.put(TweetEntry.COLUMN_TWEET_USERNAME_DESCRIPTION, user_description);
 
 			cVVector.add(tweetValues);
 		}
@@ -178,12 +180,6 @@ public class TweetHashTracerSyncAdapter extends AbstractThreadedSyncAdapter {
 	 *
 	 * @param hashTagSetting
 	 *            The hashtag string used to request updates from the server.
-	 * @param cityName
-	 *            A human-readable city name, e.g "Mountain View"
-	 * @param lat
-	 *            the latitude of the city
-	 * @param lon
-	 *            the longitude of the city
 	 * @return the row ID of the added location.
 	 */
 	private long addHashTag(String hashTagSetting, String hashTagName)

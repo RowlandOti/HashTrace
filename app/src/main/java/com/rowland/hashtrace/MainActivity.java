@@ -1,5 +1,6 @@
 package com.rowland.hashtrace;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -8,14 +9,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.rowland.fragments.DetailsFragment;
+import com.rowland.fragments.FavouriteListFragment;
 import com.rowland.fragments.MainFragment;
+import com.rowland.fragments.TweetListFragment;
 import com.rowland.sync.TweetHashTracerSyncAdapter;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements MainFragment.onMainFragmentItemSelectedCallback, TweetListFragment.onTweetItemSelectedCallback, FavouriteListFragment.onFavouriteItemSelectedCallback{
 
-    private String[] TITLES = { "HOME", "ARCHIVE", "GRAPH" };
-    private int[] ICONS = {R.drawable.ic_action_home, R.drawable.ic_action_labels, R.drawable.ic_action_graph};
     private final String LOG_TAG = MainActivity.class.getSimpleName();
     private boolean mTwoPane;
 
@@ -41,9 +42,7 @@ public class MainActivity extends ActionBarActivity {
             // adding or replacing the detail fragment using a fragment transaction.
             else
             {
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.detail_container, new DetailsFragment())
-                        .commit();
+                showDetailFragment(null);
             }
         }
         else
@@ -51,18 +50,26 @@ public class MainActivity extends ActionBarActivity {
             mTwoPane = false;
         }
 
-        showMainFragment();
+        showMainFragment(null);
         TweetHashTracerSyncAdapter.initializeSyncAdapter(this);
     }
 
-    private void showMainFragment()
+    private void showDetailFragment(Bundle args)
+    {
+        DetailsFragment fragment = DetailsFragment.newInstance(args);
+
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.detail_container, fragment)
+                .commit();
+    }
+
+    private void showMainFragment(Bundle args)
     {
         FragmentManager fm = getSupportFragmentManager();
 
         FragmentTransaction ft = fm.beginTransaction();
 
-        MainFragment fragment = MainFragment.newInstance("", "");
-        //fragment.setUseTodayLayout(!mTwoPane);
+        MainFragment fragment = MainFragment.newInstance(args);
 
         ft.add(R.id.fragment_container, fragment);
         ft.commit();
@@ -70,36 +77,70 @@ public class MainActivity extends ActionBarActivity {
 
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_mainactivity, menu);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        switch (item.getItemId())
+        {
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+            case R.id.action_settings:
+            {
+                startActivity(new Intent(this, SettingsActivity.class));
+
+                return true;
+            }
+
+            default: {
+                return super.onOptionsItemSelected(item);
+            }
+
+        }
+    }
+
+    @Override
+    public void onMainFragmentItemSelected(String date)
+    {
+
+    }
+
+    @Override
+    public void onFavouriteItemSelected(String date)
+    {
+        itemIsClicked(date);
+    }
+
+    @Override
+    public void onTweetItemSelected(String date)
+    {
+        itemIsClicked(date);
+    }
+
+    private void itemIsClicked(String date)
+    {
+        if (mTwoPane)
+        {
+            // In two-pane mode, show the detail view in this activity by adding or replacing the
+            // detail fragment using a fragment transaction.
+            Bundle args = new Bundle();
+            args.putString(DetailsFragment.DATE_KEY, date);
+
+            showDetailFragment(args);
+        }
+        else
+        {
+            Intent intent = new Intent(this, DetailsActivity.class).putExtra(DetailsFragment.DATE_KEY, date);
+            startActivity(intent);
         }
 
-        return super.onOptionsItemSelected(item);
-    }
-
-    public String[] getTITLES() {
-        return TITLES;
-    }
-
-    public void setTITLES(String[] tITLES) {
-        TITLES = tITLES;
-    }
-
-    public int[] getIcons() {
-        return ICONS;
     }
 }

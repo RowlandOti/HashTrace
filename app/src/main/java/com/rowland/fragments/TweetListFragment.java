@@ -89,8 +89,9 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		TweetEntry.COLUMN_TWEET_USERNAME,				//8
 		TweetEntry.COLUMN_TWEET_USERNAME_IMAGE_URL,		//9
 		TweetEntry.COLUMN_TWEET_USERNAME_LOCATION,		//10
-		TweetEntry.COLUMN_TWEET_FAVOURITED_STATE,		//11
-		HashTagEntry.COLUMN_HASHTAG_NAME 				//12
+	    TweetEntry.COLUMN_TWEET_USERNAME_DESCRIPTION,	//11
+		TweetEntry.COLUMN_TWEET_FAVOURITED_STATE,		//12
+		HashTagEntry.COLUMN_HASHTAG_NAME 				//13
 	};
 
 	// These indices are tied to TWEET_COLUMNS and must match for projection
@@ -105,8 +106,9 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 	public static final int COL_TWEET_USERNAME = 8;
 	public static final int COL_TWEET_USERNAME_IMAGE_URL = 9;
 	public static final int COL_TWEET_USERNAME_LOCATION = 10;
-	public static final int COL_TWEET_TWEET_FAVOURITED_STATE = 11;
-	public static final int COL_HASHTAG_NAME = 12;
+	public static final int COL_TWEET_USERNAME_DESCRIPTION = 11;
+	public static final int COL_TWEET_TWEET_FAVOURITED_STATE = 12;
+	public static final int COL_HASHTAG_NAME = 13;
 
 
 	/**
@@ -191,7 +193,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		        // set item width
 		        shareItem.setWidth(Utility.convertDpToPixel(100, getResources().getDisplayMetrics()));
 		        // set icon resource
-		        shareItem.setIcon(R.drawable.ic_action_share);
+		        shareItem.setIcon(R.drawable.selector_swipemenuitem_share);
 		        // set item title
 		        shareItem.setTitle("Share");
 		        // set item title fontsize
@@ -208,7 +210,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		        // set item width
 		        favourItem.setWidth(Utility.convertDpToPixel(100, getResources().getDisplayMetrics()));
 		        // set icon resource
-		        favourItem.setIcon(R.drawable.ic_action_favorite);
+		        favourItem.setIcon(R.drawable.selector_swipemenuitem_favorite);
 		        // set item title
 		        favourItem.setTitle("Like");
 		        // set item title fontsize
@@ -420,7 +422,6 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		Cursor cursor = mTweetListAdapter.getCursor();
 
 		int hash_tag_id = cursor.getInt(COL_HASHTAG_KEY);
-		//long tweet_id = cursor.getInt(COL_TWEET_ID);
 		long tweet_id = cursor.getLong(COL_TWEET_ID);
 		String tweet_text = cursor.getString(COL_TWEET_TEXT);
 		String tweet_text_date = cursor.getString(COL_TWEET_TEXT_DATE);
@@ -430,6 +431,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		String tweet_user_name = cursor.getString(COL_TWEET_USERNAME);
 		String tweet_user_name_image_url = cursor.getString(COL_TWEET_USERNAME_IMAGE_URL);
 		String tweet_user_name_location = cursor.getString(COL_TWEET_USERNAME_LOCATION);
+		String tweet_user_name_description = cursor.getString(COL_TWEET_USERNAME_DESCRIPTION);
 
 		ContentValues tweetFavValues = new ContentValues();
 		ContentValues tweetValues = new ContentValues();
@@ -444,6 +446,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		tweetFavValues.put(TweetFavEntry.COLUMN_TWEETFAV_USERNAME, tweet_user_name);
 		tweetFavValues.put(TweetFavEntry.COLUMN_TWEETFAV_USERNAME_IMAGE_URL, tweet_user_name_image_url);
 		tweetFavValues.put(TweetFavEntry.COLUMN_TWEETFAV_USERNAME_LOCATION, tweet_user_name_location);
+		tweetFavValues.put(TweetFavEntry.COLUMN_TWEETFAV_USERNAME_DESCRIPTION, tweet_user_name_location);
 
 
 		tweetValues.put(TweetEntry.COLUMN_TWEET_FAVOURITED_STATE, 1);

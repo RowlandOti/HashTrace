@@ -262,7 +262,9 @@ public class Utility {
 
 		String user_location = user.getLocation();
 
-		Tweet tweet = new Tweet(tweet_id, tweet_text, tweet_text_date, tweet_retweet_count,tweet_favourite_count,tweet_mentions_count, user_name, user_image_url, user_location);
+		String user_description = user.getDescription();
+
+		Tweet tweet = new Tweet(tweet_id, tweet_text, tweet_text_date, tweet_retweet_count,tweet_favourite_count,tweet_mentions_count, user_name, user_image_url, user_location, user_description);
 
 		return tweet;
 	}

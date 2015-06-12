@@ -1,8 +1,12 @@
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fragment_container"
-    android:name="com.rowland.fragments.MainFragment"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.rowland.hashtrace.MainFragment"
-    tools:ignore="MergeRootFrame" />
+    <!--
+    This layout is a two-pane layout for the Items master/detail flow.
+    -->
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragment_container"
+        android:name="com.rowland.fragments.MainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.rowland.hashtrace.MainFragment"
+        tools:ignore="MergeRootFrame" />

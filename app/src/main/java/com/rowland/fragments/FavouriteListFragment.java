@@ -119,7 +119,7 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 		        // set item width
 		        shareItem.setWidth(Utility.convertDpToPixel(100, getResources().getDisplayMetrics()));
 		        // set icon resource
-		        shareItem.setIcon(R.drawable.ic_action_share);
+		        shareItem.setIcon(R.drawable.selector_swipemenuitem_share);
 		        // set item title
 		        shareItem.setTitle("Share");
 		        // set item title fontsize
@@ -136,7 +136,7 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 		        // set item width
 		        favourItem.setWidth(Utility.convertDpToPixel(100, getResources().getDisplayMetrics()));
 		        // set icon resource
-		        favourItem.setIcon(R.drawable.ic_action_discard);
+		        favourItem.setIcon(R.drawable.selector_swipemenuitem_discard);
 		        // set item title
 		        favourItem.setTitle("Delete");
 		        // set item title fontsize

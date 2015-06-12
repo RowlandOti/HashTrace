@@ -11,6 +11,7 @@ import android.view.MenuItem;
 
 import com.astuetz.PagerSlidingTabStrip;
 import com.rowland.adapters.SmartFragmentPagerAdapter;
+import com.rowland.fragments.DetailsFragment;
 import com.rowland.fragments.FavouriteListFragment;
 import com.rowland.fragments.TweetListFragment;
 import com.rowland.sync.TweetHashTracerSyncAdapter;
@@ -108,13 +109,13 @@ public class HashTraceActivity extends ActionBarActivity implements TweetListFra
 	@Override
 	public void onFavouriteItemSelected(String date)
 	{
-		Intent intent = new Intent(this, DetailsActivity.class).putExtra(DetailsActivity.DATE_KEY, date);
+		Intent intent = new Intent(this, DetailsActivity.class).putExtra(DetailsFragment.DATE_KEY, date);
 		startActivity(intent);
 	}
 	@Override
 	public void onTweetItemSelected(String date)
 	{
-		Intent intent = new Intent(this, DetailsActivity.class).putExtra(DetailsActivity.DATE_KEY, date);
+		Intent intent = new Intent(this, DetailsActivity.class).putExtra(DetailsFragment.DATE_KEY, date);
 		startActivity(intent);
 	}
 

@@ -55,6 +55,7 @@ public class TweetPatch {
 			+ TweetEntry.COLUMN_TWEET_USERNAME + " TEXT NOT NULL, "
 			+ TweetEntry.COLUMN_TWEET_USERNAME_IMAGE_URL + " TEXT NOT NULL, "
 			+ TweetEntry.COLUMN_TWEET_USERNAME_LOCATION + " TEXT NOT NULL, "
+			+ TweetEntry.COLUMN_TWEET_USERNAME_DESCRIPTION + " TEXT NOT NULL, "
 			+ TweetEntry.COLUMN_TWEET_FAVOURITED_STATE + " INTEGER NOT NULL default 0, "
 			+
 			// Set up the hashtag column as a foreign key to location table.
@@ -95,6 +96,7 @@ public class TweetPatch {
 			+ TweetFavEntry.COLUMN_TWEETFAV_USERNAME + " TEXT NOT NULL, "
 			+ TweetFavEntry.COLUMN_TWEETFAV_USERNAME_IMAGE_URL + " TEXT NOT NULL, "
 			+ TweetFavEntry.COLUMN_TWEETFAV_USERNAME_LOCATION + " TEXT NOT NULL, "
+			+ TweetFavEntry.COLUMN_TWEETFAV_USERNAME_DESCRIPTION + " TEXT NOT NULL, "
 			+
 			// Set up the hashtag column as a foreign key to location table.
 			" FOREIGN KEY (" + TweetFavEntry.COLUMN_HASHTAG_KEY

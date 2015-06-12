@@ -20,11 +20,13 @@ public class Tweet {
 	private String user_name;
 	private String user_image_url;
 	private String user_location;
+
+	private String user_description;
 	private int tweet_retweet_count;
 	private int tweet_favourite_count;
 	private int tweet_mentions_count;
 
-	public Tweet(long tweetId, String tweetText, Date tweetTextDate, int tweet_retweet_count, int tweet_favourite_count, int tweet_mentions_count, String userName, String userImageUrl, String userLocation)
+	public Tweet(long tweetId, String tweetText, Date tweetTextDate, int tweet_retweet_count, int tweet_favourite_count, int tweet_mentions_count, String userName, String userImageUrl, String userLocation, String user_description)
 	{
 		this.tweet_id = tweetId;
 		this.tweet_text = tweetText;
@@ -35,6 +37,7 @@ public class Tweet {
 		this.user_name = userName;
 		this.user_image_url = userImageUrl;
 		this.user_location = userLocation;
+		this.user_description = user_description;
 	}
 
 	public long getTweetId()
@@ -81,4 +84,6 @@ public class Tweet {
 	{
 		return user_location;
 	}
+
+	public String getUserDescription() { return user_description; }
 }

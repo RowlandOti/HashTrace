@@ -28,7 +28,7 @@ public class MainFragment extends Fragment {
     private int[] ICONS = {R.drawable.ic_action_home, R.drawable.ic_action_labels, R.drawable.ic_action_graph};
 
     // TODO: Rename and change types of parameters
-    public static MainFragment newInstance(String param1, String param2)
+    public static MainFragment newInstance(Bundle args)
     {
         if(fragmentInstance != null)
         {
@@ -36,20 +36,20 @@ public class MainFragment extends Fragment {
         }
         else
         {
-            Bundle args = new Bundle();
-            args.putString("", param1);
-            args.putString("", param2);
-
             fragmentInstance = new MainFragment();
-            fragmentInstance.setArguments(args);
+            if(args != null)
+            {
+                fragmentInstance.setArguments(args);
+            }
             return fragmentInstance;
         }
     }
 
     public MainFragment()
     {
-
+        setRetainInstance(true);
     }
+
 
     /**
      * A callback interface that all activities containing this fragment must
@@ -75,7 +75,7 @@ public class MainFragment extends Fragment {
     {
         super.onActivityCreated(savedInstanceState);
 
-        //View detailsFrame = context.findViewById(R.id.details_fragment);
+        //View detailsFrame = getActivity().findViewById(R.id.fragment_container);
 
         // Initialize the ViewPager and set an Adapter: pass data, etc.
         this.pagerAdapter = new SmartNestedViewPagerAdapter((getActivity().getSupportFragmentManager()));
@@ -118,6 +118,21 @@ public class MainFragment extends Fragment {
         @Override
         public void onPageScrollStateChanged(int arg0) {}
     };
+
+    public String[] getTITLES()
+    {
+        return TITLES;
+    }
+
+    public void setTITLES(String[] tITLES)
+    {
+        TITLES = tITLES;
+    }
+
+    public int[] getIcons()
+    {
+        return ICONS;
+    }
 
 
 }

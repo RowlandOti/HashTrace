@@ -139,6 +139,8 @@ public class TweetHashTracerContract {
 		public static final String COLUMN_TWEET_USERNAME_IMAGE_URL = "tweet_username_image_url";
         // User location
 		public static final String COLUMN_TWEET_USERNAME_LOCATION = "tweet_username_location";
+		// User Description
+		public static final String COLUMN_TWEET_USERNAME_DESCRIPTION = "tweet_username_description";
         // Is Tweet Favourite
 		public static final String COLUMN_TWEET_FAVOURITED_STATE = "tweet_favoured_state";
 
@@ -211,6 +213,8 @@ public class TweetHashTracerContract {
 		public static final String COLUMN_TWEETFAV_USERNAME_IMAGE_URL = "tweetfav_username_image_url";
 		// User location
 		public static final String COLUMN_TWEETFAV_USERNAME_LOCATION = "tweetfav_username_location";
+		// User Description
+		public static final String COLUMN_TWEETFAV_USERNAME_DESCRIPTION = "tweetfav_username_description";
 
 
 		public static Uri buildTweetFavUri(long id)

@@ -6,15 +6,15 @@ import android.support.v4.app.FragmentManager;
 import com.astuetz.PagerSlidingTabStrip;
 import com.rowland.fragments.FavouriteListFragment;
 import com.rowland.fragments.GraphFragment;
+import com.rowland.fragments.MainFragment;
 import com.rowland.fragments.TweetListFragment;
-import com.rowland.hashtrace.MainActivity;
 
 /**
  * Created by Rowland on 6/11/2015.
  */
 public class SmartNestedViewPagerAdapter extends SmartFragmentStatePagerAdapter implements PagerSlidingTabStrip.IconTabProvider {
 
-    private MainActivity ht = new MainActivity();
+    private MainFragment ht = new MainFragment();
 
     public SmartNestedViewPagerAdapter(FragmentManager fm)
     {

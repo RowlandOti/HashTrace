@@ -16,8 +16,6 @@ import com.rowland.fragments.DetailsFragment;
  */
 public class DetailsActivity extends ActionBarActivity {
 
-	public static final String DATE_KEY = "tweet_text_date";
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -35,17 +33,27 @@ public class DetailsActivity extends ActionBarActivity {
 			{
 				return;
 			}
+			// Create the detail fragment and add it to the activity
+			// using a fragment transaction.
+			else
+			{
+				String date = getIntent().getStringExtra(DetailsFragment.DATE_KEY);
+
+				Bundle args = new Bundle();
+				args.putString(DetailsFragment.DATE_KEY, date);
+				showTweetDetailFragment(args);
+			}
 		}
-		showTweetDetailFragment();
+
 	}
 
-	private void showTweetDetailFragment()
+	private void showTweetDetailFragment(Bundle args)
 	{
 		FragmentManager fm = getSupportFragmentManager();
 
 		FragmentTransaction ft = fm.beginTransaction();
 
-		DetailsFragment fragment =  DetailsFragment.newInstance("", "");
+		DetailsFragment fragment =  DetailsFragment.newInstance(args);
 
 		ft.add(R.id.fragment_container, fragment);
 		ft.commit();

@@ -38,6 +38,7 @@
                     android:background="@drawable/border_rectangle_unsolid_orange">
 
                     <ImageView
+                        android:id="@+id/user_profile_pic"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:paddingLeft="@dimen/tweet_item_profile_padding"
@@ -45,8 +46,20 @@
                         android:paddingTop="@dimen/tweet_item_profile_padding"
                         android:paddingBottom="@dimen/tweet_item_profile_padding"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/remove_placeholder_user"/>
+                        android:visibility="gone"
+                        />
                 </LinearLayout>
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dip"
+                    android:indeterminate="true"
+                    android:maxHeight="30dip"
+                    android:maxWidth="30dip"
+                    android:minHeight="30dip"
+                    android:minWidth="30dip" />
 
                 <LinearLayout
                     android:id="@+id/informations_container"
@@ -57,7 +70,7 @@
 
 
                     <TextView
-                        android:id="@+id/name"
+                        android:id="@+id/user_profile_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Rowland Mtetezi"
@@ -65,29 +78,21 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/work_at"
+                        android:id="@+id/user_profile_description"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:gravity="center"
-                        android:text="Skyllable Ventures"
+                        android:text="Benevolent dictator at Skyllable Ventures"
                         android:textColor="#FF707070" />
 
                     <TextView
-                        android:id="@+id/study_at"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:gravity="center"
-                        android:text="University of Nairobi"
-                        android:textColor="#FF707070" />
-
-                    <TextView
-                        android:id="@+id/live_at"
+                        android:id="@+id/location_at"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:text="Konza City"
+                        android:maxLines="1"
                         android:textColor="#FF909090" />
 
                 </LinearLayout>
@@ -189,6 +194,15 @@
                             android:text="#Football"
                             android:textColor="@color/apptheme_color"
                             android:textSize="@dimen/tweet_item_retweet_count" />
+
+                        <TextView
+                            android:id="@+id/tweet_text_date"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/tweet_info_padding_left_right"
+                            android:text="2 minutes ago"
+                            android:textColor="@color/apptheme_color_grey"
+                            android:textSize="@dimen/tweet_item_timestamp" />
 
                     </LinearLayout>
                 </LinearLayout>
