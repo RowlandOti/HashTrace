@@ -30,19 +30,19 @@ public class MainFragment extends Fragment {
     // TODO: Rename and change types of parameters
     public static MainFragment newInstance(Bundle args)
     {
-        if(fragmentInstance != null)
+        /*if(fragmentInstance != null)
         {
             return fragmentInstance;
         }
         else
-        {
+        {*/
             fragmentInstance = new MainFragment();
             if(args != null)
             {
                 fragmentInstance.setArguments(args);
             }
             return fragmentInstance;
-        }
+       // }
     }
 
     public MainFragment()

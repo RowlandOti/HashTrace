@@ -73,7 +73,6 @@
                         android:id="@+id/user_profile_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Rowland Mtetezi"
                         android:textSize="17sp"
                         android:textStyle="bold" />
 
@@ -84,7 +83,6 @@
                         android:layout_marginTop="4dp"
                         android:maxLines="2"
                         android:gravity="center"
-                        android:text="Benevolent dictator at Skyllable Ventures"
                         android:textColor="#FF707070" />
 
                     <TextView
@@ -92,7 +90,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Konza City"
                         android:maxLines="1"
                         android:textColor="#FF909090" />
 
@@ -118,7 +115,6 @@
                     android:maxLength="140"
                     android:paddingBottom="@dimen/tweet_item_status_padTopBottom"
                     android:paddingTop="@dimen/tweet_item_status_padTopBottom"
-                    android:text="The man you must truly repay can never collect his debt. If, and I say if this is true, I will rectify it"
                     android:textColor="@color/tweet_text_color" />
 
                 <LinearLayout
@@ -143,7 +139,6 @@
                             android:id="@+id/tweet_text_favourite_count"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="50"
                             android:textColor="@color/apptheme_color"
                             android:textSize="@dimen/tweet_item_favourite_count" />
                     </LinearLayout>
@@ -165,7 +160,6 @@
                             android:id="@+id/tweet_text_retweet_count"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="100"
                             android:textColor="@color/apptheme_color"
                             android:textSize="@dimen/tweet_item_retweet_count" />
                     </LinearLayout>
@@ -192,7 +186,6 @@
                             android:layout_height="wrap_content"
                             android:paddingLeft="@dimen/tweet_info_padding_left_right"
                             android:paddingRight="@dimen/tweet_info_padding_left_right"
-                            android:text="#Football"
                             android:textColor="@color/apptheme_color"
                             android:textSize="@dimen/tweet_item_retweet_count" />
 
@@ -201,7 +194,6 @@
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
                             android:paddingLeft="@dimen/tweet_info_padding_left_right"
-                            android:text="2 minutes ago"
                             android:textColor="@color/apptheme_color_grey"
                             android:textSize="@dimen/tweet_item_timestamp" />
 

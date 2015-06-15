@@ -9,6 +9,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.rowland.data.TweetHashTracerContract.HashTagEntry;
 import com.rowland.data.TweetHashTracerContract.TweetEntry;
@@ -263,12 +264,12 @@ public class TweetHashTracerContentProvider extends ContentProvider {
 	@Override
 	public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder)
 	{
-		final String DEFAULT_SORT_ORDER = TweetEntry._ID +" ASC";
+		/*final String DEFAULT_SORT_ORDER = TweetEntry._ID +" ASC";
 
 		if (TextUtils.isEmpty(sortOrder))
 		{
 			sortOrder = DEFAULT_SORT_ORDER;
-		}
+		}*/
 
 		// Here's the switch statement that, given a URI, will determine what
 		// kind of request it is, and query the database accordingly.

@@ -38,10 +38,10 @@ public class MainActivity extends ActionBarActivity implements MainFragment.onMa
             {
                 return;
             }
-            // In two-pane mode, show the detail view in this activity by
-            // adding or replacing the detail fragment using a fragment transaction.
             else
             {
+                // In two-pane mode, show the detail view in this activity by
+                // adding or replacing the detail fragment using a fragment transaction.
                 showDetailFragment(null);
             }
         }
@@ -56,11 +56,14 @@ public class MainActivity extends ActionBarActivity implements MainFragment.onMa
 
     private void showDetailFragment(Bundle args)
     {
+        FragmentManager fm = getSupportFragmentManager();
+
+        FragmentTransaction ft = fm.beginTransaction();
+
         DetailsFragment fragment = DetailsFragment.newInstance(args);
 
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.detail_container, fragment)
-                .commit();
+        ft.replace(R.id.detail_container, fragment)
+        .commit();
     }
 
     private void showMainFragment(Bundle args)
@@ -69,7 +72,7 @@ public class MainActivity extends ActionBarActivity implements MainFragment.onMa
 
         FragmentTransaction ft = fm.beginTransaction();
 
-        MainFragment fragment = MainFragment.newInstance(args);
+        MainFragment fragment  = MainFragment.newInstance(args);
 
         ft.add(R.id.fragment_container, fragment);
         ft.commit();
@@ -112,18 +115,18 @@ public class MainActivity extends ActionBarActivity implements MainFragment.onMa
     }
 
     @Override
-    public void onFavouriteItemSelected(int date)
+    public void onFavouriteItemSelected(int id)
     {
-        itemIsClicked(date);
+        itemIsClicked(id);
     }
 
     @Override
-    public void onTweetItemSelected(int date)
+    public void onTweetItemSelected(int id)
     {
-        itemIsClicked(date);
+        itemIsClicked(id);
     }
 
-    private void itemIsClicked(int date)
+    private void itemIsClicked(int id)
     {
         if (mTwoPane)
         {
@@ -131,13 +134,13 @@ public class MainActivity extends ActionBarActivity implements MainFragment.onMa
             // detail fragment using a fragment transaction.
             Bundle args = new Bundle();
             //args.putString(DetailsFragment.ID_KEY, date);
-            args.putInt(DetailsFragment.ID_KEY, date);
+            args.putInt(DetailsFragment.ID_KEY, id);
 
             showDetailFragment(args);
         }
         else
         {
-            Intent intent = new Intent(this, DetailsActivity.class).putExtra(DetailsFragment.ID_KEY, date);
+            Intent intent = new Intent(this, DetailsActivity.class).putExtra(DetailsFragment.ID_KEY, id);
             startActivity(intent);
         }
     }

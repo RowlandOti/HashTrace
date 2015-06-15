@@ -243,6 +243,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		mPullToRefreshListView.setEmptyView(emptyView);
 		mPullToRefreshListView.setAdapter(mTweetListAdapter);
 		mPullToRefreshListView.setMenuCreator(creator);
+		mPullToRefreshListView.setVerticalFadingEdgeEnabled(true);
 		mPullToRefreshListView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener<SwipeMenuListView>() {
 
 			@Override
@@ -252,7 +253,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 					updateTweet();
 				// Call onRefreshComplete when the list has been refreshed.
 				refreshView.onRefreshComplete();
-				mPullToRefreshListView.onRefreshComplete();
+				//mPullToRefreshListView.onRefreshComplete();
 			}
 		});
 		//This somehow refuses to work , I really have no idea why
@@ -332,6 +333,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		super.onActivityCreated(savedInstanceState);
 	}
 
+
 	@Override
 	public void onResume()
 	{
@@ -363,7 +365,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		{
 			//((onTweetItemSelectedCallback) getActivity()).onTweetItemSelected((cursor.getInt(COL_ID)));
 			((onTweetItemSelectedCallback) getActivity()).onTweetItemSelected((int)rowID);
-			//view.setSelected(true);
+			getListView().setItemChecked(position, true);;
 		}
 		mPosition = position;
 		Log.d("ROWSELECT", "" + rowID);
@@ -398,7 +400,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		{
 			// If we don't need to restart the loader, and there's a desired
 			// position to restore to, do so now.
-			mListView.smoothScrollToPosition(mPosition);
+			mPullToRefreshListView.getRefreshableView().smoothScrollToPosition(mPosition);
 		}
 		updateEmptyView();
 	}
@@ -483,6 +485,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 			}
 		}
 	}
+
 	/*public void updateViewItem(View targetView)
 	{
 		int start = mPullToRefreshListView.getFirstVisiblePosition();

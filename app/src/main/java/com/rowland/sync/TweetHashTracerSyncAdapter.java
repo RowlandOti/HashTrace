@@ -38,6 +38,7 @@ import com.rowland.utility.Utility;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Vector;
@@ -58,7 +59,7 @@ public class TweetHashTracerSyncAdapter extends AbstractThreadedSyncAdapter {
 	// 60 seconds (1 minute) * 180 = 3 hours
 	public static final int SYNC_INTERVAL = 60 * 180;
 	public static final int SYNC_FLEXTIME = SYNC_INTERVAL / 3;
-	private static final long DAY_IN_MILLIS = 1000 * 60 * 60 * 24;
+	private static final long DAY_IN_MILLIS = 1000 * 60 * 60 * 6;
 	private static final int TWEET_NOTIFICATION_ID = 3004;
 
 	private Twitter mTwitter;
@@ -78,12 +79,12 @@ public class TweetHashTracerSyncAdapter extends AbstractThreadedSyncAdapter {
 	private static final int INDEX_TWEET_USER_NAME_IMAGE_URL = 4;
 
 	@Retention(RetentionPolicy.SOURCE)
-	@IntDef({HASHTAG_STATUS_OK, HASHTAG_SERVER_DOWN, HASTAG_STATUS_SERVER_INVALID, HASHTAG_STATUS_UNKNOWN})
+	@IntDef({HASHTAG_STATUS_OK, HASHTAG_SERVER_DOWN, HASHTAG_STATUS_SERVER_INVALID, HASHTAG_STATUS_UNKNOWN})
 	public @interface HashTagStatus {}
 
 	public static final int HASHTAG_STATUS_OK = 0;
 	public static final int HASHTAG_SERVER_DOWN = 1;
-	public static final int HASTAG_STATUS_SERVER_INVALID = 2;
+	public static final int HASHTAG_STATUS_SERVER_INVALID = 2;
 	public static final int HASHTAG_STATUS_UNKNOWN = 3;
 
 	public TweetHashTracerSyncAdapter(Context context, boolean autoInitialize)
@@ -166,11 +167,11 @@ public class TweetHashTracerSyncAdapter extends AbstractThreadedSyncAdapter {
 			cVVector.toArray(cvArray);
 			int insertNo = getContext().getContentResolver().bulkInsert(TweetEntry.CONTENT_URI, cvArray);
 
-			/*Calendar cal = Calendar.getInstance(); // Get's a calendar object
-													// with the current time.
-			cal.add(Calendar.DATE, -1); // Signifies yesterday's date
-			String yesterdayDate = TweetHashTracerContract.getDbDateString(cal.getTime());
-			getContext().getContentResolver().delete(TweetEntry.CONTENT_URI, TweetEntry.COLUMN_TWEET_TEXT_DATE + " <= ?", new String[] { yesterdayDate });*/
+			// Get's a calendar object with the current time.
+			Calendar cal = Calendar.getInstance();
+			cal.add(Calendar.DATE, -3); // Signifies 3 days ago's date
+			String previousDate = TweetHashTracerContract.getDbDateString(cal.getTime(),EDbDateLimit.DATE_FORMAT_NOW_LIMIT);
+			getContext().getContentResolver().delete(TweetEntry.CONTENT_URI, TweetEntry.COLUMN_TWEET_TEXT_DATE + " <= ?", new String[] { previousDate });
 
 			notifyWeather();
 
@@ -203,9 +204,9 @@ public class TweetHashTracerSyncAdapter extends AbstractThreadedSyncAdapter {
 		// First, check if the location with this city name exists in the db
 		Cursor hashTagCursor = getContext().getContentResolver().query(
 				TweetHashTracerContract.HashTagEntry.CONTENT_URI,
-				new String[] { HashTagEntry._ID },
+				new String[]{HashTagEntry._ID},
 				HashTagEntry.COLUMN_HASHTAG_SETTING + " = ?",
-				new String[] { hashTagSetting }, null);
+				new String[]{hashTagSetting}, null);
 
 		if (hashTagCursor.moveToFirst())
 		{
@@ -257,12 +258,15 @@ public class TweetHashTracerSyncAdapter extends AbstractThreadedSyncAdapter {
 				// Last sync was more than 1 day ago, let's send a notification with the tweet.
 				String hashTagQuery = Utility.getPreferredHashTag(context);
 
-				Uri tweetUri = TweetEntry.buildTweetHashTagWithDate(hashTagQuery,TweetHashTracerContract.getDbDateString(new Date(), EDbDateLimit.DATE_FORMAT_HOUR_LIMIT));
+				// Sort order:  Ascending, by date.
+				//String sortOrder = TweetEntry.COLUMN_TWEET_TEXT_DATE + " ASC";
+
+				Uri tweetUri = TweetEntry.buildTweetHashTagWithDate(hashTagQuery,TweetHashTracerContract.getDbDateString(new Date(), EDbDateLimit.DATE_FORMAT_MINUTE_LIMIT));
 
 				// we'll query our contentProvider, as always
 				Cursor cursor = context.getContentResolver().query(tweetUri,NOTIFY_TWEET_PROJECTION, null, null, null);
 
-				if (cursor.moveToFirst())
+				if (cursor != null && cursor.moveToFirst())
 				{
 					int tweetId = cursor.getInt(INDEX_TWEET_ID);
 					String tweet_text = cursor.getString(INDEX_TWEET_TEXT);
@@ -310,6 +314,7 @@ public class TweetHashTracerSyncAdapter extends AbstractThreadedSyncAdapter {
 					editor.putLong(lastNotificationKey,System.currentTimeMillis());
 					editor.commit();
 				}
+
 			}
 		}
 

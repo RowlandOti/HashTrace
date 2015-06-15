@@ -74,23 +74,24 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
     // TODO: Rename and change types of parameters
     public static DetailsFragment newInstance(Bundle args)
     {
-        if(fragmentInstance != null)
+    /*    if(fragmentInstance != null)
         {
             if(args != null)
             {
-                fragmentInstance.setArguments(args);
+                //fragmentInstance.setArguments(args);
+                //fragmentInstance.getArguments().
             }
             return fragmentInstance;
         }
         else
-        {
+        {*/
             fragmentInstance = new DetailsFragment();
             if(args != null)
             {
                 fragmentInstance.setArguments(args);
             }
             return fragmentInstance;
-        }
+       // }
     }
 
     public DetailsFragment()
@@ -107,7 +108,7 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
         if (arguments != null)
         {
            // mDateStr = arguments.getString(DetailsFragment.DATE_KEY);
-            mTweetID = arguments.getInt(DetailsFragment.ID_KEY);
+            mTweetID = arguments.getInt(DetailsFragment.ID_KEY, 0);
             Log.w(LOG_TAG, "TWEETID:" +  mTweetID);
         }
 
@@ -182,9 +183,9 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
 
         mHashTag = Utility.getPreferredHashTag(getActivity());
        // Uri tweetForHashTagUri = TweetEntry.buildTweetHashTagWithDate(mHashTag, mDateStr);
-        Uri tweetForHashTagUri = TweetEntry.buildTweetUri(mTweetID);
+        Uri tweetForIdUri = TweetEntry.buildTweetUri(mTweetID);
 
-        CursorLoader cursorLoader = new CursorLoader(getActivity(), tweetForHashTagUri, TWEET_DETAILS_COLUMNS, null, null,sortOrder);
+        CursorLoader cursorLoader = new CursorLoader(getActivity(), tweetForIdUri, TWEET_DETAILS_COLUMNS, null, null,sortOrder);
         // Now create and return a CursorLoader that will take care of creating a Cursor for the data being displayed.
         return cursorLoader;
     }
@@ -219,6 +220,16 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
 
             int tweettext_favorite_count = data.getInt(data.getColumnIndex(TweetEntry.COLUMN_TWEET_TEXT_FAVOURITE_COUNT));
             tweet_text_favourite_count.setText(String.valueOf(tweettext_favorite_count));
+
+            int tweetfav_state = data.getInt(data.getColumnIndex(TweetEntry.COLUMN_TWEET_FAVOURITED_STATE));
+            if(data.getString(data.getColumnIndex(TweetEntry.COLUMN_TWEET_FAVOURITED_STATE)).equals("1"))
+            {
+                tweet_favourite.setVisibility(View.VISIBLE);
+            }
+            else
+            {
+               tweet_favourite.setVisibility(View.GONE);
+            }
 
             String tweethash_tag = data.getString(data.getColumnIndex(HashTagEntry.COLUMN_HASHTAG_NAME));
             tweet_hash_tag.setText(tweethash_tag);

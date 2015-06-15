@@ -38,12 +38,12 @@ public class DetailsActivity extends ActionBarActivity {
 			// using a fragment transaction.
 			else
 			{
-				int date = getIntent().getIntExtra(DetailsFragment.ID_KEY, -1);
+				int id = getIntent().getIntExtra(DetailsFragment.ID_KEY, 0);
 				//int date = getIntent().getIntExtra(DetailsFragment.ID_KEY);
-				Log.w("TWEETID",""+date);
+				Log.w("TWEETID",""+id);
 
 				Bundle args = new Bundle();
-				args.putInt(DetailsFragment.ID_KEY, date);
+				args.putInt(DetailsFragment.ID_KEY, id);
 				showTweetDetailFragment(args);
 			}
 		}
