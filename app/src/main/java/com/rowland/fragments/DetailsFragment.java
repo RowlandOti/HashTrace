@@ -1,6 +1,5 @@
 package com.rowland.fragments;
 
-import android.app.Activity;
 import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
@@ -9,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +18,6 @@ import android.widget.TextView;
 
 import com.rowland.data.TweetHashTracerContract.HashTagEntry;
 import com.rowland.data.TweetHashTracerContract.TweetEntry;
-import com.rowland.hashtrace.DetailsActivity;
 import com.rowland.hashtrace.R;
 import com.rowland.utility.ImageManager;
 import com.rowland.utility.Utility;
@@ -31,9 +30,11 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
     private static final int DETAIL_LOADER = 3;
     private static final String HASHTAG_KEY = "hashtag";
     public static final String DATE_KEY = "tweet_text_date";
+    public static final String  ID_KEY = "_id";
     public ImageManager imageManager;
-    private String mDateStr;
+    //private String mDateStr;
     private String mHashTag;
+    private int mTweetID;
 
     private TextView user_name;
     private ImageView user_profile_image;
@@ -75,6 +76,10 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
     {
         if(fragmentInstance != null)
         {
+            if(args != null)
+            {
+                fragmentInstance.setArguments(args);
+            }
             return fragmentInstance;
         }
         else
@@ -101,7 +106,9 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
         Bundle arguments = getArguments();
         if (arguments != null)
         {
-            mDateStr = arguments.getString(DetailsFragment.DATE_KEY);
+           // mDateStr = arguments.getString(DetailsFragment.DATE_KEY);
+            mTweetID = arguments.getInt(DetailsFragment.ID_KEY);
+            Log.w(LOG_TAG, "TWEETID:" +  mTweetID);
         }
 
         if (savedInstanceState != null)
@@ -143,7 +150,7 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
         }
 
         Bundle arguments = getArguments();
-        if (arguments != null && arguments.containsKey(DetailsFragment.DATE_KEY))
+        if (arguments != null && arguments.containsKey(DetailsFragment.ID_KEY))
         {
             getLoaderManager().initLoader(DETAIL_LOADER, null, this);
         }
@@ -161,7 +168,7 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
     {
         super.onResume();
         Bundle arguments = getArguments();
-        if (arguments != null && arguments.containsKey(DetailsFragment.DATE_KEY) && mHashTag != null && !mHashTag.equals(Utility.getPreferredHashTag(getActivity())))
+        if (arguments != null && arguments.containsKey(DetailsFragment.ID_KEY) && mHashTag != null && !mHashTag.equals(Utility.getPreferredHashTag(getActivity())))
         {
             getLoaderManager().restartLoader(DETAIL_LOADER, null, this);
         }
@@ -174,10 +181,12 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
         String sortOrder = TweetEntry.COLUMN_TWEET_TEXT_DATE + " ASC";
 
         mHashTag = Utility.getPreferredHashTag(getActivity());
-        Uri tweetForHashTagUri = TweetEntry.buildTweetHashTagWithDate(mHashTag, mDateStr);
+       // Uri tweetForHashTagUri = TweetEntry.buildTweetHashTagWithDate(mHashTag, mDateStr);
+        Uri tweetForHashTagUri = TweetEntry.buildTweetUri(mTweetID);
 
+        CursorLoader cursorLoader = new CursorLoader(getActivity(), tweetForHashTagUri, TWEET_DETAILS_COLUMNS, null, null,sortOrder);
         // Now create and return a CursorLoader that will take care of creating a Cursor for the data being displayed.
-        return new CursorLoader(getActivity(), tweetForHashTagUri, TWEET_DETAILS_COLUMNS, null, null, sortOrder);
+        return cursorLoader;
     }
 
     @Override
@@ -205,11 +214,11 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
             String tweettext_date = Utility.getTimeAgo(data.getString(data.getColumnIndex(TweetEntry.COLUMN_TWEET_TEXT_DATE)));
             tweet_text_date.setText(tweettext_date);
 
-            String tweettext_retweet_count = data.getString(data.getColumnIndex(TweetEntry.COLUMN_TWEET_TEXT_RETWEET_COUNT));
-            tweet_text_retweet_count.setText(tweettext_retweet_count);
+            int tweettext_retweet_count = data.getInt(data.getColumnIndex(TweetEntry.COLUMN_TWEET_TEXT_RETWEET_COUNT));
+            tweet_text_retweet_count.setText(String.valueOf(tweettext_retweet_count));
 
-            String tweettext_favorite_count = data.getString(data.getColumnIndex(TweetEntry.COLUMN_TWEET_TEXT_FAVOURITE_COUNT));
-            tweet_text_favourite_count.setText(tweettext_favorite_count);
+            int tweettext_favorite_count = data.getInt(data.getColumnIndex(TweetEntry.COLUMN_TWEET_TEXT_FAVOURITE_COUNT));
+            tweet_text_favourite_count.setText(String.valueOf(tweettext_favorite_count));
 
             String tweethash_tag = data.getString(data.getColumnIndex(HashTagEntry.COLUMN_HASHTAG_NAME));
             tweet_hash_tag.setText(tweethash_tag);

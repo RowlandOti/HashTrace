@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.preference.PreferenceManager;
 import android.text.format.DateUtils;
 import android.util.DisplayMetrics;
@@ -129,6 +131,7 @@ public class Utility {
 		// Return the appropriate notification icon
 		return R.drawable.ic_launcher;
 	}
+
 
 	public static Bitmap getLargeIconResourceForTweetNotification(String user_name_image_url, Context context)
 	{
@@ -267,6 +270,15 @@ public class Utility {
 		Tweet tweet = new Tweet(tweet_id, tweet_text, tweet_text_date, tweet_retweet_count,tweet_favourite_count,tweet_mentions_count, user_name, user_image_url, user_location, user_description);
 
 		return tweet;
+	}
+    /**
+	 * Returns true if network is available or about to become available
+	 * */
+	public static boolean isNetworkAvailable(Context context)
+	{
+		ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+		NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+		return activeNetwork != null && activeNetwork.isConnectedOrConnecting();
 	}
 
 }

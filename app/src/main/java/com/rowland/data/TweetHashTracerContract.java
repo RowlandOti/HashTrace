@@ -164,6 +164,10 @@ public class TweetHashTracerContract {
 		{
 			return CONTENT_URI.buildUpon().appendPath(hashTagSetting).appendPath(date).build();
 		}
+		public static Uri buildTweetHashTagWithIDUri(String mTweetID)
+		{
+			return CONTENT_URI.buildUpon().appendPath(mTweetID).build();
+		}
 
 		public static String getHashTagSettingFromUri(Uri uri)
 		{
@@ -179,7 +183,10 @@ public class TweetHashTracerContract {
 		{
 			return uri.getQueryParameter(COLUMN_TWEET_TEXT_DATE);
 		}
-
+		public static String getIdFromUri(Uri uri)
+		{
+			return uri.getPathSegments().get(1);
+		}
 	}
 
 	/* Inner class that defines the table contents of the location table */

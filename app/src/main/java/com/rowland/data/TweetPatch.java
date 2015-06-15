@@ -65,7 +65,7 @@ public class TweetPatch {
 			+ "), "
 			+
 			// To assure the application have just one tweet entry per day
-			// per hashtag, it's created a UNIQUE constraint with REPLACE
+			// per tweet_id, it's created a UNIQUE constraint with REPLACE
 			// strategy
 			" UNIQUE (" + TweetEntry.COLUMN_TWEET_ID + ", "
 			+ TweetEntry.COLUMN_HASHTAG_KEY + ") ON CONFLICT REPLACE);";

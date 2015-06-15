@@ -93,7 +93,7 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 		/**
 		 * TweetItemFragmentCallback for when an item has been selected.
 		 */
-		public void onFavouriteItemSelected(String date);
+		public void onFavouriteItemSelected(int date);
 	}
 
 	@Override
@@ -233,7 +233,7 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 		Cursor cursor = mTweetFavListAdapter.getCursor();
 		if (cursor != null && cursor.moveToPosition(position))
 		{
-			((onFavouriteItemSelectedCallback) getActivity()).onFavouriteItemSelected(cursor.getString(COL_TWEETFAV_TEXT_DATE));
+			((onFavouriteItemSelectedCallback) getActivity()).onFavouriteItemSelected(cursor.getInt(COL_ID));
 		}
 		mPosition = position;
 		Log.d("ROWSELECT", "" + rowId);

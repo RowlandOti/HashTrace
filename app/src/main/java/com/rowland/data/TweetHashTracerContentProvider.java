@@ -8,6 +8,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
+import android.text.TextUtils;
+
+import com.rowland.data.TweetHashTracerContract.HashTagEntry;
+import com.rowland.data.TweetHashTracerContract.TweetEntry;
+import com.rowland.data.TweetHashTracerContract.TweetFavEntry;
 
 /**
  * @author Rowland
@@ -20,8 +25,9 @@ public class TweetHashTracerContentProvider extends ContentProvider {
 	private TweetHashTracerDbHelper mOpenHelper;
 
 	private static final int TWEET = 100;
-	private static final int TWEET_WITH_HASHTAG = 101;
-	private static final int TWEET_WITH_HASHTAG_AND_DATE = 102;
+	private static final int TWEET_WITH_ID = 101;
+	private static final int TWEET_WITH_HASHTAG = 102;
+	private static final int TWEET_WITH_HASHTAG_AND_DATE = 103;
 	private static final int TWEETFAV = 200;
 	private static final int TWEETFAV_WITH_HASHTAG = 201;
 	private static final int TWEETFAV_WITH_HASHTAG_AND_DATE = 202;
@@ -48,50 +54,60 @@ public class TweetHashTracerContentProvider extends ContentProvider {
 	static {
 		sTweetFavByHashTagSettingQueryBuilder = new SQLiteQueryBuilder();
 		sTweetFavByHashTagSettingQueryBuilder.setTables(
-				TweetHashTracerContract.TweetFavEntry.TABLE_NAME
+				TweetFavEntry.TABLE_NAME
 				+ " INNER JOIN "
-				+ TweetHashTracerContract.HashTagEntry.TABLE_NAME
+				+ HashTagEntry.TABLE_NAME
 				+ " ON "
-				+ TweetHashTracerContract.TweetFavEntry.TABLE_NAME + "."
-				+ TweetHashTracerContract.TweetFavEntry.COLUMN_HASHTAG_KEY
+				+ TweetFavEntry.TABLE_NAME + "."
+				+ TweetFavEntry.COLUMN_HASHTAG_KEY
 				+ " = "
-				+ TweetHashTracerContract.HashTagEntry.TABLE_NAME + "."
-				+ TweetHashTracerContract.HashTagEntry._ID);
+				+ HashTagEntry.TABLE_NAME + "."
+				+ HashTagEntry._ID);
 	}
 
-	private static final String sHashTagSettingSelection = TweetHashTracerContract.HashTagEntry.TABLE_NAME
+	private static final String sHashTagSettingSelection = HashTagEntry.TABLE_NAME
 			+ "."
-			+ TweetHashTracerContract.HashTagEntry.COLUMN_HASHTAG_SETTING
+			+ HashTagEntry.COLUMN_HASHTAG_SETTING
 			+ " = ? ";
-	private static final String sHashTagSettingWithStartDateSelection = TweetHashTracerContract.HashTagEntry.TABLE_NAME
+	private static final String sHashTagSettingWithStartDateSelection = HashTagEntry.TABLE_NAME
 			+ "."
-			+ TweetHashTracerContract.HashTagEntry.COLUMN_HASHTAG_SETTING
+			+ HashTagEntry.COLUMN_HASHTAG_SETTING
 			+ " = ? AND "
-			+ TweetHashTracerContract.TweetEntry.COLUMN_TWEET_TEXT_DATE
+			+ TweetEntry.COLUMN_TWEET_TEXT_DATE
 			+ " >= ? ";
-	private static final String sHashTagSettingAndDaySelection = TweetHashTracerContract.HashTagEntry.TABLE_NAME
+	private static final String sHashTagSettingAndDaySelection = HashTagEntry.TABLE_NAME
 			+ "."
-			+ TweetHashTracerContract.HashTagEntry.COLUMN_HASHTAG_SETTING
+			+ HashTagEntry.COLUMN_HASHTAG_SETTING
 			+ " = ? AND "
-			+ TweetHashTracerContract.TweetEntry.COLUMN_TWEET_TEXT_DATE
+			+ TweetEntry.COLUMN_TWEET_TEXT_DATE
 			+ " = ? ";
-	private static final String sHashTagFavSettingWithStartDateSelection = TweetHashTracerContract.HashTagEntry.TABLE_NAME
+	private static final String sHashTagSettingAndIdSelection = HashTagEntry.TABLE_NAME
 			+ "."
-			+ TweetHashTracerContract.HashTagEntry.COLUMN_HASHTAG_SETTING
+			+ HashTagEntry.COLUMN_HASHTAG_SETTING
 			+ " = ? AND "
-			+ TweetHashTracerContract.TweetFavEntry.COLUMN_TWEETFAV_TEXT_DATE
+			+ TweetEntry._ID
+			+ " = ? ";
+	private static final String sIdSelection = TweetEntry.TABLE_NAME
+			+ "."
+			+ TweetEntry._ID
+			+ " = ? ";
+	private static final String sHashTagFavSettingWithStartDateSelection = HashTagEntry.TABLE_NAME
+			+ "."
+			+ HashTagEntry.COLUMN_HASHTAG_SETTING
+			+ " = ? AND "
+			+ TweetFavEntry.COLUMN_TWEETFAV_TEXT_DATE
 			+ " >= ? ";
-	private static final String sHashTagFavSettingAndDaySelection = TweetHashTracerContract.HashTagEntry.TABLE_NAME
+	private static final String sHashTagFavSettingAndDaySelection = HashTagEntry.TABLE_NAME
 			+ "."
-			+ TweetHashTracerContract.HashTagEntry.COLUMN_HASHTAG_SETTING
+			+ HashTagEntry.COLUMN_HASHTAG_SETTING
 			+ " = ? AND "
-			+ TweetHashTracerContract.TweetFavEntry.COLUMN_TWEETFAV_TEXT_DATE
+			+ TweetFavEntry.COLUMN_TWEETFAV_TEXT_DATE
 			+ " = ? ";
 
 	private Cursor getTweetByHashTagSetting(Uri uri, String[] projection,String sortOrder)
 	{
-		String hashTagSetting = TweetHashTracerContract.TweetEntry.getHashTagSettingFromUri(uri);
-		String startDate = TweetHashTracerContract.TweetEntry.getStartDateFromUri(uri);
+		String hashTagSetting = TweetEntry.getHashTagSettingFromUri(uri);
+		String startDate = TweetEntry.getStartDateFromUri(uri);
 
 		String[] selectionArgs;
 		String selection;
@@ -119,14 +135,46 @@ public class TweetHashTracerContentProvider extends ContentProvider {
 
 	private Cursor getTweetByHashTagSettingAndDate(Uri uri, String[] projection, String sortOrder)
 	{
-		String hashTraceSetting = TweetHashTracerContract.TweetEntry.getHashTagSettingFromUri(uri);
+		String hashTagSetting = TweetHashTracerContract.TweetEntry.getHashTagSettingFromUri(uri);
 		String date = TweetHashTracerContract.TweetEntry.getDateFromUri(uri);
 
 		return sTweetByHashTagSettingQueryBuilder.query(
 				mOpenHelper.getReadableDatabase(),
 				projection,
 				sHashTagSettingAndDaySelection,
-				new String[] {hashTraceSetting, date },
+				new String[] {hashTagSetting, date },
+				null,
+				null,
+				sortOrder);
+	}
+
+	private Cursor getTweetById(Uri uri, String[] projection, String sortOrder)
+	{
+		String id = TweetEntry.getIdFromUri(uri);
+
+		String[] selectionArgs = new String[] { id };
+		String selection = sIdSelection;
+
+		return sTweetByHashTagSettingQueryBuilder.query(
+				mOpenHelper.getReadableDatabase(),
+				projection,
+				selection,
+				selectionArgs,
+				null,
+				null,
+				sortOrder);
+	}
+
+	private Cursor getTweetByHashTagSettingAndId(Uri uri, String[] projection, String sortOrder)
+	{
+		String hashTagSetting = TweetEntry.getHashTagSettingFromUri(uri);
+		String id = TweetEntry.getIdFromUri(uri);
+
+		return sTweetByHashTagSettingQueryBuilder.query(
+				mOpenHelper.getReadableDatabase(),
+				projection,
+				sHashTagSettingAndIdSelection,
+				new String[] {hashTagSetting, id },
 				null,
 				null,
 				sortOrder);
@@ -134,7 +182,6 @@ public class TweetHashTracerContentProvider extends ContentProvider {
 
 	private Cursor getTweetFavByHashTagSetting(Uri uri, String[] projection, String sortOrder)
 	{
-
 		String hashTagSetting = TweetHashTracerContract.TweetFavEntry.getHashTagSettingFromUri(uri);
 		String startDate = TweetHashTracerContract.TweetFavEntry.getStartDateFromUri(uri);
 
@@ -192,8 +239,10 @@ public class TweetHashTracerContentProvider extends ContentProvider {
 
 		// For each type of URI you want to add, create a corresponding code.
 		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEET, TWEET);
+		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEET + "/#",TWEET_WITH_ID);
 		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEET + "/*",TWEET_WITH_HASHTAG);
 		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEET + "/*/*",TWEET_WITH_HASHTAG_AND_DATE);
+
 
 		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEETFAV, TWEETFAV);
 		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEETFAV + "/*",TWEETFAV_WITH_HASHTAG);
@@ -212,26 +261,41 @@ public class TweetHashTracerContentProvider extends ContentProvider {
 	}
 
 	@Override
-	public Cursor query(Uri uri, String[] projection, String selection,
-			String[] selectionArgs, String sortOrder) {
+	public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder)
+	{
+		final String DEFAULT_SORT_ORDER = TweetEntry._ID +" ASC";
+
+		if (TextUtils.isEmpty(sortOrder))
+		{
+			sortOrder = DEFAULT_SORT_ORDER;
+		}
+
 		// Here's the switch statement that, given a URI, will determine what
-		// kind of request it is,
-		// and query the database accordingly.
+		// kind of request it is, and query the database accordingly.
 		Cursor retCursor;
-		switch (sUriMatcher.match(uri)) {
+		switch (sUriMatcher.match(uri))
+		{
 		// "tweet/*/*"
-		case TWEET_WITH_HASHTAG_AND_DATE: {
-			retCursor = getTweetByHashTagSettingAndDate(uri, projection,
-					sortOrder);
+		case TWEET_WITH_HASHTAG_AND_DATE:
+		{
+			retCursor = getTweetByHashTagSettingAndDate(uri, projection, sortOrder);
+			break;
+		}
+	    // "tweet/#"
+		case TWEET_WITH_ID:
+		{
+			retCursor = getTweetById(uri, projection, sortOrder);
 			break;
 		}
 		// "tweet/*"
-		case TWEET_WITH_HASHTAG: {
+		case TWEET_WITH_HASHTAG:
+		{
 			retCursor = getTweetByHashTagSetting(uri, projection, sortOrder);
 			break;
 		}
 		// "tweet"
-		case TWEET: {
+		case TWEET:
+		{
 			retCursor = mOpenHelper.getReadableDatabase().query(
 					TweetHashTracerContract.TweetEntry.TABLE_NAME,
 					projection,
@@ -243,17 +307,21 @@ public class TweetHashTracerContentProvider extends ContentProvider {
 			break;
 		}
 		// "tweet/*/*"
-		case TWEETFAV_WITH_HASHTAG_AND_DATE: {
+		case TWEETFAV_WITH_HASHTAG_AND_DATE:
+		{
 			retCursor = getTweetFavByHashTagSettingAndDate(uri, projection,sortOrder);
 			break;
 		}
+
 		// "tweet/*"
-		case TWEETFAV_WITH_HASHTAG: {
+		case TWEETFAV_WITH_HASHTAG:
+		{
 			retCursor = getTweetFavByHashTagSetting(uri, projection, sortOrder);
 			break;
 		}
 		// "tweetfav"
-		case TWEETFAV: {
+		case TWEETFAV:
+		{
 			retCursor = mOpenHelper.getReadableDatabase().query(
 					TweetHashTracerContract.TweetFavEntry.TABLE_NAME,
 					projection,
@@ -265,7 +333,8 @@ public class TweetHashTracerContentProvider extends ContentProvider {
 			break;
 		}
 		// "hashtag/*"
-		case HASHTAG_ID: {
+		case HASHTAG_ID:
+		{
 			retCursor = mOpenHelper.getReadableDatabase().query(
 					TweetHashTracerContract.HashTagEntry.TABLE_NAME,
 					projection,
@@ -277,7 +346,8 @@ public class TweetHashTracerContentProvider extends ContentProvider {
 			break;
 		}
 		// "hashtag"
-		case HASHTAG: {
+		case HASHTAG:
+		{
 			retCursor = mOpenHelper.getReadableDatabase().query(
 					TweetHashTracerContract.HashTagEntry.TABLE_NAME,
 					projection,
@@ -299,25 +369,29 @@ public class TweetHashTracerContentProvider extends ContentProvider {
 
 
 	@Override
-	public String getType(Uri uri) {
+	public String getType(Uri uri)
+	{
 		// Use the Uri Matcher to determine what kind of URI this is.
 		final int match = sUriMatcher.match(uri);
 
-		switch (match) {
-		case TWEET_WITH_HASHTAG_AND_DATE:
-			return TweetHashTracerContract.TweetEntry.CONTENT_ITEM_TYPE;
-		case TWEET_WITH_HASHTAG:
-			return TweetHashTracerContract.TweetEntry.CONTENT_TYPE;
-		case TWEET:
-			return TweetHashTracerContract.TweetEntry.CONTENT_TYPE;
-		case TWEETFAV:
-			return TweetHashTracerContract.TweetFavEntry.CONTENT_TYPE;
-		case HASHTAG:
-			return TweetHashTracerContract.HashTagEntry.CONTENT_TYPE;
-		case HASHTAG_ID:
-			return TweetHashTracerContract.HashTagEntry.CONTENT_ITEM_TYPE;
-		default:
-			throw new UnsupportedOperationException("Unknown uri: " + uri);
+		switch (match)
+		{
+			case TWEET_WITH_HASHTAG_AND_DATE:
+				return TweetHashTracerContract.TweetEntry.CONTENT_ITEM_TYPE;
+			case TWEET_WITH_ID:
+				return TweetHashTracerContract.TweetEntry.CONTENT_ITEM_TYPE;
+			case TWEET_WITH_HASHTAG:
+				return TweetHashTracerContract.TweetEntry.CONTENT_TYPE;
+			case TWEET:
+				return TweetHashTracerContract.TweetEntry.CONTENT_TYPE;
+			case TWEETFAV:
+				return TweetHashTracerContract.TweetFavEntry.CONTENT_TYPE;
+			case HASHTAG:
+				return TweetHashTracerContract.HashTagEntry.CONTENT_TYPE;
+			case HASHTAG_ID:
+				return TweetHashTracerContract.HashTagEntry.CONTENT_ITEM_TYPE;
+			default:
+				throw new UnsupportedOperationException("Unknown uri: " + uri);
 		}
 	}
 

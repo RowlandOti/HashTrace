@@ -92,18 +92,16 @@ public class MainActivity extends ActionBarActivity implements MainFragment.onMa
         // as you specify a parent activity in AndroidManifest.xml.
         switch (item.getItemId())
         {
-
             case R.id.action_settings:
             {
                 startActivity(new Intent(this, SettingsActivity.class));
 
                 return true;
             }
-
-            default: {
+            default:
+            {
                 return super.onOptionsItemSelected(item);
             }
-
         }
     }
 
@@ -114,33 +112,33 @@ public class MainActivity extends ActionBarActivity implements MainFragment.onMa
     }
 
     @Override
-    public void onFavouriteItemSelected(String date)
+    public void onFavouriteItemSelected(int date)
     {
         itemIsClicked(date);
     }
 
     @Override
-    public void onTweetItemSelected(String date)
+    public void onTweetItemSelected(int date)
     {
         itemIsClicked(date);
     }
 
-    private void itemIsClicked(String date)
+    private void itemIsClicked(int date)
     {
         if (mTwoPane)
         {
             // In two-pane mode, show the detail view in this activity by adding or replacing the
             // detail fragment using a fragment transaction.
             Bundle args = new Bundle();
-            args.putString(DetailsFragment.DATE_KEY, date);
+            //args.putString(DetailsFragment.ID_KEY, date);
+            args.putInt(DetailsFragment.ID_KEY, date);
 
             showDetailFragment(args);
         }
         else
         {
-            Intent intent = new Intent(this, DetailsActivity.class).putExtra(DetailsFragment.DATE_KEY, date);
+            Intent intent = new Intent(this, DetailsActivity.class).putExtra(DetailsFragment.ID_KEY, date);
             startActivity(intent);
         }
-
     }
 }

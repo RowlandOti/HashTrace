@@ -82,6 +82,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
+                        android:maxLines="2"
                         android:gravity="center"
                         android:text="Benevolent dictator at Skyllable Ventures"
                         android:textColor="#FF707070" />
@@ -115,8 +116,8 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:maxLength="140"
-                    android:paddingBottom="5dp"
-                    android:paddingTop="@dimen/tweet_item_status_pad_top"
+                    android:paddingBottom="@dimen/tweet_item_status_padTopBottom"
+                    android:paddingTop="@dimen/tweet_item_status_padTopBottom"
                     android:text="The man you must truly repay can never collect his debt. If, and I say if this is true, I will rectify it"
                     android:textColor="@color/tweet_text_color" />
 

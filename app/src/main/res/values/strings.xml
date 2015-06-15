@@ -21,7 +21,7 @@
     <string name="title_activity_settings">Settings</string>
     <string name="title_activity_details">Details</string>
 
-     <!-- Hashtag profile -->
+    <!-- Hashtag profile -->
     <string name="pref_hashtag_profile">Hashtag Settings</string>
 
     <!-- Label for the hashtag preference [CHAR LIMIT=30] -->
@@ -95,9 +95,8 @@
     <string name="auto_use_proxy_summary">Use proxy always to connect to network</string>
     <string name="title_activity_main">MainActivity</string>
 
-    <string name="hello_world">Hello world!</string>
-
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--  Empty tweet database -->
+    <string name="empty_tweet_list">No Tweet Information Available </string>
+    <string name="empty_tweet_list_no_network">No Tweet Information Available. The network is not available to fetch tweets.</string>
 
 </resources>

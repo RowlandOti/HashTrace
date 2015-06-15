@@ -25,6 +25,7 @@ import android.view.animation.BounceInterpolator;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.baoyz.swipemenulistview.SwipeMenu;
 import com.baoyz.swipemenulistview.SwipeMenuCreator;
@@ -121,7 +122,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		/**
 		 * TweetItemFragmentCallback for when an item has been selected.
 		 */
-		public void onTweetItemSelected(String date);
+		public void onTweetItemSelected(int date);
 	}
 
 
@@ -237,7 +238,9 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		mListView.setVisibility(View.GONE);
 		mPullToRefreshListView = new PullToRefreshSwipeMenuListView(getActivity());
 		mPullToRefreshListView.setLayoutParams(mListView.getLayoutParams());
-		parent.addView(mPullToRefreshListView,lvIndex, mListView.getLayoutParams());
+		parent.addView(mPullToRefreshListView, lvIndex, mListView.getLayoutParams());
+        View emptyView = rootView.findViewById(R.id.listview_tweet_empty);
+		mPullToRefreshListView.setEmptyView(emptyView);
 		mPullToRefreshListView.setAdapter(mTweetListAdapter);
 		mPullToRefreshListView.setMenuCreator(creator);
 		mPullToRefreshListView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener<SwipeMenuListView>() {
@@ -351,17 +354,19 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		super.onSaveInstanceState(outState);
 	}
 	@Override
-	public void onListItemClick(ListView lv, View view, int position, long rowId)
+	public void onListItemClick(ListView lv, View view, int position, long rowID)
 	{
-		super.onListItemClick(lv, view, position, rowId);
+		super.onListItemClick(lv, view, position, rowID);
 		// Do the onItemClick action
 		Cursor cursor = mTweetListAdapter.getCursor();
 		if (cursor != null && cursor.moveToPosition(position))
 		{
-			((onTweetItemSelectedCallback) getActivity()).onTweetItemSelected((cursor.getString(COL_TWEET_TEXT_DATE)));
+			//((onTweetItemSelectedCallback) getActivity()).onTweetItemSelected((cursor.getInt(COL_ID)));
+			((onTweetItemSelectedCallback) getActivity()).onTweetItemSelected((int)rowID);
+			//view.setSelected(true);
 		}
 		mPosition = position;
-		Log.d("ROWSELECT", "" + rowId);
+		Log.d("ROWSELECT", "" + rowID);
 	}
 
 	@Override
@@ -395,6 +400,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 			// position to restore to, do so now.
 			mListView.smoothScrollToPosition(mPosition);
 		}
+		updateEmptyView();
 	}
 
 	@Override
@@ -459,6 +465,23 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		getActivity().getApplicationContext().getContentResolver().update(TweetEntry.CONTENT_URI, tweetValues, whereClause, selectionArgs);
 		mTweetListAdapter.notifyDataSetChanged();
 		getLoaderManager().restartLoader(TWEETLIST_LOADER, null, this);
+	}
+	public void updateEmptyView()
+	{
+		if(mTweetListAdapter.getCount() == 0)
+		{
+			TextView emptyTextView = (TextView) getView().findViewById(R.id.listview_tweet_empty);
+			if (null != emptyTextView)
+			{
+				//If cursor is empty why do we have an invalid position
+				int message = R.string.empty_tweet_list;
+				if(!Utility.isNetworkAvailable(getActivity()))
+				{
+					message = R.string.empty_tweet_list_no_network;
+				}
+				emptyTextView.setText(message);
+			}
+		}
 	}
 	/*public void updateViewItem(View targetView)
 	{

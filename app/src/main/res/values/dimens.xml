@@ -7,13 +7,15 @@
     <dimen name="tweet_item_padding_left_right">10dp</dimen>
     <dimen name="tweet_item_fav_padding_left_right">3dp</dimen>
     <dimen name="tweet_item_margin">5dp</dimen>
-    <dimen name="tweet_item_selected_marginLeftRight">12dp</dimen>
-    <dimen name="tweet_item_selected_marginTopBottom">12dp</dimen>
+    <dimen name="tweet_item_selected_marginLeftRight">6dp</dimen>
+    <dimen name="tweet_item_selected_marginTopBottom">6dp</dimen>
     <dimen name="tweet_item_corner_radius">3dp</dimen>
     <dimen name="tweet_item_border_width">1dp</dimen>
     <dimen name="tweet_item_picture_marginTopBottom">15dp</dimen>
     <dimen name="tweet_item_status_pad_left_right">10dp</dimen>
     <dimen name="tweet_item_status_pad_top">1dp</dimen>
+    <dimen name="tweet_item_status_padTopBottom">5dp</dimen>
+    <dimen name="empty_text_viewPadding">16dp</dimen>
     <dimen name="tweet_item_profile_pic">50dp</dimen>
     <dimen name="tweet_item_profile_padding">3dp</dimen>
     <dimen name="tweet_item_profile_info_padd">10dp</dimen>
@@ -24,6 +26,6 @@
     <dimen name="tweet_item_favourite_icon">20dp</dimen>
     <dimen name="tweet_item_retweet_icon">20dp</dimen>
     <dimen name="tweet_item_favourite">10sp</dimen>
-    <dimen name="tweet_info_padding_left_right">5dp</dimen>
+    <dimen name="tweet_info_padding_left_right">4dp</dimen>
 
 </resources>

@@ -12,10 +12,24 @@
         android:layout_marginTop="0dp"
         android:background="@android:color/transparent"
         android:cacheColorHint="@android:color/transparent"
+        android:choiceMode="singleChoice"
         android:divider="#CCCCCC"
         android:dividerHeight="1dp"
         android:listSelector="@drawable/apptheme_list_selector_holo_light"
         android:paddingLeft="2dp" >
     </com.baoyz.swipemenulistview.SwipeMenuListView>
+    <!-- Empty ListView-->
+    <TextView
+        android:id="@+id/listview_tweet_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/empty_text_viewPadding"
+        android:paddingRight="@dimen/empty_text_viewPadding"
+        android:paddingBottom="@dimen/empty_text_viewPadding"
+        android:paddingTop="@dimen/empty_text_viewPadding"
+        android:text="@string/empty_tweet_list">
+
+    </TextView>
 
 </RelativeLayout>

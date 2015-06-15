@@ -21,6 +21,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
+import android.support.annotation.IntDef;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
 import android.util.Log;
@@ -28,12 +29,14 @@ import android.util.Log;
 import com.rowland.data.TweetHashTracerContract;
 import com.rowland.data.TweetHashTracerContract.HashTagEntry;
 import com.rowland.data.TweetHashTracerContract.TweetEntry;
-import com.rowland.hashtrace.HashTraceActivity;
+import com.rowland.hashtrace.MainActivity;
 import com.rowland.hashtrace.R;
 import com.rowland.objects.Tweet;
 import com.rowland.utility.EDbDateLimit;
 import com.rowland.utility.Utility;
 
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -73,6 +76,15 @@ public class TweetHashTracerSyncAdapter extends AbstractThreadedSyncAdapter {
 	private static final int INDEX_TWEET_TEXT_DATE = 2;
 	private static final int INDEX_TWEET_USER_NAME = 3;
 	private static final int INDEX_TWEET_USER_NAME_IMAGE_URL = 4;
+
+	@Retention(RetentionPolicy.SOURCE)
+	@IntDef({HASHTAG_STATUS_OK, HASHTAG_SERVER_DOWN, HASTAG_STATUS_SERVER_INVALID, HASHTAG_STATUS_UNKNOWN})
+	public @interface HashTagStatus {}
+
+	public static final int HASHTAG_STATUS_OK = 0;
+	public static final int HASHTAG_SERVER_DOWN = 1;
+	public static final int HASTAG_STATUS_SERVER_INVALID = 2;
+	public static final int HASHTAG_STATUS_UNKNOWN = 3;
 
 	public TweetHashTracerSyncAdapter(Context context, boolean autoInitialize)
 	{
@@ -279,7 +291,7 @@ public class TweetHashTracerSyncAdapter extends AbstractThreadedSyncAdapter {
 
 					// Make something interesting happen when the user clicks on
 					// the notification. In this case, opening the app is sufficient.
-					Intent resultIntent = new Intent(context, HashTraceActivity.class);
+					Intent resultIntent = new Intent(context, MainActivity.class);
 
 					// The stack builder object will contain an artificial back stack for the started Activity.
 					// This ensures that navigating backward from the Activity leads out of your application to the Home screen.

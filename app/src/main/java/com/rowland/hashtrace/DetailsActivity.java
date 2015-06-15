@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -37,14 +38,15 @@ public class DetailsActivity extends ActionBarActivity {
 			// using a fragment transaction.
 			else
 			{
-				String date = getIntent().getStringExtra(DetailsFragment.DATE_KEY);
+				int date = getIntent().getIntExtra(DetailsFragment.ID_KEY, -1);
+				//int date = getIntent().getIntExtra(DetailsFragment.ID_KEY);
+				Log.w("TWEETID",""+date);
 
 				Bundle args = new Bundle();
-				args.putString(DetailsFragment.DATE_KEY, date);
+				args.putInt(DetailsFragment.ID_KEY, date);
 				showTweetDetailFragment(args);
 			}
 		}
-
 	}
 
 	private void showTweetDetailFragment(Bundle args)
