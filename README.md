@@ -23,3 +23,7 @@ view the tweet behavior over a particular time span. For example if the user set
   *  No. of tweets of Hashtag vs. Date
   *  No. of tweets of Hashtag vs. No. of users engaged with
 Hashtag etc.
+
+Preview: 
+
+![Alt text](https://github.com/RowlandOti/HashTrace/blob/master/documentation/mockup/gif/hashtrace.gif?raw=true "Hashtrace Preview")
