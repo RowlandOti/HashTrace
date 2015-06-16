@@ -365,7 +365,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		{
 			//((onTweetItemSelectedCallback) getActivity()).onTweetItemSelected((cursor.getInt(COL_ID)));
 			((onTweetItemSelectedCallback) getActivity()).onTweetItemSelected((int)rowID);
-			getListView().setItemChecked(position, true);;
+			mPullToRefreshListView.getRefreshableView().setItemChecked(position, true);;
 		}
 		mPosition = position;
 		Log.d("ROWSELECT", "" + rowID);
