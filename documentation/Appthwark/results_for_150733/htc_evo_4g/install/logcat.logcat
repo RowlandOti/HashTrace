@@ -1,0 +1,963 @@
+    "--------- beginning of /dev/log/main"  1
+Debug "2015-06-16 17:32:11.198430" 911 AppThwack /tz/ 11171 2
+Debug "2015-06-16 17:32:11.218430" 911 AppThwack "sha1: c1b584b754b79639c771b86161ac5e8ebc8e2e47" 11171 3
+Debug "2015-06-16 17:32:11.238430" 911 AppThwack /task/c1b584b754b79639c771b86161ac5e8ebc8e2e47 11171 4
+    "--------- beginning of /dev/log/system"  5
+Debug "2015-06-16 17:32:11.258430" 259 StatusBarService "addNotification notification = StatusBarNotification(package=com.trellis.appthwackdevicemanager id=1096041652 tag=null notification=Notification(vibrate=null,sound=null,defaults=0x0,flags=0x62)), key = android.os.BinderProxy@405dc318, fullScreenIntent = null, contentIntent = PendingIntent{4058a6d0: android.os.BinderProxy@405c84a0}" 259 6
+Info "2015-06-16 17:32:11.268430" 137 "LSState " EventReceiver:android.intent.action.NOTIFICATION_ADD 153 7
+Debug "2015-06-16 17:32:11.268430" 911 AppThwackDeviceManager "taskStatus update (c1b584b754b79639c771b86161ac5e8ebc8e2e47: {""state"":1})" 911 8
+Debug "2015-06-16 17:32:11.268430" 911 AppThwackDeviceManager "taskStatus update (c1b584b754b79639c771b86161ac5e8ebc8e2e47: {""result"":{""tz"":""America/Los_Angeles""},""state"":2})" 911 9
+Debug "2015-06-16 17:32:11.268430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/amber/brightness string=0,len=1" 157 10
+Verbose "2015-06-16 17:32:11.268430" 137 NotificationService "Battery Full, Charging" 157 11
+Debug "2015-06-16 17:32:11.278430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/amber/blink string=0,len=1" 157 12
+Debug "2015-06-16 17:32:11.278430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/amber/off_timer string=0 0,len=3" 157 13
+Debug "2015-06-16 17:32:11.278430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/green/brightness string=1,len=1" 157 14
+Debug "2015-06-16 17:32:11.278430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/green/blink string=0,len=1" 157 15
+Debug "2015-06-16 17:32:11.288430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/green/off_timer string=0 0,len=3" 157 16
+Info "2015-06-16 17:32:11.288430" 137 "LSState " EventReceiver:android.intent.action.NOTIFICATION_REMOVE 153 17
+Debug "2015-06-16 17:32:11.288430" 137 NotificationService "cancelNotification, ACTION_NOTIFICATION_REMOVE,pkg=com.trellis.appthwackdevicemanager,id=1096041652" 157 18
+Debug "2015-06-16 17:32:11.368430" 911 AppThwack /task/c1b584b754b79639c771b86161ac5e8ebc8e2e47/status 11173 19
+Debug "2015-06-16 17:32:11.448430" 911 dalvikvm "GC_CONCURRENT freed 453K, 46% free 3525K/6471K, external 0K/0K, paused 2ms+3ms" 913 20
+Debug "2015-06-16 17:32:11.448430" 911 AppThwack /task/c1b584b754b79639c771b86161ac5e8ebc8e2e47/status 11174 21
+Debug "2015-06-16 17:32:11.558430" 911 AppThwack /task/c1b584b754b79639c771b86161ac5e8ebc8e2e47/status 11175 22
+Debug "2015-06-16 17:32:11.648430" 911 AppThwack /task/c1b584b754b79639c771b86161ac5e8ebc8e2e47/status 11176 23
+Debug "2015-06-16 17:32:11.728430" 911 dalvikvm "GC_CONCURRENT freed 450K, 46% free 3507K/6471K, external 0K/0K, paused 2ms+2ms" 913 24
+Debug "2015-06-16 17:32:11.969430" 911 AppThwack /task/c1b584b754b79639c771b86161ac5e8ebc8e2e47/status 11179 25
+Debug "2015-06-16 17:32:12.009430" 911 AppThwack /wake/ 11180 26
+Debug "2015-06-16 17:32:12.059430" 911 AppThwack "sha1: 5e41a9a1697de8d31a79bc107d9f58051613c314" 11180 27
+Debug "2015-06-16 17:32:12.089430" 259 StatusBarService "addNotification notification = StatusBarNotification(package=com.trellis.appthwackdevicemanager id=1096041653 tag=null notification=Notification(vibrate=null,sound=null,defaults=0x0,flags=0x62)), key = android.os.BinderProxy@405e9880, fullScreenIntent = null, contentIntent = PendingIntent{405e9a10: android.os.BinderProxy@405c84a0}" 259 28
+Debug "2015-06-16 17:32:12.099430" 911 AppThwack /task/5e41a9a1697de8d31a79bc107d9f58051613c314 11180 29
+Info "2015-06-16 17:32:12.099430" 137 "LSState " EventReceiver:android.intent.action.NOTIFICATION_ADD 153 30
+Debug "2015-06-16 17:32:12.149430" 911 dalvikvm "GC_CONCURRENT freed 465K, 46% free 3554K/6471K, external 0K/0K, paused 2ms+4ms" 913 31
+Debug "2015-06-16 17:32:12.149430" 911 AppThwackDeviceManager "taskStatus update (5e41a9a1697de8d31a79bc107d9f58051613c314: {""state"":1})" 911 32
+Debug "2015-06-16 17:32:12.149430" 911 AppThwackAndroidLib "WakeLock: acquire" 11181 33
+Info "2015-06-16 17:32:12.159430" 911 AppThwackAndroidLib "ET phone home" 11181 34
+Info "2015-06-16 17:32:12.179430" 137 ActivityManager "Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.htc.launcher/.Launcher } from pid 911" 387 35
+Info "2015-06-16 17:32:12.189430" 911 AppThwackAndroidLib "Muting audio streams" 11181 36
+Debug "2015-06-16 17:32:12.189430" 911 AudioManager "setStreamVolume(streamType:1, index:0, flags:0)" 11181 37
+Debug "2015-06-16 17:32:12.199430" 911 AudioManager "setStreamVolume(streamType:5, index:0, flags:0)" 11181 38
+Debug "2015-06-16 17:32:12.199430" 911 AudioManager "setStreamVolume(streamType:4, index:0, flags:0)" 11181 39
+Debug "2015-06-16 17:32:12.209430" 911 AudioManager "setStreamVolume(streamType:2, index:0, flags:0)" 11181 40
+Debug "2015-06-16 17:32:12.209430" 911 AudioManager "setStreamVolume(streamType:3, index:0, flags:0)" 11181 41
+Info "2015-06-16 17:32:12.209430" 911 AppThwackAndroidLib "Creating /data/data/com.trellis.appthwackdevicemanager/app_logs" 11181 42
+Debug "2015-06-16 17:32:12.219430" 911 AppThwackDeviceManager "taskStatus update (5e41a9a1697de8d31a79bc107d9f58051613c314: {""result"":""Device woken."",""state"":2})" 911 43
+Debug "2015-06-16 17:32:12.229430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/amber/brightness string=0,len=1" 157 44
+Debug "2015-06-16 17:32:12.229430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/amber/blink string=0,len=1" 157 45
+Verbose "2015-06-16 17:32:12.229430" 137 NotificationService "Battery Full, Charging" 157 46
+Debug "2015-06-16 17:32:12.239430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/amber/off_timer string=0 0,len=3" 157 47
+Debug "2015-06-16 17:32:12.239430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/green/brightness string=1,len=1" 157 48
+Debug "2015-06-16 17:32:12.249430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/green/blink string=0,len=1" 157 49
+Debug "2015-06-16 17:32:12.249430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/green/off_timer string=0 0,len=3" 157 50
+Info "2015-06-16 17:32:12.269430" 137 "LSState " EventReceiver:android.intent.action.NOTIFICATION_REMOVE 153 51
+Debug "2015-06-16 17:32:12.269430" 137 NotificationService "cancelNotification, ACTION_NOTIFICATION_REMOVE,pkg=com.trellis.appthwackdevicemanager,id=1096041653" 157 52
+Debug "2015-06-16 17:32:12.319430" 911 AppThwack /task/5e41a9a1697de8d31a79bc107d9f58051613c314/status 11182 53
+Debug "2015-06-16 17:32:12.379430" 911 AppThwack /task/5e41a9a1697de8d31a79bc107d9f58051613c314/status 11183 54
+Debug "2015-06-16 17:32:12.519430" 911 dalvikvm "GC_CONCURRENT freed 427K, 46% free 3527K/6471K, external 0K/0K, paused 3ms+3ms" 913 55
+Debug "2015-06-16 17:32:12.529430" 911 AppThwack /task/5e41a9a1697de8d31a79bc107d9f58051613c314/status 11184 56
+Debug "2015-06-16 17:32:12.619430" 911 AppThwack /task/5e41a9a1697de8d31a79bc107d9f58051613c314/status 11185 57
+Debug "2015-06-16 17:32:12.739430" 6014 dalvikvm "GC_EXTERNAL_ALLOC freed 1061K, 48% free 4663K/8903K, external 25748K/26549K, paused 61ms" 6014 58
+Debug "2015-06-16 17:32:12.890430" 911 AppThwack /task/5e41a9a1697de8d31a79bc107d9f58051613c314/status 11186 59
+Debug "2015-06-16 17:32:12.950430" 911 AppThwack /wifi/ 11187 60
+Debug "2015-06-16 17:32:12.980430" 911 dalvikvm "GC_CONCURRENT freed 489K, 46% free 3549K/6471K, external 0K/0K, paused 2ms+3ms" 913 61
+Debug "2015-06-16 17:32:13.010430" 911 AppThwack "sha1: e3acf7a26d8f9bb0a15af4005b0a6a5098ac1993" 11187 62
+Debug "2015-06-16 17:32:13.010430" 911 AppThwackDeviceManager "k: enabled v: True" 11187 63
+Debug "2015-06-16 17:32:13.010430" 911 AppThwackDeviceManager "k: NanoHttpd.QUERY_STRING v: enabled=True" 11187 64
+Debug "2015-06-16 17:32:13.020430" 911 AppThwack /task/e3acf7a26d8f9bb0a15af4005b0a6a5098ac1993 11187 65
+Debug "2015-06-16 17:32:13.040430" 259 StatusBarService "addNotification notification = StatusBarNotification(package=com.trellis.appthwackdevicemanager id=1096041654 tag=null notification=Notification(vibrate=null,sound=null,defaults=0x0,flags=0x62)), key = android.os.BinderProxy@405e79f0, fullScreenIntent = null, contentIntent = PendingIntent{405e7b80: android.os.BinderProxy@405c84a0}" 259 66
+Debug "2015-06-16 17:32:13.040430" 911 AppThwackDeviceManager "taskStatus update (e3acf7a26d8f9bb0a15af4005b0a6a5098ac1993: {""state"":1})" 911 67
+Info "2015-06-16 17:32:13.050430" 137 "LSState " EventReceiver:android.intent.action.NOTIFICATION_ADD 153 68
+Debug "2015-06-16 17:32:13.050430" 911 AppThwackAndroidLib "setWifiEnabled: setting wifi to: true" 11188 69
+Debug "2015-06-16 17:32:13.050430" 137 WifiService "setWifiEnabledPersist true persist = true getCallingPid() = 911" 344 70
+Debug "2015-06-16 17:32:13.050430" 137 WifiService "setWifiEnabled =truemAirplaneModeOverwridden =false" 344 71
+Debug "2015-06-16 17:32:13.050430" 137 WifiService "setWifiEnabledBlocking:Enable Wifi" 228 72
+Info "2015-06-16 17:32:13.050430" 137 "WifiHW  " "wifi_load_driver enter" 228 73
+Info "2015-06-16 17:32:13.050430" 137 "WifiHW  " check_driver_loaded 228 74
+Info "2015-06-16 17:32:13.050430" 137 "WifiHW  " insmod 228 75
+Debug "2015-06-16 17:32:13.070430" 11032 NetSharing_NSReceiver "onReceive : android.net.wifi.WIFI_STATE_CHANGED" 11032 76
+Debug "2015-06-16 17:32:13.070430" 11032 NetSharing "wifi enabled change, state = false" 11032 77
+Debug "2015-06-16 17:32:13.190430" 911 AppThwack /task/e3acf7a26d8f9bb0a15af4005b0a6a5098ac1993/status 11189 78
+Debug "2015-06-16 17:32:13.300430" 911 dalvikvm "GC_CONCURRENT freed 506K, 46% free 3532K/6471K, external 0K/0K, paused 2ms+13ms" 913 79
+Debug "2015-06-16 17:32:13.350430" 911 AppThwack /task/e3acf7a26d8f9bb0a15af4005b0a6a5098ac1993/status 11190 80
+Debug "2015-06-16 17:32:14.481430" 911 AppThwack /task/e3acf7a26d8f9bb0a15af4005b0a6a5098ac1993/status 11192 81
+Debug "2015-06-16 17:32:15.592430" 911 AppThwack /task/e3acf7a26d8f9bb0a15af4005b0a6a5098ac1993/status 11193 82
+Debug "2015-06-16 17:32:15.662430" 911 dalvikvm "GC_CONCURRENT freed 450K, 46% free 3529K/6471K, external 0K/0K, paused 2ms+3ms" 913 83
+Debug "2015-06-16 17:32:16.453430" 137 Tethering "eth0 is not a tetherable iface, ignoring" 224 84
+Debug "2015-06-16 17:32:16.663430" 911 AppThwack /task/e3acf7a26d8f9bb0a15af4005b0a6a5098ac1993/status 11200 85
+Info "2015-06-16 17:32:17.464430" 137 "WifiHW  " "wifi_load_driver end right 3" 228 86
+Info "2015-06-16 17:32:17.464430" 137 "WifiHW  " "wifi_start_supplicant enter" 228 87
+Debug "2015-06-16 17:32:17.464430" 137 "WifiHW  " "create dhcp dir ok!" 228 88
+Info "2015-06-16 17:32:17.464430" 137 "WifiHW  " ensure_config_file_exists 228 89
+Info "2015-06-16 17:32:17.464430" 11202 wpa_supplicant "Initial scan channel number: 11" 11202 90
+Info "2015-06-16 17:32:17.464430" 137 "WifiHW  " "wifi_start_supplicant end right 2" 228 91
+Debug "2015-06-16 17:32:17.474430" 137 WifiService "[smart wifi] mSmartWiFiStatus: 0 mBatteryLevel: 100 mWifiConnected: false" 153 92
+Debug "2015-06-16 17:32:17.474430" 137 WifiService "[smart wifi] ACTION_BATTERY_CHANGED pluggedType: 2" 153 93
+Info "2015-06-16 17:32:17.514430" 137 "WifiHW  " "can't access IFACE_DIR OK" 11203 94
+Debug "2015-06-16 17:32:17.514430" 11032 NetSharing_NSReceiver "onReceive : android.net.wifi.WIFI_STATE_CHANGED" 11032 95
+Debug "2015-06-16 17:32:17.514430" 11032 NetSharing "wifi enabled change, state = false" 11032 96
+Verbose "2015-06-16 17:32:17.554430" 137 LocationManagerService "SettingsObserver(update): updateProvidersLocked" 305 97
+Info "2015-06-16 17:32:17.574430" 11202 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=-1 state=2 BSSID=00:00:00:00:00:00" 11202 98
+Info "2015-06-16 17:32:17.574430" 11202 wpa_supplicant "Trying to get current scan results first without requesting a new scan to speed up initial association" 11202 99
+Info "2015-06-16 17:32:17.574430" 11202 wpa_supplicant "wpa_supplicant_get_scan_results:return scan results2" 11202 100
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant "AP:ssid[MJ Private],rssi[-72],BSSID=00:17:c5:e9:a8:eb" 11202 101
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[AppThwack],rssi[-67],BSSID=00:26:cb:a0:1e:80 11202 102
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[ThePacificBuilding],rssi[-49],BSSID=06:27:22:ef:f1:a5 11202 103
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[AppThwack],rssi[-54],BSSID=00:23:eb:ac:50:a0 11202 104
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant "AP:ssid[MJ Guest],rssi[-73],BSSID=00:17:c5:e9:a8:ec" 11202 105
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[AppThwack],rssi[-73],BSSID=ec:44:76:b8:14:f0 11202 106
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[],rssi[-51],BSSID=0a:27:22:ef:f1:a5 11202 107
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[AGM-Guest],rssi[-74],BSSID=06:24:b2:51:a4:da 11202 108
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[AppThwack],rssi[-72],BSSID=c4:7d:4f:58:94:30 11202 109
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[dd-wrt],rssi[-68],BSSID=00:18:39:d1:27:8f 11202 110
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[AppThwack],rssi[-71],BSSID=f0:29:29:99:a1:f0 11202 111
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[AppThwack],rssi[-63],BSSID=00:26:cb:a0:47:00 11202 112
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[BANKRUPTCY],rssi[-74],BSSID=00:24:b2:51:a4:da 11202 113
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant "AP:ssid[Gary Bertoni's Network],rssi[-74],BSSID=10:9a:dd:81:8c:25" 11202 114
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[ThePacificBuilding],rssi[-81],BSSID=06:27:22:ef:f1:75 11202 115
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[],rssi[-84],BSSID=0a:27:22:ef:f1:75 11202 116
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[ThePacificBuilding],rssi[-88],BSSID=06:27:22:fd:f0:68 11202 117
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[2EastUni],rssi[-69],BSSID=00:27:22:fa:1b:0d 11202 118
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[AppThwack],rssi[-78],BSSID=00:26:cb:4d:be:b0 11202 119
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[ThePacificBuilding],rssi[-63],BSSID=06:27:22:fd:f1:d9 11202 120
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[kkb],rssi[-89],BSSID=00:01:38:a0:98:c2 11202 121
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[Lilley-2G],rssi[-79],BSSID=20:aa:4b:93:32:8f 11202 122
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[],rssi[-63],BSSID=0a:27:22:fd:f1:d9 11202 123
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[AppThwack],rssi[-73],BSSID=00:26:cb:9f:a9:00 11202 124
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant AP:ssid[CenturyLink9084],rssi[-78],BSSID=9c:97:26:5e:8d:4f 11202 125
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant "Received 5945 bytes of scan results (25 BSSes)" 11202 126
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant wpa_driver_wext_get_scan_results--- 11202 127
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant wpa_disabled_ssid_list_clear 11202 128
+Info "2015-06-16 17:32:17.584430" 11202 wpa_supplicant "No suitable AP found." 11202 129
+Info "2015-06-16 17:32:17.634430" 137 "WifiHW  " "Connect to Supplicant done" 11203 130
+Verbose "2015-06-16 17:32:17.644430" 137 WifiStateTracker "Connection to supplicant established, state=SCANNING" 226 131
+Info "2015-06-16 17:32:17.644430" 11202 wpa_supplicant "Rx Data Filter Add [0] command" 11202 132
+Info "2015-06-16 17:32:17.644430" 11202 wpa_supplicant "Rx Data Filter Add [3] command" 11202 133
+Info "2015-06-16 17:32:17.654430" 11202 wpa_supplicant "Rx Data Filter Add [4] command" 11202 134
+Info "2015-06-16 17:32:17.654430" 74 keystore "uid: 1000 action: t -> 3 state: 3 -> 3 retry: 4" 74 135
+Verbose "2015-06-16 17:32:17.654430" 137 WifiStateTracker KeyStore.LOCKED 226 136
+Info "2015-06-16 17:32:17.654430" 11202 wpa_supplicant DISABLE_80211X 11202 137
+Info "2015-06-16 17:32:17.654430" 11202 wpa_supplicant "CTRL_IFACE: wpa_supplicant_ctrl_iface_disable_80211X" 11202 138
+Info "2015-06-16 17:32:17.654430" 11202 wpa_supplicant "set scan channel number: 11" 11202 139
+Warning "2015-06-16 17:32:17.654430" 11202 wpa_supplicant "CTRL_IFACE: Could not find SSID id=0 to update" 11202 140
+Debug "2015-06-16 17:32:17.654430" 137 ConnectivityService "Dropping ConnectivityChange for WIFI: DISCONNECTED/SCANNING" 226 141
+Debug "2015-06-16 17:32:17.724430" 911 AppThwack /task/e3acf7a26d8f9bb0a15af4005b0a6a5098ac1993/status 11207 142
+Debug "2015-06-16 17:32:18.055430" 911 AppThwackAndroidLib "setWifiEnabled: wifi is: true" 11188 143
+Warning "2015-06-16 17:32:18.065430" 137 BackupManagerService "dataChanged but no participant pkg='com.android.providers.settings' uid=10090" 5214 144
+Info "2015-06-16 17:32:18.205430" 911 AppThwackAndroidLib "Attempting Wi-Fi connection: attempt 1 out of 2." 11188 145
+Debug "2015-06-16 17:32:18.205430" 911 AppThwackAndroidLib "connectToNetwork: ssid: AppThwack" 11188 146
+Debug "2015-06-16 17:32:18.205430" 911 AppThwackAndroidLib "getWifiConfigBySsid: ssid: AppThwack" 11188 147
+Warning "2015-06-16 17:32:18.205430" 137 BackupManagerService "dataChanged but no participant pkg='com.android.providers.settings' uid=10090" 142 148
+Debug "2015-06-16 17:32:18.215430" 911 AppThwackAndroidLib "networks: 1" 11188 149
+Debug "2015-06-16 17:32:18.215430" 911 AppThwackAndroidLib "getWifiConfigBySsid: checking: ""AppThwack"" against ""AppThwack""" 11188 150
+Debug "2015-06-16 17:32:18.215430" 911 AppThwackAndroidLib "Network profile found!" 11188 151
+Info "2015-06-16 17:32:18.215430" 11202 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=-1 state=8 BSSID=00:00:00:00:00:00" 11202 152
+Verbose "2015-06-16 17:32:18.215430" 137 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=-1 state=8 BSSID=00:00:00:00:00:00]" 11203 153
+Verbose "2015-06-16 17:32:18.215430" 137 WifiStateTracker "Changing supplicant state: SCANNING ==> DORMANT" 226 154
+Debug "2015-06-16 17:32:18.215430" 137 WifiStateTracker "Reset connections and stopping DHCP" 226 155
+Info "2015-06-16 17:32:18.215430" 11202 wpa_supplicant "Rx Data Filter Remove [5] command" 11202 156
+Info "2015-06-16 17:32:18.215430" 11202 wpa_supplicant "auto ip disabled" 11202 157
+Info "2015-06-16 17:32:18.215430" 11202 wpa_supplicant "Rx Data Filter: do not support, ignore" 11202 158
+Debug "2015-06-16 17:32:18.215430" 137 NetUtils "ifc_get_info addr=0 !" 226 159
+Info "2015-06-16 17:32:18.215430" 11202 wpa_supplicant "CTRL_IFACE: SELECT_NETWORK id=0" 11202 160
+Info "2015-06-16 17:32:18.315430" 11202 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=-1 state=2 BSSID=00:00:00:00:00:00" 11202 161
+Verbose "2015-06-16 17:32:18.325430" 137 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=-1 state=2 BSSID=00:00:00:00:00:00]" 11203 162
+Debug "2015-06-16 17:32:18.815430" 911 AppThwack /task/e3acf7a26d8f9bb0a15af4005b0a6a5098ac1993/status 11208 163
+Debug "2015-06-16 17:32:18.885430" 911 dalvikvm "GC_CONCURRENT freed 468K, 46% free 3516K/6471K, external 0K/0K, paused 2ms+2ms" 913 164
+Debug "2015-06-16 17:32:19.216430" 137 WifiStateTracker "Disabling interface" 226 165
+Warning "2015-06-16 17:32:19.226430" 11202 wpa_supplicant "l2_packet_receive - recvfrom" 11202 166
+Verbose "2015-06-16 17:32:19.246430" 137 WifiStateTracker "Changing supplicant state: DORMANT ==> SCANNING" 226 167
+Debug "2015-06-16 17:32:19.256430" 11032 NetSharing_NSReceiver "onReceive : android.net.wifi.STATE_CHANGE" 11032 168
+Info "2015-06-16 17:32:19.256430" 11032 NetSharing_NSReceiver wifienabled:false 11032 169
+Debug "2015-06-16 17:32:19.256430" 137 ConnectivityService "Dropping ConnectivityChange for WIFI: DISCONNECTED/SCANNING" 226 170
+Debug "2015-06-16 17:32:19.256430" 137 ConnectivityService "Dropping ConnectivityChange for WIFI: DISCONNECTED/SCANNING" 226 171
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant "got scan complete" 11202 172
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant "wpa_supplicant_get_scan_results:return scan results2" 11202 173
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[],rssi[-89],BSSID=0a:27:22:fd:f0:68 11202 174
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[ThePacificBuilding],rssi[-45],BSSID=06:27:22:ef:f1:a5 11202 175
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[AppThwack],rssi[-64],BSSID=00:26:cb:a0:1e:80 11202 176
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant "AP:ssid[MJ Private],rssi[-70],BSSID=00:17:c5:e9:a8:eb" 11202 177
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant "AP:ssid[MJ Guest],rssi[-69],BSSID=00:17:c5:e9:a8:ec" 11202 178
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[AppThwack],rssi[-70],BSSID=ec:44:76:b8:14:f0 11202 179
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[AppThwack],rssi[-50],BSSID=00:23:eb:ac:50:a0 11202 180
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[],rssi[-46],BSSID=0a:27:22:ef:f1:a5 11202 181
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[ThePacificBuilding],rssi[-88],BSSID=06:27:22:ef:f2:79 11202 182
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[dd-wrt],rssi[-71],BSSID=00:18:39:d1:27:8f 11202 183
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[AppThwack],rssi[-72],BSSID=f0:29:29:99:a1:f0 11202 184
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[AppThwack],rssi[-66],BSSID=00:26:cb:a0:47:00 11202 185
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[],rssi[-86],BSSID=0a:27:22:ef:f2:79 11202 186
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[BANKRUPTCY],rssi[-76],BSSID=00:24:b2:51:a4:da 11202 187
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[AGM-Guest],rssi[-74],BSSID=06:24:b2:51:a4:da 11202 188
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[AppThwack],rssi[-70],BSSID=c4:7d:4f:58:94:30 11202 189
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant "AP:ssid[Gary Bertoni's Network],rssi[-74],BSSID=10:9a:dd:81:8c:25" 11202 190
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[],rssi[-76],BSSID=0a:27:22:ef:f1:75 11202 191
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[ThePacificBuilding],rssi[-82],BSSID=06:27:22:ef:f1:75 11202 192
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[2EastUni],rssi[-68],BSSID=00:27:22:fa:1b:0d 11202 193
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[ThePacificBuilding],rssi[-65],BSSID=06:27:22:fd:f1:d9 11202 194
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[AppThwack],rssi[-71],BSSID=00:26:cb:9f:a9:00 11202 195
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[AppThwack],rssi[-77],BSSID=00:26:cb:4d:be:b0 11202 196
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[],rssi[-70],BSSID=0a:27:22:fd:f1:d9 11202 197
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[AppThwack],rssi[-72],BSSID=cc:d5:39:1e:b9:90 11202 198
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[kkb],rssi[-87],BSSID=00:01:38:a0:98:c2 11202 199
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[CenturyLink9084],rssi[-77],BSSID=9c:97:26:5e:8d:4f 11202 200
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant AP:ssid[Lilley-2G],rssi[-79],BSSID=20:aa:4b:93:32:8f 11202 201
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant "Received 6654 bytes of scan results (28 BSSes)" 11202 202
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant wpa_driver_wext_get_scan_results--- 11202 203
+Warning "2015-06-16 17:32:19.366430" 11202 wpa_supplicant "[EAP-MSG] EAP wpa_supplicant_check_sim@436: eap_methods not available" 11202 204
+Warning "2015-06-16 17:32:19.366430" 11202 wpa_supplicant "[EAP-MSG] EAP wpa_supplicant_check_sim@436: eap_methods not available" 11202 205
+Warning "2015-06-16 17:32:19.366430" 11202 wpa_supplicant "[EAP-MSG] EAP wpa_supplicant_check_sim@436: eap_methods not available" 11202 206
+Warning "2015-06-16 17:32:19.366430" 11202 wpa_supplicant "[EAP-MSG] EAP wpa_supplicant_check_sim@436: eap_methods not available" 11202 207
+Warning "2015-06-16 17:32:19.366430" 11202 wpa_supplicant "[EAP-MSG] EAP wpa_supplicant_check_sim@436: eap_methods not available" 11202 208
+Warning "2015-06-16 17:32:19.366430" 11202 wpa_supplicant "[EAP-MSG] EAP wpa_supplicant_check_sim@436: eap_methods not available" 11202 209
+Warning "2015-06-16 17:32:19.366430" 11202 wpa_supplicant "[EAP-MSG] EAP wpa_supplicant_check_sim@436: eap_methods not available" 11202 210
+Warning "2015-06-16 17:32:19.366430" 11202 wpa_supplicant "[EAP-MSG] EAP wpa_supplicant_check_sim@436: eap_methods not available" 11202 211
+Warning "2015-06-16 17:32:19.366430" 11202 wpa_supplicant "[EAP-MSG] EAP wpa_supplicant_check_sim@436: eap_methods not available" 11202 212
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant "Trying to associate with 00:23:eb:ac:50:a0 (SSID='AppThwack' freq=2412 MHz)" 11202 213
+Info "2015-06-16 17:32:19.366430" 11202 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=-1 state=3 BSSID=00:23:eb:ac:50:a0" 11202 214
+Verbose "2015-06-16 17:32:19.376430" 137 WifiMonitor "Event [Trying to associate with 00:23:eb:ac:50:a0 (SSID='AppThwack' freq=2412 MHz)]" 11203 215
+Verbose "2015-06-16 17:32:19.376430" 137 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=-1 state=3 BSSID=00:23:eb:ac:50:a0]" 11203 216
+Warning "2015-06-16 17:32:19.376430" 137 WifiService "misformatted scan result for: 0a:27:22:ef:f1:a5	2412	-46	[WPA-PSK-TKIP+CCMP][WPA2-PSK-TKIP+CCMP]" 350 217
+Verbose "2015-06-16 17:32:19.386430" 137 WifiStateTracker "Changing supplicant state: SCANNING ==> ASSOCIATING" 226 218
+Info "2015-06-16 17:32:19.386430" 74 keystore "uid: 1000 action: t -> 3 state: 3 -> 3 retry: 4" 74 219
+Verbose "2015-06-16 17:32:19.386430" 137 WifiStateTracker KeyStore.LOCKED 226 220
+Info "2015-06-16 17:32:19.386430" 11202 wpa_supplicant DISABLE_80211X 11202 221
+Info "2015-06-16 17:32:19.386430" 11202 wpa_supplicant "CTRL_IFACE: wpa_supplicant_ctrl_iface_disable_80211X" 11202 222
+Warning "2015-06-16 17:32:19.386430" 137 WifiService "misformatted scan result for: 0a:27:22:ef:f1:a5	2412	-46	[WPA-PSK-TKIP+CCMP][WPA2-PSK-TKIP+CCMP]" 500 223
+Warning "2015-06-16 17:32:19.386430" 137 WifiService "misformatted scan result for: 0a:27:22:fd:f1:d9	2462	-70	[WPA-PSK-TKIP+CCMP][WPA2-PSK-TKIP+CCMP]" 500 224
+Warning "2015-06-16 17:32:19.386430" 137 WifiService "misformatted scan result for: 0a:27:22:fd:f1:d9	2462	-70	[WPA-PSK-TKIP+CCMP][WPA2-PSK-TKIP+CCMP]" 350 225
+Warning "2015-06-16 17:32:19.396430" 137 WifiService "misformatted scan result for: 0a:27:22:ef:f1:75	2447	-76	[WPA-PSK-TKIP+CCMP][WPA2-PSK-TKIP+CCMP]" 500 226
+Debug "2015-06-16 17:32:19.396430" 137 ConnectivityService "[embedded] ConnectivityChange for WIFI: CONNECTING/CONNECTING, default=-1" 226 227
+Warning "2015-06-16 17:32:19.396430" 137 WifiService "misformatted scan result for: 0a:27:22:ef:f1:75	2447	-76	[WPA-PSK-TKIP+CCMP][WPA2-PSK-TKIP+CCMP]" 350 228
+Warning "2015-06-16 17:32:19.406430" 137 WifiService "misformatted scan result for: 0a:27:22:ef:f2:79	2427	-86	[WPA-PSK-TKIP+CCMP][WPA2-PSK-TKIP+CCMP]" 350 229
+Warning "2015-06-16 17:32:19.406430" 137 WifiService "misformatted scan result for: 0a:27:22:ef:f2:79	2427	-86	[WPA-PSK-TKIP+CCMP][WPA2-PSK-TKIP+CCMP]" 500 230
+Warning "2015-06-16 17:32:19.406430" 137 WifiService "misformatted scan result for: 0a:27:22:fd:f0:68	2412	-89	[WPA-PSK-TKIP+CCMP][WPA2-PSK-TKIP+CCMP]" 350 231
+Warning "2015-06-16 17:32:19.406430" 137 WifiService "misformatted scan result for: 0a:27:22:fd:f0:68	2412	-89	[WPA-PSK-TKIP+CCMP][WPA2-PSK-TKIP+CCMP]" 500 232
+Warning "2015-06-16 17:32:19.416430" 137 WifiService "misformatted scan result for: 0a:27:22:ef:f1:a5	2412	-46	[WPA-PSK-TKIP+CCMP][WPA2-PSK-TKIP+CCMP]" 5210 233
+Warning "2015-06-16 17:32:19.426430" 137 WifiService "misformatted scan result for: 0a:27:22:fd:f1:d9	2462	-70	[WPA-PSK-TKIP+CCMP][WPA2-PSK-TKIP+CCMP]" 5210 234
+Warning "2015-06-16 17:32:19.436430" 137 WifiService "misformatted scan result for: 0a:27:22:ef:f1:75	2447	-76	[WPA-PSK-TKIP+CCMP][WPA2-PSK-TKIP+CCMP]" 5210 235
+Warning "2015-06-16 17:32:19.446430" 137 WifiService "misformatted scan result for: 0a:27:22:ef:f2:79	2427	-86	[WPA-PSK-TKIP+CCMP][WPA2-PSK-TKIP+CCMP]" 5210 236
+Warning "2015-06-16 17:32:19.446430" 137 WifiService "misformatted scan result for: 0a:27:22:fd:f0:68	2412	-89	[WPA-PSK-TKIP+CCMP][WPA2-PSK-TKIP+CCMP]" 5210 237
+Debug "2015-06-16 17:32:19.946430" 911 AppThwack /task/e3acf7a26d8f9bb0a15af4005b0a6a5098ac1993/status 11209 238
+Info "2015-06-16 17:32:20.357430" 11202 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=4 BSSID=00:23:eb:ac:50:a0" 11202 239
+Verbose "2015-06-16 17:32:20.357430" 137 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=0 state=4 BSSID=00:23:eb:ac:50:a0]" 11203 240
+Info "2015-06-16 17:32:20.357430" 11202 wpa_supplicant "Associated with 00:23:eb:ac:50:a0" 11202 241
+Verbose "2015-06-16 17:32:20.357430" 137 WifiStateTracker "Changing supplicant state: ASSOCIATING ==> ASSOCIATED" 226 242
+Info "2015-06-16 17:32:20.357430" 11202 wpa_supplicant "RX EAPOL from 00:23:eb:ac:50:a0" 11202 243
+Verbose "2015-06-16 17:32:20.367430" 137 WifiMonitor "Event [Associated with 00:23:eb:ac:50:a0]" 11203 244
+Info "2015-06-16 17:32:20.367430" 11202 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=5 BSSID=00:00:00:00:00:00" 11202 245
+Verbose "2015-06-16 17:32:20.367430" 137 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=0 state=5 BSSID=00:00:00:00:00:00]" 11203 246
+Verbose "2015-06-16 17:32:20.377430" 137 WifiStateTracker "Changing supplicant state: ASSOCIATED ==> FOUR_WAY_HANDSHAKE" 226 247
+Debug "2015-06-16 17:32:20.377430" 137 ConnectivityService "Dropping ConnectivityChange for WIFI: CONNECTING/AUTHENTICATING" 226 248
+Info "2015-06-16 17:32:20.387430" 11202 wpa_supplicant "l2_packet_send: ret = '121'" 11202 249
+Info "2015-06-16 17:32:20.387430" 11202 wpa_supplicant "RX EAPOL from 00:23:eb:ac:50:a0" 11202 250
+Info "2015-06-16 17:32:20.387430" 11202 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=5 BSSID=00:00:00:00:00:00" 11202 251
+Verbose "2015-06-16 17:32:20.387430" 137 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=0 state=5 BSSID=00:00:00:00:00:00]" 11203 252
+Verbose "2015-06-16 17:32:20.387430" 137 WifiStateTracker "Changing supplicant state: FOUR_WAY_HANDSHAKE ==> FOUR_WAY_HANDSHAKE" 226 253
+Info "2015-06-16 17:32:20.387430" 11202 wpa_supplicant "l2_packet_send: ret = '99'" 11202 254
+Info "2015-06-16 17:32:20.387430" 11202 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=6 BSSID=00:00:00:00:00:00" 11202 255
+Verbose "2015-06-16 17:32:20.387430" 137 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=0 state=6 BSSID=00:00:00:00:00:00]" 11203 256
+Verbose "2015-06-16 17:32:20.387430" 137 WifiStateTracker "Changing supplicant state: FOUR_WAY_HANDSHAKE ==> GROUP_HANDSHAKE" 226 257
+Info "2015-06-16 17:32:20.387430" 11202 wpa_supplicant "WPA: Key negotiation completed with 00:23:eb:ac:50:a0 [PTK=CCMP GTK=TKIP]" 11202 258
+Info "2015-06-16 17:32:20.387430" 11202 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=7 BSSID=00:00:00:00:00:00" 11202 259
+Info "2015-06-16 17:32:20.387430" 11202 wpa_supplicant "CTRL-EVENT-CONNECTED - Connection to 00:23:eb:ac:50:a0 completed (auth) [id=0 id_str=]" 11202 260
+Info "2015-06-16 17:32:20.387430" 11202 wpa_supplicant "WPS: cancel wps_retry timer in: wpas_wps_eapol_cb" 11202 261
+Verbose "2015-06-16 17:32:20.387430" 137 WifiMonitor "Event [WPA: Key negotiation completed with 00:23:eb:ac:50:a0 [PTK=CCMP GTK=TKIP]]" 11203 262
+Verbose "2015-06-16 17:32:20.387430" 137 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=0 state=7 BSSID=00:00:00:00:00:00]" 11203 263
+Verbose "2015-06-16 17:32:20.387430" 137 WifiMonitor "Event [CTRL-EVENT-CONNECTED - Connection to 00:23:eb:ac:50:a0 completed (auth) [id=0 id_str=]]" 11203 264
+Verbose "2015-06-16 17:32:20.397430" 137 WifiStateTracker "Changing supplicant state: GROUP_HANDSHAKE ==> COMPLETED" 226 265
+Verbose "2015-06-16 17:32:20.397430" 137 WifiStateTracker "New network state is CONNECTED" 226 266
+Debug "2015-06-16 17:32:20.397430" 137 WifiStateTracker "DhcpHandler: acquire ddWakeLock" 11206 267
+Debug "2015-06-16 17:32:20.407430" 137 WifiStateTracker "DHCP request started" 11206 268
+Debug "2015-06-16 17:32:20.417430" 137 ConnectivityService "Dropping ConnectivityChange for WIFI: CONNECTING/OBTAINING_IPADDR" 226 269
+Debug "2015-06-16 17:32:20.427430" 11210 "Dhcpcd  " "hardware address = 7c:61:93:00:bf:73" 11210 270
+Debug "2015-06-16 17:32:20.427430" 11210 "Dhcpcd  " "executing `/system/etc/dhcpcd/dhcpcd-run-hooks', reason PREINIT, autoip: 0" 11210 271
+Debug "2015-06-16 17:32:20.427430" 11032 NetSharing_NSReceiver "onReceive : android.net.wifi.STATE_CHANGE" 11032 272
+Info "2015-06-16 17:32:20.427430" 11032 NetSharing_NSReceiver wifienabled:false 11032 273
+Error "2015-06-16 17:32:20.457430" 11210 "Dhcpcd  " "sending DHCP_DISCOVER with xid 0x46534ae, next in 4.25 seconds" 11210 274
+Debug "2015-06-16 17:32:21.047430" 911 AppThwack /task/e3acf7a26d8f9bb0a15af4005b0a6a5098ac1993/status 11217 275
+Debug "2015-06-16 17:32:21.238430" 137 WifiStateTracker "DHCP Retry Count: 0" 226 276
+Debug "2015-06-16 17:32:21.248430" 259 StatusBarService "updateIcon slot=wifi index=16 viewIndex=12 old=StatusBarIcon(pkg=com.android.systemui id=0x7f0200d3 level=0 visible=false num=0 ) icon=StatusBarIcon(pkg=com.android.systemui id=0x7f0200d2 level=0 visible=true num=0 )" 259 277
+Error "2015-06-16 17:32:21.478430" 11210 "Dhcpcd  " "sending DHCP_REQUEST with xid 0x46534ae, next in 3.22 seconds" 11210 278
+Debug "2015-06-16 17:32:21.568430" 11210 "Dhcpcd  " "adding IP address 172.16.222.69/16" 11210 279
+Debug "2015-06-16 17:32:21.568430" 11210 "Dhcpcd  " "adding route to 0.0.0.0/0 via 172.16.0.1" 11210 280
+Debug "2015-06-16 17:32:21.578430" 11210 "Dhcpcd  " "executing `/system/etc/dhcpcd/dhcpcd-run-hooks', reason BOUND, autoip: 0" 11210 281
+Debug "2015-06-16 17:32:21.658430" 11210 "Dhcpcd  " "renew in 300 seconds" 11210 282
+Debug "2015-06-16 17:32:22.109430" 911 AppThwack /task/e3acf7a26d8f9bb0a15af4005b0a6a5098ac1993/status 11238 283
+Debug "2015-06-16 17:32:22.179430" 911 dalvikvm "GC_CONCURRENT freed 442K, 46% free 3513K/6471K, external 0K/0K, paused 2ms+2ms" 913 284
+Debug "2015-06-16 17:32:22.409430" 137 WifiStateTracker "DHCP succeeded with lease: 600" 11206 285
+Info "2015-06-16 17:32:22.419430" 11202 wpa_supplicant "Rx Data Filter Add [5] command" 11202 286
+Info "2015-06-16 17:32:22.419430" 11202 wpa_supplicant "auto ip disabled" 11202 287
+Debug "2015-06-16 17:32:22.419430" 137 WifiStateTracker "DhcpHandler: release ddWakeLock" 11206 288
+Debug "2015-06-16 17:32:22.429430" 137 WifiStateTracker "change state to connected for wifi supplicant state=COMPLETED" 226 289
+Debug "2015-06-16 17:32:22.449430" 11032 NetSharing_NSReceiver "onReceive : android.net.wifi.STATE_CHANGE" 11032 290
+Info "2015-06-16 17:32:22.449430" 11032 NetSharing_NSReceiver wifienabled:true 11032 291
+Debug "2015-06-16 17:32:22.449430" 137 WifiWatchdogService "(android.server.ServerThread) AppThwack (00:23:eb:ac:50:a0) does not require the watchdog" 153 292
+Debug "2015-06-16 17:32:22.459430" 137 WifiStateTracker "adding routing rule table=>wifi fromIp=all, toIp=all priority=3001" 226 293
+Info "2015-06-16 17:32:22.459430" 75 "ipd     " "IP CMD: /system/bin/ip ro flush table wifi" 75 294
+Verbose "2015-06-16 17:32:22.459430" 137 WifiStateTracker "IP configuration: ipaddr 172.16.222.69 gateway 172.16.0.1 netmask 255.255.0.0 dns1 75.75.75.75 dns2 75.75.75.76 DHCP server 1.1.1.1 lease 600 seconds" 226 295
+Info "2015-06-16 17:32:22.459430" 11202 wpa_supplicant "WiFi gateway: 0x 10010ac" 11202 296
+Info "2015-06-16 17:32:22.459430" 11202 wpa_supplicant "Gateway ADD OK, indicate to driver" 11202 297
+Debug "2015-06-16 17:32:22.459430" 137 WimaxStateTracker "teardown, mTornDownByConnMgr=false" 226 298
+Debug "2015-06-16 17:32:22.459430" 137 NetworkStateTracker "setTeardownRequested true -> true for WIMAX" 226 299
+Debug "2015-06-16 17:32:22.459430" 137 NetworkStateTracker "setTeardownRequested true -> true for mobile_dun" 226 300
+Debug "2015-06-16 17:32:22.459430" 308 DataConnectionTracker disableApnType(dun) 437 301
+Debug "2015-06-16 17:32:22.459430" 137 NetworkStateTracker "setTeardownRequested false -> true for mobile" 226 302
+Debug "2015-06-16 17:32:22.459430" 308 DataConnectionTracker disableApnType(default) 2782 303
+Debug "2015-06-16 17:32:22.459430" 308 DataConnectionTracker "setEnabled(0, false) with old state = true and enabledCount = 1" 2782 304
+Debug "2015-06-16 17:32:22.459430" 308 DataConnectionTracker "EVENT_APN_ENABLE_REQUEST 0, 0" 308 305
+Debug "2015-06-16 17:32:22.459430" 308 DataConnectionTracker " dataEnabled = true, enabledCount = 1, isApnTypeActive = true" 308 306
+Debug "2015-06-16 17:32:22.459430" 308 DataConnectionTracker "enabledCount(0) -> 0" 308 307
+Debug "2015-06-16 17:32:22.459430" 137 ConnectivityService "[embedded] ConnectivityChange for WIFI: CONNECTED/CONNECTED, default=-1" 226 308
+Debug "2015-06-16 17:32:22.459430" 137 ConnectivityService "handleConnect() networkinfo=NetworkInfo: type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true, if: eth0, isFailover=false" 226 309
+Debug "2015-06-16 17:32:22.459430" 137 ConnectivityService "[Dual mode]:handleConnectDualMode: Normal Mode handler" 226 310
+Verbose "2015-06-16 17:32:22.459430" 137 ConnectivityService "Policy requires WIMAX teardown quickly" 226 311
+Verbose "2015-06-16 17:32:22.459430" 137 ConnectivityService "Policy requires mobile_dun teardown quickly" 226 312
+Warning "2015-06-16 17:32:22.459430" 137 ConnectivityService "Network declined teardown quickly request" 226 313
+Verbose "2015-06-16 17:32:22.459430" 137 ConnectivityService "Policy requires mobile teardown quickly" 226 314
+Debug "2015-06-16 17:32:22.469430" 137 NetworkStateTracker "setTeardownRequested true -> true for mobile" 226 315
+Debug "2015-06-16 17:32:22.469430" 137 NetworkStateTracker "setTeardownRequested false -> false for WIFI" 226 316
+Verbose "2015-06-16 17:32:22.469430" 137 NetworkStateTracker "Setting TCP values: [4095,87380,110208,4096,16384,110208] which comes from [net.tcp.buffersize.wifi]" 226 317
+Info "2015-06-16 17:32:22.479430" 137 TelephonyRegistry "notifyDataConnection: state=0 isDataConnectivityPossible=true reason=dataDisabled interfaceName=null networkType=7" 5215 318
+Debug "2015-06-16 17:32:22.479430" 259 StatusBarPolicy "hasService()=true ,mDataState=0 ,mPhone.htcModemLinkOn()=false ,mDataActivity=0" 259 319
+Debug "2015-06-16 17:32:22.479430" 137 TelephonyRegistry "notifyDataConnection() state=0isDataConnectivityPossible()true, reason=dataDisabled" 5215 320
+Debug "2015-06-16 17:32:22.479430" 259 StatusBarPolicy slotType[0]=empty 259 321
+Debug "2015-06-16 17:32:22.479430" 137 TelephonyRegistry "broadcastDataConnectionStateChanged()  state=DISCONNECTEDtypes=default,supl, interfaceName=null" 5215 322
+Debug "2015-06-16 17:32:22.499430" 137 ConnectivityService "adding dns 75.75.75.75 for WIFI" 226 323
+Info "2015-06-16 17:32:22.499430" 75 "ipd     " "IP CMD: /system/bin/ip ro add 172.16.0.0/16 dev eth0 src 172.16.222.69 table wifi" 75 324
+Debug "2015-06-16 17:32:22.499430" 137 ConnectivityService "adding dns 75.75.75.76 for WIFI" 226 325
+Info "2015-06-16 17:32:22.509430" 75 "ipd     " "IP CMD: /system/bin/ip ro add default via 172.16.0.1 dev eth0 table wifi" 75 326
+Debug "2015-06-16 17:32:22.519430" 137 WifiService "type: WIFI, connected: true" 153 327
+Debug "2015-06-16 17:32:22.529430" 259 StatusBarPolicy iconIndex=1 259 328
+Verbose "2015-06-16 17:32:22.529430" 259 StatusBarPolicy cdmaLevel:5;max:6 259 329
+Debug "2015-06-16 17:32:22.529430" 259 StatusBarPolicy iconLevel:5 259 330
+Debug "2015-06-16 17:32:22.529430" 259 StatusBarService "updateIcon slot=wifi index=16 viewIndex=12 old=StatusBarIcon(pkg=com.android.systemui id=0x7f0200d2 level=0 visible=true num=0 ) icon=StatusBarIcon(pkg=com.android.systemui id=0x7f0200d9 level=0 visible=true num=0 )" 259 331
+Debug "2015-06-16 17:32:22.529430" 137 Tethering "Tethering got CONNECTIVITY_ACTION type: WIFI, subtype: , status: CONNECTED" 227 332
+Debug "2015-06-16 17:32:22.529430" 137 Tethering "icon Type=1, subtype=0" 227 333
+Debug "2015-06-16 17:32:22.529430" 137 Tethering "MasterInitialState.processMessage what=3" 227 334
+Debug "2015-06-16 17:32:22.529430" 259 StatusBarService "updateIcon slot=phone_signal index=20 viewIndex=15 old=StatusBarIcon(pkg=com.android.systemui id=0x7f020011 level=0 visible=true num=0 ) icon=StatusBarIcon(pkg=com.android.systemui id=0x7f020011 level=0 visible=true num=0 )" 259 335
+Debug "2015-06-16 17:32:22.539430" 322 GTalkService "##### Network broadcast (connected=true) type=WIFI, state=CONNECTED" 322 336
+Info "2015-06-16 17:32:22.549430" 322 GTalkService "[GTalkConnection.1] setInternalNetworkState: type=1, state=CONNECTED" 322 337
+    "06-16 10:32:19.979   322   322 D GTalkService/c: [GTalkConnection.1] connect: acquire wakelock, async connect..."  338
+Info "2015-06-16 17:32:22.549430" 322 GTalkService "[GTalkConnection.1] acquireAsyncWakeLock: WakeLock{406aeee0 held=true, refCount=0}" 322 339
+Info "2015-06-16 17:32:22.559430" 75 "ipd     " "IP CMD: /system/bin/ip ru del from all to all table wifi prio 3001" 75 340
+Verbose "2015-06-16 17:32:22.579430" 7945 BugReportReceiver "Recv Intent: Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x10000000 cmp=com.htc.BugReport/.BugReportReceiver (has extras) }" 11249 341
+Debug "2015-06-16 17:32:22.589430" 7954 UploadManager "Action android.net.conn.CONNECTIVITY_CHANGE" 7954 342
+Info "2015-06-16 17:32:22.599430" 75 "ipd     " "IP CMD: /system/bin/ip ru add from all to all table wifi prio 3001" 75 343
+Warning "2015-06-16 17:32:22.609430" 137 ProcessStats "Skipping unknown process pid 11248" 157 344
+Info "2015-06-16 17:32:22.619430" 75 "ipd     " "IP CMD: /system/bin/ip -f inet ru del from all to all table gprs prio 3002" 75 345
+Info "2015-06-16 17:32:22.629430" 75 "ipd     " "IP CMD: /system/bin/ip -f inet ro flush table gprs" 75 346
+Info "2015-06-16 17:32:22.639430" 322 GTalkService "[GTalkConnection.47] (WORKER THREAD) update account status" 1108 347
+Verbose "2015-06-16 17:32:22.639430" 9563 "ConnLib " isConnected:true 9563 348
+Verbose "2015-06-16 17:32:22.639430" 9563 "ConnLib " isConnectedOrConnecting:true 9563 349
+Verbose "2015-06-16 17:32:22.639430" 9563 "ConnLib " getExtraInfo:null 9563 350
+Verbose "2015-06-16 17:32:22.639430" 9563 "ConnLib " getSubtype:0 9563 351
+Verbose "2015-06-16 17:32:22.639430" 9563 "ConnLib " getSubtypeName: 9563 352
+Verbose "2015-06-16 17:32:22.639430" 9563 "ConnLib " getReason:null 9563 353
+Verbose "2015-06-16 17:32:22.639430" 9563 "ConnLib " getType:1 9563 354
+Verbose "2015-06-16 17:32:22.639430" 9563 "ConnLib " getTypeName:WIFI 9563 355
+Debug "2015-06-16 17:32:22.679430" 137 LocationManagerService "CONNECTIVITY_ACTION: synchronized+" 153 356
+Debug "2015-06-16 17:32:22.679430" 137 LocationManagerService "updateNetworkState available info: NetworkInfo: type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true, if: eth0" 153 357
+Debug "2015-06-16 17:32:22.679430" 137 LocationManagerService "CONNECTIVITY_ACTION: synchronized+ provider size: 3" 153 358
+Debug "2015-06-16 17:32:22.679430" 137 GpsLocationProvider "+ synchronized updateNetworkState  info: NetworkInfo: type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true, if: eth0" 153 359
+Debug "2015-06-16 17:32:22.679430" 137 LocationManagerService "CONNECTIVITY_ACTION: synchronized-" 153 360
+Debug "2015-06-16 17:32:22.679430" 7954 UploadNotification updateNotification1 7954 361
+Debug "2015-06-16 17:32:22.699430" 137 GpsLocationProvider "[handleMessage] message :4" 406 362
+Debug "2015-06-16 17:32:22.699430" 7954 UploadNotification "item =null" 7954 363
+Debug "2015-06-16 17:32:22.719430" 399 AutoSetting "receiver - onReceive()" 399 364
+Debug "2015-06-16 17:32:22.729430" 399 AutoSetting "receiver - intent: android.net.conn.CONNECTIVITY_CHANGE" 11261 365
+Debug "2015-06-16 17:32:22.729430" 399 AutoSetting "receiver - NetworkInfo: type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true, if: eth0" 11261 366
+Debug "2015-06-16 17:32:22.739430" 137 GpsLocationProvider "[handleMessage] UPDATE_NETWORK_STATE" 406 367
+Verbose "2015-06-16 17:32:22.739430" 7945 BugReportReceiver "BugReport Disableed by Settings.Secure:Intent drop" 11249 368
+Debug "2015-06-16 17:32:22.739430" 7954 UploadService "UpdateThread is looping" 11260 369
+Debug "2015-06-16 17:32:22.739430" 137 GpsLocationProvider "updateNetworkState available info: NetworkInfo: type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true, if: eth0" 406 370
+Debug "2015-06-16 17:32:22.739430" 399 AutoSetting "service - onStartCommand() action: com.htc.app.autosetting.requestlocationupdate" 399 371
+Debug "2015-06-16 17:32:22.749430" 399 AutoSetting "service - requestNLP() to last request within 2hrs, don't request 1977629" 399 372
+Debug "2015-06-16 17:32:22.749430" 399 AutoSetting "service - onStartCommand() REMOVE current location bundle" 399 373
+Debug "2015-06-16 17:32:22.749430" 399 AutoSetting "service - handleMessage() incoming message, what:9" 980 374
+Debug "2015-06-16 17:32:22.749430" 399 AutoSetting "service - handleMessage() setting current location null" 980 375
+Debug "2015-06-16 17:32:22.759430" 399 AutoSetting "Util - wifi connected" 399 376
+Debug "2015-06-16 17:32:22.769430" 399 AutoSetting "service - mHandler: update time" 399 377
+Debug "2015-06-16 17:32:22.769430" 399 AutoSetting "service - processTime() within 24hrs, don't check 70165628" 399 378
+Verbose "2015-06-16 17:32:22.779430" 9716 htcMessageUploader "[UploadMessageReceiver] UploadMessageReceiver() constructor !!!" 9716 379
+Info "2015-06-16 17:32:22.779430" 9716 htcMessageUploader "Start thread to upload fota event message:com.htc.htcMessageUploader.UploadMessageReceiver" 9716 380
+Debug "2015-06-16 17:32:22.779430" 9716 htcMessageUploader "Total time in main thread:6 milli-seconds" 9716 381
+Debug "2015-06-16 17:32:22.779430" 9716 htcMessageUploader "Get CONNECTIVITY_ACTION intent" 11263 382
+Info "2015-06-16 17:32:22.789430" 9725 MediaUploader "No need to wake up" 9725 383
+Debug "2015-06-16 17:32:22.799430" 137 NetworkStateTracker "setTeardownRequested true -> false for mobile" 226 384
+Debug "2015-06-16 17:32:22.799430" 137 NetworkStateTracker "setTeardownRequested false -> false for mobile" 226 385
+Debug "2015-06-16 17:32:22.799430" 137 ConnectivityService "[embedded] ConnectivityChange for mobile: DISCONNECTED/DISCONNECTED, default=1" 226 386
+Debug "2015-06-16 17:32:22.799430" 137 ConnectivityService "adding dns 75.75.75.75 for WIFI" 226 387
+Debug "2015-06-16 17:32:22.799430" 137 ConnectivityService "adding dns 75.75.75.76 for WIFI" 226 388
+Debug "2015-06-16 17:32:22.809430" 399 SocialUpdate "Start SocialUpdate service with android.net.conn.CONNECTIVITY_CHANGE" 399 389
+Debug "2015-06-16 17:32:22.809430" 137 Tethering "Tethering got CONNECTIVITY_ACTION type: mobile, subtype: CDMA - 1xRTT, status: DISCONNECTED" 227 390
+Debug "2015-06-16 17:32:22.819430" 137 WifiService "type: mobile, connected: false" 153 391
+Debug "2015-06-16 17:32:22.819430" 137 WimaxService "onReceive ConnectivityService CONNECTIVITY_ACTION type=mobile[CDMA - 1xRTT], state=DISCONNECTED" 153 392
+Debug "2015-06-16 17:32:22.819430" 137 WimaxStateTracker "handleOtherNetworkDisconnect: wimaxRescan()" 153 393
+Debug "2015-06-16 17:32:22.819430" 137 WimaxStateTracker wimaxRescan 153 394
+Debug "2015-06-16 17:32:22.819430" 137 WimaxStateTracker "wimaxRescan : wimax is not enabled || wimax is shutdowning" 153 395
+Debug "2015-06-16 17:32:22.859430" 322 GTalkService "##### Network broadcast (connected=true) type=mobile, state=DISCONNECTED" 322 396
+Info "2015-06-16 17:32:22.859430" 322 GTalkService "[GTalkConnection.1] ### networkStateChanged: active and curr network type/state are the same(1/CONNECTED), ignore" 322 397
+Debug "2015-06-16 17:32:22.859430" 259 StatusBarPolicy "hasService()=true ,mDataState=0 ,mPhone.htcModemLinkOn()=false ,mDataActivity=0" 259 398
+Debug "2015-06-16 17:32:22.859430" 259 StatusBarPolicy slotType[0]=empty 259 399
+Debug "2015-06-16 17:32:22.869430" 137 Tethering "Tethering got CONNECTIVITY_ACTION type: WIFI, subtype: , status: CONNECTED" 227 400
+Debug "2015-06-16 17:32:22.869430" 137 Tethering "icon Type=1, subtype=0" 227 401
+Debug "2015-06-16 17:32:22.869430" 137 Tethering "MasterInitialState.processMessage what=3" 227 402
+Debug "2015-06-16 17:32:22.879430" 322 GTalkService "##### Network broadcast (connected=true) type=WIFI, state=CONNECTED" 322 403
+Debug "2015-06-16 17:32:22.879430" 399 SocialUpdate "UpdateService onCreate START. time: 2015-06-16 10:32:20" 399 404
+Info "2015-06-16 17:32:22.919430" 322 GTalkService "[GTalkConnection.1] ### networkStateChanged: active and curr network type/state are the same(1/CONNECTED), ignore" 322 405
+Debug "2015-06-16 17:32:22.929430" 259 StatusBarPolicy iconIndex=1 259 406
+Verbose "2015-06-16 17:32:22.929430" 259 StatusBarPolicy cdmaLevel:5;max:6 259 407
+Debug "2015-06-16 17:32:22.929430" 399 SocialUpdate "UpdateService onCreate END. time: 2015-06-16 10:32:20" 399 408
+Debug "2015-06-16 17:32:22.929430" 259 StatusBarPolicy iconLevel:5 259 409
+Debug "2015-06-16 17:32:22.939430" 259 StatusBarPolicy iconIndex=1 259 410
+Verbose "2015-06-16 17:32:22.939430" 259 StatusBarPolicy cdmaLevel:5;max:6 259 411
+Debug "2015-06-16 17:32:22.939430" 259 StatusBarPolicy iconLevel:5 259 412
+Debug "2015-06-16 17:32:22.949430" 259 StatusBarService "updateIcon slot=wifi index=16 viewIndex=12 old=StatusBarIcon(pkg=com.android.systemui id=0x7f0200d9 level=0 visible=true num=0 ) icon=StatusBarIcon(pkg=com.android.systemui id=0x7f0200d9 level=0 visible=true num=0 )" 259 413
+Debug "2015-06-16 17:32:22.949430" 259 StatusBarService "updateIcon slot=phone_signal index=20 viewIndex=15 old=StatusBarIcon(pkg=com.android.systemui id=0x7f020011 level=0 visible=true num=0 ) icon=StatusBarIcon(pkg=com.android.systemui id=0x7f020011 level=0 visible=true num=0 )" 259 414
+Verbose "2015-06-16 17:32:22.979430" 9563 "ConnLib " isConnected:false 9563 415
+Info "2015-06-16 17:32:22.979430" 861 SystemUpdateService "receiver: Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x10000000 cmp=com.google.android.gms/.update.SystemUpdateService$ActiveReceiver (has extras) }" 861 416
+Debug "2015-06-16 17:32:22.989430" 861 SystemUpdateService "onStartCommand: intent: Intent { cmp=com.google.android.gms/.update.SystemUpdateService (has extras) }" 861 417
+Info "2015-06-16 17:32:23.029430" 861 iu.Environment "update connectivity state; isNetworkMetered? false*, isRoaming? false, isBackgroundDataAllowed? true" 861 418
+Verbose "2015-06-16 17:32:23.089430" 9563 "ConnLib " isConnectedOrConnecting:false 9563 419
+Verbose "2015-06-16 17:32:23.110430" 9563 "ConnLib " getExtraInfo:null 9563 420
+Verbose "2015-06-16 17:32:23.110430" 9563 "ConnLib " getSubtype:7 9563 421
+Verbose "2015-06-16 17:32:23.140430" 9563 "ConnLib " "getSubtypeName:CDMA - 1xRTT" 9563 422
+Verbose "2015-06-16 17:32:23.140430" 9563 "ConnLib " getReason:dataDisabled 9563 423
+Verbose "2015-06-16 17:32:23.140430" 9563 "ConnLib " getType:0 9563 424
+Verbose "2015-06-16 17:32:23.140430" 9563 "ConnLib " getTypeName:mobile 9563 425
+Info "2015-06-16 17:32:23.160430" 9563 "ConnLib " "default data call is disconnected" 9563 426
+Verbose "2015-06-16 17:32:23.160430" 9563 "ConnLib " isConnected:true 9563 427
+Verbose "2015-06-16 17:32:23.160430" 9563 "ConnLib " isConnectedOrConnecting:true 9563 428
+Verbose "2015-06-16 17:32:23.160430" 9563 "ConnLib " getExtraInfo:null 9563 429
+Verbose "2015-06-16 17:32:23.160430" 9563 "ConnLib " getSubtype:0 9563 430
+Verbose "2015-06-16 17:32:23.170430" 9563 "ConnLib " getSubtypeName: 9563 431
+Verbose "2015-06-16 17:32:23.170430" 9563 "ConnLib " getReason:null 9563 432
+Verbose "2015-06-16 17:32:23.170430" 9563 "ConnLib " getType:1 9563 433
+Verbose "2015-06-16 17:32:23.170430" 9563 "ConnLib " getTypeName:WIFI 9563 434
+Debug "2015-06-16 17:32:23.200430" 911 AppThwack /task/e3acf7a26d8f9bb0a15af4005b0a6a5098ac1993/status 11266 435
+Debug "2015-06-16 17:32:23.210430" 137 GpsLocationProvider mInjectNtpTimePending(FALSE) 406 436
+Debug "2015-06-16 17:32:23.250430" 137 GpsLocationProvider mDownloadXtraDataPending(FALSE) 406 437
+Info "2015-06-16 17:32:23.300430" 861 iu.UploadsManager "num queued entries: 0" 1259 438
+Info "2015-06-16 17:32:23.360430" 9716 htcMessageUploader "== UploadMessageReceiver finished ==" 11263 439
+Info "2015-06-16 17:32:23.470430" 861 iu.UploadsManager "num updated entries: 0" 1259 440
+Debug "2015-06-16 17:32:23.540430" 911 AppThwackAndroidLib "connected: true" 11188 441
+Debug "2015-06-16 17:32:23.540430" 911 AppThwackAndroidLib "WiFiLock: acquire" 11188 442
+Debug "2015-06-16 17:32:23.560430" 137 WifiService "acquireWifiLockLocked: WifiLock{AppThwackAndroidLib type=1 binder=android.os.BinderProxy@40bc09a0} Mode: 1" 344 443
+Debug "2015-06-16 17:32:23.560430" 911 AppThwackDeviceManager "taskStatus update (e3acf7a26d8f9bb0a15af4005b0a6a5098ac1993: {""result"":""Wifi enabled: true"",""state"":2})" 911 444
+Debug "2015-06-16 17:32:23.560430" 137 WifiService "enable and start wifi due to updateWifiState" 228 445
+Verbose "2015-06-16 17:32:23.570430" 137 NotificationService "Battery Full, Charging" 157 446
+Debug "2015-06-16 17:32:23.580430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/amber/brightness string=0,len=1" 157 447
+Debug "2015-06-16 17:32:23.580430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/amber/blink string=0,len=1" 157 448
+Debug "2015-06-16 17:32:23.580430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/amber/off_timer string=0 0,len=3" 157 449
+Debug "2015-06-16 17:32:23.590430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/green/brightness string=1,len=1" 157 450
+Verbose "2015-06-16 17:32:23.590430" 7945 BugReportReceiver "Recv Intent: Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x10000000 cmp=com.htc.BugReport/.BugReportReceiver (has extras) }" 11268 451
+Verbose "2015-06-16 17:32:23.590430" 7945 BugReportReceiver "BugReport Disableed by Settings.Secure:Intent drop" 11268 452
+Debug "2015-06-16 17:32:23.590430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/green/blink string=0,len=1" 157 453
+Debug "2015-06-16 17:32:23.590430" 7954 UploadManager "Action android.net.conn.CONNECTIVITY_CHANGE" 7954 454
+Debug "2015-06-16 17:32:23.590430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/green/off_timer string=0 0,len=3" 157 455
+Debug "2015-06-16 17:32:23.610430" 137 NotificationService "cancelNotification, ACTION_NOTIFICATION_REMOVE,pkg=com.trellis.appthwackdevicemanager,id=1096041654" 157 456
+Info "2015-06-16 17:32:23.610430" 861 iu.SyncManager "NEXT; no task" 1259 457
+Debug "2015-06-16 17:32:23.640430" 399 AutoSetting "receiver - onReceive()" 399 458
+Debug "2015-06-16 17:32:23.680430" 399 AutoSetting "receiver - intent: android.net.conn.CONNECTIVITY_CHANGE" 11270 459
+Debug "2015-06-16 17:32:23.730430" 399 AutoSetting "receiver - NetworkInfo: type: mobile[CDMA - 1xRTT], state: DISCONNECTED/DISCONNECTED, reason: dataDisabled, extra: (none), roaming: false, failover: false, isAvailable: true" 11270 460
+Warning "2015-06-16 17:32:23.770430" 137 BackupManagerService "dataChanged but no participant pkg='com.android.providers.settings' uid=10011" 5213 461
+Debug "2015-06-16 17:32:23.910430" 137 LocationManagerService "CONNECTIVITY_ACTION: synchronized+" 153 462
+Debug "2015-06-16 17:32:23.910430" 137 LocationManagerService "updateNetworkState available info: NetworkInfo: type: mobile[CDMA - 1xRTT], state: DISCONNECTED/DISCONNECTED, reason: dataDisabled, extra: (none), roaming: false, failover: false, isAvailable: true" 153 463
+Debug "2015-06-16 17:32:23.910430" 137 LocationManagerService "CONNECTIVITY_ACTION: synchronized+ provider size: 3" 153 464
+Debug "2015-06-16 17:32:23.910430" 399 AutoSetting "service - onStartCommand() action: com.htc.app.autosetting.cancellocationupdate" 399 465
+Debug "2015-06-16 17:32:23.910430" 399 AutoSetting "service - mHandler: cancel location update" 399 466
+Debug "2015-06-16 17:32:23.910430" 399 AutoSetting "service -           changes count: 0" 399 467
+Debug "2015-06-16 17:32:23.920430" 137 GpsLocationProvider "+ synchronized updateNetworkState  info: NetworkInfo: type: mobile[CDMA - 1xRTT], state: DISCONNECTED/DISCONNECTED, reason: dataDisabled, extra: (none), roaming: false, failover: false, isAvailable: true" 153 468
+Debug "2015-06-16 17:32:23.920430" 137 LocationManagerService "CONNECTIVITY_ACTION: synchronized-" 153 469
+Debug "2015-06-16 17:32:23.920430" 137 WifiService "type: WIFI, connected: true" 153 470
+Debug "2015-06-16 17:32:23.920430" 861 SnetService "snet destroyed" 861 471
+Debug "2015-06-16 17:32:23.930430" 137 GpsLocationProvider "[handleMessage] message :4" 406 472
+Verbose "2015-06-16 17:32:23.930430" 9716 htcMessageUploader "[UploadMessageReceiver] UploadMessageReceiver() constructor !!!" 9716 473
+Info "2015-06-16 17:32:23.930430" 9716 htcMessageUploader "Start thread to upload fota event message:com.htc.htcMessageUploader.UploadMessageReceiver" 9716 474
+Debug "2015-06-16 17:32:23.940430" 9716 htcMessageUploader "Total time in main thread:6 milli-seconds" 9716 475
+Debug "2015-06-16 17:32:23.940430" 9716 htcMessageUploader "Get CONNECTIVITY_ACTION intent" 11276 476
+Info "2015-06-16 17:32:23.960430" 9725 MediaUploader "No need to wake up" 9725 477
+Debug "2015-06-16 17:32:23.980430" 399 SocialUpdate "Start SocialUpdate service with android.net.conn.CONNECTIVITY_CHANGE" 399 478
+Info "2015-06-16 17:32:23.990430" 861 SystemUpdateService "receiver: Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x10000000 cmp=com.google.android.gms/.update.SystemUpdateService$ActiveReceiver (has extras) }" 861 479
+Debug "2015-06-16 17:32:23.990430" 399 SocialUpdate "UpdateService onCreate START. time: 2015-06-16 10:32:21" 399 480
+Debug "2015-06-16 17:32:24.000430" 399 SocialUpdate "UpdateService onCreate END. time: 2015-06-16 10:32:21" 399 481
+Debug "2015-06-16 17:32:24.010430" 861 SystemUpdateService "onStartCommand: intent: Intent { cmp=com.google.android.gms/.update.SystemUpdateService (has extras) }" 861 482
+Debug "2015-06-16 17:32:24.010430" 399 SocialUpdate "Connectivity change. No connected. time: 2015-06-16 10:32:21" 11277 483
+Debug "2015-06-16 17:32:24.040430" 137 GpsLocationProvider "[handleMessage] UPDATE_NETWORK_STATE" 406 484
+Debug "2015-06-16 17:32:24.040430" 137 GpsLocationProvider "updateNetworkState available info: NetworkInfo: type: mobile[CDMA - 1xRTT], state: DISCONNECTED/DISCONNECTED, reason: dataDisabled, extra: (none), roaming: false, failover: false, isAvailable: true" 406 485
+Debug "2015-06-16 17:32:24.090430" 137 GpsLocationProvider mInjectNtpTimePending(FALSE) 406 486
+Debug "2015-06-16 17:32:24.090430" 137 GpsLocationProvider mDownloadXtraDataPending(FALSE) 406 487
+Warning "2015-06-16 17:32:24.100430" 137 BackupManagerService "dataChanged but no participant pkg='com.android.providers.settings' uid=10011" 5210 488
+Debug "2015-06-16 17:32:24.151430" 137 LocationManagerService "CONNECTIVITY_ACTION: synchronized+" 153 489
+Debug "2015-06-16 17:32:24.151430" 137 LocationManagerService "updateNetworkState available info: NetworkInfo: type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true, if: eth0" 153 490
+Debug "2015-06-16 17:32:24.151430" 137 LocationManagerService "CONNECTIVITY_ACTION: synchronized+ provider size: 3" 153 491
+Info "2015-06-16 17:32:24.171430" 9716 htcMessageUploader "== UploadMessageReceiver finished ==" 11276 492
+Debug "2015-06-16 17:32:24.171430" 137 GpsLocationProvider "+ synchronized updateNetworkState  info: NetworkInfo: type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true, if: eth0" 153 493
+Debug "2015-06-16 17:32:24.171430" 137 LocationManagerService "CONNECTIVITY_ACTION: synchronized-" 153 494
+Info "2015-06-16 17:32:24.171430" 137 "LSState " EventReceiver:android.intent.action.NOTIFICATION_REMOVE 153 495
+Info "2015-06-16 17:32:24.181430" 861 iu.Environment "update connectivity state; isNetworkMetered? false, isRoaming? false, isBackgroundDataAllowed? true" 861 496
+Debug "2015-06-16 17:32:24.251430" 137 GpsLocationProvider "[handleMessage] message :4" 406 497
+Debug "2015-06-16 17:32:24.251430" 137 GpsLocationProvider "[handleMessage] UPDATE_NETWORK_STATE" 406 498
+Debug "2015-06-16 17:32:24.251430" 137 GpsLocationProvider "updateNetworkState available info: NetworkInfo: type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true, if: eth0" 406 499
+Debug "2015-06-16 17:32:24.271430" 137 GpsLocationProvider mInjectNtpTimePending(FALSE) 406 500
+Debug "2015-06-16 17:32:24.271430" 137 GpsLocationProvider mDownloadXtraDataPending(FALSE) 406 501
+Debug "2015-06-16 17:32:24.331430" 911 AppThwack /task/e3acf7a26d8f9bb0a15af4005b0a6a5098ac1993/status 11278 502
+Debug "2015-06-16 17:32:24.331430" 7954 UploadManager "Action android.net.conn.CONNECTIVITY_CHANGE" 7954 503
+Verbose "2015-06-16 17:32:24.361430" 7945 BugReportReceiver "Recv Intent: Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x10000000 cmp=com.htc.BugReport/.BugReportReceiver (has extras) }" 11279 504
+Verbose "2015-06-16 17:32:24.361430" 7945 BugReportReceiver "BugReport Disableed by Settings.Secure:Intent drop" 11279 505
+Debug "2015-06-16 17:32:24.411430" 399 AutoSetting "receiver - onReceive()" 399 506
+Verbose "2015-06-16 17:32:24.431430" 9716 htcMessageUploader "[UploadMessageReceiver] UploadMessageReceiver() constructor !!!" 9716 507
+Info "2015-06-16 17:32:24.431430" 9716 htcMessageUploader "Start thread to upload fota event message:com.htc.htcMessageUploader.UploadMessageReceiver" 9716 508
+Debug "2015-06-16 17:32:24.431430" 9716 htcMessageUploader "Total time in main thread:2 milli-seconds" 9716 509
+Debug "2015-06-16 17:32:24.431430" 9716 htcMessageUploader "Get CONNECTIVITY_ACTION intent" 11283 510
+Info "2015-06-16 17:32:24.441430" 9725 MediaUploader "No need to wake up" 9725 511
+Debug "2015-06-16 17:32:24.441430" 399 AutoSetting "receiver - intent: android.net.conn.CONNECTIVITY_CHANGE" 11282 512
+Debug "2015-06-16 17:32:24.441430" 911 AppThwack /task/e3acf7a26d8f9bb0a15af4005b0a6a5098ac1993/status 11284 513
+Debug "2015-06-16 17:32:24.441430" 399 AutoSetting "receiver - NetworkInfo: type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true, if: eth0" 11282 514
+Info "2015-06-16 17:32:24.451430" 322 GTalkService "[GTalkConnection.47] (WORKER THREAD) update account status - done, took 1810 ms" 1108 515
+Debug "2015-06-16 17:32:24.451430" 399 SocialUpdate "Start SocialUpdate service with android.net.conn.CONNECTIVITY_CHANGE" 399 516
+Info "2015-06-16 17:32:24.471430" 861 SystemUpdateService "receiver: Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x10000000 cmp=com.google.android.gms/.update.SystemUpdateService$ActiveReceiver (has extras) }" 861 517
+Debug "2015-06-16 17:32:24.501430" 399 SocialUpdate "UpdateService onCreate START. time: 2015-06-16 10:32:21" 399 518
+Debug "2015-06-16 17:32:24.561430" 911 dalvikvm "GC_CONCURRENT freed 454K, 46% free 3513K/6471K, external 0K/0K, paused 2ms+2ms" 913 519
+Info "2015-06-16 17:32:24.591430" 322 GTalkService "doConnect: start..." 1108 520
+Debug "2015-06-16 17:32:24.691430" 911 AppThwack /task/e3acf7a26d8f9bb0a15af4005b0a6a5098ac1993/status 11286 521
+Debug "2015-06-16 17:32:24.741430" 911 AppThwack /bluetooth/ 11287 522
+Info "2015-06-16 17:32:24.771430" 9716 htcMessageUploader "== UploadMessageReceiver finished ==" 11283 523
+Debug "2015-06-16 17:32:24.791430" 911 AppThwack "sha1: 388d8727e48e4a7a472723dccd6f9b2b7b9c9cc8" 11287 524
+Debug "2015-06-16 17:32:24.791430" 911 AppThwackDeviceManager "k: enabled v: True" 11287 525
+Debug "2015-06-16 17:32:24.791430" 911 AppThwackDeviceManager "k: NanoHttpd.QUERY_STRING v: enabled=True" 11287 526
+Debug "2015-06-16 17:32:24.871430" 7954 UploadService "mUpload.size 0" 11260 527
+Debug "2015-06-16 17:32:25.001430" 399 SocialUpdate "UpdateService onCreate END. time: 2015-06-16 10:32:22" 399 528
+Debug "2015-06-16 17:32:25.001430" 399 AutoSetting "service - onStartCommand() action: com.htc.app.autosetting.requestlocationupdate" 399 529
+Debug "2015-06-16 17:32:25.001430" 399 AutoSetting "service - requestNLP() to last request within 2hrs, don't request 1979887" 399 530
+Debug "2015-06-16 17:32:25.001430" 399 AutoSetting "service - onStartCommand() REMOVE current location bundle" 399 531
+Debug "2015-06-16 17:32:25.011430" 399 AutoSetting "Util - wifi connected" 399 532
+Debug "2015-06-16 17:32:25.041430" 399 AutoSetting "service - handleMessage() incoming message, what:9" 980 533
+Debug "2015-06-16 17:32:25.051430" 399 AutoSetting "service - handleMessage() setting current location null" 980 534
+Warning "2015-06-16 17:32:25.051430" 137 BackupManagerService "dataChanged but no participant pkg='com.android.providers.settings' uid=10011" 6028 535
+Debug "2015-06-16 17:32:25.071430" 911 AppThwack /task/388d8727e48e4a7a472723dccd6f9b2b7b9c9cc8 11287 536
+Debug "2015-06-16 17:32:25.162430" 911 dalvikvm "GC_CONCURRENT freed 497K, 46% free 3508K/6471K, external 0K/0K, paused 4ms+16ms" 913 537
+Debug "2015-06-16 17:32:25.182430" 911 AppThwack /task/388d8727e48e4a7a472723dccd6f9b2b7b9c9cc8/status 11294 538
+Debug "2015-06-16 17:32:25.232430" 911 AppThwack /task/388d8727e48e4a7a472723dccd6f9b2b7b9c9cc8/status 11295 539
+Info "2015-06-16 17:32:25.252430" 137 "LSState " EventReceiver:android.intent.action.NOTIFICATION_ADD 153 540
+Debug "2015-06-16 17:32:25.252430" 399 AutoSetting "service - mHandler: update time" 399 541
+Debug "2015-06-16 17:32:25.252430" 399 AutoSetting "service - processTime() within 24hrs, don't check 70168110" 399 542
+Debug "2015-06-16 17:32:25.262430" 911 AppThwackDeviceManager "taskStatus update (388d8727e48e4a7a472723dccd6f9b2b7b9c9cc8: {""state"":1})" 911 543
+Debug "2015-06-16 17:32:25.262430" 911 AppThwackAndroidLib "setEnabled: enabled: true" 11288 544
+Debug "2015-06-16 17:32:25.262430" 259 StatusBarService "addNotification notification = StatusBarNotification(package=com.trellis.appthwackdevicemanager id=1096041655 tag=null notification=Notification(vibrate=null,sound=null,defaults=0x0,flags=0x62)), key = android.os.BinderProxy@406a2c98, fullScreenIntent = null, contentIntent = PendingIntent{40645e70: android.os.BinderProxy@405c84a0}" 259 545
+Debug "2015-06-16 17:32:25.272430" 911 AppThwackAndroidLib "setEnabled: setting bluetooth to: true" 11288 546
+Debug "2015-06-16 17:32:25.272430" 137 BluetoothService "Bluetooth state 10 -> 11" 501 547
+Debug "2015-06-16 17:32:25.272430" 137 WimaxService "onReceive BT ACTION_STATE_CHANGED state=11" 153 548
+Verbose "2015-06-16 17:32:25.272430" 137 BluetoothDataGatewayService "#### DataGateway Service Received message  ####" 153 549
+Info "2015-06-16 17:32:25.272430" 137 BrcmBtServiceLoader "***Received Bluetooth UNKNOWN_STATE_CHANGE Event**** : 11" 153 550
+Info "2015-06-16 17:32:25.292430" 137 bluedroid "bt_enable: BT_LOCK_MUTEX()" 11296 551
+Info "2015-06-16 17:32:25.292430" 137 bluedroid "$#$#$#$# BTOFF_FMOFF_handling" 11296 552
+Info "2015-06-16 17:32:25.292430" 137 bluedroid "$#$#$#$# BTOFF_FMOFF_handling : receiving BT_ON" 11296 553
+Info "2015-06-16 17:32:25.292430" 137 bluedroid "$#$#$#$# BTOFF_FMOFF_handling : Stop old daemon anyway" 11296 554
+Debug "2015-06-16 17:32:25.292430" 861 SystemUpdateService "onStartCommand: intent: Intent { cmp=com.google.android.gms/.update.SystemUpdateService (has extras) }" 861 555
+Info "2015-06-16 17:32:25.292430" 137 bluedroid "$#$#$#$# Stopping bluetoothd, try 10 times before giving-up ..." 11296 556
+Info "2015-06-16 17:32:25.292430" 137 bluedroid "dtun_property_is_active : service.brcm.bt.hcid_active=0" 11296 557
+Info "2015-06-16 17:32:25.292430" 137 bluedroid "$#$#$#$#$# Stopping btld, try 10 times before giving-up ..." 11296 558
+Info "2015-06-16 17:32:25.292430" 137 bluedroid "dtun_property_is_active : service.brcm.bt.srv_active=0" 11296 559
+Verbose "2015-06-16 17:32:25.322430" 11032 BluetoothEventRedirector "Received android.bluetooth.adapter.action.STATE_CHANGED" 11032 560
+Info "2015-06-16 17:32:25.332430" 137 bluedroid "$#$#$#$#$# Start btld, try 10 times before giving-up ..." 11296 561
+Info "2015-06-16 17:32:25.332430" 137 bluedroid "dtun_property_is_active : service.brcm.bt.srv_active=0" 11296 562
+Info "2015-06-16 17:32:25.332430" 11032 BluetoothEventRedirector "EXTRA_STATE = 11" 11032 563
+Info "2015-06-16 17:32:25.362430" 11298 BTE-MAIN "BTLD starting..." 11298 564
+Info "2015-06-16 17:32:25.362430" 11298 BTE-MAIN "BTE version BCM1200_MI_10.3.14.36" 11298 565
+Info "2015-06-16 17:32:25.362430" 11298 BTE-MAIN "btld version BTL-ANDROID_MI_2.0.50_102_rc3_htc_rc11 starting..." 11298 566
+Info "2015-06-16 17:32:25.362430" 11298 BTE-MAIN "Got BD address f8:db:7f:e2:4d:67" 11298 567
+Debug "2015-06-16 17:32:25.392430" 861 SnetService "snet destroyed" 861 568
+Info "2015-06-16 17:32:25.422430" 861 iu.Environment "update connectivity state; isNetworkMetered? false, isRoaming? false, isBackgroundDataAllowed? true" 861 569
+Info "2015-06-16 17:32:25.422430" 259 StatusBarPolicy "updateBluetooth bt icon:false,HS:0,A2DP:false" 259 570
+Debug "2015-06-16 17:32:25.442430" 259 StatusBarService "updateIcon slot=bluetooth index=10 viewIndex=9 old=StatusBarIcon(pkg=com.android.systemui id=0x7f020066 level=0 visible=false num=0 ) icon=StatusBarIcon(pkg=com.android.systemui id=0x7f020066 level=0 visible=false num=0 )" 259 571
+Verbose "2015-06-16 17:32:25.472430" 11045 BtEventReceiver "#### Received Bluetooth State Change Action ####" 11045 572
+Debug "2015-06-16 17:32:25.522430" 322 AuthorizationBluetoothService "Received Bluetooth event: Intent { act=android.bluetooth.adapter.action.STATE_CHANGED flg=0x10000000 cmp=com.google.android.gms/.auth.be.proximity.authorization.bt.AuthorizationBluetoothService$BluetoothStateChangeReceiver (has extras) }." 322 573
+Debug "2015-06-16 17:32:25.532430" 861 SnetService "snet destroyed" 861 574
+Debug "2015-06-16 17:32:25.562430" 7954 UploadService "2updateNotification no batch id" 11260 575
+Debug "2015-06-16 17:32:25.562430" 11298 "BTLD    " "[bttrc] using compile default trace settings" 11306 576
+Info "2015-06-16 17:32:25.562430" 11298 "PBS_CO  " "pbs_sql_task started." 11312 577
+Debug "2015-06-16 17:32:25.592430" 7954 UploadNotification updateNotification1 11260 578
+Info "2015-06-16 17:32:25.632430" 11298 BTE-MAIN "ro.hardware = supersonic" 11306 579
+Info "2015-06-16 17:32:25.632430" 11298 BTE-MAIN "ro.revision = 4" 11306 580
+Info "2015-06-16 17:32:25.632430" 11298 BTE-MAIN "Found patchfile: /system/etc/firmware//BCM4329B1_002.002.023.0511.0557.hcd" 11306 581
+Info "2015-06-16 17:32:25.632430" 11298 "BTLD    " BCM2045_PRM_Init 11306 582
+Info "2015-06-16 17:32:25.632430" 11298 "BTLD    " "Minidrv download completed" 11306 583
+Warning "2015-06-16 17:32:25.642430" 11298 "BTLD    " "[hcis] Unknown HCI message type drop this byte 0x34" 11307 584
+Warning "2015-06-16 17:32:25.642430" 11298 "BTLD    " "[hcis] Unknown HCI message type drop this byte 0x31" 11307 585
+Info "2015-06-16 17:32:25.832430" 137 bluedroid "dtun_property_is_active : service.brcm.bt.srv_active=0" 11296 586
+Debug "2015-06-16 17:32:25.852430" 7954 UploadNotification "item =null" 11260 587
+Info "2015-06-16 17:32:25.872430" 11298 "BTLD    " "Launch RAM successful" 11306 588
+Debug "2015-06-16 17:32:25.922430" 7954 UploadService "UpdateThread is looping" 11260 589
+Debug "2015-06-16 17:32:26.122430" 7954 UploadService "mUpload.size 0" 11260 590
+Debug "2015-06-16 17:32:26.213430" 7954 UploadService "2updateNotification no batch id" 11260 591
+Debug "2015-06-16 17:32:26.223430" 7954 UploadNotification updateNotification1 11260 592
+Info "2015-06-16 17:32:26.273430" 11298 "BTL_CFG " "btl_cfg_get_btport_redirection_enable: service.brcm.bt.btport_redir_on = 0" 11309 593
+Info "2015-06-16 17:32:26.333430" 137 bluedroid "dtun_property_is_active : service.brcm.bt.srv_active=1" 11296 594
+Info "2015-06-16 17:32:26.333430" 137 bluedroid "$#$#$#$#$# Start bluetoothd, try 10 times before giving-up ..." 11296 595
+Info "2015-06-16 17:32:26.333430" 137 bluedroid "dtun_property_is_active : service.brcm.bt.hcid_active=0" 11296 596
+Info "2015-06-16 17:32:26.343430" 11317 DTUN_HCID4 "HCID DTUN client starting" 11317 597
+Info "2015-06-16 17:32:26.343430" 11317 DTUN_HCID4 "btl_cfg_set_bluetoothd_pid : service.brcm.bt.bluetoothd_pid = 11317" 11317 598
+Info "2015-06-16 17:32:26.343430" 11317 DTUN_HCID4 "btl_cfg_set_bluetoothd_pid success : service.brcm.bt.bluetoothd_pid = 11317, ret = 0" 11317 599
+Info "2015-06-16 17:32:26.343430" 11317 DTUN_HCID4 "bluetoothd Registering shutdown adapter handler for SIGUSR1(10)" 11317 600
+Info "2015-06-16 17:32:26.343430" 11317 DTUN_CLNT "dtun_start_interface : iface [DTUN_INTERFACE] starting..." 11317 601
+Debug "2015-06-16 17:32:26.343430" 11317 DTUN_CLNT "DTUN_MAKE_LOCAL_SERVER_NAME return name: brcm.bt.dtun.9000" 11317 602
+Debug "2015-06-16 17:32:26.343430" 11317 DTUN_CLNT "create_subprocess : [DTUN_INTERFACE]" 11317 603
+Info "2015-06-16 17:32:26.343430" 11317 DTUN_CLNT "	Client calling DTUN_METHOD_DM_GET_LOCAL_INFO (id 1)" 11317 604
+Info "2015-06-16 17:32:26.343430" 11317 DTUN_HCID4 "hcid main loop starting" 11317 605
+Debug "2015-06-16 17:32:26.353430" 11317 DTUN_HCID4 		dtun_dm_sig_local_info() 11317 606
+Info "2015-06-16 17:32:26.383430" 11317 DTUN_CLNT "	Client calling DTUN_METHOD_DM_SET_NAME (id 13)" 11317 607
+Info "2015-06-16 17:32:26.383430" 11317 DTUN_HCID4 "manager start adapter" 11317 608
+Info "2015-06-16 17:32:26.383430" 11317 DTUN_CLNT "	Client calling DTUN_METHOD_DM_SET_MODE (id 12)" 11317 609
+Info "2015-06-16 17:32:26.383430" 11317 "ADAPTER " "Adapter /org/bluez/11317/hci0 has been enabled" 11317 610
+Debug "2015-06-16 17:32:26.383430" 11317 dtun_obexd "Obex: g_dbus_register_interface  in_conn = 0xca28 conn=0xca28" 11317 611
+Debug "2015-06-16 17:32:26.403430" 911 AppThwack /task/388d8727e48e4a7a472723dccd6f9b2b7b9c9cc8/status 11318 612
+Debug "2015-06-16 17:32:26.483430" 911 dalvikvm "GC_CONCURRENT freed 443K, 46% free 3515K/6471K, external 0K/0K, paused 2ms+3ms" 913 613
+Debug "2015-06-16 17:32:26.503430" 7954 UploadNotification "item =null" 11260 614
+Debug "2015-06-16 17:32:26.553430" 7954 UploadService "UpdateThread is looping" 11260 615
+Debug "2015-06-16 17:32:26.553430" 911 AppThwack /task/388d8727e48e4a7a472723dccd6f9b2b7b9c9cc8/status 11322 616
+Info "2015-06-16 17:32:26.833430" 322 GTalkService connectionEstablished 1108 617
+Info "2015-06-16 17:32:26.833430" 137 bluedroid "dtun_property_is_active : service.brcm.bt.hcid_active=1" 11296 618
+Info "2015-06-16 17:32:26.833430" 137 bluedroid "$#$#$#$# New state is BTON_FMOFF_handling" 11296 619
+Info "2015-06-16 17:32:26.833430" 137 bluedroid "bt_enable: BT_UNLOCK_MUTEX()" 11296 620
+Info "2015-06-16 17:32:26.833430" 137 BluetoothEventLoop.cpp "agent_event_filter: Received method org.bluez.Agent:Release" 11323 621
+Info "2015-06-16 17:32:26.943430" 322 GTalkService "[GTalkConnection.47] connectionEstablished: release wakelock" 1108 622
+Info "2015-06-16 17:32:26.943430" 322 GTalkService "[GTalkConnection.47] releaseAsyncWakeLock: clear timer: WakeLock{406aeee0 held=false, refCount=0}" 1108 623
+Info "2015-06-16 17:32:26.953430" 322 GTalkService "[GTalkConnection.47] (WORKER THREAD) update account status" 1108 624
+Info "2015-06-16 17:32:26.963430" 11298 USERIAL_LINUX "##### USerial_Ioctl: BT_Sleep, 0x8004 ####" 11307 625
+Info "2015-06-16 17:32:27.023430" 322 GTalkService "[GTalkConnection.47] (WORKER THREAD) update account status - done, took 75 ms" 1108 626
+Info "2015-06-16 17:32:27.043430" 137 BluetoothService "persistBluetoothOnSetting bluetoothOn:1" 11296 627
+Info "2015-06-16 17:32:27.043430" 137 BluetoothService "loadBondState(): val = null" 11296 628
+Debug "2015-06-16 17:32:27.043430" 137 BluetoothService "Bluetooth state 11 -> 12" 11296 629
+Info "2015-06-16 17:32:27.053430" 259 StatusBarPolicy "updateBluetooth bt icon:true,HS:0,A2DP:false" 259 630
+Debug "2015-06-16 17:32:27.053430" 259 StatusBarService "updateIcon slot=bluetooth index=10 viewIndex=9 old=StatusBarIcon(pkg=com.android.systemui id=0x7f020066 level=0 visible=false num=0 ) icon=StatusBarIcon(pkg=com.android.systemui id=0x7f020066 level=0 visible=true num=0 )" 259 631
+Debug "2015-06-16 17:32:27.063430" 9676 BluetoothOPP setOppsPath 9676 632
+Info "2015-06-16 17:32:27.063430" 308 BluetoothAudioGateway.cpp "Calling blz_wrapper_init" 308 633
+Debug "2015-06-16 17:32:27.063430" 137 WimaxService "onReceive BT ACTION_STATE_CHANGED state=12" 153 634
+Debug "2015-06-16 17:32:27.063430" 9676 BluetoothOPP.cpp setOppsPathNative 9676 635
+Debug "2015-06-16 17:32:27.063430" 11317 dtun_obexd "setDefaultPath: default_path:/mnt/sdcard/downloads/bluetooth/" 11317 636
+Info "2015-06-16 17:32:27.063430" 11317 DTUN_CLNT "	Client calling DTUN_METHOD_END (id 37)" 11317 637
+Debug "2015-06-16 17:32:27.063430" 11317 dtun_obexd dtun_sig_op_set_default_path 11317 638
+Info "2015-06-16 17:32:27.073430" 137 BluetoothEventLoop.cpp "OpSetDefaultPath signal received" 11323 639
+Info "2015-06-16 17:32:27.073430" 137 BluetoothEventLoop.cpp "OpSetDefaultPath signal received with status:1" 11323 640
+Debug "2015-06-16 17:32:27.073430" 137 BluetoothEventLoop >>>>>onOpSetDefaultPath<<<<<< 11323 641
+Verbose "2015-06-16 17:32:27.073430" 137 BluetoothDataGatewayService "#### DataGateway Service Received message  ####" 153 642
+Verbose "2015-06-16 17:32:27.073430" 137 BluetoothDataGatewayService "#### Enable Data Gateway Server ####" 153 643
+Info "2015-06-16 17:32:27.073430" 137 "BTL_IFC " "BTL_IFC_RegisterSubSystem: Register subsystem [SPP]" 153 644
+Info "2015-06-16 17:32:27.073430" 137 "BTL_IFC " "btl_ifc_ctrl_connect: Connect control channel for subsystem [SPP]" 153 645
+Debug "2015-06-16 17:32:27.073430" 137 BTL_IFC_WRP "wrp_sock_create: CTRL" 153 646
+Debug "2015-06-16 17:32:27.073430" 137 BTL_IFC_WRP "wrp_alloc_new_sock: wrp_alloc_new_sock sub 1" 153 647
+Debug "2015-06-16 17:32:27.073430" 137 BTL_IFC_WRP "wrp_sock_create: 224" 153 648
+Debug "2015-06-16 17:32:27.073430" 137 BTL_IFC_WRP "wrp_sock_connect: wrp_sock_connect brcm.bt.dtun:9000 (224)" 153 649
+Debug "2015-06-16 17:32:27.073430" 137 BTL_IFC_WRP "DTUN_MAKE_LOCAL_SERVER_NAME return name: brcm.bt.dtun.9000" 153 650
+Info "2015-06-16 17:32:27.073430" 308 "BTL_IFC " "BTL_IFC_RegisterSubSystem: Register subsystem [AG]" 308 651
+Info "2015-06-16 17:32:27.073430" 308 "BTL_IFC " "btl_ifc_ctrl_connect: Connect control channel for subsystem [AG]" 308 652
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "wrp_sock_create: CTRL" 308 653
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "wrp_alloc_new_sock: wrp_alloc_new_sock sub 1" 308 654
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "wrp_sock_create: 23" 308 655
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "wrp_sock_connect: wrp_sock_connect brcm.bt.dtun:9000 (23)" 308 656
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "DTUN_MAKE_LOCAL_SERVER_NAME return name: brcm.bt.dtun.9000" 308 657
+Info "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "wrp_sock_connect: Connected. (23)" 308 658
+Info "2015-06-16 17:32:27.073430" 308 "BTL_IFC " "send_ctrl_msg: [BTL_IFC CTRL] send BTLIF_REGISTER_SUBSYS_REQ (AG) 0 pbytes (hdl 23)" 308 659
+Info "2015-06-16 17:32:27.073430" 137 BTL_IFC_WRP "wrp_sock_connect: Connected. (224)" 153 660
+Info "2015-06-16 17:32:27.073430" 137 "BTL_IFC " "send_ctrl_msg: [BTL_IFC CTRL] send BTLIF_REGISTER_SUBSYS_REQ (SPP) 0 pbytes (hdl 224)" 153 661
+Debug "2015-06-16 17:32:27.073430" 308 "BTL_IFC " "BTL_IFC_RegisterSubSystem: add new ctrl fd to active set" 308 662
+Debug "2015-06-16 17:32:27.073430" 137 "BTL_IFC " "BTL_IFC_RegisterSubSystem: add new ctrl fd to active set" 153 663
+Info "2015-06-16 17:32:27.073430" 137 BrcmBtServiceLoader "***Received Bluetooth ON Event****" 153 664
+Debug "2015-06-16 17:32:27.073430" 137 BluetoothServiceManager onBluetoothEnabled() 153 665
+Debug "2015-06-16 17:32:27.073430" 137 BluetoothServiceManager "***startService(): Bluetooth service bluetooth_ftp not enabled. Skipping...***" 153 666
+Debug "2015-06-16 17:32:27.073430" 137 BluetoothServiceManager "***startService(): Starting service: bluetooth_pbs***" 153 667
+Debug "2015-06-16 17:32:27.073430" 137 com_broadcom_bt_service_pbap_PBAPService.cpp enableDefaultPbapServerNative 153 668
+Info "2015-06-16 17:32:27.073430" 137 "BTL_IFC " "BTL_IFC_RegisterSubSystem: Register subsystem [PBS]" 153 669
+Info "2015-06-16 17:32:27.073430" 137 "BTL_IFC " "btl_ifc_ctrl_connect: Connect control channel for subsystem [PBS]" 153 670
+Debug "2015-06-16 17:32:27.073430" 137 BTL_IFC_WRP "wrp_sock_create: CTRL" 153 671
+Debug "2015-06-16 17:32:27.073430" 137 BTL_IFC_WRP "wrp_alloc_new_sock: wrp_alloc_new_sock sub 1" 153 672
+Debug "2015-06-16 17:32:27.073430" 137 BTL_IFC_WRP "wrp_sock_create: 226" 153 673
+Debug "2015-06-16 17:32:27.073430" 137 BTL_IFC_WRP "wrp_sock_connect: wrp_sock_connect brcm.bt.dtun:9000 (226)" 153 674
+Debug "2015-06-16 17:32:27.073430" 137 BTL_IFC_WRP "DTUN_MAKE_LOCAL_SERVER_NAME return name: brcm.bt.dtun.9000" 153 675
+Info "2015-06-16 17:32:27.073430" 308 BLZ_WRAPPER "btl_if_socket: btl_if_socket :: fam 31, type 1, proto 3" 308 676
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "wrp_sock_create: AG" 308 677
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "wrp_alloc_new_sock: wrp_alloc_new_sock sub 3" 308 678
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "wrp_sock_create: 70" 308 679
+Debug "2015-06-16 17:32:27.073430" 308 BLZ_WRAPPER "btl_if_setsockopt: btl_if_setsockopt level:18, optname:3" 308 680
+Info "2015-06-16 17:32:27.073430" 308 BLZ_WRAPPER "btl_if_setsockopt: configure rfcomm lm mode" 308 681
+Debug "2015-06-16 17:32:27.073430" 308 BLZ_WRAPPER "btl_if_bind: [btl_if_bind] : (70:-1), disc_pending 0, asnc 0, selct 0, flags 0" 308 682
+Info "2015-06-16 17:32:27.073430" 308 BLZ_WRAPPER "btl_if_bind: btl_if_bind : [rfc] rc chan 10, bd[0:0]" 308 683
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "DTUN_MAKE_LOCAL_SERVER_NAME return name: brcm.bt.dtun.9017" 308 684
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "wrp_sock_bind: wrp_sock_bind:socket_local_server_bind result:0 server_name:brcm.bt.dtun.9017" 308 685
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "wrp_sock_bind: socket_local_server_bind on port 9017" 308 686
+Info "2015-06-16 17:32:27.073430" 308 "BTL_IFC " "send_ctrl_msg: [BTL_IFC CTRL] send BTLIF_LISTEN_REQ (AG) 8 pbytes (hdl 23)" 308 687
+Debug "2015-06-16 17:32:27.073430" 308 BLZ_WRAPPER "btl_if_listen: [btl_if_listen] : (70:-1), disc_pending 0, asnc 0, selct 0, flags 0" 308 688
+Debug "2015-06-16 17:32:27.073430" 308 BLZ_WRAPPER "btl_if_listen: btl_if_listen : fd 70 [brcm.bt.dtun]" 308 689
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "wrp_sock_listen: wrp_sock_listen : fd 70 brcm.bt.dtun:9017" 308 690
+Info "2015-06-16 17:32:27.073430" 308 BLZ_WRAPPER "btl_if_socket: btl_if_socket :: fam 31, type 1, proto 3" 308 691
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "wrp_sock_create: AG" 308 692
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "wrp_alloc_new_sock: wrp_alloc_new_sock sub 3" 308 693
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "wrp_sock_create: 77" 308 694
+Debug "2015-06-16 17:32:27.073430" 308 BLZ_WRAPPER "btl_if_setsockopt: btl_if_setsockopt level:18, optname:3" 308 695
+Info "2015-06-16 17:32:27.073430" 308 BLZ_WRAPPER "btl_if_setsockopt: configure rfcomm lm mode" 308 696
+Debug "2015-06-16 17:32:27.073430" 308 BLZ_WRAPPER "btl_if_bind: [btl_if_bind] : (77:-1), disc_pending 0, asnc 0, selct 0, flags 0" 308 697
+Info "2015-06-16 17:32:27.073430" 308 BLZ_WRAPPER "btl_if_bind: btl_if_bind : [rfc] rc chan 11, bd[0:0]" 308 698
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "DTUN_MAKE_LOCAL_SERVER_NAME return name: brcm.bt.dtun.9018" 308 699
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "wrp_sock_bind: wrp_sock_bind:socket_local_server_bind result:0 server_name:brcm.bt.dtun.9018" 308 700
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "wrp_sock_bind: socket_local_server_bind on port 9018" 308 701
+Info "2015-06-16 17:32:27.073430" 308 "BTL_IFC " "send_ctrl_msg: [BTL_IFC CTRL] send BTLIF_LISTEN_REQ (AG) 8 pbytes (hdl 23)" 308 702
+Debug "2015-06-16 17:32:27.073430" 308 BLZ_WRAPPER "btl_if_listen: [btl_if_listen] : (77:-1), disc_pending 0, asnc 0, selct 0, flags 0" 308 703
+Debug "2015-06-16 17:32:27.073430" 308 BLZ_WRAPPER "btl_if_listen: btl_if_listen : fd 77 [brcm.bt.dtun]" 308 704
+Debug "2015-06-16 17:32:27.073430" 308 BTL_IFC_WRP "wrp_sock_listen: wrp_sock_listen : fd 77 brcm.bt.dtun:9018" 308 705
+Info "2015-06-16 17:32:27.073430" 137 BTL_IFC_WRP "wrp_sock_connect: Connected. (226)" 153 706
+Info "2015-06-16 17:32:27.073430" 137 "BTL_IFC " "send_ctrl_msg: [BTL_IFC CTRL] send BTLIF_REGISTER_SUBSYS_REQ (PBS) 0 pbytes (hdl 226)" 153 707
+Info "2015-06-16 17:32:27.073430" 11298 USERIAL_LINUX "##### USerial_Ioctl: BT_Wake, 0x8003 ####" 11307 708
+Debug "2015-06-16 17:32:27.073430" 137 "BTL_IFC " "BTL_IFC_RegisterSubSystem: add new ctrl fd to active set" 153 709
+Info "2015-06-16 17:32:27.073430" 137 "BTL_IFC " "send_ctrl_msg: [BTL_IFC CTRL] send BTLIF_PBS_ENABLE (PBS) 0 pbytes (hdl 226)" 153 710
+Info "2015-06-16 17:32:27.073430" 137 "BTL_IFC " "btl_ifc_ctrl_rx: [BTL_IFC CTRL] recv BTLIF_PBS_ENABLE_EVT (PBS) 2 pbytes (hdl 226)" 3085 711
+Debug "2015-06-16 17:32:27.073430" 137 com_broadcom_bt_service_pbap_PBAPService.cpp "#### handlePbapEvent 0xad40043a ####" 3085 712
+Debug "2015-06-16 17:32:27.083430" 137 com_broadcom_bt_service_pbap_PBAPService.cpp "### PBAP Opend ####" 3085 713
+Info "2015-06-16 17:32:27.083430" 137 BluetoothPBAPService onPbapEnabled 3085 714
+Debug "2015-06-16 17:32:27.083430" 137 BluetoothServiceManager "***startService(): Done starting service: bluetooth_pbs***" 153 715
+Info "2015-06-16 17:32:27.083430" 308 "BTL_IFC " "BTL_IFC_RegisterSubSystem: Register subsystem [SCO]" 308 716
+Info "2015-06-16 17:32:27.083430" 308 "BTL_IFC " "btl_ifc_ctrl_connect: Connect control channel for subsystem [SCO]" 308 717
+Debug "2015-06-16 17:32:27.083430" 308 BTL_IFC_WRP "wrp_sock_create: CTRL" 308 718
+Debug "2015-06-16 17:32:27.083430" 308 BTL_IFC_WRP "wrp_alloc_new_sock: wrp_alloc_new_sock sub 1" 308 719
+Debug "2015-06-16 17:32:27.083430" 308 BTL_IFC_WRP "wrp_sock_create: 78" 308 720
+Debug "2015-06-16 17:32:27.083430" 308 BTL_IFC_WRP "wrp_sock_connect: wrp_sock_connect brcm.bt.dtun:9000 (78)" 308 721
+Debug "2015-06-16 17:32:27.083430" 308 BTL_IFC_WRP "DTUN_MAKE_LOCAL_SERVER_NAME return name: brcm.bt.dtun.9000" 308 722
+Info "2015-06-16 17:32:27.083430" 308 BTL_IFC_WRP "wrp_sock_connect: Connected. (78)" 308 723
+Info "2015-06-16 17:32:27.083430" 308 "BTL_IFC " "send_ctrl_msg: [BTL_IFC CTRL] send BTLIF_REGISTER_SUBSYS_REQ (SCO) 0 pbytes (hdl 78)" 308 724
+Debug "2015-06-16 17:32:27.083430" 308 "BTL_IFC " "BTL_IFC_RegisterSubSystem: add new ctrl fd to active set" 308 725
+Info "2015-06-16 17:32:27.083430" 308 bluetooth_ScoSocket.cpp "BTL_IFC_RegisterSubSystem SUB_SCO chdl:0x4e" 308 726
+Info "2015-06-16 17:32:27.083430" 308 bluetooth_ScoSocket.cpp "New acceptor object 0x40706108" 308 727
+Verbose "2015-06-16 17:32:27.083430" 137 LocationManagerService "SettingsObserver(update): updateProvidersLocked" 305 728
+Verbose "2015-06-16 17:32:27.093430" 11045 BtEventReceiver "#### Received Bluetooth State Change Action ####" 11045 729
+Debug "2015-06-16 17:32:27.093430" 137 com_broadcom_bt_service_pbap_PBAPService.cpp "### PBAP Opend ####" 3085 730
+Info "2015-06-16 17:32:27.093430" 137 BluetoothPBAPService onPbapConnected 3085 731
+Debug "2015-06-16 17:32:27.093430" 137 BluetoothServiceManager "ServiceStateChanged: bluetooth_pbs, 2" 153 732
+Verbose "2015-06-16 17:32:27.103430" 11032 BluetoothEventRedirector "Received android.bluetooth.adapter.action.STATE_CHANGED" 11032 733
+Info "2015-06-16 17:32:27.103430" 11032 BluetoothEventRedirector "EXTRA_STATE = 12" 11032 734
+Debug "2015-06-16 17:32:27.113430" 322 AuthorizationBluetoothService "Received Bluetooth event: Intent { act=android.bluetooth.adapter.action.STATE_CHANGED flg=0x10000000 cmp=com.google.android.gms/.auth.be.proximity.authorization.bt.AuthorizationBluetoothService$BluetoothStateChangeReceiver (has extras) }." 322 735
+Error "2015-06-16 17:32:27.113430" 322 AuthorizationBluetoothService "Proximity feature is not enabled." 322 736
+Debug "2015-06-16 17:32:27.464430" 259 StatusBarPolicy iconIndex=1 259 737
+Verbose "2015-06-16 17:32:27.464430" 259 StatusBarPolicy cdmaLevel:5;max:6 259 738
+Debug "2015-06-16 17:32:27.464430" 259 StatusBarPolicy iconLevel:5 259 739
+Debug "2015-06-16 17:32:27.464430" 259 StatusBarService "updateIcon slot=wifi index=16 viewIndex=12 old=StatusBarIcon(pkg=com.android.systemui id=0x7f0200d9 level=0 visible=true num=0 ) icon=StatusBarIcon(pkg=com.android.systemui id=0x7f0200d9 level=0 visible=true num=0 )" 259 740
+Debug "2015-06-16 17:32:27.464430" 259 StatusBarService "updateIcon slot=phone_signal index=20 viewIndex=15 old=StatusBarIcon(pkg=com.android.systemui id=0x7f020011 level=0 visible=true num=0 ) icon=StatusBarIcon(pkg=com.android.systemui id=0x7f020011 level=0 visible=true num=0 )" 259 741
+Debug "2015-06-16 17:32:27.504430" 911 AppThwackAndroidLib "setEnabled: bt is: true" 11288 742
+Debug "2015-06-16 17:32:27.504430" 911 AppThwackDeviceManager "taskStatus update (388d8727e48e4a7a472723dccd6f9b2b7b9c9cc8: {""result"":""Bluetooth enabled: true"",""state"":2})" 911 743
+Debug "2015-06-16 17:32:27.504430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/amber/brightness string=0,len=1" 157 744
+Verbose "2015-06-16 17:32:27.504430" 137 NotificationService "Battery Full, Charging" 157 745
+Debug "2015-06-16 17:32:27.514430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/amber/blink string=0,len=1" 157 746
+Debug "2015-06-16 17:32:27.514430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/amber/off_timer string=0 0,len=3" 157 747
+Debug "2015-06-16 17:32:27.514430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/green/brightness string=1,len=1" 157 748
+Debug "2015-06-16 17:32:27.514430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/green/blink string=0,len=1" 157 749
+Debug "2015-06-16 17:32:27.524430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/green/off_timer string=0 0,len=3" 157 750
+Info "2015-06-16 17:32:27.524430" 137 "LSState " EventReceiver:android.intent.action.NOTIFICATION_REMOVE 153 751
+Debug "2015-06-16 17:32:27.524430" 137 NotificationService "cancelNotification, ACTION_NOTIFICATION_REMOVE,pkg=com.trellis.appthwackdevicemanager,id=1096041655" 157 752
+Debug "2015-06-16 17:32:27.624430" 911 AppThwack /task/388d8727e48e4a7a472723dccd6f9b2b7b9c9cc8/status 11326 753
+Debug "2015-06-16 17:32:27.654430" 9705 dalvikvm "GC_CONCURRENT freed 282K, 46% free 3256K/5959K, external 712K/1024K, paused 2ms+3ms" 9707 754
+Debug "2015-06-16 17:32:27.694430" 911 AppThwack /task/388d8727e48e4a7a472723dccd6f9b2b7b9c9cc8/status 11327 755
+Info "2015-06-16 17:32:27.764430" 11298 USERIAL_LINUX "##### USerial_Ioctl: BT_Sleep, 0x8004 ####" 11307 756
+Debug "2015-06-16 17:32:27.764430" 911 dalvikvm "GC_CONCURRENT freed 445K, 46% free 3510K/6471K, external 0K/0K, paused 2ms+3ms" 913 757
+Debug "2015-06-16 17:32:28.505430" 911 AppThwack /task/388d8727e48e4a7a472723dccd6f9b2b7b9c9cc8/status 11334 758
+Debug "2015-06-16 17:32:28.535430" 911 AppThwack /location/ 11335 759
+Debug "2015-06-16 17:32:28.565430" 911 AppThwack "sha1: b4e1f84f29b5a785c190867168f0bdd521fad82f" 11335 760
+Debug "2015-06-16 17:32:28.565430" 911 AppThwackDeviceManager "k: lon v: -122.677811" 11335 761
+Debug "2015-06-16 17:32:28.565430" 911 AppThwackDeviceManager "k: lat v: 45.518001" 11335 762
+Debug "2015-06-16 17:32:28.565430" 911 AppThwackDeviceManager "k: NanoHttpd.QUERY_STRING v: lat=45.518001&lon=-122.677811" 11335 763
+Debug "2015-06-16 17:32:28.605430" 911 AppThwack /task/b4e1f84f29b5a785c190867168f0bdd521fad82f 11335 764
+Debug "2015-06-16 17:32:28.665430" 911 dalvikvm "GC_CONCURRENT freed 465K, 46% free 3557K/6471K, external 0K/0K, paused 2ms+3ms" 913 765
+Info "2015-06-16 17:32:28.695430" 137 "LSState " EventReceiver:android.intent.action.NOTIFICATION_ADD 153 766
+Debug "2015-06-16 17:32:28.695430" 259 StatusBarService "addNotification notification = StatusBarNotification(package=com.trellis.appthwackdevicemanager id=1096041656 tag=null notification=Notification(vibrate=null,sound=null,defaults=0x0,flags=0x62)), key = android.os.BinderProxy@405f2c48, fullScreenIntent = null, contentIntent = PendingIntent{4068b4d0: android.os.BinderProxy@405c84a0}" 259 767
+Debug "2015-06-16 17:32:28.705430" 911 AppThwackDeviceManager "taskStatus update (b4e1f84f29b5a785c190867168f0bdd521fad82f: {""state"":1})" 911 768
+Debug "2015-06-16 17:32:28.715430" 911 AppThwackDeviceManager "Enabling Mock Locations: Lat: 45.518001556396484 Lon: -122.67781066894531" 11336 769
+Debug "2015-06-16 17:32:28.715430" 911 AppThwackDeviceManager "Providing location: 45.518002 lon: -122.677811" 11336 770
+Debug "2015-06-16 17:32:28.715430" 911 AppThwackDeviceManager "taskStatus update (b4e1f84f29b5a785c190867168f0bdd521fad82f: {""result"":"""",""state"":2})" 911 771
+Debug "2015-06-16 17:32:28.725430" 911 AppThwackAndroidLib CONNECTED! 911 772
+Debug "2015-06-16 17:32:28.725430" 911 AppThwackAndroidLib Connected 11336 773
+Debug "2015-06-16 17:32:28.745430" 911 AppThwack /task/b4e1f84f29b5a785c190867168f0bdd521fad82f/status 11337 774
+Debug "2015-06-16 17:32:28.835430" 911 AppThwack /task/b4e1f84f29b5a785c190867168f0bdd521fad82f/status 11338 775
+Debug "2015-06-16 17:32:28.955430" 888 dalvikvm "GC_CONCURRENT freed 462K, 40% free 4801K/7943K, external 0K/0K, paused 3ms+24ms" 890 776
+Debug "2015-06-16 17:32:28.965430" 911 dalvikvm "GC_CONCURRENT freed 432K, 46% free 3521K/6471K, external 0K/0K, paused 2ms+2ms" 913 777
+Debug "2015-06-16 17:32:28.985430" 911 AppThwack /task/b4e1f84f29b5a785c190867168f0bdd521fad82f/status 11339 778
+Debug "2015-06-16 17:32:29.075430" 911 AppThwack /task/b4e1f84f29b5a785c190867168f0bdd521fad82f/status 11340 779
+Debug "2015-06-16 17:32:29.235430" 911 AppThwack /task/b4e1f84f29b5a785c190867168f0bdd521fad82f/status 11341 780
+Debug "2015-06-16 17:32:29.316430" 911 AppThwack /locale/ 11342 781
+Debug "2015-06-16 17:32:29.326430" 911 dalvikvm "GC_CONCURRENT freed 490K, 46% free 3542K/6471K, external 0K/0K, paused 2ms+2ms" 913 782
+Debug "2015-06-16 17:32:29.346430" 911 AppThwack "sha1: 6c01cdcd6e1971b0e197f83b96eee953ae186861" 11342 783
+Debug "2015-06-16 17:32:29.346430" 911 AppThwackDeviceManager "k: NanoHttpd.QUERY_STRING v: locale=en_US" 11342 784
+Debug "2015-06-16 17:32:29.346430" 911 AppThwackDeviceManager "k: locale v: en_US" 11342 785
+Debug "2015-06-16 17:32:29.366430" 911 AppThwack /task/6c01cdcd6e1971b0e197f83b96eee953ae186861 11342 786
+Debug "2015-06-16 17:32:29.386430" 259 StatusBarService "addNotification notification = StatusBarNotification(package=com.trellis.appthwackdevicemanager id=1096041657 tag=null notification=Notification(vibrate=null,sound=null,defaults=0x0,flags=0x62)), key = android.os.BinderProxy@4062e5c0, fullScreenIntent = null, contentIntent = PendingIntent{4062e750: android.os.BinderProxy@405c84a0}" 259 787
+Info "2015-06-16 17:32:29.386430" 137 "LSState " EventReceiver:android.intent.action.NOTIFICATION_ADD 153 788
+Debug "2015-06-16 17:32:29.396430" 911 AppThwackDeviceManager "taskStatus update (6c01cdcd6e1971b0e197f83b96eee953ae186861: {""state"":1})" 911 789
+Debug "2015-06-16 17:32:29.396430" 911 AppThwackDeviceManager "Setting locale to: en_US" 11343 790
+Debug "2015-06-16 17:32:29.396430" 911 AppThwackAndroidLib "Setting locale to: en_US" 11343 791
+Debug "2015-06-16 17:32:29.476430" 911 dalvikvm "GC_CONCURRENT freed 375K, 45% free 3575K/6471K, external 0K/0K, paused 2ms+6ms" 913 792
+Debug "2015-06-16 17:32:29.526430" 911 AppThwack /task/6c01cdcd6e1971b0e197f83b96eee953ae186861/status 11344 793
+Debug "2015-06-16 17:32:29.626430" 911 AppThwack /task/6c01cdcd6e1971b0e197f83b96eee953ae186861/status 11345 794
+Debug "2015-06-16 17:32:30.056430" 9705 dalvikvm "GC_CONCURRENT freed 326K, 45% free 3325K/5959K, external 712K/1024K, paused 2ms+2ms" 9707 795
+Debug "2015-06-16 17:32:30.687430" 911 AppThwack /task/6c01cdcd6e1971b0e197f83b96eee953ae186861/status 11346 796
+Debug "2015-06-16 17:32:30.767430" 911 dalvikvm "GC_CONCURRENT freed 474K, 46% free 3550K/6471K, external 0K/0K, paused 2ms+3ms" 913 797
+Debug "2015-06-16 17:32:31.538430" 911 AppThwackDeviceManager "taskStatus update (6c01cdcd6e1971b0e197f83b96eee953ae186861: {""result"":""en_US"",""state"":2})" 911 798
+Debug "2015-06-16 17:32:31.538430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/amber/brightness string=0,len=1" 157 799
+Verbose "2015-06-16 17:32:31.538430" 137 NotificationService "Battery Full, Charging" 157 800
+Debug "2015-06-16 17:32:31.548430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/amber/blink string=0,len=1" 157 801
+Debug "2015-06-16 17:32:31.548430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/amber/off_timer string=0 0,len=3" 157 802
+Debug "2015-06-16 17:32:31.548430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/green/brightness string=1,len=1" 157 803
+Debug "2015-06-16 17:32:31.548430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/green/blink string=0,len=1" 157 804
+Debug "2015-06-16 17:32:31.558430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/green/off_timer string=0 0,len=3" 157 805
+Info "2015-06-16 17:32:31.558430" 137 "LSState " EventReceiver:android.intent.action.NOTIFICATION_REMOVE 153 806
+Debug "2015-06-16 17:32:31.558430" 137 NotificationService "cancelNotification, ACTION_NOTIFICATION_REMOVE,pkg=com.trellis.appthwackdevicemanager,id=1096041657" 157 807
+Debug "2015-06-16 17:32:31.818430" 911 AppThwack /task/6c01cdcd6e1971b0e197f83b96eee953ae186861/status 11349 808
+Debug "2015-06-16 17:32:31.878430" 911 AppThwack /task/6c01cdcd6e1971b0e197f83b96eee953ae186861/status 11350 809
+Debug "2015-06-16 17:32:31.968430" 911 AppThwack /task/6c01cdcd6e1971b0e197f83b96eee953ae186861/status 11351 810
+Debug "2015-06-16 17:32:31.988430" 9705 dalvikvm "GC_CONCURRENT freed 434K, 44% free 3346K/5959K, external 712K/1024K, paused 13ms+9ms" 9707 811
+Debug "2015-06-16 17:32:32.028430" 911 AppThwack /get-network-info/ 11352 812
+Debug "2015-06-16 17:32:32.048430" 911 dalvikvm "GC_CONCURRENT freed 520K, 46% free 3542K/6471K, external 0K/0K, paused 2ms+2ms" 913 813
+Debug "2015-06-16 17:32:32.058430" 911 AppThwack "sha1: 829491ab8f7f93cb61d07182dd8db64943dc25c0" 11352 814
+Debug "2015-06-16 17:32:32.068430" 911 AppThwack /task/829491ab8f7f93cb61d07182dd8db64943dc25c0 11352 815
+Debug "2015-06-16 17:32:32.098430" 259 StatusBarService "addNotification notification = StatusBarNotification(package=com.trellis.appthwackdevicemanager id=1096041658 tag=null notification=Notification(vibrate=null,sound=null,defaults=0x0,flags=0x62)), key = android.os.BinderProxy@405c7f90, fullScreenIntent = null, contentIntent = PendingIntent{405c8120: android.os.BinderProxy@405c84a0}" 259 816
+Info "2015-06-16 17:32:32.098430" 137 "LSState " EventReceiver:android.intent.action.NOTIFICATION_ADD 153 817
+Debug "2015-06-16 17:32:32.108430" 911 AppThwackDeviceManager "taskStatus update (829491ab8f7f93cb61d07182dd8db64943dc25c0: {""state"":1})" 911 818
+Debug "2015-06-16 17:32:32.108430" 911 AppThwackDeviceManager "wl: SSID: AppThwack, BSSID: 00:23:eb:ac:50:a0, MAC: 7C:61:93:00:BF:73, Supplicant state: COMPLETED, RSSI: -54, Link speed: 54, Net ID: 0" 11353 819
+Debug "2015-06-16 17:32:32.108430" 911 AppThwackDeviceManager "taskStatus update (829491ab8f7f93cb61d07182dd8db64943dc25c0: {""result"":{""wifi_mac_address"":""7C:61:93:00:BF:73"",""wifi_ip_address"":""172.16.222.69"",""wifi_ssid"":""AppThwack"",""wifi_rssi"":-54,""wifi_link_speed"":54,""wifi_hidden_ssid"":false,""wifi_bssid"":""00:23:eb:ac:50:a0""},""state"":2})" 911 820
+Verbose "2015-06-16 17:32:32.108430" 137 NotificationService "Battery Full, Charging" 157 821
+Debug "2015-06-16 17:32:32.118430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/amber/brightness string=0,len=1" 157 822
+Debug "2015-06-16 17:32:32.118430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/amber/blink string=0,len=1" 157 823
+Debug "2015-06-16 17:32:32.118430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/amber/off_timer string=0 0,len=3" 157 824
+Debug "2015-06-16 17:32:32.118430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/green/brightness string=1,len=1" 157 825
+Debug "2015-06-16 17:32:32.128430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/green/blink string=0,len=1" 157 826
+Debug "2015-06-16 17:32:32.128430" 137 "lights  " "[LedInfo] write attr ok name=/sys/class/leds/green/off_timer string=0 0,len=3" 157 827
+Info "2015-06-16 17:32:32.128430" 137 "LSState " EventReceiver:android.intent.action.NOTIFICATION_REMOVE 153 828
+Debug "2015-06-16 17:32:32.128430" 137 NotificationService "cancelNotification, ACTION_NOTIFICATION_REMOVE,pkg=com.trellis.appthwackdevicemanager,id=1096041658" 157 829
+Debug "2015-06-16 17:32:32.218430" 911 AppThwack /task/829491ab8f7f93cb61d07182dd8db64943dc25c0/status 11354 830
+Debug "2015-06-16 17:32:32.268430" 911 AppThwack /task/829491ab8f7f93cb61d07182dd8db64943dc25c0/status 11355 831
+Debug "2015-06-16 17:32:32.318430" 911 dalvikvm "GC_CONCURRENT freed 456K, 45% free 3591K/6471K, external 0K/0K, paused 3ms+3ms" 913 832
+Debug "2015-06-16 17:32:32.389430" 911 AppThwack /task/829491ab8f7f93cb61d07182dd8db64943dc25c0/status 11356 833
+Debug "2015-06-16 17:32:32.449430" 911 AppThwack /task/829491ab8f7f93cb61d07182dd8db64943dc25c0/status 11357 834
+Debug "2015-06-16 17:32:32.839430" 11359 AndroidRuntime  11359 835
+Debug "2015-06-16 17:32:32.839430" 11359 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 11359 836
+Debug "2015-06-16 17:32:32.849430" 11359 AndroidRuntime "CheckJNI is OFF" 11359 837
+Debug "2015-06-16 17:32:32.849430" 11359 dalvikvm "creating instr width table" 11359 838
+Debug "2015-06-16 17:32:33.029430" 11359 AndroidRuntime "Calling main entry com.android.commands.pm.Pm" 11359 839
+Debug "2015-06-16 17:32:33.430430" 137 dalvikvm "GC_CONCURRENT freed 1929K, 47% free 8490K/15815K, external 2532K/3162K, paused 4ms+8ms" 139 840
+Debug "2015-06-16 17:32:33.680430" 11359 AndroidRuntime "Shutting down VM" 11359 841
+Info "2015-06-16 17:32:33.680430" 11359 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 11367 842
+Debug "2015-06-16 17:32:33.680430" 11359 dalvikvm "GC_CONCURRENT freed 350K, 69% free 325K/1024K, external 0K/0K, paused 0ms+1ms" 11361 843
+Debug "2015-06-16 17:32:33.680430" 11359 "jdwp    " "adbd disconnected" 11363 844
+Debug "2015-06-16 17:32:34.721430" 9705 dalvikvm "GC_CONCURRENT freed 470K, 45% free 3313K/5959K, external 712K/1024K, paused 2ms+7ms" 9707 845
+Debug "2015-06-16 17:32:37.193430" 8207 dalvikvm "GC_EXPLICIT freed 13K, 44% free 3017K/5379K, external 0K/0K, paused 65ms" 8207 846
+Debug "2015-06-16 17:32:37.574430" 11376 AndroidRuntime  11376 847
+Debug "2015-06-16 17:32:37.574430" 11376 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 11376 848
+Debug "2015-06-16 17:32:37.574430" 11376 AndroidRuntime "CheckJNI is OFF" 11376 849
+Debug "2015-06-16 17:32:37.574430" 11376 dalvikvm "creating instr width table" 11376 850
+Debug "2015-06-16 17:32:37.744430" 11376 AndroidRuntime "Calling main entry com.android.commands.pm.Pm" 11376 851
+Debug "2015-06-16 17:32:37.824430" 5932 dalvikvm "GC_EXPLICIT freed 18K, 44% free 3028K/5379K, external 0K/0K, paused 39ms" 10380 852
+Warning "2015-06-16 17:32:37.824430" 137 ActivityManager "No content provider found for:" 162 853
+Warning "2015-06-16 17:32:38.505430" 137 ActivityManager "No content provider found for:" 162 854
+Debug "2015-06-16 17:32:38.525430" 137 PackageParser "Scanning package: /data/app/vmdl440551619.tmp" 162 855
+Debug "2015-06-16 17:32:40.106430" 137 dalvikvm "GC_CONCURRENT freed 1141K, 42% free 9310K/15815K, external 2532K/3162K, paused 4ms+18ms" 139 856
+Debug "2015-06-16 17:32:42.138430" 137 dalvikvm "GC_CONCURRENT freed 1714K, 40% free 9540K/15815K, external 2532K/3162K, paused 3ms+14ms" 139 857
+Debug "2015-06-16 17:32:43.810430" 137 dalvikvm "GC_CONCURRENT freed 1905K, 40% free 9558K/15815K, external 2532K/3162K, paused 4ms+12ms" 139 858
+Debug "2015-06-16 17:32:45.471430" 137 dalvikvm "GC_CONCURRENT freed 2009K, 40% free 9572K/15815K, external 2532K/3162K, paused 4ms+9ms" 139 859
+Debug "2015-06-16 17:32:47.643430" 137 dalvikvm "GC_CONCURRENT freed 1963K, 40% free 9586K/15815K, external 2532K/3162K, paused 4ms+9ms" 139 860
+Debug "2015-06-16 17:32:47.844430" 11032 dalvikvm "GC_EXPLICIT freed 190K, 43% free 3189K/5511K, external 0K/0K, paused 65ms" 11032 861
+Warning "2015-06-16 17:32:49.115430" 137 PackageManager "clear PackageParser.PARSE_CHATTY" 162 862
+Info "2015-06-16 17:32:49.115430" 137 PackageManager "Unpacking native libraries for /data/app/com.rowland.hashtrace-1.apk" 162 863
+Debug "2015-06-16 17:32:49.155430" 73 installd "DexInv: --- BEGIN '/data/app/com.rowland.hashtrace-1.apk' ---" 73 864
+Debug "2015-06-16 17:32:49.635430" 11385 dalvikvm "creating instr width table" 11385 865
+Debug "2015-06-16 17:32:50.006430" 11385 dalvikvm "DexOpt: couldn't find field Landroid/app/Notification;.actions" 11385 866
+Debug "2015-06-16 17:32:50.006430" 11385 dalvikvm "DexOpt: couldn't find field Landroid/app/Notification;.actions" 11385 867
+Debug "2015-06-16 17:32:50.026430" 11385 dalvikvm "DexOpt: couldn't find field Landroid/graphics/BitmapFactory$Options;.inMutable" 11385 868
+Debug "2015-06-16 17:32:50.126430" 11385 dalvikvm "DexOpt: couldn't find static field" 11385 869
+Debug "2015-06-16 17:32:50.526430" 11385 dalvikvm "DexOpt: load 200ms, verify+opt 554ms" 11385 870
+Debug "2015-06-16 17:32:50.676430" 73 installd "DexInv: --- END '/data/app/com.rowland.hashtrace-1.apk' (success) ---" 73 871
+Info "2015-06-16 17:32:50.937430" 73 installd "move /data/dalvik-cache/data@app@com.rowland.hashtrace-1.apk@classes.dex -> /data/dalvik-cache/data@app@com.rowland.hashtrace-1.apk@classes.dex" 73 872
+Debug "2015-06-16 17:32:50.947430" 137 PackageManager "New package installed in /data/app/com.rowland.hashtrace-1.apk" 162 873
+Debug "2015-06-16 17:32:51.107430" 308 PhoneApp "-- PackageChangeBroadcastReceiver  action = android.intent.action.PACKAGE_ADDED" 308 874
+    "06-16 10:32:48.537  5941  5941 D SM:PackageReceiver: package added: package:com.rowland.hashtrace"  875
+Debug "2015-06-16 17:32:51.127430" 6014 HomeLoaders "get install or remove message so do change adapter" 11387 876
+    "06-16 10:32:48.667  5976  5976 I HtcAppAssociationsUtils (Dispatcher):  @@@@@ check enable = true"  877
+Debug "2015-06-16 17:32:51.237430" 5976 HtcLinkifyDispatcherReceiver " @@@@@ action=android.intent.action.PACKAGE_ADDED" 5976 878
+Debug "2015-06-16 17:32:51.237430" 5976 HtcLinkifyDispatcherReceiver " @@@@@ package=com.rowland.hashtrace" 5976 879
+Debug "2015-06-16 17:32:51.257430" 5988 VoiceDialerReceiver "onReceive Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.rowland.hashtrace flg=0x10000000 cmp=com.android.voicedialer/.VoiceDialerReceiver (has extras) }" 5988 880
+Verbose "2015-06-16 17:32:51.257430" 5988 RecognizerEngine "deleteCachedGrammarFiles /data/data/com.android.voicedialer/files/openentries.txt" 5988 881
+Debug "2015-06-16 17:32:51.277430" 5976 HtcLinkifyDispatcherIntentService " @@@@@ receive package action." 11390 882
+Info "2015-06-16 17:32:51.277430" 5976 HtcLinkifyDispatcherIntentService " @@@@@ action for package=android.intent.action.PACKAGE_ADDED" 11390 883
+Info "2015-06-16 17:32:51.277430" 5976 HtcLinkifyDispatcherIntentService " @@@@@ package name=com.rowland.hashtrace" 11390 884
+    "06-16 10:32:48.707  5976 11390 I HtcAppAssociationsUtils (Dispatcher):  @@@@@ getPreferredActivity(): Enter."  885
+    "06-16 10:32:48.707  5976 11390 I HtcAppAssociationsUtils (Dispatcher):  @@@@@ getPreferredActivity():      category=Video category"  886
+    "06-16 10:32:48.707  5976 11390 I HtcAppAssociationsUtils (Dispatcher):  @@@@@ getPreferredActivity():      add=true"  887
+Debug "2015-06-16 17:32:51.297430" 322 GTalkService "handlePackageInstalled: re-initialize providers" 322 888
+Debug "2015-06-16 17:32:51.297430" 322 GTalkService "[RawStanzaProvidersMgr] ##### searchProvidersFromIntent" 322 889
+Debug "2015-06-16 17:32:51.297430" 322 GTalkService "[RawStanzaProvidersMgr] no intent receivers found" 322 890
+Info "2015-06-16 17:32:51.317430" 137 ActivityManager "Start proc com.smithmicro.mnd for broadcast com.smithmicro.mnd/.MNDPackageListener: pid=11391 uid=10093 gids={3003, 1007, 1015}" 387 891
+Debug "2015-06-16 17:32:51.387430" 137 "szipinf " "Initializing inflate state" 153 892
+Debug "2015-06-16 17:32:51.397430" 69 dalvikvm "GC_EXPLICIT freed 12K, 44% free 3016K/5379K, external 0K/0K, paused 88ms" 69 893
+Verbose "2015-06-16 17:32:51.467430" 11391 MNDLOG_JAVA_PACKAGE_LISTENER "Executing context.startService(serviceIntent)" 11391 894
+Verbose "2015-06-16 17:32:51.497430" 11391 MNDLOG_JAVA_SERVICE "Android Executing onCreate()" 11391 895
+Info "2015-06-16 17:32:51.517430" 11391 MNDLOG_JAVA_SERVICE "Received start id 1: Intent { act=com.smithmicro.mnd.MNDService }" 11391 896
+Verbose "2015-06-16 17:32:51.517430" 11391 MNDLOG_JAVA_SERVICE "Android Executing onStartCommand()" 11391 897
+Verbose "2015-06-16 17:32:51.537430" 11391 MNDLOG_JAVA_SERVICE "Sending SETTINGS_CHANGED intent: MND disabled" 11391 898
+Debug "2015-06-16 17:32:51.547430" 6067 HtcWidgetScanner "action - android.intent.action.PACKAGE_ADDED" 11398 899
+Debug "2015-06-16 17:32:51.547430" 6067 HtcWidgetScanner "packageUid - 10094" 11398 900
+Debug "2015-06-16 17:32:51.557430" 69 dalvikvm "GC_EXPLICIT freed <1K, 44% free 3016K/5379K, external 0K/0K, paused 153ms" 69 901
+Debug "2015-06-16 17:32:51.567430" 861 PackageBroadcastService "Received broadcast action=android.intent.action.PACKAGE_ADDED and uri=com.rowland.hashtrace" 11399 902
+Verbose "2015-06-16 17:32:51.587430" 11391 MNDLOG_JAVA_SERVICE "Android Executing onDestroy()" 11391 903
+Verbose "2015-06-16 17:32:51.597430" 11391 MNDLOG_JAVA_SERVICE "Android Calling onDestroy()" 11391 904
+Verbose "2015-06-16 17:32:51.597430" 11391 MNDLOG_JAVA_SERVICE "Skipping mnd_proxy.stop() as mnd_proxy == null .SMSI MND Service stopped (3)" 11391 905
+Verbose "2015-06-16 17:32:51.597430" 11391 MNDLOG_JAVA_SERVICE "SMSI MND Service Stopped" 11391 906
+Info "2015-06-16 17:32:51.597430" 11391 "Process " "Sending signal. PID: 11391 SIG: 9" 11391 907
+Info "2015-06-16 17:32:51.647430" 322 ConfigService onCreate 322 908
+Info "2015-06-16 17:32:51.657430" 322 ConfigService "onBind for Intent { act=com.google.android.gms.config.UPDATE pkg=com.google.android.gms } action com.google.android.gms.config.UPDATE" 322 909
+Debug "2015-06-16 17:32:51.657430" 322 Database "dbopen(): path = /data/data/com.google.android.gms/databases/config.db, flag = 6, file size = 14336" 11400 910
+Debug "2015-06-16 17:32:51.657430" 322 Database "dbopen(): path = /data/data/com.google.android.gms/databases/config.db, mode: delete, disk free size: 189 M, handle: 0x39d780" 11400 911
+Info "2015-06-16 17:32:51.667430" 137 ActivityManager "Process com.smithmicro.mnd (pid 11391) has died." 500 912
+Info "2015-06-16 17:32:51.687430" 861 ConfigFetchService "onStartCommand Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.rowland.hashtrace cmp=com.google.android.gms/.config.ConfigFetchService (has extras) }" 861 913
+Info "2015-06-16 17:32:51.707430" 861 ConfigFetchService launchTask 861 914
+Debug "2015-06-16 17:32:51.727430" 861 ChimeraRcvrProxy "Creating receiver proxy ComponentInfo{com.google.android.gms/com.google.android.gms.games.chimera.GamesSystemBroadcastReceiverProxy}" 861 915
+Debug "2015-06-16 17:32:51.727430" 861 ChimeraRcvrProxy "Proxying container receiver ComponentInfo{com.google.android.gms/com.google.android.gms.games.chimera.GamesSystemBroadcastReceiverProxy} to Chimera receiver impl com.google.android.gms.games.GamesBroadcastReceiverStub" 861 916
+Debug "2015-06-16 17:32:51.727430" 861 ChimeraCfgMgr "Loading module com.google.android.gms.games from APK com.google.android.gms" 861 917
+Info "2015-06-16 17:32:51.767430" 861 PeopleContactsSync "CP2 sync disabled" 11402 918
+Info "2015-06-16 17:32:51.777430" 322 ConfigService "onBind returning update interface" 322 919
+Info "2015-06-16 17:32:51.777430" 322 ConfigService "onBind for Intent { act=com.google.android.gms.config.START pkg=com.google.android.gms } action com.google.android.gms.config.START" 322 920
+Info "2015-06-16 17:32:51.777430" 322 ConfigService "onBind returning service broker" 322 921
+Debug "2015-06-16 17:32:51.808430" 69 dalvikvm "GC_EXPLICIT freed <1K, 44% free 3016K/5379K, external 0K/0K, paused 245ms" 69 922
+Info "2015-06-16 17:32:51.888430" 861 ConfigFetchService "service connected" 861 923
+Debug "2015-06-16 17:32:51.898430" 861 ConfigFetchService "ConfigApi connection successful." 861 924
+Debug "2015-06-16 17:32:52.078430" 137 dalvikvm "GC_CONCURRENT freed 1410K, 36% free 10224K/15815K, external 2532K/3162K, paused 3ms+20ms" 139 925
+Debug "2015-06-16 17:32:52.228430" 137 dalvikvm "GC_EXPLICIT freed 1646K, 46% free 8682K/15815K, external 2532K/3162K, paused 107ms" 162 926
+Debug "2015-06-16 17:32:52.468430" 11376 AndroidRuntime "Shutting down VM" 11376 927
+Debug "2015-06-16 17:32:52.478430" 11376 dalvikvm "GC_CONCURRENT freed 102K, 69% free 322K/1024K, external 0K/0K, paused 0ms+0ms" 11378 928
+Info "2015-06-16 17:32:52.478430" 11376 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 11403 929
+Debug "2015-06-16 17:32:52.478430" 11376 "jdwp    " "adbd disconnected" 11380 930
+Debug "2015-06-16 17:32:52.528430" 6014 AppWidgetHostView "updateAppWidget mInfo = AppWidgetProviderInfo(provider=ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.SearchWidgetProvider})" 6014 931
+Verbose "2015-06-16 17:32:52.608430" 861 ConfigFetchTask "ConfigFetchTask getDeviceDataVersionInfo(): ABFEt1WLy00DNP3XbkGHDOhVyABHdXjoZehFCHxm2SSIWjTNpmfE5g2AY2I5GeJE1mUJaxLde2wqmwt-wYXrJahSiyPt1pWZsPeYJdSAZDuVcH53-3dbBYrJDzMco-8-S9uF9mt9IExYeoTKE7fdgR1SefyfoWhqa-q7z3Kmkh1J4sKYcidXxUI9QIqk0gopMnwinx5NAV7u" 878 932
+    "06-16 10:32:50.078  5976 11390 D HtcAppAssociationsUtils (Dispatcher):  @@@@@ getPreferredActivity():      Go DB ------"  933
+Debug "2015-06-16 17:32:52.869430" 11407 AndroidRuntime  11407 934
+Debug "2015-06-16 17:32:52.869430" 11407 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 11407 935
+Debug "2015-06-16 17:32:52.869430" 11407 AndroidRuntime "CheckJNI is OFF" 11407 936
+Debug "2015-06-16 17:32:52.869430" 11407 dalvikvm "creating instr width table" 11407 937
+Debug "2015-06-16 17:32:53.059430" 11407 AndroidRuntime "Calling main entry com.android.commands.pm.Pm" 11407 938
+Warning "2015-06-16 17:32:53.059430" 6014 Addapter info.icon:2130837515 11387 939
+Info "2015-06-16 17:32:53.079430" 861 GoogleURLConnFactory "Using platform SSLCertificateSocketFactory" 878 940
+Warning "2015-06-16 17:32:53.089430" 6014 Addapter info.icon:2130837504 11387 941
+Debug "2015-06-16 17:32:53.119430" 308 PhoneApp EVENT_QUERY_MO_PACKAGES 421 942
+Warning "2015-06-16 17:32:53.119430" 6014 Addapter info.icon:2130837627 11387 943
+Warning "2015-06-16 17:32:53.159430" 6014 Addapter info.icon:2130837511 11387 944
+Warning "2015-06-16 17:32:53.199430" 6014 Addapter info.icon:2130837513 11387 945
+Warning "2015-06-16 17:32:53.209430" 6014 Addapter info.icon:2130837504 11387 946
+Warning "2015-06-16 17:32:53.209430" 6014 Addapter info.icon:2130837683 11387 947
+Warning "2015-06-16 17:32:53.249430" 6014 Addapter info.icon:2130837559 11387 948
+Warning "2015-06-16 17:32:53.349430" 6014 Addapter info.icon:2130837627 11387 949
+Debug "2015-06-16 17:32:53.369430" 308 PhoneApp "-- N1 =0" 421 950
+Warning "2015-06-16 17:32:53.389430" 6014 Addapter info.icon:2130837527 11387 951
+Warning "2015-06-16 17:32:53.409430" 6014 Addapter info.icon:2130838371 11387 952
+Warning "2015-06-16 17:32:53.409430" 6014 Addapter info.icon:2130838100 11387 953
+Warning "2015-06-16 17:32:53.449430" 6014 Addapter info.icon:2130837562 11387 954
+Debug "2015-06-16 17:32:53.489430" 11407 AndroidRuntime "Shutting down VM" 11407 955
+Info "2015-06-16 17:32:53.499430" 11407 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 11415 956
+Debug "2015-06-16 17:32:53.499430" 11407 dalvikvm "GC_CONCURRENT freed 321K, 69% free 325K/1024K, external 0K/0K, paused 0ms+0ms" 11409 957
+Debug "2015-06-16 17:32:53.499430" 11407 "jdwp    " "adbd disconnected" 11411 958
+Warning "2015-06-16 17:32:53.509430" 6014 Addapter info.icon:2130837508 11387 959
+Warning "2015-06-16 17:32:53.509430" 6014 Addapter info.icon:2130903045 11387 960
+Debug "2015-06-16 17:32:53.529430" 6014 Addapter "text : Get more HTC widgets" 11387 961
+Debug "2015-06-16 17:32:53.539430" 308 PhoneApp "-- N2 =0" 421 962
+Debug "2015-06-16 17:32:53.599430" 308 PhoneApp "-- N3 =0" 421 963

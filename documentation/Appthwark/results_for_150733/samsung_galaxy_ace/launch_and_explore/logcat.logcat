@@ -1,0 +1,1242 @@
+    "--------- beginning of /dev/log/main"  1
+Debug "2015-06-16 17:32:58.178851" 711 AppThwack /tz/ 8092 2
+Debug "2015-06-16 17:32:58.238851" 711 AppThwack "sha1: ddbc48ac0a4494abff1eedef4ce2a83f0778ea77" 8092 3
+Debug "2015-06-16 17:32:58.258851" 711 AppThwack /task/ddbc48ac0a4494abff1eedef4ce2a83f0778ea77 8092 4
+    "--------- beginning of /dev/log/system"  5
+Info "2015-06-16 17:32:58.298851" 192 StatusBarManagerService "ADD-null , 0x7f020018" 214 6
+Debug "2015-06-16 17:32:58.298851" 711 AppThwackDeviceManager "taskStatus update (ddbc48ac0a4494abff1eedef4ce2a83f0778ea77: {""state"":1})" 711 7
+Debug "2015-06-16 17:32:58.308851" 711 AppThwackDeviceManager "taskStatus update (ddbc48ac0a4494abff1eedef4ce2a83f0778ea77: {""result"":{""tz"":""GMT""},""state"":2})" 711 8
+Info "2015-06-16 17:32:58.308851" 192 StatusBarManagerService "REMOVE-null , 0x7f020018" 214 9
+Debug "2015-06-16 17:32:58.448851" 711 AppThwack /task/ddbc48ac0a4494abff1eedef4ce2a83f0778ea77/status 8094 10
+Debug "2015-06-16 17:32:58.538851" 711 AppThwack /task/ddbc48ac0a4494abff1eedef4ce2a83f0778ea77/status 8095 11
+Debug "2015-06-16 17:32:58.658851" 711 AppThwack /task/ddbc48ac0a4494abff1eedef4ce2a83f0778ea77/status 8096 12
+Debug "2015-06-16 17:32:58.868851" 711 AppThwack /task/ddbc48ac0a4494abff1eedef4ce2a83f0778ea77/status 8097 13
+Debug "2015-06-16 17:32:59.498851" 8101 AndroidRuntime  8101 14
+Debug "2015-06-16 17:32:59.498851" 8101 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8101 15
+Debug "2015-06-16 17:32:59.498851" 8101 AndroidRuntime "CheckJNI is OFF" 8101 16
+Debug "2015-06-16 17:32:59.508851" 8101 AndroidRuntime "setted country_code = Chile" 8101 17
+Debug "2015-06-16 17:32:59.508851" 8101 AndroidRuntime "setted sales_code = CHO" 8101 18
+Debug "2015-06-16 17:32:59.508851" 8101 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8101 19
+Error "2015-06-16 17:32:59.508851" 8101 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8101 20
+Error "2015-06-16 17:32:59.508851" 8101 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8101 21
+Error "2015-06-16 17:32:59.508851" 8101 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8101 22
+Debug "2015-06-16 17:32:59.738851" 8101 AndroidRuntime "Calling main entry com.android.commands.input.Input" 8101 23
+Info "2015-06-16 17:32:59.738851" 8101 SendKeyEvent 4 8101 24
+Info "2015-06-16 17:32:59.738851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = false" 3190 25
+Info "2015-06-16 17:32:59.738851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = true" 3190 26
+Info "2015-06-16 17:32:59.738851" 192 InputDispatcher "Delivering key to current input target: action: 0, channel '40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server)'" 252 27
+Warning "2015-06-16 17:32:59.738851" 298 KeyCharacterMap "No keyboard for id 0" 298 28
+Warning "2015-06-16 17:32:59.738851" 298 KeyCharacterMap "Using default keymap: /system/usr/keychars/qwerty.kcm.bin" 298 29
+Debug "2015-06-16 17:32:59.738851" 192 PowerManagerService "reactivateScreenLocksLocked mProxIgnoredBecauseScreenTurnedOff=false" 252 30
+Info "2015-06-16 17:32:59.738851" 192 PowerManagerService "Ulight 1->7|0" 252 31
+Debug "2015-06-16 17:32:59.748851" 298 Launcher "dispatchKeyEvent DOWN KEYCODE_BACK / MainMenu isOpened=false Info=false" 298 32
+Info "2015-06-16 17:32:59.748851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = true" 294 33
+Info "2015-06-16 17:32:59.748851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = false" 294 34
+Info "2015-06-16 17:32:59.748851" 192 InputDispatcher "Delivering key to current input target: action: 1, channel '40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server)'" 252 35
+Debug "2015-06-16 17:32:59.748851" 298 Launcher "KEYCODE_BACK launcher 2" 298 36
+Debug "2015-06-16 17:32:59.748851" 298 Launcher "dispatchKeyEvent UP KEYCODE_BACK / MainMenu isOpened=false Info=false" 298 37
+Debug "2015-06-16 17:32:59.748851" 8101 AndroidRuntime "Shutting down VM" 8101 38
+Info "2015-06-16 17:32:59.758851" 8101 AndroidRuntime "NOTE: attach of thread 'Binder Thread #2' failed" 8110 39
+Debug "2015-06-16 17:33:00.118851" 8112 AndroidRuntime  8112 40
+Debug "2015-06-16 17:33:00.118851" 8112 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8112 41
+Debug "2015-06-16 17:33:00.118851" 8112 AndroidRuntime "CheckJNI is OFF" 8112 42
+Debug "2015-06-16 17:33:00.118851" 8112 AndroidRuntime "setted country_code = Chile" 8112 43
+Debug "2015-06-16 17:33:00.118851" 8112 AndroidRuntime "setted sales_code = CHO" 8112 44
+Debug "2015-06-16 17:33:00.118851" 8112 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8112 45
+Error "2015-06-16 17:33:00.118851" 8112 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8112 46
+Error "2015-06-16 17:33:00.118851" 8112 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8112 47
+Error "2015-06-16 17:33:00.118851" 8112 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8112 48
+Debug "2015-06-16 17:33:00.348851" 8112 AndroidRuntime "Calling main entry com.android.commands.input.Input" 8112 49
+Info "2015-06-16 17:33:00.348851" 8112 SendKeyEvent 4 8112 50
+Info "2015-06-16 17:33:00.358851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = false" 197 51
+Info "2015-06-16 17:33:00.358851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = true" 197 52
+Info "2015-06-16 17:33:00.358851" 192 InputDispatcher "Delivering key to current input target: action: 0, channel '40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server)'" 252 53
+Debug "2015-06-16 17:33:00.358851" 298 Launcher "dispatchKeyEvent DOWN KEYCODE_BACK / MainMenu isOpened=false Info=false" 298 54
+Info "2015-06-16 17:33:00.358851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = true" 324 55
+Info "2015-06-16 17:33:00.358851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = false" 324 56
+Info "2015-06-16 17:33:00.358851" 192 InputDispatcher "Delivering key to current input target: action: 1, channel '40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server)'" 252 57
+Debug "2015-06-16 17:33:00.358851" 298 Launcher "KEYCODE_BACK launcher 2" 298 58
+Debug "2015-06-16 17:33:00.368851" 298 Launcher "dispatchKeyEvent UP KEYCODE_BACK / MainMenu isOpened=false Info=false" 298 59
+Debug "2015-06-16 17:33:00.368851" 8112 AndroidRuntime "Shutting down VM" 8112 60
+Info "2015-06-16 17:33:00.378851" 8112 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8122 61
+Debug "2015-06-16 17:33:00.698851" 8124 AndroidRuntime  8124 62
+Debug "2015-06-16 17:33:00.698851" 8124 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8124 63
+Debug "2015-06-16 17:33:00.698851" 8124 AndroidRuntime "CheckJNI is OFF" 8124 64
+Debug "2015-06-16 17:33:00.698851" 8124 AndroidRuntime "setted country_code = Chile" 8124 65
+Debug "2015-06-16 17:33:00.698851" 8124 AndroidRuntime "setted sales_code = CHO" 8124 66
+Debug "2015-06-16 17:33:00.698851" 8124 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8124 67
+Error "2015-06-16 17:33:00.708851" 8124 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8124 68
+Error "2015-06-16 17:33:00.708851" 8124 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8124 69
+Error "2015-06-16 17:33:00.708851" 8124 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8124 70
+Debug "2015-06-16 17:33:00.928851" 8124 AndroidRuntime "Calling main entry com.android.commands.input.Input" 8124 71
+Info "2015-06-16 17:33:00.928851" 8124 SendKeyEvent 4 8124 72
+Info "2015-06-16 17:33:00.938851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = false" 192 73
+Info "2015-06-16 17:33:00.938851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = true" 192 74
+Info "2015-06-16 17:33:00.938851" 192 InputDispatcher "Delivering key to current input target: action: 0, channel '40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server)'" 252 75
+Debug "2015-06-16 17:33:00.938851" 298 Launcher "dispatchKeyEvent DOWN KEYCODE_BACK / MainMenu isOpened=false Info=false" 298 76
+Info "2015-06-16 17:33:00.938851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = true" 3398 77
+Info "2015-06-16 17:33:00.938851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = false" 3398 78
+Info "2015-06-16 17:33:00.938851" 192 InputDispatcher "Delivering key to current input target: action: 1, channel '40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server)'" 252 79
+Debug "2015-06-16 17:33:00.938851" 298 Launcher "KEYCODE_BACK launcher 2" 298 80
+Debug "2015-06-16 17:33:00.948851" 298 Launcher "dispatchKeyEvent UP KEYCODE_BACK / MainMenu isOpened=false Info=false" 298 81
+Debug "2015-06-16 17:33:00.948851" 8124 AndroidRuntime "Shutting down VM" 8124 82
+Info "2015-06-16 17:33:00.958851" 8124 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8132 83
+Debug "2015-06-16 17:33:01.258851" 8134 AndroidRuntime  8134 84
+Debug "2015-06-16 17:33:01.258851" 8134 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8134 85
+Debug "2015-06-16 17:33:01.258851" 8134 AndroidRuntime "CheckJNI is OFF" 8134 86
+Debug "2015-06-16 17:33:01.258851" 8134 AndroidRuntime "setted country_code = Chile" 8134 87
+Debug "2015-06-16 17:33:01.258851" 8134 AndroidRuntime "setted sales_code = CHO" 8134 88
+Debug "2015-06-16 17:33:01.258851" 8134 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8134 89
+Error "2015-06-16 17:33:01.268851" 8134 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8134 90
+Error "2015-06-16 17:33:01.268851" 8134 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8134 91
+Error "2015-06-16 17:33:01.268851" 8134 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8134 92
+Debug "2015-06-16 17:33:01.528851" 8134 AndroidRuntime "Calling main entry com.android.commands.input.Input" 8134 93
+Info "2015-06-16 17:33:01.538851" 8134 SendKeyEvent 4 8134 94
+Info "2015-06-16 17:33:01.538851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = false" 294 95
+Info "2015-06-16 17:33:01.538851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = true" 294 96
+Info "2015-06-16 17:33:01.538851" 192 InputDispatcher "Delivering key to current input target: action: 0, channel '40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server)'" 252 97
+Debug "2015-06-16 17:33:01.538851" 298 Launcher "dispatchKeyEvent DOWN KEYCODE_BACK / MainMenu isOpened=false Info=false" 298 98
+Info "2015-06-16 17:33:01.538851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = true" 197 99
+Info "2015-06-16 17:33:01.538851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = false" 197 100
+Info "2015-06-16 17:33:01.538851" 192 InputDispatcher "Delivering key to current input target: action: 1, channel '40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server)'" 252 101
+Debug "2015-06-16 17:33:01.548851" 298 Launcher "KEYCODE_BACK launcher 2" 298 102
+Debug "2015-06-16 17:33:01.548851" 298 Launcher "dispatchKeyEvent UP KEYCODE_BACK / MainMenu isOpened=false Info=false" 298 103
+Debug "2015-06-16 17:33:01.548851" 8134 AndroidRuntime "Shutting down VM" 8134 104
+Info "2015-06-16 17:33:01.558851" 8134 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8144 105
+Debug "2015-06-16 17:33:01.878851" 8146 AndroidRuntime  8146 106
+Debug "2015-06-16 17:33:01.878851" 8146 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8146 107
+Debug "2015-06-16 17:33:01.878851" 8146 AndroidRuntime "CheckJNI is OFF" 8146 108
+Debug "2015-06-16 17:33:01.878851" 8146 AndroidRuntime "setted country_code = Chile" 8146 109
+Debug "2015-06-16 17:33:01.878851" 8146 AndroidRuntime "setted sales_code = CHO" 8146 110
+Debug "2015-06-16 17:33:01.878851" 8146 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8146 111
+Error "2015-06-16 17:33:01.878851" 8146 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8146 112
+Error "2015-06-16 17:33:01.878851" 8146 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8146 113
+Error "2015-06-16 17:33:01.878851" 8146 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8146 114
+Debug "2015-06-16 17:33:02.158851" 8146 AndroidRuntime "Calling main entry com.android.commands.input.Input" 8146 115
+Info "2015-06-16 17:33:02.158851" 8146 SendKeyEvent 4 8146 116
+Info "2015-06-16 17:33:02.158851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = false" 198 117
+Info "2015-06-16 17:33:02.158851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = true" 198 118
+Info "2015-06-16 17:33:02.158851" 192 InputDispatcher "Delivering key to current input target: action: 0, channel '40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server)'" 252 119
+Debug "2015-06-16 17:33:02.168851" 298 Launcher "dispatchKeyEvent DOWN KEYCODE_BACK / MainMenu isOpened=false Info=false" 298 120
+Info "2015-06-16 17:33:02.168851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = true" 420 121
+Info "2015-06-16 17:33:02.168851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = false" 420 122
+Info "2015-06-16 17:33:02.168851" 192 InputDispatcher "Delivering key to current input target: action: 1, channel '40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server)'" 252 123
+Debug "2015-06-16 17:33:02.168851" 298 Launcher "KEYCODE_BACK launcher 2" 298 124
+Debug "2015-06-16 17:33:02.168851" 298 Launcher "dispatchKeyEvent UP KEYCODE_BACK / MainMenu isOpened=false Info=false" 298 125
+Debug "2015-06-16 17:33:02.168851" 8146 AndroidRuntime "Shutting down VM" 8146 126
+Info "2015-06-16 17:33:02.178851" 8146 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8156 127
+Debug "2015-06-16 17:33:02.488851" 8158 AndroidRuntime  8158 128
+Debug "2015-06-16 17:33:02.488851" 8158 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8158 129
+Debug "2015-06-16 17:33:02.488851" 8158 AndroidRuntime "CheckJNI is OFF" 8158 130
+Debug "2015-06-16 17:33:02.488851" 8158 AndroidRuntime "setted country_code = Chile" 8158 131
+Debug "2015-06-16 17:33:02.488851" 8158 AndroidRuntime "setted sales_code = CHO" 8158 132
+Debug "2015-06-16 17:33:02.488851" 8158 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8158 133
+Error "2015-06-16 17:33:02.488851" 8158 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8158 134
+Error "2015-06-16 17:33:02.488851" 8158 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8158 135
+Error "2015-06-16 17:33:02.488851" 8158 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8158 136
+Debug "2015-06-16 17:33:02.718851" 8158 AndroidRuntime "Calling main entry com.android.commands.am.Am" 8158 137
+Info "2015-06-16 17:33:02.738851" 192 ActivityManager "Starting: Intent { flg=0x10000000 cmp=com.trellis.appthwackdevicemanager/.RotatePortrait } from pid 8158" 3190 138
+Debug "2015-06-16 17:33:02.748851" 8158 AndroidRuntime "Shutting down VM" 8158 139
+Info "2015-06-16 17:33:02.758851" 298 Launcher onPause() 298 140
+Info "2015-06-16 17:33:02.758851" 8158 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8167 141
+Warning "2015-06-16 17:33:02.788851" 192 ActivityManager "Trying to launch com.trellis.appthwackdevicemanager/.RotatePortrait" 294 142
+Info "2015-06-16 17:33:02.798851" 192 OrientationDebug "[pwm] in updateOrientationListenerLp()" 197 143
+Verbose "2015-06-16 17:33:02.798851" 192 OrientationDebug "in updateOrientationListenerLp(), Screen status=true, current orientation=1, SensorEnabled=true" 197 144
+Info "2015-06-16 17:33:02.798851" 192 OrientationDebug "[pwm] needSensorRunningLp(), return true #4" 197 145
+Info "2015-06-16 17:33:02.808851" 298 Launcher onWindowFocusChanged(false) 298 146
+Debug "2015-06-16 17:33:02.818851" 298 Launcher "setWallpaperDimension() called" 298 147
+Debug "2015-06-16 17:33:02.818851" 298 Launcher "USE_NON_SCROLLABLE_IMAGE_WALLPAPER is true" 298 148
+Debug "2015-06-16 17:33:02.818851" 298 Launcher "It's image wallpaper. suggestDesiredDimensions(-1,-1)" 298 149
+Info "2015-06-16 17:33:02.828851" 192 OrientationDebug "[pwm] in updateOrientationListenerLp()" 192 150
+Verbose "2015-06-16 17:33:02.828851" 192 OrientationDebug "in updateOrientationListenerLp(), Screen status=true, current orientation=5, SensorEnabled=true" 192 151
+Info "2015-06-16 17:33:02.828851" 192 OrientationDebug "[pwm] needSensorRunningLp(), return true #4" 192 152
+Info "2015-06-16 17:33:02.848851" 298 Launcher onWindowFocusChanged(true) 298 153
+Debug "2015-06-16 17:33:02.848851" 298 Launcher "setWallpaperDimension() called" 298 154
+Debug "2015-06-16 17:33:02.848851" 298 Launcher "USE_NON_SCROLLABLE_IMAGE_WALLPAPER is true" 298 155
+Debug "2015-06-16 17:33:02.848851" 298 Launcher "It's image wallpaper. suggestDesiredDimensions(-1,-1)" 298 156
+Error "2015-06-16 17:33:02.848851" 298 Launcher setWindowOpaque() 298 157
+Warning "2015-06-16 17:33:02.888851" 192 InputManagerService "Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@408f0ec8" 3398 158
+Info "2015-06-16 17:33:02.928851" 298 Launcher "onResume(). mIsNewIntent : false" 298 159
+Debug "2015-06-16 17:33:02.938851" 7760 ProgramMonitor " onReceive -no" 7760 160
+Debug "2015-06-16 17:33:02.938851" 7760 ProgramMonitor "appWidgetIds.length : 0" 7760 161
+Debug "2015-06-16 17:33:02.938851" 7760 ProgramMonitor " onReceive - action:com.sec.android.app.controlpanel.RUNNING_PROGRAM_REQ" 7760 162
+Error "2015-06-16 17:33:02.948851" 298 Launcher setWindowOpaque() 298 163
+Error "2015-06-16 17:33:02.968851" 298 Launcher "MTP-LAUNCHER: media scanning not yet finished." 298 164
+Info "2015-06-16 17:33:02.968851" 298 Launcher "onResume() ended" 298 165
+Debug "2015-06-16 17:33:02.998851" 7760 ProgramMonitor " onReceive - action:com.sec.android.app.controlpanel.RUNNING_PROGRAM_ACK" 7760 166
+Debug "2015-06-16 17:33:02.998851" 7760 ProgramMonitor updateNumberText 7760 167
+Debug "2015-06-16 17:33:03.058851" 7760 ProgramMonitor updateWidget 7760 168
+Debug "2015-06-16 17:33:03.058851" 7760 ProgramMonitor "updateWidget - appWidgetIds == null -->> resetting" 7760 169
+Debug "2015-06-16 17:33:03.058851" 7760 ProgramMonitor "updateWidget - appWidgetIds.length == 0" 7760 170
+Debug "2015-06-16 17:33:04.048851" 192 BatteryService "update start" 242 171
+Debug "2015-06-16 17:33:04.048851" 192 BatteryService "update start" 242 172
+Debug "2015-06-16 17:33:04.048851" 192 BatteryService "update start" 242 173
+Debug "2015-06-16 17:33:05.148851" 7760 ProgramMonitor " onReceive - action:com.sec.android.app.controlpanel.CPU_USAGE_WARN" 7760 174
+Info "2015-06-16 17:33:05.148851" 7760 ProgramMonitor cpu_usage_wan 7760 175
+Debug "2015-06-16 17:33:05.148851" 7760 ProgramMonitor updateSlideText 7760 176
+Debug "2015-06-16 17:33:05.148851" 7760 ProgramMonitor updateDefaultText 7760 177
+Debug "2015-06-16 17:33:05.148851" 7760 ProgramMonitor updateWidget 7760 178
+Debug "2015-06-16 17:33:05.148851" 7760 ProgramMonitor "updateWidget - appWidgetIds == null -->> resetting" 7760 179
+Debug "2015-06-16 17:33:05.158851" 7760 ProgramMonitor "updateWidget - appWidgetIds.length == 0" 7760 180
+Debug "2015-06-16 17:33:06.118851" 8175 AndroidRuntime  8175 181
+Debug "2015-06-16 17:33:06.118851" 8175 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8175 182
+Debug "2015-06-16 17:33:06.118851" 8175 AndroidRuntime "CheckJNI is OFF" 8175 183
+Debug "2015-06-16 17:33:06.118851" 8175 AndroidRuntime "setted country_code = Chile" 8175 184
+Debug "2015-06-16 17:33:06.118851" 8175 AndroidRuntime "setted sales_code = CHO" 8175 185
+Debug "2015-06-16 17:33:06.118851" 8175 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8175 186
+Error "2015-06-16 17:33:06.118851" 8175 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8175 187
+Error "2015-06-16 17:33:06.118851" 8175 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8175 188
+Error "2015-06-16 17:33:06.118851" 8175 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8175 189
+Debug "2015-06-16 17:33:06.348851" 8175 AndroidRuntime "Calling main entry com.android.commands.am.Am" 8175 190
+Debug "2015-06-16 17:33:06.368851" 8175 AndroidRuntime "Shutting down VM" 8175 191
+Info "2015-06-16 17:33:06.378851" 711 APPTHWACK "ORIENTATION: 0" 8185 192
+Info "2015-06-16 17:33:06.378851" 8175 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8186 193
+Debug "2015-06-16 17:33:07.908851" 8192 AndroidRuntime  8192 194
+Debug "2015-06-16 17:33:07.908851" 8192 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8192 195
+Debug "2015-06-16 17:33:07.908851" 8192 AndroidRuntime "CheckJNI is OFF" 8192 196
+Debug "2015-06-16 17:33:07.908851" 8192 AndroidRuntime "setted country_code = Chile" 8192 197
+Debug "2015-06-16 17:33:07.908851" 8192 AndroidRuntime "setted sales_code = CHO" 8192 198
+Debug "2015-06-16 17:33:07.908851" 8192 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8192 199
+Error "2015-06-16 17:33:07.918851" 8192 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8192 200
+Error "2015-06-16 17:33:07.918851" 8192 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8192 201
+Error "2015-06-16 17:33:07.918851" 8192 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8192 202
+Warning "2015-06-16 17:33:08.168851" 192 PowerManagerService "Timer 0x7->0x3|0x1" 244 203
+Info "2015-06-16 17:33:08.168851" 192 PowerManagerService "Ulight 7->3|0" 244 204
+Debug "2015-06-16 17:33:08.178851" 8192 AndroidRuntime "Calling main entry com.android.commands.pm.Pm" 8192 205
+Debug "2015-06-16 17:33:08.258851" 8192 AndroidRuntime "Shutting down VM" 8192 206
+Info "2015-06-16 17:33:08.268851" 8192 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8202 207
+Debug "2015-06-16 17:33:08.788851" 8204 AndroidRuntime  8204 208
+Debug "2015-06-16 17:33:08.788851" 8204 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8204 209
+Debug "2015-06-16 17:33:08.788851" 8204 AndroidRuntime "CheckJNI is OFF" 8204 210
+Debug "2015-06-16 17:33:08.788851" 8204 AndroidRuntime "setted country_code = Chile" 8204 211
+Debug "2015-06-16 17:33:08.788851" 8204 AndroidRuntime "setted sales_code = CHO" 8204 212
+Debug "2015-06-16 17:33:08.788851" 8204 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8204 213
+Error "2015-06-16 17:33:08.788851" 8204 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8204 214
+Error "2015-06-16 17:33:08.788851" 8204 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8204 215
+Error "2015-06-16 17:33:08.788851" 8204 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8204 216
+Debug "2015-06-16 17:33:09.018851" 8204 AndroidRuntime "Calling main entry com.android.commands.am.Am" 8204 217
+Info "2015-06-16 17:33:09.028851" 192 ActivityManager "Starting: Intent { flg=0x10000000 cmp=com.rowland.hashtrace/.MainActivity } from pid 8204" 294 218
+Debug "2015-06-16 17:33:09.048851" 8204 AndroidRuntime "Shutting down VM" 8204 219
+Info "2015-06-16 17:33:09.058851" 298 Launcher onPause() 298 220
+Info "2015-06-16 17:33:09.068851" 8204 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8212 221
+Info "2015-06-16 17:33:09.098851" 192 ActivityManager "Start proc com.rowland.hashtrace for activity com.rowland.hashtrace/.MainActivity: pid=8213 uid=10078 gids={3003, 1015}" 420 222
+Info "2015-06-16 17:33:09.138851" 192 OrientationDebug "[pwm] in updateOrientationListenerLp()" 198 223
+Verbose "2015-06-16 17:33:09.138851" 192 OrientationDebug "in updateOrientationListenerLp(), Screen status=true, current orientation=-1, SensorEnabled=true" 198 224
+Info "2015-06-16 17:33:09.138851" 192 OrientationDebug "[pwm] needSensorRunningLp(), return true #4" 198 225
+Info "2015-06-16 17:33:09.158851" 298 Launcher onWindowFocusChanged(false) 298 226
+Debug "2015-06-16 17:33:09.168851" 298 Launcher "setWallpaperDimension() called" 298 227
+Debug "2015-06-16 17:33:09.178851" 298 Launcher "USE_NON_SCROLLABLE_IMAGE_WALLPAPER is true" 298 228
+Debug "2015-06-16 17:33:09.188851" 298 Launcher "It's image wallpaper. suggestDesiredDimensions(-1,-1)" 298 229
+Info "2015-06-16 17:33:09.278851" 8213 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.TweetHashTracerContentProvider" 8213 230
+Error "2015-06-16 17:33:09.368851" 8213 dalvikvm "Could not find class 'android.content.SyncRequest$Builder', referenced from method com.rowland.sync.TweetHashTracerSyncAdapter.configurePeriodicSync" 8213 231
+Warning "2015-06-16 17:33:09.368851" 8213 dalvikvm "VFY: unable to resolve new-instance 70 (Landroid/content/SyncRequest$Builder;) in Lcom/rowland/sync/TweetHashTracerSyncAdapter;" 8213 232
+Debug "2015-06-16 17:33:09.608851" 192 SyncManager "setSyncAutomatically: , provider com.rowland.hashtrace.app -> true" 324 233
+Warning "2015-06-16 17:33:09.698851" 8213 dalvikvm "VFY: unable to resolve virtual method 9539: Landroid/widget/TextView;.setAllCaps (Z)V" 8213 234
+Warning "2015-06-16 17:33:09.738851" 8213 dalvikvm "VFY: unable to resolve virtual method 8983: Landroid/view/ViewTreeObserver;.removeOnGlobalLayoutListener (Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V" 8213 235
+Warning "2015-06-16 17:33:09.938851" 8213 dalvikvm "VFY: unable to resolve virtual method 8824: Landroid/view/View;.setBackground (Landroid/graphics/drawable/Drawable;)V" 8213 236
+Warning "2015-06-16 17:33:09.938851" 8213 dalvikvm "VFY: unable to resolve virtual method 8824: Landroid/view/View;.setBackground (Landroid/graphics/drawable/Drawable;)V" 8213 237
+Debug "2015-06-16 17:33:10.018851" 8213 PullToRefresh "Setting Padding. L: 0, T: 0, R: 0, B: 0" 8213 238
+Debug "2015-06-16 17:33:10.038851" 8213 PullToRefresh "First Visible: 0. Visible Count: 0. Total Items:0" 8213 239
+Debug "2015-06-16 17:33:10.048851" 8213 PullToRefresh "isFirstItemVisible. Empty View." 8213 240
+Debug "2015-06-16 17:33:10.058851" 8213 DATECHECK 20150616000000 8213 241
+Debug "2015-06-16 17:33:10.078851" 8213 DATECHECK 20150616000000 8213 242
+Warning "2015-06-16 17:33:10.098851" 8213 dalvikvm "VFY: unable to resolve direct method 9327: Landroid/widget/LinearLayout$LayoutParams;.<init> (Landroid/widget/LinearLayout$LayoutParams;)V" 8213 243
+Debug "2015-06-16 17:33:10.128851" 8213 PullToRefresh "onSizeChanged. W: 320, H: 358" 8213 244
+Debug "2015-06-16 17:33:10.128851" 8213 PullToRefresh "Setting Padding. L: 0, T: -214, R: 0, B: 0" 8213 245
+Info "2015-06-16 17:33:10.168851" 192 ActivityManager "Displayed com.rowland.hashtrace/.MainActivity: +1s79ms (total +2h32m51s377ms)" 250 246
+Debug "2015-06-16 17:33:10.288851" 8213 TweetHashTracerSyncService "onCreate - TweetHashTracerSyncService" 8213 247
+Debug "2015-06-16 17:33:10.308851" 192 SyncManager "setIsSyncable: Account {name=HashTrace, type=hashtrace.rowland.com}, provider com.rowland.hashtrace.app -> 1" 3190 248
+Error "2015-06-16 17:33:10.468851" 20237 "vending " "[111] AccountManagerHelper.getAuthTokenBlocking(): no matching accounts for ANDROID" 8227 249
+Debug "2015-06-16 17:33:10.468851" 8213 TweetHashTracerSyncService "onCreate - TweetHashTracerSyncService" 8213 250
+Debug "2015-06-16 17:33:10.478851" 8213 TweetHashTracerSyncAdapter "Starting sync" 8233 251
+Verbose "2015-06-16 17:33:10.478851" 8213 TweetHashTracerSyncAdapter "inserting #Football, with name: #Football" 8233 252
+Debug "2015-06-16 17:33:10.548851" 8213 PullToRefresh "First Visible: 0. Visible Count: 0. Total Items:2" 8213 253
+Debug "2015-06-16 17:33:10.548851" 8213 PullToRefresh "isFirstItemVisible. Empty View." 8213 254
+Error "2015-06-16 17:33:10.868851" 20237 "vending " "[111] UpdateTask.doInBackground(): com.android.vending.api.FatalCommunicationException: Sent a bad request." 8227 255
+Debug "2015-06-16 17:33:12.898851" 8213 DATECHECK 20150616173247 8233 256
+Debug "2015-06-16 17:33:12.898851" 8213 DATECHECK 20150616173239 8233 257
+Debug "2015-06-16 17:33:12.898851" 8213 DATECHECK 20150616173238 8233 258
+Debug "2015-06-16 17:33:12.898851" 8213 DATECHECK 20150616173237 8233 259
+Debug "2015-06-16 17:33:12.898851" 8213 DATECHECK 20150616173235 8233 260
+Debug "2015-06-16 17:33:12.908851" 8213 DATECHECK 20150616173235 8233 261
+Debug "2015-06-16 17:33:12.908851" 8213 DATECHECK 20150616173235 8233 262
+Debug "2015-06-16 17:33:12.908851" 8213 DATECHECK 20150616173234 8233 263
+Debug "2015-06-16 17:33:12.908851" 8213 DATECHECK 20150616173234 8233 264
+Debug "2015-06-16 17:33:12.908851" 8213 DATECHECK 20150616173234 8233 265
+Debug "2015-06-16 17:33:12.908851" 8213 DATECHECK 20150616173233 8233 266
+Debug "2015-06-16 17:33:12.918851" 8213 DATECHECK 20150616173232 8233 267
+Debug "2015-06-16 17:33:12.918851" 8213 DATECHECK 20150616173230 8233 268
+Debug "2015-06-16 17:33:12.918851" 8213 DATECHECK 20150616173229 8233 269
+Debug "2015-06-16 17:33:12.918851" 8213 DATECHECK 20150616173229 8233 270
+Debug "2015-06-16 17:33:12.958851" 8213 DATECHECK 20150613173941 8233 271
+Debug "2015-06-16 17:33:12.968851" 8213 DATECHECK 20150616173900 8233 272
+Warning "2015-06-16 17:33:13.028851" 8213 System.err "java.io.FileNotFoundException: /mnt/sdcard/data/tweethashtrace/1611727609 (No such file or directory)" 8240 273
+Debug "2015-06-16 17:33:13.088851" 8213 PullToRefresh "First Visible: 0. Visible Count: 5. Total Items:17" 8213 274
+Debug "2015-06-16 17:33:13.108851" 8213 TweetHashTracerSyncAdapter "FetchTweetTask Complete. 15 Inserted" 8233 275
+Warning "2015-06-16 17:33:13.118851" 8213 System.err "	at org.apache.harmony.luni.platform.OSFileSystem.open(Native Method)" 8240 276
+Warning "2015-06-16 17:33:13.118851" 8213 System.err "	at dalvik.system.BlockGuard$WrappedFileSystem.open(BlockGuard.java:232)" 8240 277
+Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at java.io.FileInputStream.<init>(FileInputStream.java:80)" 8240 278
+Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at java.io.FileInputStream.<init>(FileInputStream.java:132)" 8240 279
+Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:362)" 8240 280
+Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:412)" 8240 281
+Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at com.rowland.utility.ImageManager.getBitmap(ImageManager.java:88)" 8240 282
+Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at com.rowland.utility.ImageManager.access$400(ImageManager.java:24)" 8240 283
+Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at com.rowland.utility.ImageManager$ImageQueueManager.run(ImageManager.java:175)" 8240 284
+Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at java.lang.Thread.run(Thread.java:1019)" 8240 285
+Debug "2015-06-16 17:33:13.768851" 8213 PullToRefresh "First Visible: 0. Visible Count: 5. Total Items:17" 8213 286
+Warning "2015-06-16 17:33:13.778851" 8213 System.err "java.io.FileNotFoundException: /mnt/sdcard/data/tweethashtrace/1172793367 (No such file or directory)" 8240 287
+Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at org.apache.harmony.luni.platform.OSFileSystem.open(Native Method)" 8240 288
+Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at dalvik.system.BlockGuard$WrappedFileSystem.open(BlockGuard.java:232)" 8240 289
+Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at java.io.FileInputStream.<init>(FileInputStream.java:80)" 8240 290
+Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at java.io.FileInputStream.<init>(FileInputStream.java:132)" 8240 291
+Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:362)" 8240 292
+Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:412)" 8240 293
+Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at com.rowland.utility.ImageManager.getBitmap(ImageManager.java:88)" 8240 294
+Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at com.rowland.utility.ImageManager.access$400(ImageManager.java:24)" 8240 295
+Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at com.rowland.utility.ImageManager$ImageQueueManager.run(ImageManager.java:175)" 8240 296
+Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at java.lang.Thread.run(Thread.java:1019)" 8240 297
+Debug "2015-06-16 17:33:13.878851" 8213 PullToRefresh "First Visible: 0. Visible Count: 5. Total Items:17" 8213 298
+Debug "2015-06-16 17:33:13.908851" 8213 PullToRefresh "First Visible: 0. Visible Count: 5. Total Items:17" 8213 299
+Debug "2015-06-16 17:33:14.068851" 192 BatteryService "update start" 242 300
+Debug "2015-06-16 17:33:14.068851" 192 BatteryService "update start" 242 301
+Debug "2015-06-16 17:33:14.068851" 192 BatteryService "update start" 242 302
+Error "2015-06-16 17:33:16.038851" 20237 "vending " "[114] AccountManagerHelper.getAuthTokenBlocking(): no matching accounts for ANDROID" 8247 303
+Error "2015-06-16 17:33:16.378851" 20237 "vending " "[114] UpdateTask.doInBackground(): com.android.vending.api.FatalCommunicationException: Sent a bad request." 8247 304
+Error "2015-06-16 17:33:21.508851" 20237 "vending " "[115] AccountManagerHelper.getAuthTokenBlocking(): no matching accounts for ANDROID" 8258 305
+Error "2015-06-16 17:33:21.698851" 20237 "vending " "[115] UpdateTask.doInBackground(): com.android.vending.api.FatalCommunicationException: Sent a bad request." 8258 306
+Debug "2015-06-16 17:33:24.088851" 192 BatteryService "update start" 242 307
+Debug "2015-06-16 17:33:24.088851" 192 BatteryService "update start" 242 308
+Debug "2015-06-16 17:33:24.088851" 192 BatteryService "update start" 242 309
+Debug "2015-06-16 17:33:25.138851" 8269 AndroidRuntime  8269 310
+Debug "2015-06-16 17:33:25.138851" 8269 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8269 311
+Debug "2015-06-16 17:33:25.138851" 8269 AndroidRuntime "CheckJNI is OFF" 8269 312
+Debug "2015-06-16 17:33:25.138851" 8269 AndroidRuntime "setted country_code = Chile" 8269 313
+Debug "2015-06-16 17:33:25.138851" 8269 AndroidRuntime "setted sales_code = CHO" 8269 314
+Debug "2015-06-16 17:33:25.138851" 8269 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8269 315
+Error "2015-06-16 17:33:25.138851" 8269 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8269 316
+Error "2015-06-16 17:33:25.138851" 8269 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8269 317
+Error "2015-06-16 17:33:25.138851" 8269 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8269 318
+Debug "2015-06-16 17:33:25.368851" 8269 AndroidRuntime "Calling main entry com.android.commands.am.Am" 8269 319
+Debug "2015-06-16 17:33:25.388851" 8269 AndroidRuntime "Shutting down VM" 8269 320
+Info "2015-06-16 17:33:25.398851" 711 APPTHWACK "ORIENTATION: 0" 8277 321
+Info "2015-06-16 17:33:25.398851" 8269 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8278 322
+Debug "2015-06-16 17:33:29.118851" 8289 AndroidRuntime  8289 323
+Debug "2015-06-16 17:33:29.118851" 8289 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8289 324
+Debug "2015-06-16 17:33:29.118851" 8289 AndroidRuntime "CheckJNI is OFF" 8289 325
+Debug "2015-06-16 17:33:29.118851" 8289 AndroidRuntime "setted country_code = Chile" 8289 326
+Debug "2015-06-16 17:33:29.128851" 8289 AndroidRuntime "setted sales_code = CHO" 8289 327
+Debug "2015-06-16 17:33:29.128851" 8289 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8289 328
+Error "2015-06-16 17:33:29.128851" 8289 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8289 329
+Error "2015-06-16 17:33:29.128851" 8289 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8289 330
+Error "2015-06-16 17:33:29.128851" 8289 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8289 331
+Debug "2015-06-16 17:33:29.358851" 8289 AndroidRuntime "Calling main entry com.android.commands.am.Am" 8289 332
+Debug "2015-06-16 17:33:29.368851" 8289 AndroidRuntime "Shutting down VM" 8289 333
+Info "2015-06-16 17:33:29.368851" 192 ActivityManager "Starting: Intent { flg=0x10000000 cmp=com.trellis.appthwackdevicemanager/.RotateLandscape } from pid 8289" 294 334
+Info "2015-06-16 17:33:29.388851" 8289 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8297 335
+Warning "2015-06-16 17:33:29.408851" 192 ActivityManager "Trying to launch com.trellis.appthwackdevicemanager/.RotateLandscape" 3398 336
+Info "2015-06-16 17:33:29.428851" 192 OrientationDebug "[pwm] in updateOrientationListenerLp()" 420 337
+Verbose "2015-06-16 17:33:29.428851" 192 OrientationDebug "in updateOrientationListenerLp(), Screen status=true, current orientation=0, SensorEnabled=true" 420 338
+Info "2015-06-16 17:33:29.428851" 192 OrientationDebug "[pwm] needSensorRunningLp(), return true #4" 420 339
+Info "2015-06-16 17:33:29.428851" 192 WindowManager "Setting rotation to 1, animFlags=1" 420 340
+Info "2015-06-16 17:33:29.428851" 192 ActivityManager "Config changed: { scale=1.0 imsi=0/0 loc=en_US touch=3 keys=1/1/2 nav=1/1 orien=2 layout=18 uiMode=17 seq=39}" 420 341
+Warning "2015-06-16 17:33:29.508851" 192 ActivityManager "Duplicate finish request for HistoryRecord{40aa86c8 com.trellis.appthwackdevicemanager/.RotateLandscape}" 3398 342
+Debug "2015-06-16 17:33:29.578851" 8213 PullToRefresh "onSizeChanged. W: 480, H: 206" 8213 343
+Debug "2015-06-16 17:33:29.578851" 8213 PullToRefresh "Setting Padding. L: 0, T: -123, R: 0, B: 0" 8213 344
+Debug "2015-06-16 17:33:29.698851" 8213 PullToRefresh "First Visible: 0. Visible Count: 5. Total Items:17" 8213 345
+Info "2015-06-16 17:33:29.718851" 192 OrientationDebug "[pwm] in updateOrientationListenerLp()" 192 346
+Verbose "2015-06-16 17:33:29.718851" 192 OrientationDebug "in updateOrientationListenerLp(), Screen status=true, current orientation=-1, SensorEnabled=true" 192 347
+Info "2015-06-16 17:33:29.718851" 192 OrientationDebug "[pwm] needSensorRunningLp(), return true #4" 192 348
+Warning "2015-06-16 17:33:29.728851" 192 InputManagerService "Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@4091a5f8" 3190 349
+Debug "2015-06-16 17:33:29.748851" 2643 OPPBaseService "[main/1] onConfigurationChanged()" 2643 350
+Debug "2015-06-16 17:33:29.748851" 8213 PullToRefresh "First Visible: 0. Visible Count: 3. Total Items:17" 8213 351
+Debug "2015-06-16 17:33:32.778851" 8307 AndroidRuntime  8307 352
+Debug "2015-06-16 17:33:32.778851" 8307 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8307 353
+Debug "2015-06-16 17:33:32.778851" 8307 AndroidRuntime "CheckJNI is OFF" 8307 354
+Debug "2015-06-16 17:33:32.778851" 8307 AndroidRuntime "setted country_code = Chile" 8307 355
+Debug "2015-06-16 17:33:32.778851" 8307 AndroidRuntime "setted sales_code = CHO" 8307 356
+Debug "2015-06-16 17:33:32.778851" 8307 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8307 357
+Error "2015-06-16 17:33:32.778851" 8307 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8307 358
+Error "2015-06-16 17:33:32.778851" 8307 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8307 359
+Error "2015-06-16 17:33:32.778851" 8307 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8307 360
+Debug "2015-06-16 17:33:33.018851" 8307 AndroidRuntime "Calling main entry com.android.commands.am.Am" 8307 361
+Debug "2015-06-16 17:33:33.038851" 8307 AndroidRuntime "Shutting down VM" 8307 362
+Info "2015-06-16 17:33:33.048851" 711 APPTHWACK "ORIENTATION: 1" 8315 363
+Info "2015-06-16 17:33:33.048851" 8307 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8316 364
+Debug "2015-06-16 17:33:34.108851" 192 BatteryService "update start" 242 365
+Debug "2015-06-16 17:33:34.108851" 192 BatteryService "update start" 242 366
+Debug "2015-06-16 17:33:34.108851" 192 BatteryService "update start" 242 367
+Debug "2015-06-16 17:33:34.508851" 8324 AndroidRuntime  8324 368
+Debug "2015-06-16 17:33:34.508851" 8324 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8324 369
+Debug "2015-06-16 17:33:34.508851" 8324 AndroidRuntime "CheckJNI is OFF" 8324 370
+Debug "2015-06-16 17:33:34.508851" 8324 AndroidRuntime "setted country_code = Chile" 8324 371
+Debug "2015-06-16 17:33:34.508851" 8324 AndroidRuntime "setted sales_code = CHO" 8324 372
+Debug "2015-06-16 17:33:34.518851" 8324 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8324 373
+Error "2015-06-16 17:33:34.518851" 8324 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8324 374
+Error "2015-06-16 17:33:34.518851" 8324 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8324 375
+Error "2015-06-16 17:33:34.518851" 8324 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8324 376
+Debug "2015-06-16 17:33:34.758851" 8324 AndroidRuntime "Calling main entry com.android.commands.am.Am" 8324 377
+Debug "2015-06-16 17:33:34.778851" 8324 AndroidRuntime "Shutting down VM" 8324 378
+Info "2015-06-16 17:33:34.788851" 711 APPTHWACK "ORIENTATION: 1" 8332 379
+Info "2015-06-16 17:33:34.788851" 8324 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8333 380
+Debug "2015-06-16 17:33:39.118851" 8347 AndroidRuntime  8347 381
+Debug "2015-06-16 17:33:39.118851" 8347 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8347 382
+Debug "2015-06-16 17:33:39.118851" 8347 AndroidRuntime "CheckJNI is OFF" 8347 383
+Debug "2015-06-16 17:33:39.118851" 8347 AndroidRuntime "setted country_code = Chile" 8347 384
+Debug "2015-06-16 17:33:39.118851" 8347 AndroidRuntime "setted sales_code = CHO" 8347 385
+Debug "2015-06-16 17:33:39.118851" 8347 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8347 386
+Error "2015-06-16 17:33:39.128851" 8347 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8347 387
+Error "2015-06-16 17:33:39.128851" 8347 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8347 388
+Error "2015-06-16 17:33:39.128851" 8347 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8347 389
+Debug "2015-06-16 17:33:39.358851" 8347 AndroidRuntime "Calling main entry com.android.commands.pm.Pm" 8347 390
+Debug "2015-06-16 17:33:39.438851" 8347 AndroidRuntime "Shutting down VM" 8347 391
+Info "2015-06-16 17:33:39.448851" 8347 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8355 392
+Debug "2015-06-16 17:33:40.198851" 8362 AndroidRuntime  8362 393
+Debug "2015-06-16 17:33:40.198851" 8362 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8362 394
+Debug "2015-06-16 17:33:40.198851" 8362 AndroidRuntime "CheckJNI is OFF" 8362 395
+Debug "2015-06-16 17:33:40.198851" 8362 AndroidRuntime "setted country_code = Chile" 8362 396
+Debug "2015-06-16 17:33:40.198851" 8362 AndroidRuntime "setted sales_code = CHO" 8362 397
+Debug "2015-06-16 17:33:40.198851" 8362 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8362 398
+Error "2015-06-16 17:33:40.198851" 8362 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8362 399
+Error "2015-06-16 17:33:40.198851" 8362 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8362 400
+Error "2015-06-16 17:33:40.198851" 8362 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8362 401
+Debug "2015-06-16 17:33:40.428851" 8362 AndroidRuntime "Calling main entry com.android.commands.pm.Pm" 8362 402
+Warning "2015-06-16 17:33:40.498851" 192 ActivityManager "No content provider found for:" 219 403
+Debug "2015-06-16 17:33:40.498851" 192 MountService " :::: getSecureContainerList ::" 219 404
+Info "2015-06-16 17:33:40.498851" 30836 PackageHelper "Size of container 2 MB 100969 bytes" 31013 405
+Debug "2015-06-16 17:33:40.498851" 87 VoldCmdListener "asec list" 110 406
+Debug "2015-06-16 17:33:40.498851" 192 MountService " :::: createSecureContainer :: id = smdl2tmp1, sizeMb = 2, fstype = fat, key = 7739804e301147d4893ab3c0299a02d9, ownerUid = 10019" 219 407
+Debug "2015-06-16 17:33:40.498851" 87 VoldCmdListener "asec create smdl2tmp1 2 fat {} 10019" 110 408
+    "06-16 17:40:09.379    87   110 W /system/bin/newfs_msdos: /system/bin/newfs_msdos: warning, /dev/block/dm-0 is not a character device"  409
+    "06-16 17:40:09.379    87   110 W /system/bin/newfs_msdos: /system/bin/newfs_msdos: Skipping mount checks"  410
+    "06-16 17:40:09.379    87   110 W /system/bin/newfs_msdos: Bogus heads from kernel - setting sane value"  411
+    "06-16 17:40:09.379    87   110 W /system/bin/newfs_msdos: Bogus sectors from kernel - setting sane value"  412
+    "06-16 17:40:09.379    87   110 W /system/bin/newfs_msdos: /dev/block/dm-0: 4123 sectors in 4123 FAT32 clusters (512 bytes/cluster)"  413
+    "06-16 17:40:09.379    87   110 W /system/bin/newfs_msdos: bps=512 spc=1 res=32 nft=2 sec=4221 mid=0xf0 spt=63 hds=64 hid=0 bspf=33 rdcl=2 infs=1 bkbs=2"  414
+Warning "2015-06-16 17:33:40.748851" 87 logwrapper "/system/bin/newfs_msdos terminated by exit(0)" 110 415
+Info "2015-06-16 17:33:40.748851" 30836 PackageHelper "Created secure container smdl2tmp1 at /mnt/asec/smdl2tmp1" 31013 416
+Info "2015-06-16 17:33:40.748851" 30836 DefContainer "Created container for smdl2tmp1 at path : /mnt/asec/smdl2tmp1" 31013 417
+Info "2015-06-16 17:33:40.748851" 87 "Vold    " "Filesystem formatted OK" 110 418
+Debug "2015-06-16 17:33:40.748851" 87 "Vold    " "Fat::doMount mount(/dev/block/dm-0, /mnt/asec/smdl2tmp1,vfat,0x0020008e,utf8,uid=10019,gid=0,fmask=0,dmask=0,shortname=mixed)" 110 419
+Debug "2015-06-16 17:33:40.748851" 192 MountService " :::: getSecureContainerPath :: id = smdl2tmp1" 219 420
+Debug "2015-06-16 17:33:40.748851" 87 VoldCmdListener "asec path smdl2tmp1" 110 421
+Info "2015-06-16 17:33:40.768851" 30836 DefContainer "Copied /sdcard/temp.apk to /mnt/asec/smdl2tmp1/pkg.apk" 31013 422
+Debug "2015-06-16 17:33:40.768851" 192 MountService " :::: finalizeSecureContainer :: id = smdl2tmp1" 219 423
+Debug "2015-06-16 17:33:40.768851" 87 VoldCmdListener "asec finalize smdl2tmp1" 110 424
+Info "2015-06-16 17:33:40.788851" 30836 DefContainer "Finalized container smdl2tmp1" 31013 425
+Info "2015-06-16 17:33:40.788851" 30836 DefContainer "Unmounting smdl2tmp1 at path /mnt/asec/smdl2tmp1" 31013 426
+Debug "2015-06-16 17:33:40.788851" 87 "Vold    " "Fat::doMount mount(/dev/block/loop0, /mnt/asec/smdl2tmp1,vfat,0x002000a7,utf8,uid=0,gid=0,fmask=227,dmask=227,shortname=mixed)" 110 427
+Debug "2015-06-16 17:33:40.788851" 192 MountService " :::: isSecureContainerMounted :: id = smdl2tmp1" 219 428
+Debug "2015-06-16 17:33:40.828851" 192 MountService " :::: unmountSecureContainer :: id = smdl2tmp1, force = true" 219 429
+Debug "2015-06-16 17:33:40.928851" 87 VoldCmdListener "asec unmount smdl2tmp1 force" 110 430
+Warning "2015-06-16 17:33:41.158851" 192 ActivityManager "No content provider found for:" 219 431
+Debug "2015-06-16 17:33:41.158851" 192 MountService " :::: isSecureContainerMounted :: id = smdl2tmp1" 219 432
+Debug "2015-06-16 17:33:41.168851" 192 MountService " :::: mountSecureContainer :: id = smdl2tmp1, key = 7739804e301147d4893ab3c0299a02d9, ownerUid = 1000" 219 433
+Debug "2015-06-16 17:33:41.168851" 87 VoldCmdListener "asec mount smdl2tmp1 {} 1000" 110 434
+Debug "2015-06-16 17:33:41.228851" 87 "Vold    " "Fat::doMount mount(/dev/block/dm-0, /mnt/asec/smdl2tmp1,vfat,0x00200087,utf8,uid=1000,gid=0,fmask=222,dmask=222,shortname=mixed)" 110 435
+Debug "2015-06-16 17:33:41.238851" 192 MountService " :::: getSecureContainerPath :: id = smdl2tmp1" 219 436
+Debug "2015-06-16 17:33:41.238851" 192 PackageParser "Scanning package: /mnt/asec/smdl2tmp1/pkg.apk" 219 437
+Debug "2015-06-16 17:33:41.238851" 87 VoldCmdListener "asec path smdl2tmp1" 110 438
+Debug "2015-06-16 17:33:41.298851" 192 MountService " :::: isSecureContainerMounted :: id = smdl2tmp1" 219 439
+Debug "2015-06-16 17:33:41.298851" 192 MountService " :::: unmountSecureContainer :: id = smdl2tmp1, force = true" 219 440
+Debug "2015-06-16 17:33:41.398851" 87 VoldCmdListener "asec unmount smdl2tmp1 force" 110 441
+Debug "2015-06-16 17:33:41.648851" 192 MountService " :::: renameSecureContainer :: oldId = smdl2tmp1, newId = com.appthwack.test-1" 219 442
+Debug "2015-06-16 17:33:41.658851" 87 VoldCmdListener "asec rename smdl2tmp1 com.appthwack.test-1" 110 443
+Debug "2015-06-16 17:33:41.668851" 192 MountService " :::: isSecureContainerMounted :: id = com.appthwack.test-1" 219 444
+Warning "2015-06-16 17:33:41.668851" 192 PackageManager "Mounting container com.appthwack.test-1" 219 445
+Debug "2015-06-16 17:33:41.668851" 192 MountService " :::: mountSecureContainer :: id = com.appthwack.test-1, key = 7739804e301147d4893ab3c0299a02d9, ownerUid = 1000" 219 446
+Debug "2015-06-16 17:33:41.668851" 87 VoldCmdListener "asec mount com.appthwack.test-1 {} 1000" 110 447
+Debug "2015-06-16 17:33:41.738851" 87 "Vold    " "Fat::doMount mount(/dev/block/dm-0, /mnt/asec/com.appthwack.test-1,vfat,0x00200087,utf8,uid=1000,gid=0,fmask=222,dmask=222,shortname=mixed)" 110 448
+Debug "2015-06-16 17:33:41.738851" 192 MountService " :::: getSecureContainerPath :: id = com.appthwack.test-1" 219 449
+Info "2015-06-16 17:33:41.738851" 192 PackageManager "Succesfully renamed smdl2tmp1 to com.appthwack.test-1 at new path: /mnt/asec/com.appthwack.test-1" 219 450
+Debug "2015-06-16 17:33:41.738851" 192 PackageManager "Scanning package com.appthwack.test" 219 451
+Debug "2015-06-16 17:33:41.738851" 87 VoldCmdListener "asec path com.appthwack.test-1" 110 452
+Info "2015-06-16 17:33:41.748851" 192 PackageManager "Linking native library dir for /mnt/asec/com.appthwack.test-1/pkg.apk" 219 453
+Info "2015-06-16 17:33:42.038851" 192 ActivityManager "Force stopping package com.appthwack.test uid=10080" 214 454
+Debug "2015-06-16 17:33:42.048851" 192 PackageManager "  Instrumentation: com.appthwack.test.AppThwackInstrumentationTestRunner" 219 455
+Debug "2015-06-16 17:33:42.138851" 192 PackageManager "New package installed in /mnt/asec/com.appthwack.test-1/pkg.apk" 219 456
+Debug "2015-06-16 17:33:42.228851" 192 MountService " :::: isSecureContainerMounted :: id = com.appthwack.test-1" 219 457
+Info "2015-06-16 17:33:42.248851" 27444 VoiceActionsFactory "Applications list changed, recalculating supported actions" 27444 458
+Debug "2015-06-16 17:33:42.248851" 326 GTalkService "handlePackageInstalled: re-initialize providers" 326 459
+Debug "2015-06-16 17:33:42.248851" 326 GTalkService "[RawStanzaProvidersMgr] ##### searchProvidersFromIntent" 326 460
+Verbose "2015-06-16 17:33:42.258851" 24885 PackageIntentReceiver "onReceive() intent:Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.appthwack.test flg=0x10000000 cmp=com.sec.android.app.controlpanel/.PackageIntentReceiver (has extras) } pkg:com.appthwack.test action:android.intent.action.PACKAGE_ADDED" 24885 461
+Debug "2015-06-16 17:33:42.268851" 326 GTalkService "[RawStanzaProvidersMgr] no intent receivers found" 326 462
+Debug "2015-06-16 17:33:42.288851" 298 Launcher.SWidgetPkgMgr addPackage=com.appthwack.test 298 463
+Debug "2015-06-16 17:33:42.548851" 8362 AndroidRuntime "Shutting down VM" 8362 464
+Info "2015-06-16 17:33:42.578851" 8362 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8393 465
+Debug "2015-06-16 17:33:42.698851" 20237 "vending " "[117] LocalAssetCache.updateOnePackage(): No local info for com.appthwack.test" 8395 466
+Debug "2015-06-16 17:33:43.048851" 8399 AndroidRuntime  8399 467
+Debug "2015-06-16 17:33:43.048851" 8399 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8399 468
+Debug "2015-06-16 17:33:43.048851" 8399 AndroidRuntime "CheckJNI is OFF" 8399 469
+Debug "2015-06-16 17:33:43.048851" 8399 AndroidRuntime "setted country_code = Chile" 8399 470
+Debug "2015-06-16 17:33:43.048851" 8399 AndroidRuntime "setted sales_code = CHO" 8399 471
+Debug "2015-06-16 17:33:43.048851" 8399 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8399 472
+Error "2015-06-16 17:33:43.048851" 8399 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8399 473
+Error "2015-06-16 17:33:43.048851" 8399 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8399 474
+Error "2015-06-16 17:33:43.048851" 8399 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8399 475
+Debug "2015-06-16 17:33:43.298851" 8399 AndroidRuntime "Calling main entry com.android.commands.input.Input" 8399 476
+Info "2015-06-16 17:33:43.298851" 8399 SendKeyEvent 4 8399 477
+Info "2015-06-16 17:33:43.298851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = false" 198 478
+Info "2015-06-16 17:33:43.298851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = true" 198 479
+Info "2015-06-16 17:33:43.298851" 192 InputDispatcher "Delivering key to current input target: action: 0, channel '40a53110 com.rowland.hashtrace/com.rowland.hashtrace.MainActivity (server)'" 252 480
+Warning "2015-06-16 17:33:43.298851" 8213 KeyCharacterMap "No keyboard for id 0" 8213 481
+Warning "2015-06-16 17:33:43.298851" 8213 KeyCharacterMap "Using default keymap: /system/usr/keychars/qwerty.kcm.bin" 8213 482
+Info "2015-06-16 17:33:43.298851" 192 PowerManagerService "Ulight 3->7|0" 252 483
+Info "2015-06-16 17:33:43.308851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = true" 420 484
+Info "2015-06-16 17:33:43.308851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = false" 420 485
+Info "2015-06-16 17:33:43.308851" 192 InputDispatcher "Delivering key to current input target: action: 1, channel '40a53110 com.rowland.hashtrace/com.rowland.hashtrace.MainActivity (server)'" 252 486
+Info "2015-06-16 17:33:43.318851" 192 OrientationDebug "[pwm] in updateOrientationListenerLp()" 324 487
+Verbose "2015-06-16 17:33:43.318851" 192 OrientationDebug "in updateOrientationListenerLp(), Screen status=true, current orientation=5, SensorEnabled=true" 324 488
+Info "2015-06-16 17:33:43.318851" 192 OrientationDebug "[pwm] needSensorRunningLp(), return true #4" 324 489
+Debug "2015-06-16 17:33:43.318851" 8399 AndroidRuntime "Shutting down VM" 8399 490
+Info "2015-06-16 17:33:43.318851" 192 WindowManager "Setting rotation to 0, animFlags=1" 324 491
+Info "2015-06-16 17:33:43.328851" 8399 AndroidRuntime "NOTE: attach of thread 'Binder Thread #2' failed" 8406 492
+Info "2015-06-16 17:33:43.338851" 192 ActivityManager "Config changed: { scale=1.0 imsi=0/0 loc=en_US touch=3 keys=1/1/2 nav=1/1 orien=1 layout=18 uiMode=17 seq=40}" 3190 493
+Debug "2015-06-16 17:33:43.388851" 2643 OPPBaseService "[main/1] onConfigurationChanged()" 2643 494
+Info "2015-06-16 17:33:43.408851" 298 Launcher "onResume(). mIsNewIntent : false" 298 495
+Debug "2015-06-16 17:33:43.448851" 7760 ProgramMonitor " onReceive -no" 7760 496
+Debug "2015-06-16 17:33:43.448851" 7760 ProgramMonitor "appWidgetIds.length : 0" 7760 497
+Debug "2015-06-16 17:33:43.448851" 7760 ProgramMonitor " onReceive - action:com.sec.android.app.controlpanel.RUNNING_PROGRAM_REQ" 7760 498
+Error "2015-06-16 17:33:43.448851" 298 Launcher setWindowOpaque() 298 499
+Error "2015-06-16 17:33:43.548851" 298 Launcher "MTP-LAUNCHER: media scanning not yet finished." 298 500
+Info "2015-06-16 17:33:43.568851" 298 Launcher "onResume() ended" 298 501
+Info "2015-06-16 17:33:43.598851" 298 Launcher onWindowFocusChanged(true) 298 502
+Debug "2015-06-16 17:33:43.598851" 298 Launcher "setWallpaperDimension() called" 298 503
+Debug "2015-06-16 17:33:43.598851" 298 Launcher "USE_NON_SCROLLABLE_IMAGE_WALLPAPER is true" 298 504
+Debug "2015-06-16 17:33:43.598851" 298 Launcher "It's image wallpaper. suggestDesiredDimensions(-1,-1)" 298 505
+Error "2015-06-16 17:33:43.608851" 298 Launcher setWindowOpaque() 298 506
+Warning "2015-06-16 17:33:43.708851" 8213 IInputConnectionWrapper "showStatusIcon on inactive InputConnection" 8213 507
+Debug "2015-06-16 17:33:43.918851" 8410 AndroidRuntime  8410 508
+Debug "2015-06-16 17:33:43.918851" 8410 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8410 509
+Debug "2015-06-16 17:33:43.918851" 8410 AndroidRuntime "CheckJNI is OFF" 8410 510
+Debug "2015-06-16 17:33:43.918851" 8410 AndroidRuntime "setted country_code = Chile" 8410 511
+Debug "2015-06-16 17:33:43.918851" 8410 AndroidRuntime "setted sales_code = CHO" 8410 512
+Debug "2015-06-16 17:33:43.918851" 8410 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8410 513
+Error "2015-06-16 17:33:43.928851" 8410 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8410 514
+Error "2015-06-16 17:33:43.928851" 8410 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8410 515
+Error "2015-06-16 17:33:43.928851" 8410 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8410 516
+Debug "2015-06-16 17:33:44.128851" 192 BatteryService "update start" 242 517
+Debug "2015-06-16 17:33:44.128851" 192 BatteryService "update start" 242 518
+Debug "2015-06-16 17:33:44.128851" 192 BatteryService "update start" 242 519
+Info "2015-06-16 17:33:44.218851" 192 ActivityManager "No longer want com.sec.android.widgetapp.clockweather.clockwidget (pid 4081): hidden #16" 294 520
+Debug "2015-06-16 17:33:44.328851" 8410 AndroidRuntime "Calling main entry com.android.commands.input.Input" 8410 521
+Info "2015-06-16 17:33:44.328851" 8410 SendKeyEvent 4 8410 522
+Debug "2015-06-16 17:33:44.328851" 8213 PullToRefresh "First Visible: 0. Visible Count: 0. Total Items:0" 8213 523
+Info "2015-06-16 17:33:44.338851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = false" 3398 524
+Info "2015-06-16 17:33:44.338851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = true" 3398 525
+Info "2015-06-16 17:33:44.338851" 192 InputDispatcher "Delivering key to current input target: action: 0, channel '40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server)'" 252 526
+Warning "2015-06-16 17:33:44.338851" 298 KeyCharacterMap "No keyboard for id 0" 298 527
+Warning "2015-06-16 17:33:44.338851" 298 KeyCharacterMap "Using default keymap: /system/usr/keychars/qwerty.kcm.bin" 298 528
+Debug "2015-06-16 17:33:44.338851" 298 Launcher "dispatchKeyEvent DOWN KEYCODE_BACK / MainMenu isOpened=false Info=false" 298 529
+Info "2015-06-16 17:33:44.338851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = true" 192 530
+Info "2015-06-16 17:33:44.338851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = false" 192 531
+Info "2015-06-16 17:33:44.338851" 192 InputDispatcher "Delivering key to current input target: action: 1, channel '40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server)'" 252 532
+Debug "2015-06-16 17:33:44.338851" 298 Launcher "KEYCODE_BACK launcher 2" 298 533
+Debug "2015-06-16 17:33:44.338851" 298 Launcher "dispatchKeyEvent UP KEYCODE_BACK / MainMenu isOpened=false Info=false" 298 534
+Debug "2015-06-16 17:33:44.348851" 8410 AndroidRuntime "Shutting down VM" 8410 535
+Debug "2015-06-16 17:33:44.368851" 8213 PullToRefresh "isFirstItemVisible. Empty View." 8213 536
+Debug "2015-06-16 17:33:44.558851" 7760 ProgramMonitor " onReceive - action:com.sec.android.app.controlpanel.RUNNING_PROGRAM_ACK" 7760 537
+Debug "2015-06-16 17:33:44.558851" 7760 ProgramMonitor updateNumberText 7760 538
+Debug "2015-06-16 17:33:44.658851" 7760 ProgramMonitor updateWidget 7760 539
+Debug "2015-06-16 17:33:44.658851" 7760 ProgramMonitor "updateWidget - appWidgetIds == null -->> resetting" 7760 540
+Debug "2015-06-16 17:33:44.658851" 7760 ProgramMonitor "updateWidget - appWidgetIds.length == 0" 7760 541
+Debug "2015-06-16 17:33:44.698851" 8422 AndroidRuntime  8422 542
+Debug "2015-06-16 17:33:44.698851" 8422 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8422 543
+Debug "2015-06-16 17:33:44.698851" 8422 AndroidRuntime "CheckJNI is OFF" 8422 544
+Debug "2015-06-16 17:33:44.698851" 8422 AndroidRuntime "setted country_code = Chile" 8422 545
+Debug "2015-06-16 17:33:44.698851" 8422 AndroidRuntime "setted sales_code = CHO" 8422 546
+Debug "2015-06-16 17:33:44.698851" 8422 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8422 547
+Error "2015-06-16 17:33:44.698851" 8422 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8422 548
+Error "2015-06-16 17:33:44.698851" 8422 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8422 549
+Error "2015-06-16 17:33:44.698851" 8422 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8422 550
+Debug "2015-06-16 17:33:44.948851" 8422 AndroidRuntime "Calling main entry com.android.commands.input.Input" 8422 551
+Info "2015-06-16 17:33:44.948851" 8422 SendKeyEvent 4 8422 552
+Info "2015-06-16 17:33:44.958851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = false" 3190 553
+Info "2015-06-16 17:33:44.958851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = true" 3190 554
+Info "2015-06-16 17:33:44.958851" 192 InputDispatcher "Delivering key to current input target: action: 0, channel '40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server)'" 252 555
+Debug "2015-06-16 17:33:44.958851" 298 Launcher "dispatchKeyEvent DOWN KEYCODE_BACK / MainMenu isOpened=false Info=false" 298 556
+Info "2015-06-16 17:33:44.968851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = true" 192 557
+Info "2015-06-16 17:33:44.968851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = false" 192 558
+Info "2015-06-16 17:33:44.968851" 192 InputDispatcher "Delivering key to current input target: action: 1, channel '40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server)'" 252 559
+Debug "2015-06-16 17:33:44.968851" 298 Launcher "KEYCODE_BACK launcher 2" 298 560
+Debug "2015-06-16 17:33:44.968851" 298 Launcher "dispatchKeyEvent UP KEYCODE_BACK / MainMenu isOpened=false Info=false" 298 561
+Debug "2015-06-16 17:33:44.968851" 8422 AndroidRuntime "Shutting down VM" 8422 562
+Info "2015-06-16 17:33:44.978851" 8422 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8430 563
+Debug "2015-06-16 17:33:45.278851" 8432 AndroidRuntime  8432 564
+Debug "2015-06-16 17:33:45.278851" 8432 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8432 565
+Debug "2015-06-16 17:33:45.278851" 8432 AndroidRuntime "CheckJNI is OFF" 8432 566
+Debug "2015-06-16 17:33:45.278851" 8432 AndroidRuntime "setted country_code = Chile" 8432 567
+Debug "2015-06-16 17:33:45.278851" 8432 AndroidRuntime "setted sales_code = CHO" 8432 568
+Debug "2015-06-16 17:33:45.278851" 8432 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8432 569
+Error "2015-06-16 17:33:45.278851" 8432 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8432 570
+Error "2015-06-16 17:33:45.278851" 8432 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8432 571
+Error "2015-06-16 17:33:45.278851" 8432 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8432 572
+Debug "2015-06-16 17:33:45.678851" 8432 AndroidRuntime "Calling main entry com.android.commands.input.Input" 8432 573
+Info "2015-06-16 17:33:45.678851" 8432 SendKeyEvent 4 8432 574
+Info "2015-06-16 17:33:45.688851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = false" 3398 575
+Info "2015-06-16 17:33:45.688851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = true" 3398 576
+Info "2015-06-16 17:33:45.688851" 192 InputDispatcher "Delivering key to current input target: action: 0, channel '40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server)'" 252 577
+Debug "2015-06-16 17:33:45.688851" 298 Launcher "dispatchKeyEvent DOWN KEYCODE_BACK / MainMenu isOpened=false Info=false" 298 578
+Info "2015-06-16 17:33:45.688851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = true" 294 579
+Info "2015-06-16 17:33:45.688851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = false" 294 580
+Info "2015-06-16 17:33:45.688851" 192 InputDispatcher "Delivering key to current input target: action: 1, channel '40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server)'" 252 581
+Debug "2015-06-16 17:33:45.688851" 298 Launcher "KEYCODE_BACK launcher 2" 298 582
+Debug "2015-06-16 17:33:45.698851" 298 Launcher "dispatchKeyEvent UP KEYCODE_BACK / MainMenu isOpened=false Info=false" 298 583
+Debug "2015-06-16 17:33:45.698851" 8432 AndroidRuntime "Shutting down VM" 8432 584
+Info "2015-06-16 17:33:45.708851" 8432 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8442 585
+Debug "2015-06-16 17:33:46.058851" 8444 AndroidRuntime  8444 586
+Debug "2015-06-16 17:33:46.058851" 8444 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8444 587
+Debug "2015-06-16 17:33:46.058851" 8444 AndroidRuntime "CheckJNI is OFF" 8444 588
+Debug "2015-06-16 17:33:46.058851" 8444 AndroidRuntime "setted country_code = Chile" 8444 589
+Debug "2015-06-16 17:33:46.058851" 8444 AndroidRuntime "setted sales_code = CHO" 8444 590
+Debug "2015-06-16 17:33:46.058851" 8444 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8444 591
+Error "2015-06-16 17:33:46.068851" 8444 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8444 592
+Error "2015-06-16 17:33:46.068851" 8444 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8444 593
+Error "2015-06-16 17:33:46.068851" 8444 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8444 594
+Debug "2015-06-16 17:33:46.308851" 8444 AndroidRuntime "Calling main entry com.android.commands.input.Input" 8444 595
+Info "2015-06-16 17:33:46.308851" 8444 SendKeyEvent 4 8444 596
+Info "2015-06-16 17:33:46.318851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = false" 3190 597
+Info "2015-06-16 17:33:46.318851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = true" 3190 598
+Info "2015-06-16 17:33:46.318851" 192 InputDispatcher "Delivering key to current input target: action: 0, channel '40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server)'" 252 599
+Debug "2015-06-16 17:33:46.318851" 298 Launcher "dispatchKeyEvent DOWN KEYCODE_BACK / MainMenu isOpened=false Info=false" 298 600
+Info "2015-06-16 17:33:46.318851" 192 ScreenCaptureAction "isBackKeyPressed(), return value = true" 192 601
+Info "2015-06-16 17:33:46.318851" 192 ScreenCaptureAction "updateBackKeyPressed(), pressed = false" 192 602
+Info "2015-06-16 17:33:46.318851" 192 InputDispatcher "Delivering key to current input target: action: 1, channel '40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server)'" 252 603
+Debug "2015-06-16 17:33:46.318851" 298 Launcher "KEYCODE_BACK launcher 2" 298 604
+Debug "2015-06-16 17:33:46.318851" 298 Launcher "dispatchKeyEvent UP KEYCODE_BACK / MainMenu isOpened=false Info=false" 298 605
+Debug "2015-06-16 17:33:46.318851" 8444 AndroidRuntime "Shutting down VM" 8444 606
+Info "2015-06-16 17:33:46.328851" 8444 AndroidRuntime "NOTE: attach of thread 'Binder Thread #2' failed" 8453 607
+Debug "2015-06-16 17:33:46.638851" 8455 AndroidRuntime  8455 608
+Debug "2015-06-16 17:33:46.638851" 8455 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8455 609
+Debug "2015-06-16 17:33:46.638851" 8455 AndroidRuntime "CheckJNI is OFF" 8455 610
+Debug "2015-06-16 17:33:46.638851" 8455 AndroidRuntime "setted country_code = Chile" 8455 611
+Debug "2015-06-16 17:33:46.638851" 8455 AndroidRuntime "setted sales_code = CHO" 8455 612
+Debug "2015-06-16 17:33:46.638851" 8455 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8455 613
+Error "2015-06-16 17:33:46.638851" 8455 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8455 614
+Error "2015-06-16 17:33:46.638851" 8455 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8455 615
+Error "2015-06-16 17:33:46.638851" 8455 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8455 616
+Debug "2015-06-16 17:33:46.868851" 8455 AndroidRuntime "Calling main entry com.android.commands.am.Am" 8455 617
+Info "2015-06-16 17:33:46.888851" 192 ActivityManager "Starting: Intent { flg=0x10000000 cmp=com.trellis.appthwackdevicemanager/.RotatePortrait } from pid 8455" 324 618
+Debug "2015-06-16 17:33:46.888851" 8455 AndroidRuntime "Shutting down VM" 8455 619
+Info "2015-06-16 17:33:46.908851" 8455 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8463 620
+Info "2015-06-16 17:33:46.918851" 298 Launcher onPause() 298 621
+Warning "2015-06-16 17:33:46.928851" 192 ActivityManager "Trying to launch com.trellis.appthwackdevicemanager/.RotatePortrait" 198 622
+Info "2015-06-16 17:33:46.938851" 192 OrientationDebug "[pwm] in updateOrientationListenerLp()" 197 623
+Verbose "2015-06-16 17:33:46.938851" 192 OrientationDebug "in updateOrientationListenerLp(), Screen status=true, current orientation=1, SensorEnabled=true" 197 624
+Info "2015-06-16 17:33:46.938851" 192 OrientationDebug "[pwm] needSensorRunningLp(), return true #4" 197 625
+Info "2015-06-16 17:33:46.948851" 298 Launcher onWindowFocusChanged(false) 298 626
+Debug "2015-06-16 17:33:46.948851" 298 Launcher "setWallpaperDimension() called" 298 627
+Debug "2015-06-16 17:33:46.948851" 298 Launcher "USE_NON_SCROLLABLE_IMAGE_WALLPAPER is true" 298 628
+Debug "2015-06-16 17:33:46.948851" 298 Launcher "It's image wallpaper. suggestDesiredDimensions(-1,-1)" 298 629
+Info "2015-06-16 17:33:46.958851" 192 OrientationDebug "[pwm] in updateOrientationListenerLp()" 3398 630
+Verbose "2015-06-16 17:33:46.958851" 192 OrientationDebug "in updateOrientationListenerLp(), Screen status=true, current orientation=5, SensorEnabled=true" 3398 631
+Info "2015-06-16 17:33:46.958851" 192 OrientationDebug "[pwm] needSensorRunningLp(), return true #4" 3398 632
+Info "2015-06-16 17:33:46.978851" 298 Launcher onWindowFocusChanged(true) 298 633
+Debug "2015-06-16 17:33:46.978851" 298 Launcher "setWallpaperDimension() called" 298 634
+Debug "2015-06-16 17:33:46.978851" 298 Launcher "USE_NON_SCROLLABLE_IMAGE_WALLPAPER is true" 298 635
+Debug "2015-06-16 17:33:46.978851" 298 Launcher "It's image wallpaper. suggestDesiredDimensions(-1,-1)" 298 636
+Error "2015-06-16 17:33:46.978851" 298 Launcher setWindowOpaque() 298 637
+Warning "2015-06-16 17:33:47.018851" 192 InputManagerService "Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@408e1398" 294 638
+Info "2015-06-16 17:33:47.068851" 298 Launcher "onResume(). mIsNewIntent : false" 298 639
+Debug "2015-06-16 17:33:47.078851" 7760 ProgramMonitor " onReceive -no" 7760 640
+Debug "2015-06-16 17:33:47.078851" 7760 ProgramMonitor "appWidgetIds.length : 0" 7760 641
+Debug "2015-06-16 17:33:47.078851" 7760 ProgramMonitor " onReceive - action:com.sec.android.app.controlpanel.RUNNING_PROGRAM_REQ" 7760 642
+Error "2015-06-16 17:33:47.088851" 298 Launcher setWindowOpaque() 298 643
+Error "2015-06-16 17:33:47.108851" 298 Launcher "MTP-LAUNCHER: media scanning not yet finished." 298 644
+Info "2015-06-16 17:33:47.108851" 298 Launcher "onResume() ended" 298 645
+Debug "2015-06-16 17:33:47.138851" 7760 ProgramMonitor " onReceive - action:com.sec.android.app.controlpanel.RUNNING_PROGRAM_ACK" 7760 646
+Debug "2015-06-16 17:33:47.148851" 7760 ProgramMonitor updateNumberText 7760 647
+Debug "2015-06-16 17:33:47.198851" 7760 ProgramMonitor updateWidget 7760 648
+Debug "2015-06-16 17:33:47.198851" 7760 ProgramMonitor "updateWidget - appWidgetIds == null -->> resetting" 7760 649
+Debug "2015-06-16 17:33:47.198851" 7760 ProgramMonitor "updateWidget - appWidgetIds.length == 0" 7760 650
+Debug "2015-06-16 17:33:47.258851" 7760 ProgramMonitor " onReceive - action:com.sec.android.app.controlpanel.CPU_USAGE_WARN" 7760 651
+Info "2015-06-16 17:33:47.258851" 7760 ProgramMonitor cpu_usage_wan 7760 652
+Debug "2015-06-16 17:33:47.258851" 7760 ProgramMonitor updateSlideText 7760 653
+Debug "2015-06-16 17:33:47.258851" 7760 ProgramMonitor updateDefaultText 7760 654
+Debug "2015-06-16 17:33:47.258851" 7760 ProgramMonitor updateWidget 7760 655
+Debug "2015-06-16 17:33:47.258851" 7760 ProgramMonitor "updateWidget - appWidgetIds == null -->> resetting" 7760 656
+Debug "2015-06-16 17:33:47.258851" 7760 ProgramMonitor "updateWidget - appWidgetIds.length == 0" 7760 657
+Debug "2015-06-16 17:33:49.298851" 7760 ProgramMonitor " onReceive - action:com.sec.android.app.controlpanel.CPU_USAGE_WARN" 7760 658
+Info "2015-06-16 17:33:49.298851" 7760 ProgramMonitor cpu_usage_wan 7760 659
+Debug "2015-06-16 17:33:49.298851" 7760 ProgramMonitor updateSlideText 7760 660
+Debug "2015-06-16 17:33:49.298851" 7760 ProgramMonitor updateDefaultText 7760 661
+Debug "2015-06-16 17:33:49.298851" 7760 ProgramMonitor updateWidget 7760 662
+Debug "2015-06-16 17:33:49.298851" 7760 ProgramMonitor "updateWidget - appWidgetIds == null -->> resetting" 7760 663
+Debug "2015-06-16 17:33:49.298851" 7760 ProgramMonitor "updateWidget - appWidgetIds.length == 0" 7760 664
+Debug "2015-06-16 17:33:50.258851" 8473 AndroidRuntime  8473 665
+Debug "2015-06-16 17:33:50.258851" 8473 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8473 666
+Debug "2015-06-16 17:33:50.258851" 8473 AndroidRuntime "CheckJNI is OFF" 8473 667
+Debug "2015-06-16 17:33:50.258851" 8473 AndroidRuntime "setted country_code = Chile" 8473 668
+Debug "2015-06-16 17:33:50.258851" 8473 AndroidRuntime "setted sales_code = CHO" 8473 669
+Debug "2015-06-16 17:33:50.258851" 8473 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8473 670
+Error "2015-06-16 17:33:50.258851" 8473 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8473 671
+Error "2015-06-16 17:33:50.258851" 8473 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8473 672
+Error "2015-06-16 17:33:50.258851" 8473 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8473 673
+Debug "2015-06-16 17:33:50.498851" 8473 AndroidRuntime "Calling main entry com.android.commands.am.Am" 8473 674
+Debug "2015-06-16 17:33:50.518851" 8473 AndroidRuntime "Shutting down VM" 8473 675
+Info "2015-06-16 17:33:50.528851" 711 APPTHWACK "ORIENTATION: 0" 8481 676
+Info "2015-06-16 17:33:50.528851" 8473 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8482 677
+Error "2015-06-16 17:33:51.768851" 20237 "vending " "[118] AccountManagerHelper.getAuthTokenBlocking(): no matching accounts for ANDROID" 8487 678
+Error "2015-06-16 17:33:52.088851" 20237 "vending " "[118] UpdateTask.doInBackground(): com.android.vending.api.FatalCommunicationException: Sent a bad request." 8487 679
+Warning "2015-06-16 17:33:52.318851" 192 PowerManagerService "Timer 0x7->0x3|0x1" 244 680
+Info "2015-06-16 17:33:52.318851" 192 PowerManagerService "Ulight 7->3|0" 244 681
+Debug "2015-06-16 17:33:53.048851" 8517 AndroidRuntime  8517 682
+Debug "2015-06-16 17:33:53.048851" 8517 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8517 683
+Debug "2015-06-16 17:33:53.048851" 8517 AndroidRuntime "CheckJNI is OFF" 8517 684
+Debug "2015-06-16 17:33:53.048851" 8517 AndroidRuntime "setted country_code = Chile" 8517 685
+Debug "2015-06-16 17:33:53.048851" 8517 AndroidRuntime "setted sales_code = CHO" 8517 686
+Debug "2015-06-16 17:33:53.058851" 8517 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8517 687
+Error "2015-06-16 17:33:53.058851" 8517 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8517 688
+Error "2015-06-16 17:33:53.058851" 8517 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8517 689
+Error "2015-06-16 17:33:53.058851" 8517 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8517 690
+Debug "2015-06-16 17:33:53.288851" 8517 AndroidRuntime "Calling main entry com.android.commands.am.Am" 8517 691
+Info "2015-06-16 17:33:53.298851" 192 ActivityManager "Force stopping package com.rowland.hashtrace uid=10078" 324 692
+Info "2015-06-16 17:33:53.308851" 192 ActivityManager "Start proc com.rowland.hashtrace for added application com.rowland.hashtrace: pid=8525 uid=10078 gids={3003, 1015}" 324 693
+Info "2015-06-16 17:33:53.548851" 8525 TestRunner "started: testApp(com.appthwack.test.AppThwackExplorerTest)" 8534 694
+Debug "2015-06-16 17:33:53.558851" 8525 APPTHWACK "Test setup" 8534 695
+Info "2015-06-16 17:33:53.558851" 8525 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.TweetHashTracerContentProvider" 8525 696
+Info "2015-06-16 17:33:53.588851" 192 ActivityManager "Starting: Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=com.rowland.hashtrace/.MainActivity } from pid 8525" 197 697
+Info "2015-06-16 17:33:53.618851" 298 Launcher onPause() 298 698
+Info "2015-06-16 17:33:53.628851" 192 OrientationDebug "[pwm] in updateOrientationListenerLp()" 294 699
+Verbose "2015-06-16 17:33:53.628851" 192 OrientationDebug "in updateOrientationListenerLp(), Screen status=true, current orientation=-1, SensorEnabled=true" 294 700
+Info "2015-06-16 17:33:53.628851" 192 OrientationDebug "[pwm] needSensorRunningLp(), return true #4" 294 701
+Warning "2015-06-16 17:33:53.628851" 192 ActivityManager "Trying to launch com.rowland.hashtrace/.MainActivity" 294 702
+Info "2015-06-16 17:33:53.708851" 298 Launcher onWindowFocusChanged(false) 298 703
+Error "2015-06-16 17:33:53.708851" 8525 dalvikvm "Could not find class 'android.content.SyncRequest$Builder', referenced from method com.rowland.sync.TweetHashTracerSyncAdapter.configurePeriodicSync" 8525 704
+Warning "2015-06-16 17:33:53.708851" 8525 dalvikvm "VFY: unable to resolve new-instance 70 (Landroid/content/SyncRequest$Builder;) in Lcom/rowland/sync/TweetHashTracerSyncAdapter;" 8525 705
+Debug "2015-06-16 17:33:53.718851" 298 Launcher "setWallpaperDimension() called" 298 706
+Debug "2015-06-16 17:33:53.718851" 298 Launcher "USE_NON_SCROLLABLE_IMAGE_WALLPAPER is true" 298 707
+Debug "2015-06-16 17:33:53.718851" 298 Launcher "It's image wallpaper. suggestDesiredDimensions(-1,-1)" 298 708
+Warning "2015-06-16 17:33:53.778851" 8525 dalvikvm "VFY: unable to resolve virtual method 9539: Landroid/widget/TextView;.setAllCaps (Z)V" 8525 709
+Warning "2015-06-16 17:33:53.868851" 8525 dalvikvm "VFY: unable to resolve virtual method 8983: Landroid/view/ViewTreeObserver;.removeOnGlobalLayoutListener (Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V" 8525 710
+Warning "2015-06-16 17:33:53.918851" 8525 dalvikvm "VFY: unable to resolve virtual method 8824: Landroid/view/View;.setBackground (Landroid/graphics/drawable/Drawable;)V" 8525 711
+Warning "2015-06-16 17:33:53.918851" 8525 dalvikvm "VFY: unable to resolve virtual method 8824: Landroid/view/View;.setBackground (Landroid/graphics/drawable/Drawable;)V" 8525 712
+Debug "2015-06-16 17:33:53.958851" 8525 PullToRefresh "Setting Padding. L: 0, T: 0, R: 0, B: 0" 8525 713
+Debug "2015-06-16 17:33:53.968851" 8525 PullToRefresh "First Visible: 0. Visible Count: 0. Total Items:0" 8525 714
+Debug "2015-06-16 17:33:53.968851" 8525 PullToRefresh "isFirstItemVisible. Empty View." 8525 715
+Debug "2015-06-16 17:33:53.978851" 8525 DATECHECK 20150616000000 8525 716
+Debug "2015-06-16 17:33:53.998851" 8525 DATECHECK 20150616000000 8525 717
+Warning "2015-06-16 17:33:54.028851" 8525 dalvikvm "VFY: unable to resolve direct method 9327: Landroid/widget/LinearLayout$LayoutParams;.<init> (Landroid/widget/LinearLayout$LayoutParams;)V" 8525 718
+Debug "2015-06-16 17:33:54.098851" 8525 PullToRefresh "onSizeChanged. W: 320, H: 358" 8525 719
+Debug "2015-06-16 17:33:54.098851" 8525 PullToRefresh "Setting Padding. L: 0, T: -214, R: 0, B: 0" 8525 720
+Info "2015-06-16 17:33:54.138851" 192 ActivityManager "Displayed com.rowland.hashtrace/.MainActivity: +515ms (total +24s737ms)" 250 721
+Debug "2015-06-16 17:33:54.148851" 192 BatteryService "update start" 242 722
+Debug "2015-06-16 17:33:54.148851" 192 BatteryService "update start" 242 723
+Debug "2015-06-16 17:33:54.148851" 192 BatteryService "update start" 242 724
+Warning "2015-06-16 17:33:54.188851" 8525 dalvikvm "VFY: unable to resolve virtual method 6: Landroid/app/Activity;.getFragmentManager ()Landroid/app/FragmentManager;" 8534 725
+Warning "2015-06-16 17:33:54.188851" 8525 dalvikvm "VFY: unable to resolve virtual method 6: Landroid/app/Activity;.getFragmentManager ()Landroid/app/FragmentManager;" 8534 726
+Warning "2015-06-16 17:33:54.188851" 8525 dalvikvm "VFY: unable to find class referenced in signature (Landroid/app/Fragment;)" 8534 727
+Warning "2015-06-16 17:33:54.188851" 8525 dalvikvm "VFY: unable to find class referenced in signature (Landroid/app/Fragment;)" 8534 728
+Error "2015-06-16 17:33:54.198851" 8525 dalvikvm "Could not find class '[Landroid.view.MotionEvent$PointerProperties;', referenced from method com.jayway.android.robotium.solo.Zoomer.generateZoomGesture" 8534 729
+Warning "2015-06-16 17:33:54.198851" 8525 dalvikvm "VFY: unable to resolve new-array 254 ([Landroid/view/MotionEvent$PointerProperties;) in Lcom/jayway/android/robotium/solo/Zoomer;" 8534 730
+Error "2015-06-16 17:33:54.198851" 8525 dalvikvm "Could not find class '[Landroid.view.MotionEvent$PointerProperties;', referenced from method com.jayway.android.robotium.solo.Swiper.generateSwipeGesture" 8534 731
+Warning "2015-06-16 17:33:54.198851" 8525 dalvikvm "VFY: unable to resolve new-array 254 ([Landroid/view/MotionEvent$PointerProperties;) in Lcom/jayway/android/robotium/solo/Swiper;" 8534 732
+Error "2015-06-16 17:33:54.198851" 8525 dalvikvm "Could not find class '[Landroid.view.MotionEvent$PointerProperties;', referenced from method com.jayway.android.robotium.solo.Tapper.generateTapGesture" 8534 733
+Warning "2015-06-16 17:33:54.198851" 8525 dalvikvm "VFY: unable to resolve new-array 254 ([Landroid/view/MotionEvent$PointerProperties;) in Lcom/jayway/android/robotium/solo/Tapper;" 8534 734
+Error "2015-06-16 17:33:54.198851" 8525 dalvikvm "Could not find class '[Landroid.view.MotionEvent$PointerProperties;', referenced from method com.jayway.android.robotium.solo.Rotator.generateRotateGesture" 8534 735
+Warning "2015-06-16 17:33:54.198851" 8525 dalvikvm "VFY: unable to resolve new-array 254 ([Landroid/view/MotionEvent$PointerProperties;) in Lcom/jayway/android/robotium/solo/Rotator;" 8534 736
+Debug "2015-06-16 17:33:54.198851" 8525 APPTHWACK "Start activity: com.rowland.hashtrace.MainActivity@40581490" 8534 737
+Debug "2015-06-16 17:33:54.208851" 8525 APPTHWACK "Timeout: 120000" 8534 738
+Debug "2015-06-16 17:33:54.468851" 8525 PullToRefresh "First Visible: 0. Visible Count: 5. Total Items:17" 8525 739
+Debug "2015-06-16 17:33:54.568851" 8525 PullToRefresh "First Visible: 1. Visible Count: 4. Total Items:17" 8525 740
+Debug "2015-06-16 17:33:54.598851" 8525 PullToRefresh "First Visible: 1. Visible Count: 4. Total Items:17" 8525 741
+Debug "2015-06-16 17:33:54.638851" 8525 PullToRefresh "First Visible: 1. Visible Count: 4. Total Items:17" 8525 742
+Debug "2015-06-16 17:33:54.668851" 8525 PullToRefresh "First Visible: 1. Visible Count: 4. Total Items:17" 8525 743
+Debug "2015-06-16 17:34:04.168851" 192 BatteryService "update start" 242 744
+Debug "2015-06-16 17:34:04.168851" 192 BatteryService "update start" 242 745
+Debug "2015-06-16 17:34:04.168851" 192 BatteryService "update start" 242 746
+Debug "2015-06-16 17:34:09.838851" 8525 APPTHWACK "Taking screenshot for MainActivity" 8534 747
+Debug "2015-06-16 17:34:13.858851" 8525 APPTHWACK "ActivityStack: :com.rowland.hashtrace.MainActivity@40581490" 8534 748
+Debug "2015-06-16 17:34:13.858851" 8525 APPTHWACK "Exploring an activity: com.rowland.hashtrace.MainActivity@40581490" 8534 749
+Debug "2015-06-16 17:34:13.858851" 8525 APPTHWACK "Decor view: com.android.internal.policy.impl.PhoneWindow$DecorView@40587728" 8534 750
+Debug "2015-06-16 17:34:13.868851" 8525 APPTHWACK "View excluded: android.widget.TextView@40590e98" 8534 751
+Debug "2015-06-16 17:34:13.868851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590a18" 8534 752
+Debug "2015-06-16 17:34:13.868851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590358" 8534 753
+Debug "2015-06-16 17:34:13.868851" 8525 APPTHWACK "View excluded: android.widget.ImageView@4058f218" 8534 754
+Debug "2015-06-16 17:34:13.868851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView$HomeView@4058d460" 8534 755
+Debug "2015-06-16 17:34:13.878851" 8525 APPTHWACK "View excluded: android.widget.ImageView@4056ddd0" 8534 756
+Debug "2015-06-16 17:34:13.878851" 8525 APPTHWACK "View excluded: com.handmark.pulltorefresh.library.internal.IndicatorLayout@4056daa8" 8534 757
+Debug "2015-06-16 17:34:13.878851" 8525 APPTHWACK "Clicking on action_search" 8534 758
+Debug "2015-06-16 17:34:14.188851" 192 BatteryService "update start" 242 759
+Debug "2015-06-16 17:34:14.188851" 192 BatteryService "update start" 242 760
+Debug "2015-06-16 17:34:14.188851" 192 BatteryService "update start" 242 761
+Info "2015-06-16 17:34:15.008851" 192 InputDispatcher "Delivering touch to current input target: action: 0, channel '407d60f8 com.rowland.hashtrace/com.rowland.hashtrace.MainActivity (server)'" 252 762
+Debug "2015-06-16 17:34:15.008851" 8525 PullToRefresh "First Visible: 1. Visible Count: 4. Total Items:17" 8525 763
+Info "2015-06-16 17:34:15.028851" 192 InputDispatcher "Delivering touch to current input target: action: 1, channel '407d60f8 com.rowland.hashtrace/com.rowland.hashtrace.MainActivity (server)'" 252 764
+Debug "2015-06-16 17:34:15.138851" 8525 APPTHWACK "Waiting for new ActivityStack: :com.rowland.hashtrace.MainActivity@40581490" 8534 765
+Warning "2015-06-16 17:34:15.258851" 95 AudioFlinger "write blocked for 168 msecs, 51 delayed writes, thread 0xcce8" 161 766
+Debug "2015-06-16 17:34:20.148851" 8525 APPTHWACK "Excluding view action_searchid : MainActivity:2131689574" 8534 767
+Debug "2015-06-16 17:34:20.798851" 8525 APPTHWACK "Moved back to expected activity: MainActivity" 8534 768
+Debug "2015-06-16 17:34:20.798851" 8525 APPTHWACK "Decor view: com.android.internal.policy.impl.PhoneWindow$DecorView@40587728" 8534 769
+Debug "2015-06-16 17:34:20.798851" 8525 APPTHWACK "View excluded: android.widget.TextView@40590e98" 8534 770
+Debug "2015-06-16 17:34:20.798851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590a18" 8534 771
+Debug "2015-06-16 17:34:20.798851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590358" 8534 772
+Debug "2015-06-16 17:34:20.798851" 8525 APPTHWACK "View excluded: android.widget.ImageView@4058f218" 8534 773
+Debug "2015-06-16 17:34:20.798851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView$HomeView@4058d460" 8534 774
+Debug "2015-06-16 17:34:20.798851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405ae0a8" 8534 775
+Debug "2015-06-16 17:34:20.818851" 8525 APPTHWACK "View excluded: android.widget.ImageView@4056ddd0" 8534 776
+Debug "2015-06-16 17:34:20.818851" 8525 APPTHWACK "View excluded: com.handmark.pulltorefresh.library.internal.IndicatorLayout@4056daa8" 8534 777
+Debug "2015-06-16 17:34:20.818851" 8525 APPTHWACK "Clicking on action_refresh" 8534 778
+Warning "2015-06-16 17:34:21.008851" 192 PowerManagerService "Timer 0x3->0x3|0x1" 244 779
+Info "2015-06-16 17:34:21.938851" 192 InputDispatcher "Delivering touch to current input target: action: 0, channel '407d60f8 com.rowland.hashtrace/com.rowland.hashtrace.MainActivity (server)'" 252 780
+Info "2015-06-16 17:34:21.938851" 192 InputDispatcher "Delivering touch to current input target: action: 1, channel '407d60f8 com.rowland.hashtrace/com.rowland.hashtrace.MainActivity (server)'" 252 781
+Debug "2015-06-16 17:34:22.028851" 8525 TweetHashTracerSyncService "onCreate - TweetHashTracerSyncService" 8525 782
+Debug "2015-06-16 17:34:22.048851" 8525 APPTHWACK "Waiting for new ActivityStack: :com.rowland.hashtrace.MainActivity@40581490" 8534 783
+Debug "2015-06-16 17:34:22.088851" 8525 TweetHashTracerSyncAdapter "Starting sync" 8753 784
+Verbose "2015-06-16 17:34:22.088851" 8525 TweetHashTracerSyncAdapter "inserting #Football, with name: #Football" 8753 785
+Warning "2015-06-16 17:34:22.138851" 95 AudioFlinger "write blocked for 167 msecs, 52 delayed writes, thread 0xcce8" 161 786
+Debug "2015-06-16 17:34:24.208851" 192 BatteryService "update start" 242 787
+Debug "2015-06-16 17:34:24.208851" 192 BatteryService "update start" 242 788
+Debug "2015-06-16 17:34:24.208851" 192 BatteryService "update start" 242 789
+Debug "2015-06-16 17:34:24.718851" 8525 DATECHECK 20150616173343 8753 790
+Debug "2015-06-16 17:34:24.718851" 8525 DATECHECK 20150616173343 8753 791
+Debug "2015-06-16 17:34:24.718851" 8525 DATECHECK 20150616173338 8753 792
+Debug "2015-06-16 17:34:24.728851" 8525 DATECHECK 20150616173337 8753 793
+Debug "2015-06-16 17:34:24.728851" 8525 DATECHECK 20150616173337 8753 794
+Debug "2015-06-16 17:34:24.728851" 8525 DATECHECK 20150616173335 8753 795
+Debug "2015-06-16 17:34:24.728851" 8525 DATECHECK 20150616173331 8753 796
+Debug "2015-06-16 17:34:24.728851" 8525 DATECHECK 20150616173330 8753 797
+Debug "2015-06-16 17:34:24.738851" 8525 DATECHECK 20150616173315 8753 798
+Debug "2015-06-16 17:34:24.738851" 8525 DATECHECK 20150616173312 8753 799
+Debug "2015-06-16 17:34:24.738851" 8525 DATECHECK 20150616173308 8753 800
+Debug "2015-06-16 17:34:24.738851" 8525 DATECHECK 20150616173306 8753 801
+Debug "2015-06-16 17:34:24.738851" 8525 DATECHECK 20150616173305 8753 802
+Debug "2015-06-16 17:34:24.738851" 8525 DATECHECK 20150616173304 8753 803
+Debug "2015-06-16 17:34:24.748851" 8525 DATECHECK 20150616173258 8753 804
+Debug "2015-06-16 17:34:24.808851" 8525 DATECHECK 20150613174053 8753 805
+Debug "2015-06-16 17:34:24.818851" 8525 DATECHECK 20150616174000 8753 806
+Debug "2015-06-16 17:34:24.828851" 8525 TweetHashTracerSyncAdapter "FetchTweetTask Complete. 15 Inserted" 8753 807
+Warning "2015-06-16 17:34:24.898851" 8525 System.err "java.io.FileNotFoundException: /mnt/sdcard/data/tweethashtrace/-121256028 (No such file or directory)" 8543 808
+Debug "2015-06-16 17:34:24.918851" 8525 PullToRefresh "First Visible: 1. Visible Count: 4. Total Items:32" 8525 809
+Warning "2015-06-16 17:34:24.978851" 8525 System.err "	at org.apache.harmony.luni.platform.OSFileSystem.open(Native Method)" 8543 810
+Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at dalvik.system.BlockGuard$WrappedFileSystem.open(BlockGuard.java:232)" 8543 811
+Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at java.io.FileInputStream.<init>(FileInputStream.java:80)" 8543 812
+Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at java.io.FileInputStream.<init>(FileInputStream.java:132)" 8543 813
+Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:362)" 8543 814
+Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:412)" 8543 815
+Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at com.rowland.utility.ImageManager.getBitmap(ImageManager.java:88)" 8543 816
+Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at com.rowland.utility.ImageManager.access$400(ImageManager.java:24)" 8543 817
+Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at com.rowland.utility.ImageManager$ImageQueueManager.run(ImageManager.java:175)" 8543 818
+Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at java.lang.Thread.run(Thread.java:1019)" 8543 819
+Debug "2015-06-16 17:34:25.588851" 8525 PullToRefresh "First Visible: 1. Visible Count: 4. Total Items:32" 8525 820
+Warning "2015-06-16 17:34:25.598851" 8525 System.err "java.io.FileNotFoundException: /mnt/sdcard/data/tweethashtrace/-1316442860 (No such file or directory)" 8543 821
+Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at org.apache.harmony.luni.platform.OSFileSystem.open(Native Method)" 8543 822
+Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at dalvik.system.BlockGuard$WrappedFileSystem.open(BlockGuard.java:232)" 8543 823
+Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at java.io.FileInputStream.<init>(FileInputStream.java:80)" 8543 824
+Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at java.io.FileInputStream.<init>(FileInputStream.java:132)" 8543 825
+Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:362)" 8543 826
+Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:412)" 8543 827
+Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at com.rowland.utility.ImageManager.getBitmap(ImageManager.java:88)" 8543 828
+Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at com.rowland.utility.ImageManager.access$400(ImageManager.java:24)" 8543 829
+Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at com.rowland.utility.ImageManager$ImageQueueManager.run(ImageManager.java:175)" 8543 830
+Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at java.lang.Thread.run(Thread.java:1019)" 8543 831
+Warning "2015-06-16 17:34:25.878851" 8525 System.err "java.io.FileNotFoundException: /mnt/sdcard/data/tweethashtrace/-1346442134 (No such file or directory)" 8543 832
+Debug "2015-06-16 17:34:25.888851" 8525 PullToRefresh "First Visible: 1. Visible Count: 4. Total Items:32" 8525 833
+Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at org.apache.harmony.luni.platform.OSFileSystem.open(Native Method)" 8543 834
+Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at dalvik.system.BlockGuard$WrappedFileSystem.open(BlockGuard.java:232)" 8543 835
+Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at java.io.FileInputStream.<init>(FileInputStream.java:80)" 8543 836
+Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at java.io.FileInputStream.<init>(FileInputStream.java:132)" 8543 837
+Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:362)" 8543 838
+Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:412)" 8543 839
+Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at com.rowland.utility.ImageManager.getBitmap(ImageManager.java:88)" 8543 840
+Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at com.rowland.utility.ImageManager.access$400(ImageManager.java:24)" 8543 841
+Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at com.rowland.utility.ImageManager$ImageQueueManager.run(ImageManager.java:175)" 8543 842
+Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at java.lang.Thread.run(Thread.java:1019)" 8543 843
+Debug "2015-06-16 17:34:25.988851" 8525 PullToRefresh "First Visible: 1. Visible Count: 4. Total Items:32" 8525 844
+Warning "2015-06-16 17:34:26.018851" 8525 System.err "java.io.FileNotFoundException: /mnt/sdcard/data/tweethashtrace/-1611258764 (No such file or directory)" 8543 845
+Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at org.apache.harmony.luni.platform.OSFileSystem.open(Native Method)" 8543 846
+Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at dalvik.system.BlockGuard$WrappedFileSystem.open(BlockGuard.java:232)" 8543 847
+Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at java.io.FileInputStream.<init>(FileInputStream.java:80)" 8543 848
+Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at java.io.FileInputStream.<init>(FileInputStream.java:132)" 8543 849
+Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:362)" 8543 850
+Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:412)" 8543 851
+Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at com.rowland.utility.ImageManager.getBitmap(ImageManager.java:88)" 8543 852
+Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at com.rowland.utility.ImageManager.access$400(ImageManager.java:24)" 8543 853
+Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at com.rowland.utility.ImageManager$ImageQueueManager.run(ImageManager.java:175)" 8543 854
+Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at java.lang.Thread.run(Thread.java:1019)" 8543 855
+Debug "2015-06-16 17:34:26.118851" 8525 PullToRefresh "First Visible: 1. Visible Count: 4. Total Items:32" 8525 856
+Debug "2015-06-16 17:34:27.108851" 8525 APPTHWACK "Excluding view action_refreshid : MainActivity:2131689576" 8534 857
+Debug "2015-06-16 17:34:27.908851" 8525 APPTHWACK "Taking screenshot for MainActivity(1)" 8534 858
+Warning "2015-06-16 17:34:27.938851" 192 PowerManagerService "Timer 0x3->0x3|0x1" 244 859
+Debug "2015-06-16 17:34:31.418851" 8525 APPTHWACK "Moved back to expected activity: MainActivity" 8534 860
+Debug "2015-06-16 17:34:31.418851" 8525 APPTHWACK "Decor view: com.android.internal.policy.impl.PhoneWindow$DecorView@40587728" 8534 861
+Debug "2015-06-16 17:34:31.428851" 8525 APPTHWACK "View excluded: android.widget.TextView@40590e98" 8534 862
+Debug "2015-06-16 17:34:31.428851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590a18" 8534 863
+Debug "2015-06-16 17:34:31.428851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590358" 8534 864
+Debug "2015-06-16 17:34:31.428851" 8525 APPTHWACK "View excluded: android.widget.ImageView@4058f218" 8534 865
+Debug "2015-06-16 17:34:31.428851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView$HomeView@4058d460" 8534 866
+Debug "2015-06-16 17:34:31.428851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405ae0a8" 8534 867
+Debug "2015-06-16 17:34:31.428851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405a60a0" 8534 868
+Debug "2015-06-16 17:34:31.428851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuView@40511038" 8534 869
+Debug "2015-06-16 17:34:31.428851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView@4058ae20" 8534 870
+Debug "2015-06-16 17:34:31.428851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarContainer@405895a0" 8534 871
+Debug "2015-06-16 17:34:31.428851" 8525 APPTHWACK "View excluded: android.widget.ImageView@4056ddd0" 8534 872
+Debug "2015-06-16 17:34:31.428851" 8525 APPTHWACK "View excluded: com.handmark.pulltorefresh.library.internal.IndicatorLayout@4056daa8" 8534 873
+Warning "2015-06-16 17:34:31.428851" 8525 ResourceType "No known package when getting name for resource number 0xffffffff" 8534 874
+Warning "2015-06-16 17:34:31.428851" 8525 ResourceType "No known package when getting name for resource number 0xffffffff" 8534 875
+Debug "2015-06-16 17:34:31.428851" 8525 APPTHWACK "Clicking on android.widget.ImageButton@405aa030" 8534 876
+Warning "2015-06-16 17:34:32.328851" 8525 ResourceType "No known package when getting name for resource number 0xffffffff" 8534 877
+Info "2015-06-16 17:34:32.328851" 192 InputDispatcher "Delivering touch to current input target: action: 0, channel '407d60f8 com.rowland.hashtrace/com.rowland.hashtrace.MainActivity (server)'" 252 878
+Info "2015-06-16 17:34:32.338851" 192 InputDispatcher "Delivering touch to current input target: action: 1, channel '407d60f8 com.rowland.hashtrace/com.rowland.hashtrace.MainActivity (server)'" 252 879
+Warning "2015-06-16 17:34:32.438851" 8525 ResourceType "No known package when getting name for resource number 0xffffffff" 8534 880
+Debug "2015-06-16 17:34:32.438851" 8525 APPTHWACK "Waiting for new ActivityStack: :com.rowland.hashtrace.MainActivity@40581490" 8534 881
+Warning "2015-06-16 17:34:32.528851" 95 AudioFlinger "write blocked for 171 msecs, 53 delayed writes, thread 0xcce8" 161 882
+Debug "2015-06-16 17:34:34.228851" 192 BatteryService "update start" 242 883
+Debug "2015-06-16 17:34:34.238851" 192 BatteryService "update start" 242 884
+Debug "2015-06-16 17:34:34.238851" 192 BatteryService "update start" 242 885
+Warning "2015-06-16 17:34:37.458851" 8525 ResourceType "No known package when getting name for resource number 0xffffffff" 8534 886
+Debug "2015-06-16 17:34:37.458851" 8525 APPTHWACK "Excluding view android.widget.ImageButton@405aa030id : MainActivity:android.widget.ImageButton:0:80:80:45" 8534 887
+Debug "2015-06-16 17:34:37.888851" 8525 APPTHWACK "Moved back to expected activity: MainActivity" 8534 888
+Debug "2015-06-16 17:34:37.888851" 8525 APPTHWACK "Decor view: com.android.internal.policy.impl.PhoneWindow$DecorView@40587728" 8534 889
+Debug "2015-06-16 17:34:37.898851" 8525 APPTHWACK "View excluded: android.widget.TextView@40590e98" 8534 890
+Debug "2015-06-16 17:34:37.898851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590a18" 8534 891
+Debug "2015-06-16 17:34:37.898851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590358" 8534 892
+Debug "2015-06-16 17:34:37.898851" 8525 APPTHWACK "View excluded: android.widget.ImageView@4058f218" 8534 893
+Debug "2015-06-16 17:34:37.898851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView$HomeView@4058d460" 8534 894
+Debug "2015-06-16 17:34:37.898851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405ae0a8" 8534 895
+Debug "2015-06-16 17:34:37.898851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405a60a0" 8534 896
+Debug "2015-06-16 17:34:37.898851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuView@40511038" 8534 897
+Debug "2015-06-16 17:34:37.898851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView@4058ae20" 8534 898
+Debug "2015-06-16 17:34:37.898851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarContainer@405895a0" 8534 899
+Debug "2015-06-16 17:34:37.898851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405aa030" 8534 900
+Debug "2015-06-16 17:34:37.898851" 8525 APPTHWACK "View excluded: android.widget.ImageView@4056ddd0" 8534 901
+Debug "2015-06-16 17:34:37.898851" 8525 APPTHWACK "View excluded: com.handmark.pulltorefresh.library.internal.IndicatorLayout@4056daa8" 8534 902
+Warning "2015-06-16 17:34:37.898851" 8525 ResourceType "No known package when getting name for resource number 0xffffffff" 8534 903
+Warning "2015-06-16 17:34:37.898851" 8525 ResourceType "No known package when getting name for resource number 0xffffffff" 8534 904
+Debug "2015-06-16 17:34:37.898851" 8525 APPTHWACK "Clicking on android.widget.ImageButton@405abab8" 8534 905
+Warning "2015-06-16 17:34:38.338851" 192 PowerManagerService "Timer 0x3->0x3|0x1" 244 906
+Warning "2015-06-16 17:34:38.808851" 8525 ResourceType "No known package when getting name for resource number 0xffffffff" 8534 907
+Info "2015-06-16 17:34:38.818851" 192 InputDispatcher "Delivering touch to current input target: action: 0, channel '407d60f8 com.rowland.hashtrace/com.rowland.hashtrace.MainActivity (server)'" 252 908
+Info "2015-06-16 17:34:38.828851" 192 InputDispatcher "Delivering touch to current input target: action: 1, channel '407d60f8 com.rowland.hashtrace/com.rowland.hashtrace.MainActivity (server)'" 252 909
+Warning "2015-06-16 17:34:38.888851" 8525 dalvikvm "Link of class 'Llecho/lib/hellocharts/animation/ChartViewportAnimatorV14;' failed" 8525 910
+Error "2015-06-16 17:34:38.888851" 8525 dalvikvm "Could not find class 'lecho.lib.hellocharts.animation.ChartViewportAnimatorV14', referenced from method lecho.lib.hellocharts.view.AbstractChartView.<init>" 8525 911
+Warning "2015-06-16 17:34:38.888851" 8525 dalvikvm "VFY: unable to resolve new-instance 1595 (Llecho/lib/hellocharts/animation/ChartViewportAnimatorV14;) in Llecho/lib/hellocharts/view/AbstractChartView;" 8525 912
+Debug "2015-06-16 17:34:38.918851" 8525 DATECHECK 20150616000000 8525 913
+Warning "2015-06-16 17:34:38.938851" 8525 ResourceType "No known package when getting name for resource number 0xffffffff" 8534 914
+Debug "2015-06-16 17:34:38.938851" 8525 APPTHWACK "Waiting for new ActivityStack: :com.rowland.hashtrace.MainActivity@40581490" 8534 915
+Warning "2015-06-16 17:34:39.028851" 95 AudioFlinger "write blocked for 166 msecs, 54 delayed writes, thread 0xcce8" 161 916
+Warning "2015-06-16 17:34:44.028851" 8525 ResourceType "No known package when getting name for resource number 0xffffffff" 8534 917
+Debug "2015-06-16 17:34:44.038851" 8525 APPTHWACK "Excluding view android.widget.ImageButton@405abab8id : MainActivity:android.widget.ImageButton:0:160:80:45" 8534 918
+Debug "2015-06-16 17:34:44.248851" 192 BatteryService "update start" 242 919
+Debug "2015-06-16 17:34:44.248851" 192 BatteryService "update start" 242 920
+Debug "2015-06-16 17:34:44.258851" 192 BatteryService "update start" 242 921
+Warning "2015-06-16 17:34:44.808851" 192 PowerManagerService "Timer 0x3->0x3|0x1" 244 922
+Debug "2015-06-16 17:34:44.838851" 8525 APPTHWACK "Taking screenshot for MainActivity(2)" 8534 923
+Debug "2015-06-16 17:34:46.868851" 8525 APPTHWACK "Moved back to expected activity: MainActivity" 8534 924
+Debug "2015-06-16 17:34:46.868851" 8525 APPTHWACK "Decor view: com.android.internal.policy.impl.PhoneWindow$DecorView@40587728" 8534 925
+Debug "2015-06-16 17:34:46.868851" 8525 APPTHWACK "View excluded: android.widget.TextView@40590e98" 8534 926
+Debug "2015-06-16 17:34:46.868851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590a18" 8534 927
+Debug "2015-06-16 17:34:46.868851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590358" 8534 928
+Debug "2015-06-16 17:34:46.868851" 8525 APPTHWACK "View excluded: android.widget.ImageView@4058f218" 8534 929
+Debug "2015-06-16 17:34:46.868851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView$HomeView@4058d460" 8534 930
+Debug "2015-06-16 17:34:46.878851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405ae0a8" 8534 931
+Debug "2015-06-16 17:34:46.878851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405aa030" 8534 932
+Debug "2015-06-16 17:34:46.878851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405abab8" 8534 933
+Debug "2015-06-16 17:34:46.878851" 8525 APPTHWACK "View excluded: android.widget.ImageView@4056ddd0" 8534 934
+Debug "2015-06-16 17:34:46.878851" 8525 APPTHWACK "View excluded: com.handmark.pulltorefresh.library.internal.IndicatorLayout@4056daa8" 8534 935
+Debug "2015-06-16 17:34:46.888851" 8525 APPTHWACK "View excluded: lecho.lib.hellocharts.view.ColumnChartView@405a2350" 8534 936
+Debug "2015-06-16 17:34:46.888851" 8525 APPTHWACK "View excluded: android.widget.RelativeLayout@4063fa58" 8534 937
+Debug "2015-06-16 17:34:46.888851" 8525 APPTHWACK "View excluded: android.support.v4.app.NoSaveStateFrameLayout@405d2930" 8534 938
+Debug "2015-06-16 17:34:46.888851" 8525 APPTHWACK "Clicking on action_overflow" 8534 939
+Info "2015-06-16 17:34:47.828851" 192 InputDispatcher "Delivering touch to current input target: action: 0, channel '407d60f8 com.rowland.hashtrace/com.rowland.hashtrace.MainActivity (server)'" 252 940
+Info "2015-06-16 17:34:47.828851" 192 InputDispatcher "Delivering touch to current input target: action: 1, channel '407d60f8 com.rowland.hashtrace/com.rowland.hashtrace.MainActivity (server)'" 252 941
+Debug "2015-06-16 17:34:47.928851" 8525 APPTHWACK "Waiting for new ActivityStack: :com.rowland.hashtrace.MainActivity@40581490" 8534 942
+Warning "2015-06-16 17:34:48.028851" 95 AudioFlinger "write blocked for 169 msecs, 55 delayed writes, thread 0xcce8" 161 943
+Error "2015-06-16 17:34:52.298851" 20237 "vending " "[119] AccountManagerHelper.getAuthTokenBlocking(): no matching accounts for ANDROID" 8972 944
+Error "2015-06-16 17:34:52.468851" 20237 "vending " "[119] UpdateTask.doInBackground(): com.android.vending.api.FatalCommunicationException: Sent a bad request." 8972 945
+Debug "2015-06-16 17:34:53.028851" 8525 APPTHWACK "Excluding view action_overflowid : MainActivity:2131689575" 8534 946
+Debug "2015-06-16 17:34:53.468851" 8525 APPTHWACK "Moved back to expected activity: MainActivity" 8534 947
+Debug "2015-06-16 17:34:53.468851" 8525 APPTHWACK "Decor view: com.android.internal.policy.impl.PhoneWindow$DecorView@40587728" 8534 948
+Debug "2015-06-16 17:34:53.468851" 8525 APPTHWACK "View excluded: android.widget.TextView@40590e98" 8534 949
+Debug "2015-06-16 17:34:53.468851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590a18" 8534 950
+Debug "2015-06-16 17:34:53.468851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590358" 8534 951
+Debug "2015-06-16 17:34:53.468851" 8525 APPTHWACK "View excluded: android.widget.ImageView@4058f218" 8534 952
+Debug "2015-06-16 17:34:53.468851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView$HomeView@4058d460" 8534 953
+Debug "2015-06-16 17:34:53.468851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405ae0a8" 8534 954
+Debug "2015-06-16 17:34:53.468851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405a60a0" 8534 955
+Debug "2015-06-16 17:34:53.468851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuView@40511038" 8534 956
+Debug "2015-06-16 17:34:53.468851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView@4058ae20" 8534 957
+Debug "2015-06-16 17:34:53.468851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarContainer@405895a0" 8534 958
+Debug "2015-06-16 17:34:53.468851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405aa030" 8534 959
+Debug "2015-06-16 17:34:53.478851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405abab8" 8534 960
+Debug "2015-06-16 17:34:53.478851" 8525 APPTHWACK "View excluded: android.widget.ImageView@4056ddd0" 8534 961
+Debug "2015-06-16 17:34:53.478851" 8525 APPTHWACK "View excluded: com.handmark.pulltorefresh.library.internal.IndicatorLayout@4056daa8" 8534 962
+Debug "2015-06-16 17:34:53.478851" 8525 APPTHWACK "View excluded: lecho.lib.hellocharts.view.ColumnChartView@405a2350" 8534 963
+Debug "2015-06-16 17:34:53.478851" 8525 APPTHWACK "View excluded: android.widget.RelativeLayout@4063fa58" 8534 964
+Debug "2015-06-16 17:34:53.478851" 8525 APPTHWACK "View excluded: android.support.v4.app.NoSaveStateFrameLayout@405d2930" 8534 965
+Warning "2015-06-16 17:34:53.478851" 8525 ResourceType "No known package when getting name for resource number 0xffffffff" 8534 966
+Warning "2015-06-16 17:34:53.478851" 8525 ResourceType "No known package when getting name for resource number 0xffffffff" 8534 967
+Debug "2015-06-16 17:34:53.478851" 8525 APPTHWACK "Clicking on android.widget.ImageButton@405662e0" 8534 968
+Warning "2015-06-16 17:34:53.838851" 192 PowerManagerService "Timer 0x3->0x3|0x1" 244 969
+Debug "2015-06-16 17:34:54.268851" 192 BatteryService "update start" 242 970
+Debug "2015-06-16 17:34:54.268851" 192 BatteryService "update start" 242 971
+Debug "2015-06-16 17:34:54.268851" 192 BatteryService "update start" 242 972
+Warning "2015-06-16 17:34:54.428851" 8525 ResourceType "No known package when getting name for resource number 0xffffffff" 8534 973
+Info "2015-06-16 17:34:54.438851" 192 InputDispatcher "Delivering touch to current input target: action: 0, channel '407d60f8 com.rowland.hashtrace/com.rowland.hashtrace.MainActivity (server)'" 252 974
+Info "2015-06-16 17:34:54.438851" 192 InputDispatcher "Delivering touch to current input target: action: 1, channel '407d60f8 com.rowland.hashtrace/com.rowland.hashtrace.MainActivity (server)'" 252 975
+Debug "2015-06-16 17:34:54.468851" 8525 PullToRefresh "First Visible: 0. Visible Count: 0. Total Items:0" 8525 976
+Debug "2015-06-16 17:34:54.468851" 8525 PullToRefresh "isFirstItemVisible. Empty View." 8525 977
+Warning "2015-06-16 17:34:54.548851" 8525 ResourceType "No known package when getting name for resource number 0xffffffff" 8534 978
+Debug "2015-06-16 17:34:54.548851" 8525 APPTHWACK "Waiting for new ActivityStack: :com.rowland.hashtrace.MainActivity@40581490" 8534 979
+Warning "2015-06-16 17:34:54.638851" 95 AudioFlinger "write blocked for 167 msecs, 56 delayed writes, thread 0xcce8" 161 980
+Warning "2015-06-16 17:34:59.558851" 8525 ResourceType "No known package when getting name for resource number 0xffffffff" 8534 981
+Debug "2015-06-16 17:34:59.558851" 8525 APPTHWACK "Excluding view android.widget.ImageButton@405662e0id : MainActivity:android.widget.ImageButton:0:240:80:45" 8534 982
+Debug "2015-06-16 17:34:59.658851" 8525 APPTHWACK "Taking screenshot for MainActivity(3)" 8534 983
+Warning "2015-06-16 17:35:00.438851" 192 PowerManagerService "Timer 0x3->0x3|0x1" 244 984
+Debug "2015-06-16 17:35:01.658851" 8525 APPTHWACK "Moved back to expected activity: MainActivity" 8534 985
+Debug "2015-06-16 17:35:01.658851" 8525 APPTHWACK "Decor view: com.android.internal.policy.impl.PhoneWindow$DecorView@40587728" 8534 986
+Debug "2015-06-16 17:35:01.668851" 8525 APPTHWACK "View excluded: android.widget.TextView@40590e98" 8534 987
+Debug "2015-06-16 17:35:01.668851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590a18" 8534 988
+Debug "2015-06-16 17:35:01.668851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590358" 8534 989
+Debug "2015-06-16 17:35:01.668851" 8525 APPTHWACK "View excluded: android.widget.ImageView@4058f218" 8534 990
+Debug "2015-06-16 17:35:01.668851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView$HomeView@4058d460" 8534 991
+Debug "2015-06-16 17:35:01.668851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405ae0a8" 8534 992
+Debug "2015-06-16 17:35:01.668851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405a60a0" 8534 993
+Debug "2015-06-16 17:35:01.668851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuView@40511038" 8534 994
+Debug "2015-06-16 17:35:01.668851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView@4058ae20" 8534 995
+Debug "2015-06-16 17:35:01.668851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarContainer@405895a0" 8534 996
+Debug "2015-06-16 17:35:01.668851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405aa030" 8534 997
+Debug "2015-06-16 17:35:01.668851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405abab8" 8534 998
+Debug "2015-06-16 17:35:01.668851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405662e0" 8534 999
+Debug "2015-06-16 17:35:01.668851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@405a3840" 8534 1000
+Debug "2015-06-16 17:35:01.668851" 8525 APPTHWACK "View excluded: com.astuetz.PagerSlidingTabStrip@405a2b78" 8534 1001
+Debug "2015-06-16 17:35:01.668851" 8525 APPTHWACK "View excluded: lecho.lib.hellocharts.view.ColumnChartView@405a2350" 8534 1002
+Debug "2015-06-16 17:35:01.668851" 8525 APPTHWACK "View excluded: android.widget.RelativeLayout@4063fa58" 8534 1003
+Debug "2015-06-16 17:35:01.668851" 8525 APPTHWACK "View excluded: android.support.v4.app.NoSaveStateFrameLayout@405d2930" 8534 1004
+Debug "2015-06-16 17:35:01.678851" 8525 APPTHWACK "Clicking on list" 8534 1005
+Debug "2015-06-16 17:35:02.188851" 8525 APPTHWACK "Excluding view listid : MainActivity:16908298" 8534 1006
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "Moved back to expected activity: MainActivity" 8534 1007
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "Decor view: com.android.internal.policy.impl.PhoneWindow$DecorView@40587728" 8534 1008
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "View excluded: android.widget.TextView@40590e98" 8534 1009
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590a18" 8534 1010
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590358" 8534 1011
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "View excluded: android.widget.ImageView@4058f218" 8534 1012
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView$HomeView@4058d460" 8534 1013
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405ae0a8" 8534 1014
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405a60a0" 8534 1015
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuView@40511038" 8534 1016
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView@4058ae20" 8534 1017
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarContainer@405895a0" 8534 1018
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405aa030" 8534 1019
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405abab8" 8534 1020
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405662e0" 8534 1021
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@405a3840" 8534 1022
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "View excluded: com.astuetz.PagerSlidingTabStrip@405a2b78" 8534 1023
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "View excluded: com.baoyz.swipemenulistview.SwipeMenuListView@405130b0" 8534 1024
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "View excluded: android.widget.RelativeLayout@40512c78" 8534 1025
+Debug "2015-06-16 17:35:02.198851" 8525 APPTHWACK "View excluded: android.support.v4.app.NoSaveStateFrameLayout@40518908" 8534 1026
+Debug "2015-06-16 17:35:02.208851" 8525 APPTHWACK "View excluded: lecho.lib.hellocharts.view.ColumnChartView@405a2350" 8534 1027
+Debug "2015-06-16 17:35:02.208851" 8525 APPTHWACK "View excluded: android.widget.RelativeLayout@4063fa58" 8534 1028
+Debug "2015-06-16 17:35:02.208851" 8525 APPTHWACK "View excluded: android.support.v4.app.NoSaveStateFrameLayout@405d2930" 8534 1029
+Debug "2015-06-16 17:35:02.208851" 8525 APPTHWACK "View excluded: android.support.v4.view.ViewPager@405a47c0" 8534 1030
+Debug "2015-06-16 17:35:02.208851" 8525 APPTHWACK "View excluded: android.widget.RelativeLayout@4059f6e0" 8534 1031
+Debug "2015-06-16 17:35:02.208851" 8525 APPTHWACK "View excluded: android.support.v4.app.NoSaveStateFrameLayout@405a8d60" 8534 1032
+Debug "2015-06-16 17:35:02.208851" 8525 APPTHWACK "View excluded: android.widget.FrameLayout@40594de8" 8534 1033
+Debug "2015-06-16 17:35:02.208851" 8525 APPTHWACK "View excluded: android.widget.FrameLayout@40593a60" 8534 1034
+Debug "2015-06-16 17:35:02.208851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40588bd8" 8534 1035
+Debug "2015-06-16 17:35:02.208851" 8525 APPTHWACK "View excluded: android.widget.FrameLayout@40587fc8" 8534 1036
+Debug "2015-06-16 17:35:02.208851" 8525 APPTHWACK "Activity MainActivity explored" 8534 1037
+Debug "2015-06-16 17:35:03.208851" 8525 APPTHWACK "ActivityStack: :com.rowland.hashtrace.MainActivity@40581490" 8534 1038
+Debug "2015-06-16 17:35:03.218851" 8525 APPTHWACK "Exploring an activity: com.rowland.hashtrace.MainActivity@40581490" 8534 1039
+Debug "2015-06-16 17:35:03.218851" 8525 APPTHWACK "Decor view: com.android.internal.policy.impl.PhoneWindow$DecorView@40587728" 8534 1040
+Debug "2015-06-16 17:35:03.218851" 8525 APPTHWACK "View excluded: android.widget.TextView@40590e98" 8534 1041
+Debug "2015-06-16 17:35:03.218851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590a18" 8534 1042
+Debug "2015-06-16 17:35:03.218851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590358" 8534 1043
+Debug "2015-06-16 17:35:03.218851" 8525 APPTHWACK "View excluded: android.widget.ImageView@4058f218" 8534 1044
+Debug "2015-06-16 17:35:03.218851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView$HomeView@4058d460" 8534 1045
+Debug "2015-06-16 17:35:03.218851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405ae0a8" 8534 1046
+Debug "2015-06-16 17:35:03.218851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405a60a0" 8534 1047
+Debug "2015-06-16 17:35:03.218851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuView@40511038" 8534 1048
+Debug "2015-06-16 17:35:03.218851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView@4058ae20" 8534 1049
+Debug "2015-06-16 17:35:03.218851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarContainer@405895a0" 8534 1050
+Debug "2015-06-16 17:35:03.228851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405aa030" 8534 1051
+Debug "2015-06-16 17:35:03.228851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405abab8" 8534 1052
+Debug "2015-06-16 17:35:03.228851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405662e0" 8534 1053
+Debug "2015-06-16 17:35:03.228851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@405a3840" 8534 1054
+Debug "2015-06-16 17:35:03.228851" 8525 APPTHWACK "View excluded: com.astuetz.PagerSlidingTabStrip@405a2b78" 8534 1055
+Debug "2015-06-16 17:35:03.238851" 8525 APPTHWACK "View excluded: com.baoyz.swipemenulistview.SwipeMenuListView@405130b0" 8534 1056
+Debug "2015-06-16 17:35:03.238851" 8525 APPTHWACK "View excluded: android.widget.RelativeLayout@40512c78" 8534 1057
+Debug "2015-06-16 17:35:03.238851" 8525 APPTHWACK "View excluded: android.support.v4.app.NoSaveStateFrameLayout@40518908" 8534 1058
+Debug "2015-06-16 17:35:03.238851" 8525 APPTHWACK "View excluded: lecho.lib.hellocharts.view.ColumnChartView@405a2350" 8534 1059
+Debug "2015-06-16 17:35:03.238851" 8525 APPTHWACK "View excluded: android.widget.RelativeLayout@4063fa58" 8534 1060
+Debug "2015-06-16 17:35:03.238851" 8525 APPTHWACK "View excluded: android.support.v4.app.NoSaveStateFrameLayout@405d2930" 8534 1061
+Debug "2015-06-16 17:35:03.238851" 8525 APPTHWACK "View excluded: android.support.v4.view.ViewPager@405a47c0" 8534 1062
+Debug "2015-06-16 17:35:03.238851" 8525 APPTHWACK "View excluded: android.widget.RelativeLayout@4059f6e0" 8534 1063
+Debug "2015-06-16 17:35:03.238851" 8525 APPTHWACK "View excluded: android.support.v4.app.NoSaveStateFrameLayout@405a8d60" 8534 1064
+Debug "2015-06-16 17:35:03.238851" 8525 APPTHWACK "View excluded: android.widget.FrameLayout@40594de8" 8534 1065
+Debug "2015-06-16 17:35:03.238851" 8525 APPTHWACK "View excluded: android.widget.FrameLayout@40593a60" 8534 1066
+Debug "2015-06-16 17:35:03.238851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40588bd8" 8534 1067
+Debug "2015-06-16 17:35:03.238851" 8525 APPTHWACK "View excluded: android.widget.FrameLayout@40587fc8" 8534 1068
+Debug "2015-06-16 17:35:03.238851" 8525 APPTHWACK "Activity MainActivity explored" 8534 1069
+Debug "2015-06-16 17:35:04.238851" 8525 APPTHWACK "ActivityStack: :com.rowland.hashtrace.MainActivity@40581490" 8534 1070
+Debug "2015-06-16 17:35:04.238851" 8525 APPTHWACK "Exploring an activity: com.rowland.hashtrace.MainActivity@40581490" 8534 1071
+Debug "2015-06-16 17:35:04.238851" 8525 APPTHWACK "Decor view: com.android.internal.policy.impl.PhoneWindow$DecorView@40587728" 8534 1072
+Debug "2015-06-16 17:35:04.238851" 8525 APPTHWACK "View excluded: android.widget.TextView@40590e98" 8534 1073
+Debug "2015-06-16 17:35:04.238851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590a18" 8534 1074
+Debug "2015-06-16 17:35:04.238851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590358" 8534 1075
+Debug "2015-06-16 17:35:04.238851" 8525 APPTHWACK "View excluded: android.widget.ImageView@4058f218" 8534 1076
+Debug "2015-06-16 17:35:04.238851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView$HomeView@4058d460" 8534 1077
+Debug "2015-06-16 17:35:04.238851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405ae0a8" 8534 1078
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405a60a0" 8534 1079
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuView@40511038" 8534 1080
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView@4058ae20" 8534 1081
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarContainer@405895a0" 8534 1082
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405aa030" 8534 1083
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405abab8" 8534 1084
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405662e0" 8534 1085
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@405a3840" 8534 1086
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: com.astuetz.PagerSlidingTabStrip@405a2b78" 8534 1087
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: com.baoyz.swipemenulistview.SwipeMenuListView@405130b0" 8534 1088
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.widget.RelativeLayout@40512c78" 8534 1089
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.support.v4.app.NoSaveStateFrameLayout@40518908" 8534 1090
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: lecho.lib.hellocharts.view.ColumnChartView@405a2350" 8534 1091
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.widget.RelativeLayout@4063fa58" 8534 1092
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.support.v4.app.NoSaveStateFrameLayout@405d2930" 8534 1093
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.support.v4.view.ViewPager@405a47c0" 8534 1094
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.widget.RelativeLayout@4059f6e0" 8534 1095
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.support.v4.app.NoSaveStateFrameLayout@405a8d60" 8534 1096
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.widget.FrameLayout@40594de8" 8534 1097
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.widget.FrameLayout@40593a60" 8534 1098
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40588bd8" 8534 1099
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "View excluded: android.widget.FrameLayout@40587fc8" 8534 1100
+Debug "2015-06-16 17:35:04.248851" 8525 APPTHWACK "Activity MainActivity explored" 8534 1101
+Debug "2015-06-16 17:35:04.288851" 192 BatteryService "update start" 242 1102
+Debug "2015-06-16 17:35:04.288851" 192 BatteryService "update start" 242 1103
+Debug "2015-06-16 17:35:04.288851" 192 BatteryService "update start" 242 1104
+Debug "2015-06-16 17:35:05.248851" 8525 APPTHWACK "ActivityStack: :com.rowland.hashtrace.MainActivity@40581490" 8534 1105
+Debug "2015-06-16 17:35:05.258851" 8525 APPTHWACK "Exploring an activity: com.rowland.hashtrace.MainActivity@40581490" 8534 1106
+Debug "2015-06-16 17:35:05.258851" 8525 APPTHWACK "Decor view: com.android.internal.policy.impl.PhoneWindow$DecorView@40587728" 8534 1107
+Debug "2015-06-16 17:35:05.258851" 8525 APPTHWACK "View excluded: android.widget.TextView@40590e98" 8534 1108
+Debug "2015-06-16 17:35:05.258851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590a18" 8534 1109
+Debug "2015-06-16 17:35:05.258851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590358" 8534 1110
+Debug "2015-06-16 17:35:05.258851" 8525 APPTHWACK "View excluded: android.widget.ImageView@4058f218" 8534 1111
+Debug "2015-06-16 17:35:05.258851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView$HomeView@4058d460" 8534 1112
+Debug "2015-06-16 17:35:05.268851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405ae0a8" 8534 1113
+Debug "2015-06-16 17:35:05.268851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405a60a0" 8534 1114
+Debug "2015-06-16 17:35:05.268851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuView@40511038" 8534 1115
+Debug "2015-06-16 17:35:05.268851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView@4058ae20" 8534 1116
+Debug "2015-06-16 17:35:05.268851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarContainer@405895a0" 8534 1117
+Debug "2015-06-16 17:35:05.268851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405aa030" 8534 1118
+Debug "2015-06-16 17:35:05.268851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405abab8" 8534 1119
+Debug "2015-06-16 17:35:05.268851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405662e0" 8534 1120
+Debug "2015-06-16 17:35:05.268851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@405a3840" 8534 1121
+Debug "2015-06-16 17:35:05.268851" 8525 APPTHWACK "View excluded: com.astuetz.PagerSlidingTabStrip@405a2b78" 8534 1122
+Debug "2015-06-16 17:35:05.268851" 8525 APPTHWACK "View excluded: com.baoyz.swipemenulistview.SwipeMenuListView@405130b0" 8534 1123
+Debug "2015-06-16 17:35:05.278851" 8525 APPTHWACK "View excluded: android.widget.RelativeLayout@40512c78" 8534 1124
+Debug "2015-06-16 17:35:05.278851" 8525 APPTHWACK "View excluded: android.support.v4.app.NoSaveStateFrameLayout@40518908" 8534 1125
+Debug "2015-06-16 17:35:05.278851" 8525 APPTHWACK "View excluded: lecho.lib.hellocharts.view.ColumnChartView@405a2350" 8534 1126
+Debug "2015-06-16 17:35:05.278851" 8525 APPTHWACK "View excluded: android.widget.RelativeLayout@4063fa58" 8534 1127
+Debug "2015-06-16 17:35:05.278851" 8525 APPTHWACK "View excluded: android.support.v4.app.NoSaveStateFrameLayout@405d2930" 8534 1128
+Debug "2015-06-16 17:35:05.278851" 8525 APPTHWACK "View excluded: android.support.v4.view.ViewPager@405a47c0" 8534 1129
+Debug "2015-06-16 17:35:05.278851" 8525 APPTHWACK "View excluded: android.widget.RelativeLayout@4059f6e0" 8534 1130
+Debug "2015-06-16 17:35:05.278851" 8525 APPTHWACK "View excluded: android.support.v4.app.NoSaveStateFrameLayout@405a8d60" 8534 1131
+Debug "2015-06-16 17:35:05.278851" 8525 APPTHWACK "View excluded: android.widget.FrameLayout@40594de8" 8534 1132
+Debug "2015-06-16 17:35:05.278851" 8525 APPTHWACK "View excluded: android.widget.FrameLayout@40593a60" 8534 1133
+Debug "2015-06-16 17:35:05.278851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40588bd8" 8534 1134
+Debug "2015-06-16 17:35:05.278851" 8525 APPTHWACK "View excluded: android.widget.FrameLayout@40587fc8" 8534 1135
+Debug "2015-06-16 17:35:05.278851" 8525 APPTHWACK "Activity MainActivity explored" 8534 1136
+Debug "2015-06-16 17:35:06.288851" 8525 APPTHWACK "ActivityStack: :com.rowland.hashtrace.MainActivity@40581490" 8534 1137
+Debug "2015-06-16 17:35:06.288851" 8525 APPTHWACK "Exploring an activity: com.rowland.hashtrace.MainActivity@40581490" 8534 1138
+Debug "2015-06-16 17:35:06.288851" 8525 APPTHWACK "Decor view: com.android.internal.policy.impl.PhoneWindow$DecorView@40587728" 8534 1139
+Debug "2015-06-16 17:35:06.288851" 8525 APPTHWACK "View excluded: android.widget.TextView@40590e98" 8534 1140
+Debug "2015-06-16 17:35:06.288851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590a18" 8534 1141
+Debug "2015-06-16 17:35:06.288851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40590358" 8534 1142
+Debug "2015-06-16 17:35:06.288851" 8525 APPTHWACK "View excluded: android.widget.ImageView@4058f218" 8534 1143
+Debug "2015-06-16 17:35:06.288851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView$HomeView@4058d460" 8534 1144
+Debug "2015-06-16 17:35:06.288851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405ae0a8" 8534 1145
+Debug "2015-06-16 17:35:06.288851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuItemView@405a60a0" 8534 1146
+Debug "2015-06-16 17:35:06.288851" 8525 APPTHWACK "View excluded: android.support.v7.internal.view.menu.ActionMenuView@40511038" 8534 1147
+Debug "2015-06-16 17:35:06.288851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarView@4058ae20" 8534 1148
+Debug "2015-06-16 17:35:06.288851" 8525 APPTHWACK "View excluded: android.support.v7.internal.widget.ActionBarContainer@405895a0" 8534 1149
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405aa030" 8534 1150
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405abab8" 8534 1151
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "View excluded: android.widget.ImageButton@405662e0" 8534 1152
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@405a3840" 8534 1153
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "View excluded: com.astuetz.PagerSlidingTabStrip@405a2b78" 8534 1154
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "View excluded: com.baoyz.swipemenulistview.SwipeMenuListView@405130b0" 8534 1155
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "View excluded: android.widget.RelativeLayout@40512c78" 8534 1156
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "View excluded: android.support.v4.app.NoSaveStateFrameLayout@40518908" 8534 1157
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "View excluded: lecho.lib.hellocharts.view.ColumnChartView@405a2350" 8534 1158
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "View excluded: android.widget.RelativeLayout@4063fa58" 8534 1159
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "View excluded: android.support.v4.app.NoSaveStateFrameLayout@405d2930" 8534 1160
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "View excluded: android.support.v4.view.ViewPager@405a47c0" 8534 1161
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "View excluded: android.widget.RelativeLayout@4059f6e0" 8534 1162
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "View excluded: android.support.v4.app.NoSaveStateFrameLayout@405a8d60" 8534 1163
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "View excluded: android.widget.FrameLayout@40594de8" 8534 1164
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "View excluded: android.widget.FrameLayout@40593a60" 8534 1165
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "View excluded: android.widget.LinearLayout@40588bd8" 8534 1166
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "View excluded: android.widget.FrameLayout@40587fc8" 8534 1167
+Debug "2015-06-16 17:35:06.298851" 8525 APPTHWACK "Activity MainActivity explored" 8534 1168
+Info "2015-06-16 17:35:07.428851" 192 OrientationDebug "[pwm] in updateOrientationListenerLp()" 3398 1169
+Verbose "2015-06-16 17:35:07.428851" 192 OrientationDebug "in updateOrientationListenerLp(), Screen status=true, current orientation=5, SensorEnabled=true" 3398 1170
+Info "2015-06-16 17:35:07.438851" 192 OrientationDebug "[pwm] needSensorRunningLp(), return true #4" 3398 1171
+Info "2015-06-16 17:35:07.458851" 298 Launcher "onResume(). mIsNewIntent : false" 298 1172
+Debug "2015-06-16 17:35:07.468851" 7760 ProgramMonitor " onReceive -no" 7760 1173
+Debug "2015-06-16 17:35:07.468851" 7760 ProgramMonitor "appWidgetIds.length : 0" 7760 1174
+Debug "2015-06-16 17:35:07.468851" 7760 ProgramMonitor " onReceive - action:com.sec.android.app.controlpanel.RUNNING_PROGRAM_REQ" 7760 1175
+Error "2015-06-16 17:35:07.468851" 298 Launcher setWindowOpaque() 298 1176
+Error "2015-06-16 17:35:07.498851" 298 Launcher "MTP-LAUNCHER: media scanning not yet finished." 298 1177
+Info "2015-06-16 17:35:07.498851" 298 Launcher "onResume() ended" 298 1178
+Info "2015-06-16 17:35:07.518851" 298 Launcher onWindowFocusChanged(true) 298 1179
+Debug "2015-06-16 17:35:07.518851" 298 Launcher "setWallpaperDimension() called" 298 1180
+Debug "2015-06-16 17:35:07.518851" 298 Launcher "USE_NON_SCROLLABLE_IMAGE_WALLPAPER is true" 298 1181
+Debug "2015-06-16 17:35:07.528851" 298 Launcher "It's image wallpaper. suggestDesiredDimensions(-1,-1)" 298 1182
+Error "2015-06-16 17:35:07.528851" 298 Launcher setWindowOpaque() 298 1183
+Debug "2015-06-16 17:35:07.728851" 7760 ProgramMonitor " onReceive - action:com.sec.android.app.controlpanel.RUNNING_PROGRAM_ACK" 7760 1184
+Debug "2015-06-16 17:35:07.728851" 7760 ProgramMonitor updateNumberText 7760 1185
+Debug "2015-06-16 17:35:07.778851" 7760 ProgramMonitor updateWidget 7760 1186
+Debug "2015-06-16 17:35:07.778851" 7760 ProgramMonitor "updateWidget - appWidgetIds == null -->> resetting" 7760 1187
+Debug "2015-06-16 17:35:07.778851" 7760 ProgramMonitor "updateWidget - appWidgetIds.length == 0" 7760 1188
+Warning "2015-06-16 17:35:08.328851" 192 InputDispatcher "Permission denied: injecting event from pid 8525 uid 10078 to window with input channel 40981748 com.sec.android.app.twlauncher/com.sec.android.app.twlauncher.Launcher (server) owned by uid 10006" 252 1189
+Info "2015-06-16 17:35:08.328851" 8525 TestRunner "finished: testApp(com.appthwack.test.AppThwackExplorerTest)" 8534 1190
+Info "2015-06-16 17:35:08.328851" 8525 TestRunner "passed: testApp(com.appthwack.test.AppThwackExplorerTest)" 8534 1191
+Info "2015-06-16 17:35:08.328851" 192 PowerManagerService "Ulight 3->7|0" 252 1192
+Warning "2015-06-16 17:35:08.328851" 192 WindowManager "Input event injection permission denied." 198 1193
+Info "2015-06-16 17:35:08.328851" 192 ActivityManager "Force stopping package com.rowland.hashtrace uid=10078" 197 1194
+Debug "2015-06-16 17:35:08.338851" 8517 AndroidRuntime "Shutting down VM" 8517 1195
+Info "2015-06-16 17:35:08.358851" 8517 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 9083 1196
+Debug "2015-06-16 17:35:09.878851" 7760 ProgramMonitor " onReceive - action:com.sec.android.app.controlpanel.CPU_USAGE_WARN" 7760 1197
+Info "2015-06-16 17:35:09.878851" 7760 ProgramMonitor cpu_usage_wan 7760 1198
+Debug "2015-06-16 17:35:09.878851" 7760 ProgramMonitor updateSlideText 7760 1199
+Debug "2015-06-16 17:35:09.888851" 7760 ProgramMonitor updateDefaultText 7760 1200
+Debug "2015-06-16 17:35:09.888851" 7760 ProgramMonitor updateWidget 7760 1201
+Debug "2015-06-16 17:35:09.888851" 7760 ProgramMonitor "updateWidget - appWidgetIds == null -->> resetting" 7760 1202
+Debug "2015-06-16 17:35:09.888851" 7760 ProgramMonitor "updateWidget - appWidgetIds.length == 0" 7760 1203
+Debug "2015-06-16 17:35:13.658851" 9111 AndroidRuntime  9111 1204
+Debug "2015-06-16 17:35:13.658851" 9111 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 9111 1205
+Debug "2015-06-16 17:35:13.658851" 9111 AndroidRuntime "CheckJNI is OFF" 9111 1206
+Debug "2015-06-16 17:35:13.658851" 9111 AndroidRuntime "setted country_code = Chile" 9111 1207
+Debug "2015-06-16 17:35:13.658851" 9111 AndroidRuntime "setted sales_code = CHO" 9111 1208
+Debug "2015-06-16 17:35:13.658851" 9111 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 9111 1209
+Error "2015-06-16 17:35:13.658851" 9111 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 9111 1210
+Error "2015-06-16 17:35:13.658851" 9111 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 9111 1211
+Error "2015-06-16 17:35:13.658851" 9111 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 9111 1212
+Debug "2015-06-16 17:35:13.888851" 9111 AndroidRuntime "Calling main entry com.android.commands.pm.Pm" 9111 1213
+Info "2015-06-16 17:35:13.898851" 192 PackageManager "Removing non-system package:com.appthwack.test" 219 1214
+Debug "2015-06-16 17:35:13.898851" 192 PackageManager "Removing package com.appthwack.test" 219 1215
+Debug "2015-06-16 17:35:13.898851" 192 PackageManager "  Instrumentation: com.appthwack.test.AppThwackInstrumentationTestRunner" 219 1216
+Info "2015-06-16 17:35:13.898851" 192 ActivityManager "Force stopping package com.appthwack.test uid=10080" 214 1217
+Info "2015-06-16 17:35:13.998851" 192 ActivityManager "Force stopping package com.appthwack.test uid=10080" 219 1218
+Debug "2015-06-16 17:35:14.018851" 298 Launcher.SWidgetPkgMgr removePackage=com.appthwack.test 298 1219
+Info "2015-06-16 17:35:14.018851" 27444 VoiceActionsFactory "Applications list changed, recalculating supported actions" 27444 1220
+Info "2015-06-16 17:35:14.028851" 192 ActivityManager "Start proc com.sec.android.app.unifiedinbox for broadcast com.sec.android.app.unifiedinbox/.UinboxSevenReceiver: pid=9121 uid=10024 gids={}" 214 1221
+Debug "2015-06-16 17:35:14.328851" 192 BatteryService "update start" 242 1222
+Debug "2015-06-16 17:35:14.328851" 192 BatteryService "update start" 242 1223
+Warning "2015-06-16 17:35:14.328851" 192 PowerManagerService "Timer 0x7->0x3|0x1" 244 1224
+Info "2015-06-16 17:35:14.328851" 192 PowerManagerService "Ulight 7->3|0" 244 1225
+Debug "2015-06-16 17:35:14.328851" 192 BatteryService "update start" 242 1226
+Debug "2015-06-16 17:35:14.348851" 192 MountService " :::: isSecureContainerMounted :: id = com.appthwack.test-1" 219 1227
+Info "2015-06-16 17:35:14.358851" 9121 ActivityThread "Pub com.sec.android.app.unifiedinbox: com.sec.android.app.unifiedinbox.UinboxProvider" 9121 1228
+Error "2015-06-16 17:35:14.378851" 9121 UinboxLogger "[UinboxReceiver] onReceive() >> Context is android.app.ReceiverRestrictedContext@40523d28" 9121 1229
+Info "2015-06-16 17:35:14.378851" 9121 UinboxLogger "[UinboxReceiver] onReceive() >> ==============================================" 9121 1230
+Info "2015-06-16 17:35:14.378851" 9121 UinboxLogger "[UinboxReceiver] onReceive() >>     UinboxSevenReceiver()" 9121 1231
+Info "2015-06-16 17:35:14.378851" 9121 UinboxLogger "[UinboxReceiver] onReceive() >>     intent.getAction() :  android.intent.action.PACKAGE_REMOVED" 9121 1232
+Info "2015-06-16 17:35:14.378851" 9121 UinboxLogger "[UinboxReceiver] onReceive() >>   intent.getData() : com.appthwack.test" 9121 1233
+Info "2015-06-16 17:35:14.378851" 9121 UinboxLogger "[UinboxReceiver] onReceive() >> ==============================================" 9121 1234
+Verbose "2015-06-16 17:35:14.378851" 24885 PackageIntentReceiver "onReceive() intent:Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.appthwack.test flg=0x10000000 cmp=com.sec.android.app.controlpanel/.PackageIntentReceiver (has extras) } pkg:com.appthwack.test action:android.intent.action.PACKAGE_REMOVED" 24885 1235
+Debug "2015-06-16 17:35:14.418851" 192 MountService " :::: unmountSecureContainer :: id = com.appthwack.test-1, force = true" 219 1236
+Debug "2015-06-16 17:35:14.548851" 87 VoldCmdListener "asec unmount com.appthwack.test-1 force" 110 1237
+Info "2015-06-16 17:35:14.888851" 192 PackageHelper "Forcibly destroying container com.appthwack.test-1" 219 1238
+Debug "2015-06-16 17:35:14.888851" 192 MountService " :::: destroySecureContainer :: id = com.appthwack.test-1, force = true" 219 1239
+Debug "2015-06-16 17:35:14.998851" 87 VoldCmdListener "asec destroy com.appthwack.test-1 force" 110 1240
+Debug "2015-06-16 17:35:15.218851" 9111 AndroidRuntime "Shutting down VM" 9111 1241
+Info "2015-06-16 17:35:15.238851" 9111 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 9131 1242

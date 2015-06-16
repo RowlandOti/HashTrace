@@ -1,0 +1,972 @@
+    "--------- beginning of /dev/log/main"  1
+Debug "2015-06-16 17:32:12.086844" 711 AppThwack /tz/ 7746 2
+Debug "2015-06-16 17:32:12.166844" 711 AppThwack "sha1: a141f6a277f19cf0e0dd6dac24dc6696b650faaf" 7746 3
+Debug "2015-06-16 17:32:12.176844" 711 AppThwack /task/a141f6a277f19cf0e0dd6dac24dc6696b650faaf 7746 4
+    "--------- beginning of /dev/log/system"  5
+Info "2015-06-16 17:32:12.206844" 192 StatusBarManagerService "ADD-null , 0x7f020018" 214 6
+Debug "2015-06-16 17:32:12.216844" 711 AppThwackDeviceManager "taskStatus update (a141f6a277f19cf0e0dd6dac24dc6696b650faaf: {""state"":1})" 711 7
+Debug "2015-06-16 17:32:12.216844" 711 AppThwackDeviceManager "taskStatus update (a141f6a277f19cf0e0dd6dac24dc6696b650faaf: {""result"":{""tz"":""GMT""},""state"":2})" 711 8
+Info "2015-06-16 17:32:12.216844" 192 StatusBarManagerService "REMOVE-null , 0x7f020018" 214 9
+Debug "2015-06-16 17:32:12.376844" 711 AppThwack /task/a141f6a277f19cf0e0dd6dac24dc6696b650faaf/status 7748 10
+Debug "2015-06-16 17:32:12.436844" 711 AppThwack /task/a141f6a277f19cf0e0dd6dac24dc6696b650faaf/status 7749 11
+Debug "2015-06-16 17:32:12.536844" 711 AppThwack /task/a141f6a277f19cf0e0dd6dac24dc6696b650faaf/status 7750 12
+Debug "2015-06-16 17:32:12.756844" 711 AppThwack /task/a141f6a277f19cf0e0dd6dac24dc6696b650faaf/status 7751 13
+Debug "2015-06-16 17:32:13.096844" 711 AppThwack /task/a141f6a277f19cf0e0dd6dac24dc6696b650faaf/status 7754 14
+Debug "2015-06-16 17:32:13.156844" 711 AppThwack /wake/ 7755 15
+Debug "2015-06-16 17:32:13.276844" 711 AppThwack "sha1: 05577c7b6ce9e628da841e136fd8ee158797f7a3" 7755 16
+Debug "2015-06-16 17:32:13.296844" 711 AppThwack /task/05577c7b6ce9e628da841e136fd8ee158797f7a3 7755 17
+Info "2015-06-16 17:32:13.326844" 192 StatusBarManagerService "ADD-null , 0x7f020018" 214 18
+Debug "2015-06-16 17:32:13.336844" 711 AppThwackDeviceManager "taskStatus update (05577c7b6ce9e628da841e136fd8ee158797f7a3: {""state"":1})" 711 19
+Debug "2015-06-16 17:32:13.336844" 711 AppThwackAndroidLib "WakeLock: acquire" 7756 20
+Info "2015-06-16 17:32:13.336844" 711 AppThwackAndroidLib "ET phone home" 7756 21
+Debug "2015-06-16 17:32:13.336844" 192 PowerManagerService "reactivateScreenLocksLocked mProxIgnoredBecauseScreenTurnedOff=false" 192 22
+Info "2015-06-16 17:32:13.356844" 192 ActivityManager "Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.sec.android.app.twlauncher/.Launcher } from pid 711" 324 23
+Info "2015-06-16 17:32:13.366844" 711 AppThwackAndroidLib "Muting audio streams" 7756 24
+Info "2015-06-16 17:32:13.376844" 298 Launcher onPause() 298 25
+Info "2015-06-16 17:32:13.386844" 295 FmReceiverService "BrdcstReceiver onReceive ACTION: android.media.VOLUME_CHANGED_ACTION" 295 26
+Info "2015-06-16 17:32:13.386844" 295 FmReceiverService "BrdcstReceiver onReceive ACTION: android.media.VOLUME_CHANGED_ACTION" 295 27
+Info "2015-06-16 17:32:13.396844" 295 FmReceiverService "BrdcstReceiver onReceive ACTION: android.media.VOLUME_CHANGED_ACTION" 295 28
+Info "2015-06-16 17:32:13.396844" 711 AppThwackAndroidLib "Creating /data/data/com.trellis.appthwackdevicemanager/app_logs" 7756 29
+Debug "2015-06-16 17:32:13.396844" 711 AppThwackDeviceManager "taskStatus update (05577c7b6ce9e628da841e136fd8ee158797f7a3: {""result"":""Device woken."",""state"":2})" 711 30
+Info "2015-06-16 17:32:13.396844" 295 FmReceiverService "BrdcstReceiver onReceive ACTION: android.media.VOLUME_CHANGED_ACTION" 295 31
+Info "2015-06-16 17:32:13.406844" 295 FmReceiverService "BrdcstReceiver onReceive ACTION: android.media.VOLUME_CHANGED_ACTION" 295 32
+Info "2015-06-16 17:32:13.406844" 192 StatusBarManagerService "REMOVE-null , 0x7f020018" 214 33
+Info "2015-06-16 17:32:13.476844" 298 Launcher "onResume(). mIsNewIntent : true" 298 34
+Info "2015-06-16 17:32:13.486844" 192 ActivityManager "Start proc com.samsung.sec.android.appwidget.programmonitorwidget for broadcast com.samsung.sec.android.appwidget.programmonitorwidget/.ProgramMonitorProvider: pid=7760 uid=10006 gids={3003, 1015, 3002}" 198 35
+Error "2015-06-16 17:32:13.496844" 298 Launcher setWindowOpaque() 298 36
+Error "2015-06-16 17:32:13.516844" 298 Launcher "MTP-LAUNCHER: media scanning not yet finished." 298 37
+Info "2015-06-16 17:32:13.526844" 298 Launcher "onResume() ended" 298 38
+Debug "2015-06-16 17:32:13.566844" 711 AppThwack /task/05577c7b6ce9e628da841e136fd8ee158797f7a3/status 7766 39
+Debug "2015-06-16 17:32:13.636844" 7760 ProgramMonitor " onReceive -no" 7760 40
+Debug "2015-06-16 17:32:13.656844" 7760 ProgramMonitor "appWidgetIds.length : 0" 7760 41
+Debug "2015-06-16 17:32:13.656844" 7760 ProgramMonitor " onReceive - action:com.sec.android.app.controlpanel.RUNNING_PROGRAM_REQ" 7760 42
+Info "2015-06-16 17:32:13.656844" 7760 ProgramMonitor "mCtxt == null" 7760 43
+Info "2015-06-16 17:32:13.666844" 192 ActivityManager "No longer want com.svox.pico (pid 2777): hidden #16" 324 44
+Debug "2015-06-16 17:32:13.676844" 711 AppThwack /task/05577c7b6ce9e628da841e136fd8ee158797f7a3/status 7768 45
+Debug "2015-06-16 17:32:13.816844" 711 AppThwack /task/05577c7b6ce9e628da841e136fd8ee158797f7a3/status 7769 46
+Debug "2015-06-16 17:32:13.876844" 192 BatteryService "update start" 242 47
+Debug "2015-06-16 17:32:13.876844" 192 BatteryService "update start" 242 48
+Debug "2015-06-16 17:32:13.876844" 192 BatteryService "update start" 242 49
+Debug "2015-06-16 17:32:13.896844" 711 AppThwack /task/05577c7b6ce9e628da841e136fd8ee158797f7a3/status 7772 50
+Debug "2015-06-16 17:32:14.116844" 7760 ProgramMonitor " onReceive - action:com.sec.android.app.controlpanel.RUNNING_PROGRAM_ACK" 7760 51
+Debug "2015-06-16 17:32:14.116844" 7760 ProgramMonitor updateNumberText 7760 52
+Debug "2015-06-16 17:32:14.176844" 7760 ProgramMonitor updateWidget 7760 53
+Debug "2015-06-16 17:32:14.176844" 7760 ProgramMonitor "updateWidget - appWidgetIds == null -->> resetting" 7760 54
+Debug "2015-06-16 17:32:14.176844" 7760 ProgramMonitor "updateWidget - appWidgetIds.length == 0" 7760 55
+Debug "2015-06-16 17:32:14.286844" 711 AppThwack /task/05577c7b6ce9e628da841e136fd8ee158797f7a3/status 7773 56
+Debug "2015-06-16 17:32:14.446844" 711 AppThwack /wifi/ 7774 57
+Debug "2015-06-16 17:32:14.486844" 711 AppThwack "sha1: c8a044f08249cb4584cc65ec7acdb608a5022a5c" 7774 58
+Debug "2015-06-16 17:32:14.486844" 711 AppThwackDeviceManager "k: enabled v: True" 7774 59
+Debug "2015-06-16 17:32:14.486844" 711 AppThwackDeviceManager "k: NanoHttpd.QUERY_STRING v: enabled=True" 7774 60
+Debug "2015-06-16 17:32:14.506844" 711 AppThwack /task/c8a044f08249cb4584cc65ec7acdb608a5022a5c 7774 61
+Info "2015-06-16 17:32:14.536844" 192 StatusBarManagerService "ADD-null , 0x7f020018" 214 62
+Debug "2015-06-16 17:32:14.546844" 711 AppThwackDeviceManager "taskStatus update (c8a044f08249cb4584cc65ec7acdb608a5022a5c: {""state"":1})" 711 63
+Debug "2015-06-16 17:32:14.576844" 711 AppThwackAndroidLib "setWifiEnabled: setting wifi to: true" 7775 64
+Debug "2015-06-16 17:32:14.576844" 192 WifiService "setWifiEnabled: true" 294 65
+Debug "2015-06-16 17:32:14.576844" 192 WifiService "****************setWifiEnabled(), allowWifi****************true" 294 66
+Error "2015-06-16 17:32:14.586844" 268 WifiSettingButton onReceive()-S:2 268 67
+Debug "2015-06-16 17:32:14.646844" 711 AppThwack /task/c8a044f08249cb4584cc65ec7acdb608a5022a5c/status 7779 68
+Debug "2015-06-16 17:32:14.686844" 7760 ProgramMonitor " onReceive -no" 7760 69
+Debug "2015-06-16 17:32:14.686844" 7760 ProgramMonitor "appWidgetIds.length : 0" 7760 70
+Debug "2015-06-16 17:32:14.686844" 7760 ProgramMonitor " onReceive - action:com.sec.android.app.controlpanel.RUNNING_PROGRAM_REQ" 7760 71
+Info "2015-06-16 17:32:14.736844" 7784 wlan_tool "wifi loading" 7784 72
+Info "2015-06-16 17:32:14.786844" 7789 wlan_tool "Driver is initialized. load it" 7789 73
+Debug "2015-06-16 17:32:14.826844" 711 AppThwack /task/c8a044f08249cb4584cc65ec7acdb608a5022a5c/status 7791 74
+Debug "2015-06-16 17:32:15.256844" 7760 ProgramMonitor " onReceive - action:com.sec.android.app.controlpanel.RUNNING_PROGRAM_ACK" 7760 75
+Debug "2015-06-16 17:32:15.256844" 7760 ProgramMonitor updateNumberText 7760 76
+Debug "2015-06-16 17:32:15.326844" 7760 ProgramMonitor updateWidget 7760 77
+Debug "2015-06-16 17:32:15.326844" 7760 ProgramMonitor "updateWidget - appWidgetIds == null -->> resetting" 7760 78
+Debug "2015-06-16 17:32:15.326844" 7760 ProgramMonitor "updateWidget - appWidgetIds.length == 0" 7760 79
+Debug "2015-06-16 17:32:15.826844" 7760 ProgramMonitor updateNumberText 7760 80
+Debug "2015-06-16 17:32:15.936844" 711 AppThwack /task/c8a044f08249cb4584cc65ec7acdb608a5022a5c/status 7796 81
+Debug "2015-06-16 17:32:16.076844" 7760 ProgramMonitor updateWidget 7760 82
+Debug "2015-06-16 17:32:16.076844" 7760 ProgramMonitor "updateWidget - appWidgetIds.length == 0" 7760 83
+Debug "2015-06-16 17:32:16.266844" 7760 ProgramMonitor " onReceive - action:com.sec.android.app.controlpanel.CPU_USAGE_WARN" 7760 84
+Info "2015-06-16 17:32:16.266844" 7760 ProgramMonitor cpu_usage_wan 7760 85
+Debug "2015-06-16 17:32:16.266844" 7760 ProgramMonitor updateSlideText 7760 86
+Debug "2015-06-16 17:32:16.266844" 7760 ProgramMonitor updateDefaultText 7760 87
+Debug "2015-06-16 17:32:16.266844" 7760 ProgramMonitor updateWidget 7760 88
+Debug "2015-06-16 17:32:16.266844" 7760 ProgramMonitor "updateWidget - appWidgetIds == null -->> resetting" 7760 89
+Debug "2015-06-16 17:32:16.266844" 7760 ProgramMonitor "updateWidget - appWidgetIds.length == 0" 7760 90
+Info "2015-06-16 17:32:16.386844" 7802 wlan_tool "ar6000 driver loaded" 7802 91
+Debug "2015-06-16 17:32:16.496844" 192 WifiService "persistWifiEnabled : true" 260 92
+Info "2015-06-16 17:32:16.526844" 7805 wpa_supplicant "sun_path = wpa_DIR=/data/misc/wifi GROUP=wifi" 7805 93
+Info "2015-06-16 17:32:16.536844" 7805 wpa_supplicant "[wpa_supplicant_ctrl_iface_init] buf = DIR=/data/misc/wifi GROUP=wifi" 7805 94
+Debug "2015-06-16 17:32:16.536844" 192 WifiService "persistWifiEnabled : mPersistState = On" 260 95
+Error "2015-06-16 17:32:16.546844" 268 WifiSettingButton onReceive()-S:3 268 96
+Info "2015-06-16 17:32:16.566844" 7805 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=-1 state=2 BSSID=00:00:00:00:00:00" 7805 97
+Info "2015-06-16 17:32:16.566844" 7805 wpa_supplicant CTRL-EVENT-NO-CONNECTION 7805 98
+Debug "2015-06-16 17:32:16.586844" 711 AppThwackAndroidLib "setWifiEnabled: wifi is: true" 7775 99
+Debug "2015-06-16 17:32:16.596844" 192 WifiService "[mPersistState] : On" 260 100
+Verbose "2015-06-16 17:32:16.596844" 192 WifiStateTracker "Connection to supplicant established, state=SCANNING" 258 101
+Debug "2015-06-16 17:32:16.596844" 192 NetworkStateTracker "setDetailed state, old =DISCONNECTED and new state=SCANNING" 258 102
+Warning "2015-06-16 17:32:16.596844" 192 BackupManagerService "dataChanged but no participant pkg='com.android.providers.settings' uid=10077" 198 103
+Debug "2015-06-16 17:32:16.606844" 192 WifiService "[mPersistState] : On" 260 104
+Info "2015-06-16 17:32:16.816844" 711 AppThwackAndroidLib "Attempting Wi-Fi connection: attempt 1 out of 2." 7775 105
+Debug "2015-06-16 17:32:16.816844" 711 AppThwackAndroidLib "connectToNetwork: ssid: AppThwack" 7775 106
+Debug "2015-06-16 17:32:16.816844" 711 AppThwackAndroidLib "getWifiConfigBySsid: ssid: AppThwack" 7775 107
+Warning "2015-06-16 17:32:16.816844" 192 BackupManagerService "dataChanged but no participant pkg='com.android.providers.settings' uid=10077" 3190 108
+Debug "2015-06-16 17:32:16.816844" 192 ConnectivityService "Dropping ConnectivityChange for WIFI: DISCONNECTED/SCANNING" 258 109
+Debug "2015-06-16 17:32:16.826844" 711 AppThwackAndroidLib "networks: 1" 7775 110
+Debug "2015-06-16 17:32:16.826844" 711 AppThwackAndroidLib "getWifiConfigBySsid: checking: ""AppThwack"" against ""AppThwack""" 7775 111
+Debug "2015-06-16 17:32:16.826844" 711 AppThwackAndroidLib "Network profile found!" 7775 112
+Info "2015-06-16 17:32:16.826844" 7805 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=-1 state=8 BSSID=00:00:00:00:00:00" 7805 113
+Verbose "2015-06-16 17:32:16.826844" 192 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=-1 state=8 BSSID=00:00:00:00:00:00]" 7808 114
+Verbose "2015-06-16 17:32:16.826844" 192 WifiStateTracker "Changing supplicant state: SCANNING ==> DORMANT" 258 115
+Debug "2015-06-16 17:32:16.826844" 192 WifiStateTracker "Reset connections and stopping DHCP" 258 116
+Info "2015-06-16 17:32:16.836844" 7805 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=-1 state=8 BSSID=00:00:00:00:00:00" 7805 117
+Verbose "2015-06-16 17:32:16.836844" 192 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=-1 state=8 BSSID=00:00:00:00:00:00]" 7808 118
+Info "2015-06-16 17:32:16.836844" 7805 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=-1 state=2 BSSID=00:00:00:00:00:00" 7805 119
+Verbose "2015-06-16 17:32:16.836844" 192 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=-1 state=2 BSSID=00:00:00:00:00:00]" 7808 120
+Info "2015-06-16 17:32:16.846844" 7805 wpa_supplicant WPS-AP-AVAILABLE 7805 121
+Info "2015-06-16 17:32:16.846844" 7805 wpa_supplicant "Trying to associate with 00:26:cb:a0:1e:80 (SSID='AppThwack' freq=2412 MHz)" 7805 122
+Info "2015-06-16 17:32:16.846844" 7805 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=-1 state=3 BSSID=00:26:cb:a0:1e:80" 7805 123
+Verbose "2015-06-16 17:32:16.846844" 192 WifiMonitor "Event [WPS-AP-AVAILABLE ]" 7808 124
+Verbose "2015-06-16 17:32:16.846844" 192 WifiMonitor "Event [Trying to associate with 00:26:cb:a0:1e:80 (SSID='AppThwack' freq=2412 MHz)]" 7808 125
+Verbose "2015-06-16 17:32:16.846844" 192 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=-1 state=3 BSSID=00:26:cb:a0:1e:80]" 7808 126
+Debug "2015-06-16 17:32:16.936844" 192 WifiStateTracker "Disabling interface" 258 127
+Debug "2015-06-16 17:32:16.936844" 192 NetworkStateTracker "setDetailed state, old =SCANNING and new state=FAILED" 258 128
+Info "2015-06-16 17:32:16.946844" 7805 wpa_supplicant "Wireless event: new AP: 00:26:cb:a0:1e:80" 7805 129
+Info "2015-06-16 17:32:16.946844" 7805 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=4 BSSID=00:26:cb:a0:1e:80" 7805 130
+Verbose "2015-06-16 17:32:16.946844" 192 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=0 state=4 BSSID=00:26:cb:a0:1e:80]" 7808 131
+Info "2015-06-16 17:32:16.946844" 7805 wpa_supplicant "Associated with 00:26:cb:a0:1e:80" 7805 132
+Verbose "2015-06-16 17:32:16.956844" 192 WifiMonitor "Event [Associated with 00:26:cb:a0:1e:80]" 7808 133
+Verbose "2015-06-16 17:32:16.986844" 192 WifiStateTracker "Changing supplicant state: DORMANT ==> DORMANT" 258 134
+Verbose "2015-06-16 17:32:16.986844" 192 WifiStateTracker "Changing supplicant state: DORMANT ==> SCANNING" 258 135
+Debug "2015-06-16 17:32:16.986844" 192 NetworkStateTracker "setDetailed state, old =FAILED and new state=SCANNING" 258 136
+Verbose "2015-06-16 17:32:17.016844" 192 WifiStateTracker "Changing supplicant state: SCANNING ==> ASSOCIATING" 258 137
+Debug "2015-06-16 17:32:17.016844" 192 NetworkStateTracker "setDetailed state, old =SCANNING and new state=CONNECTING" 258 138
+Verbose "2015-06-16 17:32:17.026844" 192 WifiStateTracker "Changing supplicant state: ASSOCIATING ==> ASSOCIATED" 258 139
+Debug "2015-06-16 17:32:17.026844" 192 NetworkStateTracker "setDetailed state, old =CONNECTING and new state=CONNECTING" 258 140
+Debug "2015-06-16 17:32:17.026844" 192 ConnectivityService "ConnectivityChange for WIFI: CONNECTING/CONNECTING" 258 141
+Debug "2015-06-16 17:32:17.026844" 192 ConnectivityService "Dropping ConnectivityChange for WIFI: CONNECTING/CONNECTING" 258 142
+Debug "2015-06-16 17:32:17.026844" 192 ConnectivityService "Dropping ConnectivityChange for WIFI: CONNECTING/CONNECTING" 258 143
+Debug "2015-06-16 17:32:17.086844" 711 AppThwack /task/c8a044f08249cb4584cc65ec7acdb608a5022a5c/status 7812 144
+Debug "2015-06-16 17:32:17.936844" 7760 ProgramMonitor " onReceive - action:com.sec.android.app.controlpanel.CPU_USAGE_WARN" 7760 145
+Info "2015-06-16 17:32:17.936844" 7760 ProgramMonitor cpu_usage_wan 7760 146
+Debug "2015-06-16 17:32:17.936844" 7760 ProgramMonitor updateSlideText 7760 147
+Debug "2015-06-16 17:32:17.936844" 7760 ProgramMonitor updateDefaultText 7760 148
+Debug "2015-06-16 17:32:17.936844" 7760 ProgramMonitor updateWidget 7760 149
+Debug "2015-06-16 17:32:17.936844" 7760 ProgramMonitor "updateWidget - appWidgetIds == null -->> resetting" 7760 150
+Debug "2015-06-16 17:32:17.936844" 7760 ProgramMonitor "updateWidget - appWidgetIds.length == 0" 7760 151
+Debug "2015-06-16 17:32:18.256844" 711 AppThwack /task/c8a044f08249cb4584cc65ec7acdb608a5022a5c/status 7817 152
+Debug "2015-06-16 17:32:19.356844" 711 AppThwack /task/c8a044f08249cb4584cc65ec7acdb608a5022a5c/status 7820 153
+Info "2015-06-16 17:32:19.826844" 7805 wpa_supplicant "Wireless event: new AP: 00:26:cb:a0:1e:80" 7805 154
+Info "2015-06-16 17:32:19.826844" 7805 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=4 BSSID=00:00:00:00:00:00" 7805 155
+Info "2015-06-16 17:32:19.826844" 7805 wpa_supplicant "Associated with 00:26:cb:a0:1e:80" 7805 156
+Verbose "2015-06-16 17:32:19.826844" 192 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=0 state=4 BSSID=00:00:00:00:00:00]" 7808 157
+Verbose "2015-06-16 17:32:19.826844" 192 WifiMonitor "Event [Associated with 00:26:cb:a0:1e:80]" 7808 158
+Verbose "2015-06-16 17:32:19.826844" 192 WifiStateTracker "Changing supplicant state: ASSOCIATED ==> ASSOCIATED" 258 159
+Debug "2015-06-16 17:32:20.486844" 711 AppThwack /task/c8a044f08249cb4584cc65ec7acdb608a5022a5c/status 7823 160
+Debug "2015-06-16 17:32:21.596844" 192 WifiService "[mPersistState] : On" 260 161
+Debug "2015-06-16 17:32:21.626844" 192 WifiService "[mPersistState] : On" 260 162
+Debug "2015-06-16 17:32:21.636844" 711 AppThwack /task/c8a044f08249cb4584cc65ec7acdb608a5022a5c/status 7826 163
+Info "2015-06-16 17:32:22.816844" 7805 wpa_supplicant "Wireless event: new AP: 00:26:cb:a0:1e:80" 7805 164
+Info "2015-06-16 17:32:22.816844" 7805 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=4 BSSID=00:00:00:00:00:00" 7805 165
+Info "2015-06-16 17:32:22.816844" 7805 wpa_supplicant "Associated with 00:26:cb:a0:1e:80" 7805 166
+Verbose "2015-06-16 17:32:22.816844" 192 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=0 state=4 BSSID=00:00:00:00:00:00]" 7808 167
+Verbose "2015-06-16 17:32:22.816844" 192 WifiStateTracker "Changing supplicant state: ASSOCIATED ==> ASSOCIATED" 258 168
+Verbose "2015-06-16 17:32:22.816844" 192 WifiMonitor "Event [Associated with 00:26:cb:a0:1e:80]" 7808 169
+Debug "2015-06-16 17:32:22.826844" 711 AppThwack /task/c8a044f08249cb4584cc65ec7acdb608a5022a5c/status 7829 170
+Debug "2015-06-16 17:32:23.896844" 192 BatteryService "update start" 242 171
+Debug "2015-06-16 17:32:23.916844" 192 BatteryService "update start" 242 172
+Debug "2015-06-16 17:32:23.956844" 192 BatteryService "update start" 242 173
+Debug "2015-06-16 17:32:23.996844" 711 AppThwack /task/c8a044f08249cb4584cc65ec7acdb608a5022a5c/status 7834 174
+Debug "2015-06-16 17:32:25.106844" 711 AppThwack /task/c8a044f08249cb4584cc65ec7acdb608a5022a5c/status 7835 175
+Info "2015-06-16 17:32:25.816844" 7805 wpa_supplicant "Wireless event: new AP: 00:26:cb:a0:1e:80" 7805 176
+Info "2015-06-16 17:32:25.816844" 7805 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=4 BSSID=00:00:00:00:00:00" 7805 177
+Info "2015-06-16 17:32:25.816844" 7805 wpa_supplicant "Associated with 00:26:cb:a0:1e:80" 7805 178
+Verbose "2015-06-16 17:32:25.816844" 192 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=0 state=4 BSSID=00:00:00:00:00:00]" 7808 179
+Verbose "2015-06-16 17:32:25.816844" 192 WifiMonitor "Event [Associated with 00:26:cb:a0:1e:80]" 7808 180
+Verbose "2015-06-16 17:32:25.816844" 192 WifiStateTracker "Changing supplicant state: ASSOCIATED ==> ASSOCIATED" 258 181
+Debug "2015-06-16 17:32:26.326844" 711 AppThwack /task/c8a044f08249cb4584cc65ec7acdb608a5022a5c/status 7840 182
+Info "2015-06-16 17:32:26.876844" 7805 wpa_supplicant "Wireless event: new AP: 00:00:00:00:00:00" 7805 183
+Info "2015-06-16 17:32:26.876844" 7805 wpa_supplicant "CTRL-EVENT-DISCONNECTED - Disconnect event - remove keys" 7805 184
+Info "2015-06-16 17:32:26.876844" 7805 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=0 BSSID=00:00:00:00:00:00" 7805 185
+Verbose "2015-06-16 17:32:26.876844" 192 WifiMonitor "Event [CTRL-EVENT-DISCONNECTED - Disconnect event - remove keys]" 7808 186
+Verbose "2015-06-16 17:32:26.876844" 192 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=0 state=0 BSSID=00:00:00:00:00:00]" 7808 187
+Verbose "2015-06-16 17:32:26.876844" 192 WifiStateTracker "New network state is DISCONNECTED" 258 188
+Verbose "2015-06-16 17:32:26.876844" 192 WifiStateTracker "Changing supplicant state: ASSOCIATED ==> DISCONNECTED" 258 189
+Info "2015-06-16 17:32:26.976844" 7805 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=2 BSSID=00:00:00:00:00:00" 7805 190
+Verbose "2015-06-16 17:32:26.976844" 192 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=0 state=2 BSSID=00:00:00:00:00:00]" 7808 191
+Verbose "2015-06-16 17:32:26.976844" 192 WifiStateTracker "Changing supplicant state: DISCONNECTED ==> SCANNING" 258 192
+Info "2015-06-16 17:32:27.256844" 7805 wpa_supplicant WPS-AP-AVAILABLE 7805 193
+Info "2015-06-16 17:32:27.256844" 7805 wpa_supplicant "Trying to associate with 00:26:cb:a0:1e:80 (SSID='AppThwack' freq=2412 MHz)" 7805 194
+Info "2015-06-16 17:32:27.256844" 7805 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=3 BSSID=00:26:cb:a0:1e:80" 7805 195
+Verbose "2015-06-16 17:32:27.266844" 192 WifiMonitor "Event [WPS-AP-AVAILABLE ]" 7808 196
+Verbose "2015-06-16 17:32:27.266844" 192 WifiMonitor "Event [Trying to associate with 00:26:cb:a0:1e:80 (SSID='AppThwack' freq=2412 MHz)]" 7808 197
+Verbose "2015-06-16 17:32:27.276844" 192 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=0 state=3 BSSID=00:26:cb:a0:1e:80]" 7808 198
+Verbose "2015-06-16 17:32:27.286844" 192 WifiStateTracker "Changing supplicant state: SCANNING ==> ASSOCIATING" 258 199
+Info "2015-06-16 17:32:27.326844" 7805 wpa_supplicant "Wireless event: new AP: 00:26:cb:a0:1e:80" 7805 200
+Info "2015-06-16 17:32:27.326844" 7805 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=4 BSSID=00:26:cb:a0:1e:80" 7805 201
+Info "2015-06-16 17:32:27.326844" 7805 wpa_supplicant "Associated with 00:26:cb:a0:1e:80" 7805 202
+Verbose "2015-06-16 17:32:27.336844" 192 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=0 state=4 BSSID=00:26:cb:a0:1e:80]" 7808 203
+Verbose "2015-06-16 17:32:27.336844" 192 WifiStateTracker "Changing supplicant state: ASSOCIATING ==> ASSOCIATED" 258 204
+Info "2015-06-16 17:32:27.336844" 7805 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=5 BSSID=00:00:00:00:00:00" 7805 205
+Verbose "2015-06-16 17:32:27.346844" 192 WifiMonitor "Event [Associated with 00:26:cb:a0:1e:80]" 7808 206
+Verbose "2015-06-16 17:32:27.346844" 192 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=0 state=5 BSSID=00:00:00:00:00:00]" 7808 207
+Verbose "2015-06-16 17:32:27.346844" 192 WifiStateTracker "Changing supplicant state: ASSOCIATED ==> FOUR_WAY_HANDSHAKE" 258 208
+Info "2015-06-16 17:32:27.366844" 7805 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=5 BSSID=00:00:00:00:00:00" 7805 209
+Verbose "2015-06-16 17:32:27.366844" 192 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=0 state=5 BSSID=00:00:00:00:00:00]" 7808 210
+Verbose "2015-06-16 17:32:27.366844" 192 WifiStateTracker "Changing supplicant state: FOUR_WAY_HANDSHAKE ==> FOUR_WAY_HANDSHAKE" 258 211
+Info "2015-06-16 17:32:27.376844" 7805 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=6 BSSID=00:00:00:00:00:00" 7805 212
+Verbose "2015-06-16 17:32:27.376844" 192 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=0 state=6 BSSID=00:00:00:00:00:00]" 7808 213
+Verbose "2015-06-16 17:32:27.376844" 192 WifiStateTracker "Changing supplicant state: FOUR_WAY_HANDSHAKE ==> GROUP_HANDSHAKE" 258 214
+Info "2015-06-16 17:32:27.376844" 7805 wpa_supplicant "WPA: Key negotiation completed with 00:26:cb:a0:1e:80 [PTK=CCMP GTK=TKIP]" 7805 215
+Verbose "2015-06-16 17:32:27.376844" 192 WifiMonitor "Event [WPA: Key negotiation completed with 00:26:cb:a0:1e:80 [PTK=CCMP GTK=TKIP]]" 7808 216
+Info "2015-06-16 17:32:27.376844" 7805 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=7 BSSID=00:00:00:00:00:00" 7805 217
+Verbose "2015-06-16 17:32:27.376844" 192 WifiMonitor "Event [CTRL-EVENT-STATE-CHANGE id=0 state=7 BSSID=00:00:00:00:00:00]" 7808 218
+Verbose "2015-06-16 17:32:27.376844" 192 WifiStateTracker "Changing supplicant state: GROUP_HANDSHAKE ==> COMPLETED" 258 219
+Info "2015-06-16 17:32:27.376844" 7805 wpa_supplicant "CTRL-EVENT-CONNECTED - Connection to 00:26:cb:a0:1e:80 completed (auth) [id=0 id_str=]" 7805 220
+Verbose "2015-06-16 17:32:27.376844" 192 WifiMonitor "Event [CTRL-EVENT-CONNECTED - Connection to 00:26:cb:a0:1e:80 completed (auth) [id=0 id_str=]]" 7808 221
+Verbose "2015-06-16 17:32:27.376844" 192 WifiStateTracker "New network state is CONNECTED" 258 222
+Debug "2015-06-16 17:32:27.386844" 192 WifiStateTracker "Reset connections and stopping DHCP" 258 223
+Debug "2015-06-16 17:32:27.496844" 192 NetworkStateTracker "setDetailed state, old =CONNECTING and new state=DISCONNECTED" 258 224
+Debug "2015-06-16 17:32:27.506844" 192 NetworkStateTracker "setDetailed state, old =CONNECTING and new state=OBTAINING_IPADDR" 258 225
+Debug "2015-06-16 17:32:27.506844" 192 WifiStateTracker "DhcpHandler: DHCP request started" 7811 226
+Error "2015-06-16 17:32:27.506844" 192 libnetutils "dhcp start cmd interface : [dhcpcd:-ABIK wlan0]" 7811 227
+Debug "2015-06-16 17:32:27.546844" 192 ConnectivityService "Dropping ConnectivityChange for WIFI: CONNECTING/OBTAINING_IPADDR" 258 228
+Debug "2015-06-16 17:32:27.546844" 192 ConnectivityService "Dropping ConnectivityChange for WIFI: CONNECTING/OBTAINING_IPADDR" 258 229
+Debug "2015-06-16 17:32:27.566844" 711 AppThwack /task/c8a044f08249cb4584cc65ec7acdb608a5022a5c/status 7844 230
+Info "2015-06-16 17:32:27.576844" 7843 "dhcpcd  " "dhcpcd 4.0.15 starting" 7843 231
+Info "2015-06-16 17:32:27.656844" 7843 "dhcpcd  " "AP Address Get.111... 0:26:cb..." 7843 232
+Info "2015-06-16 17:32:27.656844" 7843 "dhcpcd  " "if(wlan0)bssid info get Success. (MAC : 00:26:CB:A0:1E:80" 7843 233
+Info "2015-06-16 17:32:27.656844" 7843 "dhcpcd  " "STATE_REQUESTING (addr : B20410AC maks: FFFF)" 7843 234
+Info "2015-06-16 17:32:27.656844" 7843 "dhcpcd  " "Current ST = 2" 7843 235
+Warning "2015-06-16 17:32:27.656844" 7843 "dhcpcd  " "host does not support a monotonic clock - timing can skew" 7843 236
+Info "2015-06-16 17:32:27.716844" 7843 "dhcpcd  " "acknowledged 172.16.4.178 from 1.1.1.1" 7843 237
+Info "2015-06-16 17:32:27.716844" 7843 "dhcpcd  " "save_listdata 5 : b20410ac" 7843 238
+Info "2015-06-16 17:32:27.716844" 7843 "dhcpcd  " "leased 172.16.4.178 for 600 seconds" 7843 239
+Verbose "2015-06-16 17:32:27.926844" 192 WifiStateTracker "DhcpHandler: DHCP request succeeded" 7811 240
+Debug "2015-06-16 17:32:27.926844" 192 NetworkStateTracker "setDetailed state, old =OBTAINING_IPADDR and new state=CONNECTED" 258 241
+Verbose "2015-06-16 17:32:27.936844" 192 WifiStateTracker "IP configuration: ipaddr 172.16.4.178 gateway 172.16.0.1 netmask 255.255.0.0 dns1 75.75.75.75 dns2 75.75.75.76 DHCP server 1.1.1.1 lease 600 seconds" 258 242
+Verbose "2015-06-16 17:32:27.936844" 192 NetworkStateTracker "Setting TCP values: [4095,87380,393216,4096,16384,110208] which comes from [net.tcp.buffersize.wifi]" 258 243
+Debug "2015-06-16 17:32:27.936844" 192 ConnectivityService "ConnectivityChange for WIFI: CONNECTED/CONNECTED" 258 244
+Debug "2015-06-16 17:32:27.946844" 192 ConnectivityService "adding dns 75.75.75.75 for WIFI" 258 245
+Debug "2015-06-16 17:32:27.956844" 192 WifiWatchdogService "(android.server.ServerThread) AppThwack (00:26:cb:a0:1e:80) does not require the watchdog" 213 246
+Debug "2015-06-16 17:32:27.966844" 192 NetworkStateTracker "addDefaultRoute for WIFI(null), GatewayAddr=0 mDefaultRouteSet=false" 258 247
+Debug "2015-06-16 17:32:27.966844" 192 Tethering "MasterInitialState.processMessage what=3" 261 248
+Debug "2015-06-16 17:32:27.966844" 192 ConnectivityService "adding dns 75.75.75.76 for WIFI" 258 249
+Debug "2015-06-16 17:32:27.976844" 326 GTalkService "##### Network broadcast (connected=true) type=WIFI, state=CONNECTED" 326 250
+Debug "2015-06-16 17:32:27.986844" 192 GpsLocationProvider "updateNetworkState available info: NetworkInfo: type: WIFI[UMTS], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true" 322 251
+Debug "2015-06-16 17:32:28.006844" 711 AppThwackAndroidLib "connected: true" 7775 252
+Debug "2015-06-16 17:32:28.006844" 711 AppThwackAndroidLib "WiFiLock: acquire" 7775 253
+Debug "2015-06-16 17:32:28.006844" 192 WifiService "[mPersistState] : On" 260 254
+Debug "2015-06-16 17:32:28.006844" 711 AppThwackDeviceManager "taskStatus update (c8a044f08249cb4584cc65ec7acdb608a5022a5c: {""result"":""Wifi enabled: true"",""state"":2})" 711 255
+Info "2015-06-16 17:32:28.016844" 192 StatusBarManagerService "REMOVE-null , 0x7f020018" 214 256
+Info "2015-06-16 17:32:28.056844" 192 ActivityManager "Start proc com.sec.android.providers.downloads for broadcast com.sec.android.providers.downloads/.CDDownloadReceiver: pid=7875 uid=10045 gids={2001, 3003, 1015}" 197 257
+Info "2015-06-16 17:32:28.126844" 2699 DBG_WSS_DM "[DMService.java Line:1496] ProtoIsWIFIConnected WiFi Conntected" 2699 258
+Info "2015-06-16 17:32:28.146844" 7875 ActivityThread "Pub sisodownloads: com.sec.android.providers.downloads.CDDownloadProvider" 7875 259
+Verbose "2015-06-16 17:32:28.166844" 7875 SecDownloader "CDDownloadReceiver : onReceive: Receiver onConnectivity" 7875 260
+Verbose "2015-06-16 17:32:28.166844" 7875 SecDownloader "CDHelpers : isNetworkAvailable: network is available" 7875 261
+Info "2015-06-16 17:32:28.166844" 7875 SecDownloader "Broadcast: Network Up" 7875 262
+Info "2015-06-16 17:32:28.186844" 12496 MediaUploader "No need to wake up" 12496 263
+Verbose "2015-06-16 17:32:28.186844" 7875 SecDownloader "CDDownloadService : onCreate : Service onCreate" 7875 264
+Verbose "2015-06-16 17:32:28.196844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Selection (status >= '100') AND (status <= '199') AND (visibility IS NULL OR visibility == '0' OR visibility == '1')" 7875 265
+Verbose "2015-06-16 17:32:28.196844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Selection Arg null" 7875 266
+Verbose "2015-06-16 17:32:28.196844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Sort   _id and Projection [Ljava.lang.String;@40523370" 7875 267
+Verbose "2015-06-16 17:32:28.226844" 7875 SecDownloader "starting query, database is not null; projection[0] is _id; projection[1] is title; projection[2] is description; projection[3] is notificationpackage; projection[4] is notificationclass; projection[5] is current_bytes; projection[6] is total_bytes; projection[7] is status; projection[8] is _data; selection is (status >= '100') AND (status <= '199') AND (visibility IS NULL OR visibility == '0' OR visibility == '1'); selectionArgs is null; sort is _id." 7875 268
+Verbose "2015-06-16 17:32:28.236844" 7875 SecDownloader "created cursor com.sec.android.providers.downloads.CDDownloadProvider$ReadOnlyCursorWrapper@40528328 on behalf of 7875" 7875 269
+Verbose "2015-06-16 17:32:28.236844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Selection (status >= '200') AND (visibility == '1') AND (state ==  '10' OR state ==  '9')" 7875 270
+Verbose "2015-06-16 17:32:28.246844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Selection Arg null" 7875 271
+Verbose "2015-06-16 17:32:28.246844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Sort   _id and Projection [Ljava.lang.String;@40528e30" 7875 272
+Verbose "2015-06-16 17:32:28.246844" 7875 SecDownloader "starting query, database is not null; projection[0] is _id; projection[1] is title; projection[2] is description; projection[3] is notificationpackage; projection[4] is notificationclass; projection[5] is current_bytes; projection[6] is total_bytes; projection[7] is status; projection[8] is _data; projection[9] is lastmod; projection[10] is destination; selection is (status >= '200') AND (visibility == '1') AND (state ==  '10' OR state ==  '9'); selectionArgs is null; sort is _id." 7875 273
+Verbose "2015-06-16 17:32:28.246844" 7875 SecDownloader "created cursor com.sec.android.providers.downloads.CDDownloadProvider$ReadOnlyCursorWrapper@4052b810 on behalf of 7875" 7875 274
+Verbose "2015-06-16 17:32:28.246844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Selection status >= '200'" 7875 275
+Verbose "2015-06-16 17:32:28.246844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Selection Arg null" 7875 276
+Verbose "2015-06-16 17:32:28.246844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Sort   lastmod and Projection [Ljava.lang.String;@4052c010" 7875 277
+Verbose "2015-06-16 17:32:28.246844" 7875 SecDownloader "starting query, database is not null; projection[0] is _id; selection is status >= '200'; selectionArgs is null; sort is lastmod." 7875 278
+Verbose "2015-06-16 17:32:28.246844" 7875 SecDownloader "created cursor com.sec.android.providers.downloads.CDDownloadProvider$ReadOnlyCursorWrapper@4052d5e8 on behalf of 7875" 7875 279
+Verbose "2015-06-16 17:32:28.256844" 7875 SecDownloader "CDDownloadService : updateFromProvider : UpdateThread created" 7875 280
+Verbose "2015-06-16 17:32:28.256844" 7875 SecDownloader "CDDownloadService : updateFromProvider : Update started" 7875 281
+Verbose "2015-06-16 17:32:28.256844" 7875 SecDownloader "CDDownloadService : run : UpdateThread Started" 7884 282
+Verbose "2015-06-16 17:32:28.286844" 7875 SecDownloader "CDDownloadService : onStart : Service started" 7875 283
+Verbose "2015-06-16 17:32:28.286844" 7875 SecDownloader "CDDownloadService : updateFromProvider : Update started" 7875 284
+Verbose "2015-06-16 17:32:28.286844" 7875 SecDownloader "CDHelpers : isNetworkAvailable: network is available" 7884 285
+Verbose "2015-06-16 17:32:28.296844" 7875 SecDownloader "CDHelpers : isNetworkRoaming: not using mobile network" 7884 286
+Verbose "2015-06-16 17:32:28.296844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Selection null" 7884 287
+Verbose "2015-06-16 17:32:28.296844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Selection Arg null" 7884 288
+Verbose "2015-06-16 17:32:28.296844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Sort   _id and Projection null" 7884 289
+Verbose "2015-06-16 17:32:28.296844" 7875 SecDownloader "starting query, database is not null; projection is null; selection is null; selectionArgs is null; sort is _id." 7884 290
+Verbose "2015-06-16 17:32:28.306844" 7875 SecDownloader "created cursor com.sec.android.providers.downloads.CDDownloadProvider$ReadOnlyCursorWrapper@40531ae8 on behalf of 7875" 7884 291
+Verbose "2015-06-16 17:32:28.306844" 7875 SecDownloader "CDDownloadService : run : Cursor created" 7884 292
+Verbose "2015-06-16 17:32:28.316844" 7875 SecDownloader "CDDownloadService : run : isAfterLast: falseCursorSize: 0" 7884 293
+Verbose "2015-06-16 17:32:28.316844" 7875 SecDownloader "CDDownloadService : run : start of while loop for downloads" 7884 294
+Verbose "2015-06-16 17:32:28.316844" 7875 SecDownloader "CDDownloadService : run : Inserting Download" 7884 295
+Verbose "2015-06-16 17:32:28.316844" 7875 SecDownloader "CDDownloadService : insertDownload : Inserting new download in Service" 7884 296
+Verbose "2015-06-16 17:32:28.316844" 7875 SecDownloader "CDDownloadService : insertDownload : adding new entry" 7884 297
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "ID      : 1" 7884 298
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "URI     : yes" 7884 299
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "NO_INTEG: true" 7884 300
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "HINT    : andme_signed.apk" 7884 301
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "FILENAME: /mnt/sdcard/download/andme_signed.apk" 7884 302
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "MIMETYPE: application/vnd.android.package-archive" 7884 303
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "DESTINAT: 0" 7884 304
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "VISIBILI: 0" 7884 305
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "CONTROL : 0" 7884 306
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "STATUS  : 202" 7884 307
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "FAILED_C: 0" 7884 308
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "RETRY_AF: 0" 7884 309
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "REDIRECT: 0" 7884 310
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "LAST_MOD: 1415180618781" 7884 311
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "PACKAGE : com.android.browser" 7884 312
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "CLASS   : com.android.browser.OpenDownloadReceiver" 7884 313
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "COOKIES : no" 7884 314
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "AGENT   : Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; GT-S5830L Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1" 7884 315
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "REFERER : no" 7884 316
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "TOTAL   : 828129" 7884 317
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "CURRENT : 828129" 7884 318
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "ETAG    : null" 7884 319
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "SCANNED : true" 7884 320
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "APPDATA : null" 7884 321
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "METHOD  : 0" 7884 322
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "STORAGE TYPE : 0" 7884 323
+Verbose "2015-06-16 17:32:28.326844" 7875 SecDownloader "CDDownloadService : insertDownload : Successfully Inserted new download in Service" 7884 324
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "CDDownloadService : run : start of while loop for downloads" 7884 325
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "CDDownloadService : run : Inserting Download" 7884 326
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "CDDownloadService : insertDownload : Inserting new download in Service" 7884 327
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "CDDownloadService : insertDownload : adding new entry" 7884 328
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "ID      : 2" 7884 329
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "URI     : yes" 7884 330
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "NO_INTEG: true" 7884 331
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "HINT    : andme_signed.apk" 7884 332
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "FILENAME: /mnt/sdcard/.downloadTemp/andme_signed.apk" 7884 333
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "MIMETYPE: application/vnd.android.package-archive" 7884 334
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "DESTINAT: 0" 7884 335
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "VISIBILI: 0" 7884 336
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "CONTROL : 0" 7884 337
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "STATUS  : 492" 7884 338
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "FAILED_C: 0" 7884 339
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "RETRY_AF: 0" 7884 340
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "REDIRECT: 0" 7884 341
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "LAST_MOD: 1417884711499" 7884 342
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "PACKAGE : com.android.browser" 7884 343
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "CLASS   : com.android.browser.OpenDownloadReceiver" 7884 344
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "COOKIES : no" 7884 345
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "AGENT   : Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; GT-S5830L Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1" 7884 346
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "REFERER : no" 7884 347
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "TOTAL   : 828129" 7884 348
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "CURRENT : 486200" 7884 349
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "ETAG    : null" 7884 350
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "SCANNED : false" 7884 351
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "APPDATA : null" 7884 352
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "METHOD  : 0" 7884 353
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "STORAGE TYPE : 0" 7884 354
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "CDDownloadService : insertDownload : Successfully Inserted new download in Service" 7884 355
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "CDDownloadService : run : start of while loop for downloads" 7884 356
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "CDDownloadService : run : Inserting Download" 7884 357
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "CDDownloadService : insertDownload : Inserting new download in Service" 7884 358
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "CDDownloadService : insertDownload : adding new entry" 7884 359
+Verbose "2015-06-16 17:32:28.336844" 7875 SecDownloader "ID      : 3" 7884 360
+Verbose "2015-06-16 17:32:28.346844" 7875 SecDownloader "URI     : yes" 7884 361
+Verbose "2015-06-16 17:32:28.346844" 7875 SecDownloader "NO_INTEG: true" 7884 362
+Verbose "2015-06-16 17:32:28.346844" 7875 SecDownloader "HINT    : FlashPlayer.apk" 7884 363
+Verbose "2015-06-16 17:32:28.346844" 7875 SecDownloader "FILENAME: /mnt/sdcard/download/FlashPlayer.apk" 7884 364
+Verbose "2015-06-16 17:32:28.346844" 7875 SecDownloader "MIMETYPE: application/vnd.android.package-archive" 7884 365
+Verbose "2015-06-16 17:32:28.346844" 7875 SecDownloader "DESTINAT: 0" 7884 366
+Verbose "2015-06-16 17:32:28.346844" 7875 SecDownloader "VISIBILI: 0" 7884 367
+Verbose "2015-06-16 17:32:28.346844" 7875 SecDownloader "CONTROL : 0" 7884 368
+Verbose "2015-06-16 17:32:28.346844" 7875 SecDownloader "STATUS  : 202" 7884 369
+Verbose "2015-06-16 17:32:28.346844" 7875 SecDownloader "FAILED_C: 0" 7884 370
+Verbose "2015-06-16 17:32:28.346844" 7875 SecDownloader "RETRY_AF: 0" 7884 371
+Verbose "2015-06-16 17:32:28.356844" 7875 SecDownloader "REDIRECT: 0" 7884 372
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "LAST_MOD: 1421729209859" 7884 373
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "PACKAGE : com.android.browser" 7884 374
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "CLASS   : com.android.browser.OpenDownloadReceiver" 7884 375
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "COOKIES : no" 7884 376
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "AGENT   : Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; GT-S5830L Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1" 7884 377
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "REFERER : no" 7884 378
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "TOTAL   : 4700640" 7884 379
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "CURRENT : 4700640" 7884 380
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "ETAG    : null" 7884 381
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "SCANNED : true" 7884 382
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "APPDATA : null" 7884 383
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "METHOD  : 0" 7884 384
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "STORAGE TYPE : 0" 7884 385
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "CDDownloadService : insertDownload : Successfully Inserted new download in Service" 7884 386
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "CDDownloadService : run : start of while loop for downloads" 7884 387
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "CDDownloadService : run : Inserting Download" 7884 388
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "CDDownloadService : insertDownload : Inserting new download in Service" 7884 389
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "CDDownloadService : insertDownload : adding new entry" 7884 390
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "ID      : 4" 7884 391
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "URI     : yes" 7884 392
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "NO_INTEG: true" 7884 393
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "HINT    : wodedagong.apk" 7884 394
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "FILENAME: /mnt/sdcard/download/wodedagong.apk" 7884 395
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "MIMETYPE: application/vnd.android.package-archive" 7884 396
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "DESTINAT: 0" 7884 397
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "VISIBILI: 0" 7884 398
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "CONTROL : 0" 7884 399
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "STATUS  : 202" 7884 400
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "FAILED_C: 0" 7884 401
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "RETRY_AF: 0" 7884 402
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "REDIRECT: 0" 7884 403
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "LAST_MOD: 1428333009196" 7884 404
+Verbose "2015-06-16 17:32:28.366844" 7875 SecDownloader "PACKAGE : com.android.browser" 7884 405
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "CLASS   : com.android.browser.OpenDownloadReceiver" 7884 406
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "COOKIES : no" 7884 407
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "AGENT   : Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; GT-S5830L Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1" 7884 408
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "REFERER : no" 7884 409
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "TOTAL   : 1399414" 7884 410
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "CURRENT : 1399414" 7884 411
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "ETAG    : null" 7884 412
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "SCANNED : true" 7884 413
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "APPDATA : null" 7884 414
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "METHOD  : 0" 7884 415
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "STORAGE TYPE : 0" 7884 416
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "CDDownloadService : insertDownload : Successfully Inserted new download in Service" 7884 417
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "CDDownloadService : run : start of while loop for downloads" 7884 418
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "CDDownloadService : run : Inserting Download" 7884 419
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "CDDownloadService : insertDownload : Inserting new download in Service" 7884 420
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "CDDownloadService : insertDownload : adding new entry" 7884 421
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "ID      : 5" 7884 422
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "URI     : yes" 7884 423
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "NO_INTEG: true" 7884 424
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "HINT    : andme_signed.apk" 7884 425
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "FILENAME: /mnt/sdcard/download/andme_signed.apk" 7884 426
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "MIMETYPE: application/vnd.android.package-archive" 7884 427
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "DESTINAT: 0" 7884 428
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "VISIBILI: 0" 7884 429
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "CONTROL : 0" 7884 430
+Verbose "2015-06-16 17:32:28.376844" 7875 SecDownloader "STATUS  : 202" 7884 431
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "FAILED_C: 0" 7884 432
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "RETRY_AF: 0" 7884 433
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "REDIRECT: 0" 7884 434
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "LAST_MOD: 1432260224429" 7884 435
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "PACKAGE : com.android.browser" 7884 436
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "CLASS   : com.android.browser.OpenDownloadReceiver" 7884 437
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "COOKIES : no" 7884 438
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "AGENT   : Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; GT-S5830L Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1" 7884 439
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "REFERER : no" 7884 440
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "TOTAL   : 828129" 7884 441
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "CURRENT : 828129" 7884 442
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "ETAG    : null" 7884 443
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "SCANNED : true" 7884 444
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "APPDATA : null" 7884 445
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "METHOD  : 0" 7884 446
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "STORAGE TYPE : 0" 7884 447
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "CDDownloadService : insertDownload : Successfully Inserted new download in Service" 7884 448
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "CDDownloadService : run : Update Notification Begin" 7884 449
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Selection (status >= '100') AND (status <= '199') AND (visibility IS NULL OR visibility == '0' OR visibility == '1')" 7884 450
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Selection Arg null" 7884 451
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Sort   _id and Projection [Ljava.lang.String;@4053a218" 7884 452
+Verbose "2015-06-16 17:32:28.386844" 7875 SecDownloader "starting query, database is not null; projection[0] is _id; projection[1] is title; projection[2] is description; projection[3] is notificationpackage; projection[4] is notificationclass; projection[5] is current_bytes; projection[6] is total_bytes; projection[7] is status; projection[8] is _data; selection is (status >= '100') AND (status <= '199') AND (visibility IS NULL OR visibility == '0' OR visibility == '1'); selectionArgs is null; sort is _id." 7884 453
+Verbose "2015-06-16 17:32:28.396844" 7875 SecDownloader "created cursor com.sec.android.providers.downloads.CDDownloadProvider$ReadOnlyCursorWrapper@4053c948 on behalf of 7875" 7884 454
+Verbose "2015-06-16 17:32:28.396844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Selection (status >= '200') AND (visibility == '1') AND (state ==  '10' OR state ==  '9')" 7884 455
+Verbose "2015-06-16 17:32:28.406844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Selection Arg null" 7884 456
+Verbose "2015-06-16 17:32:28.406844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Sort   _id and Projection [Ljava.lang.String;@4053d170" 7884 457
+Verbose "2015-06-16 17:32:28.406844" 7875 SecDownloader "starting query, database is not null; projection[0] is _id; projection[1] is title; projection[2] is description; projection[3] is notificationpackage; projection[4] is notificationclass; projection[5] is current_bytes; projection[6] is total_bytes; projection[7] is status; projection[8] is _data; projection[9] is lastmod; projection[10] is destination; selection is (status >= '200') AND (visibility == '1') AND (state ==  '10' OR state ==  '9'); selectionArgs is null; sort is _id." 7884 458
+Verbose "2015-06-16 17:32:28.406844" 7875 SecDownloader "created cursor com.sec.android.providers.downloads.CDDownloadProvider$ReadOnlyCursorWrapper@4053f7a0 on behalf of 7875" 7884 459
+Verbose "2015-06-16 17:32:28.406844" 7875 SecDownloader "CDDownloadService : run : Update Notification End" 7884 460
+Verbose "2015-06-16 17:32:28.406844" 7875 SecDownloader "CDHelpers : isNetworkAvailable: network is available" 7884 461
+Verbose "2015-06-16 17:32:28.416844" 7875 SecDownloader "CDHelpers : isNetworkRoaming: not using mobile network" 7884 462
+Verbose "2015-06-16 17:32:28.416844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Selection null" 7884 463
+Verbose "2015-06-16 17:32:28.416844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Selection Arg null" 7884 464
+Verbose "2015-06-16 17:32:28.416844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Sort   _id and Projection null" 7884 465
+Verbose "2015-06-16 17:32:28.416844" 7875 SecDownloader "starting query, database is not null; projection is null; selection is null; selectionArgs is null; sort is _id." 7884 466
+Verbose "2015-06-16 17:32:28.416844" 7875 SecDownloader "created cursor com.sec.android.providers.downloads.CDDownloadProvider$ReadOnlyCursorWrapper@405425a0 on behalf of 7875" 7884 467
+Verbose "2015-06-16 17:32:28.416844" 7875 SecDownloader "CDDownloadService : run : Cursor created" 7884 468
+Verbose "2015-06-16 17:32:28.416844" 7875 SecDownloader "CDDownloadService : run : isAfterLast: falseCursorSize: 5" 7884 469
+Verbose "2015-06-16 17:32:28.416844" 7875 SecDownloader "CDDownloadService : run : start of while loop for downloads" 7884 470
+Verbose "2015-06-16 17:32:28.416844" 7875 SecDownloader "UpdateThread Run() Update Download Called Begin" 7884 471
+Verbose "2015-06-16 17:32:28.416844" 7875 SecDownloader "CDDownloadService : updateDownload : Updating a download in Service" 7884 472
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "CDDownloadService : updateDownload : Successfully Updated a download in Service" 7884 473
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "CDDownloadService : run : start of while loop for downloads" 7884 474
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "UpdateThread Run() Update Download Called Begin" 7884 475
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "CDDownloadService : updateDownload : Updating a download in Service" 7884 476
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "CDDownloadService : updateDownload : Successfully Updated a download in Service" 7884 477
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "CDDownloadService : run : start of while loop for downloads" 7884 478
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "UpdateThread Run() Update Download Called Begin" 7884 479
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "CDDownloadService : updateDownload : Updating a download in Service" 7884 480
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "CDDownloadService : updateDownload : Successfully Updated a download in Service" 7884 481
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "CDDownloadService : run : start of while loop for downloads" 7884 482
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "UpdateThread Run() Update Download Called Begin" 7884 483
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "CDDownloadService : updateDownload : Updating a download in Service" 7884 484
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "CDDownloadService : updateDownload : Successfully Updated a download in Service" 7884 485
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "CDDownloadService : run : start of while loop for downloads" 7884 486
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "UpdateThread Run() Update Download Called Begin" 7884 487
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "CDDownloadService : updateDownload : Updating a download in Service" 7884 488
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "CDDownloadService : updateDownload : Successfully Updated a download in Service" 7884 489
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "CDDownloadService : run : Update Notification Begin" 7884 490
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Selection (status >= '100') AND (status <= '199') AND (visibility IS NULL OR visibility == '0' OR visibility == '1')" 7884 491
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Selection Arg null" 7884 492
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Sort   _id and Projection [Ljava.lang.String;@40544ec0" 7884 493
+Verbose "2015-06-16 17:32:28.426844" 7875 SecDownloader "starting query, database is not null; projection[0] is _id; projection[1] is title; projection[2] is description; projection[3] is notificationpackage; projection[4] is notificationclass; projection[5] is current_bytes; projection[6] is total_bytes; projection[7] is status; projection[8] is _data; selection is (status >= '100') AND (status <= '199') AND (visibility IS NULL OR visibility == '0' OR visibility == '1'); selectionArgs is null; sort is _id." 7884 494
+Verbose "2015-06-16 17:32:28.436844" 7875 SecDownloader "created cursor com.sec.android.providers.downloads.CDDownloadProvider$ReadOnlyCursorWrapper@405475f0 on behalf of 7875" 7884 495
+Verbose "2015-06-16 17:32:28.436844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Selection (status >= '200') AND (visibility == '1') AND (state ==  '10' OR state ==  '9')" 7884 496
+Verbose "2015-06-16 17:32:28.436844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Selection Arg null" 7884 497
+Verbose "2015-06-16 17:32:28.436844" 7875 SecDownloader "CDDownloadProvider : query : query  database begin  Sort   _id and Projection [Ljava.lang.String;@40547e18" 7884 498
+Verbose "2015-06-16 17:32:28.436844" 7875 SecDownloader "starting query, database is not null; projection[0] is _id; projection[1] is title; projection[2] is description; projection[3] is notificationpackage; projection[4] is notificationclass; projection[5] is current_bytes; projection[6] is total_bytes; projection[7] is status; projection[8] is _data; projection[9] is lastmod; projection[10] is destination; selection is (status >= '200') AND (visibility == '1') AND (state ==  '10' OR state ==  '9'); selectionArgs is null; sort is _id." 7884 499
+Verbose "2015-06-16 17:32:28.436844" 7875 SecDownloader "created cursor com.sec.android.providers.downloads.CDDownloadProvider$ReadOnlyCursorWrapper@4054a448 on behalf of 7875" 7884 500
+Verbose "2015-06-16 17:32:28.436844" 7875 SecDownloader "CDDownloadService : run : Update Notification End" 7884 501
+Verbose "2015-06-16 17:32:28.446844" 7875 SecDownloader "CDDownloadService : onDestroy : Service destroyed" 7875 502
+Info "2015-06-16 17:32:28.446844" 192 ActivityManager "No longer want com.sec.android.app.unifiedinbox (pid 3113): hidden #16" 192 503
+Debug "2015-06-16 17:32:28.726844" 711 AppThwack /task/c8a044f08249cb4584cc65ec7acdb608a5022a5c/status 7885 504
+Debug "2015-06-16 17:32:28.866844" 711 AppThwack /task/c8a044f08249cb4584cc65ec7acdb608a5022a5c/status 7886 505
+Debug "2015-06-16 17:32:29.126844" 711 AppThwack /task/c8a044f08249cb4584cc65ec7acdb608a5022a5c/status 7887 506
+Debug "2015-06-16 17:32:29.286844" 711 AppThwack /bluetooth/ 7888 507
+Debug "2015-06-16 17:32:29.346844" 711 AppThwack "sha1: 5e1eab53e3867c9072fd16f7d22e74f61aab57dd" 7888 508
+Debug "2015-06-16 17:32:29.346844" 711 AppThwackDeviceManager "k: enabled v: True" 7888 509
+Debug "2015-06-16 17:32:29.346844" 711 AppThwackDeviceManager "k: NanoHttpd.QUERY_STRING v: enabled=True" 7888 510
+Info "2015-06-16 17:32:29.366844" 192 StatusBarManagerService "ADD-null , 0x7f020018" 214 511
+Debug "2015-06-16 17:32:29.376844" 711 AppThwackDeviceManager "taskStatus update (5e1eab53e3867c9072fd16f7d22e74f61aab57dd: {""state"":1})" 711 512
+Debug "2015-06-16 17:32:29.376844" 711 AppThwackAndroidLib "setEnabled: enabled: true" 7891 513
+Debug "2015-06-16 17:32:29.376844" 711 AppThwackAndroidLib "setEnabled: setting bluetooth to: true" 7891 514
+Info "2015-06-16 17:32:29.376844" 192 BluetoothService enable... 192 515
+Debug "2015-06-16 17:32:29.376844" 192 BluetoothService "keep current bluetooth address = D487D8F6EAE6" 192 516
+Debug "2015-06-16 17:32:29.376844" 192 BluetoothService "Bluetooth state 10 -> 11" 192 517
+Info "2015-06-16 17:32:29.386844" 192 BluetoothHIDService "Received intent Intent { act=android.bluetooth.adapter.action.STATE_CHANGED flg=0x10000000 (has extras) }, device = null" 213 518
+Verbose "2015-06-16 17:32:29.386844" 21064 BluetoothEventRedirector "Received android.bluetooth.adapter.action.STATE_CHANGED" 21064 519
+Debug "2015-06-16 17:32:29.396844" 711 AppThwack /task/5e1eab53e3867c9072fd16f7d22e74f61aab57dd 7888 520
+Warning "2015-06-16 17:32:29.416844" 192 ActivityManager "Permission denied: checkComponentPermission() reqUid=1000" 3398 521
+Warning "2015-06-16 17:32:29.416844" 192 ActivityManager "Permission Denial: broadcasting Intent { act=android.bluetooth.adapter.action.STATE_CHANGED flg=0x10000000 (has extras) } from android (pid=711, uid=10077) requires null due to receiver com.android.settings/com.android.settings.widget.SettingsAppWidgetProvider" 3398 522
+Error "2015-06-16 17:32:29.426844" 192 bluedroid bt_enable... 7892 523
+Info "2015-06-16 17:32:29.426844" 295 BtReceiver "***Received Bluetooth Event that can be ignored****" 295 524
+Error "2015-06-16 17:32:29.446844" 268 BluetoothSettingButton onReceive()-S:11 268 525
+Error "2015-06-16 17:32:29.476844" 192 bluedroid "Starting the BT filter daemon" 7892 526
+Error "2015-06-16 17:32:29.476844" 192 bluedroid "BTOFF_FMOFF_handling : receiving BT_ON" 7892 527
+Info "2015-06-16 17:32:29.486844" 7893 "abtfilt " "Ath BT Filter Daemon" 7893 528
+Info "2015-06-16 17:32:29.486844" 7893 "abtfilt " "Enabling Debug Information" 7893 529
+Debug "2015-06-16 17:32:29.486844" 7893 "abtfilt " "Abf_WlanCheckSettings : wlan: wlan0" 7893 530
+Debug "2015-06-16 17:32:29.486844" 7893 "abtfilt " "Calling Fcore Init" 7893 531
+Info "2015-06-16 17:32:29.496844" 7893 "abtfilt " "BT Filter Core init complete" 7893 532
+Info "2015-06-16 17:32:29.496844" 7893 "abtfilt " "WLAN Stack Notification init complete" 7893 533
+Info "2015-06-16 17:32:29.496844" 7893 "abtfilt " "Headset Profile notifications will use HCI filter instead of DBUS" 7893 534
+Info "2015-06-16 17:32:29.506844" 7893 "abtfilt " "Starting the BT Filter task" 7896 535
+Info "2015-06-16 17:32:29.506844" 7893 "abtfilt " "Starting the WLAN Event Handler task" 7897 536
+Info "2015-06-16 17:32:29.506844" 7893 "abtfilt " "Checking WLAN adapter on startup .." 7897 537
+Info "2015-06-16 17:32:29.506844" 7893 "abtfilt " "Host Rev: 0x30460023(3.0.70.35), Target Rev: 0x30000384(3.0.0.900)" 7897 538
+Info "2015-06-16 17:32:29.506844" 7893 "abtfilt " "BT Filter Core : WLAN Arrived" 7897 539
+Debug "2015-06-16 17:32:29.506844" 7893 "abtfilt " "Abf_WlanCheckSettings : wlan: wlan0" 7897 540
+Info "2015-06-16 17:32:29.506844" 7893 "abtfilt " "FLAGS = 36, Issue FE antenna configuration as single" 7897 541
+Info "2015-06-16 17:32:29.506844" 7893 "abtfilt " "WLAN Operating Channel: 2412" 7897 542
+Debug "2015-06-16 17:32:29.506844" 7893 HCIUTILS_CLIENT "HCIUTILS_SendCmd tCmd = 0x1" 7897 543
+Error "2015-06-16 17:32:29.516844" 7893 "abtfilt " "[DoMethodCall] Failed to invoke method call (org.bluez.Manager : method : DefaultAdapter) The name org.bluez was not provided by any .service files" 7893 544
+Error "2015-06-16 17:32:29.516844" 7893 "abtfilt " "Last Error: Try again" 7893 545
+Error "2015-06-16 17:32:29.516844" 7893 "abtfilt " "[AcquireBtAdapter] Get Default Adapter failed" 7893 546
+Error "2015-06-16 17:32:29.516844" 7893 "abtfilt " "Last Error: Try again" 7893 547
+Debug "2015-06-16 17:32:29.516844" 7893 "abtfilt " " rule to add: type='signal',interface='org.bluez.Manager'" 7893 548
+Debug "2015-06-16 17:32:29.526844" 7893 "abtfilt " " rule to add: type='signal',interface='org.bluez.Manager'" 7893 549
+Info "2015-06-16 17:32:29.526844" 7893 "abtfilt " "Register To HCI LIB" 7893 550
+Debug "2015-06-16 17:32:29.526844" 7893 HCIUTILS_CLIENT "HCIUTILS_RegisterHCINotification type = 0x1, opcode = 0x401" 7893 551
+Debug "2015-06-16 17:32:29.536844" 7893 HCIUTILS_CLIENT "initialize_hciutils_client Registered client res = 0x2, handled event = 0x11fd" 7897 552
+Debug "2015-06-16 17:32:29.536844" 7893 HCIUTILS_CLIENT "HCIUTILS_SendCmd tCmd = HCIUTILS_SET_AFH_CHANNELS first=0x2, last=0x16" 7897 553
+Debug "2015-06-16 17:32:29.536844" 7893 "abtfilt " "Issue AFH first =2, last = 16, center =c" 7897 554
+Info "2015-06-16 17:32:29.536844" 7893 "abtfilt " "WLAN Adapter Added" 7897 555
+Debug "2015-06-16 17:32:29.546844" 7895 BTL-SERVER "/system/bin/btld:pid:7895, main(): calling set_aid_and_cap" 7895 556
+Debug "2015-06-16 17:32:29.546844" 7895 BTL-SERVER "in set_aid_and_cap() pid:7895" 7895 557
+Verbose "2015-06-16 17:32:29.546844" 7895 "BTL_CFG " "btl_cfg_get_btld_status: service.brcm.bt.btld=0" 7895 558
+Error "2015-06-16 17:32:29.546844" 7895 BTL-SERVER "BTLD starting..." 7895 559
+Verbose "2015-06-16 17:32:29.546844" 7895 "BTL_CFG " "btl_cfg_set_btld_status: service.brcm.bt.btld=1, ret=0" 7895 560
+Verbose "2015-06-16 17:32:29.546844" 7895 "BTL_CFG " "btld_cfg_btld_pid : service.brcm.bt.btld_pid = 7895" 7895 561
+Verbose "2015-06-16 17:32:29.546844" 7895 "BTL_CFG " "btl_cfg_set_btld_pid success : service.brcm.bt.btld_pid = 7895, ret = 0" 7895 562
+Info "2015-06-16 17:32:29.546844" 7895 BTL-SERVER "BTE version BCM1200_MI_10.3.17.2" 7895 563
+Info "2015-06-16 17:32:29.546844" 7895 BTL-SERVER "btld version BTL-ANDROID_MI_2.6.2.0+_COOPER_R953:1731 starting..." 7895 564
+Info "2015-06-16 17:32:29.546844" 7895 BTL-SERVER "Build time: Apr 15 2011 18:33:47" 7895 565
+Info "2015-06-16 17:32:29.546844" 7895 "BTL_CFG " "btl_cfg_get_bdaddr: BDA=D487D8F6EAE6" 7895 566
+Error "2015-06-16 17:32:29.546844" 7895 "BTL_CFG " "WARNING : [service.brcm.bt.patchfile] property_get failed (0)" 7895 567
+Info "2015-06-16 17:32:29.546844" 7895 "BTL_CFG " "btl_cfg_get_3way_conf_support: service.brcm.bt.3way_support=true" 7895 568
+Error "2015-06-16 17:32:29.546844" 7895 "BTL_CFG " "WARNING : [service.brcm.bt.bt_wake_polar] property_get failed (0)" 7895 569
+Info "2015-06-16 17:32:29.546844" 7895 "BTL_CFG " "btl_cfg_get_lpm_params: service.brcm.bt.bt_wake_polar=1" 7895 570
+Error "2015-06-16 17:32:29.546844" 7895 "BTL_CFG " "WARNING : [service.brcm.bt.host_wake_polar] property_get failed (0)" 7895 571
+Info "2015-06-16 17:32:29.546844" 7895 "BTL_CFG " "btl_cfg_get_lpm_params: service.brcm.bt.host_wake_polar=1" 7895 572
+Error "2015-06-16 17:32:29.546844" 7895 "BTL_CFG " "WARNING : [service.brcm.bt.pcm_clk] property_get failed (0)" 7895 573
+Error "2015-06-16 17:32:29.546844" 7895 "BTL_CFG " "WARNING : [service.brcm.bt.pcm_ms_role] property_get failed (0)" 7895 574
+Info "2015-06-16 17:32:29.546844" 7895 "BTL_CFG " "btl_cfg_get_contacts_db: service.brcm.bt.contacts_db=/data/data/com.android.providers.contacts/databases/contacts2.db" 7895 575
+Debug "2015-06-16 17:32:29.576844" 711 AppThwack /task/5e1eab53e3867c9072fd16f7d22e74f61aab57dd/status 7900 576
+Debug "2015-06-16 17:32:29.626844" 7893 HCIUTILS_CLIENT "initialize_hciutils_client Registered client res = 0x2, handled event = 0x11fd" 7893 577
+Debug "2015-06-16 17:32:29.626844" 7893 "abtfilt " "Registered for HCI cmd 401, ret= 0" 7893 578
+Debug "2015-06-16 17:32:29.626844" 7893 HCIUTILS_CLIENT "HCIUTILS_RegisterHCINotification type = 0x1, opcode = 0x402" 7893 579
+Debug "2015-06-16 17:32:29.626844" 7893 "abtfilt " "Registered for HCI cmd 402, ret= 0" 7893 580
+Debug "2015-06-16 17:32:29.626844" 7893 HCIUTILS_CLIENT "HCIUTILS_RegisterHCINotification type = 0x1, opcode = 0x405" 7893 581
+Debug "2015-06-16 17:32:29.626844" 7893 "abtfilt " "Registered for HCI cmd 405, ret= 0" 7893 582
+Debug "2015-06-16 17:32:29.626844" 7893 HCIUTILS_CLIENT "HCIUTILS_RegisterHCINotification type = 0x2, opcode = 0xb" 7893 583
+Debug "2015-06-16 17:32:29.626844" 7893 "abtfilt " "Hcievent List[0] =b, ret =0" 7893 584
+Debug "2015-06-16 17:32:29.626844" 7893 HCIUTILS_CLIENT "HCIUTILS_RegisterHCINotification type = 0x2, opcode = 0xc" 7893 585
+Debug "2015-06-16 17:32:29.626844" 7893 "abtfilt " "Hcievent List[1] =c, ret =0" 7893 586
+Debug "2015-06-16 17:32:29.626844" 7893 HCIUTILS_CLIENT "HCIUTILS_RegisterHCINotification type = 0x2, opcode = 0x1" 7893 587
+Debug "2015-06-16 17:32:29.626844" 7893 "abtfilt " "Hcievent List[2] =1, ret =0" 7893 588
+Debug "2015-06-16 17:32:29.626844" 7893 HCIUTILS_CLIENT "HCIUTILS_RegisterHCINotification type = 0x2, opcode = 0x16" 7893 589
+Debug "2015-06-16 17:32:29.626844" 7893 "abtfilt " "Hcievent List[3] =16, ret =0" 7893 590
+Debug "2015-06-16 17:32:29.626844" 7893 HCIUTILS_CLIENT "HCIUTILS_RegisterHCINotification type = 0x2, opcode = 0x18" 7893 591
+Debug "2015-06-16 17:32:29.626844" 7893 "abtfilt " "Hcievent List[4] =18, ret =0" 7893 592
+Debug "2015-06-16 17:32:29.626844" 7893 HCIUTILS_CLIENT "HCIUTILS_RegisterHCINotification type = 0x2, opcode = 0x12" 7893 593
+Debug "2015-06-16 17:32:29.626844" 7893 "abtfilt " "Hcievent List[5] =12, ret =0" 7893 594
+Debug "2015-06-16 17:32:29.626844" 7893 HCIUTILS_CLIENT "HCIUTILS_RegisterHCINotification type = 0x2, opcode = 0x3" 7893 595
+Debug "2015-06-16 17:32:29.626844" 7893 "abtfilt " "Hcievent List[6] =3, ret =0" 7893 596
+Debug "2015-06-16 17:32:29.626844" 7893 HCIUTILS_CLIENT "HCIUTILS_RegisterHCINotification type = 0x2, opcode = 0x2c" 7893 597
+Debug "2015-06-16 17:32:29.626844" 7893 "abtfilt " "Hcievent List[7] =2c, ret =0" 7893 598
+Debug "2015-06-16 17:32:29.626844" 7893 HCIUTILS_CLIENT "HCIUTILS_RegisterHCINotification type = 0x2, opcode = 0x5" 7893 599
+Debug "2015-06-16 17:32:29.626844" 7893 "abtfilt " "Hcievent List[8] =5, ret =0" 7893 600
+Info "2015-06-16 17:32:29.626844" 7893 "abtfilt " "BT Stack Notification init complete" 7893 601
+Debug "2015-06-16 17:32:29.626844" 7893 "abtfilt " "Service running, waiting for termination ...." 7893 602
+Info "2015-06-16 17:32:29.636844" 7893 "abtfilt " "Starting the BT Event Handler task" 7901 603
+Info "2015-06-16 17:32:29.636844" 7893 "abtfilt " "Entering DBus Message loop" 7901 604
+Debug "2015-06-16 17:32:29.636844" 7893 "abtfilt " "WMI_REPORT_SLEEP_STATE_EVENTID: 6" 7897 605
+Info "2015-06-16 17:32:29.636844" 7893 "abtfilt " "FLAGS = 36, Issue FE antenna configuration as single" 7897 606
+Info "2015-06-16 17:32:29.636844" 7893 "abtfilt " "BT Filter Core : WLAN Arrived" 7897 607
+Debug "2015-06-16 17:32:29.636844" 7893 "abtfilt " "Abf_WlanCheckSettings : wlan: wlan0" 7897 608
+Info "2015-06-16 17:32:29.636844" 7893 "abtfilt " "FLAGS = 36, Issue FE antenna configuration as single" 7897 609
+Info "2015-06-16 17:32:29.636844" 7893 "abtfilt " "WLAN Operating Channel: 2412" 7897 610
+Debug "2015-06-16 17:32:29.636844" 7893 HCIUTILS_CLIENT "HCIUTILS_SendCmd tCmd = 0x1" 7897 611
+Debug "2015-06-16 17:32:29.636844" 7893 HCIUTILS_CLIENT "HCIUTILS_SendCmd tCmd = HCIUTILS_SET_AFH_CHANNELS first=0x2, last=0x16" 7897 612
+Debug "2015-06-16 17:32:29.636844" 7893 "abtfilt " "Issue AFH first =2, last = 16, center =c" 7897 613
+Info "2015-06-16 17:32:29.746844" 7895 "        " "#### : lpm_through_rfkill = 1" 7895 614
+Debug "2015-06-16 17:32:29.786844" 711 AppThwack /task/5e1eab53e3867c9072fd16f7d22e74f61aab57dd/status 7902 615
+Info "2015-06-16 17:32:29.946844" 7895 USERIAL_LINUX USERIAL_Init 7895 616
+Info "2015-06-16 17:32:29.946844" 7895 BTL-SERVER "bte_create_signal_handler() sigset: x4800" 7895 617
+Debug "2015-06-16 17:32:29.946844" 7895 BTL-SERVER "signal_handler_thread( sigset x4800 )" 7905 618
+Info "2015-06-16 17:32:29.946844" 7895 GKI_LINUX "GKI creating JOINABLE task 2" 7895 619
+Info "2015-06-16 17:32:29.946844" 7895 GKI_LINUX "gki_task_entry task_id=2" 7906 620
+Verbose "2015-06-16 17:32:29.946844" 7895 "BTL_CFG " "btl_cfg_get_soft_onoff_enabled : service.brcm.bt.soft_onoff = 0" 7906 621
+Info "2015-06-16 17:32:29.946844" 7895 GKI_LINUX "Leaving GKI_create_task 13444 2 223350 APPL 1f6db0 0" 7895 622
+Info "2015-06-16 17:32:29.946844" 7895 GKI_LINUX "GKI creating JOINABLE task 1" 7895 623
+Info "2015-06-16 17:32:29.946844" 7895 GKI_LINUX "gki_task_entry task_id=1" 7907 624
+Info "2015-06-16 17:32:29.946844" 7895 GKI_LINUX "Leaving GKI_create_task f0480 1 223390 BTU 1f6db0 0" 7895 625
+Info "2015-06-16 17:32:29.946844" 7895 GKI_LINUX "GKI creating JOINABLE task 0" 7895 626
+Info "2015-06-16 17:32:29.946844" 7895 GKI_LINUX "gki_task_entry task_id=0" 7908 627
+Info "2015-06-16 17:32:29.946844" 7895 USERIAL_LINUX "USERIAL_Open( port: 0, baud: 7" 7908 628
+Info "2015-06-16 17:32:29.946844" 7895 USERIAL_LINUX "USERIAL_Open opening /dev/ttyHS0" 7908 629
+Info "2015-06-16 17:32:29.946844" 7895 USERIAL_LINUX  7908 630
+Info "2015-06-16 17:32:29.946844" 7895 USERIAL_LINUX "***userial_io_init_bt_wake(): Ooops, asserted BT_WAKE signal, but still got BT_WAKE state == to 0" 7908 631
+Debug "2015-06-16 17:32:29.946844" 7895 USERIAL_LINUX "sock = 7" 7908 632
+Info "2015-06-16 17:32:29.946844" 7895 USERIAL_LINUX "Leaving USERIAL_Open" 7908 633
+Error "2015-06-16 17:32:29.946844" 7895 "BTL_CFG " "WARNING : [service.brcm.bt.TRC_BTAPP] property_get failed (0)" 7907 634
+Debug "2015-06-16 17:32:29.946844" 7895 "        " "[bttrc] using compile default trace settings" 7907 635
+Verbose "2015-06-16 17:32:29.946844" 7895 "BTL_CFG " "btl_cfg_get_soft_onoff_enabled : service.brcm.bt.soft_onoff = 0" 7906 636
+Info "2015-06-16 17:32:29.946844" 7895 BTL-BTAPP_DM "btapp_dm_cmd_init: result = 0, btl_if_handle = 19" 7906 637
+Info "2015-06-16 17:32:29.946844" 7895 GKI_LINUX GKI_sched_lock 7906 638
+Info "2015-06-16 17:32:29.946844" 7895 GKI_LINUX GKI_sched_unlock 7906 639
+Info "2015-06-16 17:32:29.956844" 7895 GKI_LINUX "Leaving GKI_create_task 1102c 0 2233d0 HCI 1f6db0 0" 7895 640
+Info "2015-06-16 17:32:29.956844" 7895 GKI_LINUX "GKI creating JOINABLE task 3" 7895 641
+Info "2015-06-16 17:32:29.956844" 7895 GKI_LINUX "gki_task_entry task_id=3" 7911 642
+Info "2015-06-16 17:32:29.956844" 7895 GKI_LINUX "Leaving GKI_create_task 3d4bc 3 22bd08 SBC 1f6db0 0" 7895 643
+Info "2015-06-16 17:32:29.956844" 7895 GKI_LINUX "GKI creating JOINABLE task 4" 7895 644
+Info "2015-06-16 17:32:29.956844" 7895 GKI_LINUX "gki_task_entry task_id=4" 7912 645
+Info "2015-06-16 17:32:29.956844" 7895 GKI_LINUX "Leaving GKI_create_task 3fc70 4 22bd48 AVR 1f6db0 0" 7895 646
+Info "2015-06-16 17:32:29.956844" 7895 GKI_LINUX GKI_run 7895 647
+Info "2015-06-16 17:32:29.996844" 7895 USERIAL_LINUX "USERIAL_Ioctl: Received USERIAL_OP_BAUD_WR on port: 0, ioctl baud14" 7907 648
+Info "2015-06-16 17:32:29.996844" 7895 USERIAL_LINUX "userial_change_rate: Closing UART Port" 7907 649
+Debug "2015-06-16 17:32:29.996844" 7895 USERIAL_LINUX "socket signaled" 7909 650
+Debug "2015-06-16 17:32:29.996844" 7895 USERIAL_LINUX "socket signal reseted" 7909 651
+Warning "2015-06-16 17:32:29.996844" 7895 USERIAL_LINUX "my_read return size <=0:-1, exiting userial_read_thread" 7909 652
+Info "2015-06-16 17:32:29.996844" 7895 USERIAL_LINUX USERIAL_Close 7907 653
+Debug "2015-06-16 17:32:30.046844" 7895 USERIAL_LINUX "userial_change_rate: Attempting to reopen the UART Port at 0x002dc6c0" 7907 654
+Info "2015-06-16 17:32:30.046844" 7895 USERIAL_LINUX "userial_change_rate: Attempting to reopen the UART Port at 3000000" 7907 655
+Info "2015-06-16 17:32:30.046844" 7895 USERIAL_LINUX "USERIAL_Open( port: 0, baud: 14" 7907 656
+Info "2015-06-16 17:32:30.046844" 7895 USERIAL_LINUX "USERIAL_Open opening /dev/ttyHS0" 7907 657
+Info "2015-06-16 17:32:30.046844" 7895 USERIAL_LINUX  7907 658
+Info "2015-06-16 17:32:30.046844" 7895 USERIAL_LINUX "***userial_io_init_bt_wake(): Ooops, asserted BT_WAKE signal, but still got BT_WAKE state == to 0" 7907 659
+Debug "2015-06-16 17:32:30.046844" 7895 USERIAL_LINUX "sock = 7" 7907 660
+Info "2015-06-16 17:32:30.046844" 7895 USERIAL_LINUX "Leaving USERIAL_Open" 7907 661
+Error "2015-06-16 17:32:30.056844" 7895 "        " "BTM: btm_read_local_name_complete: local name is [BCM2049C0]" 7907 662
+Info "2015-06-16 17:32:30.056844" 7895 BTL-SERVER "bte_main_rln_cplt: input local name for patch download [BCM2049C0], len 9" 7907 663
+Info "2015-06-16 17:32:30.056844" 7895 BTL-SERVER "bte try to find prefix [BCM2049C0] config file in this phone" 7907 664
+Info "2015-06-16 17:32:30.066844" 7895 BTL-SERVER "Found patchfile: /system/bin/BCM2049C0_003.001.031.0088.0094.hcd" 7907 665
+Info "2015-06-16 17:32:30.066844" 7895 BTL-SERVER "bte_main_rln_cplt: Downloading patchfile /system/bin/BCM2049C0_003.001.031.0088.0094.hcd" 7907 666
+Info "2015-06-16 17:32:30.066844" 7895 GKI_LINUX GKI_sched_lock 7907 667
+Info "2015-06-16 17:32:30.066844" 7895 GKI_LINUX GKI_sched_unlock 7907 668
+Info "2015-06-16 17:32:30.066844" 7895 "        " BCM2045_PRM_Init 7907 669
+Error "2015-06-16 17:32:30.076844" 7895 "        " "[hcis] Unknown HCI message type drop this byte 0x34" 7908 670
+Error "2015-06-16 17:32:30.076844" 7895 "        " "[hcis] Unknown HCI message type drop this byte 0x31" 7908 671
+Info "2015-06-16 17:32:30.076844" 7895 "        " "Minidrv download completed" 7907 672
+Info "2015-06-16 17:32:30.716844" 7895 "        " "Launch RAM successful" 7907 673
+Debug "2015-06-16 17:32:30.876844" 711 AppThwack /task/5e1eab53e3867c9072fd16f7d22e74f61aab57dd/status 7914 674
+Info "2015-06-16 17:32:30.966844" 7895 USERIAL_LINUX "USERIAL_Ioctl: Received USERIAL_OP_BAUD_WR on port: 0, ioctl baud7" 7907 675
+Info "2015-06-16 17:32:30.966844" 7895 USERIAL_LINUX "userial_change_rate: Closing UART Port" 7907 676
+Debug "2015-06-16 17:32:30.966844" 7895 USERIAL_LINUX "socket signaled" 7913 677
+Debug "2015-06-16 17:32:30.966844" 7895 USERIAL_LINUX "socket signal reseted" 7913 678
+Warning "2015-06-16 17:32:30.966844" 7895 USERIAL_LINUX "my_read return size <=0:-1, exiting userial_read_thread" 7913 679
+Info "2015-06-16 17:32:30.966844" 7895 USERIAL_LINUX USERIAL_Close 7907 680
+Debug "2015-06-16 17:32:31.016844" 7895 USERIAL_LINUX "userial_change_rate: Attempting to reopen the UART Port at 0x0001c200" 7907 681
+Info "2015-06-16 17:32:31.016844" 7895 USERIAL_LINUX "userial_change_rate: Attempting to reopen the UART Port at 115200" 7907 682
+Info "2015-06-16 17:32:31.016844" 7895 USERIAL_LINUX "USERIAL_Open( port: 0, baud: 7" 7907 683
+Info "2015-06-16 17:32:31.016844" 7895 USERIAL_LINUX "USERIAL_Open opening /dev/ttyHS0" 7907 684
+Info "2015-06-16 17:32:31.016844" 7895 USERIAL_LINUX  7907 685
+Info "2015-06-16 17:32:31.016844" 7895 USERIAL_LINUX "***userial_io_init_bt_wake(): Ooops, asserted BT_WAKE signal, but still got BT_WAKE state == to 0" 7907 686
+Debug "2015-06-16 17:32:31.016844" 7895 USERIAL_LINUX "sock = 7" 7907 687
+Info "2015-06-16 17:32:31.016844" 7895 USERIAL_LINUX "Leaving USERIAL_Open" 7907 688
+Info "2015-06-16 17:32:31.026844" 7895 USERIAL_LINUX "USERIAL_Ioctl: Received USERIAL_OP_BAUD_WR on port: 0, ioctl baud14" 7907 689
+Info "2015-06-16 17:32:31.026844" 7895 USERIAL_LINUX "userial_change_rate: Closing UART Port" 7907 690
+Debug "2015-06-16 17:32:31.026844" 7895 USERIAL_LINUX "socket signaled" 7915 691
+Debug "2015-06-16 17:32:31.026844" 7895 USERIAL_LINUX "socket signal reseted" 7915 692
+Warning "2015-06-16 17:32:31.026844" 7895 USERIAL_LINUX "my_read return size <=0:-1, exiting userial_read_thread" 7915 693
+Info "2015-06-16 17:32:31.026844" 7895 USERIAL_LINUX USERIAL_Close 7907 694
+Debug "2015-06-16 17:32:31.076844" 7895 USERIAL_LINUX "userial_change_rate: Attempting to reopen the UART Port at 0x002dc6c0" 7907 695
+Info "2015-06-16 17:32:31.076844" 7895 USERIAL_LINUX "userial_change_rate: Attempting to reopen the UART Port at 3000000" 7907 696
+Info "2015-06-16 17:32:31.076844" 7895 USERIAL_LINUX "USERIAL_Open( port: 0, baud: 14" 7907 697
+Info "2015-06-16 17:32:31.076844" 7895 USERIAL_LINUX "USERIAL_Open opening /dev/ttyHS0" 7907 698
+Info "2015-06-16 17:32:31.076844" 7895 USERIAL_LINUX  7907 699
+Info "2015-06-16 17:32:31.076844" 7895 USERIAL_LINUX "***userial_io_init_bt_wake(): Ooops, asserted BT_WAKE signal, but still got BT_WAKE state == to 0" 7907 700
+Debug "2015-06-16 17:32:31.076844" 7895 USERIAL_LINUX "sock = 7" 7907 701
+Info "2015-06-16 17:32:31.076844" 7895 USERIAL_LINUX "Leaving USERIAL_Open" 7907 702
+Info "2015-06-16 17:32:31.076844" 7895 BTL-SERVER "Setting local bd addr to D4:87:D8:F6:EA:E6" 7907 703
+Error "2015-06-16 17:32:31.156844" 7895 BTAPP_CONF "Cannot open file /etc/bluetooth/did.conf" 7907 704
+Error "2015-06-16 17:32:31.156844" 7895 BTAPP_CONF "Cannot open file /etc/bluetooth/did.conf" 7907 705
+Error "2015-06-16 17:32:31.156844" 7895 BTAPP_CONF "Cannot open file /etc/bluetooth/did.conf" 7907 706
+Verbose "2015-06-16 17:32:31.156844" 7895 "BTL_CFG " "btl_cfg_get_soft_onoff_enabled : service.brcm.bt.soft_onoff = 0" 7906 707
+Info "2015-06-16 17:32:31.156844" 7895 BTAPP_FM "BTAPP_FM: Initialized IFS (res = 6)" 7906 708
+Info "2015-06-16 17:32:31.156844" 7895 BTAPP_FM "BTAPP_FM: Registered IFS (res = 0)" 7906 709
+Info "2015-06-16 17:32:31.156844" 7895 GKI_LINUX GKI_sched_lock 7906 710
+Info "2015-06-16 17:32:31.156844" 7895 GKI_LINUX GKI_sched_unlock 7906 711
+Info "2015-06-16 17:32:31.156844" 7895 BTA_AG_CO ": bta_ag_co_init: ag_voice_settings = 96" 7907 712
+Info "2015-06-16 17:32:31.156844" 7895 BTA_AG_CO ": bta_ag_co_init: ag_vsc_sco_pcm(0x193303) = {0, 0, 0, 0, 0}" 7907 713
+Info "2015-06-16 17:32:31.156844" 7895 BTA_AG_CO ": bta_ag_co_init: ag_vsc_pcm_config(0x1932fe) = {0, 0, 3, 3, 0}" 7907 714
+    "06-16 17:38:59.869  7895  7906 I BTL-BTAPP_OPC:: **** Starting DTUN [OPC] Interface ****"  715
+    "06-16 17:38:59.869  7895  7906 I BTL-BTAPP_OPS:: OPS Supported Formats = 0x77"  716
+Info "2015-06-16 17:32:31.156844" 7895 GKI_LINUX GKI_sched_lock 7906 717
+Info "2015-06-16 17:32:31.156844" 7895 GKI_LINUX GKI_sched_unlock 7906 718
+    "06-16 17:38:59.869  7895  7907 I BTL-BTAPP_OPS:: OPS event:0"  719
+Verbose "2015-06-16 17:32:31.156844" 7895 BTL-BTAPP_RC btapp_rc_init 7906 720
+Info "2015-06-16 17:32:31.156844" 7895 GKI_LINUX GKI_sched_lock 7906 721
+Info "2015-06-16 17:32:31.156844" 7895 GKI_LINUX GKI_sched_unlock 7906 722
+Info "2015-06-16 17:32:31.156844" 7895 BTL-BTAPP_AV "AVRCP enabled" 7906 723
+Info "2015-06-16 17:32:31.156844" 7895 BTL-BTAPP_AV "Advanced Audio enabled" 7906 724
+Info "2015-06-16 17:32:31.156844" 7895 GKI_LINUX GKI_sched_lock 7906 725
+Info "2015-06-16 17:32:31.156844" 7895 GKI_LINUX GKI_sched_unlock 7906 726
+Warning "2015-06-16 17:32:31.156844" 7895 "        " "Flick Init" 7906 727
+Error "2015-06-16 17:32:31.506844" 7920 "        " "this is not dir. type: 4, name: ." 7920 728
+Error "2015-06-16 17:32:31.506844" 7920 "        " "this is not dir. type: 4, name: .." 7920 729
+Error "2015-06-16 17:32:31.506844" 7920 "        " "this is not reg. type: 4, name: D4:87:D8:F6:EA:E6" 7920 730
+Error "2015-06-16 17:32:31.506844" 7920 "        " "this is not reg. type: 4, name: D4:87:D8:F6:EA:E6" 7920 731
+Error "2015-06-16 17:32:31.576844" 7920 "ADAPTER " "hci_open_dev(hci0): No such device (19)" 7920 732
+Debug "2015-06-16 17:32:31.576844" 7893 "abtfilt " " Got DBus Message ..." 7901 733
+Debug "2015-06-16 17:32:31.576844" 7893 "abtfilt " " Got DBus Message ..." 7901 734
+Debug "2015-06-16 17:32:31.576844" 7893 "abtfilt " "BtAdapterAdded (/org/bluez/7920/hci0) Callback ..." 7901 735
+Error "2015-06-16 17:32:31.976844" 192 bluedroid "New state is BTON_FMOFF_handling" 7892 736
+Error "2015-06-16 17:32:31.976844" 192 bluedroid "PROFILE:bt_enable: Turnaround time: 2.501252 seconds" 7892 737
+Debug "2015-06-16 17:32:32.016844" 711 AppThwack /task/5e1eab53e3867c9072fd16f7d22e74f61aab57dd/status 7923 738
+Debug "2015-06-16 17:32:32.276844" 192 BluetoothEventLoop "Starting Event Loop thread" 7892 739
+Error "2015-06-16 17:32:32.326844" 192 BluetoothEventLoop.cpp "event_filter: Received signal org.bluez.Adapter:PropertyChanged from /org/bluez/2636/hci0" 7924 740
+Debug "2015-06-16 17:32:32.446844" 192 BluetoothService "Bluetooth state 11 -> 12" 7892 741
+Error "2015-06-16 17:32:32.466844" 268 BluetoothSettingButton onReceive()-S:12 268 742
+Verbose "2015-06-16 17:32:32.486844" 21064 BluetoothEventRedirector "Received android.bluetooth.adapter.action.STATE_CHANGED" 21064 743
+Info "2015-06-16 17:32:32.486844" 192 BluetoothHIDService "Received intent Intent { act=android.bluetooth.adapter.action.STATE_CHANGED flg=0x10000000 (has extras) }, device = null" 213 744
+Info "2015-06-16 17:32:32.486844" 192 BluetoothHIDService "    ...BT state on" 213 745
+Info "2015-06-16 17:32:32.486844" 192 BluetoothHIDService onBluetoothEnable 213 746
+Error "2015-06-16 17:32:32.486844" 192 "BTL_IFC " "##### ERROR : tx_data: write failed (-1)#####" 213 747
+Error "2015-06-16 17:32:32.486844" 192 "BTL_IFC " "##### ERROR : BTL_IFC_CtrlSend: [BTL_IFC CTRL] send failed#####" 213 748
+Warning "2015-06-16 17:32:32.496844" 192 BluetoothService "setScanMode is called 21" 7892 749
+Error "2015-06-16 17:32:32.516844" 192 BluetoothEventLoop.cpp "event_filter: Received signal org.bluez.Adapter:PropertyChanged from /org/bluez/7920/hci0" 7924 750
+Info "2015-06-16 17:32:32.566844" 295 BtReceiver "***Received Bluetooth ON Event****" 295 751
+Warning "2015-06-16 17:32:32.566844" 295 BluetoothServiceManager "Bluetooth Service Manager already initialized.....Skipping init()..." 295 752
+Debug "2015-06-16 17:32:32.566844" 295 BluetoothServiceManager onBluetoothEnabled() 295 753
+Debug "2015-06-16 17:32:32.566844" 295 BluetoothServiceConfig "isServiceEnabled result_bt: 1" 295 754
+Debug "2015-06-16 17:32:32.566844" 295 BluetoothServiceConfig "isServiceEnabled result_fm: 0" 295 755
+Debug "2015-06-16 17:32:32.566844" 295 BluetoothServiceManager "***startService(): Starting service: bluetooth_opp_service***" 295 756
+Debug "2015-06-16 17:32:32.566844" 295 OppEventLoop "Starting OPP Event Loop as Standalone..." 295 757
+Error "2015-06-16 17:32:32.566844" 295 OppEventHandler.cpp "ye NewGlobalRef:object:0x4051cf20, me:0x4051cf20, gref:1" 295 758
+Debug "2015-06-16 17:32:32.576844" 295 BluetoothServiceManager "***startService(): Done starting service: bluetooth_opp_service***" 295 759
+Debug "2015-06-16 17:32:32.576844" 295 BluetoothServiceConfig "isServiceEnabled result_bt: 1" 295 760
+Debug "2015-06-16 17:32:32.576844" 295 BluetoothServiceConfig "isServiceEnabled result_fm: 0" 295 761
+Debug "2015-06-16 17:32:32.576844" 295 BluetoothServiceManager "***startService(): Starting service: bluetooth_ftp***" 295 762
+Debug "2015-06-16 17:32:32.586844" 7893 "abtfilt " " rule to add: type='signal',interface='org.bluez.Adapter'" 7901 763
+Debug "2015-06-16 17:32:32.586844" 7893 "abtfilt " " rule to add: type='signal',interface='org.bluez.Adapter'" 7901 764
+Info "2015-06-16 17:32:32.586844" 7895 GKI_LINUX GKI_sched_lock 7910 765
+Info "2015-06-16 17:32:32.586844" 7895 GKI_LINUX GKI_sched_unlock 7910 766
+Debug "2015-06-16 17:32:32.586844" 295 BluetoothFTPService "onFtpServerEnabled() called." 30014 767
+Debug "2015-06-16 17:32:32.596844" 295 BluetoothServiceManager "***startService(): Done starting service: bluetooth_ftp***" 295 768
+Debug "2015-06-16 17:32:32.596844" 295 BluetoothServiceConfig "isServiceEnabled result_bt: 1" 295 769
+Debug "2015-06-16 17:32:32.596844" 295 BluetoothServiceConfig "isServiceEnabled result_fm: 0" 295 770
+Debug "2015-06-16 17:32:32.596844" 295 BluetoothServiceManager "***startService(): Starting service: bluetooth_pbap***" 295 771
+Info "2015-06-16 17:32:32.596844" 295 BluetoothPBAPService "start: mPbapMode = 2" 295 772
+Info "2015-06-16 17:32:32.596844" 295 BluetoothPBAPService "Start Java PBAP server: permission = [android.permission.BLUETOOTH]..." 295 773
+Debug "2015-06-16 17:32:32.596844" 295 BluetoothServiceManager "***startService(): Done starting service: bluetooth_pbap***" 295 774
+Debug "2015-06-16 17:32:32.596844" 295 BluetoothServiceConfig "isServiceEnabled result_bt: 1" 295 775
+Debug "2015-06-16 17:32:32.596844" 7893 "abtfilt " " rule to add: type='signal',interface='org.bluez.Adapter'" 7901 776
+Debug "2015-06-16 17:32:32.596844" 295 BluetoothServiceConfig "isServiceEnabled result_fm: 0" 295 777
+Debug "2015-06-16 17:32:32.596844" 295 BluetoothServiceManager "***startService(): Starting service: bluetooth_test***" 295 778
+Debug "2015-06-16 17:32:32.606844" 7893 "abtfilt " " rule to add: type='signal',interface='org.bluez.Adapter'" 7901 779
+Debug "2015-06-16 17:32:32.606844" 295 BluetoothServiceManager "***startService(): Done starting service: bluetooth_test***" 295 780
+Debug "2015-06-16 17:32:32.606844" 7893 "abtfilt " " rule to add: type='signal',interface='org.bluez'" 7901 781
+Debug "2015-06-16 17:32:32.616844" 2643 OppReceiver "Received action: broadcom.bt.intent.action.BT_SVC_STATE_CHANGE" 2643 782
+Debug "2015-06-16 17:32:32.616844" 2643 OppReceiver "SVC NAME=bluetooth_opp_service" 2643 783
+Debug "2015-06-16 17:32:32.616844" 7893 "abtfilt " " rule to add: type='signal',interface='org.bluez'" 7901 784
+Info "2015-06-16 17:32:32.616844" 7893 "abtfilt " "[/org/bluez/7920/hci0] BT Adapter Added" 7901 785
+Info "2015-06-16 17:32:32.616844" 7893 "abtfilt " [AcquireDefaultAudioDevice]StartRegister 7901 786
+Debug "2015-06-16 17:32:32.616844" 7893 "abtfilt " " rule to add: type='signal',interface='org.bluez.Headset'" 7901 787
+Debug "2015-06-16 17:32:32.626844" 7893 "abtfilt " " rule to add: type='signal',interface='org.bluez.Headset'" 7901 788
+Debug "2015-06-16 17:32:32.636844" 7893 "abtfilt " " rule to add: type='signal',interface='org.bluez.Headset'" 7901 789
+Debug "2015-06-16 17:32:32.636844" 7893 "abtfilt " " rule to add: type='signal',interface='org.bluez.Headset'" 7901 790
+Debug "2015-06-16 17:32:32.646844" 2643 ExchangeFolderManager "OPP Exchange Folder already exists : /mnt/sdcard/bluetooth/" 7929 791
+Debug "2015-06-16 17:32:32.646844" 2643 ExchangeFolderManager "Registering file observer for /mnt/sdcard/bluetooth/" 7929 792
+Debug "2015-06-16 17:32:32.646844" 2643 ExchangeFolderManager "OPP Exchange Folder already exists : /data/data/com.android.bluetooth/" 7929 793
+Debug "2015-06-16 17:32:32.646844" 2643 ExchangeFolderManager "Registering file observer for /data/data/com.android.bluetooth/" 7929 794
+Debug "2015-06-16 17:32:32.646844" 2643 TimeoutWatchdog "[Thread-18/18] start(timeoutMS)=2000" 7929 795
+Debug "2015-06-16 17:32:32.646844" 7893 "abtfilt " " rule to add: type='signal',interface='org.bluez.AudioSink'" 7901 796
+Debug "2015-06-16 17:32:32.646844" 7893 "abtfilt " " rule to add: type='signal',interface='org.bluez.AudioSink'" 7901 797
+Debug "2015-06-16 17:32:32.656844" 2643 BluetoothServiceConfig "isServiceEnabled result_bt: 1" 7929 798
+Debug "2015-06-16 17:32:32.656844" 2643 BluetoothServiceConfig "isServiceEnabled result_fm: 0" 7929 799
+Debug "2015-06-16 17:32:32.656844" 2643 BluetoothOPP "Constructor: Reference Count = 1" 7929 800
+Debug "2015-06-16 17:32:32.656844" 2643 TimeoutWatchdog "[TimeoutWatchdog-1434476341363/19] running watchdog thread...." 7930 801
+Debug "2015-06-16 17:32:32.656844" 2643 TimeoutWatchdog "[TimeoutWatchdog-1434476341363/19] Going to sleep for 2000" 7930 802
+Debug "2015-06-16 17:32:32.656844" 7893 "abtfilt " " rule to add: type='signal',interface='org.bluez.AudioSink'" 7901 803
+Debug "2015-06-16 17:32:32.656844" 7893 "abtfilt " " rule to add: type='signal',interface='org.bluez.AudioSink'" 7901 804
+Debug "2015-06-16 17:32:32.656844" 2643 OppReceiver "Received action: broadcom.bt.intent.action.BT_SVC_STATE_CHANGE" 2643 805
+Debug "2015-06-16 17:32:32.656844" 2643 OppReceiver "SVC NAME=bluetooth_ftp" 2643 806
+Info "2015-06-16 17:32:32.666844" 7893 "abtfilt " [AcquireDefaultAudioDevice]EndRegister 7901 807
+Debug "2015-06-16 17:32:32.666844" 7893 "abtfilt " " Got DBus Message ..." 7901 808
+Debug "2015-06-16 17:32:32.666844" 7893 "abtfilt " " Got DBus Message ..." 7901 809
+Debug "2015-06-16 17:32:32.666844" 295 OppAppService "Constructor: Reference Count = 6" 295 810
+Debug "2015-06-16 17:32:32.666844" 295 OppAppService "Starting service..." 295 811
+Debug "2015-06-16 17:32:32.666844" 295 OppService "Constructor: Reference Count = 6" 295 812
+Debug "2015-06-16 17:32:32.676844" 295 OppAppService "Binding service..." 295 813
+Debug "2015-06-16 17:32:32.676844" 2643 TimeoutWatchdog "[main/1] stop()" 2643 814
+Debug "2015-06-16 17:32:32.676844" 2643 TimeoutWatchdog "[TimeoutWatchdog-1434476341363/19] Woke up!!!" 7930 815
+Debug "2015-06-16 17:32:32.676844" 2643 TimeoutWatchdog "[TimeoutWatchdog-1434476341363/19] Exiting watchdog loop. timedOut = false, mIsStarted = false" 7930 816
+Verbose "2015-06-16 17:32:32.686844" 2655 BluetoothPbapReceiver "PbapReceiver onReceive: broadcom.android.bluetooth.intent.action.BT_PBAP_CHANGED" 2655 817
+Verbose "2015-06-16 17:32:32.696844" 2655 BluetoothPbapService "Pbap Service onCreate" 2655 818
+Verbose "2015-06-16 17:32:32.696844" 2655 BluetoothPbapService "Starting PBAP service" 2655 819
+Verbose "2015-06-16 17:32:32.696844" 2655 BluetoothPbapService "Pbap Service onStartCommand" 2655 820
+Verbose "2015-06-16 17:32:32.696844" 2655 BluetoothPbapService "action: broadcom.android.bluetooth.intent.action.BT_PBAP_CHANGED" 2655 821
+Debug "2015-06-16 17:32:32.706844" 2643 BluetoothOPP setExchangeFolder(/mnt/sdcard/bluetooth/) 7931 822
+Verbose "2015-06-16 17:32:32.706844" 295 OppService setExchangeFolder(/mnt/sdcard/bluetooth/) 304 823
+    "06-16 17:39:01.419  7895  7910 I BTL-BTAPP_OPS:: btapp_op_set_exchange_folder(/mnt/sdcard/bluetooth/)"  824
+Debug "2015-06-16 17:32:32.706844" 2643 BluetoothOPP setOwnerVcard(/data/data/com.android.bluetooth/op_default.vcf) 7931 825
+Verbose "2015-06-16 17:32:32.706844" 295 OppService setOwnerVcard(/data/data/com.android.bluetooth/op_default.vcf) 13932 826
+    "06-16 17:39:01.429  7895  7910 I BTL-BTAPP_OPS:: btapp_op_set_owner_vcard(/data/data/com.android.bluetooth/op_default.vcf)"  827
+Debug "2015-06-16 17:32:32.716844" 2643 ExchangeFolderManager "Exchange folder and owner vcard set!" 7931 828
+Debug "2015-06-16 17:32:32.716844" 2643 OppReceiver "Received action: broadcom.bt.intent.action.BT_SVC_STATE_CHANGE" 2643 829
+Debug "2015-06-16 17:32:32.716844" 2643 OppReceiver "SVC NAME=bluetooth_test" 2643 830
+Debug "2015-06-16 17:32:32.726844" 295 OppAppService "Destroying service..." 295 831
+Info "2015-06-16 17:32:32.736844" 2643 RequestQueueHelper "sandeep:cpc aquiring.." 7929 832
+Info "2015-06-16 17:32:32.736844" 2643 RequestQueueHelper "sandeep:cpc aquired" 7929 833
+Error "2015-06-16 17:32:32.746844" 2643 RequestQueueHelper "[Thread-18/18] Next pending job not found!!" 7929 834
+Debug "2015-06-16 17:32:32.746844" 2643 OppNotification "Starting notification thread: NotificationUpdateThread-1434476341444" 7932 835
+Info "2015-06-16 17:32:32.746844" 2643 OppReceiver "**********************starting service" 7929 836
+Debug "2015-06-16 17:32:32.756844" 2643 OPPServerService "[main/1] onCreate()" 2643 837
+Debug "2015-06-16 17:32:32.756844" 2643 OPPBaseService "[main/1] onCreate()" 2643 838
+Info "2015-06-16 17:32:32.756844" 2643 OPPBaseService "## BaseService, onCreate->mIsRunning :true" 2643 839
+Debug "2015-06-16 17:32:32.766844" 2643 OPPServerService "[main/1] onStartCommand():intent,flags,startid=Intent { act=brcm.rst cmp=com.android.bluetooth/com.broadcom.bt.app.opp.server.OPPServerService },2,1" 2643 840
+Debug "2015-06-16 17:32:32.766844" 2643 OPPBaseService "[main/1] *****New request and worker thread not started. Starting it..." 2643 841
+Info "2015-06-16 17:32:32.766844" 2643 RequestQueueHelper "sandeep:cpc aquiring.." 7935 842
+Info "2015-06-16 17:32:32.766844" 2643 RequestQueueHelper "sandeep:cpc aquired" 7935 843
+Error "2015-06-16 17:32:32.776844" 2643 RequestQueueHelper "[OPSWorkerThread-1434476341483/24] Next pending job not found!!" 7935 844
+Debug "2015-06-16 17:32:33.166844" 711 AppThwack /task/5e1eab53e3867c9072fd16f7d22e74f61aab57dd/status 7936 845
+Debug "2015-06-16 17:32:33.426844" 711 AppThwackAndroidLib "setEnabled: bt is: true" 7891 846
+Debug "2015-06-16 17:32:33.426844" 711 AppThwackDeviceManager "taskStatus update (5e1eab53e3867c9072fd16f7d22e74f61aab57dd: {""result"":""Bluetooth enabled: true"",""state"":2})" 711 847
+Info "2015-06-16 17:32:33.426844" 192 StatusBarManagerService "REMOVE-null , 0x7f020018" 214 848
+Debug "2015-06-16 17:32:33.916844" 192 BatteryService "update start" 242 849
+Debug "2015-06-16 17:32:33.916844" 192 BatteryService "update start" 242 850
+Debug "2015-06-16 17:32:33.926844" 192 BatteryService "update start" 242 851
+Debug "2015-06-16 17:32:34.246844" 711 AppThwack /task/5e1eab53e3867c9072fd16f7d22e74f61aab57dd/status 7941 852
+Debug "2015-06-16 17:32:34.456844" 711 AppThwack /task/5e1eab53e3867c9072fd16f7d22e74f61aab57dd/status 7942 853
+Debug "2015-06-16 17:32:35.476844" 711 AppThwack /task/5e1eab53e3867c9072fd16f7d22e74f61aab57dd/status 7951 854
+Debug "2015-06-16 17:32:35.546844" 711 AppThwack /location/ 7952 855
+Debug "2015-06-16 17:32:35.626844" 711 AppThwack "sha1: 2afefdb58ac5f60fe50c292adaf8c62c9d1a30f9" 7952 856
+Debug "2015-06-16 17:32:35.626844" 711 AppThwackDeviceManager "k: lon v: -122.677811" 7952 857
+Debug "2015-06-16 17:32:35.626844" 711 AppThwackDeviceManager "k: lat v: 45.518001" 7952 858
+Debug "2015-06-16 17:32:35.626844" 711 AppThwackDeviceManager "k: NanoHttpd.QUERY_STRING v: lat=45.518001&lon=-122.677811" 7952 859
+Debug "2015-06-16 17:32:35.666844" 711 AppThwack /task/2afefdb58ac5f60fe50c292adaf8c62c9d1a30f9 7952 860
+Info "2015-06-16 17:32:35.736844" 192 StatusBarManagerService "ADD-null , 0x7f020018" 214 861
+Debug "2015-06-16 17:32:35.746844" 711 AppThwackDeviceManager "taskStatus update (2afefdb58ac5f60fe50c292adaf8c62c9d1a30f9: {""state"":1})" 711 862
+Warning "2015-06-16 17:32:35.746844" 711 GooglePlayServicesUtil "Google Play services is missing." 7953 863
+Debug "2015-06-16 17:32:35.746844" 711 AppThwackDeviceManager "Google play services not available on this device. Providing location not supported." 7953 864
+Debug "2015-06-16 17:32:35.746844" 711 AppThwackDeviceManager "taskStatus update (2afefdb58ac5f60fe50c292adaf8c62c9d1a30f9: {""result"":"""",""state"":2})" 711 865
+Info "2015-06-16 17:32:35.756844" 192 StatusBarManagerService "REMOVE-null , 0x7f020018" 214 866
+Debug "2015-06-16 17:32:35.926844" 711 AppThwack /task/2afefdb58ac5f60fe50c292adaf8c62c9d1a30f9/status 7956 867
+Debug "2015-06-16 17:32:35.986844" 711 AppThwack /task/2afefdb58ac5f60fe50c292adaf8c62c9d1a30f9/status 7957 868
+Debug "2015-06-16 17:32:36.116844" 711 AppThwack /task/2afefdb58ac5f60fe50c292adaf8c62c9d1a30f9/status 7958 869
+Debug "2015-06-16 17:32:36.286844" 711 AppThwack /task/2afefdb58ac5f60fe50c292adaf8c62c9d1a30f9/status 7959 870
+Debug "2015-06-16 17:32:36.476844" 711 AppThwack /task/2afefdb58ac5f60fe50c292adaf8c62c9d1a30f9/status 7960 871
+Debug "2015-06-16 17:32:36.556844" 711 AppThwack /locale/ 7961 872
+Debug "2015-06-16 17:32:36.686844" 711 AppThwack "sha1: b8ca1ec96ea603bb6e28e0d388916eb55e436430" 7961 873
+Debug "2015-06-16 17:32:36.686844" 711 AppThwackDeviceManager "k: NanoHttpd.QUERY_STRING v: locale=en_US" 7961 874
+Debug "2015-06-16 17:32:36.686844" 711 AppThwackDeviceManager "k: locale v: en_US" 7961 875
+Debug "2015-06-16 17:32:36.736844" 711 AppThwack /task/b8ca1ec96ea603bb6e28e0d388916eb55e436430 7961 876
+Info "2015-06-16 17:32:36.756844" 192 StatusBarManagerService "ADD-null , 0x7f020018" 214 877
+Debug "2015-06-16 17:32:36.766844" 711 AppThwackDeviceManager "taskStatus update (b8ca1ec96ea603bb6e28e0d388916eb55e436430: {""state"":1})" 711 878
+Debug "2015-06-16 17:32:36.766844" 711 AppThwackDeviceManager "Setting locale to: en_US" 7962 879
+Debug "2015-06-16 17:32:36.766844" 711 AppThwackAndroidLib "Setting locale to: en_US" 7962 880
+Debug "2015-06-16 17:32:36.856844" 711 AppThwack /task/b8ca1ec96ea603bb6e28e0d388916eb55e436430/status 7963 881
+Debug "2015-06-16 17:32:36.986844" 711 AppThwack /task/b8ca1ec96ea603bb6e28e0d388916eb55e436430/status 7964 882
+Debug "2015-06-16 17:32:38.106844" 192 SntpClient "request time failed: java.net.SocketTimeoutException: Try again" 322 883
+Debug "2015-06-16 17:32:38.116844" 192 GpsLocationProvider "requestTime failed" 322 884
+Debug "2015-06-16 17:32:38.116844" 711 AppThwack /task/b8ca1ec96ea603bb6e28e0d388916eb55e436430/status 7969 885
+Verbose "2015-06-16 17:32:38.706844" 2655 BluetoothPbapService "Handler(): got msg=1" 2655 886
+Verbose "2015-06-16 17:32:38.706844" 2655 BluetoothPbapService "Pbap Service startRfcommSocketListener" 2655 887
+Verbose "2015-06-16 17:32:38.706844" 2655 BluetoothPbapService "Pbap Service initSocket" 2655 888
+Debug "2015-06-16 17:32:38.706844" 2655 BluetoothSocket "create BluetoothSocket: type = 1, fd = -1, uuid = [null], port = 19" 2655 889
+Debug "2015-06-16 17:32:38.726844" 7895 "        " ">>> START GKI_timer_update(), wake_lock_count:1" 7907 890
+Debug "2015-06-16 17:32:38.736844" 192 BluetoothService "new handle 0" 294 891
+Verbose "2015-06-16 17:32:38.736844" 2655 BluetoothPbapService "Succeed to create listening socket on channel 19" 2655 892
+Debug "2015-06-16 17:32:38.926844" 711 AppThwackDeviceManager "taskStatus update (b8ca1ec96ea603bb6e28e0d388916eb55e436430: {""result"":""en_US"",""state"":2})" 711 893
+Info "2015-06-16 17:32:38.926844" 192 StatusBarManagerService "REMOVE-null , 0x7f020018" 214 894
+Debug "2015-06-16 17:32:39.196844" 711 AppThwack /task/b8ca1ec96ea603bb6e28e0d388916eb55e436430/status 7971 895
+Debug "2015-06-16 17:32:39.396844" 711 AppThwack /task/b8ca1ec96ea603bb6e28e0d388916eb55e436430/status 7974 896
+Debug "2015-06-16 17:32:39.466844" 711 AppThwack /task/b8ca1ec96ea603bb6e28e0d388916eb55e436430/status 7975 897
+Debug "2015-06-16 17:32:39.516844" 711 AppThwack /get-network-info/ 7976 898
+Debug "2015-06-16 17:32:39.556844" 711 AppThwack "sha1: 06a311db71638fad8b73032aeb4134dccbb1acfc" 7976 899
+Debug "2015-06-16 17:32:39.586844" 711 AppThwack /task/06a311db71638fad8b73032aeb4134dccbb1acfc 7976 900
+Info "2015-06-16 17:32:39.666844" 192 StatusBarManagerService "ADD-null , 0x7f020018" 214 901
+Debug "2015-06-16 17:32:39.676844" 711 AppThwackDeviceManager "taskStatus update (06a311db71638fad8b73032aeb4134dccbb1acfc: {""state"":1})" 711 902
+Debug "2015-06-16 17:32:39.676844" 711 AppThwackDeviceManager "wl: SSID: AppThwack, BSSID: 00:26:cb:a0:1e:80, MAC: D4:87:D8:F6:EA:E7, Supplicant state: COMPLETED, RSSI: -53, Link speed: 1868522, Net ID: 0" 7977 903
+Debug "2015-06-16 17:32:39.686844" 711 AppThwackDeviceManager "taskStatus update (06a311db71638fad8b73032aeb4134dccbb1acfc: {""result"":{""wifi_mac_address"":""D4:87:D8:F6:EA:E7"",""wifi_ip_address"":""172.16.4.178"",""wifi_ssid"":""AppThwack"",""wifi_rssi"":-53,""wifi_link_speed"":1868522,""wifi_hidden_ssid"":false,""wifi_bssid"":""00:26:cb:a0:1e:80""},""state"":2})" 711 904
+Info "2015-06-16 17:32:39.686844" 192 StatusBarManagerService "REMOVE-null , 0x7f020018" 214 905
+Debug "2015-06-16 17:32:39.856844" 711 AppThwack /task/06a311db71638fad8b73032aeb4134dccbb1acfc/status 7978 906
+Debug "2015-06-16 17:32:39.946844" 711 AppThwack /task/06a311db71638fad8b73032aeb4134dccbb1acfc/status 7981 907
+Debug "2015-06-16 17:32:40.076844" 711 AppThwack /task/06a311db71638fad8b73032aeb4134dccbb1acfc/status 7982 908
+Debug "2015-06-16 17:32:40.146844" 711 AppThwack /task/06a311db71638fad8b73032aeb4134dccbb1acfc/status 7983 909
+Debug "2015-06-16 17:32:40.296844" 7895 "        " ">>> STOP GKI_timer_update(), wake_lock_count:0" 7895 910
+Debug "2015-06-16 17:32:40.296844" 7895 "        " ">>> SUSPENDED GKI_timer_update()" 7895 911
+Debug "2015-06-16 17:32:40.646844" 7985 AndroidRuntime  7985 912
+Debug "2015-06-16 17:32:40.646844" 7985 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 7985 913
+Debug "2015-06-16 17:32:40.646844" 7985 AndroidRuntime "CheckJNI is OFF" 7985 914
+Debug "2015-06-16 17:32:40.646844" 7985 AndroidRuntime "setted country_code = Chile" 7985 915
+Debug "2015-06-16 17:32:40.646844" 7985 AndroidRuntime "setted sales_code = CHO" 7985 916
+Debug "2015-06-16 17:32:40.646844" 7985 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 7985 917
+Error "2015-06-16 17:32:40.656844" 7985 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 7985 918
+Error "2015-06-16 17:32:40.656844" 7985 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 7985 919
+Error "2015-06-16 17:32:40.656844" 7985 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 7985 920
+Debug "2015-06-16 17:32:40.876844" 7985 AndroidRuntime "Calling main entry com.android.commands.pm.Pm" 7985 921
+Debug "2015-06-16 17:32:40.956844" 7985 AndroidRuntime "Shutting down VM" 7985 922
+Info "2015-06-16 17:32:40.966844" 7985 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 7993 923
+Debug "2015-06-16 17:32:43.936844" 192 BatteryService "update start" 242 924
+Debug "2015-06-16 17:32:43.946844" 192 BatteryService "update start" 242 925
+Debug "2015-06-16 17:32:43.946844" 192 BatteryService "update start" 242 926
+Debug "2015-06-16 17:32:45.296844" 8010 AndroidRuntime  8010 927
+Debug "2015-06-16 17:32:45.296844" 8010 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8010 928
+Debug "2015-06-16 17:32:45.296844" 8010 AndroidRuntime "CheckJNI is OFF" 8010 929
+Debug "2015-06-16 17:32:45.306844" 8010 AndroidRuntime "setted country_code = Chile" 8010 930
+Debug "2015-06-16 17:32:45.306844" 8010 AndroidRuntime "setted sales_code = CHO" 8010 931
+Debug "2015-06-16 17:32:45.306844" 8010 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8010 932
+Error "2015-06-16 17:32:45.306844" 8010 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8010 933
+Error "2015-06-16 17:32:45.306844" 8010 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8010 934
+Error "2015-06-16 17:32:45.306844" 8010 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8010 935
+Debug "2015-06-16 17:32:45.576844" 8010 AndroidRuntime "Calling main entry com.android.commands.pm.Pm" 8010 936
+Warning "2015-06-16 17:32:45.636844" 192 ActivityManager "No content provider found for:" 219 937
+Warning "2015-06-16 17:32:46.236844" 192 ActivityManager "No content provider found for:" 219 938
+Debug "2015-06-16 17:32:46.246844" 192 PackageParser "Scanning package: /data/app/vmdl1381832964.tmp" 219 939
+Debug "2015-06-16 17:32:48.296844" 192 PackageManager "Scanning package com.rowland.hashtrace" 219 940
+Info "2015-06-16 17:32:48.296844" 192 PackageManager "Unpacking native libraries for /data/app/com.rowland.hashtrace-1.apk" 219 941
+Debug "2015-06-16 17:32:50.386844" 192 PackageManager "Registered content provider: com.rowland.hashtrace.app, className = com.rowland.data.TweetHashTracerContentProvider, isSyncable = true" 219 942
+Debug "2015-06-16 17:32:50.386844" 192 PackageManager "  Providers: com.rowland.data.TweetHashTracerContentProvider" 219 943
+Debug "2015-06-16 17:32:50.386844" 192 PackageManager "  Services: com.rowland.sync.TweetHashTracerAuthenticatorService com.rowland.sync.TweetHashTracerSyncService" 219 944
+Debug "2015-06-16 17:32:50.386844" 192 PackageManager "  Activities: com.rowland.hashtrace.MainActivity com.rowland.hashtrace.SettingsActivity com.rowland.hashtrace.DetailsActivity" 219 945
+Info "2015-06-16 17:32:50.386844" 192 ActivityManager "Force stopping package com.rowland.hashtrace uid=10078" 214 946
+Debug "2015-06-16 17:32:50.466844" 192 PackageManager "New package installed in /data/app/com.rowland.hashtrace-1.apk" 219 947
+Debug "2015-06-16 17:32:50.576844" 298 Launcher.SWidgetPkgMgr addPackage=com.rowland.hashtrace 298 948
+Info "2015-06-16 17:32:50.576844" 27444 VoiceActionsFactory "Applications list changed, recalculating supported actions" 27444 949
+Debug "2015-06-16 17:32:50.716844" 326 GTalkService "handlePackageInstalled: re-initialize providers" 326 950
+Debug "2015-06-16 17:32:50.716844" 326 GTalkService "[RawStanzaProvidersMgr] ##### searchProvidersFromIntent" 326 951
+Verbose "2015-06-16 17:32:50.726844" 24885 PackageIntentReceiver "onReceive() intent:Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.rowland.hashtrace flg=0x10000000 cmp=com.sec.android.app.controlpanel/.PackageIntentReceiver (has extras) } pkg:com.rowland.hashtrace action:android.intent.action.PACKAGE_ADDED" 24885 952
+Debug "2015-06-16 17:32:50.756844" 326 GTalkService "[RawStanzaProvidersMgr] no intent receivers found" 326 953
+Info "2015-06-16 17:32:50.896844" 192 ActivityManager "Start proc com.google.android.partnersetup for broadcast com.google.android.partnersetup/.AppInstalledReceiver: pid=8032 uid=10046 gids={3003}" 198 954
+Debug "2015-06-16 17:32:50.986844" 8010 AndroidRuntime "Shutting down VM" 8010 955
+Info "2015-06-16 17:32:51.096844" 8032 ActivityThread "Pub com.google.android.partnersetup.rlzprovider: com.google.android.partnersetup.RlzProvider" 8032 956
+Info "2015-06-16 17:32:51.116844" 8032 ActivityThread "Pub com.google.android.partnersetup.rlzappprovider: com.google.android.partnersetup.RlzAppProvider" 8032 957
+Info "2015-06-16 17:32:51.216844" 192 ActivityManager "Start proc com.svox.pico for broadcast com.svox.pico/.VoiceDataInstallerReceiver: pid=8043 uid=10075 gids={}" 294 958
+Debug "2015-06-16 17:32:51.236844" 20237 "vending " "[110] LocalAssetCache.updateOnePackage(): No local info for com.rowland.hashtrace" 8044 959
+Info "2015-06-16 17:32:51.326844" 8043 ActivityThread "Pub com.svox.pico.providers.SettingsProvider: com.svox.pico.providers.SettingsProvider" 8043 960
+Debug "2015-06-16 17:32:51.766844" 8054 AndroidRuntime  8054 961
+Debug "2015-06-16 17:32:51.766844" 8054 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 8054 962
+Debug "2015-06-16 17:32:51.776844" 8054 AndroidRuntime "CheckJNI is OFF" 8054 963
+Debug "2015-06-16 17:32:51.776844" 8054 AndroidRuntime "setted country_code = Chile" 8054 964
+Debug "2015-06-16 17:32:51.776844" 8054 AndroidRuntime "setted sales_code = CHO" 8054 965
+Debug "2015-06-16 17:32:51.776844" 8054 AndroidRuntime "found sales_code tag = <CHO>, </CHO>" 8054 966
+Error "2015-06-16 17:32:51.776844" 8054 AndroidRuntime "setted feature : <cam_antibanding>50</cam_antibanding>" 8054 967
+Error "2015-06-16 17:32:51.776844" 8054 AndroidRuntime "setted feature : <x_wap_profile>http://wap.samsungmobile.com/uaprof/GT-S5830L.xml</x_wap_profile>" 8054 968
+Error "2015-06-16 17:32:51.776844" 8054 AndroidRuntime "setted feature : <browser_plugins>ON</browser_plugins>" 8054 969
+Debug "2015-06-16 17:32:52.226844" 8054 AndroidRuntime "Calling main entry com.android.commands.pm.Pm" 8054 970
+Debug "2015-06-16 17:32:52.266844" 8054 AndroidRuntime "Shutting down VM" 8054 971
+Info "2015-06-16 17:32:52.276844" 8054 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 8064 972

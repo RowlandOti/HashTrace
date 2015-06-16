@@ -1,0 +1,24 @@
+:Monkey: seed=0 count=1
+:AllowPackage: com.rowland.hashtrace
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Selecting main activities from category android.intent.category.LAUNCHER
+//   + Using main activity com.rowland.hashtrace.MainActivity (from package com.rowland.hashtrace)
+// Selecting main activities from category android.intent.category.MONKEY
+// Seeded: 0
+// Event percentages:
+//   0: 50.0%
+//   1: 50.0%
+//   2: -0.0%
+//   3: -0.0%
+//   4: -0.0%
+//   5: -0.0%
+//   6: -0.0%
+//   7: 0.0%
+//   8: -0.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10000000;component=com.rowland.hashtrace/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.rowland.hashtrace/.MainActivity } in package com.rowland.hashtrace
+Events injected: 1
+:Dropped: keys=0 pointers=0 trackballs=0 flips=0
+## Network stats: elapsed time=11ms (0ms mobile, 11ms wifi, 0ms not connected)
+// Monkey finished

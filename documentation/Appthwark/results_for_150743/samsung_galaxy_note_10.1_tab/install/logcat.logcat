@@ -1,0 +1,912 @@
+    "--------- beginning of /dev/log/main"  1
+Debug "2015-06-16 17:50:26.115669" 4256 AppThwack /tz/ 28776 2
+Debug "2015-06-16 17:50:26.150669" 4256 AppThwack "sha1: fcfb00d9d32a5935c85719445912a4928b2f8682" 28776 3
+Debug "2015-06-16 17:50:26.215669" 4256 AppThwack /task/fcfb00d9d32a5935c85719445912a4928b2f8682 28776 4
+Debug "2015-06-16 17:50:26.345669" 4256 dalvikvm "GC_CONCURRENT freed 434K, 19% free 7494K/9159K, paused 20ms+13ms, total 86ms" 4258 5
+    "--------- beginning of /dev/log/system"  6
+Debug "2015-06-16 17:50:26.355669" 2136 STATUSBAR-NotificationService "Noti Alert - mSystemReady:true, AlertEnabled:true" 2212 7
+Debug "2015-06-16 17:50:26.360669" 4256 AppThwackDeviceManager "taskStatus update (fcfb00d9d32a5935c85719445912a4928b2f8682: {""state"":1})" 4256 8
+Debug "2015-06-16 17:50:26.360669" 4256 AppThwackDeviceManager "taskStatus update (fcfb00d9d32a5935c85719445912a4928b2f8682: {""result"":{""tz"":""America/Los_Angeles""},""state"":2})" 4256 9
+Debug "2015-06-16 17:50:26.370669" 2136 STATUSBAR-NotificationService "updateLightsLocked() : Set default flashing notification light" 2212 10
+Debug "2015-06-16 17:50:26.400669" 4256 AppThwack /task/fcfb00d9d32a5935c85719445912a4928b2f8682/status 28781 11
+Debug "2015-06-16 17:50:26.440669" 2383 StatusBar "expanding top notification at 3entry.userCollapsed() = false" 2383 12
+Debug "2015-06-16 17:50:26.450669" 4256 AppThwack /task/fcfb00d9d32a5935c85719445912a4928b2f8682/status 28782 13
+Debug "2015-06-16 17:50:26.460669" 2383 StatusBar "expanding top notification at 2entry.userCollapsed() = false" 2383 14
+Debug "2015-06-16 17:50:26.550669" 4256 AppThwack /task/fcfb00d9d32a5935c85719445912a4928b2f8682/status 28783 15
+Debug "2015-06-16 17:50:26.590669" 4256 dalvikvm "GC_CONCURRENT freed 432K, 19% free 7491K/9159K, paused 12ms+2ms, total 36ms" 4258 16
+Debug "2015-06-16 17:50:26.620669" 4256 AppThwack /task/fcfb00d9d32a5935c85719445912a4928b2f8682/status 28784 17
+Debug "2015-06-16 17:50:26.815669" 4256 AppThwack /task/fcfb00d9d32a5935c85719445912a4928b2f8682/status 28788 18
+Debug "2015-06-16 17:50:26.845669" 4256 AppThwack /wake/ 28789 19
+Debug "2015-06-16 17:50:26.960669" 4256 dalvikvm "GC_CONCURRENT freed 480K, 18% free 7523K/9159K, paused 13ms+15ms, total 98ms" 4258 20
+Debug "2015-06-16 17:50:26.960669" 4256 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 9ms" 28789 21
+Debug "2015-06-16 17:50:26.960669" 4256 AppThwack "sha1: ed4475d5aa735c4c5a654de09a47749881214a05" 28789 22
+Debug "2015-06-16 17:50:27.030669" 4256 AppThwack /task/ed4475d5aa735c4c5a654de09a47749881214a05 28789 23
+Debug "2015-06-16 17:50:27.095669" 4256 AppThwackDeviceManager "taskStatus update (ed4475d5aa735c4c5a654de09a47749881214a05: {""state"":1})" 4256 24
+Debug "2015-06-16 17:50:27.095669" 4256 AppThwackAndroidLib "WakeLock: acquire" 28790 25
+Debug "2015-06-16 17:50:27.100669" 2136 PowerManagerService "reactivateScreenLocksLocked mProxIgnoredBecauseScreenTurnedOff=false" 21803 26
+Debug "2015-06-16 17:50:27.100669" 2136 PowerManagerService "Screen__On : acquireWakeLock flags=0x30000006 tag=AppThwackAndroidLib uid=10146 pid=4256" 21803 27
+Debug "2015-06-16 17:50:27.100669" 2136 PowerManagerService "enableLightSensorLocked enable=true mLightSensorEnabled=false mAutoBrightessEnabled=false mWaitingForFirstLightSensor=false" 21803 28
+Debug "2015-06-16 17:50:27.100669" 2136 PowerManagerService "sendNotificationLocked on=true" 21803 29
+Debug "2015-06-16 17:50:27.105669" 2136 PowerManagerService "mNotificationTask : on" 2284 30
+Debug "2015-06-16 17:50:27.115669" 2136 KeyguardViewMediator "onScreenTurnedOn, seq = 8" 2284 31
+Debug "2015-06-16 17:50:27.115669" 2136 KeyguardViewMediator notifyScreenOnLocked 2284 32
+Debug "2015-06-16 17:50:27.120669" 2136 WindowManager mSetIgnorePWR 2284 33
+Debug "2015-06-16 17:50:27.120669" 2136 SensorService "info.rates.add, set DEFAULT_EVENTS_PERIOD" 2284 34
+Info "2015-06-16 17:50:27.120669" 2136 iNemoSensor "enable(): handle(0), en(1), what(0)" 2284 35
+Debug "2015-06-16 17:50:27.120669" 2136 AkmSensor "akm_enable_sensor: Accel is enabled. (orien = 0)" 2284 36
+Info "2015-06-16 17:50:27.120669" 2136 AkmSensor "enable_accelerometer, mEnabled = 0, enable = 1" 2284 37
+Debug "2015-06-16 17:50:27.120669" 2136 WindowOrientationListener "enable register mbSContext: false" 2284 38
+Verbose "2015-06-16 17:50:27.120669" 2136 WindowOrientationListener "WindowOrientationListener enabled" 2284 39
+Info "2015-06-16 17:50:27.125669" 4256 AppThwackAndroidLib "ET phone home" 28790 40
+Debug "2015-06-16 17:50:27.130669" 2136 iNemoSensor "enable(): MASK_ACC (1) MASK_MAG (0) MASK_GYR (0)" 2284 41
+Info "2015-06-16 17:50:27.130669" 2136 AkmSensor "enabled = 2, shutdown = 0" 2182 42
+Debug "2015-06-16 17:50:27.130669" 2136 iNemoSensor "enable(): mEnAcc(1) mEnMag(0) mEnGyr(0)" 2284 43
+Info "2015-06-16 17:50:27.130669" 2136 iNemoSensor "update_delay wanted_accel = 200000000" 2284 44
+Debug "2015-06-16 17:50:27.130669" 2136 AkmSensor "MeasureSNGLoop: interval.interval = 200000000, doze_max = 196000, prms->enabled = 2" 2182 45
+Debug "2015-06-16 17:50:27.135669" 2136 SensorService "SensorDevice::activate  (enable 1, disable 0) = 1" 2284 46
+Debug "2015-06-16 17:50:27.135669" 2136 SensorService "activating sensor enable handle=0" 2284 47
+Debug "2015-06-16 17:50:27.135669" 2136 SensorService "activating sensor enable, Done!" 2284 48
+Debug "2015-06-16 17:50:27.135669" 2136 SensorService "SensorDevice::activating sensor handle=0 ns=200000000" 2284 49
+Debug "2015-06-16 17:50:27.135669" 2136 iNemoSensor "setDelay(): handle(0), en(200000000)" 2284 50
+Info "2015-06-16 17:50:27.135669" 2136 iNemoSensor "skip update_delay wanted_accel = 200000000 current delay = 200000000" 2284 51
+Info "2015-06-16 17:50:27.135669" 2136 SensorService "info.selectDelay() ns=66667000" 2284 52
+Debug "2015-06-16 17:50:27.135669" 2136 iNemoSensor "setDelay(): handle(0), en(66667000)" 2284 53
+Info "2015-06-16 17:50:27.135669" 2136 iNemoSensor "update_delay wanted_accel = 66667000" 2284 54
+Debug "2015-06-16 17:50:27.140669" 2136 SensorService "SensorDevice::setDelay, Return(true 1, false 0) =  1" 2284 55
+Debug "2015-06-16 17:50:27.140669" 2136 SensorManager "registerListener :: handle = 0  name= LSM330DLC 3-axis Accelerometer delay= 66667 Listener= android.view.WindowOrientationListener$SensorEventListenerImpl@424527f8" 2284 56
+Debug "2015-06-16 17:50:27.140669" 2136 KeyguardViewMediator handleNotifyScreenOn 2289 57
+Debug "2015-06-16 17:50:27.145669" 2136 "lights  " "LCD : 20 +" 2283 58
+Debug "2015-06-16 17:50:27.145669" 2136 "lights  " "LCD : 20 -" 2283 59
+Info "2015-06-16 17:50:27.145669" 2136 WindowManager "No lock screen!" 2289 60
+Info "2015-06-16 17:50:27.145669" 2136 PowerManagerService "Ulight 0x1->0x1|0x1" 2289 61
+Info "2015-06-16 17:50:27.145669" 2136 PowerManagerService "Light Animator Finished currentValue=20" 2283 62
+Debug "2015-06-16 17:50:27.185669" 2136 STATUSBAR-NotificationService "Noti Alert - mSystemReady:true, AlertEnabled:true" 2212 63
+Debug "2015-06-16 17:50:27.225669" 2383 StatusBar "expanding top notification at 3entry.userCollapsed() = false" 2383 64
+Debug "2015-06-16 17:50:27.235669" 2582 Launcher "onRestart, Launcher: 1105636728" 2582 65
+Debug "2015-06-16 17:50:27.235669" 2582 Launcher "onStart, Launcher: 1105636728" 2582 66
+Debug "2015-06-16 17:50:27.235669" 2582 Launcher.HomeFragment onStart 2582 67
+Debug "2015-06-16 17:50:27.240669" 2582 Launcher "onResume, Launcher: 1105636728" 2582 68
+Info "2015-06-16 17:50:27.250669" 4256 AppThwackAndroidLib "Muting audio streams" 28790 69
+Info "2015-06-16 17:50:27.250669" 2136 AudioService "setRingerMode is called by pid: 4256, uid=10146" 2146 70
+Info "2015-06-16 17:50:27.250669" 2136 AudioService "Ringer mode : silent & set driving mode off" 2146 71
+Debug "2015-06-16 17:50:27.255669" 2511 CallNotifier "stopRing()... (silenceRinger)" 2511 72
+Debug "2015-06-16 17:50:27.255669" 2136 VolumePanel "change mode by MSG_RINGER_MODE_CHANGED" 2197 73
+Debug "2015-06-16 17:50:27.255669" 2511 "Ringer  " stopRing()... 2511 74
+Debug "2015-06-16 17:50:27.255669" 2511 "Ringer  " "- stopRing: null mRingHandler!" 2511 75
+Debug "2015-06-16 17:50:27.255669" 2136 VolumePanel "change volume by MSG_VOLUME_CHANGED" 2197 76
+Debug "2015-06-16 17:50:27.255669" 2136 VolumePanel "onVolumeChanged(streamType: 1, flags: 0)" 2197 77
+Warning "2015-06-16 17:50:27.255669" 2511 Vibrator Vibrator.cancel() 2511 78
+Debug "2015-06-16 17:50:27.270669" 4256 AppThwack /task/ed4475d5aa735c4c5a654de09a47749881214a05/status 28791 79
+Debug "2015-06-16 17:50:27.285669" 2582 comsamsunglog "[MSC_HERO_Accu_Tab]>>> ====================================================================================================================" 2582 80
+Debug "2015-06-16 17:50:27.285669" 2582 comsamsunglog "[MSC_HERO_Accu_Tab]>>> widgetappatheroaccuweatherwidget [Version : 12101801] [ 1 ]" 2582 81
+Debug "2015-06-16 17:50:27.285669" 2582 comsamsunglog "[MSC_HERO_Accu_Tab]>>> Header set to : ===> ""widget"" <===" 2582 82
+Debug "2015-06-16 17:50:27.285669" 2582 comsamsunglog "[MSC_HERO_Accu_Tab]>>> ====================================================================================================================" 2582 83
+Debug "2015-06-16 17:50:27.285669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:895 [0:0]  onResume :: fU = true  cEUi = true" 2582 84
+Info "2015-06-16 17:50:27.285669" 2136 AudioService "setRingerMode is called by pid: 4256, uid=10146" 2565 85
+Info "2015-06-16 17:50:27.285669" 2136 AudioService "Ringer mode : vibrate" 2565 86
+Debug "2015-06-16 17:50:27.285669" 2136 VolumePanel "change volume by MSG_VOLUME_CHANGED" 2197 87
+Debug "2015-06-16 17:50:27.285669" 2136 VolumePanel "onVolumeChanged(streamType: 5, flags: 0)" 2197 88
+Debug "2015-06-16 17:50:27.290669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:2034 [0:0] AR_S_T : 0" 2582 89
+Debug "2015-06-16 17:50:27.295669" 2136 VolumePanel "change mode by MSG_RINGER_MODE_CHANGED" 2197 90
+Info "2015-06-16 17:50:27.300669" 4256 AppThwackAndroidLib "Creating /data/data/com.trellis.appthwackdevicemanager/app_logs" 28790 91
+Debug "2015-06-16 17:50:27.300669" 4256 AppThwackDeviceManager "taskStatus update (ed4475d5aa735c4c5a654de09a47749881214a05: {""result"":""Device woken."",""state"":2})" 4256 92
+Debug "2015-06-16 17:50:27.305669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:931 [0:0]  onResume :: mFAR = false, cC = false, cEUI = true" 2582 93
+Debug "2015-06-16 17:50:27.305669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:1237 [0:0]  cUI : cnt = 1, mRC  = true" 2582 94
+Debug "2015-06-16 17:50:27.310669" 2136 STATUSBAR-NotificationService "updateLightsLocked() : Set default flashing notification light" 2212 95
+Debug "2015-06-16 17:50:27.320669" 2136 VolumePanel "change volume by MSG_VOLUME_CHANGED" 2197 96
+Debug "2015-06-16 17:50:27.320669" 2136 VolumePanel "onVolumeChanged(streamType: 4, flags: 0)" 2197 97
+Debug "2015-06-16 17:50:27.330669" 2136 AkmSensor "MeasureSNGLoop: interval.interval = 66667000, doze_max = 65333, prms->enabled = 2" 2182 98
+Debug "2015-06-16 17:50:27.330669" 2383 STATUSBAR-SilentModeQuickSettingButton "SilentMode onReceive()-SoundProfile:0" 2383 99
+Debug "2015-06-16 17:50:27.335669" 2136 WfdService "intent recieved android.intent.action.SCREEN_ON" 2197 100
+Error "2015-06-16 17:50:27.340669" 2582 Launcher "Error finding setting, default accessibility to not found: accessibility_enabled" 2582 101
+Debug "2015-06-16 17:50:27.340669" 2582 Launcher.HomeFragment onResume 2582 102
+Debug "2015-06-16 17:50:27.340669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:1202 [0:0]  fireOR" 2582 103
+Debug "2015-06-16 17:50:27.340669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> SM:1213 [0:0] bTCC WCV = 200" 2582 104
+Debug "2015-06-16 17:50:27.340669" 2136 PowerManagerService "setScreenOffTimeouts mKeylightDelay=1500 mDimDelay=6500 mScreenOffDelay=7000 mDimScreen=true" 2284 105
+Debug "2015-06-16 17:50:27.345669" 2136 "lights  " "write pattern : g_led_info = 0" 2197 106
+Error "2015-06-16 17:50:27.345669" 2136 "lights  " "write_int failed to open /sys/class/sec/led/led_pattern" 2197 107
+Debug "2015-06-16 17:50:27.345669" 2136 STATUSBAR-NotificationService ACTION_SCREEN_ON 2197 108
+Debug "2015-06-16 17:50:27.345669" 2136 STATUSBAR-NotificationService "updateLightsLocked() : Turn off notification light" 2197 109
+Debug "2015-06-16 17:50:27.350669" 2383 STATUSBAR-QuickSettingButton "Button OFF2" 2383 110
+Debug "2015-06-16 17:50:27.355669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:1648 [0:0] drw 2nd Tm dt = 0955" 2582 111
+Debug "2015-06-16 17:50:27.355669" 2582 debugRotate Workspace.invalidateChildInParent 2582 112
+Debug "2015-06-16 17:50:27.360669" 2582 debugRotate Workspace.invalidateChildInParent 2582 113
+Info "2015-06-16 17:50:27.365669" 1833 AudioHardwareTinyALSA setParameters(screen_state=on) 1833 114
+Info "2015-06-16 17:50:27.365669" 1833 audio_wfd_hw "adev_set_parameters() screen_state=on" 1833 115
+Info "2015-06-16 17:50:27.365669" 2136 TvoutService_Java "TvoutService Action : android.intent.action.SCREEN_ON" 2197 116
+Debug "2015-06-16 17:50:27.365669" 2582 debugRotate Workspace.invalidateChildInParent 2582 117
+Debug "2015-06-16 17:50:27.370669" 2582 debugRotate Workspace.invalidateChildInParent 2582 118
+Debug "2015-06-16 17:50:27.375669" 2582 debugRotate Workspace.invalidateChildInParent 2582 119
+Debug "2015-06-16 17:50:27.380669" 2582 debugRotate Workspace.invalidateChildInParent 2582 120
+Debug "2015-06-16 17:50:27.385669" 2582 debugRotate Workspace.invalidateChildInParent 2582 121
+Debug "2015-06-16 17:50:27.385669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> SM:379 [0:0] IR : false, IPR : false" 2582 122
+Debug "2015-06-16 17:50:27.385669" 4256 AppThwack /task/ed4475d5aa735c4c5a654de09a47749881214a05/status 28792 123
+Debug "2015-06-16 17:50:27.390669" 2383 STATUSBAR-SilentModeQuickSettingButton "SilentMode onReceive()-SoundProfile:1" 2383 124
+Debug "2015-06-16 17:50:27.395669" 2582 MenuAppsGridFragment onResume 2582 125
+Debug "2015-06-16 17:50:27.395669" 2582 Launcher.HomeFragment onPause 2582 126
+Debug "2015-06-16 17:50:27.395669" 2383 STATUSBAR-QuickSettingButton "Button ON2" 2383 127
+Debug "2015-06-16 17:50:27.400669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:1194 [0:0]  fireOP" 2582 128
+Debug "2015-06-16 17:50:27.400669" 2582 Launcher "onPause, Launcher: 1105636728" 2582 129
+Debug "2015-06-16 17:50:27.400669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:1006 [0:0]  onPause" 2582 130
+Debug "2015-06-16 17:50:27.440669" 2383 StatusBar "expanding top notification at 2entry.userCollapsed() = false" 2383 131
+Debug "2015-06-16 17:50:27.455669" 4256 dalvikvm "GC_CONCURRENT freed 490K, 19% free 7495K/9159K, paused 11ms+1ms, total 59ms" 4258 132
+Debug "2015-06-16 17:50:27.500669" 4256 AppThwack /task/ed4475d5aa735c4c5a654de09a47749881214a05/status 28794 133
+Debug "2015-06-16 17:50:27.525669" 2136 dalvikvm "GC_CONCURRENT freed 2012K, 22% free 25984K/33223K, paused 27ms+17ms, total 205ms" 2138 134
+Debug "2015-06-16 17:50:27.525669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 80ms" 2284 135
+Debug "2015-06-16 17:50:27.525669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 80ms" 21803 136
+Debug "2015-06-16 17:50:27.525669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 77ms" 21802 137
+Debug "2015-06-16 17:50:27.525669" 2136 PowerManagerService "setScreenOffTimeouts mKeylightDelay=1500 mDimDelay=6500 mScreenOffDelay=7000 mDimScreen=true" 2284 138
+Debug "2015-06-16 17:50:27.530669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 76ms" 2565 139
+Info "2015-06-16 17:50:27.530669" 1830 SurfaceFlinger "id=393(82) createSurf 0x40eb4e1c (1x1),1 flag=0, Ootificatio" 1916 140
+Debug "2015-06-16 17:50:27.535669" 2582 Launcher.HomeFragment performOnHomePressed 2582 141
+Debug "2015-06-16 17:50:27.535669" 2582 debugRotate Workspace.invalidateChildInParent 2582 142
+Debug "2015-06-16 17:50:27.535669" 2582 debugRotate Workspace.invalidateChildInParent 2582 143
+Debug "2015-06-16 17:50:27.535669" 2582 debugRotate Workspace.invalidateChildInParent 2582 144
+Info "2015-06-16 17:50:27.560669" 2136 ClipboardServiceEx "Send intent for dismiss clipboard dialog inside hideCurrentInputLocked() !" 28795 145
+Debug "2015-06-16 17:50:27.565669" 2582 Launcher.Workspace "exitWidgetResizeMode State: NORMAL, newDragStarted: false" 2582 146
+Debug "2015-06-16 17:50:27.565669" 2582 Launcher "onResume, Launcher: 1105636728" 2582 147
+Debug "2015-06-16 17:50:27.565669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 114ms" 2365 148
+Debug "2015-06-16 17:50:27.575669" 2582 comsamsunglog "[MSC_HERO_Accu_Tab]>>> ====================================================================================================================" 2582 149
+Debug "2015-06-16 17:50:27.575669" 2582 comsamsunglog "[MSC_HERO_Accu_Tab]>>> widgetappatheroaccuweatherwidget [Version : 12101801] [ 1 ]" 2582 150
+Debug "2015-06-16 17:50:27.575669" 2582 comsamsunglog "[MSC_HERO_Accu_Tab]>>> Header set to : ===> ""widget"" <===" 2582 151
+Debug "2015-06-16 17:50:27.575669" 2582 comsamsunglog "[MSC_HERO_Accu_Tab]>>> ====================================================================================================================" 2582 152
+Debug "2015-06-16 17:50:27.575669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:895 [0:0]  onResume :: fU = true  cEUi = true" 2582 153
+Debug "2015-06-16 17:50:27.575669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:2034 [0:0] AR_S_T : 0" 2582 154
+Debug "2015-06-16 17:50:27.575669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:931 [0:0]  onResume :: mFAR = false, cC = false, cEUI = true" 2582 155
+Debug "2015-06-16 17:50:27.580669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:1237 [0:0]  cUI : cnt = 1, mRC  = true" 2582 156
+Debug "2015-06-16 17:50:27.605669" 1830 SurfaceFlinger "Screen about to return, flinger = 0x41169008" 2019 157
+Debug "2015-06-16 17:50:27.605669" 1830 SecTVOutService "virtual void android::SecTVOutService::setSuspendMode(uint32_t) TV suspend mode = 0" 1916 158
+Debug "2015-06-16 17:50:27.605669" 1830 SecTVOutService "virtual void android::SecTVOutService::setHdmiStatus(uint32_t) HDMI cable status = 1" 1916 159
+Debug "2015-06-16 17:50:27.605669" 1830 "        " "bool android::SecHdmi::connect()::m_flagHWConnected() fail" 1916 160
+Error "2015-06-16 17:50:27.605669" 1830 SecTVOutService "virtual void android::SecTVOutService::setHdmiStatus(uint32_t)::mSecHdmi.connect() fail" 1916 161
+Debug "2015-06-16 17:50:27.615669" 4780 ProgramMonitor LAUNCHER_RESUME 4780 162
+Debug "2015-06-16 17:50:27.615669" 4780 ProgramMonitor "isWidgetEnabled:0  mViews:null" 4780 163
+Verbose "2015-06-16 17:50:27.615669" 4780 TaskCloserActivity "TaskCloserActivity onReceive()" 4780 164
+Error "2015-06-16 17:50:27.620669" 2582 Launcher "Error finding setting, default accessibility to not found: accessibility_enabled" 2582 165
+Debug "2015-06-16 17:50:27.620669" 2582 Launcher.HomeFragment onResume 2582 166
+Debug "2015-06-16 17:50:27.620669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:1202 [0:0]  fireOR" 2582 167
+Debug "2015-06-16 17:50:27.620669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> SM:379 [0:0] IR : false, IPR : false" 2582 168
+Debug "2015-06-16 17:50:27.635669" 2582 MenuAppsGridFragment onResume 2582 169
+Warning "2015-06-16 17:50:27.635669" 2582 CellLayout "CellLayoutWithResizableWidgets setting height to 686. parent specified: 684" 2582 170
+Debug "2015-06-16 17:50:27.635669" 2383 STATUSBAR-Clock "onReceive() - ACTION_SCREEN_ON" 2383 171
+Verbose "2015-06-16 17:50:27.640669" 4780 TaskCloserActivity "TaskCloserActivity onReceive()" 4780 172
+Debug "2015-06-16 17:50:27.655669" 2383 STATUSBAR-Clock "onReceive() - ACTION_SCREEN_ON" 2383 173
+Debug "2015-06-16 17:50:27.660669" 2582 debugRotate Workspace.invalidateChildInParent 2582 174
+Debug "2015-06-16 17:50:27.665669" 4823 dalvikvm "GC_CONCURRENT freed 334K, 13% free 7111K/8135K, paused 12ms+10ms, total 48ms" 4825 175
+Debug "2015-06-16 17:50:27.670669" 2582 debugRotate Workspace.invalidateChildInParent 2582 176
+Debug "2015-06-16 17:50:27.670669" 2582 debugRotate Workspace.invalidateChildInParent 2582 177
+Debug "2015-06-16 17:50:27.690669" 2582 debugRotate Workspace.invalidateChildInParent 2582 178
+Debug "2015-06-16 17:50:27.690669" 2582 debugRotate Workspace.invalidateChildInParent 2582 179
+Debug "2015-06-16 17:50:27.700669" 2582 debugRotate Workspace.invalidateChildInParent 2582 180
+Debug "2015-06-16 17:50:27.700669" 2582 debugRotate Workspace.invalidateChildInParent 2582 181
+Debug "2015-06-16 17:50:27.700669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:661 [0:0] mSUDH(): current loc id = cityId:2627656, tZ=GMT-8" 2582 182
+Debug "2015-06-16 17:50:27.700669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:674 [0:0] ===== mSetUIDataHandler(): day = 7:51 AM, night=4:43 PM" 2582 183
+Debug "2015-06-16 17:50:27.705669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> SM:1182 [0:0] sta ani iPA = false, flkDir = 0, iFA = false" 2582 184
+Debug "2015-06-16 17:50:27.705669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:1672 [0:0] drw all Tm dt = 0955" 2582 185
+Debug "2015-06-16 17:50:27.705669" 2582 debugRotate Workspace.invalidateChildInParent 2582 186
+Debug "2015-06-16 17:50:27.705669" 2582 debugRotate Workspace.invalidateChildInParent 2582 187
+Debug "2015-06-16 17:50:27.705669" 2582 debugRotate Workspace.invalidateChildInParent 2582 188
+Debug "2015-06-16 17:50:27.705669" 2582 debugRotate Workspace.invalidateChildInParent 2582 189
+Debug "2015-06-16 17:50:27.705669" 2582 debugRotate Workspace.invalidateChildInParent 2582 190
+Debug "2015-06-16 17:50:27.705669" 2582 debugRotate Workspace.invalidateChildInParent 2582 191
+Debug "2015-06-16 17:50:27.735669" 4780 ProgramMonitor LAUNCHER_RESUME 4780 192
+Debug "2015-06-16 17:50:27.735669" 4780 ProgramMonitor "isWidgetEnabled:0  mViews:null" 4780 193
+Verbose "2015-06-16 17:50:27.735669" 4780 TaskCloserActivity "TaskCloserActivity onReceive()" 4780 194
+Debug "2015-06-16 17:50:27.735669" 4780 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 0ms" 4780 195
+Debug "2015-06-16 17:50:27.735669" 4798 dalvikvm "GC_CONCURRENT freed 387K, 15% free 7046K/8199K, paused 13ms+1ms, total 35ms" 4800 196
+Info "2015-06-16 17:50:27.765669" 2423 TwDVFSBroadcastReceiver onScreenOnIntent 2423 197
+Debug "2015-06-16 17:50:27.770669" 4304 "-----------Screen Receiver package name" com.sec.android.app.launcher 4304 198
+Debug "2015-06-16 17:50:27.780669" 4780 dalvikvm "GC_EXPLICIT freed 107K, 14% free 7096K/8199K, paused 2ms+4ms, total 46ms" 4780 199
+Debug "2015-06-16 17:50:27.795669" 2582 dalvikvm "GC_FOR_ALLOC freed 1674K, 49% free 20420K/39303K, paused 50ms, total 50ms" 2582 200
+Debug "2015-06-16 17:50:27.820669" 2136 WindowManager mUnSetIgnorePWR 2289 201
+Debug "2015-06-16 17:50:27.820669" 2136 WifiP2pService "P2pDisabledState{ what=131204 }" 2334 202
+Debug "2015-06-16 17:50:27.830669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> SM:446 [0:0] IR : false, IPR : false" 2582 203
+Warning "2015-06-16 17:50:27.835669" 2136 AlarmManager "FACTORY_ON= 0" 21803 204
+Debug "2015-06-16 17:50:27.845669" 3073 com.samsung.app "[MSC_HERO_Accu_Tab]>>> WCS:251 [0:0]  BR act = androidintentactionSCREEN_ON" 3073 205
+Debug "2015-06-16 17:50:27.850669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:661 [0:0] mSUDH(): current loc id = cityId:2627656, tZ=GMT-8" 2582 206
+Debug "2015-06-16 17:50:27.850669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:674 [0:0] ===== mSetUIDataHandler(): day = 7:51 AM, night=4:43 PM" 2582 207
+Debug "2015-06-16 17:50:27.850669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> SM:1182 [0:0] sta ani iPA = false, flkDir = 0, iFA = false" 2582 208
+Debug "2015-06-16 17:50:27.850669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:1672 [0:0] drw all Tm dt = 0955" 2582 209
+Debug "2015-06-16 17:50:27.855669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> SM:446 [0:0] IR : false, IPR : false" 2582 210
+Warning "2015-06-16 17:50:27.855669" 2582 CellLayout "CellLayoutWithResizableWidgets setting height to 686. parent specified: 684" 2582 211
+Debug "2015-06-16 17:50:27.865669" 2582 debugRotate Workspace.invalidateChildInParent 2582 212
+Warning "2015-06-16 17:50:27.865669" 2136 AlarmManager "FACTORY_ON= 0" 2136 213
+Debug "2015-06-16 17:50:27.870669" 2582 debugRotate Workspace.invalidateChildInParent 2582 214
+Debug "2015-06-16 17:50:27.870669" 2582 debugRotate Workspace.invalidateChildInParent 2582 215
+Debug "2015-06-16 17:50:27.870669" 2136 WifiP2pService "P2pDisabledState{ what=131204 }" 2334 216
+Debug "2015-06-16 17:50:27.895669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:475 [0:0]  mSHandler syncDM" 2582 217
+Debug "2015-06-16 17:50:27.895669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> SM:1213 [0:0] bTCC WCV = 200" 2582 218
+Debug "2015-06-16 17:50:27.895669" 2582 "widget  " "[MSC_HERO_Accu_Tab]>>> WC:1648 [0:0] drw 2nd Tm dt = 0955" 2582 219
+Debug "2015-06-16 17:50:27.895669" 2582 debugRotate Workspace.invalidateChildInParent 2582 220
+Debug "2015-06-16 17:50:27.900669" 2582 debugRotate Workspace.invalidateChildInParent 2582 221
+Warning "2015-06-16 17:50:27.900669" 2582 CellLayout "CellLayoutWithResizableWidgets setting height to 686. parent specified: 684" 2582 222
+Debug "2015-06-16 17:50:27.905669" 4256 AppThwack /task/ed4475d5aa735c4c5a654de09a47749881214a05/status 28826 223
+Debug "2015-06-16 17:50:27.910669" 2582 debugRotate Workspace.invalidateChildInParent 2582 224
+Debug "2015-06-16 17:50:27.910669" 2582 debugRotate Workspace.invalidateChildInParent 2582 225
+Info "2015-06-16 17:50:27.910669" 1830 SurfaceFlinger "id=393 Removed Ootificatio idx=7 MapSz=5" 2020 226
+Info "2015-06-16 17:50:27.915669" 1830 SurfaceFlinger "id=393 Removed Ootificatio idx=-2 MapSz=5" 6217 227
+Debug "2015-06-16 17:50:27.930669" 4256 AppThwack /wifi/ 28829 228
+Debug "2015-06-16 17:50:27.955669" 4256 AppThwack "sha1: 1ea5df735994cdd0cd70246ab58b763219df5062" 28829 229
+Debug "2015-06-16 17:50:27.955669" 4256 AppThwackDeviceManager "k: enabled v: True" 28829 230
+Debug "2015-06-16 17:50:27.955669" 4256 AppThwackDeviceManager "k: NanoHttpd.QUERY_STRING v: enabled=True" 28829 231
+Debug "2015-06-16 17:50:27.965669" 4256 dalvikvm "GC_CONCURRENT freed 463K, 19% free 7496K/9159K, paused 11ms+2ms, total 28ms" 4258 232
+Debug "2015-06-16 17:50:27.980669" 4256 AppThwack /task/1ea5df735994cdd0cd70246ab58b763219df5062 28829 233
+Debug "2015-06-16 17:50:28.005669" 4256 AppThwackDeviceManager "taskStatus update (1ea5df735994cdd0cd70246ab58b763219df5062: {""state"":1})" 4256 234
+Debug "2015-06-16 17:50:28.005669" 4256 AppThwackAndroidLib "setWifiEnabled: setting wifi to: true" 28832 235
+Info "2015-06-16 17:50:28.005669" 4256 WifiManager "setWifiEnabled : true" 28832 236
+Error "2015-06-16 17:50:28.005669" 2136 "WifiHW  " "##################### set firmware type 0 #####################" 2495 237
+Debug "2015-06-16 17:50:28.005669" 2136 WifiStateMachine "setWifiEnabled : WifiNative.setFwType(0)" 2495 238
+Debug "2015-06-16 17:50:28.005669" 2136 WifiService "setWifiEnabled: true pid=4256, uid=10146" 2495 239
+Info "2015-06-16 17:50:28.010669" 2136 "WifiHW  " "module is murata" 28835 240
+Error "2015-06-16 17:50:28.010669" 2136 "WifiHW  " "==========[WIFI] Station firmware load ===========" 28835 241
+Info "2015-06-16 17:50:28.010669" 2136 "WifiHW  " "Start Check B2 #######" 28835 242
+Info "2015-06-16 17:50:28.010669" 2136 "WifiHW  " "wifi_trigger_poke : Found 4334B3" 28835 243
+Info "2015-06-16 17:50:28.010669" 2136 "WifiHW  " "==========[WIFI] MURATA MODULE ===========" 28835 244
+Debug "2015-06-16 17:50:28.025669" 2136 WfdService "intent recieved android.net.wifi.WIFI_STATE_CHANGED" 2197 245
+Debug "2015-06-16 17:50:28.025669" 2136 STATUSBAR-NotificationService "Noti Alert - mSystemReady:true, AlertEnabled:true" 2212 246
+Debug "2015-06-16 17:50:28.040669" 2383 StatusBar "expanding top notification at 3entry.userCollapsed() = false" 2383 247
+Debug "2015-06-16 17:50:28.050669" 2383 STATUSBAR-NetworkController "onReceive() - RSSI_CHANGED_ACTION, WIFI_STATE, NETWORK_STATE" 2383 248
+Debug "2015-06-16 17:50:28.055669" 2383 STATUSBAR-WifiQuickSettingButton "Wifi onReceive(2)" 2383 249
+Debug "2015-06-16 17:50:28.055669" 2383 STATUSBAR-QuickSettingButton "Button DIM" 2383 250
+Info "2015-06-16 17:50:28.085669" 1830 SurfaceFlinger "id=394(83) createSurf 0x41165fb4 (1x1),1 flag=0, Ootificatio" 1916 251
+Debug "2015-06-16 17:50:28.135669" 4256 AppThwack /task/1ea5df735994cdd0cd70246ab58b763219df5062/status 28849 252
+Debug "2015-06-16 17:50:28.205669" 4256 AppThwack /task/1ea5df735994cdd0cd70246ab58b763219df5062/status 28854 253
+Debug "2015-06-16 17:50:28.265669" 4256 dalvikvm "GC_CONCURRENT freed 456K, 19% free 7495K/9159K, paused 6ms+2ms, total 56ms" 4258 254
+Debug "2015-06-16 17:50:28.415669" 2136 Tethering "interfaceAdded p2p0" 2330 255
+Debug "2015-06-16 17:50:28.415669" 2136 Tethering "p2p0 is not a tetherable iface, ignoring" 2330 256
+Debug "2015-06-16 17:50:28.420669" 2136 Tethering "interfaceLinkStateChanged p2p0, false" 2330 257
+Debug "2015-06-16 17:50:28.420669" 2136 Tethering "interfaceStatusChanged p2p0, false" 2330 258
+Debug "2015-06-16 17:50:28.610669" 2582 debugRotate Workspace.invalidateChildInParent 2582 259
+Debug "2015-06-16 17:50:28.755669" 2136 Tethering "interfaceAdded wlan0" 2330 260
+Debug "2015-06-16 17:50:28.755669" 2136 Tethering "sendTetherStateChangedBroadcast 1, 0, 0" 2341 261
+Debug "2015-06-16 17:50:28.760669" 2511 com.android.internal.telephony.gsm.FastDormancyStateHelper "onReceive() action=android.net.conn.TETHER_STATE_CHANGED" 2511 262
+Debug "2015-06-16 17:50:28.765669" 2136 Tethering "interfaceLinkStateChanged wlan0, false" 2330 263
+Debug "2015-06-16 17:50:28.765669" 2136 Tethering "interfaceStatusChanged wlan0, false" 2330 264
+Debug "2015-06-16 17:50:28.765669" 2136 Tethering "InitialState.processMessage what=4" 2341 265
+Debug "2015-06-16 17:50:28.765669" 1821 SoftapController "Softap fwReload - Ok" 2052 266
+Debug "2015-06-16 17:50:28.765669" 2136 Tethering "sendTetherStateChangedBroadcast 0, 0, 0" 2341 267
+Debug "2015-06-16 17:50:28.765669" 2511 com.android.internal.telephony.gsm.FastDormancyStateHelper "onReceive() action=android.net.conn.TETHER_STATE_CHANGED" 2511 268
+Debug "2015-06-16 17:50:28.770669" 1821 CommandListener "Setting iface cfg" 2052 269
+Debug "2015-06-16 17:50:28.770669" 1821 CommandListener "Trying to bring down wlan0" 2052 270
+Error "2015-06-16 17:50:28.775669" 2136 "WifiHW  " "supplicant_name : wpa_supplicant" 2336 271
+Info "2015-06-16 17:50:28.785669" 28905 wpa_supplicant "wpa_supplicant v2.0-devel-4.1.2 2013-01-09/23:05:36" 28905 272
+Info "2015-06-16 17:50:28.790669" 28905 wpa_supplicant "rfkill: Cannot open RFKILL control device" 28905 273
+Debug "2015-06-16 17:50:28.860669" 2136 Tethering "interfaceLinkStateChanged wlan0, true" 2330 274
+Debug "2015-06-16 17:50:28.860669" 2136 Tethering "interfaceStatusChanged wlan0, true" 2330 275
+Debug "2015-06-16 17:50:28.860669" 2136 Tethering "sendTetherStateChangedBroadcast 1, 0, 0" 2341 276
+Debug "2015-06-16 17:50:28.860669" 2511 com.android.internal.telephony.gsm.FastDormancyStateHelper "onReceive() action=android.net.conn.TETHER_STATE_CHANGED" 2511 277
+Debug "2015-06-16 17:50:28.865669" 2136 Tethering "interfaceLinkStateChanged wlan0, true" 2330 278
+Debug "2015-06-16 17:50:28.865669" 2136 Tethering "interfaceStatusChanged wlan0, true" 2330 279
+Info "2015-06-16 17:50:28.885669" 28905 wpa_supplicant "State: DISCONNECTED -> INACTIVE" 28905 280
+Info "2015-06-16 17:50:28.885669" 28905 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=-1 state=2 BSSID=00.00.00" 28905 281
+Warning "2015-06-16 17:50:28.900669" 2136 AlarmManager "FACTORY_ON= 0" 2147 282
+Debug "2015-06-16 17:50:28.905669" 2383 STATUSBAR-NetworkController "onReceive() - RSSI_CHANGED_ACTION, WIFI_STATE, NETWORK_STATE" 2383 283
+Debug "2015-06-16 17:50:28.905669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 284
+Debug "2015-06-16 17:50:28.905669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 285
+Debug "2015-06-16 17:50:28.905669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 286
+Debug "2015-06-16 17:50:28.905669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 287
+Debug "2015-06-16 17:50:28.905669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 288
+Debug "2015-06-16 17:50:28.905669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 289
+Debug "2015-06-16 17:50:28.905669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 290
+Debug "2015-06-16 17:50:28.905669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 291
+Debug "2015-06-16 17:50:28.905669" 2383 STATUSBAR-WifiQuickSettingButton "Wifi onReceive(3)" 2383 292
+Warning "2015-06-16 17:50:28.910669" 2136 AlarmManager "FACTORY_ON= 0" 2136 293
+Error "2015-06-16 17:50:28.915669" 2136 WifiConfigStore "configuration found for missing network, ignored" 2336 294
+Debug "2015-06-16 17:50:28.915669" 2383 STATUSBAR-QuickSettingButton "Button ON" 2383 295
+Debug "2015-06-16 17:50:28.920669" 2136 WfdService "intent recieved android.net.wifi.WIFI_STATE_CHANGED" 2197 296
+Debug "2015-06-16 17:50:28.920669" 2136 WifiP2pService "P2pDisabledState{ what=143378 }" 2334 297
+Debug "2015-06-16 17:50:28.920669" 2136 WifiP2pService "DefaultState{ what=143378 }" 2334 298
+Error "2015-06-16 17:50:28.920669" 2136 WifiP2pService "Unhandled message { what=143378 }" 2334 299
+Warning "2015-06-16 17:50:28.935669" 2641 DiskTemporalCache "IOException while writing LRU cache file: open failed: ENOENT (No such file or directory)" 2878 300
+Warning "2015-06-16 17:50:28.935669" 2641 DiskTemporalCache "IOException while writing LRU cache file: open failed: ENOENT (No such file or directory)" 2878 301
+Debug "2015-06-16 17:50:28.945669" 2136 WifiNative "callSECApiBoolean - ID [13]" 2336 302
+Debug "2015-06-16 17:50:28.950669" 2136 WifiP2pService "P2pDisabledState{ what=131203 }" 2334 303
+Info "2015-06-16 17:50:28.980669" 28905 wpa_supplicant "State: INACTIVE -> SCANNING" 28905 304
+Info "2015-06-16 17:50:28.980669" 28905 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=-1 state=3 BSSID=00.00.00" 28905 305
+Debug "2015-06-16 17:50:28.980669" 1821 CommandListener "Setting iface cfg" 2052 306
+Debug "2015-06-16 17:50:28.985669" 1821 CommandListener "Trying to bring up p2p0" 2052 307
+Info "2015-06-16 17:50:28.985669" 28905 wpa_supplicant "Scan requested (ret=0) - scan timeout 10 seconds" 28905 308
+Debug "2015-06-16 17:50:28.985669" 2136 Tethering "interfaceLinkStateChanged p2p0, true" 2330 309
+Debug "2015-06-16 17:50:28.985669" 2136 Tethering "interfaceStatusChanged p2p0, true" 2330 310
+Error "2015-06-16 17:50:28.985669" 2136 "WifiHW  " "wifi_wpa_ctrl_cleanup is skiped." 2334 311
+Error "2015-06-16 17:50:28.985669" 2136 "WifiHW  " "supplicant_name : p2p_supplicant" 2334 312
+Error "2015-06-16 17:50:28.985669" 2136 "WifiHW  " "Unable to open connection to supplicant on ""/data/misc/wifi/sockets/p2p0"": Connection refused" 28911 313
+Debug "2015-06-16 17:50:28.985669" 2136 WifiP2pService "Supplicant start successful" 2334 314
+Debug "2015-06-16 17:50:28.985669" 2136 WifiP2pService P2pEnablingState 2334 315
+Info "2015-06-16 17:50:28.995669" 28910 p2p_supplicant "wpa_supplicant v2.0-devel-4.1.200" 28910 316
+Info "2015-06-16 17:50:28.995669" 28910 p2p_supplicant "rfkill: Cannot open RFKILL control device" 28910 317
+Debug "2015-06-16 17:50:29.000669" 2136 Tethering "interfaceLinkStateChanged p2p0, true" 2330 318
+Debug "2015-06-16 17:50:29.000669" 2136 Tethering "interfaceStatusChanged p2p0, true" 2330 319
+Debug "2015-06-16 17:50:29.015669" 4256 AppThwackAndroidLib "setWifiEnabled: wifi is: true" 28832 320
+Error "2015-06-16 17:50:29.030669" 28910 p2p_supplicant "P2P: Init - wfd 0, 0x0000, 0, 0, 0x00" 28910 321
+Info "2015-06-16 17:50:29.110669" 4256 AppThwackAndroidLib "Attempting Wi-Fi connection: attempt 1 out of 2." 28832 322
+Debug "2015-06-16 17:50:29.110669" 4256 AppThwackAndroidLib "connectToNetwork: ssid: AppThwack" 28832 323
+Debug "2015-06-16 17:50:29.110669" 4256 AppThwackAndroidLib "getWifiConfigBySsid: ssid: AppThwack" 28832 324
+Debug "2015-06-16 17:50:29.110669" 4256 AppThwackAndroidLib "networks: 1" 28832 325
+Debug "2015-06-16 17:50:29.110669" 4256 AppThwackAndroidLib "getWifiConfigBySsid: checking: ""AppThwack"" against ""AppThwack""" 28832 326
+Debug "2015-06-16 17:50:29.110669" 4256 AppThwackAndroidLib "Network profile found!" 28832 327
+Info "2015-06-16 17:50:29.110669" 28905 wpa_supplicant "State: SCANNING -> DISCONNECTED" 28905 328
+Info "2015-06-16 17:50:29.110669" 28905 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=-1 state=0 BSSID=00.00.00" 28905 329
+Debug "2015-06-16 17:50:29.110669" 2136 WifiService "disconnect: pid=4256, uid=10146" 2136 330
+Info "2015-06-16 17:50:29.115669" 28905 wpa_supplicant "State: DISCONNECTED -> DISCONNECTED" 28905 331
+Info "2015-06-16 17:50:29.315669" 28905 wpa_supplicant "[wpa_supplicant_assoc] START" 28905 332
+Info "2015-06-16 17:50:29.315669" 28905 wpa_supplicant "wpa_supplicant_req_new_scan: wpa_s->global->bStopPeriodicScan : 0, timeout_sec : 10" 28905 333
+Debug "2015-06-16 17:50:29.325669" 4256 AppThwack /task/1ea5df735994cdd0cd70246ab58b763219df5062/status 28912 334
+Info "2015-06-16 17:50:29.480669" 28905 wpa_supplicant "nl80211: Received scan results (23 BSSes)" 28905 335
+Info "2015-06-16 17:50:29.480669" 28905 wpa_supplicant "Trying to associate with F0.A1.F0 (freq=2437 MHz rssi=-53dBm)" 28905 336
+Info "2015-06-16 17:50:29.480669" 28905 wpa_supplicant 41707054687761636B 28905 337
+Info "2015-06-16 17:50:29.480669" 28905 wpa_supplicant "State: DISCONNECTED -> ASSOCIATING" 28905 338
+Info "2015-06-16 17:50:29.480669" 28905 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=5 BSSID=F0.A1.F0" 28905 339
+Info "2015-06-16 17:50:29.480669" 28905 wpa_supplicant 41707054687761636B 28905 340
+Debug "2015-06-16 17:50:29.495669" 2136 Tethering "interfaceLinkStateChanged wlan0, true" 2330 341
+Debug "2015-06-16 17:50:29.495669" 2136 Tethering "interfaceStatusChanged wlan0, true" 2330 342
+Info "2015-06-16 17:50:29.525669" 28905 wpa_supplicant "Start Assoc status = [0] !!!!!" 28905 343
+Warning "2015-06-16 17:50:29.530669" 28905 wpa_supplicant "wlan0: Failed to initiate AP scan" 28905 344
+Warning "2015-06-16 17:50:29.555669" 2136 AlarmManager "FACTORY_ON= 0" 21802 345
+Debug "2015-06-16 17:50:29.570669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 0ms" 2565 346
+Warning "2015-06-16 17:50:29.575669" 2136 AlarmManager "FACTORY_ON= 0" 1711 347
+Debug "2015-06-16 17:50:29.680669" 2136 dalvikvm "GC_EXPLICIT freed 1036K, 22% free 25975K/33223K, paused 8ms+8ms, total 110ms" 2565 348
+Debug "2015-06-16 17:50:29.995669" 2136 WifiP2pService "P2pEnablingState{ what=147457 }" 2334 349
+Debug "2015-06-16 17:50:29.995669" 2136 WifiP2pService "P2p socket connection successful" 2334 350
+Debug "2015-06-16 17:50:29.995669" 2136 WifiP2pService P2pEnabledState 2334 351
+Error "2015-06-16 17:50:30.000669" 2136 WifiStateMachine "BroadcastReceiver : WIFI_P2P_STATE_CHANGED_ACTION is : android.net.wifi.p2p.STATE_CHANGED" 2197 352
+Debug "2015-06-16 17:50:30.000669" 2136 WfdService "intent recieved android.net.wifi.p2p.STATE_CHANGED" 2197 353
+Debug "2015-06-16 17:50:30.000669" 2136 WfdService "Wfd is not enabled from Picker" 2197 354
+Debug "2015-06-16 17:50:30.005669" 2136 WifiP2pService "sending p2p connection changed broadcast" 2334 355
+Debug "2015-06-16 17:50:30.035669" 2136 WfdService "intent recieved android.net.wifi.p2p.CONNECTION_STATE_CHANGE" 2197 356
+Debug "2015-06-16 17:50:30.035669" 2136 WfdService " onReceive << WIFI_P2P_CONNECTION_CHANGED_ACTION" 2197 357
+Debug "2015-06-16 17:50:30.035669" 2136 WfdService "WIFI_P2P_CONNECTION_CHANGED_ACTION >> isConnected() false" 2197 358
+Warning "2015-06-16 17:50:30.035669" 2136 WifiP2pStateTracker "WifiP2pStateReceiver : android.net.wifi.p2p.CONNECTION_STATE_CHANGE" 2197 359
+Debug "2015-06-16 17:50:30.040669" 4971 WifiDirectBR "WifiDirectBroadcastReceiver::onReceive() : android.net.wifi.p2p.STATE_CHANGED" 4971 360
+Debug "2015-06-16 17:50:30.040669" 2136 WfdService "intent recieved android.net.wifi.p2p.THIS_DEVICE_CHANGED" 2197 361
+Debug "2015-06-16 17:50:30.040669" 2136 WfdService "WIFI_P2P_THIS_DEVICE_CHANGED_ACTION arrived" 2197 362
+Debug "2015-06-16 17:50:30.040669" 2136 WifiP2pService "DeviceAddress: 62:27:c7" 2334 363
+Debug "2015-06-16 17:50:30.045669" 2136 WifiP2pService InactiveState 2334 364
+Debug "2015-06-16 17:50:30.045669" 2136 WifiP2pService "InactiveState{ what=147462 }" 2334 365
+Debug "2015-06-16 17:50:30.045669" 2136 WifiP2pService "P2pEnabledState{ what=147462 }" 2334 366
+Debug "2015-06-16 17:50:30.045669" 2136 WifiP2pService "DefaultState{ what=147462 }" 2334 367
+Debug "2015-06-16 17:50:30.055669" 4971 WifiDirectBR "WifiDirectBroadcastReceiver::onReceive() : android.net.wifi.p2p.CONNECTION_STATE_CHANGE" 4971 368
+Debug "2015-06-16 17:50:30.055669" 4971 WifiDirectBR "WifiDirectBroadcastReceiver::onReceive(), Action : WifiP2pManager.WIFI_P2P_CONNECTION_CHANGED_ACTION, isConnected() == false" 4971 369
+Debug "2015-06-16 17:50:30.060669" 4971 WifiDirectBR "stopServiceTest : false" 4971 370
+Debug "2015-06-16 17:50:30.440669" 4256 AppThwack /task/1ea5df735994cdd0cd70246ab58b763219df5062/status 28916 371
+Warning "2015-06-16 17:50:30.540669" 28905 wpa_supplicant "wlan0: Failed to initiate AP scan" 28905 372
+Warning "2015-06-16 17:50:31.555669" 28905 wpa_supplicant "wlan0: Failed to initiate AP scan" 28905 373
+Debug "2015-06-16 17:50:31.565669" 4256 AppThwack /task/1ea5df735994cdd0cd70246ab58b763219df5062/status 28917 374
+Debug "2015-06-16 17:50:31.635669" 4256 dalvikvm "GC_CONCURRENT freed 428K, 19% free 7498K/9159K, paused 16ms+2ms, total 39ms" 4258 375
+Error "2015-06-16 17:50:31.970669" 28905 wpa_supplicant "wlan0: Not associated - Delay processing of received EAPOL frame !!!!" 28905 376
+Info "2015-06-16 17:50:31.980669" 28905 wpa_supplicant "State: ASSOCIATING -> ASSOCIATED" 28905 377
+Info "2015-06-16 17:50:31.980669" 28905 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=6 BSSID=F0.A1.F0" 28905 378
+Info "2015-06-16 17:50:31.980669" 28905 wpa_supplicant 41707054687761636B 28905 379
+Info "2015-06-16 17:50:31.980669" 28905 wpa_supplicant "Associated with F0.A1.F0" 28905 380
+Info "2015-06-16 17:50:31.980669" 28905 wpa_supplicant "State: ASSOCIATED -> 4WAY_HANDSHAKE" 28905 381
+Info "2015-06-16 17:50:31.980669" 28905 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=7 BSSID=00.00.00" 28905 382
+Info "2015-06-16 17:50:31.980669" 28905 wpa_supplicant 41707054687761636B 28905 383
+Debug "2015-06-16 17:50:31.985669" 2136 Tethering "interfaceLinkStateChanged wlan0, true" 2330 384
+Debug "2015-06-16 17:50:31.985669" 2136 Tethering "interfaceStatusChanged wlan0, true" 2330 385
+Debug "2015-06-16 17:50:31.995669" 2136 Tethering "interfaceLinkStateChanged wlan0, true" 2330 386
+Debug "2015-06-16 17:50:31.995669" 2136 Tethering "interfaceStatusChanged wlan0, true" 2330 387
+Info "2015-06-16 17:50:32.005669" 28905 wpa_supplicant "State: 4WAY_HANDSHAKE -> 4WAY_HANDSHAKE" 28905 388
+Debug "2015-06-16 17:50:32.010669" 2136 Tethering "interfaceLinkStateChanged wlan0, true" 2330 389
+Info "2015-06-16 17:50:32.010669" 28905 wpa_supplicant "State: 4WAY_HANDSHAKE -> GROUP_HANDSHAKE" 28905 390
+Info "2015-06-16 17:50:32.010669" 28905 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=8 BSSID=00.00.00" 28905 391
+Info "2015-06-16 17:50:32.010669" 28905 wpa_supplicant 41707054687761636B 28905 392
+Info "2015-06-16 17:50:32.015669" 28905 wpa_supplicant "WPA: Key negotiation completed with F0.A1.F0 [PTK=CCMP GTK=TKIP]" 28905 393
+Info "2015-06-16 17:50:32.015669" 28905 wpa_supplicant "State: GROUP_HANDSHAKE -> COMPLETED" 28905 394
+Info "2015-06-16 17:50:32.015669" 28905 wpa_supplicant "CTRL-EVENT-CONNECTED - Connection to F0.A1.F0 completed (auth) [id=0 id_str=]" 28905 395
+Debug "2015-06-16 17:50:32.015669" 2136 Tethering "interfaceStatusChanged wlan0, true" 2330 396
+Info "2015-06-16 17:50:32.015669" 28905 wpa_supplicant "CTRL-EVENT-STATE-CHANGE id=0 state=9 BSSID=00.00.00" 28905 397
+Info "2015-06-16 17:50:32.015669" 28905 wpa_supplicant 41707054687761636B 28905 398
+Debug "2015-06-16 17:50:32.020669" 2136 Tethering "interfaceLinkStateChanged wlan0, true" 2330 399
+Debug "2015-06-16 17:50:32.020669" 2136 Tethering "interfaceStatusChanged wlan0, true" 2330 400
+Debug "2015-06-16 17:50:32.020669" 2136 WifiNative "callSECApiVoid - ID [50]" 2336 401
+Debug "2015-06-16 17:50:32.020669" 2136 WfdService "intent recieved android.net.wifi.STATE_CHANGE" 2197 402
+Debug "2015-06-16 17:50:32.025669" 2136 WfdService "AP is disconnected!" 2197 403
+Debug "2015-06-16 17:50:32.025669" 2383 STATUSBAR-NetworkController "onReceive() - RSSI_CHANGED_ACTION, WIFI_STATE, NETWORK_STATE" 2383 404
+Debug "2015-06-16 17:50:32.065669" 2383 STATUSBAR-NetworkController "onReceive() - RSSI_CHANGED_ACTION, WIFI_STATE, NETWORK_STATE" 2383 405
+Error "2015-06-16 17:50:32.085669" 2136 WifiP2pStateTracker "getNetworkInfo : NetworkInfo: type: WIFI_P2P[], state: DISCONNECTED/DISCONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true" 1711 406
+Info "2015-06-16 17:50:32.090669" 4996 onitorBroadcastReceiver "Wifi state changed: android.net.wifi.STATE_CHANGE" 4996 407
+Info "2015-06-16 17:50:32.190669" 28923 "dhcpcd  " " dhcp main start" 28923 408
+Info "2015-06-16 17:50:32.245669" 28923 "dhcpcd  " "if(wlan0) info get Success. (MAC : F0.A1.F0)" 28923 409
+Info "2015-06-16 17:50:32.245669" 28923 "dhcpcd  " "bssid match" 28923 410
+Warning "2015-06-16 17:50:32.690669" 2136 AlarmManager "FACTORY_ON= 0" 28921 411
+Debug "2015-06-16 17:50:32.700669" 4256 AppThwack /task/1ea5df735994cdd0cd70246ab58b763219df5062/status 28949 412
+Debug "2015-06-16 17:50:32.720669" 2383 STATUSBAR-NetworkController "onReceive() - RSSI_CHANGED_ACTION, WIFI_STATE, NETWORK_STATE" 2383 413
+Debug "2015-06-16 17:50:32.725669" 2136 WfdService "intent recieved android.net.wifi.STATE_CHANGE" 2197 414
+Debug "2015-06-16 17:50:32.725669" 2136 WfdService "AP is disconnected!" 2197 415
+Info "2015-06-16 17:50:32.735669" 2136 WifiService "mBoosterFLAG : 0" 2197 416
+Info "2015-06-16 17:50:32.735669" 2136 WifiService "current booster mode : FullMode" 2197 417
+Debug "2015-06-16 17:50:32.740669" 2136 WfdService "intent recieved android.net.wifi.STATE_CHANGE" 2197 418
+Debug "2015-06-16 17:50:32.740669" 2136 WfdService "AP is connected!" 2197 419
+Debug "2015-06-16 17:50:32.740669" 2136 WfdService "WfdService is not running..." 2197 420
+Debug "2015-06-16 17:50:32.740669" 2136 ConnectivityService "ConnectivityChange for WIFI: CONNECTED/CONNECTED" 2339 421
+Debug "2015-06-16 17:50:32.740669" 2383 STATUSBAR-NetworkController "onReceive() - RSSI_CHANGED_ACTION, WIFI_STATE, NETWORK_STATE" 2383 422
+Debug "2015-06-16 17:50:32.740669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 423
+Debug "2015-06-16 17:50:32.750669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 424
+Debug "2015-06-16 17:50:32.755669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 425
+Debug "2015-06-16 17:50:32.755669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 426
+Debug "2015-06-16 17:50:32.755669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 427
+Debug "2015-06-16 17:50:32.755669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 428
+Debug "2015-06-16 17:50:32.755669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 429
+Debug "2015-06-16 17:50:32.755669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 430
+Error "2015-06-16 17:50:32.795669" 2136 WifiP2pStateTracker "getNetworkInfo : NetworkInfo: type: WIFI_P2P[], state: DISCONNECTED/DISCONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true" 2332 431
+Error "2015-06-16 17:50:32.815669" 2136 WifiP2pStateTracker "getNetworkInfo : NetworkInfo: type: WIFI_P2P[], state: DISCONNECTED/DISCONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true" 2565 432
+Error "2015-06-16 17:50:32.815669" 2136 WifiP2pStateTracker "getNetworkInfo : NetworkInfo: type: WIFI_P2P[], state: DISCONNECTED/DISCONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true" 2331 433
+Info "2015-06-16 17:50:32.820669" 4996 onitorBroadcastReceiver "Wifi state changed: android.net.wifi.STATE_CHANGE" 4996 434
+Info "2015-06-16 17:50:32.820669" 4996 onitorBroadcastReceiver "Internet access is on." 4996 435
+Error "2015-06-16 17:50:32.830669" 3790 "UNA     " "StartConnectODS::MCC Vaule is -1. Thus, UNA Engine cannot connect AStore." 3790 436
+Debug "2015-06-16 17:50:32.845669" 2136 STATUSBAR-NotificationService enqueueToast() 5158 437
+Info "2015-06-16 17:50:32.860669" 1830 SurfaceFlinger "id=395(8) createSurf 0x410e9ed4 (1x1),1 flag=0, Uoast" 1916 438
+Debug "2015-06-16 17:50:32.880669" 2136 PowerManagerService "acquireWakeLock flags=0x2000000a tag=KEEP_SCREEN_ON_FLAG uid=1000 pid=2136" 2581 439
+Error "2015-06-16 17:50:32.880669" 2136 WifiP2pStateTracker "getNetworkInfo : NetworkInfo: type: WIFI_P2P[], state: DISCONNECTED/DISCONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true" 21802 440
+Info "2015-06-16 17:50:32.885669" 4996 onitorBroadcastReceiver "Wifi state changed: android.net.wifi.STATE_CHANGE" 4996 441
+Info "2015-06-16 17:50:32.885669" 4996 onitorBroadcastReceiver "Internet access is on." 4996 442
+Debug "2015-06-16 17:50:33.125669" 4256 AppThwackAndroidLib "connected: true" 28832 443
+Debug "2015-06-16 17:50:33.125669" 4256 AppThwackAndroidLib "WiFiLock: acquire" 28832 444
+Error "2015-06-16 17:50:33.125669" 2136 "WifiHW  " "##################### set firmware type 0 #####################" 5158 445
+Debug "2015-06-16 17:50:33.125669" 2136 WifiStateMachine "setWifiEnabled : WifiNative.setFwType(0)" 5158 446
+Debug "2015-06-16 17:50:33.125669" 4256 AppThwackDeviceManager "taskStatus update (1ea5df735994cdd0cd70246ab58b763219df5062: {""result"":""Wifi enabled: true"",""state"":2})" 4256 447
+Debug "2015-06-16 17:50:33.130669" 2136 STATUSBAR-NotificationService "updateLightsLocked() : Turn off notification light" 2212 448
+Debug "2015-06-16 17:50:33.175669" 2383 StatusBar "expanding top notification at 2entry.userCollapsed() = false" 2383 449
+Debug "2015-06-16 17:50:33.315669" 2136 FirewallPolicy "Entering handleConnectivityAction..." 2197 450
+Debug "2015-06-16 17:50:33.315669" 2136 FirewallPolicy checkOnline()... 2197 451
+Debug "2015-06-16 17:50:33.315669" 2136 FirewallPolicy "execute pending commands" 2197 452
+Debug "2015-06-16 17:50:33.315669" 2136 Tethering "Tethering got CONNECTIVITY_ACTION" 2197 453
+Debug "2015-06-16 17:50:33.315669" 2136 Tethering "MasterInitialState.processMessage what=3" 2341 454
+Debug "2015-06-16 17:50:33.320669" 2511 "CAT     " "CatBIPManager$1: >>>>>>>>>> BROADCAST EVENT FROM CAT BIP MANAGER <<<<<<<<<<" 2511 455
+Debug "2015-06-16 17:50:33.320669" 2511 "CAT     " "CatBIPManager$1: intent receiver called with not listening : UNKNOWN and Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x8000010 (has extras) }" 2511 456
+Debug "2015-06-16 17:50:33.335669" 2136 ConnectivityService "handleInetConditionChange: net=-1 != default=1 - ignore" 2339 457
+Debug "2015-06-16 17:50:33.340669" 2383 STATUSBAR-NetworkController "onReceive() - CONNECTIVITY_ACTION, INET_CONDITION_ACTION" 2383 458
+Debug "2015-06-16 17:50:33.350669" 2383 STATUSBAR-NetworkController updateDataNetType() 2383 459
+Debug "2015-06-16 17:50:33.350669" 2136 GpsLocationProvider "updateNetworkState available info: NetworkInfo: type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true" 2637 460
+Debug "2015-06-16 17:50:33.350669" 2383 STATUSBAR-NetworkController "NoService, mRoamingIconId = 0" 2383 461
+Warning "2015-06-16 17:50:33.365669" 2136 AlarmManager "FACTORY_ON= 0" 2348 462
+Info "2015-06-16 17:50:33.370669" 11719 "DBG_DM  " "[v5_1210_1_1][Line:1577][xdmProtoIsWIFIConnected] WiFi Connected" 11719 463
+Info "2015-06-16 17:50:33.395669" 1830 SurfaceFlinger "id=394 Removed Ootificatio idx=7 MapSz=6" 2053 464
+Info "2015-06-16 17:50:33.395669" 1830 SurfaceFlinger "id=394 Removed Ootificatio idx=-2 MapSz=6" 6216 465
+Info "2015-06-16 17:50:33.405669" 5105 FOTA_Client "[Ver2.5.2][FotaReceiver.java(Line:31/Method:onReceive)] Receive broadcast meassage:android.net.conn.CONNECTIVITY_CHANGE" 5105 466
+Debug "2015-06-16 17:50:33.405669" 5105 FOTA_Client "[Ver2.5.2][FotaReceiver.java(Line:41/Method:onReceive)] get Term State1" 5105 467
+Debug "2015-06-16 17:50:33.435669" 5120 comsamsungapp "[MSC]>>> StockClock_Integration.java:199 [0:0] onReceive android.net.conn.CONNECTIVITY_CHANGE" 5120 468
+Debug "2015-06-16 17:50:33.435669" 5120 comsamsungapp "[MSC]>>> StockClock_Integration.java:206 [0:0] onReceive : no stock widget!!!" 5120 469
+Debug "2015-06-16 17:50:33.465669" 5132 PicasaUploaderSyncManager "active network: NetworkInfo: type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true" 5152 470
+Debug "2015-06-16 17:50:33.465669" 5132 PicasaUploaderSyncManager "background data: true" 5152 471
+Debug "2015-06-16 17:50:33.485669" 4353 gp.PicasaSyncManager "active network: NetworkInfo: type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true" 4375 472
+Debug "2015-06-16 17:50:33.485669" 4353 gp.PicasaSyncManager "background data: true" 4375 473
+Debug "2015-06-16 17:50:33.490669" 4353 gp.PicasaSyncManager "reject MetadataSyncTask (********************) because master auto sync is off" 4375 474
+Error "2015-06-16 17:50:33.515669" 5161 PushClient "[PushClient SystemStateMoniter] [run()] Looper is already created on this thread." 5179 475
+Error "2015-06-16 17:50:33.515669" 5161 PushClient "[PushClient SystemStateMoniter] SystemStateMoniter convert. code:1" 5179 476
+Error "2015-06-16 17:50:33.520669" 5161 PushClient "[PushClient SystemStateMoniter] signalActive. [Current] NoActive != [New] WIFI" 5179 477
+Debug "2015-06-16 17:50:33.540669" 2136 STATUSBAR-NotificationService cancelAllNotifications() 2146 478
+Info "2015-06-16 17:50:33.570669" 2606 SecDownloader "Broadcast: Network Up" 2606 479
+Error "2015-06-16 17:50:33.570669" 2136 WifiP2pStateTracker "getNetworkInfo : NetworkInfo: type: WIFI_P2P[], state: DISCONNECTED/DISCONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true" 2565 480
+Debug "2015-06-16 17:50:33.590669" 2136 STATUSBAR-NotificationService cancelAllNotifications() 2580 481
+Debug "2015-06-16 17:50:33.595669" 2511 PhoneNumberLocatorBootCompletedReceiver onReceive 2511 482
+Debug "2015-06-16 17:50:33.595669" 2511 PhoneNumberLocatorBootCompletedReceiver "Phone number locator feature is dsiabled" 2511 483
+Error "2015-06-16 17:50:33.610669" 2136 WifiP2pStateTracker "getNetworkInfo : NetworkInfo: type: WIFI_P2P[], state: DISCONNECTED/DISCONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true" 2565 484
+Info "2015-06-16 17:50:33.640669" 28995 "Process " "Sending signal. PID: 28995 SIG: 9" 28995 485
+Debug "2015-06-16 17:50:33.645669" 2606 dalvikvm "GC_CONCURRENT freed 368K, 13% free 7594K/8647K, paused 11ms+4ms, total 30ms" 2608 486
+Info "2015-06-16 17:50:33.645669" 2136 ActivityManager "Process com.sec.android.sCloudBackupApp (pid 28995) (adj 0) has died." 2564 487
+Verbose "2015-06-16 17:50:33.650669" 2606 SecDownloader "stopself called" 28998 488
+Info "2015-06-16 17:50:33.690669" 3193 SystemUpdateService "receiver: Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x8000010 cmp=com.google.android.gms/.update.SystemUpdateService$ActiveReceiver (has extras) }" 3193 489
+Debug "2015-06-16 17:50:33.700669" 3193 SystemUpdateService "onStartCommand: intent: Intent { cmp=com.google.android.gms/.update.SystemUpdateService (has extras) }" 3193 490
+Debug "2015-06-16 17:50:33.740669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 491
+Debug "2015-06-16 17:50:33.740669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 492
+Debug "2015-06-16 17:50:33.740669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 493
+Debug "2015-06-16 17:50:33.745669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 494
+Debug "2015-06-16 17:50:33.745669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 495
+Debug "2015-06-16 17:50:33.745669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 496
+Debug "2015-06-16 17:50:33.745669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 497
+Debug "2015-06-16 17:50:33.745669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 498
+Info "2015-06-16 17:50:33.770669" 3193 iu.Environment "update connectivity state; isNetworkMetered? false, isRoaming? false, isBackgroundDataAllowed? true*" 3193 499
+Info "2015-06-16 17:50:33.770669" 3193 iu.UploadsManager "num queued entries: 0" 8563 500
+Info "2015-06-16 17:50:33.780669" 3193 iu.UploadsManager "num updated entries: 0" 8563 501
+Info "2015-06-16 17:50:33.785669" 3193 iu.SyncManager "NEXT; no task" 8563 502
+Debug "2015-06-16 17:50:33.820669" 4256 AppThwack /task/1ea5df735994cdd0cd70246ab58b763219df5062/status 29018 503
+Debug "2015-06-16 17:50:33.835669" 2136 dalvikvm "GC_CONCURRENT freed 2057K, 22% free 25965K/33223K, paused 13ms+10ms, total 129ms" 2138 504
+Debug "2015-06-16 17:50:33.835669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 52ms" 2564 505
+Debug "2015-06-16 17:50:33.905669" 4256 AppThwack /task/1ea5df735994cdd0cd70246ab58b763219df5062/status 29020 506
+Debug "2015-06-16 17:50:33.935669" 4256 dalvikvm "GC_CONCURRENT freed 433K, 19% free 7493K/9159K, paused 12ms+1ms, total 24ms" 4258 507
+Warning "2015-06-16 17:50:33.995669" 2136 AlarmManager "FACTORY_ON= 0" 5159 508
+Debug "2015-06-16 17:50:34.120669" 4256 AppThwack /task/1ea5df735994cdd0cd70246ab58b763219df5062/status 29022 509
+Debug "2015-06-16 17:50:34.165669" 2641 "GCM     " Connected 29021 510
+Warning "2015-06-16 17:50:34.165669" 2136 AlarmManager "FACTORY_ON= 0" 21803 511
+Debug "2015-06-16 17:50:34.170669" 4256 AppThwack /bluetooth/ 29023 512
+Debug "2015-06-16 17:50:34.185669" 4256 AppThwack "sha1: 219ff18dd6c12e72db76af0c7ac8a27beeb60fa5" 29023 513
+Debug "2015-06-16 17:50:34.185669" 4256 AppThwackDeviceManager "k: enabled v: True" 29023 514
+Debug "2015-06-16 17:50:34.185669" 4256 AppThwackDeviceManager "k: NanoHttpd.QUERY_STRING v: enabled=True" 29023 515
+Debug "2015-06-16 17:50:34.195669" 2641 "GCM     " "Message class com.google.f.a.a.p" 29021 516
+Warning "2015-06-16 17:50:34.200669" 2136 AlarmManager "FACTORY_ON= 0" 5158 517
+Warning "2015-06-16 17:50:34.205669" 2136 AlarmManager "FACTORY_ON= 0" 2565 518
+Debug "2015-06-16 17:50:34.225669" 4256 AppThwack /task/219ff18dd6c12e72db76af0c7ac8a27beeb60fa5 29023 519
+Debug "2015-06-16 17:50:34.260669" 4256 dalvikvm "GC_CONCURRENT freed 441K, 19% free 7505K/9159K, paused 2ms+3ms, total 28ms" 4258 520
+Debug "2015-06-16 17:50:34.260669" 4256 AppThwackDeviceManager "taskStatus update (219ff18dd6c12e72db76af0c7ac8a27beeb60fa5: {""state"":1})" 4256 521
+Debug "2015-06-16 17:50:34.260669" 4256 AppThwackAndroidLib "setEnabled: enabled: true" 29024 522
+Debug "2015-06-16 17:50:34.260669" 4256 AppThwackAndroidLib "setEnabled: setting bluetooth to: true" 29024 523
+Info "2015-06-16 17:50:34.260669" 2136 BluetoothPolicyService isBluetoothEnabled 5158 524
+Debug "2015-06-16 17:50:34.260669" 2136 BluetoothAdapterStateMachine "HotOff process message: 1" 2308 525
+Error "2015-06-16 17:50:34.260669" 2136 BluetoothAdapterStateMachine "Bluetooth state 10 -> 11" 2308 526
+Error "2015-06-16 17:50:34.260669" 2136 BluetoothAdapterStateMachine "broadcastState : 11" 2308 527
+Verbose "2015-06-16 17:50:34.280669" 2455 BluetoothEventManager "Received android.bluetooth.adapter.action.STATE_CHANGED" 2455 528
+Debug "2015-06-16 17:50:34.280669" 2383 STATUSBAR-BluetoothQuickSettingButton "BT onReceive(11)" 2383 529
+Debug "2015-06-16 17:50:34.285669" 2136 BluetoothAdapterStateMachine "Enter Switching: 1" 2308 530
+Debug "2015-06-16 17:50:34.285669" 2383 STATUSBAR-QuickSettingButton "Button DIM" 2383 531
+Verbose "2015-06-16 17:50:34.290669" 21703 BluetoothPbapReceiver "PbapReceiver onReceive: android.bluetooth.adapter.action.STATE_CHANGED" 21703 532
+Debug "2015-06-16 17:50:34.290669" 2136 STATUSBAR-NotificationService "Noti Alert - mSystemReady:true, AlertEnabled:true" 2212 533
+Debug "2015-06-16 17:50:34.330669" 2383 StatusBar "expanding top notification at 3entry.userCollapsed() = false" 2383 534
+Debug "2015-06-16 17:50:34.355669" 2455 BluetoothNotiBroadcastReceiver onReceive 2455 535
+Debug "2015-06-16 17:50:34.355669" 4256 AppThwack /task/219ff18dd6c12e72db76af0c7ac8a27beeb60fa5/status 29029 536
+Debug "2015-06-16 17:50:34.375669" 2383 dalvikvm "GC_CONCURRENT freed 1807K, 35% free 19401K/29511K, paused 16ms+12ms, total 68ms" 2385 537
+Debug "2015-06-16 17:50:34.380669" 2641 AuthorizationBluetoothService "Received Bluetooth event: Intent { act=android.bluetooth.adapter.action.STATE_CHANGED flg=0x8000010 cmp=com.google.android.gms/.auth.be.proximity.authorization.bt.AuthorizationBluetoothService$BluetoothStateChangeReceiver (has extras) }." 2641 538
+Debug "2015-06-16 17:50:34.385669" 2136 BluetoothAdapterStateMachine "Switching process message: 106" 2308 539
+Verbose "2015-06-16 17:50:34.385669" 2136 BluetoothService.cpp setAdapterPropertyNative 2308 540
+Error "2015-06-16 17:50:34.385669" 2136 BluetoothService.cpp "it's Powered so use default timeout" 2308 541
+Debug "2015-06-16 17:50:34.400669" 4256 AppThwack /task/219ff18dd6c12e72db76af0c7ac8a27beeb60fa5/status 29032 542
+Info "2015-06-16 17:50:34.405669" 1830 SurfaceFlinger "id=396(84) createSurf 0x40092f14 (1x1),1 flag=0, Ootificatio" 1916 543
+Verbose "2015-06-16 17:50:34.465669" 2136 BluetoothEventLoop.cpp "event_filter: Received signal org.bluez.Adapter:PropertyChanged from /org/bluez/21757/hci0" 21760 544
+Verbose "2015-06-16 17:50:34.465669" 2136 BluetoothService.cpp getAdapterPropertiesNative 21760 545
+Verbose "2015-06-16 17:50:34.465669" 2136 BluetoothService.cpp getAdapterPathNative 21760 546
+Debug "2015-06-16 17:50:34.470669" 2136 BluetoothAdapterStateMachine "Switching process message: 54" 2308 547
+Verbose "2015-06-16 17:50:34.470669" 2136 BluetoothEventLoop.cpp "event_filter: Received signal org.bluez.Adapter:PropertyChanged from /org/bluez/21757/hci0" 21760 548
+Verbose "2015-06-16 17:50:34.470669" 2136 BluetoothEventLoop.cpp "event_filter: Received signal org.bluez.Adapter:PropertyChanged from /org/bluez/21757/hci0" 21760 549
+Debug "2015-06-16 17:50:34.470669" 2136 BluetoothAdapterStateMachine "Switching process message: 53" 2308 550
+Verbose "2015-06-16 17:50:34.470669" 2136 BluetoothService.cpp setAdapterPropertyNative 2308 551
+Error "2015-06-16 17:50:34.470669" 2136 BluetoothService.cpp "it's Pairable so use default timeout" 2308 552
+Error "2015-06-16 17:50:34.470669" 2136 BluetoothAdapterStateMachine "Bluetooth state 11 -> 12" 2308 553
+Error "2015-06-16 17:50:34.470669" 2136 BluetoothAdapterStateMachine "broadcastState : 12" 2308 554
+Info "2015-06-16 17:50:34.475669" 1833 AudioHardwareTinyALSA setParameters(bluetooth_enabled=true) 2078 555
+Info "2015-06-16 17:50:34.475669" 1833 audio_wfd_hw "adev_set_parameters() bluetooth_enabled=true" 2078 556
+Verbose "2015-06-16 17:50:34.475669" 2455 BluetoothEventManager "Received android.bluetooth.adapter.action.STATE_CHANGED" 2455 557
+Debug "2015-06-16 17:50:34.480669" 2136 BluetoothPolicyService "MDM: isProfileEnabled = true" 25670 558
+Info "2015-06-16 17:50:34.480669" 1833 AudioHardwareTinyALSA setParameters(A2dpSuspended=false) 2100 559
+Info "2015-06-16 17:50:34.480669" 1833 audio_wfd_hw "adev_set_parameters() A2dpSuspended=false" 2100 560
+Info "2015-06-16 17:50:34.480669" 2136 WifiService "mBoosterFLAG : 2" 2197 561
+Info "2015-06-16 17:50:34.480669" 2136 WifiService "current booster mode : BTCoexMode" 2197 562
+Info "2015-06-16 17:50:34.480669" 2136 BluetoothPolicyService isDiscoverableEnabled 2308 563
+Verbose "2015-06-16 17:50:34.480669" 2136 BluetoothEventLoop.cpp "event_filter: not interested (not a signal)." 21760 564
+Verbose "2015-06-16 17:50:34.485669" 2136 BluetoothEventLoop.cpp "event_filter: not interested (not a signal)." 21760 565
+Verbose "2015-06-16 17:50:34.485669" 2136 BluetoothEventLoop.cpp "event_filter: Received signal org.bluez.Adapter:PropertyChanged from /org/bluez/21757/hci0" 21760 566
+Info "2015-06-16 17:50:34.485669" 2136 BluetoothPolicyService "isDiscoverableEnabled ret:true" 2308 567
+Info "2015-06-16 17:50:34.485669" 2136 BluetoothPolicyService isLimitedDiscoverableEnabled 2308 568
+Info "2015-06-16 17:50:34.485669" 2136 BluetoothPolicyService "isLimitedDiscoverableEnabled ret:true" 2308 569
+Debug "2015-06-16 17:50:34.485669" 2136 BluetoothAdapterStateMachine "Enter BluetoothOn: 53" 2308 570
+Verbose "2015-06-16 17:50:34.485669" 21703 BluetoothPbapReceiver "PbapReceiver onReceive: android.bluetooth.adapter.action.STATE_CHANGED" 21703 571
+Debug "2015-06-16 17:50:34.485669" 2136 BluetoothPolicyService "MDM: isProfileEnabled = true" 1711 572
+Debug "2015-06-16 17:50:34.490669" 2136 BluetoothPolicyService "MDM: isProfileEnabled = true" 21803 573
+Verbose "2015-06-16 17:50:34.490669" 2511 BluetoothAudioGateway.cpp cleanupNativeDataNative 2511 574
+Verbose "2015-06-16 17:50:34.490669" 2511 BluetoothAudioGateway.cpp initializeNativeDataNative 2511 575
+Verbose "2015-06-16 17:50:34.490669" 2511 BluetoothAudioGateway.cpp "HF RFCOMM channel = 10." 2511 576
+Verbose "2015-06-16 17:50:34.490669" 2511 BluetoothAudioGateway.cpp "HS RFCOMM channel = 11." 2511 577
+Verbose "2015-06-16 17:50:34.490669" 2511 BluetoothAudioGateway.cpp setUpListeningSocketsNative 2511 578
+Verbose "2015-06-16 17:50:34.490669" 2511 BluetoothSocket.cpp initSocketNative 2511 579
+Verbose "2015-06-16 17:50:34.490669" 2511 BluetoothSocket.cpp "...fd 98 created (SCO, lm = 0)" 2511 580
+Verbose "2015-06-16 17:50:34.490669" 2511 BluetoothSocket.cpp initSocketFromFdNative 2511 581
+Debug "2015-06-16 17:50:34.490669" 2511 BluetoothUtils "isSocketAllowedBySecurityPolicy start : device null" 2511 582
+Debug "2015-06-16 17:50:34.495669" 2136 BluetoothPolicyService "MDM: isProfileEnabled = true" 5159 583
+Verbose "2015-06-16 17:50:34.495669" 2511 BluetoothSocket.cpp bindListenNative 2511 584
+Verbose "2015-06-16 17:50:34.495669" 2511 BluetoothSocket.cpp "...bindListenNative(98) success" 2511 585
+Verbose "2015-06-16 17:50:34.495669" 2511 BluetoothSocket.cpp acceptNative 29040 586
+Verbose "2015-06-16 17:50:34.500669" 21703 BluetoothPbapService BluetoothPbapService 21703 587
+Verbose "2015-06-16 17:50:34.500669" 21703 BluetoothPbapService "Pbap Service onCreate" 21703 588
+Verbose "2015-06-16 17:50:34.500669" 21703 BluetoothPbapService "Starting PBAP service" 21703 589
+Verbose "2015-06-16 17:50:34.500669" 21703 BluetoothPbapService "Pbap Service onStartCommand" 21703 590
+Verbose "2015-06-16 17:50:34.500669" 21703 BluetoothPbapService BluetoothPbapRfcommTransport 21703 591
+Verbose "2015-06-16 17:50:34.500669" 21703 BluetoothPbapService "action: android.bluetooth.adapter.action.STATE_CHANGED" 21703 592
+Verbose "2015-06-16 17:50:34.500669" 21703 BluetoothPbapService "Handler(): got msg=1" 21703 593
+Verbose "2015-06-16 17:50:34.500669" 21703 BluetoothPbapService "Pbap Service startRfcommSocketListener" 21703 594
+Verbose "2015-06-16 17:50:34.500669" 21703 BluetoothPbapService "Pbap Service initSocket" 21703 595
+Verbose "2015-06-16 17:50:34.500669" 21703 BluetoothSocket.cpp initSocketNative 21703 596
+Verbose "2015-06-16 17:50:34.500669" 21703 BluetoothSocket.cpp "...fd 43 created (RFCOMM, lm = 4)" 21703 597
+Verbose "2015-06-16 17:50:34.500669" 21703 BluetoothSocket.cpp initSocketFromFdNative 21703 598
+Info "2015-06-16 17:50:34.500669" 2136 BluetoothPolicyService getBluetoothDataTransferAllowed 2564 599
+Debug "2015-06-16 17:50:34.505669" 2136 BluetoothPolicyService "MDM: isProfileEnabled = true" 2494 600
+Debug "2015-06-16 17:50:34.505669" 21703 BluetoothUtils "isSocketAllowedBySecurityPolicy start : device null" 21703 601
+Debug "2015-06-16 17:50:34.505669" 2136 BluetoothPolicyService "MDM: isProfileEnabled = true" 2580 602
+Verbose "2015-06-16 17:50:34.510669" 21703 BluetoothSocket.cpp bindListenNative 21703 603
+Verbose "2015-06-16 17:50:34.510669" 21703 BluetoothSocket.cpp "...bindListenNative(43) success" 21703 604
+Verbose "2015-06-16 17:50:34.510669" 21703 BluetoothPbapService "Succeed to create listening socket on channel 19" 21703 605
+Verbose "2015-06-16 17:50:34.515669" 21703 BluetoothPbapService "Pbap Service run" 29042 606
+Verbose "2015-06-16 17:50:34.515669" 21703 BluetoothSocket.cpp acceptNative 29042 607
+Debug "2015-06-16 17:50:34.515669" 2383 STATUSBAR-BluetoothQuickSettingButton "BT onReceive(12)" 2383 608
+Debug "2015-06-16 17:50:34.520669" 2383 STATUSBAR-QuickSettingButton "Button ON" 2383 609
+Debug "2015-06-16 17:50:34.540669" 2455 DockEventReceiver "finishStartingService: stopping service" 2455 610
+Debug "2015-06-16 17:50:34.545669" 21723 AvrcpProxy startAvrcp() 21723 611
+Debug "2015-06-16 17:50:34.545669" 2136 AvrcpStubService startAvrcp() 2495 612
+Debug "2015-06-16 17:50:34.545669" 2136 jniAvrcpService "Starting avrcp native service" 2495 613
+Debug "2015-06-16 17:50:34.545669" 2136 jniAvrcpService "setUpService is called" 2495 614
+Error "2015-06-16 17:50:34.550669" 2136 jniAvrcpService "setUpService return true" 2495 615
+Debug "2015-06-16 17:50:34.555669" 2136 STATUSBAR-NotificationService cancelAllNotifications() 2580 616
+Debug "2015-06-16 17:50:34.565669" 2455 BluetoothNotiBroadcastReceiver onReceive 2455 617
+Verbose "2015-06-16 17:50:34.565669" 21703 BluetoothSocket.cpp initSocketNative 29049 618
+Verbose "2015-06-16 17:50:34.565669" 21703 BluetoothSocket.cpp "...fd 48 created (RFCOMM, lm = 0)" 29049 619
+Verbose "2015-06-16 17:50:34.565669" 21703 BluetoothSocket.cpp initSocketFromFdNative 29049 620
+Info "2015-06-16 17:50:34.565669" 2136 BluetoothPolicyService getBluetoothDataTransferAllowed 2146 621
+Debug "2015-06-16 17:50:34.570669" 2136 BluetoothPolicyService "MDM: isProfileEnabled = true" 2495 622
+Debug "2015-06-16 17:50:34.570669" 21703 BluetoothUtils "isSocketAllowedBySecurityPolicy start : device null" 29049 623
+Debug "2015-06-16 17:50:34.570669" 2136 BluetoothPolicyService "MDM: isProfileEnabled = true" 2580 624
+Verbose "2015-06-16 17:50:34.570669" 21703 BluetoothSocket.cpp bindListenNative 29049 625
+Verbose "2015-06-16 17:50:34.570669" 21703 BluetoothSocket.cpp "...bindListenNative(48) success" 29049 626
+Info "2015-06-16 17:50:34.570669" 21703 BtOppRfcommListener "Accept thread started on channel 12" 29049 627
+Verbose "2015-06-16 17:50:34.570669" 21703 BluetoothSocket.cpp acceptNative 29049 628
+Debug "2015-06-16 17:50:34.580669" 2641 AuthorizationBluetoothService "Received Bluetooth event: Intent { act=android.bluetooth.adapter.action.STATE_CHANGED flg=0x8000010 cmp=com.google.android.gms/.auth.be.proximity.authorization.bt.AuthorizationBluetoothService$BluetoothStateChangeReceiver (has extras) }." 2641 629
+Error "2015-06-16 17:50:34.580669" 2641 AuthorizationBluetoothService "Proximity feature is not enabled." 2641 630
+Debug "2015-06-16 17:50:34.680669" 2136 ConnectivityService "handleInetConditionHoldEnd: net=1, condition=100, published condition=0" 2339 631
+Debug "2015-06-16 17:50:34.680669" 2383 STATUSBAR-NetworkController "onReceive() - CONNECTIVITY_ACTION, INET_CONDITION_ACTION" 2383 632
+Debug "2015-06-16 17:50:34.680669" 2383 STATUSBAR-NetworkController updateDataNetType() 2383 633
+Debug "2015-06-16 17:50:34.680669" 2383 STATUSBAR-NetworkController "NoService, mRoamingIconId = 0" 2383 634
+Debug "2015-06-16 17:50:34.745669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 635
+Debug "2015-06-16 17:50:34.750669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 636
+Debug "2015-06-16 17:50:34.750669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 637
+Debug "2015-06-16 17:50:34.750669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 638
+Debug "2015-06-16 17:50:34.750669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 639
+Debug "2015-06-16 17:50:34.755669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 640
+Debug "2015-06-16 17:50:34.755669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 641
+Debug "2015-06-16 17:50:34.760669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 642
+Debug "2015-06-16 17:50:34.990669" 4996 dalvikvm "GC_CONCURRENT freed 411K, 13% free 7371K/8455K, paused 19ms+3ms, total 50ms" 4997 643
+Debug "2015-06-16 17:50:35.085669" 2383 STATUSBAR-NetworkController "onReceive() - RSSI_CHANGED_ACTION, WIFI_STATE, NETWORK_STATE" 2383 644
+Debug "2015-06-16 17:50:35.265669" 4256 AppThwackAndroidLib "setEnabled: bt is: true" 29024 645
+Debug "2015-06-16 17:50:35.265669" 4256 AppThwackDeviceManager "taskStatus update (219ff18dd6c12e72db76af0c7ac8a27beeb60fa5: {""result"":""Bluetooth enabled: true"",""state"":2})" 4256 646
+Debug "2015-06-16 17:50:35.275669" 2136 STATUSBAR-NotificationService "updateLightsLocked() : Turn off notification light" 2212 647
+Debug "2015-06-16 17:50:35.325669" 2383 StatusBar "expanding top notification at 2entry.userCollapsed() = false" 2383 648
+Debug "2015-06-16 17:50:35.500669" 4256 AppThwack /task/219ff18dd6c12e72db76af0c7ac8a27beeb60fa5/status 29065 649
+Debug "2015-06-16 17:50:35.580669" 4256 dalvikvm "GC_CONCURRENT freed 441K, 19% free 7492K/9159K, paused 17ms+5ms, total 57ms" 4258 650
+Debug "2015-06-16 17:50:35.585669" 4256 AppThwack /task/219ff18dd6c12e72db76af0c7ac8a27beeb60fa5/status 29072 651
+Info "2015-06-16 17:50:35.720669" 1830 SurfaceFlinger "id=396 Removed Ootificatio idx=7 MapSz=6" 2053 652
+Info "2015-06-16 17:50:35.720669" 1830 SurfaceFlinger "id=396 Removed Ootificatio idx=-2 MapSz=6" 1830 653
+Debug "2015-06-16 17:50:35.750669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 654
+Debug "2015-06-16 17:50:35.750669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 655
+Debug "2015-06-16 17:50:35.750669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 656
+Debug "2015-06-16 17:50:35.750669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 657
+Debug "2015-06-16 17:50:35.750669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 658
+Debug "2015-06-16 17:50:35.750669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 659
+Debug "2015-06-16 17:50:35.750669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 660
+Debug "2015-06-16 17:50:35.750669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 661
+Debug "2015-06-16 17:50:36.515669" 4256 AppThwack /task/219ff18dd6c12e72db76af0c7ac8a27beeb60fa5/status 29108 662
+Debug "2015-06-16 17:50:36.545669" 4256 AppThwack /location/ 29111 663
+Debug "2015-06-16 17:50:36.590669" 4256 AppThwack "sha1: c408bb3a028cf0fb496ac511c4cb3daabc423187" 29111 664
+Debug "2015-06-16 17:50:36.590669" 4256 AppThwackDeviceManager "k: lon v: -122.677811" 29111 665
+Debug "2015-06-16 17:50:36.590669" 4256 AppThwackDeviceManager "k: lat v: 45.518001" 29111 666
+Debug "2015-06-16 17:50:36.590669" 4256 AppThwackDeviceManager "k: NanoHttpd.QUERY_STRING v: lat=45.518001&lon=-122.677811" 29111 667
+Debug "2015-06-16 17:50:36.600669" 4256 dalvikvm "GC_CONCURRENT freed 468K, 19% free 7497K/9159K, paused 11ms+7ms, total 36ms" 4258 668
+Debug "2015-06-16 17:50:36.625669" 4256 AppThwack /task/c408bb3a028cf0fb496ac511c4cb3daabc423187 29111 669
+Debug "2015-06-16 17:50:36.640669" 4256 AppThwackDeviceManager "taskStatus update (c408bb3a028cf0fb496ac511c4cb3daabc423187: {""state"":1})" 4256 670
+Debug "2015-06-16 17:50:36.650669" 4256 AppThwackDeviceManager "Enabling Mock Locations: Lat: 45.518001556396484 Lon: -122.67781066894531" 29116 671
+Debug "2015-06-16 17:50:36.650669" 4256 AppThwackDeviceManager "Providing location: 45.518002 lon: -122.677811" 29116 672
+Debug "2015-06-16 17:50:36.650669" 4256 AppThwackDeviceManager "taskStatus update (c408bb3a028cf0fb496ac511c4cb3daabc423187: {""result"":"""",""state"":2})" 4256 673
+Debug "2015-06-16 17:50:36.660669" 4256 AppThwackAndroidLib CONNECTED! 4256 674
+Debug "2015-06-16 17:50:36.660669" 4256 AppThwackAndroidLib Connected 29116 675
+Debug "2015-06-16 17:50:36.670669" 2383 StatusBar "expanding top notification at 3entry.userCollapsed() = false" 2383 676
+Debug "2015-06-16 17:50:36.680669" 2136 STATUSBAR-NotificationService "Noti Alert - mSystemReady:true, AlertEnabled:true" 2212 677
+Info "2015-06-16 17:50:36.685669" 2136 LocationManagerService "remove passive (pid 2819), next minTime = 0" 2581 678
+Warning "2015-06-16 17:50:36.720669" 2136 AlarmManager "FACTORY_ON= 0" 5158 679
+Info "2015-06-16 17:50:36.720669" 1830 SurfaceFlinger "id=397(85) createSurf 0x40092f14 (1x1),1 flag=0, Ootificatio" 1916 680
+Warning "2015-06-16 17:50:36.720669" 2136 AlarmManager "FACTORY_ON= 0" 2136 681
+Debug "2015-06-16 17:50:36.750669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 682
+Debug "2015-06-16 17:50:36.750669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 683
+Debug "2015-06-16 17:50:36.750669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 684
+Debug "2015-06-16 17:50:36.750669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 685
+Debug "2015-06-16 17:50:36.750669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 686
+Debug "2015-06-16 17:50:36.750669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 687
+Debug "2015-06-16 17:50:36.750669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 688
+Debug "2015-06-16 17:50:36.750669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 689
+Debug "2015-06-16 17:50:36.775669" 4256 AppThwack /task/c408bb3a028cf0fb496ac511c4cb3daabc423187/status 29126 690
+Debug "2015-06-16 17:50:36.805669" 4256 AppThwack /task/c408bb3a028cf0fb496ac511c4cb3daabc423187/status 29128 691
+Debug "2015-06-16 17:50:36.820669" 4256 dalvikvm "GC_CONCURRENT freed 462K, 19% free 7489K/9159K, paused 12ms+2ms, total 29ms" 4258 692
+Debug "2015-06-16 17:50:36.865669" 4256 AppThwack /task/c408bb3a028cf0fb496ac511c4cb3daabc423187/status 29134 693
+Info "2015-06-16 17:50:36.915669" 1830 SurfaceFlinger "id=395 Removed Uoast idx=8 MapSz=6" 2053 694
+Info "2015-06-16 17:50:36.915669" 1830 SurfaceFlinger "id=395 Removed Uoast idx=-2 MapSz=6" 1830 695
+Debug "2015-06-16 17:50:36.920669" 2136 PowerManagerService "userActivity : mUserState 0x3" 2286 696
+Debug "2015-06-16 17:50:36.920669" 2136 PowerManagerService "reactivateScreenLocksLocked mProxIgnoredBecauseScreenTurnedOff=false" 2286 697
+Info "2015-06-16 17:50:36.920669" 2136 PowerManagerService "Ulight 0x1->0x3|0x0" 2286 698
+Debug "2015-06-16 17:50:36.925669" 2136 PowerManagerService "releaseWakeLockLocked : ON_AFTER_RELEASE" 2286 699
+Debug "2015-06-16 17:50:36.925669" 2136 PowerManagerService "releaseWakeLockLocked flags=0x0 tag=KEEP_SCREEN_ON_FLAG" 2286 700
+Debug "2015-06-16 17:50:36.945669" 4256 AppThwack /task/c408bb3a028cf0fb496ac511c4cb3daabc423187/status 29139 701
+Debug "2015-06-16 17:50:37.110669" 4256 AppThwack /task/c408bb3a028cf0fb496ac511c4cb3daabc423187/status 29141 702
+Error "2015-06-16 17:50:37.120669" 2136 Watchdog "!@Sync 2345" 2466 703
+Debug "2015-06-16 17:50:37.165669" 4256 AppThwack /locale/ 29142 704
+Debug "2015-06-16 17:50:37.175669" 4256 dalvikvm "GC_CONCURRENT freed 457K, 18% free 7543K/9159K, paused 19ms+3ms, total 50ms" 4258 705
+Debug "2015-06-16 17:50:37.175669" 4256 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 5ms" 29142 706
+Debug "2015-06-16 17:50:37.190669" 4256 AppThwack "sha1: 36305317aab28d8d5cde059839fbbb807fc98fca" 29142 707
+Debug "2015-06-16 17:50:37.190669" 4256 AppThwackDeviceManager "k: NanoHttpd.QUERY_STRING v: locale=en_US" 29142 708
+Debug "2015-06-16 17:50:37.190669" 4256 AppThwackDeviceManager "k: locale v: en_US" 29142 709
+Debug "2015-06-16 17:50:37.225669" 4256 AppThwack /task/36305317aab28d8d5cde059839fbbb807fc98fca 29142 710
+Debug "2015-06-16 17:50:37.245669" 4256 AppThwackDeviceManager "Setting locale to: en_US" 29143 711
+Debug "2015-06-16 17:50:37.245669" 4256 AppThwackDeviceManager "taskStatus update (36305317aab28d8d5cde059839fbbb807fc98fca: {""state"":1})" 4256 712
+Debug "2015-06-16 17:50:37.245669" 4256 AppThwackAndroidLib "Setting locale to: en_US" 29143 713
+Debug "2015-06-16 17:50:37.260669" 2383 StatusBar "expanding top notification at 4entry.userCollapsed() = false" 2383 714
+Debug "2015-06-16 17:50:37.265669" 2136 STATUSBAR-NotificationService "Noti Alert - mSystemReady:true, AlertEnabled:true" 2212 715
+Debug "2015-06-16 17:50:37.285669" 4256 AppThwack /task/36305317aab28d8d5cde059839fbbb807fc98fca/status 29145 716
+Debug "2015-06-16 17:50:37.325669" 4256 dalvikvm "GC_CONCURRENT freed 452K, 19% free 7503K/9159K, paused 13ms+2ms, total 28ms" 4258 717
+Debug "2015-06-16 17:50:37.395669" 4256 AppThwack /task/36305317aab28d8d5cde059839fbbb807fc98fca/status 29148 718
+Debug "2015-06-16 17:50:37.755669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 719
+Debug "2015-06-16 17:50:37.760669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 720
+Debug "2015-06-16 17:50:37.760669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 721
+Debug "2015-06-16 17:50:37.760669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 722
+Debug "2015-06-16 17:50:37.760669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 723
+Debug "2015-06-16 17:50:37.765669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 724
+Debug "2015-06-16 17:50:37.765669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 725
+Debug "2015-06-16 17:50:37.765669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 726
+Debug "2015-06-16 17:50:38.105669" 2383 STATUSBAR-NetworkController "onReceive() - RSSI_CHANGED_ACTION, WIFI_STATE, NETWORK_STATE" 2383 727
+Warning "2015-06-16 17:50:38.425669" 2136 PowerManagerService "Timer 0x3->0x3|0x1" 2284 728
+Debug "2015-06-16 17:50:38.490669" 4256 AppThwack /task/36305317aab28d8d5cde059839fbbb807fc98fca/status 29186 729
+Warning "2015-06-16 17:50:38.510669" 3193 GAv4-SVC "Network compressed POST connection error: javax.net.ssl.SSLException: Write error: ssl=0x689d0418: I/O error during system call, Connection timed out" 13034 730
+Debug "2015-06-16 17:50:39.370669" 4256 AppThwackDeviceManager "taskStatus update (36305317aab28d8d5cde059839fbbb807fc98fca: {""result"":""en_US"",""state"":2})" 4256 731
+Debug "2015-06-16 17:50:39.370669" 2136 STATUSBAR-NotificationService "updateLightsLocked() : Turn off notification light" 2212 732
+Debug "2015-06-16 17:50:39.425669" 2383 StatusBar "expanding top notification at 3entry.userCollapsed() = false" 2383 733
+Debug "2015-06-16 17:50:39.585669" 4256 AppThwack /task/36305317aab28d8d5cde059839fbbb807fc98fca/status 29200 734
+Debug "2015-06-16 17:50:39.640669" 4256 dalvikvm "GC_CONCURRENT freed 430K, 19% free 7499K/9159K, paused 2ms+2ms, total 26ms" 4258 735
+Debug "2015-06-16 17:50:39.680669" 4256 AppThwack /task/36305317aab28d8d5cde059839fbbb807fc98fca/status 29201 736
+Debug "2015-06-16 17:50:39.740669" 4256 AppThwack /task/36305317aab28d8d5cde059839fbbb807fc98fca/status 29202 737
+Debug "2015-06-16 17:50:39.765669" 4256 AppThwack /get-network-info/ 29203 738
+Debug "2015-06-16 17:50:39.765669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 739
+Debug "2015-06-16 17:50:39.765669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 740
+Debug "2015-06-16 17:50:39.765669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 741
+Debug "2015-06-16 17:50:39.765669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 742
+Debug "2015-06-16 17:50:39.765669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 743
+Debug "2015-06-16 17:50:39.765669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 744
+Debug "2015-06-16 17:50:39.765669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 745
+Debug "2015-06-16 17:50:39.770669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 746
+Debug "2015-06-16 17:50:39.780669" 4256 AppThwack "sha1: 32a11a046c3c5e387ac9ecdc01f45123f3e11b64" 29203 747
+Debug "2015-06-16 17:50:39.875669" 4256 AppThwack /task/32a11a046c3c5e387ac9ecdc01f45123f3e11b64 29203 748
+Debug "2015-06-16 17:50:39.910669" 4256 dalvikvm "GC_CONCURRENT freed 508K, 19% free 7496K/9159K, paused 1ms+16ms, total 39ms" 4258 749
+Debug "2015-06-16 17:50:39.910669" 4256 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 24ms" 29203 750
+Debug "2015-06-16 17:50:39.915669" 4256 AppThwackDeviceManager "taskStatus update (32a11a046c3c5e387ac9ecdc01f45123f3e11b64: {""state"":1})" 4256 751
+Debug "2015-06-16 17:50:39.915669" 4256 AppThwackDeviceManager "wl: , Supplicant state: COMPLETED, RSSI: -58, Link speed: 65, Net ID: 0, Metered hint: false, mFrequency: 2437" 29211 752
+Debug "2015-06-16 17:50:39.915669" 4256 AppThwackDeviceManager "taskStatus update (32a11a046c3c5e387ac9ecdc01f45123f3e11b64: {""result"":{""wifi_mac_address"":""60:21:C0:99:27:C7"",""wifi_ip_address"":""172.16.232.10"",""wifi_ssid"":""AppThwack"",""wifi_rssi"":-58,""wifi_link_speed"":65,""wifi_hidden_ssid"":false,""wifi_bssid"":""f0:29:29:99:a1:f0""},""state"":2})" 4256 753
+Debug "2015-06-16 17:50:39.915669" 2136 STATUSBAR-NotificationService "Noti Alert - mSystemReady:true, AlertEnabled:true" 2212 754
+Debug "2015-06-16 17:50:39.920669" 2136 STATUSBAR-NotificationService "updateLightsLocked() : Turn off notification light" 2212 755
+Debug "2015-06-16 17:50:39.960669" 2136 dalvikvm "GC_CONCURRENT freed 1980K, 22% free 26033K/33223K, paused 16ms+8ms, total 137ms" 2138 756
+Debug "2015-06-16 17:50:39.965669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 44ms" 2564 757
+Debug "2015-06-16 17:50:39.970669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 42ms" 5158 758
+Debug "2015-06-16 17:50:39.970669" 2383 StatusBar "expanding top notification at 4entry.userCollapsed() = false" 2383 759
+Debug "2015-06-16 17:50:40.000669" 2383 StatusBar "expanding top notification at 3entry.userCollapsed() = false" 2383 760
+Debug "2015-06-16 17:50:40.025669" 4256 AppThwack /task/32a11a046c3c5e387ac9ecdc01f45123f3e11b64/status 29215 761
+Debug "2015-06-16 17:50:40.040669" 4256 AppThwack /task/32a11a046c3c5e387ac9ecdc01f45123f3e11b64/status 29217 762
+Debug "2015-06-16 17:50:40.125669" 4256 AppThwack /task/32a11a046c3c5e387ac9ecdc01f45123f3e11b64/status 29218 763
+Debug "2015-06-16 17:50:40.175669" 4256 dalvikvm "GC_CONCURRENT freed 466K, 19% free 7501K/9159K, paused 18ms+2ms, total 41ms" 4258 764
+Debug "2015-06-16 17:50:40.220669" 4256 AppThwack /task/32a11a046c3c5e387ac9ecdc01f45123f3e11b64/status 29219 765
+Debug "2015-06-16 17:50:40.770669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 766
+Debug "2015-06-16 17:50:40.770669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 767
+Debug "2015-06-16 17:50:40.770669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 768
+Debug "2015-06-16 17:50:40.770669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 769
+Debug "2015-06-16 17:50:40.770669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 770
+Debug "2015-06-16 17:50:40.770669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 771
+Debug "2015-06-16 17:50:40.770669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 772
+Debug "2015-06-16 17:50:40.770669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 773
+Debug "2015-06-16 17:50:40.820669" 29222 AndroidRuntime  29222 774
+Debug "2015-06-16 17:50:40.820669" 29222 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 29222 775
+Debug "2015-06-16 17:50:40.820669" 29222 AndroidRuntime "CheckJNI is OFF" 29222 776
+Debug "2015-06-16 17:50:40.825669" 29222 AndroidRuntime "setted country_code = USA" 29222 777
+Debug "2015-06-16 17:50:40.825669" 29222 AndroidRuntime "setted countryiso_code = US" 29222 778
+Debug "2015-06-16 17:50:40.825669" 29222 AndroidRuntime "setted sales_code = XAR" 29222 779
+Debug "2015-06-16 17:50:40.825669" 29222 AndroidRuntime "readGMSProperty: start" 29222 780
+Debug "2015-06-16 17:50:40.825669" 29222 AndroidRuntime "readGMSProperty: already setted!!" 29222 781
+Debug "2015-06-16 17:50:40.825669" 29222 AndroidRuntime "readGMSProperty: end" 29222 782
+Debug "2015-06-16 17:50:40.835669" 29222 dalvikvm "Trying to load lib libjavacore.so 0x0" 29222 783
+Debug "2015-06-16 17:50:40.835669" 29222 dalvikvm "Added shared lib libjavacore.so 0x0" 29222 784
+Debug "2015-06-16 17:50:40.840669" 29222 dalvikvm "Trying to load lib libnativehelper.so 0x0" 29222 785
+Debug "2015-06-16 17:50:40.840669" 29222 dalvikvm "Added shared lib libnativehelper.so 0x0" 29222 786
+Debug "2015-06-16 17:50:41.000669" 29222 dalvikvm "Note: class Landroid/app/ActivityManagerNative; has 155 unimplemented (abstract) methods" 29222 787
+Debug "2015-06-16 17:50:41.030669" 29222 AndroidRuntime "Calling main entry com.android.commands.pm.Pm" 29222 788
+Debug "2015-06-16 17:50:41.115669" 2383 STATUSBAR-NetworkController "onReceive() - RSSI_CHANGED_ACTION, WIFI_STATE, NETWORK_STATE" 2383 789
+Debug "2015-06-16 17:50:41.145669" 29222 AndroidRuntime "Shutting down VM" 29222 790
+Debug "2015-06-16 17:50:41.150669" 29222 dalvikvm "GC_CONCURRENT freed 421K, 87% free 571K/4096K, paused 0ms+0ms, total 3ms" 29229 791
+Info "2015-06-16 17:50:42.080669" 1830 SurfaceFlinger "id=397 Removed Ootificatio idx=7 MapSz=5" 6217 792
+Info "2015-06-16 17:50:42.080669" 1830 SurfaceFlinger "id=397 Removed Ootificatio idx=-2 MapSz=5" 6216 793
+Debug "2015-06-16 17:50:43.640669" 29275 AndroidRuntime  29275 794
+Debug "2015-06-16 17:50:43.640669" 29275 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 29275 795
+Debug "2015-06-16 17:50:43.640669" 29275 AndroidRuntime "CheckJNI is OFF" 29275 796
+Debug "2015-06-16 17:50:43.640669" 29275 AndroidRuntime "setted country_code = USA" 29275 797
+Debug "2015-06-16 17:50:43.640669" 29275 AndroidRuntime "setted countryiso_code = US" 29275 798
+Debug "2015-06-16 17:50:43.640669" 29275 AndroidRuntime "setted sales_code = XAR" 29275 799
+Debug "2015-06-16 17:50:43.645669" 29275 AndroidRuntime "readGMSProperty: start" 29275 800
+Debug "2015-06-16 17:50:43.645669" 29275 AndroidRuntime "readGMSProperty: already setted!!" 29275 801
+Debug "2015-06-16 17:50:43.645669" 29275 AndroidRuntime "readGMSProperty: end" 29275 802
+Debug "2015-06-16 17:50:43.650669" 29275 dalvikvm "Trying to load lib libjavacore.so 0x0" 29275 803
+Debug "2015-06-16 17:50:43.655669" 29275 dalvikvm "Added shared lib libjavacore.so 0x0" 29275 804
+Debug "2015-06-16 17:50:43.660669" 29275 dalvikvm "Trying to load lib libnativehelper.so 0x0" 29275 805
+Debug "2015-06-16 17:50:43.660669" 29275 dalvikvm "Added shared lib libnativehelper.so 0x0" 29275 806
+Debug "2015-06-16 17:50:43.880669" 29275 dalvikvm "Note: class Landroid/app/ActivityManagerNative; has 155 unimplemented (abstract) methods" 29275 807
+Debug "2015-06-16 17:50:43.915669" 29275 AndroidRuntime "Calling main entry com.android.commands.pm.Pm" 29275 808
+Info "2015-06-16 17:50:43.955669" 2136 ApplicationPolicy isApplicationInstallationEnabled 2222 809
+Warning "2015-06-16 17:50:43.955669" 2136 PackageManager "verifying app can be installed or not" 2222 810
+Debug "2015-06-16 17:50:44.155669" 2136 dalvikvm "GC_CONCURRENT freed 1397K, 20% free 26683K/33223K, paused 2ms+8ms, total 83ms" 2138 811
+Debug "2015-06-16 17:50:44.155669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 25ms" 2336 812
+Debug "2015-06-16 17:50:44.155669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 72ms" 2222 813
+Debug "2015-06-16 17:50:44.345669" 2136 dalvikvm "GC_CONCURRENT freed 1628K, 19% free 27098K/33223K, paused 13ms+6ms, total 99ms" 2138 814
+Debug "2015-06-16 17:50:44.345669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 74ms" 2222 815
+Debug "2015-06-16 17:50:44.500669" 2136 dalvikvm "GC_CONCURRENT freed 2008K, 19% free 27132K/33223K, paused 3ms+9ms, total 96ms" 2138 816
+Debug "2015-06-16 17:50:44.500669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 88ms" 2222 817
+Debug "2015-06-16 17:50:44.655669" 2136 dalvikvm "GC_CONCURRENT freed 2030K, 19% free 27146K/33223K, paused 3ms+7ms, total 88ms" 2138 818
+Debug "2015-06-16 17:50:44.655669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 81ms" 2222 819
+Debug "2015-06-16 17:50:44.810669" 2136 dalvikvm "GC_CONCURRENT freed 2032K, 19% free 27161K/33223K, paused 2ms+7ms, total 93ms" 2138 820
+Debug "2015-06-16 17:50:44.810669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 53ms" 2222 821
+Warning "2015-06-16 17:50:44.930669" 2136 PowerManagerService "Timer 0x3->0x1|0x1" 2284 822
+Info "2015-06-16 17:50:44.930669" 2136 PowerManagerService "Ulight 0x3->0x1|0x0" 2284 823
+Info "2015-06-16 17:50:45.185669" 29289 dalvikvm "DexOpt: access denied from Landroid/support/v4/app/NotificationCompatApi20; to field Landroid/app/Notification;.actions" 29289 824
+Info "2015-06-16 17:50:45.190669" 29289 dalvikvm "DexOpt: access denied from Landroid/support/v4/app/NotificationCompatKitKat; to field Landroid/app/Notification;.actions" 29289 825
+Debug "2015-06-16 17:50:45.560669" 29289 dalvikvm "DexOpt: load 130ms, verify+opt 392ms, 2074444 bytes" 29289 826
+Info "2015-06-16 17:50:45.935669" 2136 InputReader "Reconfiguring input devices.  changes=0x00000010" 2299 827
+Info "2015-06-16 17:50:45.935669" 3421 BackGroundService "BackGroundService:í¨í¤ì§ ì¤ì¹ BR ìì  ì²ë¦¬ ìì" 3421 828
+Debug "2015-06-16 17:50:45.955669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 0ms" 2222 829
+Debug "2015-06-16 17:50:45.980669" 5486 CapabilityManagerService "Receiver Broadcast:android.intent.action.PACKAGE_ADDED" 5486 830
+Debug "2015-06-16 17:50:45.990669" 2582 Launcher.MenuAppsGrid "StateObj::getAppsList() item count = 51" 2582 831
+Debug "2015-06-16 17:50:45.990669" 2582 CellLayoutChildren "setCellDimensions. width: 96, height: 104, gapX: 24, gapY: 20" 2582 832
+Debug "2015-06-16 17:50:45.990669" 2582 CellLayout "setGridSize(8, 5)" 2582 833
+Debug "2015-06-16 17:50:45.990669" 2582 CellLayoutChildren "setCellDimensions. width: 96, height: 104, gapX: 24, gapY: 20" 2582 834
+Debug "2015-06-16 17:50:45.990669" 2582 CellLayout "setGridSize(8, 5)" 2582 835
+Warning "2015-06-16 17:50:45.990669" 2582 CellLayout "CellLayoutMenu setting height to 600. parent specified: -40" 2582 836
+Warning "2015-06-16 17:50:45.990669" 2582 CellLayout "CellLayoutMenu setting height to 600. parent specified: -40" 2582 837
+Info "2015-06-16 17:50:46.130669" 5533 PCWCLIENTTRACE_SPPReceiver "[onReceive] - android.intent.action.PACKAGE_ADDED" 5533 838
+Debug "2015-06-16 17:50:46.250669" 2136 dalvikvm "GC_EXPLICIT freed 1757K, 18% free 27452K/33223K, paused 15ms+15ms, total 294ms" 2222 839
+Debug "2015-06-16 17:50:46.250669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 76ms" 2136 840
+Debug "2015-06-16 17:50:46.250669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 77ms" 2197 841
+Debug "2015-06-16 17:50:46.250669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 75ms" 2146 842
+Debug "2015-06-16 17:50:46.250669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 75ms" 2565 843
+Debug "2015-06-16 17:50:46.250669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 75ms" 2494 844
+Debug "2015-06-16 17:50:46.250669" 2136 dalvikvm "WAIT_FOR_CONCURRENT_GC blocked 76ms" 2278 845
+Debug "2015-06-16 17:50:46.250669" 29275 AndroidRuntime "Shutting down VM" 29275 846
+Info "2015-06-16 17:50:46.250669" 29275 AndroidRuntime "NOTE: attach of thread 'Binder_3' failed" 29297 847
+Debug "2015-06-16 17:50:46.255669" 29275 dalvikvm "GC_CONCURRENT freed 100K, 87% free 557K/4096K, paused 0ms+0ms, total 3ms" 29279 848
+Verbose "2015-06-16 17:50:46.315669" 2136 BackupManagerService "addPackageParticipantsLocked: #1" 2197 849
+Debug "2015-06-16 17:50:46.355669" 2383 MiniModeAppsPanel closeMiniAppsPanel() 2383 850
+Warning "2015-06-16 17:50:46.360669" 2383 MiniModeAppsPanelDataStorage "minimode file does not exist." 2383 851
+Info "2015-06-16 17:50:46.385669" 3819 "SA      " "[SUR] onReceive log=[SA = 1.3.0835 V = 16 HWD = 752X1280 1.0 dpi = 160  SIZE = 4 LOCALE = en_US CSC = XAR MCC = 0 MNC 0 T = user DEVICE = p4notewifi P = p4notewifiue I = JZO54K M = GT-N8013 OKLEFT false DIS JZO54K.N8013UEUCMA3  ]" 3819 852
+Info "2015-06-16 17:50:46.385669" 3819 "SA      " "[SUR] onReceive Intent=[ android.intent.action.PACKAGE_ADDED package ]" 3819 853
+Debug "2015-06-16 17:50:46.395669" 4353 gp.PicasaSyncManager "reject MetadataSyncTask (********************) because master auto sync is off" 4375 854
+Info "2015-06-16 17:50:46.420669" 2383 MiniModeAppsPanel "closeEditPanel() : mEditPanelUIEnabled=true" 2383 855
+Warning "2015-06-16 17:50:46.425669" 2136 SpellScroll "Spell [gmail.launch] allready exists!!! it will be ignored!" 2278 856
+Warning "2015-06-16 17:50:46.425669" 2136 SpellScroll "Spell [gmail.recipient] allready exists!!! it will be ignored!" 2278 857
+Warning "2015-06-16 17:50:46.425669" 2136 SpellScroll "Spell [gmail.message] allready exists!!! it will be ignored!" 2278 858
+Warning "2015-06-16 17:50:46.425669" 2136 SpellScroll "Spell [gmail.message.recipient] allready exists!!! it will be ignored!" 2278 859
+Warning "2015-06-16 17:50:46.425669" 2136 SpellScroll "Spell [googlemap.launch] allready exists!!! it will be ignored!" 2278 860
+Warning "2015-06-16 17:50:46.425669" 2136 SpellScroll "Spell [googlemap.search] allready exists!!! it will be ignored!" 2278 861
+Warning "2015-06-16 17:50:46.430669" 2136 Resources "Converting to string: TypedValue{t=0x12/d=0xffffffff a=-1}" 2278 862
+Warning "2015-06-16 17:50:46.435669" 2136 Resources "Converting to string: TypedValue{t=0x12/d=0xffffffff a=-1}" 2278 863
+Debug "2015-06-16 17:50:46.535669" 3193 PackageBroadcastService "Received broadcast action=android.intent.action.PACKAGE_ADDED and uri=com.rowland.hashtrace" 29303 864
+Debug "2015-06-16 17:50:46.555669" 3193 ChimeraRcvrProxy "Creating receiver proxy ComponentInfo{com.google.android.gms/com.google.android.gms.games.chimera.GamesSystemBroadcastReceiverProxy}" 3193 865
+Debug "2015-06-16 17:50:46.560669" 3193 ChimeraRcvrProxy "Proxying container receiver ComponentInfo{com.google.android.gms/com.google.android.gms.games.chimera.GamesSystemBroadcastReceiverProxy} to Chimera receiver impl com.google.android.gms.games.GamesBroadcastReceiverStub" 3193 866
+Debug "2015-06-16 17:50:46.565669" 3193 ChimeraCfgMgr "Loading module com.google.android.gms.games from APK com.google.android.gms" 3193 867
+Info "2015-06-16 17:50:46.580669" 2641 ConfigService onCreate 2641 868
+Info "2015-06-16 17:50:46.580669" 2641 ConfigService "onBind for Intent { act=com.google.android.gms.config.UPDATE pkg=com.google.android.gms } action com.google.android.gms.config.UPDATE" 2641 869
+Info "2015-06-16 17:50:46.590669" 2641 ConfigService "onBind returning update interface" 2641 870
+Info "2015-06-16 17:50:46.595669" 2641 ConfigService "onBind for Intent { act=com.google.android.gms.config.START pkg=com.google.android.gms } action com.google.android.gms.config.START" 2641 871
+Info "2015-06-16 17:50:46.595669" 2641 ConfigService "onBind returning service broker" 2641 872
+Info "2015-06-16 17:50:46.600669" 3193 ConfigFetchService "onStartCommand Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.rowland.hashtrace cmp=com.google.android.gms/.config.ConfigFetchService (has extras) }" 3193 873
+Info "2015-06-16 17:50:46.600669" 3193 ConfigFetchService launchTask 3193 874
+Info "2015-06-16 17:50:46.605669" 3193 ConfigFetchService "service connected" 3193 875
+Verbose "2015-06-16 17:50:46.605669" 3193 ConfigFetchTask "ConfigFetchTask getDeviceDataVersionInfo(): ABFEt1U43hcNj_vjaagq5oBpQXHGuT_S5bWfkEOjfKFKmXqMAxz9MJAvIrAApt6Iit-D8zWiqO-oCeErYKIP-bNE8L56keufuLWd2_3y5F4o972wymUhPb5cIULgYLWsKdEVICaWIwHM_-o5ISjxce3Or6GgQujOl1m4SBVL-qJjXAz0YRG0b6jPeJcfCW8XcdBDoRrxz_cyk6_rYTeeEA2mDofvxLmGqeptHBlKKLKVvy5StqYORK8" 29308 876
+Info "2015-06-16 17:50:46.615669" 3193 GoogleURLConnFactory "Using platform SSLCertificateSocketFactory" 29308 877
+Info "2015-06-16 17:50:46.615669" 3193 PeopleContactsSync "CP2 sync disabled" 29309 878
+Warning "2015-06-16 17:50:46.615669" 2136 AlarmManager "FACTORY_ON= 0" 25670 879
+Debug "2015-06-16 17:50:46.620669" 3193 ConfigFetchService "ConfigApi connection successful." 3193 880
+Debug "2015-06-16 17:50:46.735669" 29314 AndroidRuntime  29314 881
+Debug "2015-06-16 17:50:46.735669" 29314 AndroidRuntime ">>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<" 29314 882
+Debug "2015-06-16 17:50:46.735669" 29314 AndroidRuntime "CheckJNI is OFF" 29314 883
+Debug "2015-06-16 17:50:46.735669" 29314 AndroidRuntime "setted country_code = USA" 29314 884
+Debug "2015-06-16 17:50:46.735669" 29314 AndroidRuntime "setted countryiso_code = US" 29314 885
+Debug "2015-06-16 17:50:46.735669" 29314 AndroidRuntime "setted sales_code = XAR" 29314 886
+Debug "2015-06-16 17:50:46.740669" 29314 AndroidRuntime "readGMSProperty: start" 29314 887
+Debug "2015-06-16 17:50:46.740669" 29314 AndroidRuntime "readGMSProperty: already setted!!" 29314 888
+Debug "2015-06-16 17:50:46.740669" 29314 AndroidRuntime "readGMSProperty: end" 29314 889
+Debug "2015-06-16 17:50:46.745669" 29314 dalvikvm "Trying to load lib libjavacore.so 0x0" 29314 890
+Debug "2015-06-16 17:50:46.745669" 29314 dalvikvm "Added shared lib libjavacore.so 0x0" 29314 891
+Debug "2015-06-16 17:50:46.750669" 29314 dalvikvm "Trying to load lib libnativehelper.so 0x0" 29314 892
+Debug "2015-06-16 17:50:46.750669" 29314 dalvikvm "Added shared lib libnativehelper.so 0x0" 29314 893
+Debug "2015-06-16 17:50:46.790669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 894
+Debug "2015-06-16 17:50:46.790669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 895
+Debug "2015-06-16 17:50:46.790669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 896
+Debug "2015-06-16 17:50:46.790669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 897
+Debug "2015-06-16 17:50:46.790669" 2383 STATUSBAR-NetworkController "refreshSignalCluster: data=0 bt=false" 2383 898
+Debug "2015-06-16 17:50:46.790669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 899
+Debug "2015-06-16 17:50:46.790669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 900
+Debug "2015-06-16 17:50:46.790669" 2383 STATUSBAR-SignalClusterView mSeparateMobileGroup=8 2383 901
+Info "2015-06-16 17:50:46.865669" 3193 ConfigFetchTask "  purging config for be.basecompany.base.mybase.snapshot" 29308 902
+Info "2015-06-16 17:50:46.870669" 3193 ConfigFetchTask "  purging config for be.basecompany.base.mybase.snapshot.test" 29308 903
+Info "2015-06-16 17:50:46.870669" 3193 ConfigFetchTask "  purging config for com.trellis" 29308 904
+Info "2015-06-16 17:50:46.870669" 3193 ConfigFetchService "fetch service done; releasing wakelock" 3193 905
+Info "2015-06-16 17:50:46.875669" 3193 ConfigFetchService "stopping self" 3193 906
+Debug "2015-06-16 17:50:46.925669" 29314 dalvikvm "Note: class Landroid/app/ActivityManagerNative; has 155 unimplemented (abstract) methods" 29314 907
+Debug "2015-06-16 17:50:46.955669" 29314 AndroidRuntime "Calling main entry com.android.commands.pm.Pm" 29314 908
+Debug "2015-06-16 17:50:47.025669" 29314 AndroidRuntime "Shutting down VM" 29314 909
+Debug "2015-06-16 17:50:47.030669" 2790 dalvikvm "GC_CONCURRENT freed 329K, 14% free 7530K/8711K, paused 11ms+12ms, total 40ms" 2793 910
+Info "2015-06-16 17:50:47.030669" 29314 AndroidRuntime "NOTE: attach of thread 'Binder_3' failed" 29327 911
+Debug "2015-06-16 17:50:47.030669" 29314 dalvikvm "GC_CONCURRENT freed 383K, 87% free 571K/4096K, paused 0ms+0ms, total 3ms" 29318 912
