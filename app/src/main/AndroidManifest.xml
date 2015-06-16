@@ -23,6 +23,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/CustomTheme" >
+        <!-- Main activity -->
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation"
@@ -33,6 +34,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- Settings activity -->
         <activity
             android:name=".SettingsActivity"
             android:configChanges="orientation"
@@ -42,11 +44,30 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.rowland.hashtrace.MainActivity" />
         </activity>
+        <!-- Details activity -->
         <activity
             android:name=".DetailsActivity"
             android:configChanges="orientation"
             android:label="@string/title_activity_details"
             android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rowland.hashtrace.MainActivity" />
+        </activity>
+
+        <!-- Search results activity -->
+        <activity
+            android:name=".SearchActivity"
+            android:parentActivityName="com.rowland.hashtrace.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.rowland.hashtrace.MainActivity" />

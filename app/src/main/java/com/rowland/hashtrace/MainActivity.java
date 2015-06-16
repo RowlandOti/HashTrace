@@ -1,10 +1,14 @@
 package com.rowland.hashtrace;
 
+import android.app.SearchManager;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -84,7 +88,15 @@ public class MainActivity extends ActionBarActivity implements MainFragment.onMa
     {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_mainactivity, menu);
-        return true;
+
+        SearchManager SManager =  (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        MenuItem searchMenuItem = menu.findItem(R.id.action_search);
+        SearchView searchViewAction = (SearchView) MenuItemCompat.getActionView(searchMenuItem);
+        searchViewAction.setSearchableInfo(SManager.getSearchableInfo(getComponentName()));
+        searchViewAction.setIconifiedByDefault(false);
+
+        return super.onCreateOptionsMenu(menu);
+
     }
 
     @Override
@@ -101,6 +113,9 @@ public class MainActivity extends ActionBarActivity implements MainFragment.onMa
 
                 return true;
             }
+            case R.id.action_search:
+                //openSearch();
+                return true;
             default:
             {
                 return super.onOptionsItemSelected(item);
