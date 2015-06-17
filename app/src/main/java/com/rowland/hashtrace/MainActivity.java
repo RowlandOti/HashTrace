@@ -95,7 +95,7 @@ public class MainActivity extends ActionBarActivity implements MainFragment.onMa
         MenuItem searchMenuItem = menu.findItem(R.id.action_search);
         SearchView mSearchView = (SearchView) MenuItemCompat.getActionView(searchMenuItem);
         mSearchView.setSearchableInfo(SManager.getSearchableInfo(new ComponentName(getApplicationContext(), SearchActivity.class)));
-        mSearchView.setIconifiedByDefault(false);
+        mSearchView.setIconifiedByDefault(true);
 
         return super.onCreateOptionsMenu(menu);
 
@@ -116,8 +116,9 @@ public class MainActivity extends ActionBarActivity implements MainFragment.onMa
                 return true;
             }
             case R.id.action_search:
-                //openSearch();
+
                 Log.w(LOG_TAG, "You called me Search");
+
                 return true;
             default:
             {

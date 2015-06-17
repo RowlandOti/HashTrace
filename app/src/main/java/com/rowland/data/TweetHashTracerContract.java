@@ -37,6 +37,7 @@ public class TweetHashTracerContract {
 	public static final String PATH_HASHTAG = "hashtag";
 	public static final String PATH_TWEET = "tweet";
 	public static final String PATH_TWEETFAV = "tweetfav";
+	public static final String PATH_TWEET_SEARCH = "search";
 
 	// Format used for storing dates in the database. ALso used for converting
 	// those strings back into date objects for comparison/processing.
@@ -114,6 +115,8 @@ public class TweetHashTracerContract {
 
 		public static final Uri CONTENT_URI = BASE_CONTENT_URI.buildUpon().appendPath(PATH_TWEET).build();
 
+		public static final Uri CONTENT_URI_SEARCH = BASE_CONTENT_URI.buildUpon().appendPath(PATH_TWEET_SEARCH).build();
+
 		public static final String CONTENT_TYPE = "vnd.android.cursor.dir/"+ CONTENT_AUTHORITY + "/" + PATH_TWEET;
 		public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/"+ CONTENT_AUTHORITY + "/" + PATH_TWEET;
 
@@ -160,6 +163,11 @@ public class TweetHashTracerContract {
 			return CONTENT_URI.buildUpon().appendPath(hashTagSetting).appendQueryParameter(COLUMN_TWEET_TEXT_DATE, startDate).build();
 		}
 
+		public static Uri buildTweetHashTagWithSearchKey(String hashTagSetting, String searchKey)
+		{
+			return CONTENT_URI_SEARCH.buildUpon().appendPath(hashTagSetting).appendPath(searchKey).build();
+		}
+
 		public static Uri buildTweetHashTagWithDate(String hashTagSetting, String date)
 		{
 			return CONTENT_URI.buildUpon().appendPath(hashTagSetting).appendPath(date).build();
@@ -186,6 +194,11 @@ public class TweetHashTracerContract {
 		public static String getIdFromUri(Uri uri)
 		{
 			return uri.getPathSegments().get(1);
+		}
+
+		public static String getSearchKeyFromUri(Uri uri)
+		{
+			return uri.getPathSegments().get(2);
 		}
 	}
 

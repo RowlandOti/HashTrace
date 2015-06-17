@@ -24,11 +24,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/empty_text_viewPadding"
         android:paddingLeft="@dimen/empty_text_viewPadding"
         android:paddingRight="@dimen/empty_text_viewPadding"
-        android:paddingBottom="@dimen/empty_text_viewPadding"
         android:paddingTop="@dimen/empty_text_viewPadding"
-        android:text="@string/empty_tweet_list">
+        android:text="@string/empty_tweet_list"
+        android:visibility="gone">
 
     </TextView>
 

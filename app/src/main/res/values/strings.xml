@@ -20,6 +20,7 @@
     <!-- Label for Activity Titles -->
     <string name="title_activity_settings">Settings</string>
     <string name="title_activity_details">Details</string>
+    <string name="title_activity_search">Search</string>
 
     <!-- Hashtag profile -->
     <string name="pref_hashtag_profile">Hashtag Settings</string>
@@ -97,6 +98,8 @@
 
     <!--  Empty tweet database -->
     <string name="empty_tweet_list">No Tweet Information Available </string>
-    <string name="empty_tweet_list_no_network">No Tweet Information Available. The network is not available to fetch tweets.</string>
+    <string name="empty_tweet_list_fav">No Favourite Tweets Yet. Longpress Tweet to Favourite </string>
+    <string name="empty_tweet_list_no_network">No Tweet Information Available. The Network is Not Available to Fetch Tweets.</string>
+    <string name="empty_tweet_list_none_found">No such Tweet was found </string>
 
 </resources>

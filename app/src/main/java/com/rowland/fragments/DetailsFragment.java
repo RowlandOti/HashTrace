@@ -1,6 +1,6 @@
 package com.rowland.fragments;
 
-import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,6 +10,9 @@ import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -21,36 +24,13 @@ import com.rowland.data.TweetHashTracerContract.TweetEntry;
 import com.rowland.hashtrace.R;
 import com.rowland.utility.ImageManager;
 import com.rowland.utility.Utility;
-// TODO:Read and implement http://stackoverflow.com/questions/7707032/illegalstateexception-when-replacing-a-fragment
 
 public class DetailsFragment extends Fragment implements LoaderManager.LoaderCallbacks<Cursor>{
 
-    private static DetailsFragment fragmentInstance = null;
-    private final String LOG_TAG = DetailsFragment.class.getSimpleName();
-    private static final int DETAIL_LOADER = 3;
-    private static final String HASHTAG_KEY = "hashtag";
     public static final String DATE_KEY = "tweet_text_date";
     public static final String  ID_KEY = "_id";
-    public ImageManager imageManager;
-    //private String mDateStr;
-    private String mHashTag;
-    private int mTweetID;
-
-    private TextView user_name;
-    private ImageView user_profile_image;
-    private ProgressBar progress;
-    private TextView user_profile_description;
-    private TextView user_location;
-    private TextView tweet_text;
-    private TextView tweet_text_date;
-    private TextView tweet_text_retweet_count;
-    private ImageView tweet_image_retweet;
-    private TextView tweet_text_favourite_count;
-    private ImageView tweet_image_fav;
-    private TextView tweet_favourite;
-    private TextView tweet_hash_tag;
-
-
+    private static final int DETAIL_LOADER = 3;
+    private static final String HASHTAG_KEY = "hashtag";
     // Specify the columns we need for projection.
     private static final String[] TWEET_DETAILS_COLUMNS = {
 
@@ -70,21 +50,34 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
             TweetEntry.COLUMN_TWEET_FAVOURITED_STATE,		//12
             HashTagEntry.COLUMN_HASHTAG_NAME 				//13
     };
+    private static DetailsFragment fragmentInstance = null;
+    private final String LOG_TAG = DetailsFragment.class.getSimpleName();
+    public ImageManager imageManager;
+    private String mShareText;
+    private String mHashTag;
+    private int mTweetID;
+    private TextView user_name;
+    private ImageView user_profile_image;
+    private ProgressBar progress;
+    private TextView user_profile_description;
+    private TextView user_location;
+    private TextView tweet_text;
+    private TextView tweet_text_date;
+    private TextView tweet_text_retweet_count;
+    private ImageView tweet_image_retweet;
+    private TextView tweet_text_favourite_count;
+    private ImageView tweet_image_fav;
+    private TextView tweet_favourite;
+    private TextView tweet_hash_tag;
 
-    // TODO: Rename and change types of parameters
+    public DetailsFragment()
+    {
+        imageManager = new ImageManager(getActivity());
+        setRetainInstance(true);
+    }
+
     public static DetailsFragment newInstance(Bundle args)
     {
-    /*    if(fragmentInstance != null)
-        {
-            if(args != null)
-            {
-                //fragmentInstance.setArguments(args);
-                //fragmentInstance.getArguments().
-            }
-            return fragmentInstance;
-        }
-        else
-        {*/
             fragmentInstance = new DetailsFragment();
             if(args != null)
             {
@@ -94,16 +87,12 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
        // }
     }
 
-    public DetailsFragment()
-    {
-        imageManager = new ImageManager((Context) getActivity());
-        setRetainInstance(true);
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        // Add this line in order for this fragment to handle menu events.
+        setHasOptionsMenu(true);
         Bundle arguments = getArguments();
         if (arguments != null)
         {
@@ -158,6 +147,40 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
     }
 
     @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
+    {
+        super.onCreateOptionsMenu(menu, inflater);
+        // Clear old menu.
+        menu.clear();
+        // Inflate new menu.
+        inflater.inflate(R.menu.menu_detailsfragment, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        switch (item.getItemId())
+        {
+
+            case R.id.action_settings:
+            {
+                return true;
+            }
+            case R.id.action_share:
+            {
+                shareTweet();
+                Log.w(LOG_TAG,"Called me Share");
+                return true;
+            }
+            default:
+            {
+                return super.onOptionsItemSelected(item);
+            }
+
+        }
+    }
+
+    @Override
     public void onSaveInstanceState(Bundle outState)
     {
         outState.putString(HASHTAG_KEY, mHashTag);
@@ -184,9 +207,9 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
         mHashTag = Utility.getPreferredHashTag(getActivity());
        // Uri tweetForHashTagUri = TweetEntry.buildTweetHashTagWithDate(mHashTag, mDateStr);
         Uri tweetForIdUri = TweetEntry.buildTweetUri(mTweetID);
-
-        CursorLoader cursorLoader = new CursorLoader(getActivity(), tweetForIdUri, TWEET_DETAILS_COLUMNS, null, null,sortOrder);
         // Now create and return a CursorLoader that will take care of creating a Cursor for the data being displayed.
+        CursorLoader cursorLoader = new CursorLoader(getActivity(), tweetForIdUri, TWEET_DETAILS_COLUMNS, null, null,sortOrder);
+
         return cursorLoader;
     }
 
@@ -210,6 +233,7 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
             user_location.setText(userlocation);
 
             String tweettext = data.getString(data.getColumnIndex(TweetEntry.COLUMN_TWEET_TEXT)).trim().replaceAll("\\s+", " ");
+            mShareText = tweettext;
             tweet_text.setText(tweettext);
 
             String tweettext_date = Utility.getTimeAgo(data.getString(data.getColumnIndex(TweetEntry.COLUMN_TWEET_TEXT_DATE)));
@@ -240,5 +264,13 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
     public void onLoaderReset(Loader<Cursor> loader)
     {
 
+    }
+
+    private void shareTweet()
+    {
+        Intent share = new Intent(Intent.ACTION_SEND);
+        share.setType("text/plain");
+        share.putExtra(Intent.EXTRA_TEXT, mShareText);
+        startActivity(Intent.createChooser(share, "Share Tweet"));
     }
 }

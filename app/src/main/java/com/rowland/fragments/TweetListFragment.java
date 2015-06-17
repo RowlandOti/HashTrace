@@ -57,19 +57,24 @@ import java.util.Date;
 public class TweetListFragment extends ListFragment implements LoaderCallbacks<Cursor> {
 
 	public static final String LOG_TAG = TweetListFragment.class.getSimpleName();
-	private PullToRefreshSwipeMenuListView mPullToRefreshListView;
-	private TweetListAdapter mTweetListAdapter;
-	private SwipeMenuCreator creator;
-	private ActionBar actionBar;
-
-	private String mHashTag;
-	private ListView mListView;
-	private int mPosition = ListView.INVALID_POSITION;
-
+	// These indices are tied to TWEET_COLUMNS and must match for projection
+	public static final int COL_ID = 0;
+	public static final int COL_HASHTAG_KEY = 1;
+	public static final int COL_TWEET_ID = 2;
+	public static final int COL_TWEET_TEXT = 3;
+	public static final int COL_TWEET_TEXT_DATE = 4;
+	public static final int COL_TWEET_TEXT_RETWEET_COUNT = 5;
+	public static final int COL_TWEET_TEXT_FAVOURITE_COUNT = 6;
+	public static final int COL_TWEET_TEXT_MENTIONS_COUNT = 7;
+	public static final int COL_TWEET_USERNAME = 8;
+	public static final int COL_TWEET_USERNAME_IMAGE_URL = 9;
+	public static final int COL_TWEET_USERNAME_LOCATION = 10;
+	public static final int COL_TWEET_USERNAME_DESCRIPTION = 11;
+	public static final int COL_TWEET_TWEET_FAVOURITED_STATE = 12;
+	public static final int COL_HASHTAG_NAME = 13;
 	private static final String SELECTED_KEY = "selected_position";
-
 	private static final int TWEETLIST_LOADER = 0;
-
+    //TODO: migrate all projections to some Constants.java class
 	// For the tweet view we're showing only a small subset of the stored data.
 	// Specify the columns we need.
 	private static final String[] TWEET_COLUMNS = {
@@ -94,37 +99,13 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		TweetEntry.COLUMN_TWEET_FAVOURITED_STATE,		//12
 		HashTagEntry.COLUMN_HASHTAG_NAME 				//13
 	};
-
-	// These indices are tied to TWEET_COLUMNS and must match for projection
-	public static final int COL_ID = 0;
-	public static final int COL_HASHTAG_KEY = 1;
-	public static final int COL_TWEET_ID = 2;
-	public static final int COL_TWEET_TEXT = 3;
-	public static final int COL_TWEET_TEXT_DATE = 4;
-	public static final int COL_TWEET_TEXT_RETWEET_COUNT = 5;
-	public static final int COL_TWEET_TEXT_FAVOURITE_COUNT = 6;
-	public static final int COL_TWEET_TEXT_MENTIONS_COUNT = 7;
-	public static final int COL_TWEET_USERNAME = 8;
-	public static final int COL_TWEET_USERNAME_IMAGE_URL = 9;
-	public static final int COL_TWEET_USERNAME_LOCATION = 10;
-	public static final int COL_TWEET_USERNAME_DESCRIPTION = 11;
-	public static final int COL_TWEET_TWEET_FAVOURITED_STATE = 12;
-	public static final int COL_HASHTAG_NAME = 13;
-
-
-	/**
-	 * A callback interface that all activities containing this fragment must
-	 * implement. This mechanism allows activities to be notified of item
-	 * selections.
-	 */
-	public interface onTweetItemSelectedCallback
-	{
-		/**
-		 * TweetItemFragmentCallback for when an item has been selected.
-		 */
-		public void onTweetItemSelected(int date);
-	}
-
+	private PullToRefreshSwipeMenuListView mPullToRefreshListView;
+	private TweetListAdapter mTweetListAdapter;
+	private SwipeMenuCreator creator;
+	private ActionBar actionBar;
+	private String mHashTag;
+	private ListView mListView;
+	private int mPosition = ListView.INVALID_POSITION;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState)
@@ -141,9 +122,15 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 	{
 		super.onCreateOptionsMenu(menu, inflater);
 		// Clear old menu.
-		menu.clear();
+		//menu.clear();
 		// Inflate new menu.
 		inflater.inflate(R.menu.tweet_list_fragment, menu);
+
+		/*SearchManager SManager =  (SearchManager) getActivity().getSystemService(Context.SEARCH_SERVICE);
+		MenuItem searchMenuItem = menu.findItem(R.id.action_search);
+		SearchView mSearchView = (SearchView) MenuItemCompat.getActionView(searchMenuItem);
+		mSearchView.setSearchableInfo(SManager.getSearchableInfo(new ComponentName(getActivity().getApplicationContext(), SearchActivity.class)));
+		mSearchView.setIconifiedByDefault(true);*/
 	}
 
 	@Override
@@ -151,12 +138,6 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 	{
 		switch (item.getItemId())
 		{
-
-		case R.id.action_settings:
-		{
-
-			return true;
-		}
 		case R.id.action_refresh:
 		{
 
@@ -169,7 +150,6 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 			MenuItemCompat.setActionView(item, null);
 			return true;
 		}
-
 		default: {
 			return super.onOptionsItemSelected(item);
 		}
@@ -333,7 +313,6 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		super.onActivityCreated(savedInstanceState);
 	}
 
-
 	@Override
 	public void onResume()
 	{
@@ -355,6 +334,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		}
 		super.onSaveInstanceState(outState);
 	}
+
 	@Override
 	public void onListItemClick(ListView lv, View view, int position, long rowID)
 	{
@@ -365,7 +345,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		{
 			//((onTweetItemSelectedCallback) getActivity()).onTweetItemSelected((cursor.getInt(COL_ID)));
 			((onTweetItemSelectedCallback) getActivity()).onTweetItemSelected((int)rowID);
-			mPullToRefreshListView.getRefreshableView().setItemChecked(position, true);;
+			//mPullToRefreshListView.getRefreshableView().setItemChecked(position, true);;
 		}
 		mPosition = position;
 		Log.d("ROWSELECT", "" + rowID);
@@ -415,6 +395,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 	{
 		TweetHashTracerSyncAdapter.syncImmediately(getActivity());
 	}
+
 	private void shareTweet()
 	{
 		Cursor cursor = mTweetListAdapter.getCursor();
@@ -425,10 +406,12 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
         share.putExtra(Intent.EXTRA_TEXT, tweet_text);
         startActivity(Intent.createChooser(share, "Share Tweet"));
 	}
+
 	private void favouriteTweet()
 	{
 		Cursor cursor = mTweetListAdapter.getCursor();
 
+		int _id = cursor.getInt(cursor.getColumnIndex(TweetEntry._ID));
 		int hash_tag_id = cursor.getInt(COL_HASHTAG_KEY);
 		long tweet_id = cursor.getLong(COL_TWEET_ID);
 		String tweet_text = cursor.getString(COL_TWEET_TEXT);
@@ -459,8 +442,8 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 
 		tweetValues.put(TweetEntry.COLUMN_TWEET_FAVOURITED_STATE, 1);
 
-		String whereClause = TweetEntry.COLUMN_TWEET_TEXT + " = ?";
-		String[] selectionArgs = new String[]{String.valueOf(tweet_text)};
+		String whereClause = TweetEntry._ID + " = ?";
+		String[] selectionArgs = new String[]{String.valueOf(_id)};
 
 
 		getActivity().getApplicationContext().getContentResolver().insert(TweetFavEntry.CONTENT_URI, tweetFavValues);
@@ -468,13 +451,16 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 		mTweetListAdapter.notifyDataSetChanged();
 		getLoaderManager().restartLoader(TWEETLIST_LOADER, null, this);
 	}
+
 	public void updateEmptyView()
 	{
+		TextView emptyTextView = (TextView) getView().findViewById(R.id.listview_tweet_empty);
+
 		if(mTweetListAdapter.getCount() == 0)
 		{
-			TextView emptyTextView = (TextView) getView().findViewById(R.id.listview_tweet_empty);
 			if (null != emptyTextView)
 			{
+				emptyTextView.setVisibility(View.VISIBLE);
 				//If cursor is empty why do we have an invalid position
 				int message = R.string.empty_tweet_list;
 				if(!Utility.isNetworkAvailable(getActivity()))
@@ -484,6 +470,25 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 				emptyTextView.setText(message);
 			}
 		}
+		else
+		{
+			if (null != emptyTextView)
+			{
+				emptyTextView.setVisibility(View.GONE);
+			}
+		}
+	}
+	/**
+	 * A callback interface that all activities containing this fragment must
+	 * implement. This mechanism allows activities to be notified of item
+	 * selections.
+	 */
+	public interface onTweetItemSelectedCallback
+	{
+		/**
+		 * TweetItemFragmentCallback for when an item has been selected.
+		 */
+		void onTweetItemSelected(int date);
 	}
 
 	/*public void updateViewItem(View targetView)

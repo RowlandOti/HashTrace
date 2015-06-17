@@ -58,6 +58,8 @@
         <!-- Search results activity -->
         <activity
             android:name=".SearchActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_search"
             android:parentActivityName="com.rowland.hashtrace.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />

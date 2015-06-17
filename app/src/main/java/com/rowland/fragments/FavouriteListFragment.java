@@ -13,12 +13,16 @@ import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.BounceInterpolator;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.baoyz.swipemenulistview.SwipeMenu;
 import com.baoyz.swipemenulistview.SwipeMenuCreator;
@@ -45,14 +49,21 @@ import java.util.Date;
  */
 public class FavouriteListFragment extends ListFragment implements LoaderCallbacks<Cursor> {
 
-	private SwipeMenuListView mListView;
-	private TweetFavListAdapter mTweetFavListAdapter;
-	private SwipeMenuCreator creator;
-	private int mPosition = ListView.INVALID_POSITION;
+	// These indices are tied to TWEET_COLUMNS and must match for projection
+	public static final int COL_ID = 0;
+	public static final int COL_HASHTAG_KEY = 1;
+	public static final int COL_TWEETFAV_ID = 2;
+	public static final int COL_TWEETFAV_TEXT = 3;
+	public static final int COL_TWEETFAV_TEXT_DATE = 4;
+	public static final int COL_TWEETFAV_TEXT_RETWEET_COUNT = 5;
+	public static final int COL_TWEETFAV_TEXT_FAVOURITE_COUNT = 6;
+	public static final int COL_TWEETFAV_TEXT_MENTIONS_COUNT = 7;
+	public static final int COL_TWEETFAV_USERNAME = 8;
+	public static final int COL_TWEETFAV_USERNAME_IMAGE_URL = 9;
+	public static final int COL_TWEETFAV_USERNAME_LOCATION = 10;
+	public static final int COL_HASHTAG_NAME = 11;
 	private static final String SELECTED_KEY = "selected_position";
-	private String mHashTag;
 	private static final int TWEETFAVLIST_LOADER = 1;
-
 	private static final String[] TWEETFAV_COLUMNS = {
 		// In this case the id needs to be fully qualified with a table
 		// name, since the content provider joins the hastag & tweet tables in the background (both have an _id column)
@@ -73,39 +84,24 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 	    TweetFavEntry.COLUMN_TWEETFAV_USERNAME_LOCATION,	 //10
 		HashTagEntry.COLUMN_HASHTAG_NAME 				     //11
 	};
-
-	// These indices are tied to TWEET_COLUMNS and must match for projection
-	public static final int COL_ID = 0;
-	public static final int COL_HASHTAG_KEY = 1;
-	public static final int COL_TWEETFAV_ID = 2;
-	public static final int COL_TWEETFAV_TEXT = 3;
-	public static final int COL_TWEETFAV_TEXT_DATE = 4;
-	public static final int COL_TWEETFAV_TEXT_RETWEET_COUNT = 5;
-	public static final int COL_TWEETFAV_TEXT_FAVOURITE_COUNT = 6;
-	public static final int COL_TWEETFAV_TEXT_MENTIONS_COUNT = 7;
-	public static final int COL_TWEETFAV_USERNAME = 8;
-	public static final int COL_TWEETFAV_USERNAME_IMAGE_URL = 9;
-	public static final int COL_TWEETFAV_USERNAME_LOCATION = 10;
-	public static final int COL_HASHTAG_NAME = 11;
-
-	public interface onFavouriteItemSelectedCallback
-	{
-		/**
-		 * TweetItemFragmentCallback for when an item has been selected.
-		 */
-		public void onFavouriteItemSelected(int date);
-	}
+	private SwipeMenuListView mListView;
+	private TweetFavListAdapter mTweetFavListAdapter;
+	private SwipeMenuCreator creator;
+	private int mPosition = ListView.INVALID_POSITION;
+	private String mHashTag;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
+		// Add this line in order for this fragment to handle menu events.
+		setHasOptionsMenu(true);
 	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{
-		// The ArrayAdapter will take data from a source and use it to populate the ListView it's attached to.
+		// The CursorAdapter will take data from a source and use it to populate the ListView it's attached to.
 		mTweetFavListAdapter = new TweetFavListAdapter(getActivity(), null, 0);
 		creator = new SwipeMenuCreator() {
 
@@ -214,6 +210,34 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 	}
 
 	@Override
+	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
+	{
+		super.onCreateOptionsMenu(menu, inflater);
+		// Clear old menu.
+		//menu.clear();
+		// Inflate new menu.
+		inflater.inflate(R.menu.menu_favlistfragment, menu);
+
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item)
+	{
+		switch (item.getItemId())
+		{
+			case R.id.action_overflow:
+			{
+				return true;
+			}
+			default:
+			{
+				return super.onOptionsItemSelected(item);
+			}
+
+		}
+	}
+
+	@Override
 	public void onSaveInstanceState(Bundle outState) {
 		// When tablets rotate, the currently selected list item needs to be saved.
 		// When no item is selected, mPosition will be set to Listview.INVALID_POSITION,
@@ -226,17 +250,17 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 	}
 
 	@Override
-	public void onListItemClick(ListView lv, View view, int position, long rowId)
+	public void onListItemClick(ListView lv, View view, int position, long rowID)
 	{
-		super.onListItemClick(lv, view, position, rowId);
+		super.onListItemClick(lv, view, position, rowID);
 		// Do the onItemClick action
 		Cursor cursor = mTweetFavListAdapter.getCursor();
 		if (cursor != null && cursor.moveToPosition(position))
 		{
-			((onFavouriteItemSelectedCallback) getActivity()).onFavouriteItemSelected(cursor.getInt(COL_ID));
+			((onFavouriteItemSelectedCallback) getActivity()).onFavouriteItemSelected((int) rowID);
 		}
 		mPosition = position;
-		Log.d("ROWSELECT", "" + rowId);
+		Log.d("ROWSELECT", "" + rowID);
 	}
 
 	@Override
@@ -268,8 +292,8 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 			// position to restore to, do so now.
 			mListView.smoothScrollToPosition(mPosition);
 		}
+		updateEmptyView();
 	}
-
 
 	@Override
 	public void onLoaderReset(Loader<Cursor> loader)
@@ -287,6 +311,7 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
         share.putExtra(Intent.EXTRA_TEXT, tweet_text);
         startActivity(Intent.createChooser(share, "Share Tweet"));
 	}
+
 	private void DeleteTweet()
 	{
 		Cursor cursor = mTweetFavListAdapter.getCursor();
@@ -303,6 +328,38 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 		getActivity().getApplicationContext().getContentResolver().update(TweetEntry.CONTENT_URI, tweetValues, whereClause, selectionArgs);
 		mTweetFavListAdapter.notifyDataSetChanged();
 		getLoaderManager().restartLoader(TWEETFAVLIST_LOADER, null, this);
+	}
+
+	public void updateEmptyView()
+	{
+		TextView emptyTextView = (TextView) getView().findViewById(R.id.listview_tweet_empty);
+
+		if(mTweetFavListAdapter.getCount() == 0)
+		{
+			if (null != emptyTextView)
+			{
+				emptyTextView.setVisibility(View.VISIBLE);
+				//If cursor is empty why do we have an invalid position
+				int message = R.string.empty_tweet_list_fav;
+
+				emptyTextView.setText(message);
+			}
+		}
+		else
+		{
+			if (null != emptyTextView)
+			{
+				emptyTextView.setVisibility(View.GONE);
+			}
+		}
+	}
+
+	public interface onFavouriteItemSelectedCallback
+	{
+		/**
+		 * TweetItemFragmentCallback for when an item has been selected.
+		 */
+		void onFavouriteItemSelected(int date);
 	}
 
 }

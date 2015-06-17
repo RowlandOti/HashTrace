@@ -20,12 +20,30 @@ import com.rowland.hashtrace.R;
 public class MainFragment extends Fragment {
 
     private static MainFragment fragmentInstance = null;
+    private final String LOG_TAG = MainFragment.class.getSimpleName();
     private PagerSlidingTabStrip slidingTabStrips;
     private ViewPager pager;
     private SmartNestedViewPagerAdapter pagerAdapter;
-    private final String LOG_TAG = MainFragment.class.getSimpleName();
     private String[] TITLES = { "HOME", "ARCHIVE", "GRAPH" };
     private int[] ICONS = {R.drawable.ic_action_home, R.drawable.ic_action_labels, R.drawable.ic_action_graph};
+    private ViewPager.SimpleOnPageChangeListener onPageChangeListener = new ViewPager.SimpleOnPageChangeListener() {
+        @Override
+        public void onPageSelected(int position)
+        {
+            super.onPageSelected(position);
+        }
+
+        @Override
+        public void onPageScrolled(int arg0, float arg1, int arg2) {}
+
+        @Override
+        public void onPageScrollStateChanged(int arg0) {}
+    };
+
+    public MainFragment()
+    {
+        setRetainInstance(true);
+    }
 
     // TODO: Rename and change types of parameters
     public static MainFragment newInstance(Bundle args)
@@ -45,25 +63,6 @@ public class MainFragment extends Fragment {
        // }
     }
 
-    public MainFragment()
-    {
-        setRetainInstance(true);
-    }
-
-
-    /**
-     * A callback interface that all activities containing this fragment must
-     * implement. This mechanism allows activities to be notified of item
-     * selections.
-     */
-    public interface onMainFragmentItemSelectedCallback
-    {
-        /**
-         * TweetItemFragmentCallback for when an item has been selected.
-         */
-        public void onMainFragmentItemSelected(String date);
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
@@ -74,8 +73,6 @@ public class MainFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState)
     {
         super.onActivityCreated(savedInstanceState);
-
-        //View detailsFrame = getActivity().findViewById(R.id.fragment_container);
 
         // Initialize the ViewPager and set an Adapter: pass data, etc.
         this.pagerAdapter = new SmartNestedViewPagerAdapter((getActivity().getSupportFragmentManager()));
@@ -93,7 +90,6 @@ public class MainFragment extends Fragment {
         this.slidingTabStrips.setUnderlineHeight(2);
         this.slidingTabStrips.setTextColor(Color.WHITE);
         this.slidingTabStrips.setTextSize(10);
-        this.slidingTabStrips.setShouldExpand(true);
     }
 
 
@@ -104,20 +100,6 @@ public class MainFragment extends Fragment {
 
         return rootView;
     }
-
-    private ViewPager.SimpleOnPageChangeListener onPageChangeListener = new ViewPager.SimpleOnPageChangeListener() {
-        @Override
-        public void onPageSelected(int position)
-        {
-            super.onPageSelected(position);
-        }
-
-        @Override
-        public void onPageScrolled(int arg0, float arg1, int arg2) {}
-
-        @Override
-        public void onPageScrollStateChanged(int arg0) {}
-    };
 
     public String[] getTITLES()
     {
@@ -132,6 +114,19 @@ public class MainFragment extends Fragment {
     public int[] getIcons()
     {
         return ICONS;
+    }
+
+    /**
+     * A callback interface that all activities containing this fragment must
+     * implement. This mechanism allows activities to be notified of item
+     * selections.
+     */
+    public interface onMainFragmentItemSelectedCallback
+    {
+        /**
+         * TweetItemFragmentCallback for when an item has been selected.
+         */
+        void onMainFragmentItemSelected(String date);
     }
 
 

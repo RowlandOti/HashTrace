@@ -8,7 +8,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
-import android.text.TextUtils;
 import android.util.Log;
 
 import com.rowland.data.TweetHashTracerContract.HashTagEntry;
@@ -21,10 +20,6 @@ import com.rowland.data.TweetHashTracerContract.TweetFavEntry;
  */
 public class TweetHashTracerContentProvider extends ContentProvider {
 
-	// The URI Matcher used by this content provider.
-	private static final UriMatcher sUriMatcher = buildUriMatcher();
-	private TweetHashTracerDbHelper mOpenHelper;
-
 	private static final int TWEET = 100;
 	private static final int TWEET_WITH_ID = 101;
 	private static final int TWEET_WITH_HASHTAG = 102;
@@ -34,9 +29,59 @@ public class TweetHashTracerContentProvider extends ContentProvider {
 	private static final int TWEETFAV_WITH_HASHTAG_AND_DATE = 202;
 	private static final int HASHTAG = 300;
 	private static final int HASHTAG_ID = 301;
-
+	private static final int TWEET_WITH_HASHTAG_SEARCH = 400;
+	// The URI Matcher used by this content provider.
+	private static final UriMatcher sUriMatcher = buildUriMatcher();
 	private static final SQLiteQueryBuilder sTweetByHashTagSettingQueryBuilder;
 	private static final SQLiteQueryBuilder sTweetFavByHashTagSettingQueryBuilder;
+	private static final String sHashTagSettingSelection = HashTagEntry.TABLE_NAME
+			+ "."
+			+ HashTagEntry.COLUMN_HASHTAG_SETTING
+			+ " = ? ";
+	private static final String sHashTagSettingWithStartDateSelection = HashTagEntry.TABLE_NAME
+			+ "."
+			+ HashTagEntry.COLUMN_HASHTAG_SETTING
+			+ " = ? AND "
+			+ TweetEntry.COLUMN_TWEET_TEXT_DATE
+			+ " >= ? ";
+	private static final String sHashTagSettingAndDaySelection = HashTagEntry.TABLE_NAME
+			+ "."
+			+ HashTagEntry.COLUMN_HASHTAG_SETTING
+			+ " = ? AND "
+			+ TweetEntry.COLUMN_TWEET_TEXT_DATE
+			+ " = ? ";
+	private static final String sHashTagSettingAndSearchKeySelection = HashTagEntry.TABLE_NAME
+			+ "."
+			+ HashTagEntry.COLUMN_HASHTAG_SETTING
+			+ " = ? AND "
+			+ TweetEntry.COLUMN_TWEET_TEXT
+			+ " = ? OR "
+			+ TweetEntry.COLUMN_TWEET_USERNAME
+			+ " = ? OR "
+			+ TweetEntry.COLUMN_TWEET_USERNAME_LOCATION
+			+ " = ? ";
+	private static final String sHashTagSettingAndIdSelection = HashTagEntry.TABLE_NAME
+			+ "."
+			+ HashTagEntry.COLUMN_HASHTAG_SETTING
+			+ " = ? AND "
+			+ TweetEntry._ID
+			+ " = ? ";
+	private static final String sIdSelection = TweetEntry.TABLE_NAME
+			+ "."
+			+ TweetEntry._ID
+			+ " = ? ";
+	private static final String sHashTagFavSettingWithStartDateSelection = HashTagEntry.TABLE_NAME
+			+ "."
+			+ HashTagEntry.COLUMN_HASHTAG_SETTING
+			+ " = ? AND "
+			+ TweetFavEntry.COLUMN_TWEETFAV_TEXT_DATE
+			+ " >= ? ";
+	private static final String sHashTagFavSettingAndDaySelection = HashTagEntry.TABLE_NAME
+			+ "."
+			+ HashTagEntry.COLUMN_HASHTAG_SETTING
+			+ " = ? AND "
+			+ TweetFavEntry.COLUMN_TWEETFAV_TEXT_DATE
+			+ " = ? ";
 
 	static {
 		sTweetByHashTagSettingQueryBuilder = new SQLiteQueryBuilder();
@@ -66,44 +111,39 @@ public class TweetHashTracerContentProvider extends ContentProvider {
 				+ HashTagEntry._ID);
 	}
 
-	private static final String sHashTagSettingSelection = HashTagEntry.TABLE_NAME
-			+ "."
-			+ HashTagEntry.COLUMN_HASHTAG_SETTING
-			+ " = ? ";
-	private static final String sHashTagSettingWithStartDateSelection = HashTagEntry.TABLE_NAME
-			+ "."
-			+ HashTagEntry.COLUMN_HASHTAG_SETTING
-			+ " = ? AND "
-			+ TweetEntry.COLUMN_TWEET_TEXT_DATE
-			+ " >= ? ";
-	private static final String sHashTagSettingAndDaySelection = HashTagEntry.TABLE_NAME
-			+ "."
-			+ HashTagEntry.COLUMN_HASHTAG_SETTING
-			+ " = ? AND "
-			+ TweetEntry.COLUMN_TWEET_TEXT_DATE
-			+ " = ? ";
-	private static final String sHashTagSettingAndIdSelection = HashTagEntry.TABLE_NAME
-			+ "."
-			+ HashTagEntry.COLUMN_HASHTAG_SETTING
-			+ " = ? AND "
-			+ TweetEntry._ID
-			+ " = ? ";
-	private static final String sIdSelection = TweetEntry.TABLE_NAME
-			+ "."
-			+ TweetEntry._ID
-			+ " = ? ";
-	private static final String sHashTagFavSettingWithStartDateSelection = HashTagEntry.TABLE_NAME
-			+ "."
-			+ HashTagEntry.COLUMN_HASHTAG_SETTING
-			+ " = ? AND "
-			+ TweetFavEntry.COLUMN_TWEETFAV_TEXT_DATE
-			+ " >= ? ";
-	private static final String sHashTagFavSettingAndDaySelection = HashTagEntry.TABLE_NAME
-			+ "."
-			+ HashTagEntry.COLUMN_HASHTAG_SETTING
-			+ " = ? AND "
-			+ TweetFavEntry.COLUMN_TWEETFAV_TEXT_DATE
-			+ " = ? ";
+	private final String LOG_TAG = TweetHashTracerContentProvider.class.getSimpleName();
+	private TweetHashTracerDbHelper mOpenHelper;
+
+	private static UriMatcher buildUriMatcher() {
+		// I know what you're thinking. Why create a UriMatcher when you can use
+		// regular
+		// expressions instead? Because you're not crazy, that's why.
+
+		// All paths added to the UriMatcher have a corresponding code to return
+		// when a match is
+		// found. The code passed into the constructor represents the code to
+		// return for the root
+		// URI. It's common to use NO_MATCH as the code for this case.
+		final UriMatcher matcher = new UriMatcher(UriMatcher.NO_MATCH);
+		final String authority = TweetHashTracerContract.CONTENT_AUTHORITY;
+
+		// For each type of URI you want to add, create a corresponding code.
+		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEET, TWEET);
+		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEET + "/#",TWEET_WITH_ID);
+		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEET + "/*",TWEET_WITH_HASHTAG);
+		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEET + "/*/*",TWEET_WITH_HASHTAG_AND_DATE);
+
+		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEET_SEARCH + "/*/*", TWEET_WITH_HASHTAG_SEARCH);
+
+		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEETFAV, TWEETFAV);
+		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEETFAV + "/*",TWEETFAV_WITH_HASHTAG);
+		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEETFAV + "/*/*",TWEETFAV_WITH_HASHTAG_AND_DATE);
+
+		matcher.addURI(authority, TweetHashTracerContract.PATH_HASHTAG, HASHTAG);
+		matcher.addURI(authority, TweetHashTracerContract.PATH_HASHTAG + "/#",HASHTAG_ID);
+
+		return matcher;
+	}
 
 	private Cursor getTweetByHashTagSetting(Uri uri, String[] projection,String sortOrder)
 	{
@@ -181,6 +221,24 @@ public class TweetHashTracerContentProvider extends ContentProvider {
 				sortOrder);
 	}
 
+	private Cursor getTweetByHashTagSettingForSearch(Uri uri, String[] projection, String sortOrder)
+	{
+		String hashTagSetting = TweetEntry.getHashTagSettingFromUri(uri);
+		String searchKey = TweetEntry.getSearchKeyFromUri(uri);
+
+		Log.w(LOG_TAG,""+hashTagSetting);
+		Log.w(LOG_TAG,""+searchKey);
+
+		return sTweetByHashTagSettingQueryBuilder.query(
+				mOpenHelper.getReadableDatabase(),
+				projection,
+				sHashTagSettingAndSearchKeySelection,
+				new String[] {hashTagSetting, searchKey, searchKey, searchKey },
+				null,
+				null,
+				sortOrder);
+	}
+
 	private Cursor getTweetFavByHashTagSetting(Uri uri, String[] projection, String sortOrder)
 	{
 		String hashTagSetting = TweetHashTracerContract.TweetFavEntry.getHashTagSettingFromUri(uri);
@@ -225,36 +283,6 @@ public class TweetHashTracerContentProvider extends ContentProvider {
 				sortOrder);
 	}
 
-	private static UriMatcher buildUriMatcher() {
-		// I know what you're thinking. Why create a UriMatcher when you can use
-		// regular
-		// expressions instead? Because you're not crazy, that's why.
-
-		// All paths added to the UriMatcher have a corresponding code to return
-		// when a match is
-		// found. The code passed into the constructor represents the code to
-		// return for the root
-		// URI. It's common to use NO_MATCH as the code for this case.
-		final UriMatcher matcher = new UriMatcher(UriMatcher.NO_MATCH);
-		final String authority = TweetHashTracerContract.CONTENT_AUTHORITY;
-
-		// For each type of URI you want to add, create a corresponding code.
-		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEET, TWEET);
-		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEET + "/#",TWEET_WITH_ID);
-		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEET + "/*",TWEET_WITH_HASHTAG);
-		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEET + "/*/*",TWEET_WITH_HASHTAG_AND_DATE);
-
-
-		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEETFAV, TWEETFAV);
-		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEETFAV + "/*",TWEETFAV_WITH_HASHTAG);
-		matcher.addURI(authority, TweetHashTracerContract.PATH_TWEETFAV + "/*/*",TWEETFAV_WITH_HASHTAG_AND_DATE);
-
-		matcher.addURI(authority, TweetHashTracerContract.PATH_HASHTAG, HASHTAG);
-		matcher.addURI(authority, TweetHashTracerContract.PATH_HASHTAG + "/#",HASHTAG_ID);
-
-		return matcher;
-	}
-
 	@Override
 	public boolean onCreate() {
 		mOpenHelper = new TweetHashTracerDbHelper(getContext());
@@ -292,6 +320,13 @@ public class TweetHashTracerContentProvider extends ContentProvider {
 		case TWEET_WITH_HASHTAG:
 		{
 			retCursor = getTweetByHashTagSetting(uri, projection, sortOrder);
+			break;
+		}
+		// "search/*/*"
+		case TWEET_WITH_HASHTAG_SEARCH:
+		{
+			retCursor = getTweetByHashTagSettingForSearch(uri, projection, sortOrder);
+			Log.w(LOG_TAG,""+retCursor.getCount());
 			break;
 		}
 		// "tweet"
@@ -382,6 +417,8 @@ public class TweetHashTracerContentProvider extends ContentProvider {
 			case TWEET_WITH_ID:
 				return TweetHashTracerContract.TweetEntry.CONTENT_ITEM_TYPE;
 			case TWEET_WITH_HASHTAG:
+				return TweetHashTracerContract.TweetEntry.CONTENT_TYPE;
+			case TWEET_WITH_HASHTAG_SEARCH:
 				return TweetHashTracerContract.TweetEntry.CONTENT_TYPE;
 			case TWEET:
 				return TweetHashTracerContract.TweetEntry.CONTENT_TYPE;

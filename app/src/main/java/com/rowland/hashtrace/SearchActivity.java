@@ -11,13 +11,13 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.MenuItem;
 
+import com.rowland.fragments.DetailsFragment;
 import com.rowland.fragments.SearchFragment;
 
 
-public class SearchActivity extends ActionBarActivity {
+public class SearchActivity extends ActionBarActivity implements SearchFragment.onTweetItemSelectedCallback{
 
 	private final String LOG_TAG = SearchActivity.class.getSimpleName();
 
@@ -85,5 +85,30 @@ public class SearchActivity extends ActionBarActivity {
 		}
 
 		return query;
+	}
+
+	@Override
+	public void onTweetItemSelected(int id)
+	{
+		itemIsClicked(id);
+	}
+
+	private void itemIsClicked(int id)
+	{
+		/*if (mTwoPane)
+		{
+			// In two-pane mode, show the detail view in this activity by adding or replacing the
+			// detail fragment using a fragment transaction.
+			Bundle args = new Bundle();
+			//args.putString(DetailsFragment.ID_KEY, date);
+			args.putInt(DetailsFragment.ID_KEY, id);
+
+			showDetailFragment(args);
+		}
+		else
+		{*/
+			Intent intent = new Intent(this, DetailsActivity.class).putExtra(DetailsFragment.ID_KEY, id);
+			startActivity(intent);
+		//}
 	}
 }

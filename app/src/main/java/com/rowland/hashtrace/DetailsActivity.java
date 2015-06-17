@@ -17,6 +17,8 @@ import com.rowland.fragments.DetailsFragment;
  */
 public class DetailsActivity extends ActionBarActivity {
 
+	private final String LOG_TAG = DetailsActivity.class.getSimpleName();
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -72,15 +74,18 @@ public class DetailsActivity extends ActionBarActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
-		int id = item.getItemId();
-
-		if (id == R.id.action_settings)
+		switch (item.getItemId())
 		{
-			startActivity(new Intent(this, SettingsActivity.class));
-			return true;
+			case R.id.action_settings:
+			{
+				startActivity(new Intent(this, SettingsActivity.class));
+
+				return true;
+			}
+			default:
+			{
+				return super.onOptionsItemSelected(item);
+			}
 		}
-		return super.onOptionsItemSelected(item);
 	}
-
-
 }

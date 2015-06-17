@@ -8,6 +8,9 @@ import android.support.v4.app.LoaderManager.LoaderCallbacks;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -38,9 +41,16 @@ import lecho.lib.hellocharts.view.ColumnChartView;
  */
 public class GraphFragment extends Fragment implements LoaderCallbacks<Cursor> {
 
+	// These indices are tied to TWEET_COLUMNS and must match for projection
+	public static final int COL_ID = 0;
+	public static final int COL_HASHTAG_KEY = 1;
+	public static final int COL_TWEET_ID = 2;
+	public static final int COL_TWEET_TEXT_DATE = 3;
+	public static final int COL_TWEET_TEXT_RETWEET_COUNT = 4;
+	public static final int COL_TWEET_TEXT_FAVOURITE_COUNT = 5;
+	public static final int COL_TWEET_TEXT_MENTIONS_COUNT = 6;
+	public static final int COL_HASHTAG_NAME = 7;
 	private static final int TWEETGRAPH_LOADER = 2;
-
-
 	// Specify the columns we need for projection.
 	private static final String[] TWEET_GRAPH_COLUMNS = {
 		// In this case the id needs to be fully qualified with a table
@@ -58,18 +68,15 @@ public class GraphFragment extends Fragment implements LoaderCallbacks<Cursor> {
 			TweetEntry.COLUMN_TWEET_TEXT_MENTIONS_COUNT,    //6
 			HashTagEntry.COLUMN_HASHTAG_NAME 				//7
 	};
-
-	// These indices are tied to TWEET_COLUMNS and must match for projection
-	public static final int COL_ID = 0;
-	public static final int COL_HASHTAG_KEY = 1;
-	public static final int COL_TWEET_ID = 2;
-	public static final int COL_TWEET_TEXT_DATE = 3;
-	public static final int COL_TWEET_TEXT_RETWEET_COUNT = 4;
-	public static final int COL_TWEET_TEXT_FAVOURITE_COUNT = 5;
-	public static final int COL_TWEET_TEXT_MENTIONS_COUNT = 6;
-	public static final int COL_HASHTAG_NAME = 7;
-
 	private ColumnChartView mColumnChartView;
+
+	@Override
+	public void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+		// Add this line in order for this fragment to handle menu events.
+		setHasOptionsMenu(true);
+	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -86,6 +93,34 @@ public class GraphFragment extends Fragment implements LoaderCallbacks<Cursor> {
 	{
 		getLoaderManager().initLoader(TWEETGRAPH_LOADER, null, this);
 		super.onActivityCreated(savedInstanceState);
+	}
+
+	@Override
+	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
+	{
+		super.onCreateOptionsMenu(menu, inflater);
+		// Clear old menu.
+		//menu.clear();
+		// Inflate new menu.
+		inflater.inflate(R.menu.menu_graphfragment, menu);
+
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item)
+	{
+		switch (item.getItemId())
+		{
+			case R.id.action_overflow:
+			{
+				return true;
+			}
+			default:
+			{
+				return super.onOptionsItemSelected(item);
+			}
+
+		}
 	}
 
 	@Override
