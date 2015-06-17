@@ -1,6 +1,7 @@
 package com.rowland.hashtrace;
 
 import android.app.SearchManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.SearchView;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -91,9 +93,9 @@ public class MainActivity extends ActionBarActivity implements MainFragment.onMa
 
         SearchManager SManager =  (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         MenuItem searchMenuItem = menu.findItem(R.id.action_search);
-        SearchView searchViewAction = (SearchView) MenuItemCompat.getActionView(searchMenuItem);
-        searchViewAction.setSearchableInfo(SManager.getSearchableInfo(getComponentName()));
-        searchViewAction.setIconifiedByDefault(false);
+        SearchView mSearchView = (SearchView) MenuItemCompat.getActionView(searchMenuItem);
+        mSearchView.setSearchableInfo(SManager.getSearchableInfo(new ComponentName(getApplicationContext(), SearchActivity.class)));
+        mSearchView.setIconifiedByDefault(false);
 
         return super.onCreateOptionsMenu(menu);
 
@@ -115,6 +117,7 @@ public class MainActivity extends ActionBarActivity implements MainFragment.onMa
             }
             case R.id.action_search:
                 //openSearch();
+                Log.w(LOG_TAG, "You called me Search");
                 return true;
             default:
             {

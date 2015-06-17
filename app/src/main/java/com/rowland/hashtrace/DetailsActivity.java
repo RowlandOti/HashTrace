@@ -66,7 +66,7 @@ public class DetailsActivity extends ActionBarActivity {
 	{
 		getMenuInflater().inflate(R.menu.menu_detailsactivity, menu);
 
-		return true;
+		return super.onCreateOptionsMenu(menu);
 	}
 
 	@Override
