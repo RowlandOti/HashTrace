@@ -4,10 +4,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 
 import com.astuetz.PagerSlidingTabStrip;
-import com.rowland.fragments.FavouriteListFragment;
-import com.rowland.fragments.GraphFragment;
+import com.rowland.fragments.subfragment.FavouriteListFragment;
+import com.rowland.fragments.subfragment.GraphFragment;
 import com.rowland.fragments.MainFragment;
-import com.rowland.fragments.TweetListFragment;
+import com.rowland.fragments.subfragment.TweetListFragment;
 
 /**
  * Created by Rowland on 6/11/2015.

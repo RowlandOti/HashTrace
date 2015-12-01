@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.rowland.fragments.FavouriteListFragment;
+import com.rowland.fragments.subfragment.FavouriteListFragment;
 import com.rowland.hashtrace.R;
 import com.rowland.utility.ImageManager;
 import com.rowland.utility.Utility;

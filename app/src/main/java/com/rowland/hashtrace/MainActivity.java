@@ -14,11 +14,13 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.crashlytics.android.Crashlytics;
 import com.rowland.fragments.DetailsFragment;
-import com.rowland.fragments.FavouriteListFragment;
+import com.rowland.fragments.subfragment.FavouriteListFragment;
 import com.rowland.fragments.MainFragment;
-import com.rowland.fragments.TweetListFragment;
+import com.rowland.fragments.subfragment.TweetListFragment;
 import com.rowland.sync.TweetHashTracerSyncAdapter;
+import io.fabric.sdk.android.Fabric;
 
 
 public class MainActivity extends ActionBarActivity implements MainFragment.onMainFragmentItemSelectedCallback, TweetListFragment.onTweetItemSelectedCallback, FavouriteListFragment.onFavouriteItemSelectedCallback{
@@ -30,6 +32,7 @@ public class MainActivity extends ActionBarActivity implements MainFragment.onMa
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_main);
 
         if (findViewById(R.id.detail_container) != null)
@@ -48,6 +51,7 @@ public class MainActivity extends ActionBarActivity implements MainFragment.onMa
             {
                 // In two-pane mode, show the detail view in this activity by
                 // adding or replacing the detail fragment using a fragment transaction.
+                //Needs ad id to select automatically
                 showDetailFragment(null);
             }
         }

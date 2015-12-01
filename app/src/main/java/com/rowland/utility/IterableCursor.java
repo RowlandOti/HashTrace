@@ -5,7 +5,7 @@ import android.database.Cursor;
 import java.util.Iterator;
 
 /**
- * Helps mange my cursor in retrieval of data Issue on
+ * Helps mange my cursor in retrieval of data. Issue on
  * <p>
  * <a>http://stackoverflow.com/questions/10723770/whats-the-best-way-to-iterate-an-android-cursor</a>
  *

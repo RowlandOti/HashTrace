@@ -23,6 +23,11 @@ package com.rowland.utility;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+/**
+ * @author Rowland
+ *
+ * <p>This is just for error management
+ */
 public class WSError extends Error implements Parcelable {
 
 	private static final long serialVersionUID = 4424446450329878122L;

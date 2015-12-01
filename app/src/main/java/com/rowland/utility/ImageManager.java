@@ -32,13 +32,13 @@ public class ImageManager {
 	private Thread imageLoaderThread = new Thread(new ImageQueueManager());
 
 	public ImageManager(Context context) {
-		// Make background thread low priority, to avoid affecting UI
-		// performance
+		// Make background thread low priority, to avoid affecting UI performance
 		imageLoaderThread.setPriority(Thread.NORM_PRIORITY - 1);
 
 		// Find the dir to save cached images
 		String sdState = android.os.Environment.getExternalStorageState();
-		if (sdState.equals(android.os.Environment.MEDIA_MOUNTED)) {
+		if (sdState.equals(android.os.Environment.MEDIA_MOUNTED))
+		{
 			File sdDir = android.os.Environment.getExternalStorageDirectory();
 			cacheDir = new File(sdDir, "data/tweethashtrace");
 		} else
@@ -48,13 +48,16 @@ public class ImageManager {
 			cacheDir.mkdirs();
 	}
 
-	public void displayImage(String url, Activity activity,
-			ImageView imageView, ProgressBar progressBar) {
-		if (imageMap.containsKey(url)) {
+	public void displayImage(String url, Activity activity, ImageView imageView, ProgressBar progressBar)
+	{
+		if (imageMap.containsKey(url))
+		{
 			imageView.setImageBitmap(imageMap.get(url));
 			progressBar.setVisibility(View.GONE); // ADDED
 			imageView.setVisibility(View.VISIBLE); // ADDED
-		} else {
+		}
+		else
+		{
 			queueImage(url, activity, imageView, progressBar);
 			// imageView.setImageResource(R.drawable.icon);
 			imageView.setVisibility(View.GONE); // ADDED
@@ -62,14 +65,15 @@ public class ImageManager {
 		}
 	}
 
-	private void queueImage(String url, Activity activity, ImageView imageView,
-			ProgressBar progressBar) {
+	private void queueImage(String url, Activity activity, ImageView imageView, ProgressBar progressBar)
+	{
 		// This ImageView might have been used for other images, so we clear
 		// the queue of old tasks before starting.
 		imageQueue.Clean(imageView);
 		ImageRef p = new ImageRef(url, imageView, progressBar);
 
-		synchronized (imageQueue.imageRefs) {
+		synchronized (imageQueue.imageRefs)
+		{
 			imageQueue.imageRefs.push(p);
 			imageQueue.imageRefs.notifyAll();
 		}
@@ -179,7 +183,7 @@ public class ImageManager {
 						// Make sure we have the right view - thread safety
 						// defender
 						if (tag != null
-								&& ((String) tag).equals(imageToLoad.url)) {
+								&& tag.equals(imageToLoad.url)) {
 							BitmapDisplayer bmpDisplayer = new BitmapDisplayer(
 									bmp, imageToLoad.imageView,
 									imageToLoad.progressBar);

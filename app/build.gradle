@@ -1,39 +1,106 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
 apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply from: 'https://raw.github.com/trikita/gradle-android-signing/master/gradle-android-signing.gradle'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
 
 android {
-    compileSdkVersion 20
-    buildToolsVersion "21.1.2"
+    compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
     compileOptions.encoding = 'windows-1251'
 
     defaultConfig {
-        applicationId "com.rowland.hashtrace"
-        minSdkVersion 8
-        targetSdkVersion 20
-        versionCode 1
-        versionName "1.0"
+        applicationId project.APPLICATION_ID
+        versionName project.VERSION_NAME
+        versionCode Integer.parseInt(project.VERSION_CODE)
+        minSdkVersion Integer.parseInt(project.ANDROID_BUILD_MIN_SDK_VERSION)
+        targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
+    }
+    signingConfigs {
+        release {
+            keyAlias 'hashtrace.app'
+            keyPassword 'i82april'
+            storeFile file('H:/StudioProjects/HashTrace/.signing/hashtrace.keystore')
+            storePassword 'i82april'
+        }
+    }
+    productFlavors {
+        //Paid Version
+        pro {
+            applicationId = "com.rowland.hashtrace.pro"
+            versionName "1.0-pro"
+            //Accessed in java code as BuildConfig.IS_PRO_VERSION
+            buildConfigField "boolean", "IS_PRO_VERSION", "true"
+        }
+        //Free Version
+        free {
+            applicationId = "com.rowland.hashtrace.free"
+            versionName "1.0-free"
+            //Accessed in java code as BuildConfig.IS_PRO_VERSION
+            buildConfigField "boolean", "IS_PRO_VERSION", "false"
+        }
     }
     buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+        }
         release {
-            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            productFlavors.pro.signingConfig signingConfigs.release
+            productFlavors.free.signingConfig signingConfigs.release
         }
     }
 }
 
 dependencies {
+    //Local binary dependency
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    //Module dependency
     compile project(':libraries:pullToRefresh')
     compile project(':libraries:pagerslidingtabstrip')
     compile project(':libraries:hellochartslibrary')
     compile project(':libraries:swipeMenuListView')
-
-    //compile 'com.android.support:appcompat-v7:19.1.1'
-    //compile 'com.android.support:support-v4:19.1.1'
-    //compile 'com.android.support:appcompat-v7:22.1.1'
-    //compile 'com.android.support:support-v4:22.1.1'
-    //compile 'com.android.support:appcompat-v7:20.+'
-    //compile 'com.android.support:support-v4:20.+'
+    //Remote binary dependency
     compile 'org.twitter4j:twitter4j-core:4.0.3'
     compile 'com.android.support:appcompat-v7:20.+'
     compile 'com.android.support:support-v4:20.+'
+    //Analytics binary dependency
+    compile('com.crashlytics.sdk.android:crashlytics:2.4.0@aar') {
+        transitive = true;
+    }
 }
+
+    //Add a file signing.properties
+    File propFile = file('signing.properties');
+    if (propFile.exists())
+    {
+        def Properties props = new Properties()
+        props.load(new FileInputStream(propFile))
+
+        if (props.containsKey('STORE_FILE') && props.containsKey('STORE_PASSWORD') && props.containsKey('KEY_ALIAS') && props.containsKey('KEY_PASSWORD')) {
+            signingConfigs.release.storeFile = file(props['STORE_FILE'])
+            signingConfigs.release.storePassword = props['STORE_PASSWORD']
+            signingConfigs.release.keyAlias = props['KEY_ALIAS']
+            signingConfigs.release.keyPassword = props['KEY_PASSWORD']
+        }
+        else
+        {
+            android.buildTypes.release.signingConfig = null
+        }
+    }
+    else
+    {
+        android.buildTypes.release.signingConfig = null
+    }
+
