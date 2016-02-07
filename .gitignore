@@ -1,6 +1,10 @@
-# Built application files
-/*/build/
-
+.gradle
+/local.properties
+.idea
+/.idea/workspace.xml
+/.idea/libraries
+/build
+.signing
 # Crashlytics configuations
 com_crashlytics_export_strings.xml
 
@@ -14,6 +18,7 @@ local.properties
 .signing/
 
 # User-specific configurations
+.idea
 .idea/libraries/
 .idea/workspace.xml
 .idea/tasks.xml
@@ -26,6 +31,15 @@ local.properties
 .idea/scopes/scope_settings.xml
 .idea/vcs.xml
 *.iml
+
+# Log Files
+*.log
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Android Studio captures folder
+captures/
 
 # OS-specific files
 .DS_Store
