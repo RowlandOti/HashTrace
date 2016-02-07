@@ -14,7 +14,7 @@ import android.database.sqlite.SQLiteOpenHelper;
  * subclass implementation of this method is responsible for completely creating
  * the necessary schema in the newly created database file.
  * </p>
- * An application should always use the database’s helper object to obtain an
+ * An application should always use the databases helper object to obtain an
  * instance of a database. By doing so, it guarantees that the instance it holds
  * is complete, initialized, and ready for use.
  *

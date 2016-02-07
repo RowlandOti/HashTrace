@@ -2,102 +2,18 @@
 <items version="2" >
 
     <item
-        jar="H:\StudioProjects\HashTrace\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\classes.jar"
+        jar="H:\StudioProjects\AndroidDeveloperNanodegree\HashTrace\app\build\intermediates\transforms\instantRunSlicer\pro\debug\jars\1\1a\dependencies.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
-        <dex dex="H:\StudioProjects\HashTrace\app\build\intermediates\pre-dexed\pro\debug\classes-dd96bff698e7e0949b76187a1acaa81b9a181430.jar" />
+        revision="23.0.2"
+        sha1="777745f821783947dc09903ae493148c2f959691">
+        <dex dex="H:\StudioProjects\AndroidDeveloperNanodegree\HashTrace\app\build\intermediates\transforms\dex\pro\debug\folders\1000\1a\dependencies_3c4e1f2179b22e7a94574f76d37c131091cd4997\classes.dex" />
     </item>
     <item
-        jar="H:\StudioProjects\HashTrace\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics-core\2.3.3\jars\classes.jar"
+        jar="H:\StudioProjects\AndroidDeveloperNanodegree\HashTrace\app\build\intermediates\transforms\instantRunSlicer\pro\debug\jars\1\5\main_slice.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="3013d965c748748ec9c7d0d42102e9abd1c9ed91">
-        <dex dex="H:\StudioProjects\HashTrace\app\build\intermediates\pre-dexed\pro\debug\classes-04e32765c122ac786b5ee8275b8bacecc451f3dc.jar" />
-    </item>
-    <item
-        jar="H:\StudioProjects\HashTrace\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
-        <dex dex="H:\StudioProjects\HashTrace\app\build\intermediates\pre-dexed\pro\debug\classes-6913ef080b88e62360b25dc51fff720a91e34704.jar" />
-    </item>
-    <item
-        jar="H:\StudioProjects\HashTrace\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics\2.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="fd39f74f23c7bd9aeafe58c6d988a7329c3e2790">
-        <dex dex="H:\StudioProjects\HashTrace\app\build\intermediates\pre-dexed\pro\debug\classes-b6346e96de8bc199387a4c5a7de46e2e71dbeb8d.jar" />
-    </item>
-    <item
-        jar="H:\StudioProjects\HashTrace\app\build\intermediates\exploded-aar\HashTrace.libraries\pagerslidingtabstrip\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="cf094be53c4aaf1fcd243d20ce6c7c3312964f3e">
-        <dex dex="H:\StudioProjects\HashTrace\app\build\intermediates\pre-dexed\pro\debug\classes-05a6934a317043bdda252215029358d645d34e6a.jar" />
-    </item>
-    <item
-        jar="H:\StudioProjects\HashTrace\app\build\intermediates\exploded-aar\HashTrace.libraries\swipeMenuListView\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="fa94a5afd44a6aae76f99bdc1ee4c7948cc6cf5a">
-        <dex dex="H:\StudioProjects\HashTrace\app\build\intermediates\pre-dexed\pro\debug\classes-ebc5d692ab1b6a418c7ff031f804ddac5e3ddab8.jar" />
-    </item>
-    <item
-        jar="H:\StudioProjects\HashTrace\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\libs\internal_impl-20.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
-        <dex dex="H:\StudioProjects\HashTrace\app\build\intermediates\pre-dexed\pro\debug\internal_impl-20.0.0-b02621c64071c4dc1cfef070226a023e7b58c3ad.jar" />
-    </item>
-    <item
-        jar="H:\StudioProjects\HashTrace\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.2.2\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="c364019628ff5b32e4930334e9db4680829f7115">
-        <dex dex="H:\StudioProjects\HashTrace\app\build\intermediates\pre-dexed\pro\debug\classes-851d6408a87cfd920c1be08e063ccd339b926d1d.jar" />
-    </item>
-    <item
-        jar="C:\Users\Rowland\.gradle\caches\modules-2\files-2.1\org.twitter4j\twitter4j-core\4.0.3\673bf484312c3407bb3dd24bfb8c804fa4d99d0b\twitter4j-core-4.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="673bf484312c3407bb3dd24bfb8c804fa4d99d0b">
-        <dex dex="H:\StudioProjects\HashTrace\app\build\intermediates\pre-dexed\pro\debug\twitter4j-core-4.0.3-f7f99f4a8182d69dcb266abf4ae907f421a121c3.jar" />
-    </item>
-    <item
-        jar="H:\StudioProjects\HashTrace\app\build\intermediates\exploded-aar\HashTrace.libraries\pullToRefresh\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="a878c3608c278a3a1851e23b35398e9ec375baea">
-        <dex dex="H:\StudioProjects\HashTrace\app\build\intermediates\pre-dexed\pro\debug\classes-d426a09030918a08bda64b358450ddf203d15fb4.jar" />
-    </item>
-    <item
-        jar="H:\CreativeSoftware\Sdk\Droid\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
-        <dex dex="H:\StudioProjects\HashTrace\app\build\intermediates\pre-dexed\pro\debug\support-annotations-20.0.0-55738abd4d8bad56b07068ca04e8d2d12adb8d64.jar" />
-    </item>
-    <item
-        jar="H:\StudioProjects\HashTrace\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\beta\1.1.3\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="b7a78990c10481f43cb4909f535ef4f11e60f1ab">
-        <dex dex="H:\StudioProjects\HashTrace\app\build\intermediates\pre-dexed\pro\debug\classes-c185571e89ca4747e6095895747795145d501e12.jar" />
-    </item>
-    <item
-        jar="H:\StudioProjects\HashTrace\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.4\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="f7dc6b43d7c7f3d94e98531aef88269f9ed2a37b">
-        <dex dex="H:\StudioProjects\HashTrace\app\build\intermediates\pre-dexed\pro\debug\classes-0b613ca2c9abca6f3744e229a4d999ec5a55201c.jar" />
-    </item>
-    <item
-        jar="H:\StudioProjects\HashTrace\app\build\intermediates\exploded-aar\HashTrace.libraries\hellochartslibrary\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="e01b18bc1f1eb72055d793c42a03dfd83147a491">
-        <dex dex="H:\StudioProjects\HashTrace\app\build\intermediates\pre-dexed\pro\debug\classes-ef7e221ae135bb28bc32df4fbf0589fb8ff9f6a8.jar" />
+        revision="23.0.2"
+        sha1="eb6a5bc8e4ff1e392f5015d7d2549aac237ffca2">
+        <dex dex="H:\StudioProjects\AndroidDeveloperNanodegree\HashTrace\app\build\intermediates\transforms\dex\pro\debug\folders\1000\5\main_slice_9fcd9090201c77d8bfcf091c38a02d6e0f4e766f\classes.dex" />
     </item>
 
 </items>

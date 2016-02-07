@@ -19,4 +19,3 @@
     android:duration="@android:integer/config_longAnimTime"
     android:fromYDelta="-100%p"
     android:toYDelta="0" />
-<!-- From: file:/H:/StudioProjects/HashTrace/libraries/pullToRefresh/src/main/res/anim/slide_in_from_top.xml -->

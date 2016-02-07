@@ -19,4 +19,3 @@
     android:duration="@android:integer/config_longAnimTime"
     android:fromYDelta="0"
     android:toYDelta="100%p" />
-<!-- From: file:/H:/StudioProjects/HashTrace/libraries/pullToRefresh/src/main/res/anim/slide_out_to_bottom.xml -->

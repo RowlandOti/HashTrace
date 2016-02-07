@@ -214,7 +214,7 @@ public class Utility {
 			return null;
 		}
 	}
-	/**This method is used to convert “dp” values to “pixel” values.*/
+	/**This method is used to convert dp values to pixel values.*/
 	public static int convertDpToPixel(float dp, DisplayMetrics displayMetrics)
 	{
 		DisplayMetrics metrics = displayMetrics;

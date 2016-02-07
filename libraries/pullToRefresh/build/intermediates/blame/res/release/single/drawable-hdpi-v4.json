@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "H:\\StudioProjects\\AndroidDeveloperNanodegree\\HashTrace\\libraries\\pullToRefresh\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "H:\\StudioProjects\\AndroidDeveloperNanodegree\\HashTrace\\libraries\\pullToRefresh\\build\\intermediates\\exploded-aar\\HashTrace.libraries\\swipeMenuListView\\unspecified\\res\\drawable-hdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "H:\\StudioProjects\\AndroidDeveloperNanodegree\\HashTrace\\libraries\\pullToRefresh\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\default_ptr_rotate.png",
+        "source": "H:\\StudioProjects\\AndroidDeveloperNanodegree\\HashTrace\\libraries\\pullToRefresh\\src\\main\\res\\drawable-hdpi\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "H:\\StudioProjects\\AndroidDeveloperNanodegree\\HashTrace\\libraries\\pullToRefresh\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\default_ptr_flip.png",
+        "source": "H:\\StudioProjects\\AndroidDeveloperNanodegree\\HashTrace\\libraries\\pullToRefresh\\src\\main\\res\\drawable-hdpi\\default_ptr_flip.png"
+    },
+    {
+        "merged": "H:\\StudioProjects\\AndroidDeveloperNanodegree\\HashTrace\\libraries\\pullToRefresh\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\indicator_arrow.png",
+        "source": "H:\\StudioProjects\\AndroidDeveloperNanodegree\\HashTrace\\libraries\\pullToRefresh\\src\\main\\res\\drawable-hdpi\\indicator_arrow.png"
+    }
+]
