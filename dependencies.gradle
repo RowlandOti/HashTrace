@@ -1,0 +1,80 @@
+ext {
+    // REMOTE BINARY DEPENDENCY - Android
+    supportLibraryVersion = '23.1.1'
+
+    // REMOTE BINARY DEPENDENCY - Third Party
+    // Use - twitter API support
+    twitter4jCoreVersion = '4.0.3'
+    // Use - Image Loading support
+    picassoVersion = '2.5.2'
+    frescoVersion = '0.8.1'
+    // Use - Data & network flow analytics/debugging support
+    stethoVersion = '1.2.0'
+    okhttpVersion = '2.6.0'
+    crashlyticsVersion = '2.4.0@aar'
+    // Use - Rest API support
+    rxAndroidVersion = '0.25.0'
+    rxJavaVersion = '1.0.10'
+    retrofitVersion = '2.0.0-beta2'
+    // Use - View Injection support
+    butterKnifeVersion = '7.0.1'
+    // Use - Database support
+    activeAndroidVersion = '3.1.0-SNAPSHOT'
+    // Use - RecycleView Animation support
+    wasabeefRecycleViewAnimatorVersion = '1.3.0'
+
+    appDependencies = [
+
+            supportAppCompatV7      : "com.android.support:appcompat-v7:$supportLibraryVersion",
+            supportAppCompatV4      : "com.android.support:support-v4:$supportLibraryVersion",
+            supportAnnotation       : "com.android.support:support-annotations:$supportLibraryVersion",
+            supportCardView         : "com.android.support:cardview-v7:$supportLibraryVersion",
+            supportDesign           : "com.android.support:design:$supportLibraryVersion",
+            supportRecyclerView     : "com.android.support:recyclerview-v7:$supportLibraryVersion",
+
+            butterKnife             : "com.jakewharton:butterknife:$butterKnifeVersion",
+            rxAndroid               : "io.reactivex:rxandroid:$rxAndroidVersion",
+            rxJava                  : "io.reactivex:rxjava:$rxJavaVersion",
+
+            retrofit                : "com.squareup.retrofit:retrofit:$retrofitVersion",
+            retrofitConverterGson   : "com.squareup.retrofit:converter-gson:$retrofitVersion",
+            twitter4j               : "org.twitter4j:twitter4j-core:$twitter4jCoreVersion",
+
+            activeAndroid           : "com.michaelpardo:activeandroid:$activeAndroidVersion",
+
+            facebookStetho          : "com.facebook.stetho:stetho:$stethoVersion",
+            facebookStethoOkhttp    : "com.facebook.stetho:stetho-okhttp:$stethoVersion",
+            okHttpLoggingInterceptor: "com.squareup.okhttp:logging-interceptor:$okhttpVersion",
+            crashlytics             : "com.crashlytics.sdk.android:crashlytics:$crashlyticsVersion",
+
+            facebookFresco          : "com.facebook.fresco:fresco:$frescoVersion",
+            picasso                 : "com.squareup.picasso:picasso:$picassoVersion",
+
+            wasabeefVersion          : "jp.wasabeef:recyclerview-animators:$wasabeefRecycleViewAnimatorVersion",]
+
+    designDependencies = [
+
+            supportAppCompatV7: "com.android.support:appcompat-v7:$supportLibraryVersion",
+            supportAppCompatV4: "com.android.support:support-v4:$supportLibraryVersion",
+            supportDesign     : "com.android.support:design:$supportLibraryVersion",]
+
+    commonDependencies = [
+
+            supportAppCompatV7  : "com.android.support:appcompat-v7:$supportLibraryVersion",
+            supportRecyclerView : "com.android.support:recyclerview-v7:$supportLibraryVersion",
+            facebookStetho      : "com.facebook.stetho:stetho:$stethoVersion",
+            facebookStethoOkhttp: "com.facebook.stetho:stetho-okhttp:$stethoVersion",
+            activeAndroid       : "com.michaelpardo:activeandroid:$activeAndroidVersion",]
+
+    helloChartsDependencies = [
+
+            supportAppCompatV7: "com.android.support:appcompat-v7:$supportLibraryVersion",]
+
+    pullToRefreshDependencies = [
+
+    ]
+
+    swipeMenuListViewDependencies = [
+
+            supportAppCompatV7: "com.android.support:appcompat-v7:$supportLibraryVersion",]
+}

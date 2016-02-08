@@ -40,51 +40,35 @@ android {
             }
         }
     }
+
+    productFlavors.whenObjectAdded { flavor ->
+
+        def flavorData = rootProject.ext[flavor.name]
+
+        flavor.resValue 'string', resAppName, flavorData.appName
+        flavor.resValue 'color', resAppColorName, flavorData.appColor
+        // Brand
+        flavor.applicationId flavorData.packageName
+        flavor.versionName flavorData.versionName
+        //Accessed in java code as BuildConfig.IS_PRO_VERSION
+        flavor.buildConfigField 'boolean', fieldIsProVersion, flavorData.isProVersion
+        flavor.buildConfigField 'string', fieldTwitterApiKey, flavorData.twitterApiKey
+        // Signing
+        flavor.signingConfig signingConfigs.release
+    }
     productFlavors {
         //Paid Version
-        paid {
-            def paid = rootProject.ext.paid
+        pro {
 
-            resValue 'string', resAppName, paid.appName
-            resValue 'color', resAppColorName, paid.appColor
-            // Brand
-            applicationId paid.packageName
-            versionName paid.versionName
-            versionCode paid.versionCode
-            //Accessed in java code as BuildConfig.IS_PRO_VERSION
-            buildConfigField 'boolean', fieldIsProVersion, paid.isProVersion
-            buildConfigField 'String', fieldTwitterApiKey, paid.twitterApiKey
-            productFlavors.pro.signingConfig signingConfigs.release
         }
         //Free Version
         free {
-            def free = rootProject.ext.free
 
-            resValue 'string', resAppName, free.appName
-            resValue 'color', resAppColorName, free.appColor
-            // Brand
-            applicationId free.packageName
-            versionName free.versionName
-            versionCode free.versionCode
-            //Accessed in java code as BuildConfig.IS_PRO_VERSION
-            buildConfigField 'boolean', fieldIsProVersion, free.isProVersion
-            buildConfigField 'String', fieldTwitterApiKey, free.twitterApiKey
-            productFlavors.free.signingConfig signingConfigs.release
         }
         //Demo Version
-        demo {
-            def demo = rootProject.ext.demo
+        promo {
 
-            resValue 'string', resAppName, demo.appName
-            resValue 'color', resAppColorName, demo.appColor
-            // Brand
-            applicationId demo.packageName
-            versionName demo.versionName
-            versionCode demo.versionCode
-            //Accessed in java code as BuildConfig.IS_PRO_VERSION
-            buildConfigField 'boolean', fieldIsProVersion, demo.isProVersion
-            buildConfigField 'String', fieldTwitterApiKey, demo.twitterApiKey
-            productFlavors.demo.signingConfig signingConfigs.release
+            productFlavors.promo.signingConfig signingConfigs.release
         }
     }
     buildTypes {
@@ -103,7 +87,6 @@ android {
 
 dependencies {
     // LOCAL BINARY DEPENDENCY
-    compile fileTree(dir: 'libs', include: ['*.jar'])
 
     // MODULE DEPENDENCY
     compile project(':libraries:pullToRefresh')
@@ -112,35 +95,29 @@ dependencies {
     compile project(':libraries:swipeMenuListView')
     compile project(':libraries:common')
 
-    // REMOTE BINARY DEPENDENCY - Android
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'com.android.support:design:23.1.1'
-    compile 'com.android.support:cardview-v7:23.1.1'
-    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile appDependencies.supportAppCompatV7
+    compile appDependencies.supportCardView
+    compile appDependencies.supportDesign
+    compile appDependencies.supportRecyclerView
 
-    // REMOTE BINARY DEPENDENCY - Third Party
-    // Use - twitter API support
-    compile 'org.twitter4j:twitter4j-core:4.0.3'
-    // Use - Rest API support
-    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
-    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
-    // Use - Image Loading support
-    compile 'com.squareup.picasso:picasso:2.5.2'
-    compile 'com.facebook.fresco:fresco:0.8.1+'
-    // Use - General Utilities support
-    compile 'com.uwetrottmann:androidutils:2.0.0'
-    // Use - Data & network flow analytics/debugging support
-    compile 'com.facebook.stetho:stetho:1.2.0'
-    compile 'com.facebook.stetho:stetho-okhttp:1.2.0'
-    compile 'com.squareup.okhttp:logging-interceptor:2.6.0'
-    compile('com.crashlytics.sdk.android:crashlytics:2.4.0@aar') {
-        transitive = true;
-    }
-    // Use - Database support
-    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
-    // Use - View Injection support
-    compile 'com.jakewharton:butterknife:7.0.1'
-    // Use - RecycleView Animation support
-    compile 'jp.wasabeef:recyclerview-animators:1.3.0'
+    compile appDependencies.butterKnife
+    compile appDependencies.rxAndroid
+    compile appDependencies.rxJava
+
+    compile appDependencies.retrofit
+    compile appDependencies.retrofitConverterGson
+    compile appDependencies.twitter4j
+
+    compile appDependencies.activeAndroid
+
+    compile appDependencies.facebookStetho
+    compile appDependencies.facebookStethoOkhttp
+    compile appDependencies.okHttpLoggingInterceptor
+    compile appDependencies.crashlytics
+
+    compile appDependencies.facebookFresco
+    compile appDependencies.picasso
+
+    compile appDependencies.wasabeefVersion
 }
 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="apptheme_primary_text_black">#212121</color>
+    <color name="apptheme_secondary_text_grey">#727272</color>
+    <color name="apptheme_accent_orange">#FF9800</color>
+    <color name="apptheme_white">#ffffff</color>
+    <color name="apptheme_transparent">#00000000</color>
+    <color name="apptheme_divider">#B6B6B6</color>
+    <color name="apptheme_background_window_grey">#FFE5E5E5</color>
+    <color name="apptheme_grey">#d3d6db</color>
+    <color name="apptheme_grey_border">#999999</color>
+
+
+    <!-- Dark Theme Colors-->
+    <color name="apptheme_primary_grey_light">#616161</color>
+    <color name="apptheme_primary_grey">#424242</color>
+    <color name="apptheme_primary_grey_dark">#212121</color>
+    <color name="apptheme_primary_text_white">#ffffff</color>
+    <color name="apptheme_secondary_text_whitegrey">#d3d6db</color>
+    <color name="apptheme_accent_teal">#00796b</color>
+    <color name="apptheme_accent_red">#EF5350</color>
+    <color name="apptheme_background_window">#FFF5F5F5</color>
+</resources>

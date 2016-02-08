@@ -1,0 +1,14 @@
+<resources>
+
+
+    <style name="AppTheme.Dark" parent="AppBaseThemeNoActionBar.Dark">
+        <item name="android:actionOverflowButtonStyle">@style/MyCustomActionBarOverflowButton</item>
+    </style>
+
+    <!-- Widget styles -->
+
+    <style name="MyCustomActionBarOverflowButton" parent="android:Widget.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_overflow_white_48dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,98 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.Dark" parent="AppBaseThemeNoActionBar.Dark" />
+
+
+    <style name="AppBaseThemeNoActionBar.Dark" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/apptheme_background_window</item>
+        <!-- Setting appcompat’s color theming attrs -->
+        <item name="colorPrimary">@color/apptheme_primary_grey_light</item>
+        <item name="colorPrimaryDark">@color/apptheme_primary_grey</item>
+        <item name="colorAccent">@color/apptheme_accent_teal</item>
+        <item name="android:textColorPrimary">@color/apptheme_primary_text_white</item>
+        <item name="android:textColorSecondary">@color/apptheme_secondary_text_grey</item>
+        <!-- Toolbar styles -->
+        <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
+        <!-- PopUpMenu styles -->
+        <item name="popupMenuStyle">@style/Widget.App.PopupMenu</item>
+        <!-- ListPopUpWindow styles -->
+        <item name="listPopupWindowStyle">@style/Widget.App.ListPopupWindow</item>
+        <!-- PullToRefresh specific styles -->
+        <item name="ptrPullToRefreshStyle">@style/Widget.Refresh.PtrWidget</item>
+    </style>
+
+
+    <!-- TextView styles -->
+    <!-- TextView styles Normal -->
+    <style name="MyCustomTabTextAppearance" parent="CustomTabTextAppearance">
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/selector_tab_text</item>
+    </style>
+    <!-- TextView styles Bold -->
+    <style name="MyCustomTabTextAppearance.Bold" parent="CustomTabTextAppearance.Bold">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/apptheme_primary_text_white</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+    </style>
+
+
+    <!-- Widget styles -->
+    <style name="Widget" />
+
+    <style name="Widget.App" parent="Widget" />
+
+    <style name="Widget.App.Tab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/tab_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/tab_padding_horizontal</item>
+    </style>
+    <!-- Widget PopUpMenu Style-->
+    <style name="Widget.App.PopupMenu" parent="Widget.AppCompat.Light.PopupMenu">
+        <item name="android:dropDownVerticalOffset">-40dp</item>
+    </style>
+    <!-- Widget ListPopUpWindow Style-->
+    <style name="Widget.App.ListPopupWindow" parent="Widget.AppCompat.Light.ListPopupWindow">
+        <item name="android:dropDownVerticalOffset">-40dp</item>
+        <item name="android:popupBackground">@color/apptheme_white</item>
+    </style>
+
+    <!-- Widget SlidingTabStripLayout styles -->
+    <style name="Widget.App.SlidingTabStripLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabUnderlineColor">@color/apptheme_divider</item>
+        <item name="tabIndicatorHeight">6dp</item>
+        <item name="tabUnderlineHeight">2dp</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="android:textAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextAppearance">@style/MyCustomTabTextAppearance.Bold</item>
+        <item name="tabSelectedTextColor">@color/apptheme_primary_text_white</item>
+        <item name="tabIsSelectedTextBold">true</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMode">fixed</item>
+    </style>
+
+    <!-- Widget CoordinatorLayout styles -->
+    <style name="Widget.App.CoordinatorLayout" parent="Widget.Design.CoordinatorLayout"></style>
+    <!-- Widget FloatingActionButton styles -->
+    <style name="Widget.App.FloatingActionButton" parent="Widget.Design.FloatingActionButton"></style>
+    <!-- Widget AppBarLayout styles -->
+    <style name="Widget.App.AppBarLayout" parent="Widget.Design.AppBarLayout"></style>
+
+    <style name="AppTheme.Dark.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.Dark.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

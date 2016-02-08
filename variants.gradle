@@ -1,0 +1,47 @@
+ext {
+
+    // Brand
+    basePackageName = 'com.rowland.hashtrace'
+    baseVersionName = '1.0.0'
+    baseVersionCode = 1
+    // Resources
+    resAppColorName = 'build_brand_primary'
+    resAppName = 'build_app_name'
+    // Fields
+    fieldIsProVersion = 'IS_PRO_VERSION'
+    fieldTwitterApiKey = 'TWITTER_API_KEY'
+
+    pro = [
+
+            packageName  : "${basePackageName}.pro",
+            appName      : "Hashtrace Premium",
+            appColor     : "#F44336",
+            isProVersion : "true",
+            twitterApiKey: "",
+            versionName  : "${baseVersionName}-pro",
+            versionCode  : "${baseVersionCode}"
+    ]
+
+    free = [
+
+            packageName  : "${basePackageName}.free",
+            appName      : "Hashtrace Free",
+            appColor     : "#4CAF50",
+            isProVersion : "false",
+            twitterApiKey: "",
+            versionName  : "${baseVersionName}-free",
+            versionCode  : "${baseVersionCode}"
+    ]
+
+    promo = [
+
+            packageName  : "${basePackageName}.promo",
+            appName      : "Hashtrace Promo",
+            appColor     : "#9C27B0",
+            isProVersion : "false",
+            twitterApiKey: "",
+            versionName  : "${baseVersionName}-promo",
+            versionCode  : "${baseVersionCode}"
+    ]
+
+}
