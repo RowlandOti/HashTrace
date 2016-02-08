@@ -1,22 +1,15 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.App.CoordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:fitsSystemWindows="true">
 
-    <com.astuetz.PagerSlidingTabStrip
-        android:id="@+id/slidingTabStrips"
-        android:layout_width="match_parent"
-        android:layout_height="45dip"
-        app:pstsShouldExpand="true"
-       >
+    <include
+        android:id="@+id/movie_main_appbar"
+        layout="@layout/inc_main_appbar" />
 
-    </com.astuetz.PagerSlidingTabStrip>
-
-    <android.support.v4.view.ViewPager
+    <include
         android:id="@+id/viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/slidingTabStrips"></android.support.v4.view.ViewPager>
+        layout="@layout/inc_main_viewpager" />
 
-</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -24,7 +24,7 @@ import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
 
-import com.rowland.data.TweetHashTracerContract;
+import com.rowland.data.provider.TweetHashTracerContract;
 import com.rowland.sync.TweetHashTracerSyncAdapter;
 
 /**

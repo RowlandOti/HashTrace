@@ -22,3 +22,6 @@ allprojects {
         maven { url "https://oss.sonatype.org/content/repositories/releases/" }
     }
 }
+
+apply from: 'variants.gradle'
+apply from: 'dependencies.gradle'

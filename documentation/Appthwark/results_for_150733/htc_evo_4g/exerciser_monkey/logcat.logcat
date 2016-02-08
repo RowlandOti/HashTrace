@@ -192,7 +192,7 @@ Debug "2015-06-16 17:35:35.493929" 861 ChimeraCfgMgr "Loading module com.google.
     "06-16 10:35:33.137  5976 12456 D HtcAppAssociationsUtils (Dispatcher):  @@@@@ getPreferredActivity():      Go DB ------"  192
 Debug "2015-06-16 17:35:35.674929" 308 PhoneApp EVENT_QUERY_MO_PACKAGES 421 193
 Info "2015-06-16 17:35:35.704929" 12481 TestRunner "started: testApp(com.appthwack.gltest.GlFpsTest)" 12490 194
-Info "2015-06-16 17:35:35.704929" 12481 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.TweetHashTracerContentProvider" 12481 195
+Info "2015-06-16 17:35:35.704929" 12481 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.provider.TweetHashTracerContentProvider" 12481 195
 Debug "2015-06-16 17:35:35.794929" 12481 APPTHWACK "Test setup" 12490 196
 Debug "2015-06-16 17:35:35.884929" 12481 dalvikvm "GC_CONCURRENT freed 170K, 42% free 3289K/5639K, external 0K/0K, paused 2ms+7ms" 12483 197
 Debug "2015-06-16 17:35:35.954929" 308 PhoneApp "-- N1 =0" 421 198

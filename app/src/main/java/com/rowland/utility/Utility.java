@@ -10,7 +10,7 @@ import android.preference.PreferenceManager;
 import android.text.format.DateUtils;
 import android.util.DisplayMetrics;
 
-import com.rowland.data.TweetHashTracerContract;
+import com.rowland.data.provider.TweetHashTracerContract;
 import com.rowland.hashtrace.R;
 import com.rowland.objects.Tweet;
 

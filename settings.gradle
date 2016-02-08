@@ -1,4 +1,3 @@
-include ':libraries:pagerslidingtabstrip'
 include ':libraries:hellochartslibrary'
 include ':libraries:swipeMenuListView'
 include ':libraries:pullToRefresh'

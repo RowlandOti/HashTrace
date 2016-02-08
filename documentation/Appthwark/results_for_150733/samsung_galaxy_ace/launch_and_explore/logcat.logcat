@@ -227,7 +227,7 @@ Info "2015-06-16 17:33:09.158851" 298 Launcher onWindowFocusChanged(false) 298 2
 Debug "2015-06-16 17:33:09.168851" 298 Launcher "setWallpaperDimension() called" 298 227
 Debug "2015-06-16 17:33:09.178851" 298 Launcher "USE_NON_SCROLLABLE_IMAGE_WALLPAPER is true" 298 228
 Debug "2015-06-16 17:33:09.188851" 298 Launcher "It's image wallpaper. suggestDesiredDimensions(-1,-1)" 298 229
-Info "2015-06-16 17:33:09.278851" 8213 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.TweetHashTracerContentProvider" 8213 230
+Info "2015-06-16 17:33:09.278851" 8213 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.provider.TweetHashTracerContentProvider" 8213 230
 Error "2015-06-16 17:33:09.368851" 8213 dalvikvm "Could not find class 'android.content.SyncRequest$Builder', referenced from method com.rowland.sync.TweetHashTracerSyncAdapter.configurePeriodicSync" 8213 231
 Warning "2015-06-16 17:33:09.368851" 8213 dalvikvm "VFY: unable to resolve new-instance 70 (Landroid/content/SyncRequest$Builder;) in Lcom/rowland/sync/TweetHashTracerSyncAdapter;" 8213 232
 Debug "2015-06-16 17:33:09.608851" 192 SyncManager "setSyncAutomatically: , provider com.rowland.hashtrace.app -> true" 324 233
@@ -693,7 +693,7 @@ Info "2015-06-16 17:33:53.298851" 192 ActivityManager "Force stopping package co
 Info "2015-06-16 17:33:53.308851" 192 ActivityManager "Start proc com.rowland.hashtrace for added application com.rowland.hashtrace: pid=8525 uid=10078 gids={3003, 1015}" 324 693
 Info "2015-06-16 17:33:53.548851" 8525 TestRunner "started: testApp(com.appthwack.test.AppThwackExplorerTest)" 8534 694
 Debug "2015-06-16 17:33:53.558851" 8525 APPTHWACK "Test setup" 8534 695
-Info "2015-06-16 17:33:53.558851" 8525 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.TweetHashTracerContentProvider" 8525 696
+Info "2015-06-16 17:33:53.558851" 8525 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.provider.TweetHashTracerContentProvider" 8525 696
 Info "2015-06-16 17:33:53.588851" 192 ActivityManager "Starting: Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=com.rowland.hashtrace/.MainActivity } from pid 8525" 197 697
 Info "2015-06-16 17:33:53.618851" 298 Launcher onPause() 298 698
 Info "2015-06-16 17:33:53.628851" 192 OrientationDebug "[pwm] in updateOrientationListenerLp()" 294 699

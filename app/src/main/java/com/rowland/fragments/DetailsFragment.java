@@ -19,8 +19,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.rowland.data.TweetHashTracerContract.HashTagEntry;
-import com.rowland.data.TweetHashTracerContract.TweetEntry;
+import com.rowland.data.provider.TweetHashTracerContract.HashTagEntry;
+import com.rowland.data.provider.TweetHashTracerContract.TweetEntry;
 import com.rowland.hashtrace.R;
 import com.rowland.utility.ImageManager;
 import com.rowland.utility.Utility;

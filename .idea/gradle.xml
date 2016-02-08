@@ -13,7 +13,6 @@
             <option value="$PROJECT_DIR$/libraries/common" />
             <option value="$PROJECT_DIR$/libraries/design" />
             <option value="$PROJECT_DIR$/libraries/hellochartslibrary" />
-            <option value="$PROJECT_DIR$/libraries/pagerslidingtabstrip" />
             <option value="$PROJECT_DIR$/libraries/pullToRefresh" />
             <option value="$PROJECT_DIR$/libraries/swipeMenuListView" />
           </set>
@@ -26,7 +25,6 @@
             <option value="$PROJECT_DIR$/libraries/common" />
             <option value="$PROJECT_DIR$/libraries/design" />
             <option value="$PROJECT_DIR$/libraries/hellochartslibrary" />
-            <option value="$PROJECT_DIR$/libraries/pagerslidingtabstrip" />
             <option value="$PROJECT_DIR$/libraries/pullToRefresh" />
             <option value="$PROJECT_DIR$/libraries/swipeMenuListView" />
           </set>

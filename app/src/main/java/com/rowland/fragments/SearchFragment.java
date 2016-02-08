@@ -26,10 +26,10 @@ import com.baoyz.swipemenulistview.SwipeMenuCreator;
 import com.baoyz.swipemenulistview.SwipeMenuItem;
 import com.baoyz.swipemenulistview.SwipeMenuListView;
 import com.rowland.adapters.TweetListAdapter;
-import com.rowland.data.TweetHashTracerContract;
-import com.rowland.data.TweetHashTracerContract.HashTagEntry;
-import com.rowland.data.TweetHashTracerContract.TweetEntry;
-import com.rowland.data.TweetHashTracerContract.TweetFavEntry;
+import com.rowland.data.provider.TweetHashTracerContract;
+import com.rowland.data.provider.TweetHashTracerContract.HashTagEntry;
+import com.rowland.data.provider.TweetHashTracerContract.TweetEntry;
+import com.rowland.data.provider.TweetHashTracerContract.TweetFavEntry;
 import com.rowland.hashtrace.R;
 import com.rowland.utility.Utility;
 

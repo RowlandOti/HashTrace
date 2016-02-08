@@ -138,7 +138,7 @@ Debug "2015-06-16 17:33:11.002072" 11523 dalvikvm "GC_CONCURRENT freed 102K, 66%
 Info "2015-06-16 17:33:11.012072" 11523 AndroidRuntime "NOTE: attach of thread 'Binder Thread #3' failed" 11531 138
 Debug "2015-06-16 17:33:11.012072" 11523 "jdwp    " "adbd disconnected" 11527 139
 Info "2015-06-16 17:33:11.022072" 137 ActivityManager "Start proc com.rowland.hashtrace for activity com.rowland.hashtrace/.MainActivity: pid=11532 uid=10094 gids={3003, 1015}" 350 140
-Info "2015-06-16 17:33:11.222072" 11532 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.TweetHashTracerContentProvider" 11532 141
+Info "2015-06-16 17:33:11.222072" 11532 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.provider.TweetHashTracerContentProvider" 11532 141
 Error "2015-06-16 17:33:11.332072" 11532 dalvikvm "Could not find class 'android.content.SyncRequest$Builder', referenced from method com.rowland.sync.TweetHashTracerSyncAdapter.configurePeriodicSync" 11532 142
 Warning "2015-06-16 17:33:11.332072" 11532 dalvikvm "VFY: unable to resolve new-instance 70 (Landroid/content/SyncRequest$Builder;) in Lcom/rowland/sync/TweetHashTracerSyncAdapter;" 11532 143
 Debug "2015-06-16 17:33:11.332072" 11532 dalvikvm "VFY: replacing opcode 0x22 at 0x0011" 11532 144
@@ -1050,7 +1050,7 @@ Info "2015-06-16 17:33:49.039072" 137 WindowManager "WIN DEATH: Window{40969960 
 Warning "2015-06-16 17:33:49.049072" 322 "GLSUser " "[GLSUser] Permission for com.google.android.gms to access oauth2:https://www.googleapis.com/auth/emeraldsea.mobileapps.doritos.cookie will be managed locally." 981 1050
 Info "2015-06-16 17:33:49.249072" 11798 TestRunner "started: testApp(com.appthwack.test.AppThwackExplorerTest)" 11809 1051
 Debug "2015-06-16 17:33:49.249072" 11798 APPTHWACK "Test setup" 11809 1052
-Info "2015-06-16 17:33:49.249072" 11798 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.TweetHashTracerContentProvider" 11798 1053
+Info "2015-06-16 17:33:49.249072" 11798 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.provider.TweetHashTracerContentProvider" 11798 1053
 Info "2015-06-16 17:33:49.319072" 137 ActivityManager "Starting activity: Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=com.rowland.hashtrace/.MainActivity } from pid 11798" 143 1054
 Info "2015-06-16 17:33:49.339072" 6014 [POST_RESELECT] "[spanChange] (o, oldStart, newStart, oldEnd, newEnd)=(android.text.Selection$START@401223b0,-1,0,-1,0)" 6014 1055
 Info "2015-06-16 17:33:49.339072" 6014 [POST_RESELECT] "[spanChange] (o, oldStart, newStart, oldEnd, newEnd)=(android.text.Selection$END@4013dce0,-1,0,-1,0)" 6014 1056

@@ -347,7 +347,7 @@ Debug "2015-06-16 17:32:52.922086" 209 memalloc "ion: Freeing buffer base:0x4379
 Debug "2015-06-16 17:32:52.922086" 209 memalloc "ion: Unmapping buffer  base:0x43791000 size:2088960" 324 347
 Debug "2015-06-16 17:32:52.932086" 209 memalloc "ion: Freeing buffer base:0x44332000 size:2088960 fd:110" 324 348
 Debug "2015-06-16 17:32:52.932086" 209 memalloc "ion: Unmapping buffer  base:0x44332000 size:2088960" 324 349
-Info "2015-06-16 17:32:52.942086" 24025 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.TweetHashTracerContentProvider" 24025 350
+Info "2015-06-16 17:32:52.942086" 24025 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.provider.TweetHashTracerContentProvider" 24025 350
 Warning "2015-06-16 17:32:52.952086" 433 ThrottleService "unable to find stats for iface rmnet0" 765 351
 Error "2015-06-16 17:32:53.042086" 24025 dalvikvm "Could not find class 'android.content.SyncRequest$Builder', referenced from method com.rowland.sync.TweetHashTracerSyncAdapter.configurePeriodicSync" 24025 352
 Warning "2015-06-16 17:32:53.042086" 24025 dalvikvm "VFY: unable to resolve new-instance 70 (Landroid/content/SyncRequest$Builder;) in Lcom/rowland/sync/TweetHashTracerSyncAdapter;" 24025 353
@@ -3705,7 +3705,7 @@ Info "2015-06-16 17:33:35.908086" 4521 ConfigFetchService "fetch service done; r
 Info "2015-06-16 17:33:35.918086" 4521 ConfigFetchService "stopping self" 4521 3705
 Info "2015-06-16 17:33:35.938086" 433 ActivityManager "Force stopping package com.rowland.hashtrace uid=10032" 845 3706
 Info "2015-06-16 17:33:35.948086" 433 ActivityManager "Start proc com.rowland.hashtrace for added application com.rowland.hashtrace: pid=24992 uid=10032 gids={3003, 1015}" 845 3707
-Info "2015-06-16 17:33:36.038086" 24992 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.TweetHashTracerContentProvider" 24992 3708
+Info "2015-06-16 17:33:36.038086" 24992 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.provider.TweetHashTracerContentProvider" 24992 3708
 Info "2015-06-16 17:33:36.038086" 24992 TestRunner "started: testApp(com.appthwack.test.AppThwackExplorerTest)" 25004 3709
 Debug "2015-06-16 17:33:36.048086" 24992 APPTHWACK "Test setup" 25004 3710
 Info "2015-06-16 17:33:36.048086" 433 "Intent  " "@test_code: getHtcIntentFlag: 0 obj: 1101152904" 881 3711

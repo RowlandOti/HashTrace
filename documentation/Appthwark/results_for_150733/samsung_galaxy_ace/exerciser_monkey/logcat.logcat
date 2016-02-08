@@ -258,7 +258,7 @@ Info "2015-06-16 17:35:34.832438" 192 ActivityManager "Force stopping package co
 Info "2015-06-16 17:35:34.842438" 192 ActivityManager "Start proc com.rowland.hashtrace for added application com.rowland.hashtrace: pid=9325 uid=10078 gids={3003, 1015}" 3190 258
 Info "2015-06-16 17:35:35.012438" 9325 TestRunner "started: testApp(com.appthwack.gltest.GlFpsTest)" 9332 259
 Debug "2015-06-16 17:35:35.012438" 9325 APPTHWACK "Test setup" 9332 260
-Info "2015-06-16 17:35:35.012438" 9325 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.TweetHashTracerContentProvider" 9325 261
+Info "2015-06-16 17:35:35.012438" 9325 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.provider.TweetHashTracerContentProvider" 9325 261
 Info "2015-06-16 17:35:35.022438" 192 ActivityManager "Starting: Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=com.rowland.hashtrace/.MainActivity } from pid 9325" 197 262
 Info "2015-06-16 17:35:35.042438" 298 Launcher onPause() 298 263
 Info "2015-06-16 17:35:35.062438" 192 OrientationDebug "[pwm] in updateOrientationListenerLp()" 420 264

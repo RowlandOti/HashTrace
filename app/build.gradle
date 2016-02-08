@@ -19,9 +19,9 @@ android {
     buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
 
     defaultConfig {
-        applicationId project.APPLICATION_ID
-        versionName project.VERSION_NAME
-        versionCode Integer.parseInt(project.VERSION_CODE)
+        applicationId basePackageName
+        versionName baseVersionName
+        versionCode baseVersionCode
         minSdkVersion Integer.parseInt(project.ANDROID_BUILD_MIN_SDK_VERSION)
         targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
         multiDexEnabled true
@@ -42,22 +42,49 @@ android {
     }
     productFlavors {
         //Paid Version
-        pro {
-            applicationId = "com.rowland.hashtrace.pro"
-            versionName "1.0-pro"
+        paid {
+            def paid = rootProject.ext.paid
+
+            resValue 'string', resAppName, paid.appName
+            resValue 'color', resAppColorName, paid.appColor
+            // Brand
+            applicationId paid.packageName
+            versionName paid.versionName
+            versionCode paid.versionCode
             //Accessed in java code as BuildConfig.IS_PRO_VERSION
-            buildConfigField "boolean", "IS_PRO_VERSION", "true"
-            buildConfigField 'String', 'TWITTER_API_KEY', '""'
+            buildConfigField 'boolean', fieldIsProVersion, paid.isProVersion
+            buildConfigField 'String', fieldTwitterApiKey, paid.twitterApiKey
             productFlavors.pro.signingConfig signingConfigs.release
         }
         //Free Version
         free {
-            applicationId = "com.rowland.hashtrace.free"
-            versionName "1.0-free"
+            def free = rootProject.ext.free
+
+            resValue 'string', resAppName, free.appName
+            resValue 'color', resAppColorName, free.appColor
+            // Brand
+            applicationId free.packageName
+            versionName free.versionName
+            versionCode free.versionCode
             //Accessed in java code as BuildConfig.IS_PRO_VERSION
-            buildConfigField "boolean", "IS_PRO_VERSION", "false"
-            buildConfigField 'String', 'TWITTER_API_KEY', '""'
+            buildConfigField 'boolean', fieldIsProVersion, free.isProVersion
+            buildConfigField 'String', fieldTwitterApiKey, free.twitterApiKey
             productFlavors.free.signingConfig signingConfigs.release
+        }
+        //Demo Version
+        demo {
+            def demo = rootProject.ext.demo
+
+            resValue 'string', resAppName, demo.appName
+            resValue 'color', resAppColorName, demo.appColor
+            // Brand
+            applicationId demo.packageName
+            versionName demo.versionName
+            versionCode demo.versionCode
+            //Accessed in java code as BuildConfig.IS_PRO_VERSION
+            buildConfigField 'boolean', fieldIsProVersion, demo.isProVersion
+            buildConfigField 'String', fieldTwitterApiKey, demo.twitterApiKey
+            productFlavors.demo.signingConfig signingConfigs.release
         }
     }
     buildTypes {
@@ -80,9 +107,10 @@ dependencies {
 
     // MODULE DEPENDENCY
     compile project(':libraries:pullToRefresh')
-    compile project(':libraries:pagerslidingtabstrip')
+    compile project(':libraries:design')
     compile project(':libraries:hellochartslibrary')
     compile project(':libraries:swipeMenuListView')
+    compile project(':libraries:common')
 
     // REMOTE BINARY DEPENDENCY - Android
     compile 'com.android.support:appcompat-v7:23.1.1'

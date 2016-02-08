@@ -22,7 +22,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/CustomTheme" >
+        android:theme="@style/AppTheme.Dark">
         <!-- Main activity -->
         <activity
             android:name=".MainActivity"
@@ -76,7 +76,7 @@
         </activity>
 
         <provider
-            android:name="com.rowland.data.TweetHashTracerContentProvider"
+            android:name="com.rowland.data.provider.TweetHashTracerContentProvider"
             android:authorities="@string/content_authority"
             android:exported="false"
             android:syncable="true" />

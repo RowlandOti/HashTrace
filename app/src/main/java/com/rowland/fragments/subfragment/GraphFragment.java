@@ -14,9 +14,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.rowland.data.TweetHashTracerContract;
-import com.rowland.data.TweetHashTracerContract.HashTagEntry;
-import com.rowland.data.TweetHashTracerContract.TweetEntry;
+import com.rowland.data.provider.TweetHashTracerContract;
+import com.rowland.data.provider.TweetHashTracerContract.HashTagEntry;
+import com.rowland.data.provider.TweetHashTracerContract.TweetEntry;
 import com.rowland.hashtrace.R;
 import com.rowland.utility.EDbDateLimit;
 import com.rowland.utility.IterableCursor;

@@ -393,7 +393,7 @@ Debug "2015-06-16 17:54:06.021336" 8173 dalvikvm "Added shared lib libnativehelp
 Debug "2015-06-16 17:54:06.151336" 2790 dalvikvm "GC_CONCURRENT freed 338K, 15% free 7536K/8839K, paused 11ms+2ms, total 30ms" 2793 393
 Debug "2015-06-16 17:54:06.196336" 8173 dalvikvm "Note: class Landroid/app/ActivityManagerNative; has 155 unimplemented (abstract) methods" 8173 394
 Debug "2015-06-16 17:54:06.231336" 8173 AndroidRuntime "Calling main entry com.android.commands.am.Am" 8173 395
-Info "2015-06-16 17:54:06.326336" 8193 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.TweetHashTracerContentProvider" 8193 396
+Info "2015-06-16 17:54:06.326336" 8193 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.provider.TweetHashTracerContentProvider" 8193 396
 Info "2015-06-16 17:54:06.346336" 8193 TestRunner "started: testApp(com.appthwack.gltest.GlFpsTest)" 8205 397
 Debug "2015-06-16 17:54:06.351336" 8193 APPTHWACK "Test setup" 8205 398
 Info "2015-06-16 17:54:06.356336" 2136 "power   " "*** acquire_dvfs_lock : lockType : 1  freq : 1000000" 2136 399

@@ -908,7 +908,7 @@ Debug "2015-06-16 17:35:41.886876" 1149 FxWidgetScanner "ResolveInfo size 0" 266
 Debug "2015-06-16 17:35:41.886876" 1149 WidgetScanner "upadted? false" 26611 908
 Info "2015-06-16 17:35:41.906876" 433 ActivityManager "Start proc com.lookout:InstallReceiver for broadcast com.lookout/.security.InstallReceiver: pid=26619 uid=10187 gids={3003, 1007, 1015}" 845 909
 Info "2015-06-16 17:35:41.946876" 26619 dalvikvm "Turning on JNI app bug workarounds for target SDK version 4..." 26619 910
-Info "2015-06-16 17:35:42.006876" 26605 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.TweetHashTracerContentProvider" 26605 911
+Info "2015-06-16 17:35:42.006876" 26605 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.provider.TweetHashTracerContentProvider" 26605 911
 Info "2015-06-16 17:35:42.006876" 26605 TestRunner "started: testApp(com.appthwack.gltest.GlFpsTest)" 26633 912
 Debug "2015-06-16 17:35:42.016876" 26605 APPTHWACK "Test setup" 26633 913
 Debug "2015-06-16 17:35:42.016876" 1149 "skia    " "Decode special JPEG file" 1379 914

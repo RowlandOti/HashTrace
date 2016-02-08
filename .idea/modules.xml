@@ -8,7 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/libraries/design/design.iml" filepath="$PROJECT_DIR$/libraries/design/design.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/hellochartslibrary/hellochartslibrary.iml" filepath="$PROJECT_DIR$/libraries/hellochartslibrary/hellochartslibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/libraries.iml" filepath="$PROJECT_DIR$/libraries/libraries.iml" />
-      <module fileurl="file://$PROJECT_DIR$/libraries/pagerslidingtabstrip/pagerslidingtabstrip.iml" filepath="$PROJECT_DIR$/libraries/pagerslidingtabstrip/pagerslidingtabstrip.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/pullToRefresh/pullToRefresh.iml" filepath="$PROJECT_DIR$/libraries/pullToRefresh/pullToRefresh.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/swipeMenuListView/swipeMenuListView.iml" filepath="$PROJECT_DIR$/libraries/swipeMenuListView/swipeMenuListView.iml" />
     </modules>
