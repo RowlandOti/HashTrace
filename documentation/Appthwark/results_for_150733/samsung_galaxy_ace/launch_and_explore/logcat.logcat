@@ -227,8 +227,8 @@ Info "2015-06-16 17:33:09.158851" 298 Launcher onWindowFocusChanged(false) 298 2
 Debug "2015-06-16 17:33:09.168851" 298 Launcher "setWallpaperDimension() called" 298 227
 Debug "2015-06-16 17:33:09.178851" 298 Launcher "USE_NON_SCROLLABLE_IMAGE_WALLPAPER is true" 298 228
 Debug "2015-06-16 17:33:09.188851" 298 Launcher "It's image wallpaper. suggestDesiredDimensions(-1,-1)" 298 229
-Info "2015-06-16 17:33:09.278851" 8213 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.provider.TweetHashTracerContentProvider" 8213 230
-Error "2015-06-16 17:33:09.368851" 8213 dalvikvm "Could not find class 'android.content.SyncRequest$Builder', referenced from method com.rowland.sync.TweetHashTracerSyncAdapter.configurePeriodicSync" 8213 231
+Info "2015-06-16 17:33:09.278851" 8213 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.hashtrace.data.provider.TweetHashTracerContentProvider" 8213 230
+Error "2015-06-16 17:33:09.368851" 8213 dalvikvm "Could not find class 'android.content.SyncRequest$Builder', referenced from method com.rowland.hashtrace.sync.TweetHashTracerSyncAdapter.configurePeriodicSync" 8213 231
 Warning "2015-06-16 17:33:09.368851" 8213 dalvikvm "VFY: unable to resolve new-instance 70 (Landroid/content/SyncRequest$Builder;) in Lcom/rowland/sync/TweetHashTracerSyncAdapter;" 8213 232
 Debug "2015-06-16 17:33:09.608851" 192 SyncManager "setSyncAutomatically: , provider com.rowland.hashtrace.app -> true" 324 233
 Warning "2015-06-16 17:33:09.698851" 8213 dalvikvm "VFY: unable to resolve virtual method 9539: Landroid/widget/TextView;.setAllCaps (Z)V" 8213 234
@@ -279,9 +279,9 @@ Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at java.io.FileInputStrea
 Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at java.io.FileInputStream.<init>(FileInputStream.java:132)" 8240 279
 Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:362)" 8240 280
 Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:412)" 8240 281
-Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at com.rowland.utility.ImageManager.getBitmap(ImageManager.java:88)" 8240 282
-Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at com.rowland.utility.ImageManager.access$400(ImageManager.java:24)" 8240 283
-Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at com.rowland.utility.ImageManager$ImageQueueManager.run(ImageManager.java:175)" 8240 284
+Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at com.rowland.hashtrace.utility.ImageManager.getBitmap(ImageManager.java:88)" 8240 282
+Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at com.rowland.hashtrace.utility.ImageManager.access$400(ImageManager.java:24)" 8240 283
+Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at com.rowland.hashtrace.utility.ImageManager$ImageQueueManager.run(ImageManager.java:175)" 8240 284
 Warning "2015-06-16 17:33:13.128851" 8213 System.err "	at java.lang.Thread.run(Thread.java:1019)" 8240 285
 Debug "2015-06-16 17:33:13.768851" 8213 PullToRefresh "First Visible: 0. Visible Count: 5. Total Items:17" 8213 286
 Warning "2015-06-16 17:33:13.778851" 8213 System.err "java.io.FileNotFoundException: /mnt/sdcard/data/tweethashtrace/1172793367 (No such file or directory)" 8240 287
@@ -291,9 +291,9 @@ Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at java.io.FileInputStrea
 Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at java.io.FileInputStream.<init>(FileInputStream.java:132)" 8240 291
 Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:362)" 8240 292
 Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:412)" 8240 293
-Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at com.rowland.utility.ImageManager.getBitmap(ImageManager.java:88)" 8240 294
-Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at com.rowland.utility.ImageManager.access$400(ImageManager.java:24)" 8240 295
-Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at com.rowland.utility.ImageManager$ImageQueueManager.run(ImageManager.java:175)" 8240 296
+Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at com.rowland.hashtrace.utility.ImageManager.getBitmap(ImageManager.java:88)" 8240 294
+Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at com.rowland.hashtrace.utility.ImageManager.access$400(ImageManager.java:24)" 8240 295
+Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at com.rowland.hashtrace.utility.ImageManager$ImageQueueManager.run(ImageManager.java:175)" 8240 296
 Warning "2015-06-16 17:33:13.788851" 8213 System.err "	at java.lang.Thread.run(Thread.java:1019)" 8240 297
 Debug "2015-06-16 17:33:13.878851" 8213 PullToRefresh "First Visible: 0. Visible Count: 5. Total Items:17" 8213 298
 Debug "2015-06-16 17:33:13.908851" 8213 PullToRefresh "First Visible: 0. Visible Count: 5. Total Items:17" 8213 299
@@ -693,7 +693,7 @@ Info "2015-06-16 17:33:53.298851" 192 ActivityManager "Force stopping package co
 Info "2015-06-16 17:33:53.308851" 192 ActivityManager "Start proc com.rowland.hashtrace for added application com.rowland.hashtrace: pid=8525 uid=10078 gids={3003, 1015}" 324 693
 Info "2015-06-16 17:33:53.548851" 8525 TestRunner "started: testApp(com.appthwack.test.AppThwackExplorerTest)" 8534 694
 Debug "2015-06-16 17:33:53.558851" 8525 APPTHWACK "Test setup" 8534 695
-Info "2015-06-16 17:33:53.558851" 8525 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.provider.TweetHashTracerContentProvider" 8525 696
+Info "2015-06-16 17:33:53.558851" 8525 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.hashtrace.data.provider.TweetHashTracerContentProvider" 8525 696
 Info "2015-06-16 17:33:53.588851" 192 ActivityManager "Starting: Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=com.rowland.hashtrace/.MainActivity } from pid 8525" 197 697
 Info "2015-06-16 17:33:53.618851" 298 Launcher onPause() 298 698
 Info "2015-06-16 17:33:53.628851" 192 OrientationDebug "[pwm] in updateOrientationListenerLp()" 294 699
@@ -701,7 +701,7 @@ Verbose "2015-06-16 17:33:53.628851" 192 OrientationDebug "in updateOrientationL
 Info "2015-06-16 17:33:53.628851" 192 OrientationDebug "[pwm] needSensorRunningLp(), return true #4" 294 701
 Warning "2015-06-16 17:33:53.628851" 192 ActivityManager "Trying to launch com.rowland.hashtrace/.MainActivity" 294 702
 Info "2015-06-16 17:33:53.708851" 298 Launcher onWindowFocusChanged(false) 298 703
-Error "2015-06-16 17:33:53.708851" 8525 dalvikvm "Could not find class 'android.content.SyncRequest$Builder', referenced from method com.rowland.sync.TweetHashTracerSyncAdapter.configurePeriodicSync" 8525 704
+Error "2015-06-16 17:33:53.708851" 8525 dalvikvm "Could not find class 'android.content.SyncRequest$Builder', referenced from method com.rowland.hashtrace.sync.TweetHashTracerSyncAdapter.configurePeriodicSync" 8525 704
 Warning "2015-06-16 17:33:53.708851" 8525 dalvikvm "VFY: unable to resolve new-instance 70 (Landroid/content/SyncRequest$Builder;) in Lcom/rowland/sync/TweetHashTracerSyncAdapter;" 8525 705
 Debug "2015-06-16 17:33:53.718851" 298 Launcher "setWallpaperDimension() called" 298 706
 Debug "2015-06-16 17:33:53.718851" 298 Launcher "USE_NON_SCROLLABLE_IMAGE_WALLPAPER is true" 298 707
@@ -813,9 +813,9 @@ Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at java.io.FileInputStrea
 Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at java.io.FileInputStream.<init>(FileInputStream.java:132)" 8543 813
 Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:362)" 8543 814
 Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:412)" 8543 815
-Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at com.rowland.utility.ImageManager.getBitmap(ImageManager.java:88)" 8543 816
-Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at com.rowland.utility.ImageManager.access$400(ImageManager.java:24)" 8543 817
-Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at com.rowland.utility.ImageManager$ImageQueueManager.run(ImageManager.java:175)" 8543 818
+Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at com.rowland.hashtrace.utility.ImageManager.getBitmap(ImageManager.java:88)" 8543 816
+Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at com.rowland.hashtrace.utility.ImageManager.access$400(ImageManager.java:24)" 8543 817
+Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at com.rowland.hashtrace.utility.ImageManager$ImageQueueManager.run(ImageManager.java:175)" 8543 818
 Warning "2015-06-16 17:34:24.988851" 8525 System.err "	at java.lang.Thread.run(Thread.java:1019)" 8543 819
 Debug "2015-06-16 17:34:25.588851" 8525 PullToRefresh "First Visible: 1. Visible Count: 4. Total Items:32" 8525 820
 Warning "2015-06-16 17:34:25.598851" 8525 System.err "java.io.FileNotFoundException: /mnt/sdcard/data/tweethashtrace/-1316442860 (No such file or directory)" 8543 821
@@ -825,9 +825,9 @@ Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at java.io.FileInputStrea
 Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at java.io.FileInputStream.<init>(FileInputStream.java:132)" 8543 825
 Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:362)" 8543 826
 Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:412)" 8543 827
-Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at com.rowland.utility.ImageManager.getBitmap(ImageManager.java:88)" 8543 828
-Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at com.rowland.utility.ImageManager.access$400(ImageManager.java:24)" 8543 829
-Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at com.rowland.utility.ImageManager$ImageQueueManager.run(ImageManager.java:175)" 8543 830
+Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at com.rowland.hashtrace.utility.ImageManager.getBitmap(ImageManager.java:88)" 8543 828
+Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at com.rowland.hashtrace.utility.ImageManager.access$400(ImageManager.java:24)" 8543 829
+Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at com.rowland.hashtrace.utility.ImageManager$ImageQueueManager.run(ImageManager.java:175)" 8543 830
 Warning "2015-06-16 17:34:25.608851" 8525 System.err "	at java.lang.Thread.run(Thread.java:1019)" 8543 831
 Warning "2015-06-16 17:34:25.878851" 8525 System.err "java.io.FileNotFoundException: /mnt/sdcard/data/tweethashtrace/-1346442134 (No such file or directory)" 8543 832
 Debug "2015-06-16 17:34:25.888851" 8525 PullToRefresh "First Visible: 1. Visible Count: 4. Total Items:32" 8525 833
@@ -837,9 +837,9 @@ Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at java.io.FileInputStrea
 Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at java.io.FileInputStream.<init>(FileInputStream.java:132)" 8543 837
 Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:362)" 8543 838
 Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:412)" 8543 839
-Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at com.rowland.utility.ImageManager.getBitmap(ImageManager.java:88)" 8543 840
-Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at com.rowland.utility.ImageManager.access$400(ImageManager.java:24)" 8543 841
-Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at com.rowland.utility.ImageManager$ImageQueueManager.run(ImageManager.java:175)" 8543 842
+Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at com.rowland.hashtrace.utility.ImageManager.getBitmap(ImageManager.java:88)" 8543 840
+Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at com.rowland.hashtrace.utility.ImageManager.access$400(ImageManager.java:24)" 8543 841
+Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at com.rowland.hashtrace.utility.ImageManager$ImageQueueManager.run(ImageManager.java:175)" 8543 842
 Warning "2015-06-16 17:34:25.898851" 8525 System.err "	at java.lang.Thread.run(Thread.java:1019)" 8543 843
 Debug "2015-06-16 17:34:25.988851" 8525 PullToRefresh "First Visible: 1. Visible Count: 4. Total Items:32" 8525 844
 Warning "2015-06-16 17:34:26.018851" 8525 System.err "java.io.FileNotFoundException: /mnt/sdcard/data/tweethashtrace/-1611258764 (No such file or directory)" 8543 845
@@ -849,9 +849,9 @@ Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at java.io.FileInputStrea
 Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at java.io.FileInputStream.<init>(FileInputStream.java:132)" 8543 849
 Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:362)" 8543 850
 Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at android.graphics.BitmapFactory.decodeFile(BitmapFactory.java:412)" 8543 851
-Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at com.rowland.utility.ImageManager.getBitmap(ImageManager.java:88)" 8543 852
-Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at com.rowland.utility.ImageManager.access$400(ImageManager.java:24)" 8543 853
-Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at com.rowland.utility.ImageManager$ImageQueueManager.run(ImageManager.java:175)" 8543 854
+Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at com.rowland.hashtrace.utility.ImageManager.getBitmap(ImageManager.java:88)" 8543 852
+Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at com.rowland.hashtrace.utility.ImageManager.access$400(ImageManager.java:24)" 8543 853
+Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at com.rowland.hashtrace.utility.ImageManager$ImageQueueManager.run(ImageManager.java:175)" 8543 854
 Warning "2015-06-16 17:34:26.018851" 8525 System.err "	at java.lang.Thread.run(Thread.java:1019)" 8543 855
 Debug "2015-06-16 17:34:26.118851" 8525 PullToRefresh "First Visible: 1. Visible Count: 4. Total Items:32" 8525 856
 Debug "2015-06-16 17:34:27.108851" 8525 APPTHWACK "Excluding view action_refreshid : MainActivity:2131689576" 8534 857

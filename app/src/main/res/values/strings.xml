@@ -1,23 +1,104 @@
 <resources>
-    <string name="app_name">Movies Squire</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="app_name" translatable="false">HashTrace</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="loading" translatable="false">Loading..</string>
     <string name="action_search" translatable="false">Search</string>
     <string name="action_notification" translatable="false">Notification</string>
     <string name="action_refresh" translatable="false">Refresh</string>
     <string name="action_share" translatable="false">Share</string>
     <string name="action_drawflow" translatable="false">Drawer</string>
+    <string name="search_hint" translatable="false">Username</string>
+    <string name="add_favr" translatable="false">Added to Favorites</string>
+    <string name="remove_favr" translatable="false">Removed from Favorites</string>
+    <string name="no_favorites_items" translatable="false">No Favorites</string>
+    <string name="no_favorites_msg" translatable="false">Long press on item to add to favorites.</string>
+    <string name="favorites_remove_msg" translatable="false">Long press on item to remove from favorites.</string>
+    <string name="favorites" translatable="false">Favorites</string>
 
-    <string name="movie_title">Title: </string>
-    <string name="movie_year">Year of release: </string>
-    <string name="status_no_internet">No Internet Connectivity Is Available Yet</string>
-    <string name="status_no_trailers">No Trailers Are Available Yet</string>
-    <string name="empty_movies_list">No Movies Could Be Found</string>
-    <string name="title_activity_search">Search Movies</string>
-    <string name="search_hint">God\'s of Egypt</string>
-    <string name="title_activity_detail">DetailActivity</string>
-    <string name="title_activity_hoax">Hoax</string>
-    <string name="imdb_credits">This product uses the TMDb API but is not endorsed or certified by TMDb.</string>
+    <!-- Label for Activity Titles -->
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_details">Details</string>
+    <string name="title_activity_search">Search</string>
 
+    <!-- Hashtag profile -->
+    <string name="pref_hashtag_profile">Hashtag Settings</string>
+
+    <!-- Label for the hashtag preference [CHAR LIMIT=30] -->
+    <string name="pref_hashtag_label">Hashtag</string>
+
+    <!-- Key name for storing hashtag in SharedPreferences [CHAR LIMIT=NONE] -->
+    <string name="pref_hashtag_key" translatable="false">hashtag</string>
+
+    <!-- Default for hashtag preference [CHAR LIMIT=NONE] -->
+    <string name="pref_hashtag_default" translatable="false">#Football</string>
+
+    <!-- SyncAdapter related -->
+    <string name="sync_account_type">hashtrace.rowland.com</string>
+    <string name="content_authority">com.rowland.hashtrace.app</string>
+
+    <!-- Strings related to Notification preference -->
+    <string name="pref_last_sync">last_sync</string>
+
+    <!-- Strings related to Notification Enabled preference -->
+    <string name="pref_notifications_profile">Notification Settings</string>
+    <string name="pref_enable_notifications_key" translatable="false">enable_notifications</string>
+    <string name="pref_enable_notifications_label">Tweet Notifications</string>
+    <string name="pref_enable_notifications_true">Enabled</string>
+    <string name="pref_enable_notifications_false">Not Enabled</string>
+    <string name="pref_enable_notifications_default" translatable="false">true</string>
+
+    <!-- Notification Format -->
+    <string name="format_notification">Tweet: </string>
+
+    <!-- Strings related to Notification preference -->
+    <string name="pref_last_notification">last_notification</string>
+
+    <!-- Strings related to Proxy configuration preference -->
+    <string name="pref_proxy_profile">Proxy Settings</string>
+    <string name="pref_proxy">Proxy</string>
+    <string name="proxy_summary">Proxy URL</string>
+    <string name="port">Port</string>
+    <string name="port_summary">The port number of your Proxy service</string>
+    <string name="host">Host</string>
+    <string name="host_summary">The host name of your proxy service</string>
+
+    <!-- proxy type -->
+    <string name="proxy_type">Proxy Type</string>
+    <string name="proxy_type_summary">Choose your proxy type</string>
+
+    <array name="proxy_type_value">
+        <item>http</item>
+        <item>https</item>
+        <item>http-tunnel</item>
+        <!-- <item>spdy</item> -->
+        <item>socks4</item>
+        <item>socks5</item>
+    </array>
+    <array name="proxy_type_entry">
+        <item>HTTP</item>
+        <item>HTTPS</item>
+        <item>HTTP-Tunnel</item>
+        <!-- <item>SPDY</item> -->
+        <item>SOCKS4</item>
+        <item>SOCKS5</item>
+    </array>
+
+    <string name="pref_proxy_auth">Proxy Authentication</string>
+    <string name="auth">Enable Authentication</string>
+    <string name="auth_enable_summary">Use authentication credentials</string>
+    <string name="user_credentials">Account Information</string>
+    <string name="user">UserName</string>
+    <string name="user_summary">Proxy User name</string>
+    <string name="password">Password</string>
+    <string name="password_summary">Proxy Password</string>
+    <string name="auto_use_proxy_summary">Use proxy always to connect to network</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!--  Empty tweet database -->
+    <string name="empty_tweet_list">No Tweet Information Available </string>
+    <string name="empty_tweet_list_fav">No Favourite Tweets Yet. Longpress Tweet to Favourite </string>
+    <string name="empty_tweet_list_no_network">No Tweet Information Available. The Network is Not Available to Fetch Tweets.</string>
+    <string name="empty_tweet_list_none_found">No such Tweet was found </string>
 
 </resources>

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.rowland.hashtrace"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -25,9 +25,9 @@
         android:theme="@style/AppTheme.Dark">
         <!-- Main activity -->
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.activities.MainActivity"
             android:configChanges="orientation"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,31 +36,31 @@
         </activity>
         <!-- Settings activity -->
         <activity
-            android:name=".SettingsActivity"
+            android:name=".ui.activities.SettingsActivity"
             android:configChanges="orientation"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="ui.activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rowland.hashtrace.MainActivity" />
+                android:value="com.rowland.hashtrace.ui.activities.MainActivity" />
         </activity>
         <!-- Details activity -->
         <activity
-            android:name=".DetailsActivity"
+            android:name=".ui.activities.DetailsActivity"
             android:configChanges="orientation"
             android:label="@string/title_activity_details"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".ui.activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rowland.hashtrace.MainActivity" />
+                android:value="com.rowland.hashtrace.ui.activities.MainActivity" />
         </activity>
 
         <!-- Search results activity -->
         <activity
-            android:name=".SearchActivity"
+            android:name=".ui.activities.SearchActivity"
             android:configChanges="orientation"
             android:label="@string/title_activity_search"
-            android:parentActivityName="com.rowland.hashtrace.MainActivity" >
+            android:parentActivityName="com.rowland.hashtrace.ui.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
@@ -72,16 +72,16 @@
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rowland.hashtrace.MainActivity" />
+                android:value="com.rowland.hashtrace.ui.activities.MainActivity" />
         </activity>
 
         <provider
-            android:name="com.rowland.data.provider.TweetHashTracerContentProvider"
+            android:name=".data.provider.TweetHashTracerContentProvider"
             android:authorities="@string/content_authority"
             android:exported="false"
             android:syncable="true" />
         <!-- SyncAdapter's dummy authentication service -->
-        <service android:name="com.rowland.sync.TweetHashTracerAuthenticatorService" >
+        <service android:name=".sync.TweetHashTracerAuthenticatorService">
             <intent-filter>
                 <action android:name="android.accounts.AccountAuthenticator" />
             </intent-filter>
@@ -93,8 +93,8 @@
 
         <!-- The SyncAdapter service -->
         <service
-            android:name="com.rowland.sync.TweetHashTracerSyncService"
-            android:exported="true" >
+            android:name=".sync.TweetHashTracerSyncService"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.content.SyncAdapter" />
             </intent-filter>

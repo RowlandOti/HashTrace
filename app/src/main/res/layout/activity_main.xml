@@ -9,5 +9,5 @@ This layout is a one-pane layout for the Items master/detail flow.
     android:id="@+id/fragment_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.rowland.hashtrace.MainActivity"
+    tools:context="com.rowland.hashtrace.ui.activities.MainActivity"
     tools:ignore="MergeRootFrame" />

@@ -1731,7 +1731,7 @@ Info "2015-06-16 17:32:29.036970" 433 ActivityManager "Start proc com.android.pa
 Debug "2015-06-16 17:32:29.056970" 210 dalvikvm "GC_EXPLICIT freed 37K, 27% free 2815K/3807K, paused 2ms+2ms" 210 1731
 Debug "2015-06-16 17:32:29.066970" 784 AccountTypeManager "Registering external account type=com.htc.htctwitter, packageName=com.htc.htctwitter" 1420 1732
 Debug "2015-06-16 17:32:29.086970" 433 PackageManager "generateServicesMap(android.accounts.AccountAuthenticator): 17 services:" 471 1733
-Debug "2015-06-16 17:32:29.086970" 433 PackageManager "  New service added: ServiceInfo: AuthenticatorDescription {type=hashtrace.rowland.com}, ComponentInfo{com.rowland.hashtrace/com.rowland.sync.TweetHashTracerAuthenticatorService}, uid 10032" 471 1734
+Debug "2015-06-16 17:32:29.086970" 433 PackageManager "  New service added: ServiceInfo: AuthenticatorDescription {type=hashtrace.rowland.com}, ComponentInfo{com.rowland.hashtrace/com.rowland.hashtrace.sync.TweetHashTracerAuthenticatorService}, uid 10032" 471 1734
 Debug "2015-06-16 17:32:29.106970" 210 dalvikvm "GC_EXPLICIT freed <1K, 27% free 2815K/3807K, paused 1ms+16ms" 210 1735
 Warning "2015-06-16 17:32:29.106970" 433 PackageManager "Unable to load service info ResolveInfo{41879978 com.htc.socialnetwork.facebook.remote.FacebookSyncService p=0 o=0 m=0x108000}" 471 1736
 Warning "2015-06-16 17:32:29.106970" 433 PackageManager "org.xmlpull.v1.XmlPullParserException: No android.content.SyncAdapter meta-data" 471 1737
@@ -1775,7 +1775,7 @@ Debug "2015-06-16 17:32:29.186970" 1149 PendingAddWidgetInfo "PendingAddWidgetIn
 Debug "2015-06-16 17:32:29.196970" 1149 PendingAddWidgetInfo "PendingAddWidgetInfo: ComponentInfo{com.htc.clock3dwidget/com.htc.clock3dwidget.Clock2x2} / clock2x2" 1149 1775
 Info "2015-06-16 17:32:29.196970" 433 ActivityManager "Start proc com.google.android.apps.maps for broadcast com.google.android.apps.maps/com.google.android.location.internal.NlpPackageUpdateReceiver: pid=23580 uid=10042 gids={3003, 1015}" 726 1776
 Debug "2015-06-16 17:32:29.226970" 433 PackageManager "generateServicesMap(android.content.SyncAdapter): 52 services:" 471 1777
-Debug "2015-06-16 17:32:29.226970" 433 PackageManager "  New service added: ServiceInfo: SyncAdapterType {name=com.rowland.hashtrace.app, type=hashtrace.rowland.com, userVisible=false, supportsUploading=false, isAlwaysSyncable=true, allowParallelSyncs=false, settingsActivity=null}, ComponentInfo{com.rowland.hashtrace/com.rowland.sync.TweetHashTracerSyncService}, uid 10032" 471 1778
+Debug "2015-06-16 17:32:29.226970" 433 PackageManager "  New service added: ServiceInfo: SyncAdapterType {name=com.rowland.hashtrace.app, type=hashtrace.rowland.com, userVisible=false, supportsUploading=false, isAlwaysSyncable=true, allowParallelSyncs=false, settingsActivity=null}, ComponentInfo{com.rowland.hashtrace/com.rowland.hashtrace.sync.TweetHashTracerSyncService}, uid 10032" 471 1778
 Debug "2015-06-16 17:32:29.236970" 1149 "skia    " "Decode special JPEG file" 1665 1779
 Debug "2015-06-16 17:32:29.266970" 433 BackupManagerService "Received broadcast Intent { act=android.intent.action.PACKAGE_ADDED dat=package flg=0x10000010 (has extras) }" 471 1780
 Debug "2015-06-16 17:32:29.306970" 1149 "skia    " "Decode special JPEG file" 1665 1781

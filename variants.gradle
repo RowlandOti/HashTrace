@@ -17,7 +17,7 @@ ext {
             appName      : "Hashtrace Premium",
             appColor     : "#F44336",
             isProVersion : "true",
-            twitterApiKey: "",
+            twitterApiKey: '"4VyylbjdrM1AdZGLpQHRx6wTC"',
             versionName  : "${baseVersionName}-pro",
             versionCode  : "${baseVersionCode}"
     ]
@@ -28,7 +28,7 @@ ext {
             appName      : "Hashtrace Free",
             appColor     : "#4CAF50",
             isProVersion : "false",
-            twitterApiKey: "",
+            twitterApiKey: '"4VyylbjdrM1AdZGLpQHRx6wTC"',
             versionName  : "${baseVersionName}-free",
             versionCode  : "${baseVersionCode}"
     ]
@@ -39,9 +39,8 @@ ext {
             appName      : "Hashtrace Promo",
             appColor     : "#9C27B0",
             isProVersion : "false",
-            twitterApiKey: "",
+            twitterApiKey: '"4VyylbjdrM1AdZGLpQHRx6wTC"',
             versionName  : "${baseVersionName}-promo",
             versionCode  : "${baseVersionCode}"
     ]
-
 }

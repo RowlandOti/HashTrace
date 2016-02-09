@@ -393,7 +393,7 @@ Debug "2015-06-16 17:54:06.021336" 8173 dalvikvm "Added shared lib libnativehelp
 Debug "2015-06-16 17:54:06.151336" 2790 dalvikvm "GC_CONCURRENT freed 338K, 15% free 7536K/8839K, paused 11ms+2ms, total 30ms" 2793 393
 Debug "2015-06-16 17:54:06.196336" 8173 dalvikvm "Note: class Landroid/app/ActivityManagerNative; has 155 unimplemented (abstract) methods" 8173 394
 Debug "2015-06-16 17:54:06.231336" 8173 AndroidRuntime "Calling main entry com.android.commands.am.Am" 8173 395
-Info "2015-06-16 17:54:06.326336" 8193 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.provider.TweetHashTracerContentProvider" 8193 396
+Info "2015-06-16 17:54:06.326336" 8193 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.hashtrace.data.provider.TweetHashTracerContentProvider" 8193 396
 Info "2015-06-16 17:54:06.346336" 8193 TestRunner "started: testApp(com.appthwack.gltest.GlFpsTest)" 8205 397
 Debug "2015-06-16 17:54:06.351336" 8193 APPTHWACK "Test setup" 8205 398
 Info "2015-06-16 17:54:06.356336" 2136 "power   " "*** acquire_dvfs_lock : lockType : 1  freq : 1000000" 2136 399
@@ -416,7 +416,7 @@ Verbose "2015-06-16 17:54:06.376336" 4780 TaskCloserActivity "TaskCloserActivity
 Info "2015-06-16 17:54:06.391336" 1830 SurfaceFlinger "id=406(41) createSurf 0x40fb075c (1x1),1 flag=400, iashtrace" 1916 416
 Debug "2015-06-16 17:54:06.406336" 2136 WindowManager "mInputFocus is not null." 2286 417
 Debug "2015-06-16 17:54:06.406336" 2136 WindowManager "mInputFocus is not null." 2286 418
-Error "2015-06-16 17:54:06.436336" 8193 dalvikvm "Could not find class 'android.content.SyncRequest$Builder', referenced from method com.rowland.sync.TweetHashTracerSyncAdapter.configurePeriodicSync" 8193 419
+Error "2015-06-16 17:54:06.436336" 8193 dalvikvm "Could not find class 'android.content.SyncRequest$Builder', referenced from method com.rowland.hashtrace.sync.TweetHashTracerSyncAdapter.configurePeriodicSync" 8193 419
 Warning "2015-06-16 17:54:06.436336" 8193 dalvikvm "VFY: unable to resolve new-instance 70 (Landroid/content/SyncRequest$Builder;) in Lcom/rowland/sync/TweetHashTracerSyncAdapter;" 8193 420
 Debug "2015-06-16 17:54:06.436336" 8193 dalvikvm "VFY: replacing opcode 0x22 at 0x0011" 8193 421
 Debug "2015-06-16 17:54:06.441336" 8193 dalvikvm "DexOpt: unable to opt direct call 0x018b at 0x13 in Lcom/rowland/sync/TweetHashTracerSyncAdapter;.configurePeriodicSync" 8193 422

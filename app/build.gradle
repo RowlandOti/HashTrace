@@ -51,8 +51,8 @@ android {
         flavor.applicationId flavorData.packageName
         flavor.versionName flavorData.versionName
         //Accessed in java code as BuildConfig.IS_PRO_VERSION
-        flavor.buildConfigField 'boolean', fieldIsProVersion, flavorData.isProVersion
-        flavor.buildConfigField 'string', fieldTwitterApiKey, flavorData.twitterApiKey
+        flavor.buildConfigField 'Boolean', fieldIsProVersion, flavorData.isProVersion
+        flavor.buildConfigField 'String', fieldTwitterApiKey, flavorData.twitterApiKey
         // Signing
         flavor.signingConfig signingConfigs.release
     }
@@ -68,7 +68,6 @@ android {
         //Demo Version
         promo {
 
-            productFlavors.promo.signingConfig signingConfigs.release
         }
     }
     buildTypes {

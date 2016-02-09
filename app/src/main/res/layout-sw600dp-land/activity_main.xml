@@ -5,7 +5,7 @@
     android:baselineAligned="false"
     android:divider="?android:attr/dividerHorizontal"
     android:orientation="horizontal"
-    tools:context="com.rowland.hashtrace.MainActivity">
+    tools:context="com.rowland.hashtrace.ui.activities.MainActivity">
 
     <!--
     This layout is a two-pane layout for the Items master/detail flow.

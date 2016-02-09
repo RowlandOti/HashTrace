@@ -192,7 +192,7 @@ Debug "2015-06-16 17:35:35.493929" 861 ChimeraCfgMgr "Loading module com.google.
     "06-16 10:35:33.137  5976 12456 D HtcAppAssociationsUtils (Dispatcher):  @@@@@ getPreferredActivity():      Go DB ------"  192
 Debug "2015-06-16 17:35:35.674929" 308 PhoneApp EVENT_QUERY_MO_PACKAGES 421 193
 Info "2015-06-16 17:35:35.704929" 12481 TestRunner "started: testApp(com.appthwack.gltest.GlFpsTest)" 12490 194
-Info "2015-06-16 17:35:35.704929" 12481 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.provider.TweetHashTracerContentProvider" 12481 195
+Info "2015-06-16 17:35:35.704929" 12481 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.hashtrace.data.provider.TweetHashTracerContentProvider" 12481 195
 Debug "2015-06-16 17:35:35.794929" 12481 APPTHWACK "Test setup" 12490 196
 Debug "2015-06-16 17:35:35.884929" 12481 dalvikvm "GC_CONCURRENT freed 170K, 42% free 3289K/5639K, external 0K/0K, paused 2ms+7ms" 12483 197
 Debug "2015-06-16 17:35:35.954929" 308 PhoneApp "-- N1 =0" 421 198
@@ -214,7 +214,7 @@ Info "2015-06-16 17:35:36.214929" 861 ConfigFetchService launchTask 861 213
 Info "2015-06-16 17:35:36.224929" 861 ConfigFetchService "service connected" 861 214
 Debug "2015-06-16 17:35:36.224929" 861 ConfigFetchService "ConfigApi connection successful." 861 215
 Info "2015-06-16 17:35:36.224929" 861 PeopleContactsSync "CP2 sync disabled" 12493 216
-Error "2015-06-16 17:35:36.735929" 12481 dalvikvm "Could not find class 'android.content.SyncRequest$Builder', referenced from method com.rowland.sync.TweetHashTracerSyncAdapter.configurePeriodicSync" 12481 217
+Error "2015-06-16 17:35:36.735929" 12481 dalvikvm "Could not find class 'android.content.SyncRequest$Builder', referenced from method com.rowland.hashtrace.sync.TweetHashTracerSyncAdapter.configurePeriodicSync" 12481 217
 Warning "2015-06-16 17:35:36.745929" 12481 dalvikvm "VFY: unable to resolve new-instance 70 (Landroid/content/SyncRequest$Builder;) in Lcom/rowland/sync/TweetHashTracerSyncAdapter;" 12481 218
 Debug "2015-06-16 17:35:36.745929" 12481 dalvikvm "VFY: replacing opcode 0x22 at 0x0011" 12481 219
 Debug "2015-06-16 17:35:36.745929" 12481 dalvikvm "VFY: dead code 0x0013-0026 in Lcom/rowland/sync/TweetHashTracerSyncAdapter;.configurePeriodicSync (Landroid/content/Context;II)V" 12481 220

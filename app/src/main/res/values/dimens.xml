@@ -1,9 +1,35 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+
     <dimen name="tab_padding_horizontal">12dp</dimen>
     <dimen name="config_prefListPopupWindowWidth">150dp</dimen>
-    <dimen name="empty_text_viewPadding">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+    <dimen name="tweet_item_padding_top_bottom">0dp</dimen>
+    <dimen name="tweet_item_padding_left_right">10dp</dimen>
+    <dimen name="tweet_item_fav_padding_left_right">3dp</dimen>
+    <dimen name="tweet_item_margin">5dp</dimen>
+    <dimen name="tweet_item_selected_marginLeftRight">6dp</dimen>
+    <dimen name="tweet_item_selected_marginTopBottom">6dp</dimen>
+    <dimen name="tweet_item_corner_radius">3dp</dimen>
+    <dimen name="tweet_item_border_width">1dp</dimen>
+    <dimen name="tweet_item_picture_marginTopBottom">15dp</dimen>
+    <dimen name="tweet_item_status_pad_left_right">10dp</dimen>
+    <dimen name="tweet_item_status_pad_top">1dp</dimen>
+    <dimen name="tweet_item_status_padTopBottom">5dp</dimen>
+    <dimen name="empty_text_viewPadding">16dp</dimen>
+    <dimen name="tweet_item_profile_pic">50dp</dimen>
+    <dimen name="tweet_item_profile_padding">3dp</dimen>
+    <dimen name="tweet_item_profile_info_padd">10dp</dimen>
+    <dimen name="tweet_item_profile_name">15sp</dimen>
+    <dimen name="tweet_item_timestamp">13sp</dimen>
+    <dimen name="tweet_item_retweet_count">12sp</dimen>
+    <dimen name="tweet_item_favourite_count">12sp</dimen>
+    <dimen name="tweet_item_favourite_icon">20dp</dimen>
+    <dimen name="tweet_item_retweet_icon">20dp</dimen>
+    <dimen name="tweet_item_favourite">10sp</dimen>
+    <dimen name="tweet_info_padding_left_right">4dp</dimen>
 </resources>

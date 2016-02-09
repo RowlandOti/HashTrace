@@ -333,11 +333,11 @@ Debug "2015-06-16 17:51:07.568205" 2136 WindowManager "mInputFocus is not null."
 Debug "2015-06-16 17:51:07.568205" 2136 WindowManager "mInputFocus is not null." 2286 333
 Debug "2015-06-16 17:51:07.568205" 2136 WindowManager "mInputFocus is not null." 2286 334
 Debug "2015-06-16 17:51:07.573205" 2136 WindowManager "mInputFocus is not null." 2286 335
-Info "2015-06-16 17:51:07.608205" 29576 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.provider.TweetHashTracerContentProvider" 29576 336
+Info "2015-06-16 17:51:07.608205" 29576 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.hashtrace.data.provider.TweetHashTracerContentProvider" 29576 336
 Debug "2015-06-16 17:51:07.618205" 2136 WindowManager "mInputFocus is not null." 2495 337
 Debug "2015-06-16 17:51:07.618205" 2136 WindowManager "mInputFocus is not null." 2495 338
 Debug "2015-06-16 17:51:07.658205" 29576 dalvikvm "GC_CONCURRENT freed 167K, 11% free 7319K/8135K, paused 1ms+12ms, total 28ms" 29578 339
-Error "2015-06-16 17:51:07.673205" 29576 dalvikvm "Could not find class 'android.content.SyncRequest$Builder', referenced from method com.rowland.sync.TweetHashTracerSyncAdapter.configurePeriodicSync" 29576 340
+Error "2015-06-16 17:51:07.673205" 29576 dalvikvm "Could not find class 'android.content.SyncRequest$Builder', referenced from method com.rowland.hashtrace.sync.TweetHashTracerSyncAdapter.configurePeriodicSync" 29576 340
 Warning "2015-06-16 17:51:07.673205" 29576 dalvikvm "VFY: unable to resolve new-instance 70 (Landroid/content/SyncRequest$Builder;) in Lcom/rowland/sync/TweetHashTracerSyncAdapter;" 29576 341
 Debug "2015-06-16 17:51:07.673205" 29576 dalvikvm "VFY: replacing opcode 0x22 at 0x0011" 29576 342
 Debug "2015-06-16 17:51:07.673205" 29576 dalvikvm "DexOpt: unable to opt direct call 0x018b at 0x13 in Lcom/rowland/sync/TweetHashTracerSyncAdapter;.configurePeriodicSync" 29576 343
@@ -1875,7 +1875,7 @@ Warning "2015-06-16 17:51:47.498205" 2136 AlarmManager "FACTORY_ON= 0" 2147 1874
 Debug "2015-06-16 17:51:47.548205" 32230 dalvikvm "Note: class Landroid/app/ActivityManagerNative; has 155 unimplemented (abstract) methods" 32230 1875
 Debug "2015-06-16 17:51:47.578205" 32230 AndroidRuntime "Calling main entry com.android.commands.am.Am" 32230 1876
 Info "2015-06-16 17:51:47.613205" 2136 ActivityManager "Killing proc 29576:com.rowland.hashtrace/u0a147: force stop" 2494 1877
-Info "2015-06-16 17:51:47.698205" 32244 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.data.provider.TweetHashTracerContentProvider" 32244 1878
+Info "2015-06-16 17:51:47.698205" 32244 ActivityThread "Pub com.rowland.hashtrace.app: com.rowland.hashtrace.data.provider.TweetHashTracerContentProvider" 32244 1878
 Info "2015-06-16 17:51:47.733205" 32244 TestRunner "started: testApp(com.appthwack.test.AppThwackExplorerTest)" 32256 1879
 Debug "2015-06-16 17:51:47.733205" 32244 APPTHWACK "Test setup" 32256 1880
 Debug "2015-06-16 17:51:47.753205" 32244 dalvikvm "GC_CONCURRENT freed 202K, 11% free 7295K/8135K, paused 12ms+12ms, total 37ms" 32245 1881
@@ -1898,7 +1898,7 @@ Info "2015-06-16 17:51:47.788205" 1830 SurfaceFlinger "id=402(40) createSurf 0x4
 Debug "2015-06-16 17:51:47.788205" 2582 Launcher "onTrimMemory. Level: 20" 2582 1898
 Debug "2015-06-16 17:51:47.803205" 2136 WindowManager "mInputFocus is not null." 2286 1899
 Debug "2015-06-16 17:51:47.803205" 2136 WindowManager "mInputFocus is not null." 2286 1900
-Error "2015-06-16 17:51:47.833205" 32244 dalvikvm "Could not find class 'android.content.SyncRequest$Builder', referenced from method com.rowland.sync.TweetHashTracerSyncAdapter.configurePeriodicSync" 32244 1901
+Error "2015-06-16 17:51:47.833205" 32244 dalvikvm "Could not find class 'android.content.SyncRequest$Builder', referenced from method com.rowland.hashtrace.sync.TweetHashTracerSyncAdapter.configurePeriodicSync" 32244 1901
 Warning "2015-06-16 17:51:47.833205" 32244 dalvikvm "VFY: unable to resolve new-instance 70 (Landroid/content/SyncRequest$Builder;) in Lcom/rowland/sync/TweetHashTracerSyncAdapter;" 32244 1902
 Debug "2015-06-16 17:51:47.833205" 32244 dalvikvm "VFY: replacing opcode 0x22 at 0x0011" 32244 1903
 Debug "2015-06-16 17:51:47.838205" 2136 WindowManager "mInputFocus is not null." 2286 1904

@@ -939,9 +939,9 @@ Warning "2015-06-16 17:32:46.236844" 192 ActivityManager "No content provider fo
 Debug "2015-06-16 17:32:46.246844" 192 PackageParser "Scanning package: /data/app/vmdl1381832964.tmp" 219 939
 Debug "2015-06-16 17:32:48.296844" 192 PackageManager "Scanning package com.rowland.hashtrace" 219 940
 Info "2015-06-16 17:32:48.296844" 192 PackageManager "Unpacking native libraries for /data/app/com.rowland.hashtrace-1.apk" 219 941
-Debug "2015-06-16 17:32:50.386844" 192 PackageManager "Registered content provider: com.rowland.hashtrace.app, className = com.rowland.data.provider.TweetHashTracerContentProvider, isSyncable = true" 219 942
-Debug "2015-06-16 17:32:50.386844" 192 PackageManager "  Providers: com.rowland.data.provider.TweetHashTracerContentProvider" 219 943
-Debug "2015-06-16 17:32:50.386844" 192 PackageManager "  Services: com.rowland.sync.TweetHashTracerAuthenticatorService com.rowland.sync.TweetHashTracerSyncService" 219 944
+Debug "2015-06-16 17:32:50.386844" 192 PackageManager "Registered content provider: com.rowland.hashtrace.app, className = com.rowland.hashtrace.data.provider.TweetHashTracerContentProvider, isSyncable = true" 219 942
+Debug "2015-06-16 17:32:50.386844" 192 PackageManager "  Providers: com.rowland.hashtrace.data.provider.TweetHashTracerContentProvider" 219 943
+Debug "2015-06-16 17:32:50.386844" 192 PackageManager "  Services: com.rowland.hashtrace.sync.TweetHashTracerAuthenticatorService com.rowland.hashtrace.sync.TweetHashTracerSyncService" 219 944
 Debug "2015-06-16 17:32:50.386844" 192 PackageManager "  Activities: com.rowland.hashtrace.MainActivity com.rowland.hashtrace.SettingsActivity com.rowland.hashtrace.DetailsActivity" 219 945
 Info "2015-06-16 17:32:50.386844" 192 ActivityManager "Force stopping package com.rowland.hashtrace uid=10078" 214 946
 Debug "2015-06-16 17:32:50.466844" 192 PackageManager "New package installed in /data/app/com.rowland.hashtrace-1.apk" 219 947
