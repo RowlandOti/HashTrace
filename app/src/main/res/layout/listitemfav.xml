@@ -64,7 +64,7 @@
                     android:id="@+id/tweet_text_retweet_count"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/apptheme_color"
+                    android:textColor="@color/apptheme_accent_teal"
                     android:textSize="@dimen/tweet_item_retweet_count" />
             </LinearLayout>
 
@@ -79,7 +79,7 @@
                     android:id="@+id/tweet_fav"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/apptheme_color"
+                    android:textColor="@color/apptheme_accent_teal"
                     android:textSize="@dimen/tweet_item_favourite" />
             </LinearLayout>
         </LinearLayout>

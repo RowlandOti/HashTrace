@@ -2,34 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
-    <com.baoyz.swipemenulistview.SwipeMenuListView
-        android:id="@android:id/list"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_marginBottom="4dp"
-        android:layout_marginTop="0dp"
-        android:background="@android:color/transparent"
-        android:cacheColorHint="@android:color/transparent"
-        android:divider="#CCCCCC"
-        android:dividerHeight="1dp"
-        android:paddingLeft="2dp" >
-    </com.baoyz.swipemenulistview.SwipeMenuListView>
-    <!-- Empty ListView-->
-    <TextView
-        android:id="@+id/listview_tweet_empty"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:paddingBottom="@dimen/empty_text_viewPadding"
-        android:paddingLeft="@dimen/empty_text_viewPadding"
-        android:paddingRight="@dimen/empty_text_viewPadding"
-        android:paddingTop="@dimen/empty_text_viewPadding"
-        android:text="@string/empty_tweet_list"
-        android:visibility="gone">
+    <include
+        android:id="@+id/list_view"
+        layout="@layout/inc_swipable_list" />
 
-    </TextView>
+    <include
+        android:id="@+id/empty_view"
+        layout="@layout/inc_empty_textview" />
 
 </RelativeLayout>

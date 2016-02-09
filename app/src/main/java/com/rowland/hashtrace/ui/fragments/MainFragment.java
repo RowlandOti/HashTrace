@@ -58,7 +58,7 @@ public class MainFragment extends Fragment {
     private int[] ICONS = {R.drawable.ic_action_home, R.drawable.ic_action_labels, R.drawable.ic_action_graph};
 
     public MainFragment() {
-        setRetainInstance(true);
+
     }
 
     // TODO: Rename and change types of parameters
@@ -73,7 +73,8 @@ public class MainFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        // Don't destroy fragment across orientation change
+        setRetainInstance(true);
     }
 
     // Create the view for this fragment

@@ -105,7 +105,7 @@ public class MainActivity extends BaseToolBarActivity implements MainFragment.on
 
         MainFragment fragment  = MainFragment.newInstance(args);
 
-        ft.add(R.id.fragment_container, fragment);
+        ft.replace(R.id.fragment_container, fragment);
         ft.commit();
     }
 

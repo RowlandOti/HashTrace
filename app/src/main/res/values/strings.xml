@@ -7,7 +7,7 @@
     <string name="action_notification" translatable="false">Notification</string>
     <string name="action_refresh" translatable="false">Refresh</string>
     <string name="action_share" translatable="false">Share</string>
-    <string name="action_drawflow" translatable="false">Drawer</string>
+    <string name="action_drawoverflow" translatable="false">Drawer</string>
     <string name="search_hint" translatable="false">Username</string>
     <string name="add_favr" translatable="false">Added to Favorites</string>
     <string name="remove_favr" translatable="false">Removed from Favorites</string>

@@ -119,10 +119,9 @@ public class GraphFragment extends Fragment implements LoaderCallbacks<Cursor> {
 	{
 		super.onCreateOptionsMenu(menu, inflater);
 		// Clear old menu.
-		//menu.clear();
+		menu.clear();
 		// Inflate new menu.
 		inflater.inflate(R.menu.menu_graphfragment, menu);
-
 	}
 
 	@Override
@@ -138,7 +137,6 @@ public class GraphFragment extends Fragment implements LoaderCallbacks<Cursor> {
 			{
 				return super.onOptionsItemSelected(item);
 			}
-
 		}
 	}
 

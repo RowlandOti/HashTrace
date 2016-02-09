@@ -97,26 +97,26 @@ dependencies {
     compile appDependencies.supportAppCompatV7
     compile appDependencies.supportCardView
     compile appDependencies.supportDesign
-    compile appDependencies.supportRecyclerView
+    //compile appDependencies.supportRecyclerView
 
     compile appDependencies.butterKnife
-    compile appDependencies.rxAndroid
-    compile appDependencies.rxJava
+    //compile appDependencies.rxAndroid
+    //compile appDependencies.rxJava
 
-    compile appDependencies.retrofit
-    compile appDependencies.retrofitConverterGson
+    //compile appDependencies.retrofit
+    //compile appDependencies.retrofitConverterGson
     compile appDependencies.twitter4j
 
-    compile appDependencies.activeAndroid
+    //compile appDependencies.activeAndroid
 
-    compile appDependencies.facebookStetho
-    compile appDependencies.facebookStethoOkhttp
-    compile appDependencies.okHttpLoggingInterceptor
+    //compile appDependencies.facebookStetho
+    //compile appDependencies.facebookStethoOkhttp
+    //compile appDependencies.okHttpLoggingInterceptor
     compile appDependencies.crashlytics
 
-    compile appDependencies.facebookFresco
-    compile appDependencies.picasso
+    //compile appDependencies.facebookFresco
+    //compile appDependencies.picasso
 
-    compile appDependencies.wasabeefVersion
+    //compile appDependencies.wasabeefVersion
 }
 

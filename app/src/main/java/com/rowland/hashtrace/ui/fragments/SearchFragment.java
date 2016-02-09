@@ -310,7 +310,7 @@ public class SearchFragment extends ListFragment implements LoaderManager.Loader
 
     public void updateEmptyView()
     {
-        TextView emptyTextView = (TextView) getView().findViewById(R.id.listview_tweet_empty);
+        TextView emptyTextView = (TextView) getView().findViewById(R.id.empty_text_view);
 
         if(mTweetListAdapter.getCount() == 0)
         {

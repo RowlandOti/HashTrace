@@ -2,13 +2,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.rowland.fragments.DetailsFragment">
+    tools:context="com.rowland.hashtrace.ui.fragments.DetailsFragment">
 
     <!-- in a real application you should use styles and dimens... -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/apptheme_color_grey"
+        android:background="@color/apptheme_grey"
         android:orientation="vertical">
 
         <LinearLayout
@@ -139,7 +139,7 @@
                             android:id="@+id/tweet_text_favourite_count"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/apptheme_color"
+                            android:textColor="@color/apptheme_accent_teal"
                             android:textSize="@dimen/tweet_item_favourite_count" />
                     </LinearLayout>
 
@@ -160,7 +160,7 @@
                             android:id="@+id/tweet_text_retweet_count"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/apptheme_color"
+                            android:textColor="@color/apptheme_accent_teal"
                             android:textSize="@dimen/tweet_item_retweet_count" />
                     </LinearLayout>
 
@@ -177,7 +177,7 @@
                             android:paddingLeft="@dimen/tweet_info_padding_left_right"
                             android:paddingRight="@dimen/tweet_info_padding_left_right"
                             android:text="Favoured"
-                            android:textColor="@color/apptheme_color"
+                            android:textColor="@color/apptheme_accent_teal"
                             android:textSize="@dimen/tweet_item_retweet_count" />
 
                         <TextView
@@ -186,7 +186,7 @@
                             android:layout_height="wrap_content"
                             android:paddingLeft="@dimen/tweet_info_padding_left_right"
                             android:paddingRight="@dimen/tweet_info_padding_left_right"
-                            android:textColor="@color/apptheme_color"
+                            android:textColor="@color/apptheme_accent_teal"
                             android:textSize="@dimen/tweet_item_retweet_count" />
 
                         <TextView
@@ -194,7 +194,7 @@
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
                             android:paddingLeft="@dimen/tweet_info_padding_left_right"
-                            android:textColor="@color/apptheme_color_grey"
+                            android:textColor="@color/apptheme_accent_teal"
                             android:textSize="@dimen/tweet_item_timestamp" />
 
                     </LinearLayout>

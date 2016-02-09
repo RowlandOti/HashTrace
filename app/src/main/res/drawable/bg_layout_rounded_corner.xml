@@ -5,13 +5,13 @@
     android:shape="rectangle" >
 
     <!-- view background color -->
-    <solid android:color="@color/apptheme_color_white" >
+    <solid android:color="@color/apptheme_white" >
     </solid>
 
     <!-- view border color and width -->
     <stroke
         android:width="@dimen/tweet_item_border_width"
-        android:color="@color/apptheme_color_grey_border" >
+        android:color="@color/apptheme_grey_border" >
     </stroke>
 
     <!-- Here is the corner radius -->

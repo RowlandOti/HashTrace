@@ -233,10 +233,9 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 	{
 		super.onCreateOptionsMenu(menu, inflater);
 		// Clear old menu.
-		//menu.clear();
+		menu.clear();
 		// Inflate new menu.
 		inflater.inflate(R.menu.menu_favlistfragment, menu);
-
 	}
 
 	@Override
@@ -351,7 +350,7 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 
 	public void updateEmptyView()
 	{
-		TextView emptyTextView = (TextView) getView().findViewById(R.id.listview_tweet_empty);
+		TextView emptyTextView = (TextView) getView().findViewById(R.id.empty_text_view);
 
 		if(mTweetFavListAdapter.getCount() == 0)
 		{
