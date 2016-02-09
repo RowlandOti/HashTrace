@@ -1,5 +1,5 @@
 # HashTrace
-This is my final project for the Udacity - Developing Android Apps: Android Fundamentals . 
+This is my final Capstone project for the Udacity - Android Developer Nanodegree . 
 
 HasTrace is an android application that enables users to track down tweets with specific hashtags, 
 from specific users and specific time span in a particular order. Users can query for the tweets 
