@@ -11,7 +11,7 @@ ext {
     // Use - Data & network flow analytics/debugging support
     stethoVersion = '1.2.0'
     okhttpVersion = '2.6.0'
-    crashlyticsVersion = '2.4.0@aar'
+    crashlyticsVersion = '2.5.5@aar'
     // Use - Rest API support
     rxAndroidVersion = '0.25.0'
     rxJavaVersion = '1.0.10'
@@ -64,7 +64,8 @@ ext {
             supportRecyclerView : "com.android.support:recyclerview-v7:$supportLibraryVersion",
             facebookStetho      : "com.facebook.stetho:stetho:$stethoVersion",
             facebookStethoOkhttp: "com.facebook.stetho:stetho-okhttp:$stethoVersion",
-            activeAndroid       : "com.michaelpardo:activeandroid:$activeAndroidVersion",]
+            activeAndroid       : "com.michaelpardo:activeandroid:$activeAndroidVersion",
+            supportDesign     : "com.android.support:design:$supportLibraryVersion",]
 
     helloChartsDependencies = [
 

@@ -1,4 +1,4 @@
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ /*
   ~  * Copyright (c) 2016 Oti Rowland
   ~  *
@@ -17,22 +17,15 @@
   ~  */
   -->
 
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/movie_container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true">
 
-    <include
-        android:id="@+id/movie_detail_appbar"
-        layout="@layout/inc_tweet_detail_appbar" />
+<android.support.design.widget.FloatingActionButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.App.FloatingActionButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_margin="@dimen/fab_margin"
+    android:clickable="true"
+    app:layout_behavior="com.rowland.common.ui.behaviours.ScrollAwareFloatingActionButtonBehavior" />
 
-    <include layout="@layout/inc_tweet_detail" />
-
-    <include
-        android:id="@+id/favorite_fab"
-        layout="@layout/inc_fav_floating_button" />
-
-
-</android.support.design.widget.CoordinatorLayout>
 

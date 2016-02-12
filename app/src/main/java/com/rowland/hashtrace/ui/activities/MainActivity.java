@@ -18,6 +18,7 @@
  */
 
 package com.rowland.hashtrace.ui.activities;
+
 import android.app.SearchManager;
 import android.content.ComponentName;
 import android.content.Context;
@@ -26,13 +27,11 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.MenuItemCompat;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.crashlytics.android.Crashlytics;
 import com.rowland.common.ui.activities.BaseToolBarActivity;
 import com.rowland.hashtrace.R;
 import com.rowland.hashtrace.sync.TweetHashTracerSyncAdapter;
@@ -40,8 +39,6 @@ import com.rowland.hashtrace.ui.fragments.DetailsFragment;
 import com.rowland.hashtrace.ui.fragments.MainFragment;
 import com.rowland.hashtrace.ui.fragments.subfragment.FavouriteListFragment;
 import com.rowland.hashtrace.ui.fragments.subfragment.TweetListFragment;
-
-
 
 
 public class MainActivity extends BaseToolBarActivity implements MainFragment.onMainFragmentItemSelectedCallback, TweetListFragment.onTweetItemSelectedCallback, FavouriteListFragment.onFavouriteItemSelectedCallback{
