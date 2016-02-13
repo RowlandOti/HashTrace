@@ -35,10 +35,11 @@ import android.view.MenuItem;
 import com.rowland.common.ui.activities.BaseToolBarActivity;
 import com.rowland.hashtrace.R;
 import com.rowland.hashtrace.sync.TweetHashTracerSyncAdapter;
-import com.rowland.hashtrace.ui.fragments.DetailsFragment;
+import com.rowland.hashtrace.ui.fragments.DetailFragment;
 import com.rowland.hashtrace.ui.fragments.MainFragment;
 import com.rowland.hashtrace.ui.fragments.subfragment.FavouriteListFragment;
 import com.rowland.hashtrace.ui.fragments.subfragment.TweetListFragment;
+//import io.fabric.sdk.android.Fabric;
 
 
 public class MainActivity extends BaseToolBarActivity implements MainFragment.onMainFragmentItemSelectedCallback, TweetListFragment.onTweetItemSelectedCallback, FavouriteListFragment.onFavouriteItemSelectedCallback{
@@ -52,6 +53,8 @@ public class MainActivity extends BaseToolBarActivity implements MainFragment.on
         super.onCreate(savedInstanceState);
         //Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_main);
+        // Use Stetho for data analytics
+        initStetho();
 
         if (findViewById(R.id.detail_container) != null)
         {
@@ -88,7 +91,7 @@ public class MainActivity extends BaseToolBarActivity implements MainFragment.on
 
         FragmentTransaction ft = fm.beginTransaction();
 
-        DetailsFragment fragment = DetailsFragment.newInstance(args);
+        DetailFragment fragment = DetailFragment.newInstance(args);
 
         ft.replace(R.id.detail_container, fragment)
         .commit();
@@ -174,14 +177,14 @@ public class MainActivity extends BaseToolBarActivity implements MainFragment.on
             // In two-pane mode, show the detail view in this activity by adding or replacing the
             // detail fragment using a fragment transaction.
             Bundle args = new Bundle();
-            //args.putString(DetailsFragment.ID_KEY, date);
-            args.putInt(DetailsFragment.ID_KEY, id);
+            //args.putString(DetailFragment.ID_KEY, date);
+            args.putInt(DetailFragment.ID_KEY, id);
 
             showDetailFragment(args);
         }
         else
         {
-            Intent intent = new Intent(this, DetailsActivity.class).putExtra(DetailsFragment.ID_KEY, id);
+            Intent intent = new Intent(this, DetailActivity.class).putExtra(DetailFragment.ID_KEY, id);
             startActivity(intent);
         }
     }

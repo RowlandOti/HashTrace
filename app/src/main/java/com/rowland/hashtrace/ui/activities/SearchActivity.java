@@ -29,13 +29,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
 
 
 import com.rowland.common.ui.activities.BaseToolBarActivity;
 import com.rowland.hashtrace.R;
-import com.rowland.hashtrace.ui.fragments.DetailsFragment;
+import com.rowland.hashtrace.ui.fragments.DetailFragment;
 import com.rowland.hashtrace.ui.fragments.SearchFragment;
 
 
@@ -122,14 +121,14 @@ public class SearchActivity extends BaseToolBarActivity implements SearchFragmen
 			// In two-pane mode, show the detail view in this activity by adding or replacing the
 			// detail fragment using a fragment transaction.
 			Bundle args = new Bundle();
-			//args.putString(DetailsFragment.ID_KEY, date);
-			args.putInt(DetailsFragment.ID_KEY, id);
+			//args.putString(DetailFragment.ID_KEY, date);
+			args.putInt(DetailFragment.ID_KEY, id);
 
 			showDetailFragment(args);
 		}
 		else
 		{*/
-			Intent intent = new Intent(this, DetailsActivity.class).putExtra(DetailsFragment.ID_KEY, id);
+			Intent intent = new Intent(this, DetailActivity.class).putExtra(DetailFragment.ID_KEY, id);
 			startActivity(intent);
 		//}
 	}

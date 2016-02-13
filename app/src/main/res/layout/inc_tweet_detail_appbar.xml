@@ -33,26 +33,36 @@
         app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
         <ImageView
-            android:id="@+id/movie_detail_backdrop_image_view"
+            android:id="@+id/tweet_detail_backdrop_image_view"
             android:layout_width="match_parent"
-            android:fitsSystemWindows="true"
             android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
             android:scaleType="centerCrop"
             app:layout_collapseMode="parallax" />
 
-        <ImageView
-            android:id="@+id/movie_detail_poster_image_view"
-            android:layout_width="70dp"
-            android:layout_height="90dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="left|bottom"
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="30dp"
-
             android:layout_marginStart="30dp"
+            android:background="@drawable/border_rectangle_unsolid_orange"
             android:fitsSystemWindows="true"
+            android:orientation="vertical"
             android:transitionName="posterImageView"
-            app:layout_collapseMode="parallax"
-            />
+            app:layout_collapseMode="parallax">
+
+            <ImageView
+                android:id="@+id/tweet_detail_profile_image_view"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingBottom="@dimen/tweet_item_profile_padding"
+                android:paddingLeft="@dimen/tweet_item_profile_padding"
+                android:paddingRight="@dimen/tweet_item_profile_padding"
+                android:paddingTop="@dimen/tweet_item_profile_padding"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"

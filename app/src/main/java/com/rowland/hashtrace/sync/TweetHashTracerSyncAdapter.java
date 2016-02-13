@@ -238,6 +238,7 @@ public class TweetHashTracerSyncAdapter extends AbstractThreadedSyncAdapter {
 			int tweet_text_mentions_count = tweet.getTweetMentionsCount();
 			String user_name = tweet.getUserName();
 			String user_image_url = tweet.getUserImageUrl();
+			String user_cover_url = tweet.getUserCoverUrl();
 			String user_location = tweet.getUserLocation();
 			String user_description = tweet.getUserDescription();
 
@@ -252,6 +253,7 @@ public class TweetHashTracerSyncAdapter extends AbstractThreadedSyncAdapter {
 			tweetValues.put(TweetEntry.COLUMN_TWEET_TEXT_MENTIONS_COUNT, tweet_text_mentions_count);
 			tweetValues.put(TweetEntry.COLUMN_TWEET_USERNAME, user_name);
 			tweetValues.put(TweetEntry.COLUMN_TWEET_USERNAME_IMAGE_URL, user_image_url);
+			tweetValues.put(TweetEntry.COLUMN_TWEET_USERNAME_COVER_URL, user_cover_url);
 			tweetValues.put(TweetEntry.COLUMN_TWEET_USERNAME_LOCATION, user_location);
 			tweetValues.put(TweetEntry.COLUMN_TWEET_USERNAME_DESCRIPTION, user_description);
 

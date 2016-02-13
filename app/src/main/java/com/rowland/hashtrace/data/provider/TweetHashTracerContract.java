@@ -140,6 +140,8 @@ public class TweetHashTracerContract {
 		public static final String COLUMN_TWEET_USERNAME = "tweet_username";
 		// profile image url
 		public static final String COLUMN_TWEET_USERNAME_IMAGE_URL = "tweet_username_image_url";
+		// profile cover url
+		public static final String COLUMN_TWEET_USERNAME_COVER_URL = "tweet_username_cover_url";
         // User location
 		public static final String COLUMN_TWEET_USERNAME_LOCATION = "tweet_username_location";
 		// User Description

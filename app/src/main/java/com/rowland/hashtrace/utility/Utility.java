@@ -28,6 +28,7 @@ import android.net.NetworkInfo;
 import android.preference.PreferenceManager;
 import android.text.format.DateUtils;
 import android.util.DisplayMetrics;
+import android.util.Log;
 
 import com.rowland.hashtrace.R;
 import com.rowland.hashtrace.data.provider.TweetHashTracerContract;
@@ -54,6 +55,9 @@ import twitter4j.conf.ConfigurationBuilder;
  *
  */
 public class Utility {
+
+	// Logging identifier for class
+	private static final String LOG_TAG = Utility.class.getSimpleName();
 
 	// Format used for storing dates in the database. ALso used for converting
 	// those strings back into date objects for comparison/processing.
@@ -280,11 +284,13 @@ public class Utility {
 
 		String user_image_url = user.getBiggerProfileImageURL();
 
+		String user_cover_url = user.getProfileBackgroundImageURL();
+
 		String user_location = user.getLocation();
 
 		String user_description = user.getDescription();
 
-		Tweet tweet = new Tweet(tweet_id, tweet_text, tweet_text_date, tweet_retweet_count,tweet_favourite_count,tweet_mentions_count, user_name, user_image_url, user_location, user_description);
+		Tweet tweet = new Tweet(tweet_id, tweet_text, tweet_text_date, tweet_retweet_count,tweet_favourite_count,tweet_mentions_count, user_name, user_image_url, user_location, user_description, user_cover_url);
 
 		return tweet;
 	}
