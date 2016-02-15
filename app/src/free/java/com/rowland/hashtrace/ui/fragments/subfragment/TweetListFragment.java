@@ -49,10 +49,13 @@ import com.baoyz.swipemenulistview.SwipeMenuCreator;
 import com.baoyz.swipemenulistview.SwipeMenuItem;
 import com.baoyz.swipemenulistview.SwipeMenuListView;
 import com.baoyz.swipemenulistview.SwipeMenuListView.OnMenuItemClickListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.State;
 import com.handmark.pulltorefresh.library.PullToRefreshSwipeMenuListView;
 import com.handmark.pulltorefresh.library.extras.SoundPullEventListener;
+import com.rowland.hashtrace.BuildConfig;
 import com.rowland.hashtrace.R;
 import com.rowland.hashtrace.data.provider.TweetHashTracerContract;
 import com.rowland.hashtrace.data.provider.TweetHashTracerContract.HashTagEntry;
@@ -120,6 +123,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
     private SwipeMenuCreator creator;
     private String mHashTag;
     private ListView mListView;
+    private  AdView mAdView;
     private int mPosition = ListView.INVALID_POSITION;
     private Menu optionsMenu;
 
@@ -136,7 +140,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
         // Clear old menu.
-        menu.clear();
+        // menu.clear();
         // Inflate new menu.
         inflater.inflate(R.menu.tweet_list_fragment, menu);
         this.optionsMenu = menu;
@@ -226,6 +230,8 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 
         mListView = (SwipeMenuListView) rootView.findViewById(android.R.id.list);
 
+        mAdView = (AdView) rootView.findViewById(R.id.adView);
+
 
         ViewGroup parent = (ViewGroup) mListView.getParent();
         int lvIndex = parent.indexOfChild(mListView);
@@ -306,6 +312,20 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
         soundListener.addSoundEvent(State.REFRESHING, R.raw.refreshing_sound_mp3);
         mPullToRefreshListView.setOnPullEventListener(soundListener);
         mPullToRefreshListView.setCloseInterpolator(new BounceInterpolator());
+
+        // Set up thye ads
+        // Display ads only in free version
+        if (!BuildConfig.IS_PRO_VERSION) {
+            // Create an ad request. Check logcat output for the hashed device ID to get test ads on a physical device. e.g.
+            // "Use AdRequest.Builder.addTestDevice("ABCDEF012345") to get test ads on this device."
+            AdRequest adRequest = new AdRequest.Builder()
+                    .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                    .build();
+            mAdView.loadAd(adRequest);
+        } else {
+            // Hide ads in pro version
+            mAdView.setVisibility(View.GONE);
+        }
 
         // If there's instance state, mine it for useful information. The end-goal here is that
         // the user never knows that turning their device sideways does crazy lifecycle related things.

@@ -101,4 +101,7 @@
     <string name="empty_tweet_list_no_network">No Tweet Information Available. The Network is Not Available to Fetch Tweets.</string>
     <string name="empty_tweet_list_none_found">No such Tweet was found </string>
 
+    <!--  Ads -->
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
 </resources>

@@ -33,6 +33,7 @@
         android:paddingRight="@dimen/empty_text_viewPadding"
         android:paddingTop="@dimen/empty_text_viewPadding"
         android:text="@string/empty_tweet_list"
-        android:visibility="gone" />
+        android:visibility="gone"
+         />
 
 </LinearLayout>

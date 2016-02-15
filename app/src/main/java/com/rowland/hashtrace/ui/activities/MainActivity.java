@@ -118,9 +118,9 @@ public class MainActivity extends BaseToolBarActivity implements MainFragment.on
 
         SearchManager SManager =  (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         MenuItem searchMenuItem = menu.findItem(R.id.action_search);
-        SearchView mSearchView = (SearchView) MenuItemCompat.getActionView(searchMenuItem);
+        /*SearchView mSearchView = (SearchView) MenuItemCompat.getActionView(searchMenuItem);
         mSearchView.setSearchableInfo(SManager.getSearchableInfo(new ComponentName(getApplicationContext(), SearchActivity.class)));
-        mSearchView.setIconifiedByDefault(true);
+        mSearchView.setIconifiedByDefault(true);*/
 
         return super.onCreateOptionsMenu(menu);
 

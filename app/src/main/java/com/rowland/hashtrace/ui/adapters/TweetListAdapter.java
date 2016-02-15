@@ -30,6 +30,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdListener;
 import com.rowland.hashtrace.R;
 import com.rowland.hashtrace.ui.fragments.subfragment.TweetListFragment;
 import com.rowland.hashtrace.utility.ImageManager;
@@ -53,7 +54,7 @@ public class TweetListAdapter extends CursorAdapter {
 	/**
 	 * Cache of the children views for a tweet list item.
 	 */
-	 static class ViewHolder {
+	public static class ViewHolder {
 		public final TextView user_name;
 		public final TextView tweet_text;
 		public final TextView tweet_text_date;
