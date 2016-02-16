@@ -33,6 +33,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
+import com.rowland.hashtrace.HashTraceApplication;
 import com.rowland.hashtrace.data.provider.TweetHashTracerContract;
 import com.rowland.hashtrace.data.provider.TweetHashTracerContract.HashTagEntry;
 import com.rowland.hashtrace.data.provider.TweetHashTracerContract.TweetEntry;
@@ -60,6 +63,7 @@ import lecho.lib.hellocharts.view.ColumnChartView;
  */
 public class GraphFragment extends Fragment implements LoaderCallbacks<Cursor> {
 
+	public static final String LOG_TAG = GraphFragment.class.getSimpleName();
 	// These indices are tied to TWEET_COLUMNS and must match for projection
 	public static final int COL_ID = 0;
 	public static final int COL_HASHTAG_KEY = 1;
@@ -88,6 +92,7 @@ public class GraphFragment extends Fragment implements LoaderCallbacks<Cursor> {
 			HashTagEntry.COLUMN_HASHTAG_NAME 				//7
 	};
 	private ColumnChartView mColumnChartView;
+	private Tracker mTracker;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState)
@@ -95,6 +100,9 @@ public class GraphFragment extends Fragment implements LoaderCallbacks<Cursor> {
 		super.onCreate(savedInstanceState);
 		// Add this line in order for this fragment to handle menu events.
 		setHasOptionsMenu(true);
+		// Obtain the shared Tracker instance.
+		HashTraceApplication application = (HashTraceApplication) getActivity().getApplication();
+		mTracker = application.getDefaultTracker();
 	}
 
 	@Override
@@ -138,6 +146,13 @@ public class GraphFragment extends Fragment implements LoaderCallbacks<Cursor> {
 				return super.onOptionsItemSelected(item);
 			}
 		}
+	}
+
+	@Override
+	public void onResume() {
+		super.onResume();
+		mTracker.setScreenName(LOG_TAG);
+		mTracker.send(new HitBuilders.ScreenViewBuilder().build());
 	}
 
 	@Override

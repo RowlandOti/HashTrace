@@ -31,6 +31,7 @@ import com.rowland.hashtrace.R;
 import com.rowland.hashtrace.data.provider.TweetHashTracerContract;
 import com.rowland.hashtrace.utility.EDbDateLimit;
 import com.rowland.hashtrace.utility.Utility;
+import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
 import java.util.Date;
@@ -152,7 +153,9 @@ public class HashTraceWidgetRemoteViewService extends android.widget.RemoteViews
 
                 Picasso.with(getApplicationContext())
                         .load(image_url)
-                        .into(views, R.id.profile_pic, null);
+                        .into(views, R.id.profile_pic, new Callback() {
+
+                        });
 
                 views.setImageViewResource(R.id.icon_favourite, R.drawable.ic_action_favorites);
                 views.setImageViewResource(R.id.icon_retweet, R.drawable.ic_action_retweet);

@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'io.fabric'
+apply plugin: 'com.google.gms.google-services'
 
 buildscript {
     repositories {
@@ -72,7 +73,7 @@ android {
     }
     buildTypes {
         debug {
-            applicationIdSuffix ".debug"
+            // applicationIdSuffix ".debug"
             // Show the logs when debugging
             buildConfigField "Boolean", "IS_DEBUG_MODE", "true"
         }
@@ -113,6 +114,7 @@ dependencies {
     //compile appDependencies.facebookStethoOkhttp
     //compile appDependencies.okHttpLoggingInterceptor
     compile appDependencies.crashlytics
+    compile appDependencies.analyticsData
     // Use - AdMob support
     freeCompile appDependencies.adMob
 

@@ -26,6 +26,7 @@
         android:id="@+id/wdgt_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:divider="@color/apptheme_divider"
         android:dividerHeight="@dimen/wdgt_list_divider_height" />
 
     <!-- Empty TextView-->

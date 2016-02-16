@@ -48,6 +48,9 @@ import com.baoyz.swipemenulistview.SwipeMenuCreator;
 import com.baoyz.swipemenulistview.SwipeMenuItem;
 import com.baoyz.swipemenulistview.SwipeMenuListView;
 import com.baoyz.swipemenulistview.SwipeMenuListView.OnMenuItemClickListener;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
+import com.rowland.hashtrace.HashTraceApplication;
 import com.rowland.hashtrace.ui.adapters.TweetFavListAdapter;
 import com.rowland.hashtrace.data.provider.TweetHashTracerContract;
 import com.rowland.hashtrace.data.provider.TweetHashTracerContract.HashTagEntry;
@@ -68,6 +71,7 @@ import java.util.Date;
  */
 public class FavouriteListFragment extends ListFragment implements LoaderCallbacks<Cursor> {
 
+	public static final String LOG_TAG = FavouriteListFragment.class.getSimpleName();
 	// These indices are tied to TWEET_COLUMNS and must match for projection
 	public static final int COL_ID = 0;
 	public static final int COL_HASHTAG_KEY = 1;
@@ -108,6 +112,7 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 	private SwipeMenuCreator creator;
 	private int mPosition = ListView.INVALID_POSITION;
 	private String mHashTag;
+	private Tracker mTracker;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState)
@@ -115,6 +120,9 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 		super.onCreate(savedInstanceState);
 		// Add this line in order for this fragment to handle menu events.
 		setHasOptionsMenu(true);
+		// Obtain the shared Tracker instance.
+		HashTraceApplication application = (HashTraceApplication) getActivity().getApplication();
+		mTracker = application.getDefaultTracker();
 	}
 
 	@Override
@@ -226,6 +234,8 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 	public void onResume()
 	{
 		super.onResume();
+		mTracker.setScreenName(LOG_TAG);
+		mTracker.send(new HitBuilders.ScreenViewBuilder().build());
 	}
 
 	@Override
@@ -251,7 +261,6 @@ public class FavouriteListFragment extends ListFragment implements LoaderCallbac
 			{
 				return super.onOptionsItemSelected(item);
 			}
-
 		}
 	}
 

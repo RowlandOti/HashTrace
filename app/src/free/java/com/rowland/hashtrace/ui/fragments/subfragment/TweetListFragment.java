@@ -51,11 +51,14 @@ import com.baoyz.swipemenulistview.SwipeMenuListView;
 import com.baoyz.swipemenulistview.SwipeMenuListView.OnMenuItemClickListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.State;
 import com.handmark.pulltorefresh.library.PullToRefreshSwipeMenuListView;
 import com.handmark.pulltorefresh.library.extras.SoundPullEventListener;
 import com.rowland.hashtrace.BuildConfig;
+import com.rowland.hashtrace.HashTraceApplication;
 import com.rowland.hashtrace.R;
 import com.rowland.hashtrace.data.provider.TweetHashTracerContract;
 import com.rowland.hashtrace.data.provider.TweetHashTracerContract.HashTagEntry;
@@ -121,6 +124,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
 
     private PullToRefreshSwipeMenuListView mPullToRefreshListView;
     private AdViewAdapter mTweetListAdapter;
+    private Tracker mTracker;
     private SwipeMenuCreator creator;
     private String mHashTag;
     private ListView mListView;
@@ -132,7 +136,9 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
         super.onCreate(savedInstanceState);
         // Add this line in order for this fragment to handle menu events.
         setHasOptionsMenu(true);
-
+        // Obtain the shared Tracker instance.
+        HashTraceApplication application = (HashTraceApplication) getActivity().getApplication();
+        mTracker = application.getDefaultTracker();
 
     }
 
@@ -333,6 +339,8 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
         if (mHashTag != null && !mHashTag.equals(Utility.getPreferredHashTag(getActivity()))) {
             getLoaderManager().restartLoader(TWEETLIST_LOADER, null, this);
         }
+        mTracker.setScreenName(LOG_TAG);
+        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
     }
 
     @Override
