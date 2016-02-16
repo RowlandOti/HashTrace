@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wdgt"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/wdgt_bar_height"
+    android:background="@color/apptheme_primary_grey_light"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:paddingLeft="@dimen/list_padding"
+        android:paddingStart="@dimen/list_padding"
+        android:text="@string/wdgt_scores_title"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/white" />
+</LinearLayout>

@@ -62,6 +62,7 @@ import com.rowland.hashtrace.data.provider.TweetHashTracerContract.HashTagEntry;
 import com.rowland.hashtrace.data.provider.TweetHashTracerContract.TweetEntry;
 import com.rowland.hashtrace.data.provider.TweetHashTracerContract.TweetFavEntry;
 import com.rowland.hashtrace.sync.TweetHashTracerSyncAdapter;
+import com.rowland.hashtrace.ui.adapters.AdViewAdapter;
 import com.rowland.hashtrace.ui.adapters.TweetListAdapter;
 import com.rowland.hashtrace.utility.EDbDateLimit;
 import com.rowland.hashtrace.utility.Utility;
@@ -102,8 +103,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
             // On the one hand, that's annoying. On the other, you can search
             // the tweet table using the hashtag set by the user, which is only in the Hashtag table. So the convenience is worth it.
             TweetEntry.TABLE_NAME + "." +
-
-                    TweetEntry._ID,                                //0
+            TweetEntry._ID,                                //0
             TweetEntry.COLUMN_HASHTAG_KEY,                    //1
             TweetEntry.COLUMN_TWEET_ID,                        //2
             TweetEntry.COLUMN_TWEET_TEXT,                    //3
@@ -118,12 +118,12 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
             TweetEntry.COLUMN_TWEET_FAVOURITED_STATE,        //12
             HashTagEntry.COLUMN_HASHTAG_NAME                //13
     };
+
     private PullToRefreshSwipeMenuListView mPullToRefreshListView;
-    private TweetListAdapter mTweetListAdapter;
+    private AdViewAdapter mTweetListAdapter;
     private SwipeMenuCreator creator;
     private String mHashTag;
     private ListView mListView;
-    private  AdView mAdView;
     private int mPosition = ListView.INVALID_POSITION;
     private Menu optionsMenu;
 
@@ -185,7 +185,7 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // The ArrayAdapter will take data from a source and use it to populate the ListView it's attached to.
-        mTweetListAdapter = new TweetListAdapter(getActivity(), null, 0);
+        mTweetListAdapter = new AdViewAdapter(getActivity(), getActivity(), new TweetListAdapter(getActivity(), null, 0));
         creator = new SwipeMenuCreator() {
 
             @Override
@@ -229,9 +229,6 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
         View rootView = inflater.inflate(R.layout.fragment_tweet_list, container, false);
 
         mListView = (SwipeMenuListView) rootView.findViewById(android.R.id.list);
-
-        mAdView = (AdView) rootView.findViewById(R.id.adView);
-
 
         ViewGroup parent = (ViewGroup) mListView.getParent();
         int lvIndex = parent.indexOfChild(mListView);
@@ -313,20 +310,6 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
         mPullToRefreshListView.setOnPullEventListener(soundListener);
         mPullToRefreshListView.setCloseInterpolator(new BounceInterpolator());
 
-        // Set up thye ads
-        // Display ads only in free version
-        if (!BuildConfig.IS_PRO_VERSION) {
-            // Create an ad request. Check logcat output for the hashed device ID to get test ads on a physical device. e.g.
-            // "Use AdRequest.Builder.addTestDevice("ABCDEF012345") to get test ads on this device."
-            AdRequest adRequest = new AdRequest.Builder()
-                    .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                    .build();
-            mAdView.loadAd(adRequest);
-        } else {
-            // Hide ads in pro version
-            mAdView.setVisibility(View.GONE);
-        }
-
         // If there's instance state, mine it for useful information. The end-goal here is that
         // the user never knows that turning their device sideways does crazy lifecycle related things.
         if (savedInstanceState != null && savedInstanceState.containsKey(SELECTED_KEY)) {
@@ -334,7 +317,6 @@ public class TweetListFragment extends ListFragment implements LoaderCallbacks<C
             // perform the swapout in onLoadFinished.
             mPosition = savedInstanceState.getInt(SELECTED_KEY);
         }
-
 
         return rootView;
     }

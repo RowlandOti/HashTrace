@@ -11,21 +11,11 @@
         layout="@layout/inc_swipable_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/adView"
         android:layout_alignParentTop="true" />
 
     <include
         android:id="@+id/empty_view"
         layout="@layout/inc_empty_textview" />
-
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        ads:adSize="BANNER"
-        ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
 
 
 </RelativeLayout>

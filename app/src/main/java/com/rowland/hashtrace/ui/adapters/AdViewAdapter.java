@@ -20,11 +20,11 @@ public class AdViewAdapter extends CursorAdapter {
 
     private final Activity activity;
     private final CursorAdapter delegate;
-    private int k = 5;
+    private int k = 10;
 
     // Constructor takes in a BaseAdapter also
-    public AdViewAdapter(Context context, Cursor c, Activity activity, CursorAdapter delegate) {
-        super(context, c);
+    public AdViewAdapter(Context context, Activity activity, CursorAdapter delegate) {
+        super(context,null);
         this.activity = activity;
         this.delegate = delegate;
     }

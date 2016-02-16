@@ -43,8 +43,6 @@
         android:divider="#CCCCCC"
         android:dividerHeight="1dp"
         android:paddingLeft="2dp"></com.baoyz.swipemenulistview.SwipeMenuListView>
-
-
-
+    
 </LinearLayout>
 

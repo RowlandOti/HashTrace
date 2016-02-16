@@ -32,4 +32,11 @@
     <dimen name="tweet_item_retweet_icon">20dp</dimen>
     <dimen name="tweet_item_favourite">10sp</dimen>
     <dimen name="tweet_info_padding_left_right">4dp</dimen>
+    <!--Widget Dimension Values-->
+    <dimen name="wdgt_default_height">180dp</dimen>
+    <dimen name="wdgt_default_width">250dp</dimen>
+    <dimen name="wdgt_min_resize_width">@dimen/wdgt_default_width</dimen>
+    <dimen name="wdgt_min_resize_height">@dimen/wdgt_default_height</dimen>
+    <dimen name="wdgt_list_elevation">4dp</dimen>
+    <dimen name="wdgt_list_divider_height">15sp</dimen>
 </resources>

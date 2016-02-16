@@ -46,7 +46,6 @@ public class MainFragment extends Fragment {
     private final String LOG_TAG = MainFragment.class.getSimpleName();
 
     // ButterKnife injected views
-    @Nullable
     @Bind(R.id.toolbar)
     Toolbar mToolbar;
     @Bind(R.id.slidingTabStrips)
