@@ -107,6 +107,7 @@ public class ImageManager {
 		}
 	}
 
+
 	private void writeFile(Bitmap bmp, File f)
 	{
 		FileOutputStream out = null;

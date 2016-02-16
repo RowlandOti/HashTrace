@@ -9,6 +9,7 @@ ext {
     picassoVersion = '2.5.2'
     frescoVersion = '0.8.1'
     volleyVersion = '1.0.0'
+    universalImageLoaderVersion = '1.9.5'
     // Use - Data & network flow analytics/debugging support
     stethoVersion = '1.2.0'
     okhttpVersion = '2.6.0'
@@ -44,6 +45,8 @@ ext {
             twitter4j               : "org.twitter4j:twitter4j-core:$twitter4jCoreVersion",
 
             activeAndroid           : "com.michaelpardo:activeandroid:$activeAndroidVersion",
+
+            universalImageLoader    : "com.nostra13.universalimageloader:universal-image-loader:$universalImageLoaderVersion",
 
             facebookStetho          : "com.facebook.stetho:stetho:$stethoVersion",
             facebookStethoOkhttp    : "com.facebook.stetho:stetho-okhttp:$stethoVersion",

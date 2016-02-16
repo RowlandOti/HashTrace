@@ -42,11 +42,7 @@ public class AdViewAdapter extends CursorAdapter {
             int height = Math.round(AdSize.BANNER.getHeight() * density);
             AbsListView.LayoutParams params = new AbsListView.LayoutParams(AbsListView.LayoutParams.FILL_PARENT, height);
             adView.setLayoutParams(params);
-            //
-            AdRequest adRequest = new AdRequest.Builder()
-                    .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                    .build();
-            adView.loadAd(adRequest);
+
             // Need to set tag on the ViewHolder class
             TweetListAdapter.ViewHolder viewHolder = new TweetListAdapter.ViewHolder(adView);
             adView.setTag(viewHolder);
@@ -60,9 +56,13 @@ public class AdViewAdapter extends CursorAdapter {
 
     @Override
     public void bindView(View convertView, Context context, Cursor cursor) {
-
+        // Only show ads for AdViews
         if (convertView instanceof AdView) {
-
+            // You can load the ad
+            AdRequest adRequest = new AdRequest.Builder()
+                    .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                    .build();
+            ((AdView) convertView).loadAd(adRequest);
         } else {
             // Offload updating view items to the delegate
             delegate.bindView(convertView, context, cursor);

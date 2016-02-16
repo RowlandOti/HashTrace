@@ -70,7 +70,8 @@
                 android:maxHeight="30dip"
                 android:maxWidth="30dip"
                 android:minHeight="30dip"
-                android:minWidth="30dip" />
+                android:minWidth="30dip"
+                android:visibility="gone"/>
 
             <LinearLayout
                 android:layout_width="167dp"

@@ -120,6 +120,7 @@ dependencies {
 
     //compile appDependencies.facebookFresco
     compile appDependencies.picasso
+    compile appDependencies.universalImageLoader
 
     //compile appDependencies.wasabeefVersion
     /*compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {

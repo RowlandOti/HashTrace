@@ -286,13 +286,21 @@ public class DetailFragment extends Fragment implements LoaderManager.LoaderCall
             int tweetfav_state = data.getInt(data.getColumnIndex(TweetEntry.COLUMN_TWEET_FAVOURITED_STATE));
             if (data.getString(data.getColumnIndex(TweetEntry.COLUMN_TWEET_FAVOURITED_STATE)).equals("1")) {
                 tweet_favourite.setVisibility(View.VISIBLE);
+                updateFabDrawable(true);
             } else {
                 tweet_favourite.setVisibility(View.GONE);
+                updateFabDrawable(false);
             }
 
             String tweethash_tag = data.getString(data.getColumnIndex(HashTagEntry.COLUMN_HASHTAG_NAME));
             tweet_hash_tag.setText(tweethash_tag);
         }
+    }
+
+    // Update the Fab icon drawable
+    private void updateFabDrawable(boolean isFavourite) {
+        // Toggle drawable
+        mFavoriteFab.setImageResource(isFavourite ? R.drawable.ic_heart_red : R.drawable.ic_heart_grey);
     }
 
     @Override

@@ -38,7 +38,7 @@
     <dimen name="wdgt_min_resize_width">@dimen/wdgt_default_width</dimen>
     <dimen name="wdgt_min_resize_height">@dimen/wdgt_default_height</dimen>
     <dimen name="wdgt_list_elevation">4dp</dimen>
-    <dimen name="wdgt_list_divider_height">15sp</dimen>
+    <dimen name="wdgt_list_divider_height">1dp</dimen>
     <dimen name="wdgt_list_padding">5dp</dimen>
     <dimen name="wdgt_bar_height">50dp</dimen>
 </resources>

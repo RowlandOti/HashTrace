@@ -28,15 +28,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.RemoteViews;
 
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.ImageLoader;
-import com.rowland.common.utilities.ImageLoaderUtility;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
 import com.rowland.hashtrace.R;
 import com.rowland.hashtrace.data.provider.TweetHashTracerContract;
 import com.rowland.hashtrace.utility.EDbDateLimit;
 import com.rowland.hashtrace.utility.Utility;
-import com.squareup.picasso.Callback;
-import com.squareup.picasso.Picasso;
 
 import java.util.Date;
 
@@ -153,24 +151,26 @@ public class HashTraceWidgetRemoteViewService extends android.widget.RemoteViews
                 views.setContentDescription(R.id.profile_pic, username);
 
                 // Read tweet_image url from cursor and set Profile picture of the owner of tweet
-                String image_url = data.getString(data.getColumnIndex(TweetHashTracerContract.TweetEntry.COLUMN_TWEET_USERNAME_IMAGE_URL));
+                final String image_url = data.getString(data.getColumnIndex(TweetHashTracerContract.TweetEntry.COLUMN_TWEET_USERNAME_IMAGE_URL));
 
-                ImageLoaderUtility.getInstance(getApplicationContext()).getImageLoader()
-                        .get(image_url, new ImageLoader.ImageListener() {
+                // Create global configuration and initialize ImageLoader with this config
+                ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(getApplicationContext()).build();
+                ImageLoader imageLoader = ImageLoader.getInstance();
+                imageLoader.init(config);
 
-                            @Override
-                            public void onResponse(ImageLoader.ImageContainer imageContainer, boolean b) {
-                                Bitmap bitmap = imageContainer.getBitmap();
-                                if (bitmap != null) {
-                                    views.setImageViewBitmap(R.id.profile_pic, bitmap);
-                                }
-                            }
+                // Load image, decode it to Bitmap and return Bitmap to callback
+                // ToDo: I am suprised callback is never called. Why?
+                imageLoader.loadImage(image_url, new SimpleImageLoadingListener() {
+                    @Override
+                    public void onLoadingComplete(String imageUri, View view, Bitmap loadedBitmap) {
+                        // Do whatever you want with Bitmap
+                        if (loadedBitmap != null) {
+                            views.setImageViewBitmap(R.id.profile_pic, loadedBitmap);
+                            views.setViewVisibility(R.id.progress_bar, View.GONE);
+                        }
+                    }
+                });
 
-                            @Override
-                            public void onErrorResponse(VolleyError volleyError) {
-
-                            }
-                        });
 
                 views.setImageViewResource(R.id.icon_favourite, R.drawable.ic_action_favorites);
                 views.setImageViewResource(R.id.icon_retweet, R.drawable.ic_action_retweet);
