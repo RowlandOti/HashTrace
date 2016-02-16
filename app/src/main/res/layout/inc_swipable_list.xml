@@ -40,7 +40,7 @@
         android:background="@android:color/transparent"
         android:cacheColorHint="@android:color/transparent"
         android:choiceMode="singleChoice"
-        android:divider="apptheme_divider"
+        android:divider="@color/apptheme_divider"
         android:dividerHeight="1dp"
         android:paddingLeft="2dp"></com.baoyz.swipemenulistview.SwipeMenuListView>
     

@@ -8,6 +8,7 @@ ext {
     // Use - Image Loading support
     picassoVersion = '2.5.2'
     frescoVersion = '0.8.1'
+    volleyVersion = '1.0.0'
     // Use - Data & network flow analytics/debugging support
     stethoVersion = '1.2.0'
     okhttpVersion = '2.6.0'
@@ -70,7 +71,8 @@ ext {
             facebookStetho      : "com.facebook.stetho:stetho:$stethoVersion",
             facebookStethoOkhttp: "com.facebook.stetho:stetho-okhttp:$stethoVersion",
             activeAndroid       : "com.michaelpardo:activeandroid:$activeAndroidVersion",
-            supportDesign       : "com.android.support:design:$supportLibraryVersion",]
+            supportDesign       : "com.android.support:design:$supportLibraryVersion",
+            volley              : "com.mcxiaoke.volley:library-aar:$volleyVersion",]
 
     helloChartsDependencies = [
 

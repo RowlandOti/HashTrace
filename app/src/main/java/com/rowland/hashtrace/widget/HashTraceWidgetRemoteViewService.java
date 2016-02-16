@@ -20,6 +20,7 @@ package com.rowland.hashtrace.widget;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Binder;
 import android.util.Log;
@@ -27,6 +28,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.RemoteViews;
 
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.ImageLoader;
+import com.rowland.common.utilities.ImageLoaderUtility;
 import com.rowland.hashtrace.R;
 import com.rowland.hashtrace.data.provider.TweetHashTracerContract;
 import com.rowland.hashtrace.utility.EDbDateLimit;
@@ -115,7 +119,7 @@ public class HashTraceWidgetRemoteViewService extends android.widget.RemoteViews
                     return null;
                 }
 
-                RemoteViews views = new RemoteViews(getPackageName(), R.layout.wdgt_tweets_list_item);
+                final RemoteViews views = new RemoteViews(getPackageName(), R.layout.wdgt_tweets_list_item);
 
                 // Read tweet_text from cursor Find TextView and set tweet text on it
                 String tweet_text = data.getString(data.getColumnIndex(TweetHashTracerContract.TweetEntry.COLUMN_TWEET_TEXT));
@@ -151,10 +155,21 @@ public class HashTraceWidgetRemoteViewService extends android.widget.RemoteViews
                 // Read tweet_image url from cursor and set Profile picture of the owner of tweet
                 String image_url = data.getString(data.getColumnIndex(TweetHashTracerContract.TweetEntry.COLUMN_TWEET_USERNAME_IMAGE_URL));
 
-                Picasso.with(getApplicationContext())
-                        .load(image_url)
-                        .into(views, R.id.profile_pic, new Callback() {
+                ImageLoaderUtility.getInstance(getApplicationContext()).getImageLoader()
+                        .get(image_url, new ImageLoader.ImageListener() {
 
+                            @Override
+                            public void onResponse(ImageLoader.ImageContainer imageContainer, boolean b) {
+                                Bitmap bitmap = imageContainer.getBitmap();
+                                if (bitmap != null) {
+                                    views.setImageViewBitmap(R.id.profile_pic, bitmap);
+                                }
+                            }
+
+                            @Override
+                            public void onErrorResponse(VolleyError volleyError) {
+
+                            }
                         });
 
                 views.setImageViewResource(R.id.icon_favourite, R.drawable.ic_action_favorites);
