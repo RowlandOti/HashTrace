@@ -19,9 +19,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginTop="16dp"
+    android:layout_marginLeft="@dimen/margin_left"
+    android:layout_marginRight="@dimen/margin_left"
+    android:layout_marginTop="@dimen/margin_left"
     android:elevation="@dimen/wdgt_list_elevation"
     android:orientation="vertical">
 
@@ -65,12 +65,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="6dip"
+                android:layout_marginRight="@dimen/progress_bar_margin"
                 android:indeterminate="true"
-                android:maxHeight="30dip"
-                android:maxWidth="30dip"
-                android:minHeight="30dip"
-                android:minWidth="30dip"
+                android:maxHeight="@dimen/progress_bar_size"
+                android:maxWidth="@dimen/progress_bar_size"
+                android:minHeight="@dimen/progress_bar_size"
+                android:minWidth="@dimen/progress_bar_size"
                 android:visibility="gone"/>
 
             <LinearLayout

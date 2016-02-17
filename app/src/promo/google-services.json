@@ -1,0 +1,147 @@
+{
+  "project_info": {
+    "project_id": "hashtrace-9b78e",
+    "project_number": "17562400408",
+    "name": "HashTrace"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17562400408:android:63c50b434c4fe545",
+        "client_id": "android:com.rowland.hashtrace",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.rowland.hashtrace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-73849870-1"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17562400408:android:a55ce7309b27255f",
+        "client_id": "android:com.rowland.hashtrace.free",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.rowland.hashtrace.free"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-73849870-2"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17562400408:android:dc2abdd6e9fda4c1",
+        "client_id": "android:com.rowland.hashtrace.pro",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.rowland.hashtrace.pro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-73849870-3"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17562400408:android:927f1cd22c4611de",
+        "client_id": "android:com.rowland.hashtrace.promo",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.rowland.hashtrace.promo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-73849870-4"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}
