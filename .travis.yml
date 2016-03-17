@@ -1,7 +1,7 @@
 language: android
 android:
   components:
-    - build-tools-18.1.0
+    - build-tools-23.0.2
 
 before_script:
   # Create and start emulator
@@ -10,3 +10,10 @@ before_script:
   - ./wait_for_emulator
 
 script: mvn install -Pintegration-tests -Dandroid.device=test
+
+before_cache:
+  - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
