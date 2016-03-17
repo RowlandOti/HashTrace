@@ -25,7 +25,7 @@ before_script:
   - echo no | android create avd --force -n test -t $ANDROID_TARGET --abi $ANDROID_ABI
   - emulator -avd test -no-skin -no-audio -no-window &
   - chmod +x ./.ci/wait_for_emulator
-  - ./.ci/wait_for_emulator
+  - ./.ci/wait_for_emulator.sh
   - adb shell input keyevent 82 &
 
 script:
