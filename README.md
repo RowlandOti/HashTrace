@@ -1,3 +1,6 @@
+### Status
+[![Build Status](https://travis-ci.org/RowlandOti/HashTrace.svg?branch=master)](https://travis-ci.org/RowlandOti/HashTrace)
+
 # HashTrace
 This is my final Capstone project for the Udacity - Android Developer Nanodegree . 
 
