@@ -87,6 +87,7 @@ android {
 
 dependencies {
     // LOCAL BINARY DEPENDENCY
+    compile fileTree(dir: 'libs', include: ['*.jar'])
 
     // MODULE DEPENDENCY
     compile project(':libraries:pullToRefresh')

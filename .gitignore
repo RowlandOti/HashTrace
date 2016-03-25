@@ -51,3 +51,18 @@ captures/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# [Maven] ========================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Misc
+/.idea/workspace.xml
+.DS_Store
+/captures
+**/*.iml
+*.class
